@@ -1,0 +1,3 @@
+module example.com/go-ps-lab2
+
+go 1.25.4

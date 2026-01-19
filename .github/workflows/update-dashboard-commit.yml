@@ -1,0 +1,63 @@
+name: Update Dashboard (Commit to Repo)
+
+on:
+  # Run weekly on Sundays at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * 0'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: 'Provider tier to scan'
+        required: false
+        default: 'official'
+        type: choice
+        options:
+          - official
+          - partner
+          - all
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run provider scanner
+        run: |
+          cd Providers
+          
+          TIER="${{ github.event.inputs.tier || 'official' }}"
+          
+          if [ "$TIER" = "all" ]; then
+            python3 tf_provider_scanner.py --output terraform_providers.csv --no-github
+          else
+            python3 tf_provider_scanner.py --tier $TIER --output terraform_providers.csv --no-github
+          fi
+
+      - name: Generate HTML dashboard
+        run: |
+          cd Providers
+          python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
+          cp terraform_providers.csv docs/
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Providers/terraform_providers.csv Providers/docs/
+          git diff --staged --quiet || git commit -m "Update provider dashboard $(date +'%Y-%m-%d')"
+          git push

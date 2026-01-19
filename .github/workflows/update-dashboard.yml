@@ -1,0 +1,100 @@
+name: Update Terraform Provider Dashboard
+
+on:
+  # Run daily at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: 'Provider tier to scan'
+        required: false
+        default: 'official'
+        type: choice
+        options:
+          - official
+          - partner
+          - all
+      limit:
+        description: 'Max providers to scan (0 = no limit)'
+        required: false
+        default: '0'
+        type: string
+
+# Sets permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run provider scanner
+        run: |
+          cd Providers
+          
+          # Build command based on inputs
+          CMD="python3 tf_provider_scanner.py --output terraform_providers.csv --no-github"
+          
+          # Add tier filter
+          TIER="${{ github.event.inputs.tier || 'official' }}"
+          if [ "$TIER" != "all" ]; then
+            CMD="$CMD --tier $TIER"
+          fi
+          
+          # Add limit if specified
+          LIMIT="${{ github.event.inputs.limit || '0' }}"
+          if [ "$LIMIT" != "0" ]; then
+            CMD="$CMD --limit $LIMIT"
+          fi
+          
+          echo "Running: $CMD"
+          $CMD
+
+      - name: Generate HTML dashboard
+        run: |
+          cd Providers
+          python3 generate_html_dashboard.py terraform_providers.csv index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Create pages artifact
+        run: |
+          mkdir -p _site
+          cp Providers/index.html _site/
+          cp Providers/terraform_providers.csv _site/
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
