@@ -11,12 +11,12 @@ on:
       tier:
         description: 'Provider tier to scan'
         required: false
-        default: 'official'
+        default: 'all'
         type: choice
         options:
+          - all
           - official
           - partner
-          - all
       limit:
         description: 'Max providers to scan (0 = no limit)'
         required: false
@@ -53,7 +53,7 @@ jobs:
           CMD="python3 tf_provider_scanner.py --output terraform_providers.csv --no-github"
           
           # Add tier filter
-          TIER="${{ github.event.inputs.tier || 'official' }}"
+          TIER="${{ github.event.inputs.tier || 'all' }}"
           if [ "$TIER" != "all" ]; then
             CMD="$CMD --tier $TIER"
           fi

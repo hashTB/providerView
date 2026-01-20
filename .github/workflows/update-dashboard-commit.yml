@@ -11,12 +11,12 @@ on:
       tier:
         description: 'Provider tier to scan'
         required: false
-        default: 'official'
+        default: 'all'
         type: choice
         options:
+          - all
           - official
           - partner
-          - all
 
 permissions:
   contents: write
@@ -38,7 +38,7 @@ jobs:
 
       - name: Run provider scanner
         run: |
-          TIER="${{ github.event.inputs.tier || 'official' }}"
+          TIER="${{ github.event.inputs.tier || 'all' }}"
           
           if [ "$TIER" = "all" ]; then
             python3 tf_provider_scanner.py --output terraform_providers.csv --no-github
