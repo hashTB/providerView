@@ -418,8 +418,8 @@ def scan_provider(provider_info: dict) -> ProviderData:
         result.actions = doc_counts.get('actions', 0)
         result.provider_functions = doc_counts.get('functions', 0)
         
-        # Get detailed docs for JSON export (only for providers with actions or other interesting features)
-        if result.actions > 0 or result.list_resources > 0 or result.ephemeral_resources > 0 or result.provider_functions > 0:
+        # Get detailed docs for JSON export (for all providers with any features)
+        if result.managed_resources > 0 or result.data_sources > 0 or result.actions > 0 or result.list_resources > 0:
             result.docs_detailed = get_provider_docs_detailed(namespace, name, latest_version)
         
         # Estimate resource identities based on framework usage

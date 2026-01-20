@@ -575,34 +575,16 @@ HTML_PART4 = ''';
                 return;
             }
             
-            // Fall back to fetching from registry API
-            body.innerHTML = '<div class="loading">Loading from Terraform Registry...</div>';
-            var url = 'https://registry.terraform.io/v1/providers/' + namespace + '/' + name + '/' + version;
-            
-            fetch(url)
-                .then(function(response) { return response.json(); })
-                .then(function(data) {
-                    currentProviderData = data;
-                    
-                    // Group docs by category
-                    var categories = {};
-                    var docs = data.docs || [];
-                    docs.forEach(function(doc) {
-                        if (doc.language !== 'hcl') return;
-                        var cat = doc.category || 'other';
-                        if (!categories[cat]) categories[cat] = [];
-                        categories[cat].push({
-                            title: doc.title || doc.slug || 'Unknown',
-                            slug: doc.slug || '',
-                            subcategory: doc.subcategory || ''
-                        });
-                    });
-                    
-                    displayCategories(categories, category, namespace, name, tabs, body);
-                })
-                .catch(function(err) {
-                    body.innerHTML = '<div class="loading">Error loading data: ' + err.message + '<br><br>Try viewing on GitHub Pages where CORS is not an issue.</div>';
-                });
+            // No embedded data - show helpful message instead of trying API (CORS will fail)
+            body.innerHTML = '<div class="loading" style="text-align: center; padding: 40px;">' +
+                '<p style="font-size: 1.2em; margin-bottom: 15px;">📋 No cached data available for this provider</p>' +
+                '<p style="color: var(--text-muted);">View directly on Terraform Registry:</p>' +
+                '<a href="https://registry.terraform.io/providers/' + namespace + '/' + name + '/latest/docs" ' +
+                'target="_blank" style="color: var(--primary); text-decoration: underline;">' +
+                'registry.terraform.io/providers/' + namespace + '/' + name + '</a>' +
+                '<p style="color: var(--text-muted); margin-top: 20px; font-size: 0.9em;">' +
+                'Run the scanner again to cache this provider\\'s details.</p>' +
+                '</div>';
         }
         
         function displayCategories(categories, category, namespace, name, tabs, body) {
