@@ -15,6 +15,7 @@ Usage:
 import argparse
 import csv
 import json
+import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -577,6 +578,100 @@ def write_details_json(providers: list, output_file: str):
     print(f"Written details for {len(details)} providers to {output_file}")
 
 
+def load_existing_csv(csv_file: str) -> dict:
+    """Load existing CSV data for incremental scanning.
+    
+    Returns a dict keyed by provider name with:
+    - version: the version from the CSV
+    - row_data: dict of all column data for reuse
+    """
+    import json
+    existing = {}
+    
+    if not os.path.exists(csv_file):
+        return existing
+    
+    try:
+        with open(csv_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                provider = row.get('Provider', '').strip()
+                if not provider or provider == 'TOTAL':
+                    continue
+                version = row.get('Latest Version', '').strip()
+                existing[provider] = {
+                    'version': version,
+                    'row_data': row
+                }
+        print(f"Loaded {len(existing)} existing providers from {csv_file}")
+    except Exception as e:
+        print(f"Warning: Could not load existing CSV: {e}")
+    
+    return existing
+
+
+def load_existing_details_json(json_file: str) -> dict:
+    """Load existing details JSON for incremental scanning."""
+    import json
+    
+    if not os.path.exists(json_file):
+        return {}
+    
+    try:
+        with open(json_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: Could not load existing details JSON: {e}")
+        return {}
+
+
+def row_to_provider_data(row: dict, detailed_docs: dict = None) -> ProviderData:
+    """Convert a CSV row back to ProviderData for reuse."""
+    
+    def parse_number(s):
+        """Parse number from CSV format (handles commas)."""
+        if not s:
+            return 0
+        return int(str(s).replace(',', '').strip() or 0)
+    
+    def parse_bool(s):
+        """Parse boolean checkmark."""
+        return s.strip() == '✅' if s else False
+    
+    return ProviderData(
+        provider=row.get('Provider', ''),
+        tier=row.get('Tier', ''),
+        latest_version=row.get('Latest Version', ''),
+        latest_version_published=row.get('Latest Version Published', ''),
+        created_at=row.get('Created At', ''),
+        protocol_v4=parse_bool(row.get('Protocol v4', '')),
+        protocol_v5=parse_bool(row.get('Protocol v5', '')),
+        protocol_v6=parse_bool(row.get('Protocol v6', '')),
+        cohort_framework_only=parse_bool(row.get('Cohort: Framework only', '')),
+        cohort_sdkv2_only=parse_bool(row.get('Cohort: SDKv2 only', '')),
+        cohort_framework_sdkv2=parse_bool(row.get('Cohort: Framework+SDKv2', '')),
+        managed_resources=parse_number(row.get('Managed Resources', '0')),
+        resource_identities=parse_number(row.get('Resource Identities', '0')),
+        data_sources=parse_number(row.get('Data Sources', '0')),
+        ephemeral_resources=parse_number(row.get('Ephemeral Resources', '0')),
+        list_resources=parse_number(row.get('List Resources', '0')),
+        actions=parse_number(row.get('Actions', '0')),
+        provider_functions=parse_number(row.get('Provider Functions', '0')),
+        total_features=parse_number(row.get('Total Features', '0')),
+        docs_detailed=detailed_docs,
+        error=''
+    )
+
+
+def get_provider_version_quick(namespace: str, name: str) -> str:
+    """Quick version check without full scan."""
+    url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}"
+    data = make_request(url)
+    if data:
+        return data.get('version', '')
+    return ''
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Scan Terraform providers and collect feature data.',
@@ -588,6 +683,8 @@ Examples:
   %(prog)s --tier official                    # Scan only official providers
   %(prog)s --tier partner --limit 100         # Scan first 100 partner providers
   %(prog)s --output my_providers.csv          # Custom output file
+  %(prog)s --incremental                      # Only scan changed providers (faster)
+  %(prog)s -i --tier official                 # Incremental scan of official providers
         """
     )
     
@@ -630,6 +727,12 @@ Examples:
         help='Disable GitHub checks for SDK/Framework detection (faster but less accurate)'
     )
     
+    parser.add_argument(
+        '--incremental', '-i',
+        action='store_true',
+        help='Only scan providers that have changed since last run (compares versions)'
+    )
+    
     args = parser.parse_args()
     
     # Set global flag for GitHub checks
@@ -640,6 +743,10 @@ Examples:
     print("Terraform Provider Scanner")
     print("=" * 60)
     print()
+    
+    # Initialize for summary stats
+    providers_reused = []
+    scanned_results = []
     
     if args.provider:
         # Single provider mode
@@ -667,6 +774,7 @@ Examples:
         
         result = scan_provider(provider_info)
         results = [result]
+        scanned_results = [result]
         
     else:
         # Multi-provider mode
@@ -679,21 +787,70 @@ Examples:
         providers = get_all_providers(tier=args.tier, limit=args.limit)
         print(f"Found {len(providers)} providers to scan\n")
         
-        if args.parallel > 1:
-            # Parallel scanning
-            results = []
-            with ThreadPoolExecutor(max_workers=args.parallel) as executor:
-                futures = {executor.submit(scan_provider, p): p for p in providers}
-                for future in as_completed(futures):
-                    result = future.result()
-                    results.append(result)
+        # Incremental mode: load existing data and check for changes
+        existing_data = {}
+        existing_details = {}
+        providers_to_scan = []
+        providers_reused = []
+        
+        if args.incremental:
+            print("Incremental mode enabled - checking for version changes...")
+            existing_data = load_existing_csv(args.output)
+            json_output = args.output.replace('.csv', '_details.json')
+            existing_details = load_existing_details_json(json_output)
+            
+            for provider_info in providers:
+                full_name = provider_info['full_name']
+                namespace = provider_info['namespace']
+                name = provider_info['name']
+                
+                if full_name in existing_data:
+                    # Check if version has changed
+                    existing_version = existing_data[full_name]['version']
+                    current_version = get_provider_version_quick(namespace, name)
+                    
+                    if current_version and current_version == existing_version:
+                        # Version unchanged - reuse existing data
+                        detailed_docs = existing_details.get(full_name, {}).get('docs')
+                        reused = row_to_provider_data(
+                            existing_data[full_name]['row_data'],
+                            detailed_docs
+                        )
+                        providers_reused.append(reused)
+                        print(f"  ✓ {full_name} v{current_version} (unchanged)")
+                    else:
+                        # Version changed - needs rescan
+                        providers_to_scan.append(provider_info)
+                        print(f"  ↻ {full_name}: {existing_version} → {current_version} (needs scan)")
+                else:
+                    # New provider
+                    providers_to_scan.append(provider_info)
+                    print(f"  + {full_name} (new)")
+            
+            print(f"\nSummary: {len(providers_reused)} unchanged, {len(providers_to_scan)} to scan\n")
         else:
-            # Sequential scanning
-            results = []
-            for i, provider_info in enumerate(providers, 1):
-                print(f"[{i}/{len(providers)}] ", end='')
-                result = scan_provider(provider_info)
-                results.append(result)
+            providers_to_scan = providers
+        
+        # Scan providers that need scanning
+        scanned_results = []
+        if providers_to_scan:
+            if args.parallel > 1:
+                # Parallel scanning
+                with ThreadPoolExecutor(max_workers=args.parallel) as executor:
+                    futures = {executor.submit(scan_provider, p): p for p in providers_to_scan}
+                    for future in as_completed(futures):
+                        result = future.result()
+                        scanned_results.append(result)
+            else:
+                # Sequential scanning
+                for i, provider_info in enumerate(providers_to_scan, 1):
+                    print(f"[{i}/{len(providers_to_scan)}] ", end='')
+                    result = scan_provider(provider_info)
+                    scanned_results.append(result)
+        
+        # Combine reused and newly scanned results
+        results = providers_reused + scanned_results
+
     
     # Sort by provider name
     results.sort(key=lambda x: x.provider.lower())
@@ -709,7 +866,11 @@ Examples:
     print("\n" + "=" * 60)
     print("Summary")
     print("=" * 60)
-    print(f"Total providers scanned: {len(results)}")
+    print(f"Total providers: {len(results)}")
+    
+    if args.incremental and not args.provider:
+        print(f"  - Reused (unchanged): {len(providers_reused)}")
+        print(f"  - Scanned (new/changed): {len(scanned_results)}")
     
     total_resources = sum(p.managed_resources for p in results)
     total_data_sources = sum(p.data_sources for p in results)

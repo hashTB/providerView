@@ -22,6 +22,11 @@ on:
         required: false
         default: '0'
         type: string
+      incremental:
+        description: 'Incremental mode (only scan changed providers)'
+        required: false
+        default: true
+        type: boolean
 
 # Sets permissions for GitHub Pages deployment
 permissions:
@@ -41,6 +46,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Restore cached provider data
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            terraform_providers.csv
+            terraform_providers_details.json
+          key: provider-data-${{ hashFiles('terraform_providers.csv') }}
+          restore-keys: |
+            provider-data-
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -64,8 +80,23 @@ jobs:
             CMD="$CMD --limit $LIMIT"
           fi
           
+          # Add incremental mode (default for scheduled runs)
+          INCREMENTAL="${{ github.event.inputs.incremental }}"
+          if [ "$INCREMENTAL" != "false" ] && [ -f "terraform_providers.csv" ]; then
+            CMD="$CMD --incremental"
+            echo "Incremental mode enabled - will only scan changed providers"
+          fi
+          
           echo "Running: $CMD"
           $CMD
+
+      - name: Save cache for next run
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            terraform_providers.csv
+            terraform_providers_details.json
+          key: provider-data-${{ hashFiles('terraform_providers.csv') }}
 
       - name: Generate HTML dashboard
         run: |
