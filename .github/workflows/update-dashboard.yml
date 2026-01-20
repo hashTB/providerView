@@ -49,8 +49,6 @@ jobs:
 
       - name: Run provider scanner
         run: |
-          cd Providers
-          
           # Build command based on inputs
           CMD="python3 tf_provider_scanner.py --output terraform_providers.csv --no-github"
           
@@ -71,7 +69,6 @@ jobs:
 
       - name: Generate HTML dashboard
         run: |
-          cd Providers
           python3 generate_html_dashboard.py terraform_providers.csv index.html
 
       - name: Setup Pages
@@ -80,8 +77,8 @@ jobs:
       - name: Create pages artifact
         run: |
           mkdir -p _site
-          cp Providers/index.html _site/
-          cp Providers/terraform_providers.csv _site/
+          cp index.html _site/
+          cp terraform_providers.csv _site/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -38,8 +38,6 @@ jobs:
 
       - name: Run provider scanner
         run: |
-          cd Providers
-          
           TIER="${{ github.event.inputs.tier || 'official' }}"
           
           if [ "$TIER" = "all" ]; then
@@ -50,7 +48,6 @@ jobs:
 
       - name: Generate HTML dashboard
         run: |
-          cd Providers
           python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
           cp terraform_providers.csv docs/
 
@@ -58,6 +55,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Providers/terraform_providers.csv Providers/docs/
+          git add terraform_providers.csv docs/
           git diff --staged --quiet || git commit -m "Update provider dashboard $(date +'%Y-%m-%d')"
           git push
