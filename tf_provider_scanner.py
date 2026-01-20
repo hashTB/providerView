@@ -75,8 +75,19 @@ class ProviderData:
     provider_functions: int = 0
     total_features: int = 0
     
+    # Additional metadata
+    downloads: int = 0
+    version_count: int = 0
+    days_since_update: int = 0
+    subcategories_count: int = 0
+    guides_count: int = 0
+    description: str = ""
+    
     # Detailed docs (for JSON export)
     docs_detailed: dict = None
+    
+    # Service breakdown (for major providers)
+    service_breakdown: dict = None
     
     # Error tracking
     error: str = ""
@@ -254,6 +265,60 @@ def get_provider_docs_detailed(namespace: str, name: str, version: str = None) -
         })
     
     return categories
+
+
+def get_provider_metadata(namespace: str, name: str) -> tuple:
+    """
+    Get additional provider metadata: downloads, version count, guides, subcategories, service breakdown.
+    
+    Returns: (downloads, version_count, guides, subcategories_count, service_breakdown, description)
+    """
+    url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}"
+    data = make_request(url)
+    
+    if not data:
+        return 0, 0, 0, 0, None, ""
+    
+    downloads = data.get('downloads', 0)
+    versions = data.get('versions', [])
+    version_count = len(versions)
+    
+    docs = data.get('docs', [])
+    guides = sum(1 for d in docs if d.get('category') == 'guides')
+    
+    # Get unique subcategories and build service breakdown
+    subcategories = set()
+    service_breakdown = {}
+    
+    for doc in docs:
+        subcat = doc.get('subcategory', '')
+        cat = doc.get('category', '')
+        
+        if subcat:
+            subcategories.add(subcat)
+            
+            # Build service breakdown
+            if subcat not in service_breakdown:
+                service_breakdown[subcat] = {'resources': 0, 'data_sources': 0, 'actions': 0, 'other': 0}
+            
+            if cat == 'resources':
+                service_breakdown[subcat]['resources'] += 1
+            elif cat == 'data-sources':
+                service_breakdown[subcat]['data_sources'] += 1
+            elif cat == 'actions':
+                service_breakdown[subcat]['actions'] += 1
+            else:
+                service_breakdown[subcat]['other'] += 1
+    
+    # Get description from v2 API
+    description = ""
+    url_v2 = f"{REGISTRY_V2_BASE}/providers/{namespace}/{name}"
+    data_v2 = make_request(url_v2)
+    if data_v2 and 'data' in data_v2:
+        attrs = data_v2['data'].get('attributes', {})
+        description = attrs.get('description', '')
+    
+    return downloads, version_count, guides, len(subcategories), service_breakdown, description
 
 
 def detect_cohort(protocols: list[str]) -> tuple[bool, bool, bool]:
@@ -441,6 +506,18 @@ def scan_provider(provider_info: dict) -> ProviderData:
             result.provider_functions
         )
         
+        # Get additional metadata (downloads, versions, guides, subcategories)
+        result.downloads, result.version_count, result.guides_count, result.subcategories_count, result.service_breakdown, result.description = get_provider_metadata(namespace, name)
+        
+        # Calculate days since last update
+        if latest_published:
+            try:
+                from datetime import datetime
+                pub_date = datetime.strptime(latest_published, '%Y-%m-%d')
+                result.days_since_update = (datetime.now() - pub_date).days
+            except:
+                result.days_since_update = 0
+        
     except Exception as e:
         result.error = str(e)
         print(f"  Error scanning {full_name}: {e}")
@@ -454,6 +531,18 @@ def format_number(n: int) -> str:
     return f"{n:,}"
 
 
+def format_downloads(n: int) -> str:
+    """Format download count in human-readable format (1.2B, 500M, 10K)."""
+    if n >= 1_000_000_000:
+        return f"{n/1_000_000_000:.1f}B"
+    elif n >= 1_000_000:
+        return f"{n/1_000_000:.1f}M"
+    elif n >= 1_000:
+        return f"{n/1_000:.1f}K"
+    else:
+        return str(n)
+
+
 def write_csv(providers: list[ProviderData], output_file: str, include_summary: bool = True):
     """Write provider data to CSV file."""
     # Match the CSV header format from the original
@@ -463,6 +552,7 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
         'Latest Version',
         'Latest Version Published',
         'Created At',
+        'Days Since Update',
         '',  # Empty column separator
         'Protocol v4',
         'Protocol v5',
@@ -479,7 +569,12 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
         'List Resources',
         'Actions',
         'Provider Functions',
+        'Guides',
         'Total Features',
+        '',  # Empty column separator
+        'Downloads',
+        'Version Count',
+        'Subcategories',
     ]
     
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
@@ -502,10 +597,15 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
             total_list = sum(p.list_resources for p in providers)
             total_actions = sum(p.actions for p in providers)
             total_functions = sum(p.provider_functions for p in providers)
+            total_guides = sum(p.guides_count for p in providers)
             total_features = sum(p.total_features for p in providers)
+            total_downloads = sum(p.downloads for p in providers)
+            total_versions = sum(p.version_count for p in providers)
+            total_subcats = sum(p.subcategories_count for p in providers)
             
             summary_row = [
-                '',  # No provider name for summary
+                'TOTAL',
+                '',
                 '',
                 '',
                 '',
@@ -526,7 +626,12 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
                 total_list,
                 total_actions,
                 total_functions,
+                total_guides,
                 format_number(total_features),
+                '',
+                format_downloads(total_downloads),
+                total_versions,
+                total_subcats,
             ]
             writer.writerow(summary_row)
         
@@ -537,6 +642,7 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
                 p.latest_version,
                 p.latest_version_published,
                 p.created_at,
+                p.days_since_update,
                 '',
                 '✅' if p.protocol_v4 else '',
                 '✅' if p.protocol_v5 else '',
@@ -553,7 +659,12 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
                 p.list_resources,
                 p.actions,
                 p.provider_functions,
+                p.guides_count,
                 format_number(p.total_features),
+                '',
+                format_downloads(p.downloads),
+                p.version_count,
+                p.subcategories_count,
             ]
             writer.writerow(row)
     
@@ -566,11 +677,16 @@ def write_details_json(providers: list, output_file: str):
     
     details = {}
     for p in providers:
-        if p.docs_detailed:
-            details[p.provider] = {
-                'version': p.latest_version,
-                'docs': p.docs_detailed
-            }
+        # Include all providers, not just those with detailed docs
+        details[p.provider] = {
+            'version': p.latest_version,
+            'downloads': p.downloads,
+            'version_count': p.version_count,
+            'days_since_update': p.days_since_update,
+            'subcategories_count': p.subcategories_count,
+            'guides_count': p.guides_count,
+            'docs': p.docs_detailed or {}
+        }
     
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(details, f, indent=2)
@@ -638,11 +754,31 @@ def row_to_provider_data(row: dict, detailed_docs: dict = None) -> ProviderData:
         """Parse boolean checkmark."""
         return s.strip() == '✅' if s else False
     
+    def parse_downloads(val):
+        """Parse download string like '5.4B' or '100M' back to number."""
+        if not val:
+            return 0
+        val = str(val).strip()
+        multipliers = {'B': 1e9, 'M': 1e6, 'K': 1e3}
+        for suffix, mult in multipliers.items():
+            if val.endswith(suffix):
+                try:
+                    return int(float(val[:-1]) * mult)
+                except:
+                    return 0
+        try:
+            return int(val.replace(',', ''))
+        except:
+            return 0
+    
     return ProviderData(
         provider=row.get('Provider', ''),
         tier=row.get('Tier', ''),
+        downloads=parse_downloads(row.get('Downloads', '')),
+        version_count=parse_number(row.get('Versions', '0')),
         latest_version=row.get('Latest Version', ''),
         latest_version_published=row.get('Latest Version Published', ''),
+        days_since_update=parse_number(row.get('Days Since Update', '0')),
         created_at=row.get('Created At', ''),
         protocol_v4=parse_bool(row.get('Protocol v4', '')),
         protocol_v5=parse_bool(row.get('Protocol v5', '')),
@@ -650,6 +786,8 @@ def row_to_provider_data(row: dict, detailed_docs: dict = None) -> ProviderData:
         cohort_framework_only=parse_bool(row.get('Cohort: Framework only', '')),
         cohort_sdkv2_only=parse_bool(row.get('Cohort: SDKv2 only', '')),
         cohort_framework_sdkv2=parse_bool(row.get('Cohort: Framework+SDKv2', '')),
+        subcategories_count=parse_number(row.get('Subcategories', '0')),
+        guides_count=0,  # Not stored in CSV
         managed_resources=parse_number(row.get('Managed Resources', '0')),
         resource_identities=parse_number(row.get('Resource Identities', '0')),
         data_sources=parse_number(row.get('Data Sources', '0')),

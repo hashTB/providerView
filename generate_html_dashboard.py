@@ -29,14 +29,15 @@ HTML_PART1 = '''<!DOCTYPE html>
     <link href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #7c3aed;
-            --primary-dark: #5b21b6;
+            --primary: #64748b;
+            --primary-dark: #475569;
             --bg: #0f172a;
             --bg-card: #1e293b;
             --text: #e2e8f0;
             --text-muted: #94a3b8;
             --border: #334155;
             --success: #22c55e;
+            --accent: #06b6d4;
         }
         
         * {
@@ -180,7 +181,7 @@ HTML_PART1 = '''<!DOCTYPE html>
         }
         
         table.dataTable tbody tr:hover {
-            background: rgba(124, 58, 237, 0.1);
+            background: rgba(100, 116, 139, 0.15);
         }
         
         .check-mark {
@@ -413,6 +414,10 @@ HTML_PART2 = '''</p>
                 <div class="metric-label">Total Providers</div>
             </div>
             <div class="metric-card">
+                <div class="metric-value" id="total-downloads">0</div>
+                <div class="metric-label">Total Downloads</div>
+            </div>
+            <div class="metric-card">
                 <div class="metric-value" id="total-resources">0</div>
                 <div class="metric-label">Total Resources</div>
             </div>
@@ -485,11 +490,15 @@ HTML_PART2 = '''</p>
                     <tr>
                         <th>Provider</th>
                         <th>Tier</th>
+                        <th>Downloads</th>
+                        <th>Versions</th>
                         <th>Version</th>
                         <th>Published</th>
+                        <th>Days</th>
                         <th>v5</th>
                         <th>v6</th>
                         <th>Cohort</th>
+                        <th>Subcats</th>
                         <th>Resources</th>
                         <th>List</th>
                         <th>Actions</th>
@@ -538,6 +547,13 @@ HTML_PART4 = ''';
             return n.toLocaleString();
         }
         
+        function formatDownloads(n) {
+            if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+            if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+            if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+            return n.toString();
+        }
+        
         function getTierBadge(tier) {
             const cls = 'tier-' + tier.toLowerCase();
             return '<span class="' + cls + '">' + tier + '</span>';
@@ -552,6 +568,8 @@ HTML_PART4 = ''';
         
         function updateMetrics(data) {
             document.getElementById('total-providers').textContent = formatNumber(data.length);
+            var totalDownloads = data.reduce(function(s, p) { return s + (p.downloads || 0); }, 0);
+            document.getElementById('total-downloads').textContent = formatDownloads(totalDownloads);
             document.getElementById('total-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + p.resources; }, 0));
             document.getElementById('total-datasources').textContent = formatNumber(data.reduce(function(s, p) { return s + p.data_sources; }, 0));
             document.getElementById('total-features').textContent = formatNumber(data.reduce(function(s, p) { return s + p.total_features; }, 0));
@@ -693,11 +711,15 @@ HTML_PART4 = ''';
                         return '<span class="clickable" onclick="openModal(\\'' + d + '\\', \\'' + row.version + '\\', \\'actions\\')">' + d + '</span>';
                     }},
                     { data: 'tier', render: function(d) { return getTierBadge(d); } },
+                    { data: 'downloads', render: function(d) { return formatDownloads(d || 0); } },
+                    { data: 'version_count', render: function(d) { return formatNumber(d || 0); } },
                     { data: 'version' },
                     { data: 'published' },
+                    { data: 'days_since_update', render: function(d) { return d != null ? d : '-'; } },
                     { data: 'protocol_v5', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: 'protocol_v6', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: null, render: function(d, t, row) { return getCohort(row); } },
+                    { data: 'subcategories', render: function(d) { return formatNumber(d || 0); } },
                     { data: 'resources', render: function(d, t, row) { return renderClickable(d, t, row, 'resources'); } },
                     { data: 'list_resources', render: function(d, t, row) { return renderClickable(d, t, row, 'list-resources'); } },
                     { data: 'actions', render: function(d, t, row) { return renderClickable(d, t, row, 'actions'); } },
@@ -705,7 +727,7 @@ HTML_PART4 = ''';
                     { data: 'data_sources', render: function(d, t, row) { return renderClickable(d, t, row, 'data-sources'); } },
                     { data: 'total_features', render: formatNumber }
                 ],
-                order: [[7, 'desc']],
+                order: [[2, 'desc']],
                 pageLength: 25,
                 dom: 'Bfrtip',
                 buttons: ['csv', 'excel'],
@@ -764,8 +786,8 @@ def parse_csv(csv_path: str) -> list:
         reader = csv.DictReader(f)
         
         for row in reader:
-            # Skip summary row
-            if not row.get('Provider'):
+            # Skip summary row (has no Provider or has 'TOTAL')
+            if not row.get('Provider') or row.get('Provider', '').strip() == 'TOTAL':
                 continue
             
             def parse_int(val):
@@ -773,11 +795,31 @@ def parse_csv(csv_path: str) -> list:
                     return 0
                 return int(str(val).replace(',', '').replace('"', ''))
             
+            def parse_downloads(val):
+                """Parse download string like '5.4B' or '100M' back to number."""
+                if not val:
+                    return 0
+                val = str(val).strip()
+                multipliers = {'B': 1e9, 'M': 1e6, 'K': 1e3}
+                for suffix, mult in multipliers.items():
+                    if val.endswith(suffix):
+                        try:
+                            return int(float(val[:-1]) * mult)
+                        except:
+                            return 0
+                try:
+                    return int(val.replace(',', ''))
+                except:
+                    return 0
+            
             providers.append({
                 'provider': row.get('Provider', ''),
                 'tier': row.get('Tier', ''),
+                'downloads': parse_downloads(row.get('Downloads', '')),
+                'version_count': parse_int(row.get('Versions', 0)),
                 'version': row.get('Latest Version', ''),
                 'published': row.get('Latest Version Published', ''),
+                'days_since_update': parse_int(row.get('Days Since Update', 0)),
                 'created': row.get('Created At', ''),
                 'protocol_v4': row.get('Protocol v4', '') == '✅',
                 'protocol_v5': row.get('Protocol v5', '') == '✅',
@@ -785,6 +827,7 @@ def parse_csv(csv_path: str) -> list:
                 'cohort_framework_only': row.get('Cohort: Framework only', '') == '✅',
                 'cohort_sdkv2_only': row.get('Cohort: SDKv2 only', row.get('Cohort:\nSDKv2 only', '')) == '✅',
                 'cohort_framework_sdkv2': row.get('Cohort: Framework+SDKv2', '') == '✅',
+                'subcategories': parse_int(row.get('Subcategories', 0)),
                 'resources': parse_int(row.get('Managed Resources', 0)),
                 'identities': parse_int(row.get('Resource Identities', 0)),
                 'data_sources': parse_int(row.get('Data Sources', 0)),
