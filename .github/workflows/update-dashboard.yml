@@ -65,10 +65,10 @@ jobs:
 
       - name: Run provider scanner
         run: |
-          # Build command based on inputs
-          CMD="python3 tf_provider_scanner.py --output terraform_providers.csv --no-github"
+          # Build command based on inputs (no --no-github for accurate v5/v6 detection)
+          CMD="python3 tf_provider_scanner.py --output terraform_providers.csv"
           
-          # Add tier filter
+          # Add tier filter (default: all providers)
           TIER="${{ github.event.inputs.tier || 'all' }}"
           if [ "$TIER" != "all" ]; then
             CMD="$CMD --tier $TIER"

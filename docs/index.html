@@ -382,7 +382,7 @@
 <body>
     <div class="container">
         <h1>🏗️ Terraform Provider Dashboard</h1>
-        <p class="subtitle">Generated on 2026-01-20 16:12</p>
+        <p class="subtitle">Generated on 2026-01-20 16:36</p>
         
         <div class="metrics" id="metrics">
             <div class="metric-card">
@@ -410,8 +410,12 @@
                 <div class="metric-label">Actions</div>
             </div>
             <div class="metric-card">
-                <div class="metric-value" id="framework-count">0</div>
-                <div class="metric-label">Using Framework</div>
+                <div class="metric-value" id="v5-count">0</div>
+                <div class="metric-label">Protocol v5 (SDKv2)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="v6-count">0</div>
+                <div class="metric-label">Protocol v6 (Framework)</div>
             </div>
         </div>
         
@@ -429,6 +433,16 @@
             <div class="filter-group">
                 <label>Min Resources</label>
                 <input type="number" id="filter-min-resources" value="0" min="0">
+            </div>
+            
+            <div class="filter-group">
+                <label>Protocol</label>
+                <select id="filter-protocol">
+                    <option value="">All Protocols</option>
+                    <option value="v5">v5 only (SDKv2)</option>
+                    <option value="v6">v6 only (Framework)</option>
+                    <option value="both">v5 + v6 (Mixed)</option>
+                </select>
             </div>
             
             <div class="filter-group">
@@ -498,17 +512,17 @@
     "protocol_v4": false,
     "protocol_v5": false,
     "protocol_v6": true,
-    "cohort_framework_only": true,
+    "cohort_framework_only": false,
     "cohort_sdkv2_only": false,
-    "cohort_framework_sdkv2": false,
+    "cohort_framework_sdkv2": true,
     "resources": 5,
-    "identities": 5,
+    "identities": 0,
     "data_sources": 5,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 2,
     "functions": 0,
-    "total_features": 17
+    "total_features": 12
   },
   {
     "provider": "hashicorp/ad",
@@ -539,18 +553,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 1,
-    "identities": 0,
+    "identities": 1,
     "data_sources": 1,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 2
+    "total_features": 3
   },
   {
     "provider": "hashicorp/aws",
@@ -560,18 +574,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 1587,
-    "identities": 0,
+    "identities": 79,
     "data_sources": 630,
     "ephemeral": 8,
     "list_resources": 15,
     "actions": 10,
     "functions": 4,
-    "total_features": 2254
+    "total_features": 2333
   },
   {
     "provider": "hashicorp/awscc",
@@ -623,18 +637,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 1113,
-    "identities": 0,
+    "identities": 55,
     "data_sources": 389,
     "ephemeral": 2,
     "list_resources": 7,
     "actions": 5,
     "functions": 2,
-    "total_features": 1518
+    "total_features": 1573
   },
   {
     "provider": "hashicorp/azurestack",
@@ -686,18 +700,18 @@
     "created": "2020-04-14",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 1,
-    "identities": 0,
+    "identities": 1,
     "data_sources": 1,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 2
+    "total_features": 3
   },
   {
     "provider": "hashicorp/consul",
@@ -709,7 +723,7 @@
     "protocol_v5": true,
     "protocol_v6": false,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 33,
     "identities": 0,
@@ -728,10 +742,10 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 8,
     "identities": 0,
     "data_sources": 8,
@@ -749,9 +763,9 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 0,
     "identities": 0,
@@ -770,18 +784,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 1013,
-    "identities": 0,
+    "identities": 50,
     "data_sources": 428,
     "ephemeral": 6,
     "list_resources": 0,
     "actions": 0,
     "functions": 6,
-    "total_features": 1453
+    "total_features": 1503
   },
   {
     "provider": "hashicorp/google-beta",
@@ -791,18 +805,18 @@
     "created": "2018-10-05",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 1013,
-    "identities": 0,
+    "identities": 50,
     "data_sources": 428,
     "ephemeral": 6,
     "list_resources": 0,
     "actions": 0,
     "functions": 6,
-    "total_features": 1453
+    "total_features": 1503
   },
   {
     "provider": "hashicorp/hcp",
@@ -813,17 +827,17 @@
     "protocol_v4": false,
     "protocol_v5": false,
     "protocol_v6": true,
-    "cohort_framework_only": true,
+    "cohort_framework_only": false,
     "cohort_sdkv2_only": false,
-    "cohort_framework_sdkv2": false,
+    "cohort_framework_sdkv2": true,
     "resources": 66,
-    "identities": 66,
+    "identities": 3,
     "data_sources": 37,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 169
+    "total_features": 106
   },
   {
     "provider": "hashicorp/hcs",
@@ -854,18 +868,18 @@
     "created": "2018-10-10",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 1,
-    "identities": 0,
+    "identities": 1,
     "data_sources": 1,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 2
+    "total_features": 3
   },
   {
     "provider": "hashicorp/http",
@@ -875,9 +889,9 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 0,
     "identities": 0,
@@ -896,18 +910,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 83,
-    "identities": 0,
+    "identities": 4,
     "data_sources": 26,
     "ephemeral": 2,
     "list_resources": 0,
     "actions": 0,
     "functions": 3,
-    "total_features": 114
+    "total_features": 118
   },
   {
     "provider": "hashicorp/local",
@@ -917,18 +931,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 2,
-    "identities": 0,
+    "identities": 2,
     "data_sources": 3,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 1,
     "functions": 1,
-    "total_features": 7
+    "total_features": 9
   },
   {
     "provider": "hashicorp/nomad",
@@ -959,18 +973,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 1,
-    "identities": 0,
+    "identities": 1,
     "data_sources": 1,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 2
+    "total_features": 3
   },
   {
     "provider": "hashicorp/random",
@@ -980,18 +994,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 10,
-    "identities": 0,
+    "identities": 10,
     "data_sources": 0,
     "ephemeral": 1,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 11
+    "total_features": 21
   },
   {
     "provider": "hashicorp/template",
@@ -1023,17 +1037,17 @@
     "protocol_v4": false,
     "protocol_v5": false,
     "protocol_v6": true,
-    "cohort_framework_only": true,
+    "cohort_framework_only": false,
     "cohort_sdkv2_only": false,
-    "cohort_framework_sdkv2": false,
+    "cohort_framework_sdkv2": true,
     "resources": 62,
-    "identities": 62,
+    "identities": 3,
     "data_sources": 36,
     "ephemeral": 2,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 162
+    "total_features": 103
   },
   {
     "provider": "hashicorp/tfmigrate",
@@ -1064,18 +1078,18 @@
     "created": "2020-04-21",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 4,
-    "identities": 0,
+    "identities": 4,
     "data_sources": 0,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 3,
-    "total_features": 7
+    "total_features": 11
   },
   {
     "provider": "hashicorp/tls",
@@ -1085,18 +1099,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
-    "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
+    "protocol_v6": true,
+    "cohort_framework_only": true,
+    "cohort_sdkv2_only": false,
     "cohort_framework_sdkv2": false,
     "resources": 4,
-    "identities": 0,
+    "identities": 4,
     "data_sources": 2,
     "ephemeral": 1,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 7
+    "total_features": 11
   },
   {
     "provider": "hashicorp/vault",
@@ -1106,18 +1120,18 @@
     "created": "2017-07-12",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 160,
-    "identities": 0,
+    "identities": 8,
     "data_sources": 45,
     "ephemeral": 8,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 213
+    "total_features": 221
   },
   {
     "provider": "IBM-Cloud/ibm",
@@ -1190,18 +1204,18 @@
     "created": "2024-05-27",
     "protocol_v4": false,
     "protocol_v5": true,
-    "protocol_v6": false,
+    "protocol_v6": true,
     "cohort_framework_only": false,
-    "cohort_sdkv2_only": true,
-    "cohort_framework_sdkv2": false,
+    "cohort_sdkv2_only": false,
+    "cohort_framework_sdkv2": true,
     "resources": 23,
-    "identities": 0,
+    "identities": 1,
     "data_sources": 7,
     "ephemeral": 0,
     "list_resources": 0,
     "actions": 0,
     "functions": 0,
-    "total_features": 30
+    "total_features": 31
   }
 ];
         const providerDetails = {
@@ -69909,7 +69923,8 @@
             document.getElementById('total-features').textContent = formatNumber(data.reduce(function(s, p) { return s + p.total_features; }, 0));
             document.getElementById('total-list-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.list_resources || 0); }, 0));
             document.getElementById('total-actions').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.actions || 0); }, 0));
-            document.getElementById('framework-count').textContent = data.filter(function(p) { return p.cohort_framework_only || p.cohort_framework_sdkv2; }).length;
+            document.getElementById('v5-count').textContent = data.filter(function(p) { return p.protocol_v5; }).length;
+            document.getElementById('v6-count').textContent = data.filter(function(p) { return p.protocol_v6; }).length;
         }
         
         // Modal functionality
@@ -70078,6 +70093,11 @@
                 var minRes = parseInt($('#filter-min-resources').val()) || 0;
                 if (row.resources < minRes) return false;
                 
+                var protocol = $('#filter-protocol').val();
+                if (protocol === 'v5' && (!row.protocol_v5 || row.protocol_v6)) return false;
+                if (protocol === 'v6' && (!row.protocol_v6 || row.protocol_v5)) return false;
+                if (protocol === 'both' && !(row.protocol_v5 && row.protocol_v6)) return false;
+                
                 var cohort = $('#filter-cohort').val();
                 if (cohort === 'framework' && !row.cohort_framework_only) return false;
                 if (cohort === 'sdkv2' && !row.cohort_sdkv2_only) return false;
@@ -70086,7 +70106,7 @@
                 return true;
             });
             
-            $('#filter-tier, #filter-cohort').on('change', function() {
+            $('#filter-tier, #filter-cohort, #filter-protocol').on('change', function() {
                 table.draw();
                 updateMetrics(table.rows({ search: 'applied' }).data().toArray());
             });

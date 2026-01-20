@@ -433,8 +433,12 @@ HTML_PART2 = '''</p>
                 <div class="metric-label">Actions</div>
             </div>
             <div class="metric-card">
-                <div class="metric-value" id="framework-count">0</div>
-                <div class="metric-label">Using Framework</div>
+                <div class="metric-value" id="v5-count">0</div>
+                <div class="metric-label">Protocol v5 (SDKv2)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="v6-count">0</div>
+                <div class="metric-label">Protocol v6 (Framework)</div>
             </div>
         </div>
         
@@ -452,6 +456,16 @@ HTML_PART2 = '''</p>
             <div class="filter-group">
                 <label>Min Resources</label>
                 <input type="number" id="filter-min-resources" value="0" min="0">
+            </div>
+            
+            <div class="filter-group">
+                <label>Protocol</label>
+                <select id="filter-protocol">
+                    <option value="">All Protocols</option>
+                    <option value="v5">v5 only (SDKv2)</option>
+                    <option value="v6">v6 only (Framework)</option>
+                    <option value="both">v5 + v6 (Mixed)</option>
+                </select>
             </div>
             
             <div class="filter-group">
@@ -543,7 +557,8 @@ HTML_PART4 = ''';
             document.getElementById('total-features').textContent = formatNumber(data.reduce(function(s, p) { return s + p.total_features; }, 0));
             document.getElementById('total-list-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.list_resources || 0); }, 0));
             document.getElementById('total-actions').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.actions || 0); }, 0));
-            document.getElementById('framework-count').textContent = data.filter(function(p) { return p.cohort_framework_only || p.cohort_framework_sdkv2; }).length;
+            document.getElementById('v5-count').textContent = data.filter(function(p) { return p.protocol_v5; }).length;
+            document.getElementById('v6-count').textContent = data.filter(function(p) { return p.protocol_v6; }).length;
         }
         
         // Modal functionality
@@ -712,6 +727,11 @@ HTML_PART4 = ''';
                 var minRes = parseInt($('#filter-min-resources').val()) || 0;
                 if (row.resources < minRes) return false;
                 
+                var protocol = $('#filter-protocol').val();
+                if (protocol === 'v5' && (!row.protocol_v5 || row.protocol_v6)) return false;
+                if (protocol === 'v6' && (!row.protocol_v6 || row.protocol_v5)) return false;
+                if (protocol === 'both' && !(row.protocol_v5 && row.protocol_v6)) return false;
+                
                 var cohort = $('#filter-cohort').val();
                 if (cohort === 'framework' && !row.cohort_framework_only) return false;
                 if (cohort === 'sdkv2' && !row.cohort_sdkv2_only) return false;
@@ -720,7 +740,7 @@ HTML_PART4 = ''';
                 return true;
             });
             
-            $('#filter-tier, #filter-cohort').on('change', function() {
+            $('#filter-tier, #filter-cohort, #filter-protocol').on('change', function() {
                 table.draw();
                 updateMetrics(table.rows({ search: 'applied' }).data().toArray());
             });
