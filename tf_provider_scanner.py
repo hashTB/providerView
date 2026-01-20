@@ -74,6 +74,9 @@ class ProviderData:
     provider_functions: int = 0
     total_features: int = 0
     
+    # Detailed docs (for JSON export)
+    docs_detailed: dict = None
+    
     # Error tracking
     error: str = ""
 
@@ -216,6 +219,38 @@ def get_provider_docs(namespace: str, name: str, version: str = None) -> dict:
             continue
         cat = doc.get('category', 'unknown')
         categories[cat] = categories.get(cat, 0) + 1
+    
+    return categories
+
+
+def get_provider_docs_detailed(namespace: str, name: str, version: str = None) -> dict:
+    """Get detailed documentation including item names for a provider."""
+    if version:
+        url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}/{version}"
+    else:
+        url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}"
+    
+    data = make_request(url)
+    
+    if not data:
+        return {}
+    
+    docs = data.get('docs', [])
+    
+    # Group by category with details, only HCL docs
+    categories = {}
+    for doc in docs:
+        lang = doc.get('language', 'hcl')
+        if lang != 'hcl':
+            continue
+        cat = doc.get('category', 'unknown')
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append({
+            'title': doc.get('title', doc.get('slug', 'Unknown')),
+            'slug': doc.get('slug', ''),
+            'subcategory': doc.get('subcategory', '')
+        })
     
     return categories
 
@@ -382,6 +417,10 @@ def scan_provider(provider_info: dict) -> ProviderData:
         result.actions = doc_counts.get('actions', 0)
         result.provider_functions = doc_counts.get('functions', 0)
         
+        # Get detailed docs for JSON export (only for providers with actions or other interesting features)
+        if result.actions > 0 or result.list_resources > 0 or result.ephemeral_resources > 0 or result.provider_functions > 0:
+            result.docs_detailed = get_provider_docs_detailed(namespace, name, latest_version)
+        
         # Estimate resource identities based on framework usage
         result.resource_identities = estimate_resource_identities(
             result.managed_resources,
@@ -520,6 +559,24 @@ def write_csv(providers: list[ProviderData], output_file: str, include_summary: 
     print(f"\nWritten {len(providers)} providers to {output_file}")
 
 
+def write_details_json(providers: list, output_file: str):
+    """Write detailed docs to a JSON file for the dashboard."""
+    import json
+    
+    details = {}
+    for p in providers:
+        if p.docs_detailed:
+            details[p.provider] = {
+                'version': p.latest_version,
+                'docs': p.docs_detailed
+            }
+    
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(details, f, indent=2)
+    
+    print(f"Written details for {len(details)} providers to {output_file}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Scan Terraform providers and collect feature data.',
@@ -643,6 +700,10 @@ Examples:
     
     # Write results
     write_csv(results, args.output)
+    
+    # Write details JSON for dashboard
+    json_output = args.output.replace('.csv', '_details.json')
+    write_details_json(results, json_output)
     
     # Summary
     print("\n" + "=" * 60)

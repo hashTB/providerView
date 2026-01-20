@@ -281,6 +281,123 @@ HTML_PART1 = '''<!DOCTYPE html>
             color: var(--text-muted);
             font-size: 0.875rem;
         }
+        
+        /* Modal styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 900px;
+            margin: 50px auto;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+        
+        .modal-close:hover {
+            color: var(--text);
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-item {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid var(--border);
+        }
+        
+        .feature-item h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .feature-item p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        
+        .feature-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .feature-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+        
+        .clickable {
+            cursor: pointer;
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        .clickable:hover {
+            color: var(--primary-dark);
+        }
+        
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 8px 16px;
+            color: var(--text);
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+        
+        .tab-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .tab-btn:hover {
+            border-color: var(--primary);
+        }
     </style>
 </head>
 <body>
@@ -310,6 +427,10 @@ HTML_PART2 = '''</p>
             <div class="metric-card">
                 <div class="metric-value" id="total-list-resources">0</div>
                 <div class="metric-label">List Resources</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="total-actions">0</div>
+                <div class="metric-label">Actions</div>
             </div>
             <div class="metric-card">
                 <div class="metric-value" id="framework-count">0</div>
@@ -357,6 +478,7 @@ HTML_PART2 = '''</p>
                         <th>Cohort</th>
                         <th>Resources</th>
                         <th>List</th>
+                        <th>Actions</th>
                         <th>Identities</th>
                         <th>Data Sources</th>
                         <th>Total</th>
@@ -374,12 +496,27 @@ HTML_PART3 = ''' providers
         </footer>
     </div>
     
+    <!-- Modal for feature details -->
+    <div id="feature-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modal-title">Provider Details</h2>
+            <div class="tab-buttons" id="tab-buttons"></div>
+            <div id="modal-body">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
     <script>
         const providers = '''
+
+HTML_PART3B = ''';
+        const providerDetails = '''
 
 HTML_PART4 = ''';
         
@@ -405,24 +542,170 @@ HTML_PART4 = ''';
             document.getElementById('total-datasources').textContent = formatNumber(data.reduce(function(s, p) { return s + p.data_sources; }, 0));
             document.getElementById('total-features').textContent = formatNumber(data.reduce(function(s, p) { return s + p.total_features; }, 0));
             document.getElementById('total-list-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.list_resources || 0); }, 0));
+            document.getElementById('total-actions').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.actions || 0); }, 0));
             document.getElementById('framework-count').textContent = data.filter(function(p) { return p.cohort_framework_only || p.cohort_framework_sdkv2; }).length;
+        }
+        
+        // Modal functionality
+        var currentProviderData = null;
+        
+        function closeModal() {
+            document.getElementById('feature-modal').style.display = 'none';
+        }
+        
+        function openModal(provider, version, category) {
+            var modal = document.getElementById('feature-modal');
+            var title = document.getElementById('modal-title');
+            var body = document.getElementById('modal-body');
+            var tabs = document.getElementById('tab-buttons');
+            
+            title.textContent = provider + ' - Features';
+            body.innerHTML = '<div class="loading">Loading...</div>';
+            tabs.innerHTML = '';
+            modal.style.display = 'block';
+            
+            var parts = provider.split('/');
+            var namespace = parts[0];
+            var name = parts[1];
+            
+            // Check if we have embedded data first
+            if (providerDetails && providerDetails[provider] && providerDetails[provider].docs) {
+                var categories = providerDetails[provider].docs;
+                displayCategories(categories, category, namespace, name, tabs, body);
+                return;
+            }
+            
+            // Fall back to fetching from registry API
+            body.innerHTML = '<div class="loading">Loading from Terraform Registry...</div>';
+            var url = 'https://registry.terraform.io/v1/providers/' + namespace + '/' + name + '/' + version;
+            
+            fetch(url)
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    currentProviderData = data;
+                    
+                    // Group docs by category
+                    var categories = {};
+                    var docs = data.docs || [];
+                    docs.forEach(function(doc) {
+                        if (doc.language !== 'hcl') return;
+                        var cat = doc.category || 'other';
+                        if (!categories[cat]) categories[cat] = [];
+                        categories[cat].push({
+                            title: doc.title || doc.slug || 'Unknown',
+                            slug: doc.slug || '',
+                            subcategory: doc.subcategory || ''
+                        });
+                    });
+                    
+                    displayCategories(categories, category, namespace, name, tabs, body);
+                })
+                .catch(function(err) {
+                    body.innerHTML = '<div class="loading">Error loading data: ' + err.message + '<br><br>Try viewing on GitHub Pages where CORS is not an issue.</div>';
+                });
+        }
+        
+        function displayCategories(categories, category, namespace, name, tabs, body) {
+            // Create tabs
+            var tabOrder = ['actions', 'resources', 'list-resources', 'data-sources', 'ephemeral-resources', 'functions'];
+            var tabLabels = {
+                'actions': 'Actions',
+                'resources': 'Resources',
+                'list-resources': 'List Resources',
+                'data-sources': 'Data Sources',
+                'ephemeral-resources': 'Ephemeral',
+                'functions': 'Functions'
+            };
+            
+            tabs.innerHTML = '';
+            var firstTab = null;
+            tabOrder.forEach(function(cat) {
+                if (categories[cat] && categories[cat].length > 0) {
+                    var btn = document.createElement('button');
+                    btn.className = 'tab-btn' + (cat === category ? ' active' : '');
+                    btn.textContent = tabLabels[cat] + ' (' + categories[cat].length + ')';
+                    btn.onclick = function() { showCategory(cat, categories, namespace, name); };
+                    tabs.appendChild(btn);
+                    if (!firstTab) firstTab = cat;
+                }
+            });
+            
+            // Show requested category or first available
+            showCategory(categories[category] ? category : firstTab, categories, namespace, name);
+        }
+        
+        function showCategory(category, categories, namespace, name) {
+            var body = document.getElementById('modal-body');
+            var tabs = document.querySelectorAll('.tab-btn');
+            
+            // Update active tab
+            tabs.forEach(function(btn) {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().startsWith(category.replace('-', ' '))) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            var docs = categories[category] || [];
+            if (docs.length === 0) {
+                body.innerHTML = '<div class="loading">No items in this category</div>';
+                return;
+            }
+            
+            var html = '<ul class="feature-list">';
+            docs.forEach(function(doc) {
+                var title = doc.title || doc.slug || 'Unknown';
+                var slug = doc.slug || '';
+                var registryUrl = 'https://registry.terraform.io/providers/' + namespace + '/' + name + '/latest/docs/' + category + '/' + slug;
+                
+                html += '<li class="feature-item">';
+                html += '<h4><a href="' + registryUrl + '" target="_blank">' + title + '</a></h4>';
+                if (doc.subcategory) {
+                    html += '<p>Category: ' + doc.subcategory + '</p>';
+                }
+                html += '</li>';
+            });
+            html += '</ul>';
+            
+            body.innerHTML = html;
+        }
+        
+        // Close modal on click outside
+        document.getElementById('feature-modal').onclick = function(e) {
+            if (e.target === this) closeModal();
+        };
+        
+        // Close modal on Escape key
+        document.onkeydown = function(e) {
+            if (e.key === 'Escape') closeModal();
+        };
+        
+        // Render clickable action count
+        function renderClickable(data, type, row, category) {
+            if (type !== 'display') return data;
+            if (!data || data === 0) return '0';
+            return '<span class="clickable" onclick="openModal(\\'' + row.provider + '\\', \\'' + row.version + '\\', \\'' + category + '\\')">' + formatNumber(data) + '</span>';
         }
         
         $(document).ready(function() {
             var table = $('#providers-table').DataTable({
                 data: providers,
                 columns: [
-                    { data: 'provider' },
+                    { data: 'provider', render: function(d, t, row) {
+                        if (t !== 'display') return d;
+                        return '<span class="clickable" onclick="openModal(\\'' + d + '\\', \\'' + row.version + '\\', \\'actions\\')">' + d + '</span>';
+                    }},
                     { data: 'tier', render: function(d) { return getTierBadge(d); } },
                     { data: 'version' },
                     { data: 'published' },
                     { data: 'protocol_v5', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: 'protocol_v6', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: null, render: function(d, t, row) { return getCohort(row); } },
-                    { data: 'resources', render: formatNumber },
-                    { data: 'list_resources', render: formatNumber },
+                    { data: 'resources', render: function(d, t, row) { return renderClickable(d, t, row, 'resources'); } },
+                    { data: 'list_resources', render: function(d, t, row) { return renderClickable(d, t, row, 'list-resources'); } },
+                    { data: 'actions', render: function(d, t, row) { return renderClickable(d, t, row, 'actions'); } },
                     { data: 'identities', render: formatNumber },
-                    { data: 'data_sources', render: formatNumber },
+                    { data: 'data_sources', render: function(d, t, row) { return renderClickable(d, t, row, 'data-sources'); } },
                     { data: 'total_features', render: formatNumber }
                 ],
                 order: [[7, 'desc']],
@@ -520,6 +803,16 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
     provider_count = len(providers)
     providers_json = json.dumps(providers, indent=2)
     
+    # Try to load details JSON if it exists
+    details_path = csv_path.replace('.csv', '_details.json')
+    details_json = '{}'
+    try:
+        with open(details_path, 'r', encoding='utf-8') as f:
+            details_json = f.read()
+        print(f"   Loaded provider details from {details_path}")
+    except FileNotFoundError:
+        print(f"   No details file found at {details_path}, modal will fetch from API")
+    
     html = (
         HTML_PART1 +
         generated_date +
@@ -527,6 +820,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
         str(provider_count) +
         HTML_PART3 +
         providers_json +
+        HTML_PART3B +
+        details_json +
         HTML_PART4
     )
     
