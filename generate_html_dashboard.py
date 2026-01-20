@@ -308,6 +308,10 @@ HTML_PART2 = '''</p>
                 <div class="metric-label">Total Features</div>
             </div>
             <div class="metric-card">
+                <div class="metric-value" id="total-list-resources">0</div>
+                <div class="metric-label">List Resources</div>
+            </div>
+            <div class="metric-card">
                 <div class="metric-value" id="framework-count">0</div>
                 <div class="metric-label">Using Framework</div>
             </div>
@@ -352,6 +356,7 @@ HTML_PART2 = '''</p>
                         <th>v6</th>
                         <th>Cohort</th>
                         <th>Resources</th>
+                        <th>List</th>
                         <th>Identities</th>
                         <th>Data Sources</th>
                         <th>Total</th>
@@ -399,6 +404,7 @@ HTML_PART4 = ''';
             document.getElementById('total-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + p.resources; }, 0));
             document.getElementById('total-datasources').textContent = formatNumber(data.reduce(function(s, p) { return s + p.data_sources; }, 0));
             document.getElementById('total-features').textContent = formatNumber(data.reduce(function(s, p) { return s + p.total_features; }, 0));
+            document.getElementById('total-list-resources').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.list_resources || 0); }, 0));
             document.getElementById('framework-count').textContent = data.filter(function(p) { return p.cohort_framework_only || p.cohort_framework_sdkv2; }).length;
         }
         
@@ -414,6 +420,7 @@ HTML_PART4 = ''';
                     { data: 'protocol_v6', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: null, render: function(d, t, row) { return getCohort(row); } },
                     { data: 'resources', render: formatNumber },
+                    { data: 'list_resources', render: formatNumber },
                     { data: 'identities', render: formatNumber },
                     { data: 'data_sources', render: formatNumber },
                     { data: 'total_features', render: formatNumber }
