@@ -969,15 +969,24 @@ HTML_PART4 = ''';
                         return '<span class="clickable" onclick="openModal(\\'' + d + '\\', \\'' + row.version + '\\', \\'actions\\')">' + d + '</span>';
                     }},
                     { data: 'tier', render: function(d) { return getTierBadge(d); } },
-                    { data: 'downloads', render: function(d) { return formatDownloads(d || 0); } },
-                    { data: 'version_count', render: function(d) { return formatNumber(d || 0); } },
+                    { data: 'downloads', render: function(d, t) { 
+                        if (t === 'sort' || t === 'type') return d || 0;
+                        return formatDownloads(d || 0); 
+                    }},
+                    { data: 'version_count', render: function(d, t) { 
+                        if (t === 'sort' || t === 'type') return d || 0;
+                        return formatNumber(d || 0); 
+                    }},
                     { data: 'version' },
                     { data: 'published' },
                     { data: 'days_since_update', render: function(d) { return d != null ? d : '-'; } },
                     { data: 'protocol_v5', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: 'protocol_v6', render: function(d) { return d ? '<span class="check-mark">✓</span>' : ''; } },
                     { data: null, render: function(d, t, row) { return getCohort(row); } },
-                    { data: 'subcategories', render: function(d) { return formatNumber(d || 0); } },
+                    { data: 'subcategories', render: function(d, t) { 
+                        if (t === 'sort' || t === 'type') return d || 0;
+                        return formatNumber(d || 0); 
+                    }},
                     { data: 'resources', render: function(d, t, row) { return renderClickable(d, t, row, 'resources'); } },
                     { data: 'list_resources', render: function(d, t, row) { return renderClickable(d, t, row, 'list-resources'); } },
                     { data: 'actions', render: function(d, t, row) { return renderClickable(d, t, row, 'actions'); } },

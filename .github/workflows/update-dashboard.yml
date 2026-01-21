@@ -25,7 +25,7 @@ on:
       incremental:
         description: 'Incremental mode (only scan changed providers)'
         required: false
-        default: true
+        default: false
         type: boolean
 
 # Sets permissions for GitHub Pages deployment
