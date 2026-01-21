@@ -25,7 +25,7 @@ on:
       incremental:
         description: 'Incremental mode (only scan changed providers)'
         required: false
-        default: false
+        default: true
         type: boolean
 
 # Sets permissions for GitHub Pages deployment
@@ -54,6 +54,8 @@ jobs:
           path: |
             terraform_providers.csv
             terraform_providers_details.json
+            data/snapshots
+            data/history.json
           key: provider-data-${{ hashFiles('terraform_providers.csv') }}
           restore-keys: |
             provider-data-
@@ -87,8 +89,23 @@ jobs:
             echo "Incremental mode enabled - will only scan changed providers"
           fi
           
+          # Add snapshot saving on Sundays or manual trigger
+          DAY_OF_WEEK=$(date +%u)
+          if [ "$DAY_OF_WEEK" = "7" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            CMD="$CMD --snapshot --snapshot-dir data/snapshots"
+            echo "Weekly snapshot will be saved"
+          fi
+          
           echo "Running: $CMD"
           $CMD
+
+      - name: Build history from snapshots
+        run: |
+          if [ -d "data/snapshots" ]; then
+            python3 build_history.py
+          else
+            echo "No snapshots directory found, skipping history build"
+          fi
 
       - name: Save cache for next run
         uses: actions/cache/save@v4
@@ -96,6 +113,8 @@ jobs:
           path: |
             terraform_providers.csv
             terraform_providers_details.json
+            data/snapshots
+            data/history.json
           key: provider-data-${{ hashFiles('terraform_providers.csv') }}
 
       - name: Generate HTML dashboard
@@ -107,10 +126,11 @@ jobs:
 
       - name: Create pages artifact
         run: |
-          mkdir -p _site
+          mkdir -p _site/data
           cp index.html _site/
           cp terraform_providers.csv _site/
           cp terraform_providers_details.json _site/ 2>/dev/null || true
+          cp data/history.json _site/data/ 2>/dev/null || true
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

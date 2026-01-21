@@ -627,6 +627,24 @@ HTML_PART3 = ''' providers</span>
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal()">&times;</span>
             <h2 class="modal-title" id="modal-title">Provider Details</h2>
+            <div id="trend-chart-container" style="display: none; margin-bottom: 20px;">
+                <h3 style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 10px;">📈 HISTORICAL TRENDS</h3>
+                <div style="margin-bottom: 10px;">
+                    <span style="color: var(--text-muted); font-size: 0.8rem; margin-right: 10px;">Right axis:</span>
+                    <label style="color: #06b6d4; margin-right: 12px; cursor: pointer; font-size: 0.85rem;">
+                        <input type="checkbox" id="toggle-downloads" checked onchange="updateTrendDatasets()"> Downloads
+                    </label>
+                    <label style="color: #22c55e; margin-right: 12px; cursor: pointer; font-size: 0.85rem;">
+                        <input type="checkbox" id="toggle-resources" onchange="updateTrendDatasets()"> Resources
+                    </label>
+                    <label style="color: #f97316; margin-right: 12px; cursor: pointer; font-size: 0.85rem;">
+                        <input type="checkbox" id="toggle-datasources" onchange="updateTrendDatasets()"> Data Sources
+                    </label>
+                </div>
+                <div style="height: 200px;">
+                    <canvas id="trend-chart"></canvas>
+                </div>
+            </div>
             <div class="tab-buttons" id="tab-buttons"></div>
             <div id="modal-body">
                 <div class="loading">Loading...</div>
@@ -645,6 +663,9 @@ HTML_PART3 = ''' providers</span>
 
 HTML_PART3B = ''';
         const providerDetails = '''
+
+HTML_PART3C = ''';
+        const providerHistory = '''
 
 HTML_PART4 = ''';
         
@@ -863,6 +884,7 @@ HTML_PART4 = ''';
             if (providerDetails && providerDetails[provider] && providerDetails[provider].docs) {
                 var categories = providerDetails[provider].docs;
                 displayCategories(categories, category, namespace, name, tabs, body);
+                showTrendChart(provider);
                 return;
             }
             
@@ -876,6 +898,7 @@ HTML_PART4 = ''';
                 '<p style="color: var(--text-muted); margin-top: 20px; font-size: 0.9em;">' +
                 'Run the scanner again to cache this provider\\'s details.</p>' +
                 '</div>';
+            showTrendChart(provider);
         }
         
         function displayCategories(categories, category, namespace, name, tabs, body) {
@@ -941,6 +964,198 @@ HTML_PART4 = ''';
             html += '</ul>';
             
             body.innerHTML = html;
+        }
+        
+        // Trend chart instance and data
+        var trendChartInstance = null;
+        var trendChartData = null;
+        
+        function updateTrendDatasets() {
+            if (!trendChartInstance || !trendChartData) return;
+            
+            var showDownloads = document.getElementById('toggle-downloads').checked;
+            var showResources = document.getElementById('toggle-resources').checked;
+            var showDataSources = document.getElementById('toggle-datasources').checked;
+            
+            // Build datasets array - List Resources always first (left axis)
+            var datasets = [{
+                label: 'List Resources',
+                data: trendChartData.listResources,
+                borderColor: 'rgba(168, 85, 247, 1)',
+                backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                yAxisID: 'y1',
+                tension: 0.3,
+                pointRadius: 6,
+                borderWidth: 3
+            }];
+            
+            if (showDownloads) {
+                datasets.push({
+                    label: 'Downloads',
+                    data: trendChartData.downloads,
+                    borderColor: 'rgba(6, 182, 212, 1)',
+                    backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                    yAxisID: 'y2',
+                    tension: 0.3,
+                    pointRadius: 4
+                });
+            }
+            if (showResources) {
+                datasets.push({
+                    label: 'Resources',
+                    data: trendChartData.resources,
+                    borderColor: 'rgba(34, 197, 94, 1)',
+                    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                    yAxisID: 'y2',
+                    tension: 0.3,
+                    pointRadius: 4
+                });
+            }
+            if (showDataSources) {
+                datasets.push({
+                    label: 'Data Sources',
+                    data: trendChartData.dataSources,
+                    borderColor: 'rgba(249, 115, 22, 1)',
+                    backgroundColor: 'rgba(249, 115, 22, 0.1)',
+                    yAxisID: 'y2',
+                    tension: 0.3,
+                    pointRadius: 4
+                });
+            }
+            
+            trendChartInstance.data.datasets = datasets;
+            trendChartInstance.update();
+        }
+        
+        function showTrendChart(provider) {
+            var container = document.getElementById('trend-chart-container');
+            var canvas = document.getElementById('trend-chart');
+            
+            // Check if we have history data
+            if (!providerHistory || !providerHistory.providers || !providerHistory.providers[provider]) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            var dates = providerHistory.dates || [];
+            var pHistory = providerHistory.providers[provider];
+            
+            // Need at least 1 data point to show chart
+            if (dates.length < 1) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            container.style.display = 'block';
+            
+            // Prepare labels (MM-DD format)
+            var labels = dates.map(function(d) { 
+                return d.substring(5); // MM-DD
+            });
+            
+            // Get data arrays directly from history
+            var downloads = pHistory.downloads || [];
+            var resources = pHistory.resources || [];
+            var dataSources = pHistory.data_sources || [];
+            var listResources = pHistory.list_resources || [];
+            
+            // Store for toggle updates
+            trendChartData = {
+                labels: labels,
+                downloads: downloads,
+                resources: resources,
+                dataSources: dataSources,
+                listResources: listResources
+            };
+            
+            // Destroy previous chart
+            if (trendChartInstance) {
+                trendChartInstance.destroy();
+            }
+            
+            // Reset checkboxes
+            document.getElementById('toggle-downloads').checked = true;
+            document.getElementById('toggle-resources').checked = false;
+            document.getElementById('toggle-datasources').checked = false;
+            
+            // Create new chart with List Resources on left, Downloads on right by default
+            var ctx = canvas.getContext('2d');
+            trendChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'List Resources',
+                            data: listResources,
+                            borderColor: 'rgba(168, 85, 247, 1)',
+                            backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                            yAxisID: 'y1',
+                            tension: 0.3,
+                            pointRadius: 6,
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'Downloads',
+                            data: downloads,
+                            borderColor: 'rgba(6, 182, 212, 1)',
+                            backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                            yAxisID: 'y2',
+                            tension: 0.3,
+                            pointRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#94a3b8' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(ctx) {
+                                    var val = ctx.parsed.y;
+                                    if (ctx.dataset.label === 'Downloads') {
+                                        return ctx.dataset.label + ': ' + formatNumber(val);
+                                    }
+                                    return ctx.dataset.label + ': ' + val;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: 'rgba(148, 163, 184, 0.1)' }
+                        },
+                        y1: {
+                            type: 'linear',
+                            position: 'left',
+                            title: { display: true, text: 'List Resources', color: 'rgba(168, 85, 247, 1)' },
+                            ticks: { 
+                                color: 'rgba(168, 85, 247, 1)'
+                            },
+                            grid: { color: 'rgba(148, 163, 184, 0.1)' }
+                        },
+                        y2: {
+                            type: 'linear',
+                            position: 'right',
+                            title: { display: true, text: 'Other Metrics', color: '#94a3b8' },
+                            ticks: { 
+                                color: 'rgba(6, 182, 212, 1)',
+                                callback: function(val) { return formatNumber(val); }
+                            },
+                            grid: { drawOnChartArea: false }
+                        }
+                    }
+                }
+            });
         }
         
         // Close modal on click outside
@@ -1125,6 +1340,17 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
     except FileNotFoundError:
         print(f"   No details file found at {details_path}, modal will fetch from API")
     
+    # Try to load history JSON if it exists
+    csv_dir = Path(csv_path).parent
+    history_path = csv_dir / 'data' / 'history.json'
+    history_json = '{}'
+    try:
+        with open(history_path, 'r', encoding='utf-8') as f:
+            history_json = f.read()
+        print(f"   Loaded history data from {history_path}")
+    except FileNotFoundError:
+        print(f"   No history file found at {history_path}, trend charts will be disabled")
+    
     html = (
         HTML_PART1 +
         generated_date +
@@ -1134,6 +1360,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
         providers_json +
         HTML_PART3B +
         details_json +
+        HTML_PART3C +
+        history_json +
         HTML_PART4
     )
     

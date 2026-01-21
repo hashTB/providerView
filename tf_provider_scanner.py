@@ -694,6 +694,41 @@ def write_details_json(providers: list, output_file: str):
     print(f"Written details for {len(details)} providers to {output_file}")
 
 
+def save_snapshot(providers: list, snapshot_dir: str):
+    """Save a dated snapshot for historical tracking."""
+    from pathlib import Path
+    
+    # Create snapshot directory
+    snapshot_path = Path(snapshot_dir)
+    snapshot_path.mkdir(parents=True, exist_ok=True)
+    
+    # Generate filename with today's date
+    today = datetime.now().strftime('%Y-%m-%d')
+    filename = snapshot_path / f"snapshot_{today}.json"
+    
+    # Build snapshot data (compact format)
+    snapshot = {}
+    for p in providers:
+        snapshot[p.provider] = {
+            'downloads': p.downloads,
+            'resources': p.managed_resources,
+            'data_sources': p.data_sources,
+            'list_resources': p.list_resources,
+            'actions': p.actions,
+            'ephemeral_resources': p.ephemeral_resources,
+            'functions': p.provider_functions,
+            'total_features': p.total_features,
+            'version': p.latest_version,
+            'version_count': p.version_count,
+        }
+    
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(snapshot, f)
+    
+    print(f"Saved snapshot to {filename} ({len(snapshot)} providers)")
+    return str(filename)
+
+
 def load_existing_csv(csv_file: str) -> dict:
     """Load existing CSV data for incremental scanning.
     
@@ -871,6 +906,19 @@ Examples:
         help='Only scan providers that have changed since last run (compares versions)'
     )
     
+    parser.add_argument(
+        '--snapshot',
+        action='store_true',
+        help='Save a dated snapshot for historical tracking'
+    )
+    
+    parser.add_argument(
+        '--snapshot-dir',
+        type=str,
+        default='snapshots',
+        help='Directory to save snapshots (default: snapshots)'
+    )
+    
     args = parser.parse_args()
     
     # Set global flag for GitHub checks
@@ -1023,6 +1071,10 @@ Examples:
         print(f"\nProviders with errors: {len(errors)}")
         for p in errors[:5]:  # Show first 5 errors
             print(f"  - {p.provider}: {p.error}")
+    
+    # Save snapshot for historical tracking
+    if args.snapshot:
+        save_snapshot(results, args.snapshot_dir)
 
 
 if __name__ == '__main__':
