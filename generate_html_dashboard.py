@@ -816,7 +816,7 @@ def parse_csv(csv_path: str) -> list:
                 'provider': row.get('Provider', ''),
                 'tier': row.get('Tier', ''),
                 'downloads': parse_downloads(row.get('Downloads', '')),
-                'version_count': parse_int(row.get('Versions', 0)),
+                'version_count': parse_int(row.get('Version Count', 0)),
                 'version': row.get('Latest Version', ''),
                 'published': row.get('Latest Version Published', ''),
                 'days_since_update': parse_int(row.get('Days Since Update', 0)),
