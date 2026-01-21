@@ -29,15 +29,14 @@ HTML_PART1 = '''<!DOCTYPE html>
     <link href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #64748b;
-            --primary-dark: #475569;
+            --primary: #06b6d4;
+            --primary-dark: #0891b2;
             --bg: #0f172a;
             --bg-card: #1e293b;
             --text: #e2e8f0;
             --text-muted: #94a3b8;
             --border: #334155;
             --success: #22c55e;
-            --accent: #06b6d4;
         }
         
         * {
@@ -281,6 +280,49 @@ HTML_PART1 = '''<!DOCTYPE html>
             margin-top: 40px;
             color: var(--text-muted);
             font-size: 0.875rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .color-picker-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .color-picker-group label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        .color-picker-group input[type="color"] {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+        }
+        
+        .color-presets {
+            display: flex;
+            gap: 6px;
+        }
+        
+        .color-preset {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .color-preset:hover {
+            border-color: var(--text);
         }
         
         /* Modal styles */
@@ -399,6 +441,39 @@ HTML_PART1 = '''<!DOCTYPE html>
         .tab-btn:hover {
             border-color: var(--primary);
         }
+        
+        .chart-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .chart-section {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .chart-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .chart-card h3 {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 280px;
+        }
     </style>
 </head>
 <body>
@@ -444,6 +519,21 @@ HTML_PART2 = '''</p>
             <div class="metric-card">
                 <div class="metric-value" id="v6-count">0</div>
                 <div class="metric-label">Protocol v6 (Framework)</div>
+            </div>
+        </div>
+        
+        <div class="chart-section">
+            <div class="chart-card">
+                <h3>Downloads by Provider</h3>
+                <div class="chart-container">
+                    <canvas id="downloads-chart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>Resources by Provider</h3>
+                <div class="chart-container">
+                    <canvas id="resources-chart"></canvas>
+                </div>
             </div>
         </div>
         
@@ -513,9 +603,22 @@ HTML_PART2 = '''</p>
         </div>
         
         <footer>
-            Data from Terraform Registry API | '''
+            <span>Data from Terraform Registry API |</span>
+            <span id="provider-count">'''
 
-HTML_PART3 = ''' providers
+HTML_PART3 = ''' providers</span>
+            <div class="color-picker-group">
+                <label>Theme:</label>
+                <div class="color-presets">
+                    <div class="color-preset" style="background: #06b6d4" onclick="setColor('#06b6d4', '#0891b2')" title="Cyan"></div>
+                    <div class="color-preset" style="background: #8b5cf6" onclick="setColor('#8b5cf6', '#7c3aed')" title="Purple"></div>
+                    <div class="color-preset" style="background: #f59e0b" onclick="setColor('#f59e0b', '#d97706')" title="Amber"></div>
+                    <div class="color-preset" style="background: #10b981" onclick="setColor('#10b981', '#059669')" title="Emerald"></div>
+                    <div class="color-preset" style="background: #ec4899" onclick="setColor('#ec4899', '#db2777')" title="Pink"></div>
+                    <div class="color-preset" style="background: #3b82f6" onclick="setColor('#3b82f6', '#2563eb')" title="Blue"></div>
+                </div>
+                <input type="color" id="custom-color" value="#06b6d4" onchange="setColor(this.value, this.value)" title="Custom color">
+            </div>
         </footer>
     </div>
     
@@ -535,6 +638,8 @@ HTML_PART3 = ''' providers
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script>
         const providers = '''
 
@@ -542,6 +647,23 @@ HTML_PART3B = ''';
         const providerDetails = '''
 
 HTML_PART4 = ''';
+        
+        function setColor(primary, dark) {
+            document.documentElement.style.setProperty('--primary', primary);
+            document.documentElement.style.setProperty('--primary-dark', dark);
+            document.getElementById('custom-color').value = primary;
+            localStorage.setItem('dashboard-color', primary);
+            localStorage.setItem('dashboard-color-dark', dark);
+        }
+        
+        // Load saved color on page load
+        (function() {
+            var savedColor = localStorage.getItem('dashboard-color');
+            var savedDark = localStorage.getItem('dashboard-color-dark');
+            if (savedColor && savedDark) {
+                setColor(savedColor, savedDark);
+            }
+        })();
         
         function formatNumber(n) {
             return n.toLocaleString();
@@ -577,6 +699,142 @@ HTML_PART4 = ''';
             document.getElementById('total-actions').textContent = formatNumber(data.reduce(function(s, p) { return s + (p.actions || 0); }, 0));
             document.getElementById('v5-count').textContent = data.filter(function(p) { return p.protocol_v5; }).length;
             document.getElementById('v6-count').textContent = data.filter(function(p) { return p.protocol_v6; }).length;
+            
+            // Update charts
+            updateCharts(data);
+        }
+        
+        var downloadsChart = null;
+        var resourcesChart = null;
+        
+        function updateCharts(data) {
+            var chartColors = [
+                '#06b6d4', '#8b5cf6', '#f59e0b', '#10b981', '#ec4899', 
+                '#3b82f6', '#ef4444', '#84cc16', '#f97316', '#6366f1',
+                '#14b8a6', '#a855f7', '#eab308', '#22c55e', '#f43f5e'
+            ];
+            
+            // Sort by downloads and take top providers
+            var sorted = data.slice().sort(function(a, b) { return (b.downloads || 0) - (a.downloads || 0); });
+            var topN = Math.min(8, sorted.length);
+            var top = sorted.slice(0, topN);
+            var othersDownloads = sorted.slice(topN).reduce(function(s, p) { return s + (p.downloads || 0); }, 0);
+            
+            var labels = top.map(function(p) { return p.provider.split('/')[1]; });
+            var downloadData = top.map(function(p) { return p.downloads || 0; });
+            
+            if (othersDownloads > 0) {
+                labels.push('Others');
+                downloadData.push(othersDownloads);
+            }
+            
+            var totalDl = downloadData.reduce(function(s, v) { return s + v; }, 0);
+            
+            // Destroy existing charts
+            if (downloadsChart) downloadsChart.destroy();
+            if (resourcesChart) resourcesChart.destroy();
+            
+            // Downloads pie chart
+            var ctx1 = document.getElementById('downloads-chart').getContext('2d');
+            downloadsChart = new Chart(ctx1, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: downloadData,
+                        backgroundColor: chartColors.slice(0, labels.length),
+                        borderColor: '#1e293b',
+                        borderWidth: 2
+                    }]
+                },
+                plugins: [ChartDataLabels],
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        datalabels: {
+                            color: '#fff',
+                            font: { weight: 'bold', size: 11 },
+                            formatter: function(value, ctx) {
+                                var pct = ((value / totalDl) * 100).toFixed(1);
+                                if (pct < 3) return '';
+                                var label = ctx.chart.data.labels[ctx.dataIndex];
+                                return label + '\\n' + pct + '%';
+                            },
+                            textAlign: 'center'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(ctx) {
+                                    var pct = ((ctx.raw / totalDl) * 100).toFixed(1);
+                                    return ctx.label + ': ' + formatDownloads(ctx.raw) + ' (' + pct + '%)';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Resources chart - same approach
+            var sortedRes = data.slice().sort(function(a, b) { return (b.resources || 0) - (a.resources || 0); });
+            var topRes = sortedRes.slice(0, topN);
+            var othersRes = sortedRes.slice(topN).reduce(function(s, p) { return s + (p.resources || 0); }, 0);
+            
+            var resLabels = topRes.map(function(p) { return p.provider.split('/')[1]; });
+            var resData = topRes.map(function(p) { return p.resources || 0; });
+            
+            if (othersRes > 0) {
+                resLabels.push('Others');
+                resData.push(othersRes);
+            }
+            
+            var totalRes = resData.reduce(function(s, v) { return s + v; }, 0);
+            
+            var ctx2 = document.getElementById('resources-chart').getContext('2d');
+            resourcesChart = new Chart(ctx2, {
+                type: 'pie',
+                data: {
+                    labels: resLabels,
+                    datasets: [{
+                        data: resData,
+                        backgroundColor: chartColors.slice(0, resLabels.length),
+                        borderColor: '#1e293b',
+                        borderWidth: 2
+                    }]
+                },
+                plugins: [ChartDataLabels],
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        datalabels: {
+                            color: '#fff',
+                            font: { weight: 'bold', size: 11 },
+                            formatter: function(value, ctx) {
+                                var pct = ((value / totalRes) * 100).toFixed(1);
+                                if (pct < 3) return '';
+                                var label = ctx.chart.data.labels[ctx.dataIndex];
+                                return label + '\\n' + pct + '%';
+                            },
+                            textAlign: 'center'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(ctx) {
+                                    var pct = ((ctx.raw / totalRes) * 100).toFixed(1);
+                                    return ctx.label + ': ' + formatNumber(ctx.raw) + ' (' + pct + '%)';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
         }
         
         // Modal functionality
