@@ -478,7 +478,7 @@ HTML_PART1 = '''<!DOCTYPE html>
 </head>
 <body>
     <div class="container">
-        <h1>🏗️ Terraform Provider Dashboard</h1>
+        <h1><svg style="height: 1.2em; vertical-align: middle; margin-right: 8px;" viewBox="0 0 64 64" fill="currentColor"><polygon points="22.5,11.2 22.5,33.5 41.9,44.7 41.9,22.3"/><polygon points="44.1,22.3 44.1,44.7 63.5,33.5 63.5,11.2"/><polygon points="0.5,0 0.5,22.3 19.9,33.5 19.9,11.2"/><polygon points="22.5,36.1 22.5,58.4 41.9,69.6 41.9,47.3"/></svg>Terraform Provider Dashboard</h1>
         <p class="subtitle">Generated on '''
 
 HTML_PART2 = '''</p>
