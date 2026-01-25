@@ -28,9 +28,9 @@ on:
         default: true
         type: boolean
 
-# Sets permissions for GitHub Pages deployment
+# Sets permissions for GitHub Pages deployment and committing data
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -105,6 +105,28 @@ jobs:
             python3 build_history.py
           else
             echo "No snapshots directory found, skipping history build"
+          fi
+
+      - name: Commit snapshots and history to repo
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add data files if they exist
+          if [ -d "data/snapshots" ]; then
+            git add data/snapshots/*.json 2>/dev/null || true
+          fi
+          if [ -f "data/history.json" ]; then
+            git add data/history.json
+          fi
+          
+          # Commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update historical snapshots [skip ci]"
+            git push
+            echo "Committed snapshot data to repo"
           fi
 
       - name: Save cache for next run
