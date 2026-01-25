@@ -141,7 +141,17 @@ jobs:
 
       - name: Generate HTML dashboard
         run: |
-          python3 generate_html_dashboard.py terraform_providers.csv index.html
+          echo "=== Debug: checking for data files ==="
+          ls -la data/ 2>/dev/null || echo "No data/ folder"
+          ls -la data/history.json 2>/dev/null || echo "No data/history.json"
+          
+          if [ -f "data/history.json" ]; then
+            echo "Found history.json, passing explicitly to generator"
+            python3 generate_html_dashboard.py terraform_providers.csv index.html data/history.json
+          else
+            echo "No history.json found, generating without history"
+            python3 generate_html_dashboard.py terraform_providers.csv index.html
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

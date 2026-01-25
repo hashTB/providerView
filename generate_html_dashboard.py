@@ -1323,7 +1323,7 @@ def parse_csv(csv_path: str) -> list:
     return providers
 
 
-def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
+def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_file: str = None):
     """Generate the HTML dashboard from CSV data."""
     providers = parse_csv(csv_path)
     generated_date = datetime.now().strftime('%Y-%m-%d %H:%M')
@@ -1340,16 +1340,26 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html'):
     except FileNotFoundError:
         print(f"   No details file found at {details_path}, modal will fetch from API")
     
-    # Try to load history JSON if it exists
-    csv_dir = Path(csv_path).parent
-    history_path = csv_dir / 'data' / 'history.json'
+    # Try to load history JSON - use explicit path if provided, otherwise auto-detect
     history_json = '{}'
+    if history_file:
+        history_path = Path(history_file)
+    else:
+        csv_dir = Path(csv_path).parent
+        history_path = csv_dir / 'data' / 'history.json'
+    
+    print(f"   Looking for history at: {history_path.absolute()}")
     try:
         with open(history_path, 'r', encoding='utf-8') as f:
             history_json = f.read()
-        print(f"   Loaded history data from {history_path}")
+        # Validate it's not empty
+        if history_json.strip() and history_json.strip() != '{}':
+            print(f"   ✅ Loaded history data from {history_path} ({len(history_json)} bytes)")
+        else:
+            print(f"   ⚠️  History file exists but is empty at {history_path}")
+            history_json = '{}'
     except FileNotFoundError:
-        print(f"   No history file found at {history_path}, trend charts will be disabled")
+        print(f"   ⚠️  No history file found at {history_path}, trend charts will be disabled")
     
     html = (
         HTML_PART1 +
@@ -1379,10 +1389,11 @@ if __name__ == '__main__':
             csv_path = str(csv_files[0])
             print(f"Using: {csv_path}")
         else:
-            print("Usage: python3 generate_html_dashboard.py <csv_file>")
+            print("Usage: python3 generate_html_dashboard.py <csv_file> [output_file] [history_file]")
             sys.exit(1)
     else:
         csv_path = sys.argv[1]
     
     output_path = sys.argv[2] if len(sys.argv) > 2 else 'dashboard.html'
-    generate_html(csv_path, output_path)
+    history_path_arg = sys.argv[3] if len(sys.argv) > 3 else None
+    generate_html(csv_path, output_path, history_path_arg)
