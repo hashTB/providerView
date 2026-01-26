@@ -47,18 +47,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Restore cached provider data
-        id: cache-restore
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            terraform_providers.csv
-            terraform_providers_details.json
-            data/snapshots
-            data/history.json
-          key: provider-data-${{ hashFiles('terraform_providers.csv') }}
-          restore-keys: |
-            provider-data-
+      # TEMPORARILY DISABLED: Cache was causing stale data issues
+      # - name: Restore cached provider data
+      #   id: cache-restore
+      #   uses: actions/cache/restore@v4
+      #   with:
+      #     path: |
+      #       terraform_providers.csv
+      #       terraform_providers_details.json
+      #       data/snapshots
+      #       data/history.json
+      #     key: provider-data-${{ hashFiles('terraform_providers.csv') }}
+      #     restore-keys: |
+      #       provider-data-
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,6 +68,9 @@ jobs:
 
       - name: Run provider scanner
         run: |
+          # Remove any stale cached CSV to force full re-scan
+          rm -f terraform_providers.csv terraform_providers_details.json
+          
           # Build command based on inputs (no --no-github for accurate v5/v6 detection)
           CMD="python3 tf_provider_scanner.py --output terraform_providers.csv"
           
