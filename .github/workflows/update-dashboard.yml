@@ -82,9 +82,10 @@ jobs:
             CMD="$CMD --limit $LIMIT"
           fi
           
-          # Add incremental mode (default for scheduled runs)
+          # Add incremental mode - DISABLED to force full re-scan and fix cohort detection
+          # Re-enable after next successful run by setting default back to true
           INCREMENTAL="${{ github.event.inputs.incremental }}"
-          if [ "$INCREMENTAL" != "false" ] && [ -f "terraform_providers.csv" ]; then
+          if [ "$INCREMENTAL" = "true" ] && [ -f "terraform_providers.csv" ]; then
             CMD="$CMD --incremental"
             echo "Incremental mode enabled - will only scan changed providers"
           fi
