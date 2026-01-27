@@ -5,11 +5,21 @@ on:
   schedule:
     - cron: '0 6 * * 4'
   
-  # Allow manual trigger
+  # Allow manual trigger with stage selection
   workflow_dispatch:
     inputs:
+      stage:
+        description: 'Which stage to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - fetch
+          - analyze
+          - dashboard
       tier:
-        description: 'Provider tier to scan'
+        description: 'Provider tier to fetch'
         required: false
         default: 'all'
         type: choice
@@ -17,157 +27,175 @@ on:
           - all
           - official
           - partner
-      limit:
-        description: 'Max providers to scan (0 = no limit)'
-        required: false
-        default: '0'
-        type: string
-      incremental:
-        description: 'Incremental mode (only scan changed providers)'
-        required: false
-        default: true
-        type: boolean
 
-# Sets permissions for GitHub Pages deployment and committing data
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  build:
+  fetch:
     runs-on: ubuntu-latest
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'fetch' || github.event_name == 'schedule'
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      # TEMPORARILY DISABLED: Cache was causing stale data issues
-      # - name: Restore cached provider data
-      #   id: cache-restore
-      #   uses: actions/cache/restore@v4
-      #   with:
-      #     path: |
-      #       terraform_providers.csv
-      #       terraform_providers_details.json
-      #       data/snapshots
-      #       data/history.json
-      #     key: provider-data-${{ hashFiles('terraform_providers.csv') }}
-      #     restore-keys: |
-      #       provider-data-
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Run provider scanner
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch provider data from Registry API
         run: |
-          # Remove any stale cached CSV to force full re-scan
-          rm -f terraform_providers.csv terraform_providers_details.json
-          
-          # Build command based on inputs (no --no-github for accurate v5/v6 detection)
-          CMD="python3 tf_provider_scanner.py --output terraform_providers.csv"
-          
-          # Add tier filter (default: all providers)
           TIER="${{ github.event.inputs.tier || 'all' }}"
-          if [ "$TIER" != "all" ]; then
-            CMD="$CMD --tier $TIER"
-          fi
           
-          # Add limit if specified
-          LIMIT="${{ github.event.inputs.limit || '0' }}"
-          if [ "$LIMIT" != "0" ]; then
-            CMD="$CMD --limit $LIMIT"
-          fi
-          
-          # Add incremental mode - DISABLED to force full re-scan and fix cohort detection
-          # Re-enable after next successful run by setting default back to true
-          INCREMENTAL="${{ github.event.inputs.incremental }}"
-          if [ "$INCREMENTAL" = "true" ] && [ -f "terraform_providers.csv" ]; then
-            CMD="$CMD --incremental"
-            echo "Incremental mode enabled - will only scan changed providers"
-          fi
-          
-          # Always save snapshot since we run weekly now
-          CMD="$CMD --snapshot --snapshot-dir data/snapshots"
-          echo "Weekly snapshot will be saved"
-          
-          echo "Running: $CMD"
-          $CMD
-          
-          # Debug: show what was generated
-          echo "=== Checking generated CSV ==="
-          if [ -f "terraform_providers.csv" ]; then
-            echo "CSV generated with $(wc -l < terraform_providers.csv) lines"
-            echo "Sample AWS row:"
-            grep "hashicorp/aws," terraform_providers.csv | head -1
+          if [ "$TIER" = "all" ]; then
+            python3 fetch_providers.py --output data/raw
           else
-            echo "ERROR: CSV not generated!"
+            python3 fetch_providers.py --tier $TIER --output data/raw
+          fi
+          
+          echo "=== Fetch complete ==="
+          ls -la data/raw/
+
+      - name: Commit raw data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add data/raw/*.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to raw data"
+          else
+            git commit -m "Fetch provider data $(date +%Y-%m-%d)"
+            git push
+            echo "Committed raw data"
+          fi
+
+  analyze:
+    runs-on: ubuntu-latest
+    needs: fetch
+    if: always() && (github.event.inputs.stage == 'all' || github.event.inputs.stage == 'analyze' || github.event_name == 'schedule')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest including fetch commit
+
+      - name: Pull latest changes
+        run: git pull origin main || true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Analyze provider data
+        run: |
+          echo "=== Available raw data ==="
+          ls -la data/raw/ || echo "No raw data directory"
+          
+          if [ -f "data/raw/providers_latest.json" ]; then
+            python3 analyze_providers.py --csv terraform_providers.csv
+            
+            echo "=== Sample output (AWS) ==="
+            grep "hashicorp/aws," terraform_providers.csv | head -1 || echo "AWS not found"
+          else
+            echo "ERROR: No raw data found. Run fetch stage first."
             exit 1
           fi
+
+      - name: Commit analyzed data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add terraform_providers.csv
+          git add data/processed/*.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to analyzed data"
+          else
+            git commit -m "Analyze provider data $(date +%Y-%m-%d)"
+            git push
+            echo "Committed analyzed data"
+          fi
+
+  dashboard:
+    runs-on: ubuntu-latest
+    needs: analyze
+    if: always() && (github.event.inputs.stage == 'all' || github.event.inputs.stage == 'dashboard' || github.event_name == 'schedule')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest changes
+        run: git pull origin main || true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Build history from snapshots
         run: |
           if [ -d "data/snapshots" ]; then
             python3 build_history.py
           else
-            echo "No snapshots directory found, skipping history build"
+            echo "No snapshots directory, skipping history build"
           fi
 
-      - name: Commit data files to repo
+      - name: Generate HTML dashboard
+        run: |
+          if [ -f "terraform_providers.csv" ]; then
+            if [ -f "data/history.json" ]; then
+              python3 generate_html_dashboard.py terraform_providers.csv index.html data/history.json
+            else
+              python3 generate_html_dashboard.py terraform_providers.csv index.html
+            fi
+            
+            echo "=== Dashboard generated ==="
+            ls -la index.html
+          else
+            echo "ERROR: No CSV found. Run analyze stage first."
+            exit 1
+          fi
+
+      - name: Create snapshot (weekly)
+        run: |
+          mkdir -p data/snapshots
+          DATE=$(date +%Y-%m-%d)
+          
+          if [ -f "data/processed/providers_analyzed.json" ]; then
+            cp data/processed/providers_analyzed.json "data/snapshots/snapshot_${DATE}.json"
+            echo "Created snapshot for ${DATE}"
+          fi
+
+      - name: Commit dashboard and snapshots
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Add all data files
-          git add terraform_providers.csv 2>/dev/null || true
-          git add terraform_providers_details.json 2>/dev/null || true
-          if [ -d "data/snapshots" ]; then
-            git add data/snapshots/*.json 2>/dev/null || true
-          fi
-          if [ -f "data/history.json" ]; then
-            git add data/history.json
-          fi
+          git add index.html
+          git add data/snapshots/*.json 2>/dev/null || true
+          git add data/history.json 2>/dev/null || true
           
-          # Commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update provider dashboard $(date +%Y-%m-%d)"
+            git commit -m "Update dashboard $(date +%Y-%m-%d)"
             git push
-            echo "Committed data to repo"
-          fi
-
-      - name: Save cache for next run
-        uses: actions/cache/save@v4
-        with:
-          path: |
-            terraform_providers.csv
-            terraform_providers_details.json
-            data/snapshots
-            data/history.json
-          key: provider-data-${{ hashFiles('terraform_providers.csv') }}
-
-      - name: Generate HTML dashboard
-        run: |
-          echo "=== Debug: checking for data files ==="
-          ls -la data/ 2>/dev/null || echo "No data/ folder"
-          ls -la data/history.json 2>/dev/null || echo "No data/history.json"
-          
-          if [ -f "data/history.json" ]; then
-            echo "Found history.json, passing explicitly to generator"
-            python3 generate_html_dashboard.py terraform_providers.csv index.html data/history.json
-          else
-            echo "No history.json found, generating without history"
-            python3 generate_html_dashboard.py terraform_providers.csv index.html
           fi
 
       - name: Setup Pages
@@ -178,7 +206,6 @@ jobs:
           mkdir -p _site/data
           cp index.html _site/
           cp terraform_providers.csv _site/
-          cp terraform_providers_details.json _site/ 2>/dev/null || true
           cp data/history.json _site/data/ 2>/dev/null || true
           
       - name: Upload artifact
@@ -191,7 +218,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: dashboard
+    if: always() && needs.dashboard.result == 'success'
+    
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
