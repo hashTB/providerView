@@ -1,0 +1,1223 @@
+{
+  "scanned_at": "2026-01-27T13:18:06.317060",
+  "providers": {
+    "hashicorp/aws": {
+      "provider": "hashicorp/aws",
+      "repo": "hashicorp/terraform-provider-aws",
+      "total_resource_files": 4023,
+      "resources_with_identity_count": 221,
+      "resources_with_identity": [
+        {
+          "name": "cluster",
+          "file": "internal/service/docdbelastic/cluster_identity_gen_test.go"
+        },
+        {
+          "name": "report_group",
+          "file": "internal/service/codebuild/report_group_identity_gen_test.go"
+        },
+        {
+          "name": "source_credential",
+          "file": "internal/service/codebuild/source_credential_identity_gen_test.go"
+        },
+        {
+          "name": "resource_policy",
+          "file": "internal/service/codebuild/resource_policy_identity_gen_test.go"
+        },
+        {
+          "name": "fleet",
+          "file": "internal/service/codebuild/fleet_identity_gen_test.go"
+        },
+        {
+          "name": "project",
+          "file": "internal/service/codebuild/project_identity_gen_test.go"
+        },
+        {
+          "name": "contact_channel",
+          "file": "internal/service/ssmcontacts/contact_channel_identity_gen_test.go"
+        },
+        {
+          "name": "rotation",
+          "file": "internal/service/ssmcontacts/rotation_identity_gen_test.go"
+        },
+        {
+          "name": "contact",
+          "file": "internal/service/ssmcontacts/contact_identity_gen_test.go"
+        },
+        {
+          "name": "resource_policy",
+          "file": "internal/service/kinesis/resource_policy_identity_gen_test.go"
+        },
+        {
+          "name": "organizational_unit",
+          "file": "internal/service/organizations/organizational_unit_identity_gen_test.go"
+        },
+        {
+          "name": "policy",
+          "file": "internal/service/organizations/policy_identity_gen_test.go"
+        },
+        {
+          "name": "policy_attachment",
+          "file": "internal/service/organizations/policy_attachment_identity_gen_test.go"
+        },
+        {
+          "name": "organization",
+          "file": "internal/service/organizations/organization_identity_gen_test.go"
+        },
+        {
+          "name": "resource_policy",
+          "file": "internal/service/organizations/resource_policy_identity_gen_test.go"
+        },
+        {
+          "name": "application_layer_automatic_response",
+          "file": "internal/service/shield/application_layer_automatic_response_identity_gen_test.go"
+        },
+        {
+          "name": "patch_baseline",
+          "file": "internal/service/ssm/patch_baseline_identity_gen_test.go"
+        },
+        {
+          "name": "association",
+          "file": "internal/service/ssm/association_identity_gen_test.go"
+        },
+        {
+          "name": "parameter",
+          "file": "internal/service/ssm/parameter_identity_gen_test.go"
+        },
+        {
+          "name": "maintenance_window_task",
+          "file": "internal/service/ssm/maintenance_window_task_identity_gen_test.go"
+        },
+        {
+          "name": "maintenance_window_target",
+          "file": "internal/service/ssm/maintenance_window_target_identity_gen_test.go"
+        },
+        {
+          "name": "document",
+          "file": "internal/service/ssm/document_identity_gen_test.go"
+        },
+        {
+          "name": "maintenance_window",
+          "file": "internal/service/ssm/maintenance_window_identity_gen_test.go"
+        },
+        {
+          "name": "identity_center_configuration",
+          "file": "internal/service/lakeformation/identity_center_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "secret",
+          "file": "internal/service/secretsmanager/secret_identity_gen_test.go"
+        },
+        {
+          "name": "secret_rotation",
+          "file": "internal/service/secretsmanager/secret_rotation_identity_gen_test.go"
+        },
+        {
+          "name": "secret_policy",
+          "file": "internal/service/secretsmanager/secret_policy_identity_gen_test.go"
+        },
+        {
+          "name": "secret_version",
+          "file": "internal/service/secretsmanager/secret_version_identity_gen_test.go"
+        },
+        {
+          "name": "alias",
+          "file": "internal/service/kms/alias_identity_gen_test.go"
+        },
+        {
+          "name": "key",
+          "file": "internal/service/kms/key_identity_gen_test.go"
+        },
+        {
+          "name": "metric_alarm",
+          "file": "internal/service/cloudwatch/metric_alarm_identity_gen_test.go"
+        },
+        {
+          "name": "schema",
+          "file": "internal/service/glue/schema_identity_gen_test.go"
+        },
+        {
+          "name": "registry",
+          "file": "internal/service/glue/registry_identity_gen_test.go"
+        },
+        {
+          "name": "resource_policy",
+          "file": "internal/service/glue/resource_policy_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_policy",
+          "file": "internal/service/s3/bucket_policy_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_acl",
+          "file": "internal/service/s3/bucket_acl_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_notification",
+          "file": "internal/service/s3/bucket_notification_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_website_configuration",
+          "file": "internal/service/s3/bucket_website_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_ownership_controls",
+          "file": "internal/service/s3/bucket_ownership_controls_identity_gen_test.go"
+        },
+        {
+          "name": "object",
+          "file": "internal/service/s3/object_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_versioning",
+          "file": "internal/service/s3/bucket_versioning_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_server_side_encryption_configuration",
+          "file": "internal/service/s3/bucket_server_side_encryption_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_logging",
+          "file": "internal/service/s3/bucket_logging_identity_gen_test.go"
+        },
+        {
+          "name": "bucket",
+          "file": "internal/service/s3/bucket_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_public_access_block",
+          "file": "internal/service/s3/bucket_public_access_block_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_cors_configuration",
+          "file": "internal/service/s3/bucket_cors_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "bucket_object",
+          "file": "internal/service/s3/bucket_object_identity_gen_test.go"
+        },
+        {
+          "name": "topic",
+          "file": "internal/service/sns/topic_identity_gen_test.go"
+        },
+        {
+          "name": "topic_policy",
+          "file": "internal/service/sns/topic_policy_identity_gen_test.go"
+        },
+        {
+          "name": "topic_data_protection_policy",
+          "file": "internal/service/sns/topic_data_protection_policy_identity_gen_test.go"
+        },
+        {
+          "name": "topic_subscription",
+          "file": "internal/service/sns/topic_subscription_identity_gen_test.go"
+        },
+        {
+          "name": "location_azure_blob",
+          "file": "internal/service/datasync/location_azure_blob_identity_gen_test.go"
+        },
+        {
+          "name": "location_efs",
+          "file": "internal/service/datasync/location_efs_identity_gen_test.go"
+        },
+        {
+          "name": "task",
+          "file": "internal/service/datasync/task_identity_gen_test.go"
+        },
+        {
+          "name": "location_s3",
+          "file": "internal/service/datasync/location_s3_identity_gen_test.go"
+        },
+        {
+          "name": "location_hdfs",
+          "file": "internal/service/datasync/location_hdfs_identity_gen_test.go"
+        },
+        {
+          "name": "agent",
+          "file": "internal/service/datasync/agent_identity_gen_test.go"
+        },
+        {
+          "name": "location_object_storage",
+          "file": "internal/service/datasync/location_object_storage_identity_gen_test.go"
+        },
+        {
+          "name": "location_smb",
+          "file": "internal/service/datasync/location_smb_identity_gen_test.go"
+        },
+        {
+          "name": "location_nfs",
+          "file": "internal/service/datasync/location_nfs_identity_gen_test.go"
+        },
+        {
+          "name": "filter",
+          "file": "internal/service/inspector2/filter_identity_gen_test.go"
+        },
+        {
+          "name": "resource_group",
+          "file": "internal/service/inspector/resource_group_identity_gen_test.go"
+        },
+        {
+          "name": "assessment_template",
+          "file": "internal/service/inspector/assessment_template_identity_gen_test.go"
+        },
+        {
+          "name": "assessment_target",
+          "file": "internal/service/inspector/assessment_target_identity_gen_test.go"
+        },
+        {
+          "name": "key",
+          "file": "internal/service/paymentcryptography/key_identity_gen_test.go"
+        },
+        {
+          "name": "account_public_access_block",
+          "file": "internal/service/s3control/account_public_access_block_identity_gen_test.go"
+        },
+        {
+          "name": "bucket",
+          "file": "internal/service/s3control/bucket_identity_gen_test.go"
+        },
+        {
+          "name": "realtime_log_config",
+          "file": "internal/service/cloudfront/realtime_log_config_identity_gen_test.go"
+        },
+        {
+          "name": "key_value_store",
+          "file": "internal/service/cloudfront/key_value_store_identity_gen_test.go"
+        },
+        {
+          "name": "log_delivery_configuration",
+          "file": "internal/service/cognitoidp/log_delivery_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "export",
+          "file": "internal/service/bcmdataexports/export_identity_gen_test.go"
+        },
+        {
+          "name": "workflow",
+          "file": "internal/service/imagebuilder/workflow_identity_gen_test.go"
+        },
+        {
+          "name": "container_recipe",
+          "file": "internal/service/imagebuilder/container_recipe_identity_gen_test.go"
+        },
+        {
+          "name": "infrastructure_configuration",
+          "file": "internal/service/imagebuilder/infrastructure_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "lifecycle_policy",
+          "file": "internal/service/imagebuilder/lifecycle_policy_identity_gen_test.go"
+        },
+        {
+          "name": "distribution_configuration",
+          "file": "internal/service/imagebuilder/distribution_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "image_pipeline",
+          "file": "internal/service/imagebuilder/image_pipeline_identity_gen_test.go"
+        },
+        {
+          "name": "image",
+          "file": "internal/service/imagebuilder/image_identity_gen_test.go"
+        },
+        {
+          "name": "image_recipe",
+          "file": "internal/service/imagebuilder/image_recipe_identity_gen_test.go"
+        },
+        {
+          "name": "repository_policy",
+          "file": "internal/service/ecr/repository_policy_identity_gen_test.go"
+        },
+        {
+          "name": "repository",
+          "file": "internal/service/ecr/repository_identity_gen_test.go"
+        },
+        {
+          "name": "lifecycle_policy",
+          "file": "internal/service/ecr/lifecycle_policy_identity_gen_test.go"
+        },
+        {
+          "name": "table_export",
+          "file": "internal/service/dynamodb/table_export_identity_gen_test.go"
+        },
+        {
+          "name": "resource_policy",
+          "file": "internal/service/dynamodb/resource_policy_identity_gen_test.go"
+        },
+        {
+          "name": "global_secondary_index",
+          "file": "internal/service/dynamodb/global_secondary_index_identity_gen_test.go"
+        },
+        {
+          "name": "classification_export_configuration",
+          "file": "internal/service/macie2/classification_export_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "key",
+          "file": "internal/service/cloudfrontkeyvaluestore/key_identity_gen_test.go"
+        },
+        {
+          "name": "capacity_provider",
+          "file": "internal/service/ecs/capacity_provider_identity_gen_test.go"
+        },
+        {
+          "name": "media_insights_pipeline_configuration",
+          "file": "internal/service/chimesdkmediapipelines/media_insights_pipeline_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "app_bundle",
+          "file": "internal/service/appfabric/app_bundle_identity_gen_test.go"
+        },
+        {
+          "name": "rule_association",
+          "file": "internal/service/route53resolver/rule_association_identity_gen_test.go"
+        },
+        {
+          "name": "rule",
+          "file": "internal/service/route53resolver/rule_identity_gen_test.go"
+        },
+        {
+          "name": "webhook",
+          "file": "internal/service/codepipeline/webhook_identity_gen_test.go"
+        },
+        {
+          "name": "notification_rule",
+          "file": "internal/service/codestarnotifications/notification_rule_identity_gen_test.go"
+        },
+        {
+          "name": "queue_redrive_allow_policy",
+          "file": "internal/service/sqs/queue_redrive_allow_policy_identity_gen_test.go"
+        },
+        {
+          "name": "queue",
+          "file": "internal/service/sqs/queue_identity_gen_test.go"
+        },
+        {
+          "name": "queue_redrive_policy",
+          "file": "internal/service/sqs/queue_redrive_policy_identity_gen_test.go"
+        },
+        {
+          "name": "queue_policy",
+          "file": "internal/service/sqs/queue_policy_identity_gen_test.go"
+        },
+        {
+          "name": "event_configurations",
+          "file": "internal/service/iot/event_configurations_identity_gen_test.go"
+        },
+        {
+          "name": "indexing_configuration",
+          "file": "internal/service/iot/indexing_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "logging_options",
+          "file": "internal/service/iot/logging_options_identity_gen_test.go"
+        },
+        {
+          "name": "model_invocation_logging_configuration",
+          "file": "internal/service/bedrock/model_invocation_logging_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "custom_model",
+          "file": "internal/service/bedrock/custom_model_identity_gen_test.go"
+        },
+        {
+          "name": "integration",
+          "file": "internal/service/redshift/integration_identity_gen_test.go"
+        },
+        {
+          "name": "flow",
+          "file": "internal/service/appflow/flow_identity_gen_test.go"
+        },
+        {
+          "name": "connector_profile",
+          "file": "internal/service/appflow/connector_profile_identity_gen_test.go"
+        },
+        {
+          "name": "event_data_store",
+          "file": "internal/service/cloudtrail/event_data_store_identity_gen_test.go"
+        },
+        {
+          "name": "trail",
+          "file": "internal/service/cloudtrail/trail_identity_gen_test.go"
+        },
+        {
+          "name": "index",
+          "file": "internal/service/resourceexplorer2/index_identity_gen_test.go"
+        },
+        {
+          "name": "view",
+          "file": "internal/service/resourceexplorer2/view_identity_gen_test.go"
+        },
+        {
+          "name": "saml_provider",
+          "file": "internal/service/iam/saml_provider_identity_gen_test.go"
+        },
+        {
+          "name": "openid_connect_provider",
+          "file": "internal/service/iam/openid_connect_provider_identity_gen_test.go"
+        },
+        {
+          "name": "policy",
+          "file": "internal/service/iam/policy_identity_gen_test.go"
+        },
+        {
+          "name": "role",
+          "file": "internal/service/iam/role_identity_gen_test.go"
+        },
+        {
+          "name": "service_linked_role",
+          "file": "internal/service/iam/service_linked_role_identity_gen_test.go"
+        },
+        {
+          "name": "role_policy_attachment",
+          "file": "internal/service/iam/role_policy_attachment_identity_gen_test.go"
+        },
+        {
+          "name": "outbound_web_identity_federation",
+          "file": "internal/service/iam/outbound_web_identity_federation_identity_gen_test.go"
+        },
+        {
+          "name": "role_policy",
+          "file": "internal/service/iam/role_policy_identity_gen_test.go"
+        },
+        {
+          "name": "tls_inspection_configuration",
+          "file": "internal/service/networkfirewall/tls_inspection_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "account_registration",
+          "file": "internal/service/auditmanager/account_registration_identity_gen_test.go"
+        },
+        {
+          "name": "transformer",
+          "file": "internal/service/logs/transformer_identity_gen_test.go"
+        },
+        {
+          "name": "group",
+          "file": "internal/service/logs/group_identity_gen_test.go"
+        },
+        {
+          "name": "table_bucket_policy",
+          "file": "internal/service/s3tables/table_bucket_policy_identity_gen_test.go"
+        },
+        {
+          "name": "table_bucket_replication",
+          "file": "internal/service/s3tables/table_bucket_replication_identity_gen_test.go"
+        },
+        {
+          "name": "table_bucket",
+          "file": "internal/service/s3tables/table_bucket_identity_gen_test.go"
+        },
+        {
+          "name": "table_replication",
+          "file": "internal/service/s3tables/table_replication_identity_gen_test.go"
+        },
+        {
+          "name": "service_integration",
+          "file": "internal/service/devopsguru/service_integration_identity_gen_test.go"
+        },
+        {
+          "name": "event_sources_config",
+          "file": "internal/service/devopsguru/event_sources_config_identity_gen_test.go"
+        },
+        {
+          "name": "rule_group_namespace",
+          "file": "internal/service/amp/rule_group_namespace_identity_gen_test.go"
+        },
+        {
+          "name": "job_queue",
+          "file": "internal/service/batch/job_queue_identity_gen_test.go"
+        },
+        {
+          "name": "job_definition",
+          "file": "internal/service/batch/job_definition_identity_gen_test.go"
+        },
+        {
+          "name": "function",
+          "file": "internal/service/lambda/function_identity_gen_test.go"
+        },
+        {
+          "name": "permission",
+          "file": "internal/service/lambda/permission_identity_gen_test.go"
+        },
+        {
+          "name": "capacity_provider",
+          "file": "internal/service/lambda/capacity_provider_identity_gen_test.go"
+        },
+        {
+          "name": "recording_configuration",
+          "file": "internal/service/ivs/recording_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "playback_key_pair",
+          "file": "internal/service/ivs/playback_key_pair_identity_gen_test.go"
+        },
+        {
+          "name": "channel",
+          "file": "internal/service/ivs/channel_identity_gen_test.go"
+        },
+        {
+          "name": "gateway",
+          "file": "internal/service/directconnect/gateway_identity_gen_test.go"
+        },
+        {
+          "name": "host",
+          "file": "internal/service/codestarconnections/host_identity_gen_test.go"
+        },
+        {
+          "name": "connection",
+          "file": "internal/service/codestarconnections/connection_identity_gen_test.go"
+        },
+        {
+          "name": "domain_permissions_policy",
+          "file": "internal/service/codeartifact/domain_permissions_policy_identity_gen_test.go"
+        },
+        {
+          "name": "repository",
+          "file": "internal/service/codeartifact/repository_identity_gen_test.go"
+        },
+        {
+          "name": "repository_permissions_policy",
+          "file": "internal/service/codeartifact/repository_permissions_policy_identity_gen_test.go"
+        },
+        {
+          "name": "domain",
+          "file": "internal/service/codeartifact/domain_identity_gen_test.go"
+        },
+        {
+          "name": "collaboration",
+          "file": "internal/service/cleanrooms/collaboration_identity_gen_test.go"
+        },
+        {
+          "name": "configured_table",
+          "file": "internal/service/cleanrooms/configured_table_identity_gen_test.go"
+        },
+        {
+          "name": "certificate_authority_certificate",
+          "file": "internal/service/acmpca/certificate_authority_certificate_identity_gen_test.go"
+        },
+        {
+          "name": "policy",
+          "file": "internal/service/acmpca/policy_identity_gen_test.go"
+        },
+        {
+          "name": "certificate",
+          "file": "internal/service/acmpca/certificate_identity_gen_test.go"
+        },
+        {
+          "name": "certificate_authority",
+          "file": "internal/service/acmpca/certificate_authority_identity_gen_test.go"
+        },
+        {
+          "name": "room",
+          "file": "internal/service/ivschat/room_identity_gen_test.go"
+        },
+        {
+          "name": "logging_configuration",
+          "file": "internal/service/ivschat/logging_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "replication_config",
+          "file": "internal/service/dms/replication_config_identity_gen_test.go"
+        },
+        {
+          "name": "accelerator",
+          "file": "internal/service/globalaccelerator/accelerator_identity_gen_test.go"
+        },
+        {
+          "name": "custom_routing_listener",
+          "file": "internal/service/globalaccelerator/custom_routing_listener_identity_gen_test.go"
+        },
+        {
+          "name": "listener",
+          "file": "internal/service/globalaccelerator/listener_identity_gen_test.go"
+        },
+        {
+          "name": "custom_routing_endpoint_group",
+          "file": "internal/service/globalaccelerator/custom_routing_endpoint_group_identity_gen_test.go"
+        },
+        {
+          "name": "custom_routing_accelerator",
+          "file": "internal/service/globalaccelerator/custom_routing_accelerator_identity_gen_test.go"
+        },
+        {
+          "name": "endpoint_group",
+          "file": "internal/service/globalaccelerator/endpoint_group_identity_gen_test.go"
+        },
+        {
+          "name": "cross_account_attachment",
+          "file": "internal/service/globalaccelerator/cross_account_attachment_identity_gen_test.go"
+        },
+        {
+          "name": "repository_association",
+          "file": "internal/service/codegurureviewer/repository_association_identity_gen_test.go"
+        },
+        {
+          "name": "target",
+          "file": "internal/service/events/target_identity_gen_test.go"
+        },
+        {
+          "name": "rule",
+          "file": "internal/service/events/rule_identity_gen_test.go"
+        },
+        {
+          "name": "trust_store",
+          "file": "internal/service/elbv2/trust_store_identity_gen_test.go"
+        },
+        {
+          "name": "listener_rule",
+          "file": "internal/service/elbv2/listener_rule_identity_gen_test.go"
+        },
+        {
+          "name": "target_group",
+          "file": "internal/service/elbv2/target_group_identity_gen_test.go"
+        },
+        {
+          "name": "load_balancer",
+          "file": "internal/service/elbv2/load_balancer_identity_gen_test.go"
+        },
+        {
+          "name": "listener",
+          "file": "internal/service/elbv2/listener_identity_gen_test.go"
+        },
+        {
+          "name": "automation_rule",
+          "file": "internal/service/securityhub/automation_rule_identity_gen_test.go"
+        },
+        {
+          "name": "vector_bucket_policy",
+          "file": "internal/service/s3vectors/vector_bucket_policy_identity_gen_test.go"
+        },
+        {
+          "name": "vector_bucket",
+          "file": "internal/service/s3vectors/vector_bucket_identity_gen_test.go"
+        },
+        {
+          "name": "index",
+          "file": "internal/service/s3vectors/index_identity_gen_test.go"
+        },
+        {
+          "name": "region_settings",
+          "file": "internal/service/backup/region_settings_identity_gen_test.go"
+        },
+        {
+          "name": "collection",
+          "file": "internal/service/opensearchserverless/collection_identity_gen_test.go"
+        },
+        {
+          "name": "phone_number",
+          "file": "internal/service/connect/phone_number_identity_gen_test.go"
+        },
+        {
+          "name": "instance",
+          "file": "internal/service/connect/instance_identity_gen_test.go"
+        },
+        {
+          "name": "anomaly_monitor",
+          "file": "internal/service/ce/anomaly_monitor_identity_gen_test.go"
+        },
+        {
+          "name": "anomaly_subscription",
+          "file": "internal/service/ce/anomaly_subscription_identity_gen_test.go"
+        },
+        {
+          "name": "cost_category",
+          "file": "internal/service/ce/cost_category_identity_gen_test.go"
+        },
+        {
+          "name": "state_machine",
+          "file": "internal/service/sfn/state_machine_identity_gen_test.go"
+        },
+        {
+          "name": "alias",
+          "file": "internal/service/sfn/alias_identity_gen_test.go"
+        },
+        {
+          "name": "activity",
+          "file": "internal/service/sfn/activity_identity_gen_test.go"
+        },
+        {
+          "name": "document_classifier",
+          "file": "internal/service/comprehend/document_classifier_identity_gen_test.go"
+        },
+        {
+          "name": "entity_recognizer",
+          "file": "internal/service/comprehend/entity_recognizer_identity_gen_test.go"
+        },
+        {
+          "name": "upload",
+          "file": "internal/service/devicefarm/upload_identity_gen_test.go"
+        },
+        {
+          "name": "device_pool",
+          "file": "internal/service/devicefarm/device_pool_identity_gen_test.go"
+        },
+        {
+          "name": "test_grid_project",
+          "file": "internal/service/devicefarm/test_grid_project_identity_gen_test.go"
+        },
+        {
+          "name": "instance_profile",
+          "file": "internal/service/devicefarm/instance_profile_identity_gen_test.go"
+        },
+        {
+          "name": "network_profile",
+          "file": "internal/service/devicefarm/network_profile_identity_gen_test.go"
+        },
+        {
+          "name": "project",
+          "file": "internal/service/devicefarm/project_identity_gen_test.go"
+        },
+        {
+          "name": "certificate",
+          "file": "internal/service/rds/certificate_identity_gen_test.go"
+        },
+        {
+          "name": "integration",
+          "file": "internal/service/rds/integration_identity_gen_test.go"
+        },
+        {
+          "name": "group",
+          "file": "internal/service/xray/group_identity_gen_test.go"
+        },
+        {
+          "name": "encryption_config",
+          "file": "internal/service/xray/encryption_config_identity_gen_test.go"
+        },
+        {
+          "name": "application",
+          "file": "internal/service/ssoadmin/application_identity_gen_test.go"
+        },
+        {
+          "name": "trusted_token_issuer",
+          "file": "internal/service/ssoadmin/trusted_token_issuer_identity_gen_test.go"
+        },
+        {
+          "name": "application_assignment_configuration",
+          "file": "internal/service/ssoadmin/application_assignment_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "domain_name_access_association",
+          "file": "internal/service/apigateway/domain_name_access_association_identity_gen_test.go"
+        },
+        {
+          "name": "host",
+          "file": "internal/service/codeconnections/host_identity_gen_test.go"
+        },
+        {
+          "name": "connection",
+          "file": "internal/service/codeconnections/connection_identity_gen_test.go"
+        },
+        {
+          "name": "user_profile",
+          "file": "internal/service/sagemaker/user_profile_identity_gen_test.go"
+        },
+        {
+          "name": "servicecatalog_portfolio_status",
+          "file": "internal/service/sagemaker/servicecatalog_portfolio_status_identity_gen_test.go"
+        },
+        {
+          "name": "certificate",
+          "file": "internal/service/acm/certificate_identity_gen_test.go"
+        },
+        {
+          "name": "record",
+          "file": "internal/service/route53/record_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_route",
+          "file": "internal/service/ec2/vpc_route_identity_gen_test.go"
+        },
+        {
+          "name": "vpc",
+          "file": "internal/service/ec2/vpc_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_encryption_control",
+          "file": "internal/service/ec2/vpc_encryption_control_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_endpoint",
+          "file": "internal/service/ec2/vpc_endpoint_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_security_group_vpc_association",
+          "file": "internal/service/ec2/vpc_security_group_vpc_association_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_subnet",
+          "file": "internal/service/ec2/vpc_subnet_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_security_group_ingress_rule",
+          "file": "internal/service/ec2/vpc_security_group_ingress_rule_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_security_group",
+          "file": "internal/service/ec2/vpc_security_group_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_security_group_egress_rule",
+          "file": "internal/service/ec2/vpc_security_group_egress_rule_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_route_table",
+          "file": "internal/service/ec2/vpc_route_table_identity_gen_test.go"
+        },
+        {
+          "name": "ec2_instance",
+          "file": "internal/service/ec2/ec2_instance_identity_gen_test.go"
+        },
+        {
+          "name": "ebs_snapshot_block_public_access",
+          "file": "internal/service/ec2/ebs_snapshot_block_public_access_identity_gen_test.go"
+        },
+        {
+          "name": "service",
+          "file": "internal/service/apprunner/service_identity_gen_test.go"
+        },
+        {
+          "name": "auto_scaling_configuration_version",
+          "file": "internal/service/apprunner/auto_scaling_configuration_version_identity_gen_test.go"
+        },
+        {
+          "name": "observability_configuration",
+          "file": "internal/service/apprunner/observability_configuration_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_ingress_connection",
+          "file": "internal/service/apprunner/vpc_ingress_connection_identity_gen_test.go"
+        },
+        {
+          "name": "vpc_connector",
+          "file": "internal/service/apprunner/vpc_connector_identity_gen_test.go"
+        }
+      ],
+      "scanned_at": "2026-01-27T13:18:07.159734"
+    },
+    "hashicorp/azurerm": {
+      "provider": "hashicorp/azurerm",
+      "repo": "hashicorp/terraform-provider-azurerm",
+      "total_resource_files": 1122,
+      "resources_with_identity_count": 75,
+      "resources_with_identity": [
+        {
+          "name": "monitor_scheduled_query_rules_alert",
+          "file": "internal/services/monitor/monitor_scheduled_query_rules_alert_resource.go"
+        },
+        {
+          "name": "monitor_action_group",
+          "file": "internal/services/monitor/monitor_action_group_resource.go"
+        },
+        {
+          "name": "analysis_services_server",
+          "file": "internal/services/analysisservices/analysis_services_server_resource.go"
+        },
+        {
+          "name": "redis_firewall_rule",
+          "file": "internal/services/redis/redis_firewall_rule_resource.go"
+        },
+        {
+          "name": "private_dns_zone",
+          "file": "internal/services/privatedns/private_dns_zone_resource.go"
+        },
+        {
+          "name": "private_dns_zone_virtual_network_link",
+          "file": "internal/services/privatedns/private_dns_zone_virtual_network_link_resource.go"
+        },
+        {
+          "name": "route_table",
+          "file": "internal/services/network/route_table_resource.go"
+        },
+        {
+          "name": "azurerm_virtual_hub",
+          "file": "internal/services/network/virtual_hub_resource.go"
+        },
+        {
+          "name": "virtual_hub_connection",
+          "file": "internal/services/network/virtual_hub_connection_resource.go"
+        },
+        {
+          "name": "private_link_service",
+          "file": "internal/services/network/private_link_service_resource.go"
+        },
+        {
+          "name": "local_network_gateway",
+          "file": "internal/services/network/local_network_gateway_resource.go"
+        },
+        {
+          "name": "network_security_group",
+          "file": "internal/services/network/network_security_group_resource.go"
+        },
+        {
+          "name": "route_server",
+          "file": "internal/services/network/route_server_resource.go"
+        },
+        {
+          "name": "subnet_service_endpoint_storage_policy",
+          "file": "internal/services/network/subnet_service_endpoint_storage_policy_resource.go"
+        },
+        {
+          "name": "virtual_hub_route_table",
+          "file": "internal/services/network/virtual_hub_route_table_resource.go"
+        },
+        {
+          "name": "route_server_bgp_connection",
+          "file": "internal/services/network/route_server_bgp_connection_resource.go"
+        },
+        {
+          "name": "bastion_host",
+          "file": "internal/services/network/bastion_host_resource.go"
+        },
+        {
+          "name": "private_endpoint",
+          "file": "internal/services/network/private_endpoint_resource.go"
+        },
+        {
+          "name": "virtual_hub_bgp_connection",
+          "file": "internal/services/network/virtual_hub_bgp_connection_resource.go"
+        },
+        {
+          "name": "application_security_group",
+          "file": "internal/services/network/application_security_group_resource.go"
+        },
+        {
+          "name": "virtual_network",
+          "file": "internal/services/network/virtual_network_resource.go"
+        },
+        {
+          "name": "public_ip_prefix",
+          "file": "internal/services/network/public_ip_prefix_resource.go"
+        },
+        {
+          "name": "virtual_hub_ip",
+          "file": "internal/services/network/virtual_hub_ip_resource.go"
+        },
+        {
+          "name": "route",
+          "file": "internal/services/network/route_resource.go"
+        },
+        {
+          "name": "application_gateway",
+          "file": "internal/services/network/application_gateway_resource.go"
+        },
+        {
+          "name": "route_filter",
+          "file": "internal/services/network/route_filter_resource.go"
+        },
+        {
+          "name": "ip_group",
+          "file": "internal/services/network/ip_group_resource.go"
+        },
+        {
+          "name": "subnet",
+          "file": "internal/services/network/subnet_resource.go"
+        },
+        {
+          "name": "network_security_rule",
+          "file": "internal/services/network/network_security_rule_resource.go"
+        },
+        {
+          "name": "network_interface",
+          "file": "internal/services/network/network_interface_resource.go"
+        },
+        {
+          "name": "azurerm_network_profile",
+          "file": "internal/services/network/network_profile_resource.go"
+        },
+        {
+          "name": "nat_gateway",
+          "file": "internal/services/network/nat_gateway_resource.go"
+        },
+        {
+          "name": "databricks_virtual_network_peering",
+          "file": "internal/services/databricks/databricks_virtual_network_peering_resource.go"
+        },
+        {
+          "name": "databricks_workspace_root_dbfs_customer_managed_key",
+          "file": "internal/services/databricks/databricks_workspace_root_dbfs_customer_managed_key_resource.go"
+        },
+        {
+          "name": "databricks_workspace",
+          "file": "internal/services/databricks/databricks_workspace_resource.go"
+        },
+        {
+          "name": "database_migration_service",
+          "file": "internal/services/databasemigration/database_migration_service_resource.go"
+        },
+        {
+          "name": "database_migration_project",
+          "file": "internal/services/databasemigration/database_migration_project_resource.go"
+        },
+        {
+          "name": "storage_blob_inventory_policy",
+          "file": "internal/services/storage/storage_blob_inventory_policy_resource.go"
+        },
+        {
+          "name": "storage_encryption_scope",
+          "file": "internal/services/storage/storage_encryption_scope_resource.go"
+        },
+        {
+          "name": "storage_account_customer_managed_key",
+          "file": "internal/services/storage/storage_account_customer_managed_key_resource.go"
+        },
+        {
+          "name": "storage_account",
+          "file": "internal/services/storage/storage_account_resource.go"
+        },
+        {
+          "name": "storage_sync_cloud_endpoint",
+          "file": "internal/services/storage/storage_sync_cloud_endpoint_resource.go"
+        },
+        {
+          "name": "storage_account_network_rules",
+          "file": "internal/services/storage/storage_account_network_rules_resource.go"
+        },
+        {
+          "name": "azurerm_firewall_policy",
+          "file": "internal/services/firewall/firewall_policy_resource.go"
+        },
+        {
+          "name": "firewall",
+          "file": "internal/services/firewall/firewall_resource.go"
+        },
+        {
+          "name": "application_insights",
+          "file": "internal/services/applicationinsights/application_insights_resource.go"
+        },
+        {
+          "name": "application_insights_web_test",
+          "file": "internal/services/applicationinsights/application_insights_web_test_resource.go"
+        },
+        {
+          "name": "data_share_account",
+          "file": "internal/services/datashare/data_share_account_resource.go"
+        },
+        {
+          "name": "data_share_dataset_kusto_database",
+          "file": "internal/services/datashare/data_share_dataset_kusto_database_resource.go"
+        },
+        {
+          "name": "data_share",
+          "file": "internal/services/datashare/data_share_resource.go"
+        },
+        {
+          "name": "data_share_dataset_kusto_cluster",
+          "file": "internal/services/datashare/data_share_dataset_kusto_cluster_resource.go"
+        },
+        {
+          "name": "postgresql_flexible_server_firewall_rule",
+          "file": "internal/services/postgres/postgresql_flexible_server_firewall_rule_resource.go"
+        },
+        {
+          "name": "data_protection_backup_policy_blob_storage",
+          "file": "internal/services/dataprotection/data_protection_backup_policy_blob_storage_resource.go"
+        },
+        {
+          "name": "data_protection_backup_instance_blob_storage",
+          "file": "internal/services/dataprotection/data_protection_backup_instance_blob_storage_resource.go"
+        },
+        {
+          "name": "data_protection_guard",
+          "file": "internal/services/dataprotection/data_protection_resource_guard_resource.go"
+        },
+        {
+          "name": "data_protection_backup_instance_disk",
+          "file": "internal/services/dataprotection/data_protection_backup_instance_disk_resource.go"
+        },
+        {
+          "name": "data_protection_backup_vault",
+          "file": "internal/services/dataprotection/data_protection_backup_vault_resource.go"
+        },
+        {
+          "name": "data_protection_backup_policy_disk",
+          "file": "internal/services/dataprotection/data_protection_backup_policy_disk_resource.go"
+        },
+        {
+          "name": "availability_set",
+          "file": "internal/services/compute/availability_set_resource.go"
+        },
+        {
+          "name": "managed_disk",
+          "file": "internal/services/compute/managed_disk_resource.go"
+        },
+        {
+          "name": "dedicated_host",
+          "file": "internal/services/compute/dedicated_host_resource.go"
+        },
+        {
+          "name": "capacity_reservation",
+          "file": "internal/services/compute/capacity_reservation_resource.go"
+        },
+        {
+          "name": "virtual_machine_extension",
+          "file": "internal/services/compute/virtual_machine_extension_resource.go"
+        },
+        {
+          "name": "proximity_placement_group",
+          "file": "internal/services/compute/proximity_placement_group_resource.go"
+        },
+        {
+          "name": "shared_image",
+          "file": "internal/services/compute/shared_image_resource.go"
+        },
+        {
+          "name": "shared_image_gallery",
+          "file": "internal/services/compute/shared_image_gallery_resource.go"
+        },
+        {
+          "name": "capacity_reservation_group",
+          "file": "internal/services/compute/capacity_reservation_group_resource.go"
+        },
+        {
+          "name": "dedicated_host_group",
+          "file": "internal/services/compute/dedicated_host_group_resource.go"
+        },
+        {
+          "name": "batch_application",
+          "file": "internal/services/batch/batch_application_resource.go"
+        },
+        {
+          "name": "batch_pool",
+          "file": "internal/services/batch/batch_pool_resource.go"
+        },
+        {
+          "name": "batch_account",
+          "file": "internal/services/batch/batch_account_resource.go"
+        },
+        {
+          "name": "attestation_provider",
+          "file": "internal/services/attestation/attestation_provider_resource.go"
+        },
+        {
+          "name": "azurerm_resource_group",
+          "file": "internal/services/resource/resource_group_resource.go"
+        },
+        {
+          "name": "mssql_server",
+          "file": "internal/services/mssql/mssql_server_resource.go"
+        },
+        {
+          "name": "custom_provider",
+          "file": "internal/services/customproviders/custom_provider_resource.go"
+        }
+      ],
+      "scanned_at": "2026-01-27T13:18:07.860467"
+    },
+    "hashicorp/google": {
+      "provider": "hashicorp/google",
+      "repo": "hashicorp/terraform-provider-google",
+      "total_resource_files": 3648,
+      "resources_with_identity_count": 0,
+      "resources_with_identity": [],
+      "scanned_at": "2026-01-27T13:18:08.938996"
+    },
+    "hashicorp/google-beta": {
+      "provider": "hashicorp/google-beta",
+      "repo": "hashicorp/terraform-provider-google-beta",
+      "total_resource_files": 3881,
+      "resources_with_identity_count": 0,
+      "resources_with_identity": [],
+      "scanned_at": "2026-01-27T13:18:10.388636"
+    }
+  }
+}

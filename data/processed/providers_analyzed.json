@@ -1,5 +1,5 @@
 {
-  "analyzed_at": "2026-01-27T12:53:50.112229",
+  "analyzed_at": "2026-01-27T13:18:16.898572",
   "source_file": "data/raw/providers_latest.json",
   "source_date": "2026-01-27",
   "provider_count": 34,
@@ -23,7 +23,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 4663,
-      "resource_identities": 233,
+      "resource_identities": 221,
       "data_sources": 1864,
       "ephemeral_resources": 22,
       "list_resources": 23,
@@ -31,7 +31,7 @@
       "functions": 10,
       "guides": 31,
       "subcategories": 247,
-      "total_features": 6839,
+      "total_features": 6827,
       "downloads": 5502683032
     },
     {
@@ -105,7 +105,7 @@
       "latest_published": "2026-01-13T18:14:01Z",
       "version_count": 392,
       "created_at": "",
-      "days_since_update": 13,
+      "days_since_update": 14,
       "protocol_v4": false,
       "protocol_v5": true,
       "protocol_v6": true,
@@ -113,7 +113,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 1013,
-      "resource_identities": 50,
+      "resource_identities": 0,
       "data_sources": 428,
       "ephemeral_resources": 6,
       "list_resources": 0,
@@ -121,7 +121,7 @@
       "functions": 6,
       "guides": 18,
       "subcategories": 164,
-      "total_features": 1503,
+      "total_features": 1453,
       "downloads": 1697511529
     },
     {
@@ -143,7 +143,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 1117,
-      "resource_identities": 55,
+      "resource_identities": 75,
       "data_sources": 391,
       "ephemeral_resources": 2,
       "list_resources": 8,
@@ -151,7 +151,7 @@
       "functions": 2,
       "guides": 12,
       "subcategories": 114,
-      "total_features": 1580,
+      "total_features": 1600,
       "downloads": 1316733942
     },
     {
@@ -173,7 +173,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 83,
-      "resource_identities": 4,
+      "resource_identities": 0,
       "data_sources": 26,
       "ephemeral_resources": 2,
       "list_resources": 0,
@@ -181,7 +181,7 @@
       "functions": 3,
       "guides": 5,
       "subcategories": 24,
-      "total_features": 118,
+      "total_features": 114,
       "downloads": 1101402760
     },
     {
@@ -233,7 +233,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 1013,
-      "resource_identities": 50,
+      "resource_identities": 0,
       "data_sources": 428,
       "ephemeral_resources": 6,
       "list_resources": 0,
@@ -241,7 +241,7 @@
       "functions": 6,
       "guides": 18,
       "subcategories": 164,
-      "total_features": 1503,
+      "total_features": 1453,
       "downloads": 883098573
     },
     {
@@ -383,7 +383,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 160,
-      "resource_identities": 8,
+      "resource_identities": 0,
       "data_sources": 45,
       "ephemeral_resources": 8,
       "list_resources": 0,
@@ -391,7 +391,7 @@
       "functions": 0,
       "guides": 8,
       "subcategories": 0,
-      "total_features": 221,
+      "total_features": 213,
       "downloads": 628506335
     },
     {
@@ -473,7 +473,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 54,
-      "resource_identities": 2,
+      "resource_identities": 0,
       "data_sources": 20,
       "ephemeral_resources": 0,
       "list_resources": 0,
@@ -481,7 +481,7 @@
       "functions": 0,
       "guides": 8,
       "subcategories": 19,
-      "total_features": 76,
+      "total_features": 74,
       "downloads": 487114313
     },
     {
@@ -555,7 +555,7 @@
       "latest_published": "2026-01-09T17:57:30Z",
       "version_count": 112,
       "created_at": "",
-      "days_since_update": 17,
+      "days_since_update": 18,
       "protocol_v4": false,
       "protocol_v5": false,
       "protocol_v6": true,
@@ -563,7 +563,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 335,
-      "resource_identities": 16,
+      "resource_identities": 0,
       "data_sources": 206,
       "ephemeral_resources": 18,
       "list_resources": 0,
@@ -571,7 +571,7 @@
       "functions": 0,
       "guides": 0,
       "subcategories": 0,
-      "total_features": 575,
+      "total_features": 559,
       "downloads": 122619694
     },
     {
@@ -623,7 +623,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 33,
-      "resource_identities": 1,
+      "resource_identities": 0,
       "data_sources": 21,
       "ephemeral_resources": 0,
       "list_resources": 0,
@@ -631,7 +631,7 @@
       "functions": 0,
       "guides": 1,
       "subcategories": 0,
-      "total_features": 55,
+      "total_features": 54,
       "downloads": 78683171
     },
     {
@@ -743,7 +743,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 66,
-      "resource_identities": 3,
+      "resource_identities": 0,
       "data_sources": 37,
       "ephemeral_resources": 0,
       "list_resources": 0,
@@ -751,7 +751,7 @@
       "functions": 0,
       "guides": 17,
       "subcategories": 12,
-      "total_features": 106,
+      "total_features": 103,
       "downloads": 17009365
     },
     {
@@ -773,7 +773,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 37,
-      "resource_identities": 1,
+      "resource_identities": 0,
       "data_sources": 6,
       "ephemeral_resources": 0,
       "list_resources": 0,
@@ -781,7 +781,7 @@
       "functions": 0,
       "guides": 0,
       "subcategories": 0,
-      "total_features": 44,
+      "total_features": 43,
       "downloads": 9918318
     },
     {
@@ -833,7 +833,7 @@
       "cohort_sdkv2_only": false,
       "cohort_framework_sdkv2": true,
       "managed_resources": 40,
-      "resource_identities": 2,
+      "resource_identities": 0,
       "data_sources": 20,
       "ephemeral_resources": 0,
       "list_resources": 0,
@@ -841,7 +841,7 @@
       "functions": 0,
       "guides": 5,
       "subcategories": 9,
-      "total_features": 62,
+      "total_features": 60,
       "downloads": 1758891
     },
     {
