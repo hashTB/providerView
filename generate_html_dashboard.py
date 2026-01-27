@@ -416,6 +416,123 @@ HTML_PART1 = '''<!DOCTYPE html>
             color: var(--primary-dark);
         }
         
+        /* Identity modal styles */
+        .identity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .identity-stat-card {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .identity-stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .identity-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        
+        .identity-breakdown {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 700px) {
+            .identity-breakdown {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .identity-section {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--border);
+        }
+        
+        .identity-section h4 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .identity-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.875rem;
+        }
+        
+        .identity-row:last-child {
+            border-bottom: none;
+        }
+        
+        .identity-row-label {
+            color: var(--text-muted);
+        }
+        
+        .identity-row-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .identity-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        
+        .identity-bar-fill {
+            height: 100%;
+            background: var(--primary);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        
+        .reason-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 10px;
+            margin: 4px 0;
+            background: var(--bg-card);
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .reason-name {
+            color: var(--text);
+        }
+        
+        .reason-count {
+            background: var(--primary);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
         .tab-buttons {
             display: flex;
             gap: 10px;
@@ -652,6 +769,17 @@ HTML_PART3 = ''' providers</span>
         </div>
     </div>
     
+    <!-- Modal for Resource Identity details (Azure) -->
+    <div id="identity-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 1000px;">
+            <span class="modal-close" onclick="closeIdentityModal()">&times;</span>
+            <h2 class="modal-title" id="identity-modal-title">🔐 Azure Resource Identity Analysis</h2>
+            <div id="identity-modal-body">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
@@ -666,6 +794,9 @@ HTML_PART3B = ''';
 
 HTML_PART3C = ''';
         const providerHistory = '''
+
+HTML_PART3D = ''';
+        const azureIdentityData = '''
 
 HTML_PART4 = ''';
         
@@ -863,6 +994,110 @@ HTML_PART4 = ''';
         
         function closeModal() {
             document.getElementById('feature-modal').style.display = 'none';
+        }
+        
+        // Identity Modal functionality
+        function closeIdentityModal() {
+            document.getElementById('identity-modal').style.display = 'none';
+        }
+        
+        function openIdentityModal(provider) {
+            var modal = document.getElementById('identity-modal');
+            var body = document.getElementById('identity-modal-body');
+            
+            modal.style.display = 'block';
+            
+            if (!azureIdentityData || !azureIdentityData.summary) {
+                body.innerHTML = '<div class="loading">No identity data available. Run scan_azure_identity_detailed.py first.</div>';
+                return;
+            }
+            
+            var s = azureIdentityData.summary;
+            var wi = s.with_identity;
+            var wo = s.without_identity;
+            
+            // Build the modal content
+            var html = '';
+            
+            // Summary cards
+            html += '<div class="identity-grid">';
+            html += '<div class="identity-stat-card">';
+            html += '<div class="identity-stat-value">' + s.total_resources + '</div>';
+            html += '<div class="identity-stat-label">Total Resources</div>';
+            html += '</div>';
+            html += '<div class="identity-stat-card">';
+            html += '<div class="identity-stat-value" style="color: #22c55e;">' + wi.count + '</div>';
+            html += '<div class="identity-stat-label">With Identity (' + wi.percentage + '%)</div>';
+            html += '</div>';
+            html += '<div class="identity-stat-card">';
+            html += '<div class="identity-stat-value" style="color: #ef4444;">' + wo.count + '</div>';
+            html += '<div class="identity-stat-label">Without Identity (' + wo.percentage + '%)</div>';
+            html += '</div>';
+            html += '<div class="identity-stat-card">';
+            html += '<div class="identity-stat-value" style="color: #8b5cf6;">' + wi.with_list + '</div>';
+            html += '<div class="identity-stat-label">With List Support</div>';
+            html += '</div>';
+            html += '</div>';
+            
+            // Progress bar
+            html += '<div class="identity-bar" style="margin-bottom: 20px;">';
+            html += '<div class="identity-bar-fill" style="width: ' + wi.percentage + '%; background: linear-gradient(90deg, #22c55e 0%, #10b981 100%);"></div>';
+            html += '</div>';
+            
+            // Two-column breakdown
+            html += '<div class="identity-breakdown">';
+            
+            // Left: Resources WITH identity
+            html += '<div class="identity-section">';
+            html += '<h4>✅ Resources WITH Identity</h4>';
+            html += '<div class="identity-row"><span class="identity-row-label">Typed (Plugin Framework)</span><span class="identity-row-value">' + wi.typed + '</span></div>';
+            html += '<div class="identity-row"><span class="identity-row-label">Untyped (SDK v2)</span><span class="identity-row-value">' + wi.untyped + '</span></div>';
+            html += '<div class="identity-row"><span class="identity-row-label">With List Support</span><span class="identity-row-value">' + wi.with_list + '</span></div>';
+            html += '<div class="identity-row"><span class="identity-row-label">Without List</span><span class="identity-row-value">' + wi.without_list + '</span></div>';
+            html += '</div>';
+            
+            // Right: Resources WITHOUT identity (by reason)
+            html += '<div class="identity-section">';
+            html += '<h4>❌ Resources WITHOUT Identity (by reason)</h4>';
+            
+            var reasons = wo.by_reason || {};
+            var reasonLabels = {
+                'eligible': '🎯 Eligible (can add identity)',
+                'custom_parse_id': '🔧 Custom Parse ID',
+                'nested_resource': '📦 Nested Resource',
+                'azuread_provider': '🔑 AzureAD Provider',
+                'numeric_segment': '🔢 Numeric Segment',
+                'scoped_id': '🎯 Scoped ID',
+                'data_plane': '☁️ Data Plane',
+                'composite_id': '🧩 Composite ID',
+                'extension_resource': '🔌 Extension Resource',
+                'provider_component': '⚙️ Provider Component'
+            };
+            
+            // Sort by count descending
+            var sortedReasons = Object.keys(reasons).sort(function(a, b) { return reasons[b] - reasons[a]; });
+            
+            sortedReasons.forEach(function(reason) {
+                var label = reasonLabels[reason] || reason;
+                var count = reasons[reason];
+                html += '<div class="reason-item">';
+                html += '<span class="reason-name">' + label + '</span>';
+                html += '<span class="reason-count">' + count + '</span>';
+                html += '</div>';
+            });
+            
+            html += '</div>';
+            html += '</div>';
+            
+            // Footer note
+            html += '<div style="margin-top: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">';
+            html += '<p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">';
+            html += '📊 <strong>Source:</strong> Scanned from terraform-provider-azurerm source code on GitHub<br>';
+            html += '🎯 <strong>Eligible</strong> resources can potentially have Identity support added. Other categories have technical constraints.';
+            html += '</p>';
+            html += '</div>';
+            
+            body.innerHTML = html;
         }
         
         function openModal(provider, version, category) {
@@ -1163,9 +1398,16 @@ HTML_PART4 = ''';
             if (e.target === this) closeModal();
         };
         
+        document.getElementById('identity-modal').onclick = function(e) {
+            if (e.target === this) closeIdentityModal();
+        };
+        
         // Close modal on Escape key
         document.onkeydown = function(e) {
-            if (e.key === 'Escape') closeModal();
+            if (e.key === 'Escape') {
+                closeModal();
+                closeIdentityModal();
+            }
         };
         
         // Render clickable action count
@@ -1173,6 +1415,19 @@ HTML_PART4 = ''';
             if (type !== 'display') return data;
             if (!data || data === 0) return '0';
             return '<span class="clickable" onclick="openModal(\\'' + row.provider + '\\', \\'' + row.version + '\\', \\'' + category + '\\')">' + formatNumber(data) + '</span>';
+        }
+        
+        // Render identities with click for Azure
+        function renderIdentities(data, type, row) {
+            if (type !== 'display') return data || 0;
+            if (!data || data === 0) return '0';
+            
+            // Check if this is Azure provider and we have identity data
+            if (row.provider === 'hashicorp/azurerm' && azureIdentityData && azureIdentityData.summary) {
+                return '<span class="clickable" onclick="openIdentityModal(\\'' + row.provider + '\\')" title="Click for identity breakdown">' + formatNumber(data) + ' 🔍</span>';
+            }
+            
+            return formatNumber(data);
         }
         
         $(document).ready(function() {
@@ -1205,7 +1460,7 @@ HTML_PART4 = ''';
                     { data: 'resources', render: function(d, t, row) { return renderClickable(d, t, row, 'resources'); } },
                     { data: 'list_resources', render: function(d, t, row) { return renderClickable(d, t, row, 'list-resources'); } },
                     { data: 'actions', render: function(d, t, row) { return renderClickable(d, t, row, 'actions'); } },
-                    { data: 'identities', render: formatNumber },
+                    { data: 'identities', render: function(d, t, row) { return renderIdentities(d, t, row); } },
                     { data: 'data_sources', render: function(d, t, row) { return renderClickable(d, t, row, 'data-sources'); } },
                     { data: 'total_features', render: formatNumber }
                 ],
@@ -1361,6 +1616,23 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
     except FileNotFoundError:
         print(f"   ⚠️  No history file found at {history_path}, trend charts will be disabled")
     
+    # Try to load Azure identity details JSON
+    azure_identity_json = '{}'
+    csv_dir = Path(csv_path).parent
+    azure_identity_path = csv_dir / 'data' / 'azure_identity_detailed.json'
+    
+    print(f"   Looking for Azure identity data at: {azure_identity_path.absolute()}")
+    try:
+        with open(azure_identity_path, 'r', encoding='utf-8') as f:
+            azure_identity_json = f.read()
+        if azure_identity_json.strip() and azure_identity_json.strip() != '{}':
+            print(f"   ✅ Loaded Azure identity data from {azure_identity_path}")
+        else:
+            print(f"   ⚠️  Azure identity file exists but is empty")
+            azure_identity_json = '{}'
+    except FileNotFoundError:
+        print(f"   ⚠️  No Azure identity file found, identity popup will be disabled")
+    
     html = (
         HTML_PART1 +
         generated_date +
@@ -1372,6 +1644,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         details_json +
         HTML_PART3C +
         history_json +
+        HTML_PART3D +
+        azure_identity_json +
         HTML_PART4
     )
     
