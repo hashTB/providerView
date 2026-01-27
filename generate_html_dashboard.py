@@ -1039,9 +1039,27 @@ HTML_PART4 = ''';
             html += '</div>';
             html += '</div>';
             
-            // Progress bar
-            html += '<div class="identity-bar" style="margin-bottom: 20px;">';
+            // Progress bar - Identity coverage
+            html += '<div style="margin-bottom: 8px;">';
+            html += '<div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">';
+            html += '<span>🔐 Identity Support</span>';
+            html += '<span>' + wi.count + ' / ' + s.total_resources + ' (' + wi.percentage + '%)</span>';
+            html += '</div>';
+            html += '<div class="identity-bar">';
             html += '<div class="identity-bar-fill" style="width: ' + wi.percentage + '%; background: linear-gradient(90deg, #22c55e 0%, #10b981 100%);"></div>';
+            html += '</div>';
+            html += '</div>';
+            
+            // Progress bar - List support (within those with identity)
+            var listPercentage = wi.count > 0 ? ((wi.with_list / wi.count) * 100).toFixed(1) : 0;
+            html += '<div style="margin-bottom: 20px;">';
+            html += '<div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">';
+            html += '<span>📋 List Support (of identity resources)</span>';
+            html += '<span>' + wi.with_list + ' / ' + wi.count + ' (' + listPercentage + '%)</span>';
+            html += '</div>';
+            html += '<div class="identity-bar">';
+            html += '<div class="identity-bar-fill" style="width: ' + listPercentage + '%; background: linear-gradient(90deg, #8b5cf6 0%, #7c3aed 100%);"></div>';
+            html += '</div>';
             html += '</div>';
             
             // Two-column breakdown
