@@ -102,6 +102,17 @@ jobs:
           
           echo "Running: $CMD"
           $CMD
+          
+          # Debug: show what was generated
+          echo "=== Checking generated CSV ==="
+          if [ -f "terraform_providers.csv" ]; then
+            echo "CSV generated with $(wc -l < terraform_providers.csv) lines"
+            echo "Sample AWS row:"
+            grep "hashicorp/aws," terraform_providers.csv | head -1
+          else
+            echo "ERROR: CSV not generated!"
+            exit 1
+          fi
 
       - name: Build history from snapshots
         run: |
@@ -111,12 +122,14 @@ jobs:
             echo "No snapshots directory found, skipping history build"
           fi
 
-      - name: Commit snapshots and history to repo
+      - name: Commit data files to repo
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Add data files if they exist
+          # Add all data files
+          git add terraform_providers.csv 2>/dev/null || true
+          git add terraform_providers_details.json 2>/dev/null || true
           if [ -d "data/snapshots" ]; then
             git add data/snapshots/*.json 2>/dev/null || true
           fi
@@ -128,9 +141,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update historical snapshots [skip ci]"
+            git commit -m "Update provider dashboard $(date +%Y-%m-%d)"
             git push
-            echo "Committed snapshot data to repo"
+            echo "Committed data to repo"
           fi
 
       - name: Save cache for next run
