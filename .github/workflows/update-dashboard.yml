@@ -67,6 +67,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run provider scanner
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Remove any stale cached CSV to force full re-scan
           rm -f terraform_providers.csv terraform_providers_details.json

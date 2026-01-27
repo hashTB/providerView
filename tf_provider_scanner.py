@@ -37,6 +37,15 @@ HEADERS = {
     "Accept": "application/json",
 }
 
+# GitHub API authentication (optional - increases rate limit from 60 to 5000/hour)
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '')
+GITHUB_HEADERS = {
+    "User-Agent": "TerraformProviderScanner/1.0",
+    "Accept": "application/vnd.github.v3.raw",
+}
+if GITHUB_TOKEN:
+    GITHUB_HEADERS["Authorization"] = f"token {GITHUB_TOKEN}"
+
 # Rate limiting
 REQUEST_DELAY = 0.1  # seconds between requests
 MAX_RETRIES = 3
@@ -372,9 +381,9 @@ def detect_cohort_from_github(source_url: str) -> tuple[bool, bool, bool, bool]:
         
         owner, repo = parts[0], parts[1]
         
-        # Try to fetch go.mod from main branch
+        # Try to fetch go.mod from main branch (using GitHub headers for auth)
         go_mod_url = f"{GITHUB_RAW_BASE}/{owner}/{repo}/main/go.mod"
-        request = Request(go_mod_url, headers=HEADERS)
+        request = Request(go_mod_url, headers=GITHUB_HEADERS)
         
         with urlopen(request, timeout=10) as response:
             content = response.read().decode('utf-8')
