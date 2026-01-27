@@ -111,32 +111,48 @@ def get_all_providers(tier: str = None, limit: int = None) -> List[Dict]:
 
 def get_provider_versions(namespace: str, name: str) -> dict:
     """Get version info for a provider."""
-    url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}/versions"
-    data = make_request(url)
+    # First get the main endpoint to get the ACTUAL latest version
+    main_url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}"
+    main_data = make_request(main_url)
     
-    if not data or 'versions' not in data:
-        return {'versions': [], 'latest': None, 'protocols': []}
+    # Then get all versions for the count
+    versions_url = f"{REGISTRY_V1_BASE}/providers/{namespace}/{name}/versions"
+    versions_data = make_request(versions_url)
     
-    versions = data['versions']
-    if not versions:
-        return {'versions': [], 'latest': None, 'protocols': []}
-    
-    # Get latest version details
-    latest = versions[0]
-    latest_version = latest.get('version', '')
-    protocols = latest.get('protocols', [])
-    published_at = latest.get('published_at', '')
-    
-    # Get all version numbers
-    all_versions = [v.get('version', '') for v in versions]
-    
-    return {
-        'versions': all_versions,
-        'version_count': len(all_versions),
-        'latest': latest_version,
-        'latest_published': published_at,
-        'protocols': protocols,
+    result = {
+        'versions': [],
+        'version_count': 0,
+        'latest': None,
+        'latest_published': '',
+        'protocols': [],
     }
+    
+    # Get latest version from main endpoint (this is authoritative)
+    if main_data:
+        result['latest'] = main_data.get('version', '')
+        result['latest_published'] = main_data.get('published_at', '')
+    
+    # Get all versions and protocols from versions endpoint
+    if versions_data and 'versions' in versions_data:
+        versions = versions_data['versions']
+        result['versions'] = [v.get('version', '') for v in versions]
+        result['version_count'] = len(versions)
+        
+        # Find the protocols for the actual latest version
+        latest_version = result['latest']
+        for v in versions:
+            if v.get('version') == latest_version:
+                result['protocols'] = v.get('protocols', [])
+                break
+        
+        # If we didn't find protocols for latest, collect all unique protocols
+        if not result['protocols']:
+            all_protocols = set()
+            for v in versions:
+                all_protocols.update(v.get('protocols', []))
+            result['protocols'] = sorted(list(all_protocols))
+    
+    return result
 
 
 def get_provider_docs(namespace: str, name: str, version: str) -> dict:
