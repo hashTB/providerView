@@ -356,6 +356,35 @@ def detect_cohort(protocols: list[str]) -> tuple[bool, bool, bool]:
     return framework_only, sdkv2_only, framework_sdkv2
 
 
+# Known major providers that use Framework+SDKv2 (verified from go.mod)
+# These are hardcoded to avoid GitHub API rate limits
+KNOWN_FRAMEWORK_SDKV2_PROVIDERS = {
+    'hashicorp/aws',
+    'hashicorp/azurerm', 
+    'hashicorp/google',
+    'hashicorp/google-beta',
+    'hashicorp/azuread',
+    'hashicorp/azurestack',
+    'hashicorp/kubernetes',
+    'hashicorp/helm',
+    'hashicorp/vault',
+    'hashicorp/consul',
+    'hashicorp/nomad',
+    'hashicorp/boundary',
+    'hashicorp/waypoint',
+    'hashicorp/hcp',
+    'hashicorp/tfe',
+    'mongodb/mongodbatlas',
+    'datadog/datadog',
+    'cloudflare/cloudflare',
+    'grafana/grafana',
+    'newrelic/newrelic',
+    'pagerduty/pagerduty',
+    'snowflake-labs/snowflake',
+    'databricks/databricks',
+}
+
+
 def detect_cohort_from_github(source_url: str) -> tuple[bool, bool, bool, bool]:
     """
     Detect the SDK/Framework cohort by checking the provider's go.mod file.
@@ -468,17 +497,26 @@ def scan_provider(provider_info: dict) -> ProviderData:
         result.protocol_v5 = any('5' in p for p in protocols)
         result.protocol_v6 = any('6' in p for p in protocols)
         
-        # Try to detect cohort from GitHub first (more accurate)
-        gh_framework_only, gh_sdkv2_only, gh_framework_sdkv2, detected = detect_cohort_from_github(source_url)
-        
-        if detected:
-            result.cohort_framework_only = gh_framework_only
-            result.cohort_sdkv2_only = gh_sdkv2_only
-            result.cohort_framework_sdkv2 = gh_framework_sdkv2
-            # Update protocol v6 if we detected framework
-            if gh_framework_only or gh_framework_sdkv2:
-                result.protocol_v6 = True
+        # Check known providers list first (avoids GitHub API rate limits)
+        if full_name in KNOWN_FRAMEWORK_SDKV2_PROVIDERS:
+            result.cohort_framework_only = False
+            result.cohort_sdkv2_only = False
+            result.cohort_framework_sdkv2 = True
+            result.protocol_v6 = True
+            detected = True
         else:
+            # Try to detect cohort from GitHub (more accurate for unknown providers)
+            gh_framework_only, gh_sdkv2_only, gh_framework_sdkv2, detected = detect_cohort_from_github(source_url)
+            
+            if detected:
+                result.cohort_framework_only = gh_framework_only
+                result.cohort_sdkv2_only = gh_sdkv2_only
+                result.cohort_framework_sdkv2 = gh_framework_sdkv2
+                # Update protocol v6 if we detected framework
+                if gh_framework_only or gh_framework_sdkv2:
+                    result.protocol_v6 = True
+        
+        if not detected:
             # Fall back to protocol-based detection
             result.cohort_framework_only, result.cohort_sdkv2_only, result.cohort_framework_sdkv2 = detect_cohort(protocols)
         
