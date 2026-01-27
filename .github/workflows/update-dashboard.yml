@@ -182,12 +182,21 @@ jobs:
             echo "Created snapshot for ${DATE}"
           fi
 
+      - name: Update docs folder for GitHub Pages
+        run: |
+          mkdir -p docs
+          cp index.html docs/
+          cp terraform_providers.csv docs/
+          echo "Updated docs folder"
+
       - name: Commit dashboard and snapshots
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
           git add index.html
+          git add docs/index.html
+          git add docs/terraform_providers.csv
           git add data/snapshots/*.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
           
