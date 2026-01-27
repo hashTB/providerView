@@ -444,32 +444,19 @@ def detect_cohort_from_github(source_url: str) -> tuple[bool, bool, bool, bool]:
         return False, False, False, False
 
 
-def estimate_resource_identities(managed_resources: int, framework_only: bool, 
-                                  framework_sdkv2: bool, provider_name: str) -> int:
+def get_resource_identities(provider_name: str) -> int:
     """
-    Estimate the number of resources that support Resource Identity.
+    Get Resource Identity count from scanned data.
     
     Resource Identity is a terraform-plugin-framework feature that allows resources
     to be imported using identity attributes rather than just an ID string.
     
-    Heuristics:
-    - Framework-only providers: All resources have identity support
-    - SDK v2 only providers: No resources have identity support  
-    - Mixed providers: Some resources have identity support (estimate ~5-10%)
-    
-    Note: This is an estimate. Accurate detection requires schema analysis.
+    Only returns actual scanned data for AWS and Azure providers.
+    All other providers return 0 (no estimation).
     """
-    if framework_only:
-        # Framework-only providers - all resources support identity
-        return managed_resources
-    elif framework_sdkv2:
-        # Mixed providers - estimate based on typical adoption rates
-        # Most large providers are gradually migrating resources to framework
-        # Estimate ~5% of resources have been migrated with identity support
-        return int(managed_resources * 0.05)
-    else:
-        # SDK v2 only - no identity support
-        return 0
+    # Only AWS and Azure have actual scanned data - loaded separately in dashboard
+    # Return 0 here - actual values come from JSON files
+    return 0
 
 
 def scan_provider(provider_info: dict) -> ProviderData:
@@ -534,13 +521,8 @@ def scan_provider(provider_info: dict) -> ProviderData:
         if result.managed_resources > 0 or result.data_sources > 0 or result.actions > 0 or result.list_resources > 0:
             result.docs_detailed = get_provider_docs_detailed(namespace, name, latest_version)
         
-        # Estimate resource identities based on framework usage
-        result.resource_identities = estimate_resource_identities(
-            result.managed_resources,
-            result.cohort_framework_only,
-            result.cohort_framework_sdkv2,
-            full_name
-        )
+        # Resource identities - only from scanned data (AWS/Azure), not estimated
+        result.resource_identities = get_resource_identities(full_name)
         
         # Calculate total features
         result.total_features = (

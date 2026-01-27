@@ -145,47 +145,13 @@ def detect_cohort_from_github(source_url: str) -> tuple[bool, bool, bool, bool]:
         return False, False, False, False
 
 
-def load_resource_identity_counts() -> dict:
+def get_resource_identities() -> int:
     """
-    Load actual Resource Identity counts from scan results.
-    Returns dict of provider_name -> count
-    """
-    identity_file = Path(__file__).parent / 'data' / 'resource_identities.json'
-    if not identity_file.exists():
-        return {}
+    Get Resource Identity count.
     
-    try:
-        with open(identity_file) as f:
-            data = json.load(f)
-        
-        counts = {}
-        for provider_name, provider_data in data.get('providers', {}).items():
-            counts[provider_name] = provider_data.get('resources_with_identity_count', 0)
-        return counts
-    except Exception:
-        return {}
-
-
-# Load identity counts at module load time
-RESOURCE_IDENTITY_COUNTS = load_resource_identity_counts()
-
-
-def get_resource_identities(full_name: str, managed_resources: int, 
-                            framework_only: bool) -> int:
+    Only AWS and Azure have actual scanned data - loaded separately in dashboard.
+    All other providers return 0 (no estimation).
     """
-    Get actual Resource Identity count from scan data.
-    For framework-only providers, all resources support identity.
-    For others, use scanned data or return 0.
-    """
-    # Check if we have actual scanned data
-    if full_name in RESOURCE_IDENTITY_COUNTS:
-        return RESOURCE_IDENTITY_COUNTS[full_name]
-    
-    # For framework-only providers, all resources have identity support
-    if framework_only:
-        return managed_resources
-    
-    # No data available - return 0 (not estimated)
     return 0
 
 
@@ -227,10 +193,8 @@ def analyze_provider(provider: dict, check_github: bool = False) -> dict:
     guides = docs.get('guides', 0)
     subcategories = docs.get('subcategory_count', 0)
     
-    # Get actual resource identities (from scan data or 0)
-    resource_identities = get_resource_identities(
-        full_name, managed_resources, framework_only
-    )
+    # Resource identities - only from scanned data (AWS/Azure), not estimated
+    resource_identities = get_resource_identities()
     
     # Calculate total features
     total_features = (
