@@ -1,0 +1,20 @@
+# Identity scanners (keep locally, don't push - data is static)
+scan_azure_identity_detailed.py
+scan_aws_identity_detailed.py
+scan_resource_identities.py
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp

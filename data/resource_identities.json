@@ -917,5 +917,10 @@
       "resources_with_identity": [],
       "scanned_at": "2026-01-27T13:18:10.388636"
     }
+  },
+  "hashicorp/aws": {
+    "resources_with_identity": 233,
+    "total_resources": 1609,
+    "scanned_at": "2026-01-27T14:03:22.456299"
   }
 }

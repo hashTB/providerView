@@ -798,6 +798,9 @@ HTML_PART3C = ''';
 HTML_PART3D = ''';
         const azureIdentityData = '''
 
+HTML_PART3E = ''';
+        const awsIdentityData = '''
+
 HTML_PART4 = ''';
         
         function setColor(primary, dark) {
@@ -1003,16 +1006,33 @@ HTML_PART4 = ''';
         
         function openIdentityModal(provider) {
             var modal = document.getElementById('identity-modal');
+            var title = document.getElementById('identity-modal-title');
             var body = document.getElementById('identity-modal-body');
             
             modal.style.display = 'block';
             
-            if (!azureIdentityData || !azureIdentityData.summary) {
-                body.innerHTML = '<div class="loading">No identity data available. Run scan_azure_identity_detailed.py first.</div>';
+            // Determine which provider data to use
+            var identityData = null;
+            var providerLabel = '';
+            var isAzure = provider === 'hashicorp/azurerm';
+            var isAWS = provider === 'hashicorp/aws';
+            
+            if (isAzure && azureIdentityData && azureIdentityData.summary) {
+                identityData = azureIdentityData;
+                providerLabel = 'Azure';
+                title.textContent = '🔐 Azure Resource Identity Analysis';
+            } else if (isAWS && awsIdentityData && awsIdentityData.summary) {
+                identityData = awsIdentityData;
+                providerLabel = 'AWS';
+                title.textContent = '🔐 AWS Resource Identity Analysis';
+            }
+            
+            if (!identityData) {
+                body.innerHTML = '<div class="loading">No identity data available for ' + provider + '.</div>';
                 return;
             }
             
-            var s = azureIdentityData.summary;
+            var s = identityData.summary;
             var wi = s.with_identity;
             var wo = s.without_identity;
             
@@ -1065,44 +1085,76 @@ HTML_PART4 = ''';
             // Two-column breakdown
             html += '<div class="identity-breakdown">';
             
-            // Left: Resources WITH identity
+            // Left column - different for Azure vs AWS
             html += '<div class="identity-section">';
             html += '<h4>✅ Resources WITH Identity</h4>';
-            html += '<div class="identity-row"><span class="identity-row-label">Typed (Plugin Framework)</span><span class="identity-row-value">' + wi.typed + '</span></div>';
-            html += '<div class="identity-row"><span class="identity-row-label">Untyped (SDK v2)</span><span class="identity-row-value">' + wi.untyped + '</span></div>';
+            
+            if (isAzure) {
+                html += '<div class="identity-row"><span class="identity-row-label">Typed (Plugin Framework)</span><span class="identity-row-value">' + wi.typed + '</span></div>';
+                html += '<div class="identity-row"><span class="identity-row-label">Untyped (SDK v2)</span><span class="identity-row-value">' + wi.untyped + '</span></div>';
+            } else if (isAWS) {
+                html += '<div class="identity-row"><span class="identity-row-label">Regional Scope</span><span class="identity-row-value">' + (wi.regional || 0) + '</span></div>';
+                html += '<div class="identity-row"><span class="identity-row-label">Global Scope</span><span class="identity-row-value">' + (wi.global || 0) + '</span></div>';
+                html += '<div class="identity-row"><span class="identity-row-label">ARN-based</span><span class="identity-row-value">' + (wi.arn_based || 0) + '</span></div>';
+                html += '<div class="identity-row"><span class="identity-row-label">Parameterized</span><span class="identity-row-value">' + (wi.parameterized || 0) + '</span></div>';
+                html += '<div class="identity-row"><span class="identity-row-label">Singleton</span><span class="identity-row-value">' + (wi.singleton || 0) + '</span></div>';
+            }
             html += '<div class="identity-row"><span class="identity-row-label">With List Support</span><span class="identity-row-value">' + wi.with_list + '</span></div>';
             html += '<div class="identity-row"><span class="identity-row-label">Without List</span><span class="identity-row-value">' + wi.without_list + '</span></div>';
             html += '</div>';
             
-            // Right: Resources WITHOUT identity (by reason)
+            // Right column - breakdown by reason/type
             html += '<div class="identity-section">';
-            html += '<h4>❌ Resources WITHOUT Identity (by reason)</h4>';
             
-            var reasons = wo.by_reason || {};
-            var reasonLabels = {
-                'eligible': '🎯 Eligible (can add identity)',
-                'custom_parse_id': '🔧 Custom Parse ID',
-                'nested_resource': '📦 Nested Resource',
-                'azuread_provider': '🔑 AzureAD Provider',
-                'numeric_segment': '🔢 Numeric Segment',
-                'scoped_id': '🎯 Scoped ID',
-                'data_plane': '☁️ Data Plane',
-                'composite_id': '🧩 Composite ID',
-                'extension_resource': '🔌 Extension Resource',
-                'provider_component': '⚙️ Provider Component'
-            };
-            
-            // Sort by count descending
-            var sortedReasons = Object.keys(reasons).sort(function(a, b) { return reasons[b] - reasons[a]; });
-            
-            sortedReasons.forEach(function(reason) {
-                var label = reasonLabels[reason] || reason;
-                var count = reasons[reason];
-                html += '<div class="reason-item">';
-                html += '<span class="reason-name">' + label + '</span>';
-                html += '<span class="reason-count">' + count + '</span>';
-                html += '</div>';
-            });
+            if (isAzure && wo.by_reason) {
+                html += '<h4>❌ Resources WITHOUT Identity (by reason)</h4>';
+                var reasons = wo.by_reason || {};
+                var reasonLabels = {
+                    'eligible': '🎯 Eligible (can add identity)',
+                    'custom_parse_id': '🔧 Custom Parse ID',
+                    'nested_resource': '📦 Nested Resource',
+                    'azuread_provider': '🔑 AzureAD Provider',
+                    'numeric_segment': '🔢 Numeric Segment',
+                    'scoped_id': '🎯 Scoped ID',
+                    'data_plane': '☁️ Data Plane',
+                    'composite_id': '🧩 Composite ID',
+                    'extension_resource': '🔌 Extension Resource',
+                    'provider_component': '⚙️ Provider Component'
+                };
+                
+                var sortedReasons = Object.keys(reasons).sort(function(a, b) { return reasons[b] - reasons[a]; });
+                sortedReasons.forEach(function(reason) {
+                    var label = reasonLabels[reason] || reason;
+                    var count = reasons[reason];
+                    html += '<div class="reason-item">';
+                    html += '<span class="reason-name">' + label + '</span>';
+                    html += '<span class="reason-count">' + count + '</span>';
+                    html += '</div>';
+                });
+            } else if (isAWS && s.by_identity_type) {
+                html += '<h4>🏷️ Identity Types Used</h4>';
+                var types = s.by_identity_type || {};
+                var typeLabels = {
+                    'RegionalARNIdentity': '🌐 Regional ARN',
+                    'GlobalARNIdentity': '🌍 Global ARN',
+                    'RegionalSingleParameterIdentity': '📍 Regional Single Param',
+                    'GlobalSingleParameterIdentity': '🗺️ Global Single Param',
+                    'RegionalParameterizedIdentity': '📍 Regional Multi Param',
+                    'GlobalParameterizedIdentity': '🗺️ Global Multi Param',
+                    'RegionalSingletonIdentity': '📍 Regional Singleton',
+                    'GlobalSingletonIdentity': '🗺️ Global Singleton'
+                };
+                
+                var sortedTypes = Object.keys(types).sort(function(a, b) { return types[b] - types[a]; });
+                sortedTypes.forEach(function(type) {
+                    var label = typeLabels[type] || type;
+                    var count = types[type];
+                    html += '<div class="reason-item">';
+                    html += '<span class="reason-name">' + label + '</span>';
+                    html += '<span class="reason-count">' + count + '</span>';
+                    html += '</div>';
+                });
+            }
             
             html += '</div>';
             html += '</div>';
@@ -1110,8 +1162,12 @@ HTML_PART4 = ''';
             // Footer note
             html += '<div style="margin-top: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border: 1px solid var(--border);">';
             html += '<p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">';
-            html += '📊 <strong>Source:</strong> Scanned from terraform-provider-azurerm source code on GitHub<br>';
-            html += '🎯 <strong>Eligible</strong> resources can potentially have Identity support added. Other categories have technical constraints.';
+            html += '📊 <strong>Source:</strong> Scanned from terraform-provider-' + providerLabel.toLowerCase() + ' source code on GitHub<br>';
+            if (isAzure) {
+                html += '🎯 <strong>Eligible</strong> resources can potentially have Identity support added. Other categories have technical constraints.';
+            } else if (isAWS) {
+                html += '🔐 <strong>Identity</strong> enables resource imports and tracking across regions/accounts.';
+            }
             html += '</p>';
             html += '</div>';
             
@@ -1435,13 +1491,18 @@ HTML_PART4 = ''';
             return '<span class="clickable" onclick="openModal(\\'' + row.provider + '\\', \\'' + row.version + '\\', \\'' + category + '\\')">' + formatNumber(data) + '</span>';
         }
         
-        // Render identities with click for Azure
+        // Render identities with click for Azure and AWS
         function renderIdentities(data, type, row) {
             if (type !== 'display') return data || 0;
             if (!data || data === 0) return '0';
             
             // Check if this is Azure provider and we have identity data
             if (row.provider === 'hashicorp/azurerm' && azureIdentityData && azureIdentityData.summary) {
+                return '<span class="clickable" onclick="openIdentityModal(\\'' + row.provider + '\\')" title="Click for identity breakdown">' + formatNumber(data) + ' 🔍</span>';
+            }
+            
+            // Check if this is AWS provider and we have identity data
+            if (row.provider === 'hashicorp/aws' && awsIdentityData && awsIdentityData.summary) {
                 return '<span class="clickable" onclick="openIdentityModal(\\'' + row.provider + '\\')" title="Click for identity breakdown">' + formatNumber(data) + ' 🔍</span>';
             }
             
@@ -1651,6 +1712,22 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
     except FileNotFoundError:
         print(f"   ⚠️  No Azure identity file found, identity popup will be disabled")
     
+    # Try to load AWS identity details JSON
+    aws_identity_json = '{}'
+    aws_identity_path = csv_dir / 'data' / 'aws_identity_detailed.json'
+    
+    print(f"   Looking for AWS identity data at: {aws_identity_path.absolute()}")
+    try:
+        with open(aws_identity_path, 'r', encoding='utf-8') as f:
+            aws_identity_json = f.read()
+        if aws_identity_json.strip() and aws_identity_json.strip() != '{}':
+            print(f"   ✅ Loaded AWS identity data from {aws_identity_path}")
+        else:
+            print(f"   ⚠️  AWS identity file exists but is empty")
+            aws_identity_json = '{}'
+    except FileNotFoundError:
+        print(f"   ⚠️  No AWS identity file found, identity popup will be disabled for AWS")
+    
     html = (
         HTML_PART1 +
         generated_date +
@@ -1664,6 +1741,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         history_json +
         HTML_PART3D +
         azure_identity_json +
+        HTML_PART3E +
+        aws_identity_json +
         HTML_PART4
     )
     
