@@ -1286,20 +1286,65 @@ HTML_PART4 = ''';
                 return;
             }
             
-            var html = '<ul class="feature-list">';
+            // Group docs by subcategory (service)
+            var byService = {};
+            var noService = [];
             docs.forEach(function(doc) {
+                var svc = doc.subcategory || '';
+                if (svc) {
+                    if (!byService[svc]) byService[svc] = [];
+                    byService[svc].push(doc);
+                } else {
+                    noService.push(doc);
+                }
+            });
+            
+            var serviceNames = Object.keys(byService).sort();
+            var html = '';
+            
+            // Show service summary badges
+            if (serviceNames.length > 1) {
+                html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">';
+                serviceNames.forEach(function(svc) {
+                    html += '<span style="background:rgba(6,182,212,0.15);color:var(--primary);padding:4px 10px;border-radius:6px;font-size:0.8rem;">' + svc + ' (' + byService[svc].length + ')</span>';
+                });
+                if (noService.length > 0) {
+                    html += '<span style="background:rgba(148,163,184,0.15);color:var(--text-muted);padding:4px 10px;border-radius:6px;font-size:0.8rem;">Other (' + noService.length + ')</span>';
+                }
+                html += '</div>';
+            }
+            
+            // Render items grouped by service
+            function renderDocItem(doc) {
                 var title = doc.title || doc.slug || 'Unknown';
                 var slug = doc.slug || '';
                 var registryUrl = 'https://registry.terraform.io/providers/' + namespace + '/' + name + '/latest/docs/' + category + '/' + slug;
-                
-                html += '<li class="feature-item">';
-                html += '<h4><a href="' + registryUrl + '" target="_blank">' + title + '</a></h4>';
-                if (doc.subcategory) {
-                    html += '<p>Category: ' + doc.subcategory + '</p>';
-                }
-                html += '</li>';
+                var out = '<li class="feature-item">';
+                out += '<h4><a href="' + registryUrl + '" target="_blank">' + title + '</a></h4>';
+                out += '</li>';
+                return out;
+            }
+            
+            serviceNames.forEach(function(svc) {
+                html += '<div style="margin-bottom:12px;">';
+                html += '<h4 style="color:var(--primary);font-size:0.85rem;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:4px;">' + svc + ' <span style="color:var(--text-muted);font-weight:normal;">(' + byService[svc].length + ')</span></h4>';
+                html += '<ul class="feature-list" style="margin-left:8px;">';
+                byService[svc].forEach(function(doc) { html += renderDocItem(doc); });
+                html += '</ul></div>';
             });
-            html += '</ul>';
+            
+            if (noService.length > 0) {
+                if (serviceNames.length > 0) {
+                    html += '<div style="margin-bottom:12px;">';
+                    html += '<h4 style="color:var(--text-muted);font-size:0.85rem;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:4px;">Other</h4>';
+                    html += '<ul class="feature-list" style="margin-left:8px;">';
+                } else {
+                    html += '<ul class="feature-list">';
+                }
+                noService.forEach(function(doc) { html += renderDocItem(doc); });
+                html += '</ul>';
+                if (serviceNames.length > 0) html += '</div>';
+            }
             
             body.innerHTML = html;
         }
