@@ -33,9 +33,58 @@ def parse_snapshot_date(filename: str) -> str:
 
 
 def load_snapshot_json(filepath: str) -> dict:
-    """Load a JSON snapshot file."""
+    """Load a JSON snapshot file.
+    
+    Handles two formats:
+    1. Processed snapshots: dict keyed by provider name -> {downloads, resources, ...}
+    2. Raw snapshots: {'providers': [list of dicts]} or [list of dicts]
+       where each item has 'provider'/'full_name', 'docs': {resources, ...}, 'downloads', etc.
+    """
     with open(filepath, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # If it's a dict with a 'providers' key, check the type
+    if isinstance(data, dict) and 'providers' in data:
+        providers = data['providers']
+    else:
+        providers = data
+
+    # Already in processed format (dict keyed by name)
+    if isinstance(providers, dict):
+        # Verify it's not the raw format wrapped in a dict
+        first_val = next(iter(providers.values()), None) if providers else None
+        if isinstance(first_val, dict) and 'downloads' in first_val:
+            return providers
+        # Might be some other dict format — return as-is
+        return providers
+
+    # Raw format: list of provider dicts → convert to processed format
+    if isinstance(providers, list):
+        converted = {}
+        for p in providers:
+            if not isinstance(p, dict):
+                continue
+            name = p.get('full_name', p.get('provider', ''))
+            if not name:
+                continue
+            docs = p.get('docs', {})
+            if not isinstance(docs, dict):
+                docs = {}
+            converted[name] = {
+                'downloads': p.get('downloads', 0),
+                'resources': docs.get('resources', 0),
+                'data_sources': docs.get('data_sources', 0),
+                'list_resources': docs.get('list_resources', 0),
+                'actions': docs.get('actions', 0),
+                'ephemeral_resources': docs.get('ephemeral_resources', 0),
+                'functions': docs.get('functions', 0),
+                'total_features': docs.get('total_features', 0),
+                'version': p.get('version', ''),
+                'version_count': p.get('version_count', 0),
+            }
+        return converted
+
+    return {}
 
 
 def load_snapshot_csv(filepath: str) -> dict:
