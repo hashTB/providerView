@@ -189,6 +189,12 @@ jobs:
           cp terraform_providers.csv docs/
           echo "Updated docs folder"
 
+      - name: Generate download trends page
+        run: |
+          python3 generate_download_trends.py
+          echo "=== Download trends generated ==="
+          ls -la docs/downloads.html
+
       - name: Commit dashboard and snapshots
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -197,6 +203,7 @@ jobs:
           git add index.html
           git add docs/index.html
           git add docs/terraform_providers.csv
+          git add docs/downloads.html 2>/dev/null || true
           git add data/snapshots/*.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
           
@@ -215,6 +222,7 @@ jobs:
           mkdir -p _site/data
           cp index.html _site/
           cp terraform_providers.csv _site/
+          cp docs/downloads.html _site/ 2>/dev/null || true
           cp data/history.json _site/data/ 2>/dev/null || true
           
       - name: Upload artifact
