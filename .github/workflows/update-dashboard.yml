@@ -156,6 +156,11 @@ jobs:
             echo "No snapshots directory, skipping history build"
           fi
 
+      - name: Refresh provider details (list-resources, actions)
+        run: |
+          python3 refresh_provider_details.py
+          echo "=== Provider details refreshed ==="
+
       - name: Generate HTML dashboard
         run: |
           if [ -f "terraform_providers.csv" ]; then
@@ -204,6 +209,7 @@ jobs:
           git add docs/index.html
           git add docs/terraform_providers.csv
           git add docs/downloads.html 2>/dev/null || true
+          git add terraform_providers_details.json 2>/dev/null || true
           git add data/snapshots/*.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
           
