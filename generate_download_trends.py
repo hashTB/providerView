@@ -76,11 +76,11 @@ def fmt(n):
     if n is None:
         return "N/A"
     if n >= 1_000_000_000:
-        return f"{n / 1_000_000_000:.2f}B"
+        return f"{n / 1_000_000_000:.3f}B"
     if n >= 1_000_000:
-        return f"{n / 1_000_000:.1f}M"
+        return f"{n / 1_000_000:.3f}M"
     if n >= 1_000:
-        return f"{n / 1_000:.0f}K"
+        return f"{n / 1_000:.3f}K"
     return str(n)
 
 
@@ -368,16 +368,16 @@ const deltaData = {json.dumps(delta_datasets)};
 
 // Number formatting for axes
 function fmtAxis(value) {{
-    if (value >= 1e9) return (value / 1e9).toFixed(1) + 'B';
-    if (value >= 1e6) return (value / 1e6).toFixed(0) + 'M';
-    if (value >= 1e3) return (value / 1e3).toFixed(0) + 'K';
+    if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
+    if (value >= 1e6) return (value / 1e6).toFixed(3) + 'M';
+    if (value >= 1e3) return (value / 1e3).toFixed(3) + 'K';
     return value;
 }}
 
 function fmtTooltip(value) {{
     if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
-    if (value >= 1e6) return (value / 1e6).toFixed(2) + 'M';
-    if (value >= 1e3) return (value / 1e3).toFixed(1) + 'K';
+    if (value >= 1e6) return (value / 1e6).toFixed(3) + 'M';
+    if (value >= 1e3) return (value / 1e3).toFixed(3) + 'K';
     return value;
 }}
 

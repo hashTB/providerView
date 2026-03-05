@@ -175,42 +175,42 @@
     <p class="subtitle">
         Cumulative &amp; weekly download trends for AWS, Azure, and GCP Terraform providers
         &middot; 7 snapshots from 2026-01-27 to 2026-03-05
-        &middot; Generated 2026-03-05 14:57
+        &middot; Generated 2026-03-05 15:18
     </p>
 
     <div class="cards">
         <div class="card">
-            <div class="value" style="color:#FF9900">5.69B</div>
+            <div class="value" style="color:#FF9900">5.690B</div>
             <div class="label">AWS</div>
             <div class="group">AWS</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#FF6600">38.5M</div>
+            <div class="value" style="color:#FF6600">38.463M</div>
             <div class="label">AWS CC</div>
             <div class="group">AWS</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#0078D4">1.37B</div>
+            <div class="value" style="color:#0078D4">1.373B</div>
             <div class="label">Azure RM</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#50A0E6">513.5M</div>
+            <div class="value" style="color:#50A0E6">513.534M</div>
             <div class="label">Azure AD</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#00BCF2">1.8M</div>
+            <div class="value" style="color:#00BCF2">1.766M</div>
             <div class="label">Azure Stack</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#4285F4">1.77B</div>
+            <div class="value" style="color:#4285F4">1.767B</div>
             <div class="label">Google</div>
             <div class="group">GCP</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#34A853">917.9M</div>
+            <div class="value" style="color:#34A853">917.949M</div>
             <div class="label">Google Beta</div>
             <div class="group">GCP</div>
         </div>
@@ -251,13 +251,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>2026-01-27</td><td>5.50B</td><td>36.2M</td><td>1.32B</td><td>487.1M</td><td>1.8M</td><td>1.70B</td><td>883.1M</td></tr>
-                <tr><td>2026-01-29</td><td>5.51B</td><td>36.3M</td><td>1.32B</td><td>488.6M</td><td>1.8M</td><td>1.70B</td><td>884.8M</td></tr>
-                <tr><td>2026-02-05</td><td>5.55B</td><td>36.7M</td><td>N/A</td><td>493.2M</td><td>1.8M</td><td>1.71B</td><td>891.0M</td></tr>
-                <tr><td>2026-02-12</td><td>5.58B</td><td>37.2M</td><td>1.34B</td><td>498.0M</td><td>1.8M</td><td>1.73B</td><td>897.6M</td></tr>
-                <tr><td>2026-02-19</td><td>5.62B</td><td>37.6M</td><td>N/A</td><td>504.0M</td><td>1.8M</td><td>1.74B</td><td>904.2M</td></tr>
-                <tr><td>2026-02-26</td><td>5.65B</td><td>38.0M</td><td>1.36B</td><td>508.5M</td><td>1.8M</td><td>1.75B</td><td>911.1M</td></tr>
-                <tr><td>2026-03-05</td><td>5.69B</td><td>38.5M</td><td>1.37B</td><td>513.5M</td><td>1.8M</td><td>1.77B</td><td>917.9M</td></tr>
+                <tr><td>2026-01-27</td><td>5.503B</td><td>36.157M</td><td>1.317B</td><td>487.114M</td><td>1.759M</td><td>1.698B</td><td>883.099M</td></tr>
+                <tr><td>2026-01-29</td><td>5.513B</td><td>36.302M</td><td>1.320B</td><td>488.563M</td><td>1.759M</td><td>1.701B</td><td>884.828M</td></tr>
+                <tr><td>2026-02-05</td><td>5.548B</td><td>36.735M</td><td>N/A</td><td>493.193M</td><td>1.761M</td><td>1.714B</td><td>891.026M</td></tr>
+                <tr><td>2026-02-12</td><td>5.583B</td><td>37.170M</td><td>1.341B</td><td>498.040M</td><td>1.762M</td><td>1.727B</td><td>897.592M</td></tr>
+                <tr><td>2026-02-19</td><td>5.617B</td><td>37.604M</td><td>N/A</td><td>504.030M</td><td>1.763M</td><td>1.740B</td><td>904.163M</td></tr>
+                <tr><td>2026-02-26</td><td>5.654B</td><td>38.036M</td><td>1.363B</td><td>508.544M</td><td>1.765M</td><td>1.753B</td><td>911.120M</td></tr>
+                <tr><td>2026-03-05</td><td>5.690B</td><td>38.463M</td><td>1.373B</td><td>513.534M</td><td>1.766M</td><td>1.767B</td><td>917.949M</td></tr>
             </tbody>
         </table>
     </div>
@@ -270,16 +270,16 @@ const deltaData = [{"label": "AWS", "data": [null, 10597943, 34715257, 34878564,
 
 // Number formatting for axes
 function fmtAxis(value) {
-    if (value >= 1e9) return (value / 1e9).toFixed(1) + 'B';
-    if (value >= 1e6) return (value / 1e6).toFixed(0) + 'M';
-    if (value >= 1e3) return (value / 1e3).toFixed(0) + 'K';
+    if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
+    if (value >= 1e6) return (value / 1e6).toFixed(3) + 'M';
+    if (value >= 1e3) return (value / 1e3).toFixed(3) + 'K';
     return value;
 }
 
 function fmtTooltip(value) {
     if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
-    if (value >= 1e6) return (value / 1e6).toFixed(2) + 'M';
-    if (value >= 1e3) return (value / 1e3).toFixed(1) + 'K';
+    if (value >= 1e6) return (value / 1e6).toFixed(3) + 'M';
+    if (value >= 1e3) return (value / 1e3).toFixed(3) + 'K';
     return value;
 }
 
