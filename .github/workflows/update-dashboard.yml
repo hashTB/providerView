@@ -156,10 +156,15 @@ jobs:
             echo "No snapshots directory, skipping history build"
           fi
 
-      - name: Refresh provider details (list-resources, actions)
+      - name: Refresh cloud provider details (AWS/Azure/GCP)
         run: |
-          python3 refresh_provider_details.py
-          echo "=== Provider details refreshed ==="
+          python3 refresh_provider_details.py --cloud-only
+          echo "=== Cloud provider details refreshed ==="
+
+      - name: Refresh other provider details
+        run: |
+          python3 refresh_provider_details.py --exclude-cloud
+          echo "=== Other provider details refreshed ==="
 
       - name: Generate HTML dashboard
         run: |

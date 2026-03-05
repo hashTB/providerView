@@ -12,6 +12,8 @@ Preserves existing data and only updates/adds entries.
 Usage:
     python3 refresh_provider_details.py
     python3 refresh_provider_details.py --all          # Refresh all official providers
+    python3 refresh_provider_details.py --cloud-only   # AWS, Azure, GCP only
+    python3 refresh_provider_details.py --exclude-cloud # Everything except big-3 cloud
     python3 refresh_provider_details.py --provider hashicorp/aws
 """
 
@@ -29,6 +31,17 @@ RAW_LATEST = "data/raw/providers_latest.json"
 
 # Rate limiting
 REQUEST_DELAY = 0.3  # seconds between API calls
+
+# Big-3 cloud providers (AWS, Azure, GCP) and their official variants
+BIG_CLOUD_PROVIDERS = {
+    "hashicorp/aws",
+    "hashicorp/awscc",
+    "hashicorp/azuread",
+    "hashicorp/azurerm",
+    "hashicorp/azurestack",
+    "hashicorp/google",
+    "hashicorp/google-beta",
+}
 
 
 def make_request(url: str, retries: int = 2) -> dict:
@@ -97,11 +110,18 @@ def load_raw_latest() -> list:
     return data.get("providers", [])
 
 
-def find_providers_to_refresh(providers: list, existing: dict, refresh_all_official: bool = False) -> list:
+def find_providers_to_refresh(providers: list, existing: dict,
+                              refresh_all_official: bool = False,
+                              cloud_only: bool = False,
+                              exclude_cloud: bool = False) -> list:
     """Find providers that need their details refreshed.
     
     Targets providers that have list-resources or actions (the new feature types),
     or any official provider if refresh_all_official is True.
+    
+    Flags:
+        cloud_only:    only return big-3 cloud providers (AWS/Azure/GCP)
+        exclude_cloud: exclude big-3 cloud providers (everything else)
     """
     to_refresh = []
     
@@ -110,11 +130,23 @@ def find_providers_to_refresh(providers: list, existing: dict, refresh_all_offic
         tier = p.get("tier", "")
         docs = p.get("docs", {})
         
+        # Apply cloud filter
+        is_cloud = full_name in BIG_CLOUD_PROVIDERS
+        if cloud_only and not is_cloud:
+            continue
+        if exclude_cloud and is_cloud:
+            continue
+        
         list_resources = docs.get("list_resources", 0)
         actions = docs.get("actions", 0)
         
         # Always refresh if provider has list-resources or actions
         if list_resources > 0 or actions > 0:
+            to_refresh.append(full_name)
+            continue
+        
+        # For cloud-only mode, refresh all big-3 even if no list/actions yet
+        if cloud_only and is_cloud:
             to_refresh.append(full_name)
             continue
         
@@ -151,7 +183,15 @@ def main():
                         help="Refresh all official providers (not just those with list/actions)")
     parser.add_argument("--provider", type=str,
                         help="Refresh a specific provider (e.g. hashicorp/aws)")
+    parser.add_argument("--cloud-only", action="store_true",
+                        help="Only refresh big-3 cloud providers (AWS, Azure, GCP)")
+    parser.add_argument("--exclude-cloud", action="store_true",
+                        help="Exclude big-3 cloud providers (refresh everything else)")
     args = parser.parse_args()
+    
+    if args.cloud_only and args.exclude_cloud:
+        print("ERROR: Cannot use --cloud-only and --exclude-cloud together")
+        return
     
     print("=== Provider Details Refresh ===")
     print(f"Details file: {DETAILS_FILE}")
@@ -171,7 +211,12 @@ def main():
             print("No providers found in raw data")
             return
         
-        to_refresh = find_providers_to_refresh(providers, existing, refresh_all_official=args.all)
+        to_refresh = find_providers_to_refresh(
+            providers, existing,
+            refresh_all_official=args.all,
+            cloud_only=args.cloud_only,
+            exclude_cloud=args.exclude_cloud,
+        )
     
     print(f"Providers to refresh: {len(to_refresh)}")
     print()

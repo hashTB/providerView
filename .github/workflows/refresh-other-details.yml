@@ -1,0 +1,90 @@
+name: Refresh Other Provider Details (non-cloud)
+
+on:
+  # Can be triggered manually at any time
+  workflow_dispatch:
+    inputs:
+      regenerate_dashboard:
+        description: 'Also regenerate the dashboard after refresh?'
+        required: false
+        default: 'yes'
+        type: choice
+        options:
+          - 'yes'
+          - 'no'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "refresh-other"
+  cancel-in-progress: true
+
+jobs:
+  refresh-other:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest changes
+        run: git pull origin main || true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Refresh non-cloud provider details
+        run: |
+          echo "=== Refreshing all providers except AWS/Azure/GCP ==="
+          python3 refresh_provider_details.py --exclude-cloud
+          echo ""
+          echo "=== Done ==="
+
+      - name: Regenerate dashboard
+        if: github.event.inputs.regenerate_dashboard != 'no'
+        run: |
+          # Build history
+          if [ -d "data/snapshots" ]; then
+            python3 build_history.py
+          fi
+
+          # Generate main dashboard
+          if [ -f "data/history.json" ]; then
+            python3 generate_html_dashboard.py terraform_providers.csv index.html data/history.json
+          else
+            python3 generate_html_dashboard.py terraform_providers.csv index.html
+          fi
+
+          mkdir -p docs
+          cp index.html docs/
+          cp terraform_providers.csv docs/
+
+          # Generate download trends
+          python3 generate_download_trends.py
+
+          echo "=== Dashboard regenerated ==="
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add terraform_providers_details.json
+          git add docs/index.html 2>/dev/null || true
+          git add docs/terraform_providers.csv 2>/dev/null || true
+          git add docs/downloads.html 2>/dev/null || true
+          git add index.html 2>/dev/null || true
+          git add data/history.json 2>/dev/null || true
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Refresh other provider details (non-cloud) $(date +%Y-%m-%d)"
+            git push
+          fi
