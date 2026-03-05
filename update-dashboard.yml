@@ -74,12 +74,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Generate download trends page
+        run: |
+          python3 generate_download_trends.py
+
       - name: Create pages artifact
         run: |
           mkdir -p _site
           cp index.html _site/
           cp terraform_providers.csv _site/
           cp terraform_providers_details.json _site/ 2>/dev/null || true
+          cp docs/downloads.html _site/ 2>/dev/null || true
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -591,6 +591,31 @@ HTML_PART1 = '''<!DOCTYPE html>
             position: relative;
             height: 280px;
         }
+        .topnav {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .topnav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 12px 20px;
+            transition: all 0.2s;
+            border-right: 1px solid var(--border);
+        }
+        .topnav a:last-child { border-right: none; }
+        .topnav a:hover { color: var(--text); background: rgba(6, 182, 212, 0.1); }
+        .topnav a.active {
+            color: var(--primary);
+            background: rgba(6, 182, 212, 0.1);
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -599,6 +624,10 @@ HTML_PART1 = '''<!DOCTYPE html>
         <p class="subtitle">Generated on '''
 
 HTML_PART2 = '''</p>
+        <nav class="topnav">
+            <a href="index.html" class="active">All Providers</a>
+            <a href="downloads.html">📈 Download Trends</a>
+        </nav>
         
         <div class="metrics" id="metrics">
             <div class="metric-card">

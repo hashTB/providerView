@@ -51,6 +51,10 @@ jobs:
           python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
           cp terraform_providers.csv docs/
 
+      - name: Generate download trends page
+        run: |
+          python3 generate_download_trends.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
