@@ -427,6 +427,18 @@ def main():
     
     providers_raw = raw_data.get('providers', [])
     print(f"Loaded {len(providers_raw)} providers from {raw_data.get('date', 'unknown')}")
+    
+    # Deduplicate by full_name (keep first occurrence)
+    seen = set()
+    unique_providers = []
+    for p in providers_raw:
+        name = p.get('full_name', '')
+        if name not in seen:
+            seen.add(name)
+            unique_providers.append(p)
+    if len(unique_providers) < len(providers_raw):
+        print(f"  Deduplicated: {len(providers_raw)} → {len(unique_providers)} (removed {len(providers_raw) - len(unique_providers)} duplicates)")
+    providers_raw = unique_providers
     print()
     
     # Analyze each provider

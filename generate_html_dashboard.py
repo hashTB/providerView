@@ -721,7 +721,37 @@ HTML_PART2 = '''</p>
         </div>
         
         <div class="table-container">
-            <table id="providers-table" class="display">
+            <h2 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 10px; padding-left: 4px;">☁️ Official Cloud Providers (AWS / Azure / GCP)</h2>
+            <table id="cloud-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Provider</th>
+                        <th>Tier</th>
+                        <th>Downloads</th>
+                        <th>Versions</th>
+                        <th>Version</th>
+                        <th>Published</th>
+                        <th>Days</th>
+                        <th>v5</th>
+                        <th>v6</th>
+                        <th>Cohort</th>
+                        <th>Subcats</th>
+                        <th>Resources</th>
+                        <th>List</th>
+                        <th>Actions</th>
+                        <th>Identities</th>
+                        <th>Data Sources</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="table-container" style="margin-top: 30px;">
+            <h2 style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 10px; padding-left: 4px;">📦 Partner &amp; Community Providers</h2>
+            <table id="other-table" class="display">
                 <thead>
                     <tr>
                         <th>Provider</th>
@@ -1306,10 +1336,11 @@ HTML_PART4 = ''';
             if (serviceNames.length > 1) {
                 html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">';
                 serviceNames.forEach(function(svc) {
-                    html += '<span style="background:rgba(6,182,212,0.15);color:var(--primary);padding:4px 10px;border-radius:6px;font-size:0.8rem;">' + svc + ' (' + byService[svc].length + ')</span>';
+                    var svcId = 'svc-' + svc.replace(/[^a-zA-Z0-9]/g, '-');
+                    html += '<span style="background:rgba(6,182,212,0.15);color:var(--primary);padding:4px 10px;border-radius:6px;font-size:0.8rem;cursor:pointer;" onclick="document.getElementById(\\'' + svcId + '\\').scrollIntoView({behavior:\\'smooth\\',block:\\'start\\'})">' + svc + ' (' + byService[svc].length + ')</span>';
                 });
                 if (noService.length > 0) {
-                    html += '<span style="background:rgba(148,163,184,0.15);color:var(--text-muted);padding:4px 10px;border-radius:6px;font-size:0.8rem;">Other (' + noService.length + ')</span>';
+                    html += '<span style="background:rgba(148,163,184,0.15);color:var(--text-muted);padding:4px 10px;border-radius:6px;font-size:0.8rem;cursor:pointer;" onclick="document.getElementById(\\'svc-other\\').scrollIntoView({behavior:\\'smooth\\',block:\\'start\\'})">Other (' + noService.length + ')</span>';
                 }
                 html += '</div>';
             }
@@ -1326,7 +1357,8 @@ HTML_PART4 = ''';
             }
             
             serviceNames.forEach(function(svc) {
-                html += '<div style="margin-bottom:12px;">';
+                var svcId = 'svc-' + svc.replace(/[^a-zA-Z0-9]/g, '-');
+                html += '<div id="' + svcId + '" style="margin-bottom:12px;">';
                 html += '<h4 style="color:var(--primary);font-size:0.85rem;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:4px;">' + svc + ' <span style="color:var(--text-muted);font-weight:normal;">(' + byService[svc].length + ')</span></h4>';
                 html += '<ul class="feature-list" style="margin-left:8px;">';
                 byService[svc].forEach(function(doc) { html += renderDocItem(doc); });
@@ -1335,7 +1367,7 @@ HTML_PART4 = ''';
             
             if (noService.length > 0) {
                 if (serviceNames.length > 0) {
-                    html += '<div style="margin-bottom:12px;">';
+                    html += '<div id="svc-other" style="margin-bottom:12px;">';
                     html += '<h4 style="color:var(--text-muted);font-size:0.85rem;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:4px;">Other</h4>';
                     html += '<ul class="feature-list" style="margin-left:8px;">';
                 } else {
@@ -1584,9 +1616,27 @@ HTML_PART4 = ''';
         }
         
         $(document).ready(function() {
-            var table = $('#providers-table').DataTable({
-                data: providers,
-                columns: [
+            // Split providers into official cloud vs rest
+            var officialNames = ['hashicorp/aws', 'hashicorp/awscc', 'hashicorp/azurerm', 'hashicorp/azuread',
+                'hashicorp/azurestack', 'hashicorp/google', 'hashicorp/google-beta'];
+            var cloudProviders = [];
+            var otherProviders = [];
+            
+            // Override list_resources / actions counts with details data (HCL-only) when available
+            providers.forEach(function(p) {
+                if (providerDetails && providerDetails[p.provider] && providerDetails[p.provider].docs) {
+                    var docs = providerDetails[p.provider].docs;
+                    if (docs['list-resources']) p.list_resources = docs['list-resources'].length;
+                    if (docs['actions']) p.actions = docs['actions'].length;
+                }
+                if (officialNames.indexOf(p.provider) !== -1) {
+                    cloudProviders.push(p);
+                } else {
+                    otherProviders.push(p);
+                }
+            });
+            
+            var columnDefs = [
                     { data: 'provider', render: function(d, t, row) {
                         if (t !== 'display') return d;
                         return '<span class="clickable" onclick="openModal(\\'' + d + '\\', \\'' + row.version + '\\', \\'actions\\')">' + d + '</span>';
@@ -1616,7 +1666,27 @@ HTML_PART4 = ''';
                     { data: 'identities', render: function(d, t, row) { return renderIdentities(d, t, row); } },
                     { data: 'data_sources', render: function(d, t, row) { return renderClickable(d, t, row, 'data-sources'); } },
                     { data: 'total_features', render: formatNumber }
-                ],
+            ];
+            
+            var cloudTable = $('#cloud-table').DataTable({
+                data: cloudProviders,
+                columns: columnDefs,
+                order: [[2, 'desc']],
+                pageLength: 25,
+                paging: false,
+                searching: false,
+                info: false,
+                dom: 'Brt',
+                buttons: ['csv', 'excel'],
+                language: {
+                    search: "Search:",
+                    lengthMenu: "Show _MENU_ entries"
+                }
+            });
+            
+            var otherTable = $('#other-table').DataTable({
+                data: otherProviders,
+                columns: columnDefs,
                 order: [[2, 'desc']],
                 pageLength: 25,
                 dom: 'Bfrtip',
@@ -1629,9 +1699,12 @@ HTML_PART4 = ''';
             
             updateMetrics(providers);
             
-            // Custom filters
+            // Custom filters (apply to other table only)
             $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
-                var row = providers[dataIndex];
+                if (settings.nTable.id === 'cloud-table') return true;
+                
+                var row = otherProviders[dataIndex];
+                if (!row) return true;
                 
                 var tier = $('#filter-tier').val();
                 if (tier && row.tier.toLowerCase() !== tier) return false;
@@ -1653,13 +1726,13 @@ HTML_PART4 = ''';
             });
             
             $('#filter-tier, #filter-cohort, #filter-protocol').on('change', function() {
-                table.draw();
-                updateMetrics(table.rows({ search: 'applied' }).data().toArray());
+                otherTable.draw();
+                updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
             });
             
             $('#filter-min-resources').on('input', function() {
-                table.draw();
-                updateMetrics(table.rows({ search: 'applied' }).data().toArray());
+                otherTable.draw();
+                updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
             });
         });
     </script>
