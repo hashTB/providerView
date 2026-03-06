@@ -187,6 +187,16 @@ def build_history(snapshots_dir: str, output_file: str):
     # Sort by date
     snapshots.sort(key=lambda x: x['date'])
     
+    # Rolling 6-month window: keep only snapshots within ~6 months of the latest
+    if snapshots:
+        from datetime import timedelta
+        latest = datetime.strptime(snapshots[-1]['date'], '%Y-%m-%d')
+        cutoff = (latest - timedelta(days=183)).strftime('%Y-%m-%d')
+        before = len(snapshots)
+        snapshots = [s for s in snapshots if s['date'] >= cutoff]
+        if len(snapshots) < before:
+            print(f"  Rolling 6-month window: kept {len(snapshots)}/{before} snapshots (cutoff {cutoff})")
+    
     print(f"\nProcessing {len(snapshots)} snapshots from {snapshots[0]['date']} to {snapshots[-1]['date']}")
     
     # Build per-provider history

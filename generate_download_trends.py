@@ -28,11 +28,20 @@ PROVIDERS = {
 
 
 def load_snapshots():
-    """Load all raw snapshots and extract download counts for tracked providers."""
-    files = sorted(glob.glob("data/raw/providers_2026-*.json"))
+    """Load all raw snapshots and extract download counts for tracked providers.
+    
+    Uses a rolling 6-month window from the most recent snapshot.
+    """
+    files = sorted(glob.glob("data/raw/providers_[0-9][0-9][0-9][0-9]-*.json"))
     if not files:
         print("No snapshot files found in data/raw/")
         return [], {}
+    
+    # Rolling 6-month window
+    from datetime import datetime, timedelta
+    latest_date = files[-1].split("providers_")[1].replace(".json", "")
+    cutoff = (datetime.strptime(latest_date, "%Y-%m-%d") - timedelta(days=183)).strftime("%Y-%m-%d")
+    files = [f for f in files if f.split("providers_")[1].replace(".json", "") >= cutoff]
 
     dates = []
     series = {k: [] for k in PROVIDERS}
