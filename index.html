@@ -600,7 +600,7 @@
 <body>
     <div class="container">
         <h1><svg style="height: 1.2em; vertical-align: middle; margin-right: 8px;" viewBox="0 0 64 64" fill="currentColor"><polygon points="22.5,11.2 22.5,33.5 41.9,44.7 41.9,22.3"/><polygon points="44.1,22.3 44.1,44.7 63.5,33.5 63.5,11.2"/><polygon points="0.5,0 0.5,22.3 19.9,33.5 19.9,11.2"/><polygon points="22.5,36.1 22.5,58.4 41.9,69.6 41.9,47.3"/></svg>Terraform Provider Dashboard</h1>
-        <p class="subtitle">Generated on 2026-03-05 19:12</p>
+        <p class="subtitle">Generated on 2026-03-05 19:19</p>
         <nav class="topnav">
             <a href="index.html" class="active">All Providers</a>
             <a href="downloads.html">📈 Download Trends</a>
@@ -665,7 +665,7 @@
                 <label>Tier</label>
                 <select id="filter-tier">
                     <option value="">All Tiers</option>
-                    <option value="official">Official</option>
+                    <option value="official" selected>Official</option>
                     <option value="partner">Partner</option>
                     <option value="community">Community</option>
                 </select>
@@ -236231,7 +236231,7 @@
   }
 };
         const providerHistory = {
-  "generated": "2026-03-05 19:12",
+  "generated": "2026-03-05 19:16",
   "snapshot_count": 12,
   "date_range": {
     "start": "2026-01-21",
@@ -1125884,6 +1125884,10 @@
                 otherTable.draw();
                 updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
             });
+            
+            // Apply default tier filter on load
+            otherTable.draw();
+            updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
         });
     </script>
 </body>

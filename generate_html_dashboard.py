@@ -688,7 +688,7 @@ HTML_PART2 = '''</p>
                 <label>Tier</label>
                 <select id="filter-tier">
                     <option value="">All Tiers</option>
-                    <option value="official">Official</option>
+                    <option value="official" selected>Official</option>
                     <option value="partner">Partner</option>
                     <option value="community">Community</option>
                 </select>
@@ -1734,6 +1734,10 @@ HTML_PART4 = ''';
                 otherTable.draw();
                 updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
             });
+            
+            // Apply default tier filter on load
+            otherTable.draw();
+            updateMetrics(otherTable.rows({ search: 'applied' }).data().toArray().concat(cloudProviders));
         });
     </script>
 </body>
