@@ -228,19 +228,30 @@ def build_history(snapshots_dir: str, output_file: str):
         
         for snapshot in snapshots:
             pdata = snapshot['providers'].get(provider, {})
-            for metric in metrics:
-                provider_history[metric].append(pdata.get(metric, 0))
-            provider_history['versions'].append(pdata.get('version', ''))
+            if not pdata:
+                # Provider absent from this snapshot — use null (gap)
+                for metric in metrics:
+                    provider_history[metric].append(None)
+                provider_history['versions'].append('')
+            else:
+                for metric in metrics:
+                    val = pdata.get(metric, 0)
+                    # Treat 0 as a gap for non-download metrics (0 resources = missing data)
+                    if val == 0 and metric != 'downloads':
+                        provider_history[metric].append(None)
+                    else:
+                        provider_history[metric].append(val)
+                provider_history['versions'].append(pdata.get('version', ''))
         
         # Only include providers that have some data
-        if any(provider_history['total_features']):
+        if any(v for v in provider_history['total_features'] if v is not None):
             history['providers'][provider] = provider_history
     
     # Calculate trends (change from first to last snapshot)
     for provider, pdata in history['providers'].items():
         pdata['trends'] = {}
         for metric in metrics:
-            values = pdata[metric]
+            values = [v for v in pdata[metric] if v is not None]
             if values and len(values) >= 2 and values[0] > 0:
                 first_nonzero = next((v for v in values if v > 0), 0)
                 last = values[-1]

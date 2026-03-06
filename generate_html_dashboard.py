@@ -1401,7 +1401,8 @@ HTML_PART4 = ''';
                 yAxisID: 'y1',
                 tension: 0.3,
                 pointRadius: 6,
-                borderWidth: 3
+                borderWidth: 3,
+                spanGaps: true
             }];
             
             if (showDownloads) {
@@ -1412,7 +1413,8 @@ HTML_PART4 = ''';
                     backgroundColor: 'rgba(6, 182, 212, 0.1)',
                     yAxisID: 'y2',
                     tension: 0.3,
-                    pointRadius: 4
+                    pointRadius: 4,
+                    spanGaps: true
                 });
             }
             if (showResources) {
@@ -1423,7 +1425,8 @@ HTML_PART4 = ''';
                     backgroundColor: 'rgba(34, 197, 94, 0.1)',
                     yAxisID: 'y2',
                     tension: 0.3,
-                    pointRadius: 4
+                    pointRadius: 4,
+                    spanGaps: true
                 });
             }
             if (showDataSources) {
@@ -1434,7 +1437,8 @@ HTML_PART4 = ''';
                     backgroundColor: 'rgba(249, 115, 22, 0.1)',
                     yAxisID: 'y2',
                     tension: 0.3,
-                    pointRadius: 4
+                    pointRadius: 4,
+                    spanGaps: true
                 });
             }
             
@@ -1508,7 +1512,8 @@ HTML_PART4 = ''';
                             yAxisID: 'y1',
                             tension: 0.3,
                             pointRadius: 6,
-                            borderWidth: 3
+                            borderWidth: 3,
+                            spanGaps: true
                         },
                         {
                             label: 'Downloads',
@@ -1517,7 +1522,8 @@ HTML_PART4 = ''';
                             backgroundColor: 'rgba(6, 182, 212, 0.1)',
                             yAxisID: 'y2',
                             tension: 0.3,
-                            pointRadius: 4
+                            pointRadius: 4,
+                            spanGaps: true
                         }
                     ]
                 },
