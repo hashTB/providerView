@@ -735,7 +735,7 @@ HTML_PART2 = '''</p>
                         <th>v5</th>
                         <th>v6</th>
                         <th>Cohort</th>
-                        <th>Subcats</th>
+                        <th>Services</th>
                         <th>Resources</th>
                         <th>List</th>
                         <th>Actions</th>
@@ -764,7 +764,7 @@ HTML_PART2 = '''</p>
                         <th>v5</th>
                         <th>v6</th>
                         <th>Cohort</th>
-                        <th>Subcats</th>
+                        <th>Services</th>
                         <th>Resources</th>
                         <th>List</th>
                         <th>Actions</th>
@@ -1622,12 +1622,19 @@ HTML_PART4 = ''';
             var cloudProviders = [];
             var otherProviders = [];
             
-            // Override list_resources / actions counts with details data (HCL-only) when available
+            // Override counts with details data (HCL-only) when available
             providers.forEach(function(p) {
                 if (providerDetails && providerDetails[p.provider] && providerDetails[p.provider].docs) {
                     var docs = providerDetails[p.provider].docs;
+                    if (docs['resources']) p.resources = docs['resources'].length;
+                    if (docs['data-sources']) p.data_sources = docs['data-sources'].length;
                     if (docs['list-resources']) p.list_resources = docs['list-resources'].length;
                     if (docs['actions']) p.actions = docs['actions'].length;
+                    if (docs['ephemeral-resources']) p.ephemeral_resources = docs['ephemeral-resources'].length;
+                    if (docs['functions']) p.functions = docs['functions'].length;
+                    // Recalculate total_features from corrected counts
+                    p.total_features = (p.resources || 0) + (p.identities || 0) + (p.data_sources || 0) +
+                        (p.ephemeral_resources || 0) + (p.list_resources || 0) + (p.actions || 0) + (p.functions || 0);
                 }
                 if (officialNames.indexOf(p.provider) !== -1) {
                     cloudProviders.push(p);

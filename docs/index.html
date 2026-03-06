@@ -600,7 +600,7 @@
 <body>
     <div class="container">
         <h1><svg style="height: 1.2em; vertical-align: middle; margin-right: 8px;" viewBox="0 0 64 64" fill="currentColor"><polygon points="22.5,11.2 22.5,33.5 41.9,44.7 41.9,22.3"/><polygon points="44.1,22.3 44.1,44.7 63.5,33.5 63.5,11.2"/><polygon points="0.5,0 0.5,22.3 19.9,33.5 19.9,11.2"/><polygon points="22.5,36.1 22.5,58.4 41.9,69.6 41.9,47.3"/></svg>Terraform Provider Dashboard</h1>
-        <p class="subtitle">Generated on 2026-03-05 19:19</p>
+        <p class="subtitle">Generated on 2026-03-05 19:37</p>
         <nav class="topnav">
             <a href="index.html" class="active">All Providers</a>
             <a href="downloads.html">📈 Download Trends</a>
@@ -712,7 +712,7 @@
                         <th>v5</th>
                         <th>v6</th>
                         <th>Cohort</th>
-                        <th>Subcats</th>
+                        <th>Services</th>
                         <th>Resources</th>
                         <th>List</th>
                         <th>Actions</th>
@@ -741,7 +741,7 @@
                         <th>v5</th>
                         <th>v6</th>
                         <th>Cohort</th>
-                        <th>Subcats</th>
+                        <th>Services</th>
                         <th>Resources</th>
                         <th>List</th>
                         <th>Actions</th>
@@ -1125772,12 +1125772,19 @@
             var cloudProviders = [];
             var otherProviders = [];
             
-            // Override list_resources / actions counts with details data (HCL-only) when available
+            // Override counts with details data (HCL-only) when available
             providers.forEach(function(p) {
                 if (providerDetails && providerDetails[p.provider] && providerDetails[p.provider].docs) {
                     var docs = providerDetails[p.provider].docs;
+                    if (docs['resources']) p.resources = docs['resources'].length;
+                    if (docs['data-sources']) p.data_sources = docs['data-sources'].length;
                     if (docs['list-resources']) p.list_resources = docs['list-resources'].length;
                     if (docs['actions']) p.actions = docs['actions'].length;
+                    if (docs['ephemeral-resources']) p.ephemeral_resources = docs['ephemeral-resources'].length;
+                    if (docs['functions']) p.functions = docs['functions'].length;
+                    // Recalculate total_features from corrected counts
+                    p.total_features = (p.resources || 0) + (p.identities || 0) + (p.data_sources || 0) +
+                        (p.ephemeral_resources || 0) + (p.list_resources || 0) + (p.actions || 0) + (p.functions || 0);
                 }
                 if (officialNames.indexOf(p.provider) !== -1) {
                     cloudProviders.push(p);

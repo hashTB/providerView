@@ -168,6 +168,9 @@ def get_provider_docs(namespace: str, name: str, version: str) -> dict:
     subcategories = set()
     
     for doc in docs:
+        # Only count HCL docs (skip cdktf Python/TypeScript/etc.)
+        if doc.get('language', 'hcl') != 'hcl':
+            continue
         category = doc.get('category', 'other')
         counts[category] = counts.get(category, 0) + 1
         if subcat := doc.get('subcategory'):
