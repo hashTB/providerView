@@ -174,43 +174,43 @@
     </nav>
     <p class="subtitle">
         Cumulative &amp; weekly download trends for AWS, Azure, and GCP Terraform providers
-        &middot; 7 snapshots from 2026-01-27 to 2026-03-05
-        &middot; Generated 2026-03-05 19:17
+        &middot; 8 snapshots from 2026-01-27 to 2026-03-12
+        &middot; Generated 2026-03-12 08:15
     </p>
 
     <div class="cards">
         <div class="card">
-            <div class="value" style="color:#FF9900">5.690B</div>
+            <div class="value" style="color:#FF9900">5.728B</div>
             <div class="label">AWS</div>
             <div class="group">AWS</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#FF6600">38.463M</div>
+            <div class="value" style="color:#FF6600">38.901M</div>
             <div class="label">AWS CC</div>
             <div class="group">AWS</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#0078D4">1.373B</div>
+            <div class="value" style="color:#0078D4">1.384B</div>
             <div class="label">Azure RM</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#50A0E6">513.534M</div>
+            <div class="value" style="color:#50A0E6">518.815M</div>
             <div class="label">Azure AD</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#00BCF2">1.766M</div>
+            <div class="value" style="color:#00BCF2">1.769M</div>
             <div class="label">Azure Stack</div>
             <div class="group">Azure</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#4285F4">1.767B</div>
+            <div class="value" style="color:#4285F4">1.780B</div>
             <div class="label">Google</div>
             <div class="group">GCP</div>
         </div>
         <div class="card">
-            <div class="value" style="color:#34A853">917.949M</div>
+            <div class="value" style="color:#34A853">924.909M</div>
             <div class="label">Google Beta</div>
             <div class="group">GCP</div>
         </div>
@@ -258,15 +258,16 @@
                 <tr><td>2026-02-19</td><td>5.617B</td><td>37.604M</td><td>N/A</td><td>504.030M</td><td>1.763M</td><td>1.740B</td><td>904.163M</td></tr>
                 <tr><td>2026-02-26</td><td>5.654B</td><td>38.036M</td><td>1.363B</td><td>508.544M</td><td>1.765M</td><td>1.753B</td><td>911.120M</td></tr>
                 <tr><td>2026-03-05</td><td>5.690B</td><td>38.463M</td><td>1.373B</td><td>513.534M</td><td>1.766M</td><td>1.767B</td><td>917.949M</td></tr>
+                <tr><td>2026-03-12</td><td>5.728B</td><td>38.901M</td><td>1.384B</td><td>518.815M</td><td>1.769M</td><td>1.780B</td><td>924.909M</td></tr>
             </tbody>
         </table>
     </div>
 </div>
 
 <script>
-const dates = ["2026-01-27", "2026-01-29", "2026-02-05", "2026-02-12", "2026-02-19", "2026-02-26", "2026-03-05"];
-const cumulativeData = [{"label": "AWS", "data": [5502683032, 5513280975, 5547996232, 5582874796, 5617048573, 5653581979, 5690094504], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [36156922, 36302375, 36735196, 37169752, 37603976, 38036449, 38462915], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [1316733942, 1319753207, null, 1340780923, null, 1362591887, 1373032312], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [487114313, 488563478, 493193480, 498039562, 504029609, 508544260, 513533689], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [1758891, 1759394, 1760633, 1762037, 1763352, 1764671, 1765832], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [1697511529, 1701212606, 1714080670, 1726921093, 1739783379, 1753379244, 1766736906], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [883098573, 884827834, 891025876, 897592491, 904163488, 911119934, 917948913], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}];
-const deltaData = [{"label": "AWS", "data": [null, 10597943, 34715257, 34878564, 34173777, 36533406, 36512525], "backgroundColor": "#FF9900CC", "borderColor": "#FF9900", "borderWidth": 1, "borderRadius": 4}, {"label": "AWS CC", "data": [null, 145453, 432821, 434556, 434224, 432473, 426466], "backgroundColor": "#FF6600CC", "borderColor": "#FF6600", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure RM", "data": [null, 3019265, null, null, null, null, 10440425], "backgroundColor": "#0078D4CC", "borderColor": "#0078D4", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure AD", "data": [null, 1449165, 4630002, 4846082, 5990047, 4514651, 4989429], "backgroundColor": "#50A0E6CC", "borderColor": "#50A0E6", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure Stack", "data": [null, 503, 1239, 1404, 1315, 1319, 1161], "backgroundColor": "#00BCF2CC", "borderColor": "#00BCF2", "borderWidth": 1, "borderRadius": 4}, {"label": "Google", "data": [null, 3701077, 12868064, 12840423, 12862286, 13595865, 13357662], "backgroundColor": "#4285F4CC", "borderColor": "#4285F4", "borderWidth": 1, "borderRadius": 4}, {"label": "Google Beta", "data": [null, 1729261, 6198042, 6566615, 6570997, 6956446, 6828979], "backgroundColor": "#34A853CC", "borderColor": "#34A853", "borderWidth": 1, "borderRadius": 4}];
+const dates = ["2026-01-27", "2026-01-29", "2026-02-05", "2026-02-12", "2026-02-19", "2026-02-26", "2026-03-05", "2026-03-12"];
+const cumulativeData = [{"label": "AWS", "data": [5502683032, 5513280975, 5547996232, 5582874796, 5617048573, 5653581979, 5690094504, 5727674891], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [36156922, 36302375, 36735196, 37169752, 37603976, 38036449, 38462915, 38900936], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [1316733942, 1319753207, null, 1340780923, null, 1362591887, 1373032312, 1383951808], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [487114313, 488563478, 493193480, 498039562, 504029609, 508544260, 513533689, 518814802], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [1758891, 1759394, 1760633, 1762037, 1763352, 1764671, 1765832, 1769156], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [1697511529, 1701212606, 1714080670, 1726921093, 1739783379, 1753379244, 1766736906, 1780295709], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [883098573, 884827834, 891025876, 897592491, 904163488, 911119934, 917948913, 924908568], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}];
+const deltaData = [{"label": "AWS", "data": [null, 10597943, 34715257, 34878564, 34173777, 36533406, 36512525, 37580387], "backgroundColor": "#FF9900CC", "borderColor": "#FF9900", "borderWidth": 1, "borderRadius": 4}, {"label": "AWS CC", "data": [null, 145453, 432821, 434556, 434224, 432473, 426466, 438021], "backgroundColor": "#FF6600CC", "borderColor": "#FF6600", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure RM", "data": [null, 3019265, null, null, null, null, 10440425, 10919496], "backgroundColor": "#0078D4CC", "borderColor": "#0078D4", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure AD", "data": [null, 1449165, 4630002, 4846082, 5990047, 4514651, 4989429, 5281113], "backgroundColor": "#50A0E6CC", "borderColor": "#50A0E6", "borderWidth": 1, "borderRadius": 4}, {"label": "Azure Stack", "data": [null, 503, 1239, 1404, 1315, 1319, 1161, 3324], "backgroundColor": "#00BCF2CC", "borderColor": "#00BCF2", "borderWidth": 1, "borderRadius": 4}, {"label": "Google", "data": [null, 3701077, 12868064, 12840423, 12862286, 13595865, 13357662, 13558803], "backgroundColor": "#4285F4CC", "borderColor": "#4285F4", "borderWidth": 1, "borderRadius": 4}, {"label": "Google Beta", "data": [null, 1729261, 6198042, 6566615, 6570997, 6956446, 6828979, 6959655], "backgroundColor": "#34A853CC", "borderColor": "#34A853", "borderWidth": 1, "borderRadius": 4}];
 
 // Number formatting for axes
 function fmtAxis(value) {
