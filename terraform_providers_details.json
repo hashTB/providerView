@@ -81,7 +81,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:10.820506"
+    "docs_refreshed_at": "2026-03-19T08:00:06.435124"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -16552,6 +16552,16 @@
           "subcategory": ""
         },
         {
+          "title": "elementalinference_feed",
+          "slug": "elementalinference_feed",
+          "subcategory": ""
+        },
+        {
+          "title": "elementalinference_feeds",
+          "slug": "elementalinference_feeds",
+          "subcategory": ""
+        },
+        {
           "title": "emrcontainers_security_configurations",
           "slug": "emrcontainers_security_configurations",
           "subcategory": ""
@@ -17114,6 +17124,16 @@
         {
           "title": "globalaccelerator_listeners",
           "slug": "globalaccelerator_listeners",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_catalogs",
+          "slug": "glue_catalogs",
           "subcategory": ""
         },
         {
@@ -20104,6 +20124,16 @@
         {
           "title": "observabilityadmin_s3_table_integrations",
           "slug": "observabilityadmin_s3_table_integrations",
+          "subcategory": ""
+        },
+        {
+          "title": "observabilityadmin_telemetry_enrichment",
+          "slug": "observabilityadmin_telemetry_enrichment",
+          "subcategory": ""
+        },
+        {
+          "title": "observabilityadmin_telemetry_enrichments",
+          "slug": "observabilityadmin_telemetry_enrichments",
           "subcategory": ""
         },
         {
@@ -25466,6 +25496,11 @@
           "subcategory": ""
         },
         {
+          "title": "elementalinference_feed",
+          "slug": "elementalinference_feed",
+          "subcategory": ""
+        },
+        {
           "title": "emr_security_configuration",
           "slug": "emr_security_configuration",
           "subcategory": ""
@@ -25718,6 +25753,11 @@
         {
           "title": "globalaccelerator_listener",
           "slug": "globalaccelerator_listener",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
           "subcategory": ""
         },
         {
@@ -27063,6 +27103,11 @@
         {
           "title": "observabilityadmin_s3_table_integration",
           "slug": "observabilityadmin_s3_table_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "observabilityadmin_telemetry_enrichment",
+          "slug": "observabilityadmin_telemetry_enrichment",
           "subcategory": ""
         },
         {
@@ -31235,6 +31280,11 @@
           "subcategory": ""
         },
         {
+          "title": "elementalinference_feed",
+          "slug": "elementalinference_feed",
+          "subcategory": ""
+        },
+        {
           "title": "emr_security_configuration",
           "slug": "emr_security_configuration",
           "subcategory": ""
@@ -31532,6 +31582,11 @@
         {
           "title": "globalaccelerator_listener",
           "slug": "globalaccelerator_listener",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
           "subcategory": ""
         },
         {
@@ -33167,6 +33222,11 @@
         {
           "title": "observabilityadmin_s3_table_integration",
           "slug": "observabilityadmin_s3_table_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "observabilityadmin_telemetry_enrichment",
+          "slug": "observabilityadmin_telemetry_enrichment",
           "subcategory": ""
         },
         {
@@ -35151,7 +35211,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:14:59.231239"
+    "docs_refreshed_at": "2026-03-19T07:59:55.397968"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -35585,7 +35645,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:14:59.614716"
+    "docs_refreshed_at": "2026-03-19T07:59:55.752501"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -37857,6 +37917,11 @@
           "subcategory": "Storage"
         },
         {
+          "title": "storage_account_customer_managed_key",
+          "slug": "storage_account_customer_managed_key",
+          "subcategory": "Storage"
+        },
+        {
           "title": "virtual_network",
           "slug": "virtual_network",
           "subcategory": "Network"
@@ -37865,6 +37930,16 @@
           "title": "virtual_network_peering",
           "slug": "virtual_network_peering",
           "subcategory": "Network"
+        },
+        {
+          "title": "voice_services_communications_gateway",
+          "slug": "voice_services_communications_gateway",
+          "subcategory": "Voice Services"
+        },
+        {
+          "title": "voice_services_communications_gateway_test_line",
+          "slug": "voice_services_communications_gateway_test_line",
+          "subcategory": "Voice Services"
         },
         {
           "title": "web_application_firewall_policy",
@@ -43497,7 +43572,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:00.128403"
+    "docs_refreshed_at": "2026-03-19T07:59:56.191618"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -43846,7 +43921,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:00.514255"
+    "docs_refreshed_at": "2026-03-19T07:59:56.547963"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -44394,6 +44469,11 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_iceberg_table_iam_policy",
+          "slug": "biglake_iceberg_table_iam_policy",
+          "subcategory": "Biglake"
+        },
+        {
           "title": "bigquery_analytics_hub_data_exchange_iam_policy",
           "slug": "bigquery_analytics_hub_data_exchange_iam_policy",
           "subcategory": "BigQuery Analytics Hub"
@@ -47034,6 +47114,16 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_iceberg_table",
+          "slug": "biglake_iceberg_table",
+          "subcategory": "Biglake"
+        },
+        {
+          "title": "biglake_iceberg_table_iam",
+          "slug": "biglake_iceberg_table_iam",
+          "subcategory": "Biglake"
+        },
+        {
           "title": "biglake_table",
           "slug": "biglake_table",
           "subcategory": "Biglake"
@@ -47326,6 +47416,11 @@
         {
           "title": "chronicle_data_access_scope",
           "slug": "chronicle_data_access_scope",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_data_table",
+          "slug": "chronicle_data_table",
           "subcategory": "Chronicle"
         },
         {
@@ -48351,6 +48446,11 @@
         {
           "title": "contact_center_insights_analysis_rule",
           "slug": "contact_center_insights_analysis_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_auto_labeling_rule",
+          "slug": "contact_center_insights_auto_labeling_rule",
           "subcategory": "Contact Center AI Insights"
         },
         {
@@ -50499,6 +50599,16 @@
           "subcategory": "Network Security"
         },
         {
+          "title": "network_security_ull_mirroring_collector",
+          "slug": "network_security_ull_mirroring_collector",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "network_security_ull_mirroring_engine",
+          "slug": "network_security_ull_mirroring_engine",
+          "subcategory": "Network Security"
+        },
+        {
           "title": "network_security_url_lists",
           "slug": "network_security_url_lists",
           "subcategory": "Network Security"
@@ -51309,6 +51419,11 @@
           "subcategory": "Cloud SQL"
         },
         {
+          "title": "sql_provision_script",
+          "slug": "sql_provision_script",
+          "subcategory": "Cloud SQL"
+        },
+        {
           "title": "sql_source_representation_instance",
           "slug": "sql_source_representation_instance",
           "subcategory": "Cloud SQL"
@@ -51705,7 +51820,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:00.999337"
+    "docs_refreshed_at": "2026-03-19T07:59:57.092911"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -51986,6 +52101,11 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_iceberg_table_iam_policy",
+          "slug": "biglake_iceberg_table_iam_policy",
+          "subcategory": "Biglake"
+        },
+        {
           "title": "bigquery_analytics_hub_data_exchange_iam_policy",
           "slug": "bigquery_analytics_hub_data_exchange_iam_policy",
           "subcategory": "BigQuery Analytics Hub"
@@ -54626,6 +54746,16 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_iceberg_table",
+          "slug": "biglake_iceberg_table",
+          "subcategory": "Biglake"
+        },
+        {
+          "title": "biglake_iceberg_table_iam",
+          "slug": "biglake_iceberg_table_iam",
+          "subcategory": "Biglake"
+        },
+        {
           "title": "biglake_table",
           "slug": "biglake_table",
           "subcategory": "Biglake"
@@ -54918,6 +55048,11 @@
         {
           "title": "chronicle_data_access_scope",
           "slug": "chronicle_data_access_scope",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_data_table",
+          "slug": "chronicle_data_table",
           "subcategory": "Chronicle"
         },
         {
@@ -55943,6 +56078,11 @@
         {
           "title": "contact_center_insights_analysis_rule",
           "slug": "contact_center_insights_analysis_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_auto_labeling_rule",
+          "slug": "contact_center_insights_auto_labeling_rule",
           "subcategory": "Contact Center AI Insights"
         },
         {
@@ -58091,6 +58231,16 @@
           "subcategory": "Network Security"
         },
         {
+          "title": "network_security_ull_mirroring_collector",
+          "slug": "network_security_ull_mirroring_collector",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "network_security_ull_mirroring_engine",
+          "slug": "network_security_ull_mirroring_engine",
+          "subcategory": "Network Security"
+        },
+        {
           "title": "network_security_url_lists",
           "slug": "network_security_url_lists",
           "subcategory": "Network Security"
@@ -58901,6 +59051,11 @@
           "subcategory": "Cloud SQL"
         },
         {
+          "title": "sql_provision_script",
+          "slug": "sql_provision_script",
+          "subcategory": "Cloud SQL"
+        },
+        {
           "title": "sql_source_representation_instance",
           "slug": "sql_source_representation_instance",
           "subcategory": "Cloud SQL"
@@ -59297,7 +59452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:01.950897"
+    "docs_refreshed_at": "2026-03-19T07:59:57.627209"
   },
   "4ek0/neko": {
     "docs": {
@@ -59344,7 +59499,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:03.637722"
+    "docs_refreshed_at": "2026-03-19T07:59:58.222722"
   },
   "Azure/azapi": {
     "docs": {
@@ -62950,7 +63105,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:04.059352"
+    "docs_refreshed_at": "2026-03-19T07:59:58.607042"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -64195,7 +64350,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:04.477264"
+    "docs_refreshed_at": "2026-03-19T07:59:58.968092"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -64590,7 +64745,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:04.859509"
+    "docs_refreshed_at": "2026-03-19T07:59:59.325629"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -64843,7 +64998,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:05.231733"
+    "docs_refreshed_at": "2026-03-19T07:59:59.677575"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -64862,7 +65017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:05.601216"
+    "docs_refreshed_at": "2026-03-19T08:00:00.074413"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -64909,7 +65064,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:05.972573"
+    "docs_refreshed_at": "2026-03-19T08:00:00.431147"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -65039,7 +65194,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:06.385614"
+    "docs_refreshed_at": "2026-03-19T08:00:01.232034"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -65583,7 +65738,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:07.390907"
+    "docs_refreshed_at": "2026-03-19T08:00:02.037037"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -68768,7 +68923,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:07.776136"
+    "docs_refreshed_at": "2026-03-19T08:00:02.497788"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -69677,7 +69832,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:08.171773"
+    "docs_refreshed_at": "2026-03-19T08:00:03.510564"
   },
   "SAP/btp": {
     "docs": {
@@ -70322,11 +70477,23 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:08.554412"
+    "docs_refreshed_at": "2026-03-19T08:00:03.859909"
   },
   "SAP/scc": {
     "docs": {
+      "actions": [
+        {
+          "title": "generate_csr",
+          "slug": "generate_csr",
+          "subcategory": ""
+        }
+      ],
       "data-sources": [
+        {
+          "title": "ca_certificate",
+          "slug": "ca_certificate",
+          "subcategory": ""
+        },
         {
           "title": "domain_mapping",
           "slug": "domain_mapping",
@@ -70365,6 +70532,11 @@
         {
           "title": "subaccounts",
           "slug": "subaccounts",
+          "subcategory": ""
+        },
+        {
+          "title": "system_certificate",
+          "slug": "system_certificate",
           "subcategory": ""
         },
         {
@@ -70429,6 +70601,21 @@
       ],
       "resources": [
         {
+          "title": "ca_certificate_pkcs12_certificate",
+          "slug": "ca_certificate_pkcs12_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "ca_certificate_self_signed",
+          "slug": "ca_certificate_self_signed",
+          "subcategory": ""
+        },
+        {
+          "title": "ca_certificate_signed_chain",
+          "slug": "ca_certificate_signed_chain",
+          "subcategory": ""
+        },
+        {
           "title": "domain_mapping",
           "slug": "domain_mapping",
           "subcategory": ""
@@ -70454,6 +70641,21 @@
           "subcategory": ""
         },
         {
+          "title": "system_certificate_pkcs12_certificate",
+          "slug": "system_certificate_pkcs12_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "system_certificate_self_signed",
+          "slug": "system_certificate_self_signed",
+          "subcategory": ""
+        },
+        {
+          "title": "system_certificate_signed_chain",
+          "slug": "system_certificate_signed_chain",
+          "subcategory": ""
+        },
+        {
           "title": "system_mapping",
           "slug": "system_mapping",
           "subcategory": ""
@@ -70462,10 +70664,25 @@
           "title": "system_mapping_resource",
           "slug": "system_mapping_resource",
           "subcategory": ""
+        },
+        {
+          "title": "ui_certificate_pkcs12_certificate",
+          "slug": "ui_certificate_pkcs12_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "ui_certificate_self_signed",
+          "slug": "ui_certificate_self_signed",
+          "subcategory": ""
+        },
+        {
+          "title": "ui_certificate_signed_chain",
+          "slug": "ui_certificate_signed_chain",
+          "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:08.928361"
+    "docs_refreshed_at": "2026-03-19T08:00:04.228118"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -70512,7 +70729,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:09.295149"
+    "docs_refreshed_at": "2026-03-19T08:00:04.580953"
   },
   "Sokren/aap": {
     "docs": {
@@ -70595,7 +70812,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:09.669688"
+    "docs_refreshed_at": "2026-03-19T08:00:04.939232"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -70631,7 +70848,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:10.041564"
+    "docs_refreshed_at": "2026-03-19T08:00:05.292846"
   },
   "adampie/ctf": {
     "docs": {
@@ -70678,7 +70895,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:10.413244"
+    "docs_refreshed_at": "2026-03-19T08:00:06.079399"
   },
   "ansible/ansible": {
     "docs": {
@@ -70726,7 +70943,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:11.279929"
+    "docs_refreshed_at": "2026-03-19T08:00:06.786087"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -70774,7 +70991,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:11.662415"
+    "docs_refreshed_at": "2026-03-19T08:00:07.267095"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -70800,7 +71017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:12.047892"
+    "docs_refreshed_at": "2026-03-19T08:00:07.621142"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -70857,7 +71074,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:12.416688"
+    "docs_refreshed_at": "2026-03-19T08:00:07.973436"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -70876,7 +71093,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:12.792282"
+    "docs_refreshed_at": "2026-03-19T08:00:08.324815"
   },
   "cysp/braze": {
     "docs": {
@@ -70902,7 +71119,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:13.165398"
+    "docs_refreshed_at": "2026-03-19T08:00:08.865945"
   },
   "cysp/contentful": {
     "docs": {
@@ -71045,7 +71262,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:13.538323"
+    "docs_refreshed_at": "2026-03-19T08:00:09.701519"
   },
   "dbanck/concept": {
     "docs": {
@@ -71081,7 +71298,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:13.907727"
+    "docs_refreshed_at": "2026-03-19T08:00:10.096827"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -72194,6 +72411,26 @@
           "subcategory": "Identity and Access"
         },
         {
+          "title": "graph_beta_identity_and_access_cross_tenant_access_default_settings",
+          "slug": "graph_beta_identity_and_access_cross_tenant_access_default_settings",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_cross_tenant_access_partner_settings",
+          "slug": "graph_beta_identity_and_access_cross_tenant_access_partner_settings",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_cross_tenant_access_partner_user_sync_settings",
+          "slug": "graph_beta_identity_and_access_cross_tenant_access_partner_user_sync_settings",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_cross_tenant_access_policy",
+          "slug": "graph_beta_identity_and_access_cross_tenant_access_policy",
+          "subcategory": "Identity and Access"
+        },
+        {
           "title": "graph_beta_identity_and_access_custom_security_attribute_allowed_value",
           "slug": "graph_beta_identity_and_access_custom_security_attribute_allowed_value",
           "subcategory": "Identity and Access"
@@ -72305,7 +72542,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:14.298869"
+    "docs_refreshed_at": "2026-03-19T08:00:10.465277"
   },
   "drewmullen/aap": {
     "docs": {
@@ -72413,7 +72650,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:14.674588"
+    "docs_refreshed_at": "2026-03-19T08:00:10.816490"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -72478,7 +72715,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:15.048314"
+    "docs_refreshed_at": "2026-03-19T08:00:11.171138"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -72581,7 +72818,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:15.417153"
+    "docs_refreshed_at": "2026-03-19T08:00:11.521539"
   },
   "hashicorp/local": {
     "docs": {
@@ -72643,7 +72880,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:16.187175"
+    "docs_refreshed_at": "2026-03-19T08:00:12.218062"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -80314,7 +80551,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:16.636778"
+    "docs_refreshed_at": "2026-03-19T08:00:12.636521"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -81097,7 +81334,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:17.014695"
+    "docs_refreshed_at": "2026-03-19T08:00:12.988873"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -81235,7 +81472,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:17.393467"
+    "docs_refreshed_at": "2026-03-19T08:00:14.956905"
   },
   "magodo/restful": {
     "docs": {
@@ -81294,7 +81531,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:17.770510"
+    "docs_refreshed_at": "2026-03-19T08:00:15.613390"
   },
   "marshallford/ansible": {
     "docs": {
@@ -81346,7 +81583,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:18.144699"
+    "docs_refreshed_at": "2026-03-19T08:00:15.965853"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -81488,7 +81725,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:18.518771"
+    "docs_refreshed_at": "2026-03-19T08:00:16.670016"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -81546,7 +81783,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:18.907385"
+    "docs_refreshed_at": "2026-03-19T08:00:17.022907"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -81593,7 +81830,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:19.278731"
+    "docs_refreshed_at": "2026-03-19T08:00:17.376683"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -83032,7 +83269,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:19.791435"
+    "docs_refreshed_at": "2026-03-19T08:00:17.736677"
   },
   "soffensive/soff": {
     "docs": {
@@ -83079,7 +83316,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:20.163411"
+    "docs_refreshed_at": "2026-03-19T08:00:18.084165"
   },
   "thrashr888/registry": {
     "docs": {
@@ -83167,7 +83404,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:20.573269"
+    "docs_refreshed_at": "2026-03-19T08:00:18.449438"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -83250,11 +83487,6 @@
           "subcategory": ""
         },
         {
-          "title": "client_group",
-          "slug": "client_group",
-          "subcategory": ""
-        },
-        {
           "title": "client_info",
           "slug": "client_info",
           "subcategory": ""
@@ -83270,6 +83502,11 @@
           "subcategory": ""
         },
         {
+          "title": "client_qos_rate",
+          "slug": "client_qos_rate",
+          "subcategory": ""
+        },
+        {
           "title": "dns_record",
           "slug": "dns_record",
           "subcategory": ""
@@ -83277,11 +83514,6 @@
         {
           "title": "network",
           "slug": "network",
-          "subcategory": ""
-        },
-        {
-          "title": "network_members_group_list",
-          "slug": "network_members_group_list",
           "subcategory": ""
         },
         {
@@ -83299,6 +83531,26 @@
         {
           "title": "client",
           "slug": "client",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_route",
+          "slug": "traffic_route",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_client",
+          "slug": "vpn_client",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_server",
+          "slug": "vpn_server",
           "subcategory": ""
         }
       ],
@@ -83326,8 +83578,8 @@
           "subcategory": ""
         },
         {
-          "title": "client_group",
-          "slug": "client_group",
+          "title": "client_qos_rate",
+          "slug": "client_qos_rate",
           "subcategory": ""
         },
         {
@@ -83391,13 +83643,18 @@
           "subcategory": ""
         },
         {
-          "title": "virtual_network",
-          "slug": "virtual_network",
+          "title": "traffic_route",
+          "slug": "traffic_route",
           "subcategory": ""
         },
         {
           "title": "vpn_client",
           "slug": "vpn_client",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_server",
+          "slug": "vpn_server",
           "subcategory": ""
         },
         {
@@ -83412,7 +83669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:21.312221"
+    "docs_refreshed_at": "2026-03-19T08:00:19.159983"
   },
   "waldur/waldur": {
     "docs": {
@@ -83797,7 +84054,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:22.059396"
+    "docs_refreshed_at": "2026-03-19T08:00:19.857200"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -84050,7 +84307,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:06.867106"
+    "docs_refreshed_at": "2026-03-19T08:00:01.649878"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -84105,7 +84362,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:15.813119"
+    "docs_refreshed_at": "2026-03-19T08:00:11.870294"
   },
   "timofurrer/desec": {
     "docs": {
@@ -84163,6 +84420,45 @@
           "subcategory": ""
         }
       ],
+      "functions": [
+        {
+          "title": "from_punycode",
+          "slug": "from_punycode",
+          "subcategory": ""
+        },
+        {
+          "title": "parse_dnskey",
+          "slug": "parse_dnskey",
+          "subcategory": ""
+        },
+        {
+          "title": "parse_ds",
+          "slug": "parse_ds",
+          "subcategory": ""
+        },
+        {
+          "title": "to_punycode",
+          "slug": "to_punycode",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "1. Getting Started with the deSEC Provider",
+          "slug": "01-getting-started",
+          "subcategory": ""
+        },
+        {
+          "title": "2. Migrating to TF with Bulk Import and Config Bootstrapping",
+          "slug": "02-migrating-with-bulk-import",
+          "subcategory": ""
+        },
+        {
+          "title": "3. Auditing with List Resources",
+          "slug": "03-auditing-with-list-resources",
+          "subcategory": ""
+        }
+      ],
       "list-resources": [
         {
           "title": "domain",
@@ -84204,6 +84500,11 @@
           "subcategory": ""
         },
         {
+          "title": "records",
+          "slug": "records",
+          "subcategory": ""
+        },
+        {
           "title": "token",
           "slug": "token",
           "subcategory": ""
@@ -84215,7 +84516,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:20.945812"
+    "docs_refreshed_at": "2026-03-19T08:00:18.809507"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -84298,6 +84599,3609 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:15:21.682682"
+    "docs_refreshed_at": "2026-03-19T08:00:19.506750"
+  },
+  "Forcepoint-NSP/fp-ngfw-smc": {
+    "docs": {
+      "actions": [
+        {
+          "title": "command",
+          "slug": "command",
+          "subcategory": ""
+        },
+        {
+          "title": "initial_contact",
+          "slug": "initial_contact",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "href",
+          "slug": "href",
+          "subcategory": ""
+        },
+        {
+          "title": "sub_href",
+          "slug": "sub_href",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "A Quick Start",
+          "slug": "10-quick-start",
+          "subcategory": ""
+        },
+        {
+          "title": "Creating Resources",
+          "slug": "20-creating-resources",
+          "subcategory": ""
+        },
+        {
+          "title": "Relationship Between Resources",
+          "slug": "30-relationship-between-resources",
+          "subcategory": ""
+        },
+        {
+          "title": "Representation of Nested Attributes",
+          "slug": "40-nested-attributes",
+          "subcategory": ""
+        },
+        {
+          "title": "Tips for Writing Terraform Configuration",
+          "slug": "50-tips-writing-terraform-smc",
+          "subcategory": ""
+        },
+        {
+          "title": "Importing Resources",
+          "slug": "60-importing-resources",
+          "subcategory": ""
+        },
+        {
+          "title": "Deleting Resources",
+          "slug": "70-deleting-resources",
+          "subcategory": ""
+        },
+        {
+          "title": "Troubleshooting",
+          "slug": "80-troubleshooting",
+          "subcategory": ""
+        },
+        {
+          "title": "Misc information",
+          "slug": "90-misc",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "access_control_list",
+          "slug": "access_control_list",
+          "subcategory": ""
+        },
+        {
+          "title": "active_directory_server",
+          "slug": "active_directory_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "address_range",
+          "slug": "address_range",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "administration_domain",
+          "slug": "administration_domain",
+          "subcategory": "admin"
+        },
+        {
+          "title": "administrator",
+          "slug": "administrator",
+          "subcategory": "admin"
+        },
+        {
+          "title": "administrator_management_system_task",
+          "slug": "administrator_management_system_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "alert_chain",
+          "slug": "alert_chain",
+          "subcategory": ""
+        },
+        {
+          "title": "alert_chain_rule",
+          "slug": "alert_chain_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "alert_policy",
+          "slug": "alert_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "alias",
+          "slug": "alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "api_client",
+          "slug": "api_client",
+          "subcategory": "admin"
+        },
+        {
+          "title": "appliance_switch_module",
+          "slug": "appliance_switch_module",
+          "subcategory": ""
+        },
+        {
+          "title": "application_expression_situation_parameter_value",
+          "slug": "application_expression_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "application_group_tag",
+          "slug": "application_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "application_risk_tag",
+          "slug": "application_risk_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "application_situation_context",
+          "slug": "application_situation_context",
+          "subcategory": "situations"
+        },
+        {
+          "title": "application_tag",
+          "slug": "application_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "application_usage_group_tag",
+          "slug": "application_usage_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "application_usage_tag",
+          "slug": "application_usage_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "archive_log_task",
+          "slug": "archive_log_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "as_path_access_list",
+          "slug": "as_path_access_list",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_abstract_access_list_entry",
+          "slug": "attr_abstract_access_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_access_list_entry_wrapper",
+          "slug": "attr_abstract_access_list_entry_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_diagnostic",
+          "slug": "attr_abstract_diagnostic",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_engine_interface",
+          "slug": "attr_abstract_engine_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_abstract_engine_node",
+          "slug": "attr_abstract_engine_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_abstract_filter_expression",
+          "slug": "attr_abstract_filter_expression",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_firewall_vpn_mapping_container",
+          "slug": "attr_abstract_firewall_vpn_mapping_container",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_pa_parameter_value_wrapper",
+          "slug": "attr_abstract_pa_parameter_value_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_pa_parameter_wrapper",
+          "slug": "attr_abstract_pa_parameter_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_physical_interface",
+          "slug": "attr_abstract_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_abstract_physical_interface_wrapper",
+          "slug": "attr_abstract_physical_interface_wrapper",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_abstract_protocol_agent_parameter",
+          "slug": "attr_abstract_protocol_agent_parameter",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_rule",
+          "slug": "attr_abstract_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_test_entry",
+          "slug": "attr_abstract_test_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_abstract_virtual_resource",
+          "slug": "attr_abstract_virtual_resource",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_additional_username_suffix",
+          "slug": "attr_additional_username_suffix",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_admin_permission",
+          "slug": "attr_admin_permission",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_admin_permissions",
+          "slug": "attr_admin_permissions",
+          "subcategory": "admin"
+        },
+        {
+          "title": "attr_adsl_physical_interface",
+          "slug": "attr_adsl_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_advanced_multi_link_settings",
+          "slug": "attr_advanced_multi_link_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_alias_value",
+          "slug": "attr_alias_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_antispoofing_node",
+          "slug": "attr_antispoofing_node",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_antivirus_settings",
+          "slug": "attr_antivirus_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_api_link",
+          "slug": "attr_api_link",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_appliance_info",
+          "slug": "attr_appliance_info",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_application_port",
+          "slug": "attr_application_port",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_arp_entry",
+          "slug": "attr_arp_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_as_path_access_list_entry",
+          "slug": "attr_as_path_access_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_as_path_expression",
+          "slug": "attr_as_path_expression",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_authentication_method_container_for_storage",
+          "slug": "attr_authentication_method_container_for_storage",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_automatic_rules_settings",
+          "slug": "attr_automatic_rules_settings",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_bgp_aggregation_entry",
+          "slug": "attr_bgp_aggregation_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_bgp_announced_network_association",
+          "slug": "attr_bgp_announced_network_association",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_bgp_bmp_entry",
+          "slug": "attr_bgp_bmp_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_bgp_distance_entry",
+          "slug": "attr_bgp_distance_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_bgp_settings",
+          "slug": "attr_bgp_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_block_list_end_point",
+          "slug": "attr_block_list_end_point",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_block_list_scope",
+          "slug": "attr_block_list_scope",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_bsr_candidate_interface_entry",
+          "slug": "attr_bsr_candidate_interface_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_capabilities",
+          "slug": "attr_capabilities",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_capture_interface",
+          "slug": "attr_capture_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_certificate_settings",
+          "slug": "attr_certificate_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_certificate_validation_common_settings",
+          "slug": "attr_certificate_validation_common_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_certificate_validation_settings",
+          "slug": "attr_certificate_validation_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_cluster_interface",
+          "slug": "attr_cluster_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_community_access_list_entry",
+          "slug": "attr_community_access_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_community_expression",
+          "slug": "attr_community_expression",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_between",
+          "slug": "attr_comparison_expression_between",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_bigger",
+          "slug": "attr_comparison_expression_bigger",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_bigger_or_equal",
+          "slug": "attr_comparison_expression_bigger_or_equal",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_ci_like",
+          "slug": "attr_comparison_expression_ci_like",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_contains",
+          "slug": "attr_comparison_expression_contains",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_cs_like",
+          "slug": "attr_comparison_expression_cs_like",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_default",
+          "slug": "attr_comparison_expression_default",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_defined",
+          "slug": "attr_comparison_expression_defined",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_equal_false",
+          "slug": "attr_comparison_expression_equal_false",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_equal_true",
+          "slug": "attr_comparison_expression_equal_true",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_for_all",
+          "slug": "attr_comparison_expression_for_all",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_for_any",
+          "slug": "attr_comparison_expression_for_any",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_in",
+          "slug": "attr_comparison_expression_in",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_smaller",
+          "slug": "attr_comparison_expression_smaller",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_comparison_expression_smaller_or_equal",
+          "slug": "attr_comparison_expression_smaller_or_equal",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_connection_tracking_options",
+          "slug": "attr_connection_tracking_options",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_custom_property",
+          "slug": "attr_custom_property",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_destination_matching_part",
+          "slug": "attr_destination_matching_part",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dhcp_client_configuration",
+          "slug": "attr_dhcp_client_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dhcp_range_node",
+          "slug": "attr_dhcp_range_node",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dhcp_relay",
+          "slug": "attr_dhcp_relay",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dhcp_server_settings",
+          "slug": "attr_dhcp_server_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_diagnostic",
+          "slug": "attr_diagnostic",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dns_element",
+          "slug": "attr_dns_element",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dns_relay_interface_entry",
+          "slug": "attr_dns_relay_interface_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dns_rp_dns_answer_translation",
+          "slug": "attr_dns_rp_dns_answer_translation",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dns_rp_fixed_domain_answer",
+          "slug": "attr_dns_rp_fixed_domain_answer",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dns_rp_hostname_mapping",
+          "slug": "attr_dns_rp_hostname_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_domain_controller",
+          "slug": "attr_domain_controller",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_domain_specific_dns_server",
+          "slug": "attr_domain_specific_dns_server",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dynamic_nat",
+          "slug": "attr_dynamic_nat",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dynamic_routing_redistribution_entry",
+          "slug": "attr_dynamic_routing_redistribution_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_dynamic_routing_settings",
+          "slug": "attr_dynamic_routing_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_eca_executable",
+          "slug": "attr_eca_executable",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_eca_settings",
+          "slug": "attr_eca_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_elasticsearch_authentication_settings",
+          "slug": "attr_elasticsearch_authentication_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_enabled_interface_entry",
+          "slug": "attr_enabled_interface_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_engine_interface_wrapper",
+          "slug": "attr_engine_interface_wrapper",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_engine_node",
+          "slug": "attr_engine_node",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_engine_node_wrapper",
+          "slug": "attr_engine_node_wrapper",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_event_group_situation_parameter_value",
+          "slug": "attr_event_group_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "attr_event_sequence_situation_parameter_value",
+          "slug": "attr_event_sequence_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "attr_extended_community_access_list_entry",
+          "slug": "attr_extended_community_access_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_extended_community_expression",
+          "slug": "attr_extended_community_expression",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_external_test",
+          "slug": "attr_external_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_file_filtering_rule_action",
+          "slug": "attr_file_filtering_rule_action",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_file_filtering_rule_options",
+          "slug": "attr_file_filtering_rule_options",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_file_reputation_settings",
+          "slug": "attr_file_reputation_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_file_system_space_test",
+          "slug": "attr_file_system_space_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_filter_expression_wrapper",
+          "slug": "attr_filter_expression_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_firewall_rule_action",
+          "slug": "attr_firewall_rule_action",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_firewall_rule_options",
+          "slug": "attr_firewall_rule_options",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_firewall_vpn_mapping_container",
+          "slug": "attr_firewall_vpn_mapping_container",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_gateway_nodes_usage",
+          "slug": "attr_gateway_nodes_usage",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_idle_timeout",
+          "slug": "attr_idle_timeout",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_import_conflict_input",
+          "slug": "attr_import_conflict_input",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_inline_interface",
+          "slug": "attr_inline_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_inline_ips_interface",
+          "slug": "attr_inline_ips_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_inline_l2fw_interface",
+          "slug": "attr_inline_l2fw_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_inline_pair_link_speed_test",
+          "slug": "attr_inline_pair_link_speed_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_integrated_uis_ignore_value",
+          "slug": "attr_integrated_uis_ignore_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_interface_link_test",
+          "slug": "attr_interface_link_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_ip_access_list_entry",
+          "slug": "attr_ip_access_list_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_ip_net_link_weight",
+          "slug": "attr_ip_net_link_weight",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_ip_prefix_list_entry",
+          "slug": "attr_ip_prefix_list_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_ips_ipv4_access_rule",
+          "slug": "attr_ips_ipv4_access_rule",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_ips_rule_action",
+          "slug": "attr_ips_rule_action",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_ips_rule_options",
+          "slug": "attr_ips_rule_options",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_ipv6_access_list_entry",
+          "slug": "attr_ipv6_access_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_ipv6_prefix_list_entry",
+          "slug": "attr_ipv6_prefix_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_l2fw_settings",
+          "slug": "attr_l2fw_settings",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_link_usage_entry",
+          "slug": "attr_link_usage_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_link_usage_exception_rule",
+          "slug": "attr_link_usage_exception_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_link_usage_preference",
+          "slug": "attr_link_usage_preference",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_constant",
+          "slug": "attr_literal_expression_constant",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_cve",
+          "slug": "attr_literal_expression_cve",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_dns_name",
+          "slug": "attr_literal_expression_dns_name",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_double",
+          "slug": "attr_literal_expression_double",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_hexadecimal",
+          "slug": "attr_literal_expression_hexadecimal",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_long",
+          "slug": "attr_literal_expression_long",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_mac_address",
+          "slug": "attr_literal_expression_mac_address",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_non_editable_number",
+          "slug": "attr_literal_expression_non_editable_number",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_rule_tag",
+          "slug": "attr_literal_expression_rule_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_search",
+          "slug": "attr_literal_expression_search",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_source_destination_interface",
+          "slug": "attr_literal_expression_source_destination_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_string",
+          "slug": "attr_literal_expression_string",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_time_millis",
+          "slug": "attr_literal_expression_time_millis",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_expression_translated",
+          "slug": "attr_literal_expression_translated",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_ip_network",
+          "slug": "attr_literal_ip_network",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_literal_service_expression",
+          "slug": "attr_literal_service_expression",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_load_balancing_filter",
+          "slug": "attr_load_balancing_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_local_log_storage_settings",
+          "slug": "attr_local_log_storage_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_and",
+          "slug": "attr_logical_expression_and",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_and_identified",
+          "slug": "attr_logical_expression_and_identified",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_disabled",
+          "slug": "attr_logical_expression_disabled",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_false",
+          "slug": "attr_logical_expression_false",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_not",
+          "slug": "attr_logical_expression_not",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_or",
+          "slug": "attr_logical_expression_or",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_expression_true",
+          "slug": "attr_logical_expression_true",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_logical_interface_match_part",
+          "slug": "attr_logical_interface_match_part",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_log_moderation",
+          "slug": "attr_log_moderation",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_loopback_cluster_interface",
+          "slug": "attr_loopback_cluster_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_loopback_node_interface",
+          "slug": "attr_loopback_node_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_mac_filtering",
+          "slug": "attr_mac_filtering",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_management_integration_container",
+          "slug": "attr_management_integration_container",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_match_vpn_option",
+          "slug": "attr_match_vpn_option",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "attr_modem_interface",
+          "slug": "attr_modem_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_move_conflict_input",
+          "slug": "attr_move_conflict_input",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_multi_contact_address_element",
+          "slug": "attr_multi_contact_address_element",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_multilink_member",
+          "slug": "attr_multilink_member",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_multi_link_qos_class_member",
+          "slug": "attr_multi_link_qos_class_member",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_multiping_test",
+          "slug": "attr_multiping_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_nat464_settings",
+          "slug": "attr_nat464_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_nat64_mapping",
+          "slug": "attr_nat64_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_nat_definition",
+          "slug": "attr_nat_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_netflow_collector",
+          "slug": "attr_netflow_collector",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_next_hop",
+          "slug": "attr_next_hop",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_node_interface",
+          "slug": "attr_node_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_ntp_settings",
+          "slug": "attr_ntp_settings",
+          "subcategory": "engines"
+        },
+        {
+          "title": "attr_ospf_abr_substitute_container",
+          "slug": "attr_ospf_abr_substitute_container",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_ospf_key_chain_entry",
+          "slug": "attr_ospf_key_chain_entry",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_ospfv2_settings",
+          "slug": "attr_ospfv2_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_ospfv2_virtual_links_end_points_container",
+          "slug": "attr_ospfv2_virtual_links_end_points_container",
+          "subcategory": "routing"
+        },
+        {
+          "title": "attr_pa_boolean_value",
+          "slug": "attr_pa_boolean_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_check_box_list_value",
+          "slug": "attr_pa_check_box_list_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_check_box_value",
+          "slug": "attr_pa_check_box_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_dns_sinkhole_list_value",
+          "slug": "attr_pa_dns_sinkhole_list_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_html_value",
+          "slug": "attr_pa_html_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_integer_value",
+          "slug": "attr_pa_integer_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_ip_address_value",
+          "slug": "attr_pa_ip_address_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_macro_value",
+          "slug": "attr_pa_macro_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_ordered_list_box_value",
+          "slug": "attr_pa_ordered_list_box_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_parameter_group",
+          "slug": "attr_pa_parameter_group",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_parameter_value",
+          "slug": "attr_pa_parameter_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_proxy_service_value",
+          "slug": "attr_pa_proxy_service_value",
+          "subcategory": "services"
+        },
+        {
+          "title": "attr_pa_ssh_profile_value",
+          "slug": "attr_pa_ssh_profile_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_string_value",
+          "slug": "attr_pa_string_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_tls_inspection_policy_value",
+          "slug": "attr_pa_tls_inspection_policy_value",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_pa_url_match_list_value",
+          "slug": "attr_pa_url_match_list_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pa_url_match_value",
+          "slug": "attr_pa_url_match_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_physical_interface",
+          "slug": "attr_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_pim_ipv4_multicast_group_entry",
+          "slug": "attr_pim_ipv4_multicast_group_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pim_settings",
+          "slug": "attr_pim_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_pim_sm_bootstrap_settings_rp_candidate_entry",
+          "slug": "attr_pim_sm_bootstrap_settings_rp_candidate_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_policy_route",
+          "slug": "attr_policy_route",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_port_group_interface",
+          "slug": "attr_port_group_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_protocol_match_part",
+          "slug": "attr_protocol_match_part",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_proxy_nat",
+          "slug": "attr_proxy_nat",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_qos_class_with_role",
+          "slug": "attr_qos_class_with_role",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_qos_dscp_rule",
+          "slug": "attr_qos_dscp_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_ranked_url",
+          "slug": "attr_ranked_url",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_rbvpn_geneve_settings",
+          "slug": "attr_rbvpn_geneve_settings",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "attr_reference_expression_audit_object",
+          "slug": "attr_reference_expression_audit_object",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_data_tag",
+          "slug": "attr_reference_expression_data_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_field_group",
+          "slug": "attr_reference_expression_field_group",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_filter",
+          "slug": "attr_reference_expression_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_item",
+          "slug": "attr_reference_expression_item",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_log_field",
+          "slug": "attr_reference_expression_log_field",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_report_item",
+          "slug": "attr_reference_expression_report_item",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_storable",
+          "slug": "attr_reference_expression_storable",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_reference_expression_temporary_filter",
+          "slug": "attr_reference_expression_temporary_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_route_map_matching_condition",
+          "slug": "attr_route_map_matching_condition",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_route_map_rule_option",
+          "slug": "attr_route_map_rule_option",
+          "subcategory": "policy"
+        },
+        {
+          "title": "attr_rp_candidate_interface_entry",
+          "slug": "attr_rp_candidate_interface_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_saml_settings",
+          "slug": "attr_saml_settings",
+          "subcategory": "admin"
+        },
+        {
+          "title": "attr_sandbox_settings",
+          "slug": "attr_sandbox_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_scan_detection_settings",
+          "slug": "attr_scan_detection_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_secondary_log_server_container_for_storage",
+          "slug": "attr_secondary_log_server_container_for_storage",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_security_group",
+          "slug": "attr_security_group",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_server_directories",
+          "slug": "attr_server_directories",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_server_pool_member",
+          "slug": "attr_server_pool_member",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_service_match_part",
+          "slug": "attr_service_match_part",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_sidewinder_proxy_advanced_settings",
+          "slug": "attr_sidewinder_proxy_advanced_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_siit_mapping",
+          "slug": "attr_siit_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_single_contact_address_element",
+          "slug": "attr_single_contact_address_element",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_single_node_interface",
+          "slug": "attr_single_node_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_sinkhole_protocol_parameter_value",
+          "slug": "attr_sinkhole_protocol_parameter_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_situation_match_part",
+          "slug": "attr_situation_match_part",
+          "subcategory": "situations"
+        },
+        {
+          "title": "attr_sms_http_channel",
+          "slug": "attr_sms_http_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_sms_script_channel",
+          "slug": "attr_sms_script_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_sms_smtp_channel",
+          "slug": "attr_sms_smtp_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_snmp_interface_entry",
+          "slug": "attr_snmp_interface_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_snmp_trap_destination",
+          "slug": "attr_snmp_trap_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_snmp_user",
+          "slug": "attr_snmp_user",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_source_match_part",
+          "slug": "attr_source_match_part",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_ssid_physical_interface",
+          "slug": "attr_ssid_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_ssl_vpn_allowed_url",
+          "slug": "attr_ssl_vpn_allowed_url",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_ssl_vpn_hostname",
+          "slug": "attr_ssl_vpn_hostname",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_ssl_vpn_http_field",
+          "slug": "attr_ssl_vpn_http_field",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_ssl_vpn_portal_setting",
+          "slug": "attr_ssl_vpn_portal_setting",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_ssl_vpn_setting",
+          "slug": "attr_ssl_vpn_setting",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_ssl_vpnv2_rule",
+          "slug": "attr_ssl_vpnv2_rule",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "attr_static_multicast_route",
+          "slug": "attr_static_multicast_route",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_static_nat",
+          "slug": "attr_static_nat",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_swap_free_space_test",
+          "slug": "attr_swap_free_space_test",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_switch_interface",
+          "slug": "attr_switch_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_switch_interface_port",
+          "slug": "attr_switch_interface_port",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_sync_parameter",
+          "slug": "attr_sync_parameter",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_test_entry_wrapper",
+          "slug": "attr_test_entry_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_tester_parameters",
+          "slug": "attr_tester_parameters",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_third_party_monitoring",
+          "slug": "attr_third_party_monitoring",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_threat_seeker_settings",
+          "slug": "attr_threat_seeker_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_tls_client_protection_wrapper",
+          "slug": "attr_tls_client_protection_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_tls_identity",
+          "slug": "attr_tls_identity",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_tls_settings",
+          "slug": "attr_tls_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_traffic_capture_interface_settings",
+          "slug": "attr_traffic_capture_interface_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_translation_value",
+          "slug": "attr_translation_value",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_tunnel_interface",
+          "slug": "attr_tunnel_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_used_on_engine",
+          "slug": "attr_used_on_engine",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_user_alert_check_association",
+          "slug": "attr_user_alert_check_association",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_user_authentication_bba",
+          "slug": "attr_user_authentication_bba",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_user_authentication_match",
+          "slug": "attr_user_authentication_match",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_virtual_resource_settings",
+          "slug": "attr_virtual_resource_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_virtual_resource_wrapper",
+          "slug": "attr_virtual_resource_wrapper",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_virtual_vlan_physical_interface",
+          "slug": "attr_virtual_vlan_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_vlan_physical_interface",
+          "slug": "attr_vlan_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_vss_context_isc_settings",
+          "slug": "attr_vss_context_isc_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_vulnerability_reference",
+          "slug": "attr_vulnerability_reference",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_web_application_parameters",
+          "slug": "attr_web_application_parameters",
+          "subcategory": ""
+        },
+        {
+          "title": "attr_wireless_physical_interface",
+          "slug": "attr_wireless_physical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "attr_ztna_connector_settings",
+          "slug": "attr_ztna_connector_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "autonomous_system",
+          "slug": "autonomous_system",
+          "subcategory": "routing"
+        },
+        {
+          "title": "backup_task",
+          "slug": "backup_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "bgp_connection_profile",
+          "slug": "bgp_connection_profile",
+          "subcategory": "routing"
+        },
+        {
+          "title": "bgp_peering",
+          "slug": "bgp_peering",
+          "subcategory": "routing"
+        },
+        {
+          "title": "bgp_profile",
+          "slug": "bgp_profile",
+          "subcategory": "routing"
+        },
+        {
+          "title": "binary_situation_parameter_value",
+          "slug": "binary_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "binding_set",
+          "slug": "binding_set",
+          "subcategory": ""
+        },
+        {
+          "title": "bookmark",
+          "slug": "bookmark",
+          "subcategory": ""
+        },
+        {
+          "title": "bookmark_group",
+          "slug": "bookmark_group",
+          "subcategory": ""
+        },
+        {
+          "title": "boolean_situation_parameter_value",
+          "slug": "boolean_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "broker_domain",
+          "slug": "broker_domain",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "broker_domain_config_file",
+          "slug": "broker_domain_config_file",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "browser_columns",
+          "slug": "browser_columns",
+          "subcategory": ""
+        },
+        {
+          "title": "ca_checker_task",
+          "slug": "ca_checker_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "category_group_tag",
+          "slug": "category_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "category_tag",
+          "slug": "category_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "certificate_info_store_checker_task",
+          "slug": "certificate_info_store_checker_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "certificate_renewal_system_task",
+          "slug": "certificate_renewal_system_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "certificate_revocation_fetcher_task",
+          "slug": "certificate_revocation_fetcher_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "check_expiration_of_one_time_passwords_for_ngfw_engines_task",
+          "slug": "check_expiration_of_one_time_passwords_for_ngfw_engines_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "client_gateway",
+          "slug": "client_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "cloud_auto_scaled_group",
+          "slug": "cloud_auto_scaled_group",
+          "subcategory": ""
+        },
+        {
+          "title": "cloud_firewall_node",
+          "slug": "cloud_firewall_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "cloud_single_firewall",
+          "slug": "cloud_single_firewall",
+          "subcategory": "engines"
+        },
+        {
+          "title": "community_access_list",
+          "slug": "community_access_list",
+          "subcategory": "routing"
+        },
+        {
+          "title": "configuration_situation_parameter_value",
+          "slug": "configuration_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "connection_sync_group",
+          "slug": "connection_sync_group",
+          "subcategory": ""
+        },
+        {
+          "title": "connection_type",
+          "slug": "connection_type",
+          "subcategory": ""
+        },
+        {
+          "title": "correlation_situation",
+          "slug": "correlation_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "correlation_situation_context",
+          "slug": "correlation_situation_context",
+          "subcategory": "situations"
+        },
+        {
+          "title": "country_ip_list",
+          "slug": "country_ip_list",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "country_ip_list_group_tag",
+          "slug": "country_ip_list_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "custom_alert",
+          "slug": "custom_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_properties_profile",
+          "slug": "custom_properties_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "data_context",
+          "slug": "data_context",
+          "subcategory": ""
+        },
+        {
+          "title": "default_nat_address_alias",
+          "slug": "default_nat_address_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "delete_counter_data_task",
+          "slug": "delete_counter_data_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "delete_log_task",
+          "slug": "delete_log_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "delete_old_snapshots_task",
+          "slug": "delete_old_snapshots_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "device_tools_profile",
+          "slug": "device_tools_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dhcp_enabled_interface_addresses_alias",
+          "slug": "dhcp_enabled_interface_addresses_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "dhcp_server",
+          "slug": "dhcp_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "dns_relay_profile",
+          "slug": "dns_relay_profile",
+          "subcategory": "engines"
+        },
+        {
+          "title": "domain_name",
+          "slug": "domain_name",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "dynamic_interface_alias",
+          "slug": "dynamic_interface_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "dynamic_net_link",
+          "slug": "dynamic_net_link",
+          "subcategory": "routing"
+        },
+        {
+          "title": "eca_application_category_tag",
+          "slug": "eca_application_category_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "eca_application_situation",
+          "slug": "eca_application_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "eca_application_usage_group_tag",
+          "slug": "eca_application_usage_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "eca_client_configuration",
+          "slug": "eca_client_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "eca_endpoint_settings",
+          "slug": "eca_endpoint_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "eca_operating_system_situation",
+          "slug": "eca_operating_system_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "eca_string_situation_parameter_value",
+          "slug": "eca_string_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "eca_user_domain",
+          "slug": "eca_user_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticsearch_cluster",
+          "slug": "elasticsearch_cluster",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "ethernet_service",
+          "slug": "ethernet_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "ethernet_service_group",
+          "slug": "ethernet_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "export_log_task",
+          "slug": "export_log_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "expression",
+          "slug": "expression",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "extended_community_access_list",
+          "slug": "extended_community_access_list",
+          "subcategory": ""
+        },
+        {
+          "title": "external_authentication_method",
+          "slug": "external_authentication_method",
+          "subcategory": ""
+        },
+        {
+          "title": "external_bgp_peer",
+          "slug": "external_bgp_peer",
+          "subcategory": "routing"
+        },
+        {
+          "title": "external_dns_server",
+          "slug": "external_dns_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "external_end_point",
+          "slug": "external_end_point",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "external_gateway",
+          "slug": "external_gateway",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "external_ldap_user",
+          "slug": "external_ldap_user",
+          "subcategory": "admin"
+        },
+        {
+          "title": "external_ldap_user_domain",
+          "slug": "external_ldap_user_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "external_ldap_user_group",
+          "slug": "external_ldap_user_group",
+          "subcategory": "admin"
+        },
+        {
+          "title": "file_filtering_compatibility_tag",
+          "slug": "file_filtering_compatibility_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "file_filtering_policy",
+          "slug": "file_filtering_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "file_filtering_rule",
+          "slug": "file_filtering_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "file_filtering_situation",
+          "slug": "file_filtering_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "filter_expression_tag",
+          "slug": "filter_expression_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "filter_situation_parameter_value",
+          "slug": "filter_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "firewall_alert",
+          "slug": "firewall_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_cluster",
+          "slug": "firewall_cluster",
+          "subcategory": "engines"
+        },
+        {
+          "title": "firewall_node",
+          "slug": "firewall_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "firewall_policy",
+          "slug": "firewall_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "firewall_template_policy",
+          "slug": "firewall_template_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "float_situation_parameter_value",
+          "slug": "float_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "gateway_node",
+          "slug": "gateway_node",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "gateway_profile",
+          "slug": "gateway_profile",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "gateway_settings",
+          "slug": "gateway_settings",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "gateway_tunnel",
+          "slug": "gateway_tunnel",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "geolocation",
+          "slug": "geolocation",
+          "subcategory": ""
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "hardware_tag",
+          "slug": "hardware_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "host",
+          "slug": "host",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "http_proxy",
+          "slug": "http_proxy",
+          "subcategory": ""
+        },
+        {
+          "title": "icap_server",
+          "slug": "icap_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "icmp_service",
+          "slug": "icmp_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "icmp_service_group",
+          "slug": "icmp_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "icmpv6_service",
+          "slug": "icmpv6_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "ids_alert",
+          "slug": "ids_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "igmp_querier_settings",
+          "slug": "igmp_querier_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "image_file",
+          "slug": "image_file",
+          "subcategory": ""
+        },
+        {
+          "title": "inspected_service",
+          "slug": "inspected_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "inspection_exception_rule",
+          "slug": "inspection_exception_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "inspection_global_rule",
+          "slug": "inspection_global_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "inspection_situation",
+          "slug": "inspection_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "inspection_situation_context",
+          "slug": "inspection_situation_context",
+          "subcategory": "situations"
+        },
+        {
+          "title": "inspection_situation_parameter_value",
+          "slug": "inspection_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "inspection_template_policy",
+          "slug": "inspection_template_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "integer_situation_parameter_value",
+          "slug": "integer_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "integrated_user_id_service",
+          "slug": "integrated_user_id_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "interface_nic_x_ip_alias",
+          "slug": "interface_nic_x_ip_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "interface_nic_x_net_alias",
+          "slug": "interface_nic_x_net_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "interface_zone",
+          "slug": "interface_zone",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "internal_end_point",
+          "slug": "internal_end_point",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "internal_file",
+          "slug": "internal_file",
+          "subcategory": ""
+        },
+        {
+          "title": "internal_gateway",
+          "slug": "internal_gateway",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "internal_gateway_certificate",
+          "slug": "internal_gateway_certificate",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "internal_gateway_certificate_request",
+          "slug": "internal_gateway_certificate_request",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "internal_post_quantum_preshared_key",
+          "slug": "internal_post_quantum_preshared_key",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "internal_user",
+          "slug": "internal_user",
+          "subcategory": "admin"
+        },
+        {
+          "title": "internal_user_domain",
+          "slug": "internal_user_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "internal_user_group",
+          "slug": "internal_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_access_list",
+          "slug": "ip_access_list",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ip_address_list",
+          "slug": "ip_address_list",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "ip_list",
+          "slug": "ip_list",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "ip_list_group_tag",
+          "slug": "ip_list_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "ip_prefix_list",
+          "slug": "ip_prefix_list",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ip_service",
+          "slug": "ip_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "ip_service_group",
+          "slug": "ip_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "ips_ethernet_rule",
+          "slug": "ips_ethernet_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ips_ipv6_access_rule",
+          "slug": "ips_ipv6_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ips_node",
+          "slug": "ips_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "ips_policy",
+          "slug": "ips_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ips_template_policy",
+          "slug": "ips_template_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv4_access_rule",
+          "slug": "ipv4_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv4_address_situation_parameter_value",
+          "slug": "ipv4_address_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "ipv4_nat_rule",
+          "slug": "ipv4_nat_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv6_access_list",
+          "slug": "ipv6_access_list",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv6_access_rule",
+          "slug": "ipv6_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv6_nat_rule",
+          "slug": "ipv6_nat_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ipv6_prefix_list",
+          "slug": "ipv6_prefix_list",
+          "subcategory": "routing"
+        },
+        {
+          "title": "known_host",
+          "slug": "known_host",
+          "subcategory": ""
+        },
+        {
+          "title": "known_host_list",
+          "slug": "known_host_list",
+          "subcategory": ""
+        },
+        {
+          "title": "l2fw_interface_ethernet_rule",
+          "slug": "l2fw_interface_ethernet_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "l2fw_interface_ipv4_access_rule",
+          "slug": "l2fw_interface_ipv4_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "l2fw_interface_ipv6_access_rule",
+          "slug": "l2fw_interface_ipv6_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "l2_interface_policy",
+          "slug": "l2_interface_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "l2_interface_template_policy",
+          "slug": "l2_interface_template_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "layer2_cluster",
+          "slug": "layer2_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "layer2_ethernet_rule",
+          "slug": "layer2_ethernet_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "layer2_firewall_node",
+          "slug": "layer2_firewall_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "layer2_ipv4_access_rule",
+          "slug": "layer2_ipv4_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "layer2_ipv6_access_rule",
+          "slug": "layer2_ipv6_access_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "layer2_policy",
+          "slug": "layer2_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "layer2_single",
+          "slug": "layer2_single",
+          "subcategory": ""
+        },
+        {
+          "title": "layer2_template_policy",
+          "slug": "layer2_template_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "ldap_less_user",
+          "slug": "ldap_less_user",
+          "subcategory": ""
+        },
+        {
+          "title": "ldapless_user_group",
+          "slug": "ldapless_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ldap_server",
+          "slug": "ldap_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "link_selection_value",
+          "slug": "link_selection_value",
+          "subcategory": ""
+        },
+        {
+          "title": "link_type",
+          "slug": "link_type",
+          "subcategory": ""
+        },
+        {
+          "title": "link_usage_profile",
+          "slug": "link_usage_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "lldp_profile",
+          "slug": "lldp_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "local_cluster_alias",
+          "slug": "local_cluster_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_cvi_alias",
+          "slug": "local_cluster_cvi_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_dynamic_interface_alias",
+          "slug": "local_cluster_dynamic_interface_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_ndi_for_hb_alias",
+          "slug": "local_cluster_ndi_for_hb_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_ndi_for_mgt_alias",
+          "slug": "local_cluster_ndi_for_mgt_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_ndi_ipv6_only_alias",
+          "slug": "local_cluster_ndi_ipv6_only_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "local_cluster_ndi_only_alias",
+          "slug": "local_cluster_ndi_only_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "location",
+          "slug": "location",
+          "subcategory": "engines"
+        },
+        {
+          "title": "log_field_situation_parameter_value",
+          "slug": "log_field_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "logging_field_resolver",
+          "slug": "logging_field_resolver",
+          "subcategory": ""
+        },
+        {
+          "title": "logical_interface",
+          "slug": "logical_interface",
+          "subcategory": "interfaces"
+        },
+        {
+          "title": "logical_operator_situation_parameter_value",
+          "slug": "logical_operator_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "logo_file",
+          "slug": "logo_file",
+          "subcategory": ""
+        },
+        {
+          "title": "log_server",
+          "slug": "log_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "log_servers_alias",
+          "slug": "log_servers_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "loopback_end_point",
+          "slug": "loopback_end_point",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "mac_address",
+          "slug": "mac_address",
+          "subcategory": ""
+        },
+        {
+          "title": "management_server",
+          "slug": "management_server",
+          "subcategory": "admin"
+        },
+        {
+          "title": "management_servers_alias",
+          "slug": "management_servers_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "master_engine",
+          "slug": "master_engine",
+          "subcategory": "engines"
+        },
+        {
+          "title": "master_node",
+          "slug": "master_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "match_expression",
+          "slug": "match_expression",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "mini_report",
+          "slug": "mini_report",
+          "subcategory": ""
+        },
+        {
+          "title": "multi_contact_address",
+          "slug": "multi_contact_address",
+          "subcategory": "engines"
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "not_browsed_ldap_user",
+          "slug": "not_browsed_ldap_user",
+          "subcategory": ""
+        },
+        {
+          "title": "not_browsed_ldap_user_group",
+          "slug": "not_browsed_ldap_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "not_specific_platform_tag",
+          "slug": "not_specific_platform_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "not_specific_software_tag",
+          "slug": "not_specific_software_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "ntp_server",
+          "slug": "ntp_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "old_executed_task_cleaner_task",
+          "slug": "old_executed_task_cleaner_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "opaque_situation_parameter_value",
+          "slug": "opaque_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "ospfv2_area",
+          "slug": "ospfv2_area",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ospfv2_domain_settings",
+          "slug": "ospfv2_domain_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ospfv2_interface_settings",
+          "slug": "ospfv2_interface_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ospfv2_key_chain",
+          "slug": "ospfv2_key_chain",
+          "subcategory": "routing"
+        },
+        {
+          "title": "ospfv2_profile",
+          "slug": "ospfv2_profile",
+          "subcategory": "routing"
+        },
+        {
+          "title": "outbound_multi_link",
+          "slug": "outbound_multi_link",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "overview_template",
+          "slug": "overview_template",
+          "subcategory": ""
+        },
+        {
+          "title": "pa_parameter",
+          "slug": "pa_parameter",
+          "subcategory": ""
+        },
+        {
+          "title": "pdf_template",
+          "slug": "pdf_template",
+          "subcategory": ""
+        },
+        {
+          "title": "pim_ipv4_interface_settings",
+          "slug": "pim_ipv4_interface_settings",
+          "subcategory": "routing"
+        },
+        {
+          "title": "pim_ipv4_profile",
+          "slug": "pim_ipv4_profile",
+          "subcategory": "routing"
+        },
+        {
+          "title": "plain_situation_parameter_value",
+          "slug": "plain_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "policy_based_vpn",
+          "slug": "policy_based_vpn",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "policy_snapshot",
+          "slug": "policy_snapshot",
+          "subcategory": "policy"
+        },
+        {
+          "title": "post_quantum_preshared_key",
+          "slug": "post_quantum_preshared_key",
+          "subcategory": ""
+        },
+        {
+          "title": "protocol_agent",
+          "slug": "protocol_agent",
+          "subcategory": ""
+        },
+        {
+          "title": "proxy_server",
+          "slug": "proxy_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "qos_class",
+          "slug": "qos_class",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_limit_rule",
+          "slug": "qos_limit_rule",
+          "subcategory": "policy"
+        },
+        {
+          "title": "qos_policy",
+          "slug": "qos_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "radius_server",
+          "slug": "radius_server",
+          "subcategory": ""
+        },
+        {
+          "title": "reference_situation_parameter_value",
+          "slug": "reference_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "regexp_situation_parameter_value",
+          "slug": "regexp_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "report_operation",
+          "slug": "report_operation",
+          "subcategory": ""
+        },
+        {
+          "title": "report_template",
+          "slug": "report_template",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "route_based_vpn_tunnel",
+          "slug": "route_based_vpn_tunnel",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "route_based_vpn_tunnel_group",
+          "slug": "route_based_vpn_tunnel_group",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "route_based_vpn_tunnel_side",
+          "slug": "route_based_vpn_tunnel_side",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "route_map_policy",
+          "slug": "route_map_policy",
+          "subcategory": "routing"
+        },
+        {
+          "title": "route_map_rule",
+          "slug": "route_map_rule",
+          "subcategory": "routing"
+        },
+        {
+          "title": "router",
+          "slug": "router",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "routing_node",
+          "slug": "routing_node",
+          "subcategory": "routing"
+        },
+        {
+          "title": "rpc_service",
+          "slug": "rpc_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "rpc_service_group",
+          "slug": "rpc_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "rule_validity_time",
+          "slug": "rule_validity_time",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sandbox_data_center",
+          "slug": "sandbox_data_center",
+          "subcategory": ""
+        },
+        {
+          "title": "sandbox_service",
+          "slug": "sandbox_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "scheduled_task",
+          "slug": "scheduled_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "sensor_cluster",
+          "slug": "sensor_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "server_pool",
+          "slug": "server_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "service_group",
+          "slug": "service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "sginfo_task",
+          "slug": "sginfo_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "sidewinder_logging_profile",
+          "slug": "sidewinder_logging_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sidewinder_logging_profile_settings",
+          "slug": "sidewinder_logging_profile_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "sidewinder_tag",
+          "slug": "sidewinder_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "signing_certificate_authority",
+          "slug": "signing_certificate_authority",
+          "subcategory": ""
+        },
+        {
+          "title": "single_contact_address",
+          "slug": "single_contact_address",
+          "subcategory": "engines"
+        },
+        {
+          "title": "single_firewall",
+          "slug": "single_firewall",
+          "subcategory": "engines"
+        },
+        {
+          "title": "single_sensor",
+          "slug": "single_sensor",
+          "subcategory": ""
+        },
+        {
+          "title": "situation_context_group",
+          "slug": "situation_context_group",
+          "subcategory": "situations"
+        },
+        {
+          "title": "situation_group_tag",
+          "slug": "situation_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "situation_parameter",
+          "slug": "situation_parameter",
+          "subcategory": "situations"
+        },
+        {
+          "title": "situation_tag",
+          "slug": "situation_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "smc_certificate_authority",
+          "slug": "smc_certificate_authority",
+          "subcategory": "admin"
+        },
+        {
+          "title": "smtp_server",
+          "slug": "smtp_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "snmp_agent",
+          "slug": "snmp_agent",
+          "subcategory": ""
+        },
+        {
+          "title": "snort_config_file",
+          "slug": "snort_config_file",
+          "subcategory": ""
+        },
+        {
+          "title": "specific_platform_tag",
+          "slug": "specific_platform_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "specific_software_tag",
+          "slug": "specific_software_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "ssh_host_key",
+          "slug": "ssh_host_key",
+          "subcategory": "engines"
+        },
+        {
+          "title": "ssh_profile",
+          "slug": "ssh_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ssl_vpn_company_logo",
+          "slug": "ssl_vpn_company_logo",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_icon_file",
+          "slug": "ssl_vpn_icon_file",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_logon_page_background",
+          "slug": "ssl_vpn_logon_page_background",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_portal",
+          "slug": "ssl_vpn_portal",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_service_profile",
+          "slug": "ssl_vpn_service_profile",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_sso_domain",
+          "slug": "ssl_vpn_sso_domain",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpnv2_portal_policy",
+          "slug": "ssl_vpnv2_portal_policy",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_web_service",
+          "slug": "ssl_vpn_web_service",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "ssl_vpn_zip_file",
+          "slug": "ssl_vpn_zip_file",
+          "subcategory": "sslvpn"
+        },
+        {
+          "title": "static_net_link",
+          "slug": "static_net_link",
+          "subcategory": "engines"
+        },
+        {
+          "title": "string_list_situation_parameter_value",
+          "slug": "string_list_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "string_situation_parameter_value",
+          "slug": "string_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "sub_firewall_policy",
+          "slug": "sub_firewall_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sub_ips_policy",
+          "slug": "sub_ips_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sub_ipv6_firewall_policy",
+          "slug": "sub_ipv6_firewall_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sub_l2_interface_policy",
+          "slug": "sub_l2_interface_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sub_layer2_policy",
+          "slug": "sub_layer2_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "sub_tls_match_situation",
+          "slug": "sub_tls_match_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "system_snapshot",
+          "slug": "system_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "system_snapshot_checker_task",
+          "slug": "system_snapshot_checker_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "tacacs_server",
+          "slug": "tacacs_server",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "tcp_service",
+          "slug": "tcp_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "tcp_service_group",
+          "slug": "tcp_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "third_party_logging_profile",
+          "slug": "third_party_logging_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "third_party_probing_profile",
+          "slug": "third_party_probing_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "threat_seeker_server",
+          "slug": "threat_seeker_server",
+          "subcategory": "engines"
+        },
+        {
+          "title": "tls_inspection_policy",
+          "slug": "tls_inspection_policy",
+          "subcategory": "policy"
+        },
+        {
+          "title": "tls_match_situation",
+          "slug": "tls_match_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "tls_match_situation_context",
+          "slug": "tls_match_situation_context",
+          "subcategory": "situations"
+        },
+        {
+          "title": "tls_profile",
+          "slug": "tls_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "tls_server_credentials",
+          "slug": "tls_server_credentials",
+          "subcategory": "admin"
+        },
+        {
+          "title": "traffic_capture_task",
+          "slug": "traffic_capture_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "trusted_ca_tag",
+          "slug": "trusted_ca_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "trusted_certificate_authority",
+          "slug": "trusted_certificate_authority",
+          "subcategory": "admin"
+        },
+        {
+          "title": "trusted_update_certificate",
+          "slug": "trusted_update_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "trusted_update_certificate_authority",
+          "slug": "trusted_update_certificate_authority",
+          "subcategory": ""
+        },
+        {
+          "title": "udp_service",
+          "slug": "udp_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "udp_service_group",
+          "slug": "udp_service_group",
+          "subcategory": "services"
+        },
+        {
+          "title": "update_package",
+          "slug": "update_package",
+          "subcategory": "admin"
+        },
+        {
+          "title": "update_server_profile",
+          "slug": "update_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "upgrade_node_task",
+          "slug": "upgrade_node_task",
+          "subcategory": "admin"
+        },
+        {
+          "title": "url_category_group_tag",
+          "slug": "url_category_group_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "url_category_risk_tag",
+          "slug": "url_category_risk_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "url_category_situation",
+          "slug": "url_category_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "url_list_application_situation",
+          "slug": "url_list_application_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "url_list_situation",
+          "slug": "url_list_situation",
+          "subcategory": "situations"
+        },
+        {
+          "title": "url_list_situation_parameter_value",
+          "slug": "url_list_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "user_alert_check",
+          "slug": "user_alert_check",
+          "subcategory": ""
+        },
+        {
+          "title": "user_id_service",
+          "slug": "user_id_service",
+          "subcategory": "services"
+        },
+        {
+          "title": "user_response",
+          "slug": "user_response",
+          "subcategory": ""
+        },
+        {
+          "title": "user_response_entry",
+          "slug": "user_response_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "valid_dhcp_servers_alias",
+          "slug": "valid_dhcp_servers_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "validm_vpn_dhcp_address_pools_alias",
+          "slug": "validm_vpn_dhcp_address_pools_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "validm_vpn_dhcp_enabled_interface_addresses_alias",
+          "slug": "validm_vpn_dhcp_enabled_interface_addresses_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "validm_vpn_dhcp_servers_alias",
+          "slug": "validm_vpn_dhcp_servers_alias",
+          "subcategory": "network_elements"
+        },
+        {
+          "title": "virtual_firewall",
+          "slug": "virtual_firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "virtual_firewall_layer2_node",
+          "slug": "virtual_firewall_layer2_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "virtual_firewall_node",
+          "slug": "virtual_firewall_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "virtual_ips",
+          "slug": "virtual_ips",
+          "subcategory": "engines"
+        },
+        {
+          "title": "virtual_ips_node",
+          "slug": "virtual_ips_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "virtual_layer2",
+          "slug": "virtual_layer2",
+          "subcategory": ""
+        },
+        {
+          "title": "virtual_physical_interface",
+          "slug": "virtual_physical_interface",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "virtual_resource",
+          "slug": "virtual_resource",
+          "subcategory": "engines"
+        },
+        {
+          "title": "vpn_broker_interface",
+          "slug": "vpn_broker_interface",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "vpn_certificate_authority",
+          "slug": "vpn_certificate_authority",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "vpn_profile",
+          "slug": "vpn_profile",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "vpn_site",
+          "slug": "vpn_site",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "vpn_traffic_selector",
+          "slug": "vpn_traffic_selector",
+          "subcategory": "vpn"
+        },
+        {
+          "title": "vss_container_node",
+          "slug": "vss_container_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "vss_container_node_isc_settings",
+          "slug": "vss_container_node_isc_settings",
+          "subcategory": "engines"
+        },
+        {
+          "title": "vss_context",
+          "slug": "vss_context",
+          "subcategory": ""
+        },
+        {
+          "title": "vss_context_node",
+          "slug": "vss_context_node",
+          "subcategory": "engines"
+        },
+        {
+          "title": "vulnerability",
+          "slug": "vulnerability",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_impact_tag",
+          "slug": "vulnerability_impact_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "vulnerability_type_tag",
+          "slug": "vulnerability_type_tag",
+          "subcategory": "tags"
+        },
+        {
+          "title": "web_access_server",
+          "slug": "web_access_server",
+          "subcategory": ""
+        },
+        {
+          "title": "web_authentication_file",
+          "slug": "web_authentication_file",
+          "subcategory": ""
+        },
+        {
+          "title": "web_auth_html_page",
+          "slug": "web_auth_html_page",
+          "subcategory": ""
+        },
+        {
+          "title": "web_site_access_situation_parameter_value",
+          "slug": "web_site_access_situation_parameter_value",
+          "subcategory": "situations"
+        },
+        {
+          "title": "webswing_user_file_cleaner_task",
+          "slug": "webswing_user_file_cleaner_task",
+          "subcategory": "admin"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-03-19T08:00:00.796027"
+  },
+  "kenchan0130/neon": {
+    "docs": {
+      "actions": [
+        {
+          "title": "organization_project_transfer",
+          "slug": "organization_project_transfer",
+          "subcategory": ""
+        },
+        {
+          "title": "recover_project",
+          "slug": "recover_project",
+          "subcategory": ""
+        },
+        {
+          "title": "restore_branch",
+          "slug": "restore_branch",
+          "subcategory": ""
+        },
+        {
+          "title": "restore_snapshot",
+          "slug": "restore_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "role_password_reset",
+          "slug": "role_password_reset",
+          "subcategory": ""
+        },
+        {
+          "title": "set_default_branch",
+          "slug": "set_default_branch",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "active_regions",
+          "slug": "active_regions",
+          "subcategory": ""
+        },
+        {
+          "title": "anonymized_branch",
+          "slug": "anonymized_branch",
+          "subcategory": ""
+        },
+        {
+          "title": "branch",
+          "slug": "branch",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_data_api",
+          "slug": "branch_data_api",
+          "subcategory": ""
+        },
+        {
+          "title": "branches",
+          "slug": "branches",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_masking_rules",
+          "slug": "branch_masking_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_neon_auth",
+          "slug": "branch_neon_auth",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_neon_auth_oauth_provider",
+          "slug": "branch_neon_auth_oauth_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_schema",
+          "slug": "branch_schema",
+          "subcategory": ""
+        },
+        {
+          "title": "connection_uri",
+          "slug": "connection_uri",
+          "subcategory": ""
+        },
+        {
+          "title": "database",
+          "slug": "database",
+          "subcategory": ""
+        },
+        {
+          "title": "endpoint",
+          "slug": "endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "endpoints",
+          "slug": "endpoints",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_invitations",
+          "slug": "organization_invitations",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_members",
+          "slug": "organization_members",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_vpc_endpoint",
+          "slug": "organization_vpc_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_access",
+          "slug": "project_access",
+          "subcategory": ""
+        },
+        {
+          "title": "project_jwks",
+          "slug": "project_jwks",
+          "subcategory": ""
+        },
+        {
+          "title": "projects",
+          "slug": "projects",
+          "subcategory": ""
+        },
+        {
+          "title": "project_vpc_endpoint_restriction",
+          "slug": "project_vpc_endpoint_restriction",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "role_password",
+          "slug": "role_password",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot_schedule",
+          "slug": "snapshot_schedule",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "branch_neon_auth_oauth_provider",
+          "slug": "branch_neon_auth_oauth_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "connection_uri",
+          "slug": "connection_uri",
+          "subcategory": ""
+        },
+        {
+          "title": "role_password",
+          "slug": "role_password",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "anonymized_branch",
+          "slug": "anonymized_branch",
+          "subcategory": ""
+        },
+        {
+          "title": "api_key",
+          "slug": "api_key",
+          "subcategory": ""
+        },
+        {
+          "title": "branch",
+          "slug": "branch",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_data_api",
+          "slug": "branch_data_api",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_masking_rules",
+          "slug": "branch_masking_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_neon_auth",
+          "slug": "branch_neon_auth",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_neon_auth_oauth_provider",
+          "slug": "branch_neon_auth_oauth_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "branch_neon_auth_trusted_domain",
+          "slug": "branch_neon_auth_trusted_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "database",
+          "slug": "database",
+          "subcategory": ""
+        },
+        {
+          "title": "endpoint",
+          "slug": "endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_api_key",
+          "slug": "organization_api_key",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_member_role",
+          "slug": "organization_member_role",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_vpc_endpoint",
+          "slug": "organization_vpc_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_access",
+          "slug": "project_access",
+          "subcategory": ""
+        },
+        {
+          "title": "project_jwks",
+          "slug": "project_jwks",
+          "subcategory": ""
+        },
+        {
+          "title": "project_vpc_endpoint_restriction",
+          "slug": "project_vpc_endpoint_restriction",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot_schedule",
+          "slug": "snapshot_schedule",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-03-19T08:00:13.346169"
+  },
+  "marshallford/pfsense": {
+    "docs": {
+      "actions": [
+        {
+          "title": "dhcpv4_apply",
+          "slug": "dhcpv4_apply",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_apply",
+          "slug": "dnsresolver_apply",
+          "subcategory": ""
+        },
+        {
+          "title": "execute_php_command",
+          "slug": "execute_php_command",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_filter_reload",
+          "slug": "firewall_filter_reload",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "dhcpv4_staticmappings",
+          "slug": "dhcpv4_staticmappings",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_domainoverrides",
+          "slug": "dnsresolver_domainoverrides",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_hostoverrides",
+          "slug": "dnsresolver_hostoverrides",
+          "subcategory": ""
+        },
+        {
+          "title": "execute_php_command",
+          "slug": "execute_php_command",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_aliases",
+          "slug": "firewall_aliases",
+          "subcategory": ""
+        },
+        {
+          "title": "system_version",
+          "slug": "system_version",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "dhcpv4_apply",
+          "slug": "dhcpv4_apply",
+          "subcategory": ""
+        },
+        {
+          "title": "dhcpv4_staticmapping",
+          "slug": "dhcpv4_staticmapping",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_apply",
+          "slug": "dnsresolver_apply",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_configfile",
+          "slug": "dnsresolver_configfile",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_domainoverride",
+          "slug": "dnsresolver_domainoverride",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsresolver_hostoverride",
+          "slug": "dnsresolver_hostoverride",
+          "subcategory": ""
+        },
+        {
+          "title": "execute_php_command",
+          "slug": "execute_php_command",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_filter_reload",
+          "slug": "firewall_filter_reload",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_ip_alias",
+          "slug": "firewall_ip_alias",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_port_alias",
+          "slug": "firewall_port_alias",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-03-19T08:00:16.320032"
   }
 }
