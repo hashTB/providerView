@@ -26,11 +26,32 @@ PROVIDERS = {
     "hashicorp/google-beta":  {"label": "Google Beta",  "color": "#34A853", "group": "GCP"},
 }
 
+METRICS = {
+    "total": {
+        "title": "Cumulative Downloads Over Time",
+        "subtitle": "Provider-level total downloads captured in each snapshot",
+    },
+    "week": {
+        "title": "Registry Weekly Downloads",
+        "subtitle": "Terraform Registry summary metric for downloads this week",
+    },
+    "month": {
+        "title": "Registry Monthly Downloads",
+        "subtitle": "Terraform Registry summary metric for downloads this month",
+    },
+    "year": {
+        "title": "Registry Yearly Downloads",
+        "subtitle": "Terraform Registry summary metric for downloads this year",
+    },
+}
+
 
 def load_snapshots():
-    """Load all raw snapshots and extract download counts for tracked providers.
-    
+    """Load raw snapshots and extract download metrics for tracked providers.
+
     Uses a rolling 6-month window from the most recent snapshot.
+    Older snapshots may only contain cumulative totals; week/month/year values
+    will appear after the fetcher starts persisting Registry summary metrics.
     """
     files = sorted(glob.glob("data/raw/providers_[0-9][0-9][0-9][0-9]-*.json"))
     if not files:
@@ -44,7 +65,7 @@ def load_snapshots():
     files = [f for f in files if f.split("providers_")[1].replace(".json", "") >= cutoff]
 
     dates = []
-    series = {k: [] for k in PROVIDERS}
+    series = {metric: {provider: [] for provider in PROVIDERS} for metric in METRICS}
 
     for fp in files:
         date = fp.split("providers_")[1].replace(".json", "")
@@ -56,28 +77,22 @@ def load_snapshots():
         for p in providers:
             fn = p.get("full_name", "")
             if fn in PROVIDERS:
-                lookup[fn] = p.get("downloads", 0)
+                summary = p.get("download_summary", {}) or {}
+                total = summary.get("total", p.get("downloads", 0))
+                lookup[fn] = {
+                    "total": total if total and total > 0 else None,
+                    "week": summary.get("week"),
+                    "month": summary.get("month"),
+                    "year": summary.get("year"),
+                }
 
         dates.append(date)
-        for key in PROVIDERS:
-            val = lookup.get(key)
-            # Use None for missing data points (azurerm missing in some weeks)
-            series[key].append(val if val and val > 0 else None)
+        for provider in PROVIDERS:
+            values = lookup.get(provider, {})
+            for metric in METRICS:
+                series[metric][provider].append(values.get(metric))
 
     return dates, series
-
-
-def compute_weekly_deltas(dates, series):
-    """Compute week-over-week download increments."""
-    deltas = {k: [] for k in PROVIDERS}
-    for key in PROVIDERS:
-        vals = series[key]
-        for i in range(len(vals)):
-            if i == 0 or vals[i] is None or vals[i - 1] is None:
-                deltas[key].append(None)
-            else:
-                deltas[key].append(vals[i] - vals[i - 1])
-    return deltas
 
 
 def fmt(n):
@@ -93,14 +108,13 @@ def fmt(n):
     return str(n)
 
 
-def generate_html(dates, series, deltas):
-    """Generate the standalone HTML page."""
-    # Build Chart.js datasets for cumulative
-    cumulative_datasets = []
+def build_datasets(metric_series):
+    """Build Chart.js datasets for a single metric."""
+    datasets = []
     for key, meta in PROVIDERS.items():
-        cumulative_datasets.append({
+        datasets.append({
             "label": meta["label"],
-            "data": series[key],
+            "data": metric_series[key],
             "borderColor": meta["color"],
             "backgroundColor": meta["color"] + "20",
             "borderWidth": 2,
@@ -109,24 +123,26 @@ def generate_html(dates, series, deltas):
             "tension": 0.3,
             "spanGaps": True,
         })
+    return datasets
 
-    # Build Chart.js datasets for weekly deltas (exclude first point which is always None)
-    delta_datasets = []
-    for key, meta in PROVIDERS.items():
-        delta_datasets.append({
-            "label": meta["label"],
-            "data": deltas[key],
-            "backgroundColor": meta["color"] + "CC",
-            "borderColor": meta["color"],
-            "borderWidth": 1,
-            "borderRadius": 4,
-        })
 
-    # Latest values for the summary cards
+def latest_metric_values(metric_series):
+    """Get the latest non-null value for each tracked provider."""
     latest = {}
-    for key, meta in PROVIDERS.items():
-        vals = [v for v in series[key] if v is not None]
-        latest[key] = vals[-1] if vals else 0
+    for key in PROVIDERS:
+        vals = [v for v in metric_series[key] if v is not None]
+        latest[key] = vals[-1] if vals else None
+    return latest
+
+
+def generate_html(dates, series):
+    """Generate the standalone HTML page."""
+    chart_datasets = {metric: build_datasets(metric_series) for metric, metric_series in series.items()}
+    latest_total = latest_metric_values(series["total"])
+    latest_summary = {
+        metric: latest_metric_values(series[metric])
+        for metric in ("week", "month", "year")
+    }
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
@@ -227,6 +243,16 @@ def generate_html(dates, series, deltas):
             opacity: 0.7;
         }}
 
+        .note {{
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+            padding: 14px 16px;
+        }}
+
         .chart-section {{
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -305,7 +331,8 @@ def generate_html(dates, series, deltas):
         <a href="downloads.html" class="active">📈 Download Trends</a>
     </nav>
     <p class="subtitle">
-        Cumulative &amp; weekly download trends for AWS, Azure, and GCP Terraform providers
+        Cumulative totals plus Terraform Registry week/month/year download summaries
+        for AWS, Azure, and GCP Terraform providers
         &middot; {len(dates)} snapshots from {dates[0]} to {dates[-1]}
         &middot; Generated {now}
     </p>
@@ -316,34 +343,73 @@ def generate_html(dates, series, deltas):
     # Summary cards
     for key, meta in PROVIDERS.items():
         html += f"""        <div class="card">
-            <div class="value" style="color:{meta['color']}">{fmt(latest[key])}</div>
+            <div class="value" style="color:{meta['color']}">{fmt(latest_total[key])}</div>
             <div class="label">{meta['label']}</div>
-            <div class="group">{meta['group']}</div>
+            <div class="group">{meta['group']} &middot; total</div>
         </div>\n"""
 
     html += f"""    </div>
 
-    <!-- Cumulative downloads chart -->
-    <div class="chart-section">
-        <h2>Cumulative Downloads Over Time</h2>
-        <div class="toggle-row" id="cumulative-toggles"></div>
+    <div class="note">
+        Registry week/month/year metrics are stored only in snapshots captured after the
+        fetcher started saving <code>download_summary</code>. Older dates may show gaps for
+        those charts until new scheduled runs accumulate more history.
+    </div>
+
+    <div class="table-section">
+        <h2>Latest Registry Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Provider</th>
+                    <th>This Week</th>
+                    <th>This Month</th>
+                    <th>This Year</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+"""
+
+    for key, meta in PROVIDERS.items():
+        html += f"""                <tr>
+                    <td>{meta['label']}</td>
+                    <td>{fmt(latest_summary['week'][key])}</td>
+                    <td>{fmt(latest_summary['month'][key])}</td>
+                    <td>{fmt(latest_summary['year'][key])}</td>
+                    <td>{fmt(latest_total[key])}</td>
+                </tr>
+"""
+
+    html += f"""            </tbody>
+        </table>
+    </div>
+
+"""
+
+    chart_sections = [
+        ("total", "totalChart", "total-toggles"),
+        ("week", "weekChart", "week-toggles"),
+        ("month", "monthChart", "month-toggles"),
+        ("year", "yearChart", "year-toggles"),
+    ]
+    for metric, chart_id, toggle_id in chart_sections:
+        html += f"""    <div class="chart-section">
+        <h2>{METRICS[metric]['title']}</h2>
+        <p class="subtitle">{METRICS[metric]['subtitle']}</p>
+        <div class="toggle-row" id="{toggle_id}"></div>
         <div class="chart-wrap">
-            <canvas id="cumulativeChart"></canvas>
+            <canvas id="{chart_id}"></canvas>
         </div>
     </div>
 
-    <!-- Weekly delta chart -->
-    <div class="chart-section">
-        <h2>Weekly Download Increments</h2>
-        <div class="toggle-row" id="delta-toggles"></div>
-        <div class="chart-wrap">
-            <canvas id="deltaChart"></canvas>
-        </div>
-    </div>
+"""
+
+    html += f"""
 
     <!-- Data table -->
     <div class="table-section">
-        <h2>Raw Data</h2>
+        <h2>Cumulative Totals By Snapshot</h2>
         <table>
             <thead>
                 <tr>
@@ -361,7 +427,7 @@ def generate_html(dates, series, deltas):
     for i, date in enumerate(dates):
         html += f"                <tr><td>{date}</td>"
         for key in PROVIDERS:
-            v = series[key][i]
+            v = series['total'][key][i]
             html += f"<td>{fmt(v)}</td>"
         html += "</tr>\n"
 
@@ -372,8 +438,7 @@ def generate_html(dates, series, deltas):
 
 <script>
 const dates = {json.dumps(dates)};
-const cumulativeData = {json.dumps(cumulative_datasets)};
-const deltaData = {json.dumps(delta_datasets)};
+const chartData = {json.dumps(chart_datasets)};
 
 // Number formatting for axes
 function fmtAxis(value) {{
@@ -427,29 +492,21 @@ const chartDefaults = {{
     }}
 }};
 
-// Cumulative chart
-const cumCtx = document.getElementById('cumulativeChart').getContext('2d');
-const cumChart = new Chart(cumCtx, {{
-    type: 'line',
-    data: {{ labels: dates, datasets: cumulativeData }},
-    options: chartDefaults
-}});
+function createLineChart(canvasId, datasets) {{
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    return new Chart(ctx, {{
+        type: 'line',
+        data: {{ labels: dates, datasets }},
+        options: chartDefaults,
+    }});
+}}
 
-// Delta chart (bar)
-const deltaCtx = document.getElementById('deltaChart').getContext('2d');
-const deltaChart = new Chart(deltaCtx, {{
-    type: 'bar',
-    data: {{ labels: dates, datasets: deltaData }},
-    options: {{
-        ...chartDefaults,
-        plugins: {{
-            ...chartDefaults.plugins,
-            legend: {{
-                ...chartDefaults.plugins.legend,
-            }}
-        }}
-    }}
-}});
+const charts = {{
+    total: createLineChart('totalChart', chartData.total),
+    week: createLineChart('weekChart', chartData.week),
+    month: createLineChart('monthChart', chartData.month),
+    year: createLineChart('yearChart', chartData.year),
+}};
 
 // Build toggle checkboxes for each chart
 function buildToggles(chart, containerId) {{
@@ -469,8 +526,10 @@ function buildToggles(chart, containerId) {{
     }});
 }}
 
-buildToggles(cumChart, 'cumulative-toggles');
-buildToggles(deltaChart, 'delta-toggles');
+buildToggles(charts.total, 'total-toggles');
+buildToggles(charts.week, 'week-toggles');
+buildToggles(charts.month, 'month-toggles');
+buildToggles(charts.year, 'year-toggles');
 </script>
 </body>
 </html>"""
@@ -483,8 +542,7 @@ def main():
     if not dates:
         return
 
-    deltas = compute_weekly_deltas(dates, series)
-    html = generate_html(dates, series, deltas)
+    html = generate_html(dates, series)
 
     out_path = Path("docs/downloads.html")
     out_path.write_text(html)

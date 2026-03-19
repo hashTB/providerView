@@ -24,8 +24,13 @@ A Python-based tool that collects comprehensive data from Terraform providers vi
 - **Charts** - Visual breakdown of providers by tier and cohort
 - **Summary Statistics** - Total counts for resources, data sources, and features
 
+### Download Trends (`generate_download_trends.py`)
+- **Cloud Provider Trends Page** - Dedicated downloads page for AWS, Azure, and GCP providers
+- **Registry Summary Metrics** - Captures and charts Terraform Registry week, month, year, and total download figures
+- **Snapshot History** - Preserves the metrics in dated raw snapshots for longitudinal trend analysis
+
 ### GitHub Actions Workflow
-- **Automated Daily Scans** - Scheduled workflow runs daily at 6 AM UTC
+- **Automated Scheduled Scans** - Scheduled workflow runs on the 1st of each month and every Thursday at 6 AM UTC
 - **Incremental by Default** - Uses cached data to only scan changed providers
 - **GitHub Pages Deployment** - Automatically deploys dashboard to GitHub Pages
 - **Manual Trigger Options** - Configurable tier, limit, and incremental mode

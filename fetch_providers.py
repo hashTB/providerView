@@ -43,6 +43,18 @@ REQUEST_DELAY = 0.1
 MAX_RETRIES = 3
 RETRY_DELAY = 2
 
+# Cloud providers shown on the downloads trends page. We only fetch the
+# summary metrics for these providers to avoid thousands of extra API calls.
+TRACKED_DOWNLOAD_SUMMARY_PROVIDERS = {
+    'hashicorp/aws',
+    'hashicorp/awscc',
+    'hashicorp/azurerm',
+    'hashicorp/azuread',
+    'hashicorp/azurestack',
+    'hashicorp/google',
+    'hashicorp/google-beta',
+}
+
 
 def make_request(url: str, retries: int = MAX_RETRIES) -> Optional[Dict]:
     """Make an API request with retry logic."""
@@ -206,6 +218,28 @@ def get_provider_metadata(namespace: str, name: str) -> dict:
     }
 
 
+def get_provider_download_summary(provider_id: str) -> dict:
+    """Get Registry download summary metrics for a provider.
+
+    The Registry page uses this undocumented v2 endpoint to show the current
+    week/month/year/total download figures. We persist it in raw snapshots so
+    the trends page can render the Registry's own numbers over time.
+    """
+    url = f"{REGISTRY_V2_BASE}/providers/{provider_id}/downloads/summary?version=all"
+    data = make_request(url)
+
+    if not data or 'data' not in data:
+        return {}
+
+    attrs = data['data'].get('attributes', {})
+    return {
+        'week': attrs.get('week'),
+        'month': attrs.get('month'),
+        'year': attrs.get('year'),
+        'total': attrs.get('total'),
+    }
+
+
 def fetch_provider_details(provider: dict) -> dict:
     """Fetch all details for a single provider."""
     namespace = provider['namespace']
@@ -270,6 +304,20 @@ def main():
     )
     print(f"Found {len(providers)} providers")
     print()
+
+    # Fetch Registry summary metrics for the tracked cloud providers even when
+    # running with --skip-details, since the downloads trends page relies on
+    # these values being present in raw snapshots.
+    tracked_providers = [
+        provider for provider in providers
+        if provider['full_name'] in TRACKED_DOWNLOAD_SUMMARY_PROVIDERS
+    ]
+    if tracked_providers:
+        print("Stage 1b: Fetching download summaries for tracked providers...")
+        for i, provider in enumerate(tracked_providers):
+            print(f"[{i+1}/{len(tracked_providers)}] Summary for {provider['full_name']}...")
+            provider['download_summary'] = get_provider_download_summary(provider['id'])
+        print()
     
     # Fetch details for each provider
     if not args.skip_details:
