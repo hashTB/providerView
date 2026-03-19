@@ -55,6 +55,38 @@ TRACKED_DOWNLOAD_SUMMARY_PROVIDERS = {
     'hashicorp/google-beta',
 }
 
+# The registry list endpoint occasionally omits some major providers.
+# Ensure these are always present by resolving them directly.
+REQUIRED_PROVIDERS = TRACKED_DOWNLOAD_SUMMARY_PROVIDERS
+
+
+def get_provider_by_full_name(full_name: str) -> Optional[Dict]:
+    """Fetch a provider directly from the v2 provider endpoint."""
+    parts = full_name.split('/', 1)
+    if len(parts) != 2:
+        return None
+
+    namespace, name = parts
+    url = f"{REGISTRY_V2_BASE}/providers/{namespace}/{name}"
+    data = make_request(url)
+
+    if not data or 'data' not in data:
+        return None
+
+    provider_data = data['data']
+    attrs = provider_data.get('attributes', {})
+    return {
+        'id': provider_data.get('id'),
+        'full_name': attrs.get('full-name', full_name),
+        'tier': attrs.get('tier', ''),
+        'namespace': attrs.get('namespace', namespace),
+        'name': attrs.get('name', name),
+        'source': attrs.get('source', ''),
+        'description': attrs.get('description', ''),
+        'downloads': attrs.get('downloads', 0),
+        'published_at': attrs.get('published-at', ''),
+    }
+
 
 def make_request(url: str, retries: int = MAX_RETRIES) -> Optional[Dict]:
     """Make an API request with retry logic."""
@@ -118,6 +150,25 @@ def get_all_providers(tier: str = None, limit: int = None) -> List[Dict]:
             break
         page += 1
     
+    # Keep explicit limits stable for ad-hoc debugging runs.
+    if not limit:
+        present = {p.get('full_name', '') for p in providers}
+        for full_name in sorted(REQUIRED_PROVIDERS):
+            if full_name in present:
+                continue
+
+            direct = get_provider_by_full_name(full_name)
+            if not direct:
+                print(f"  Warning: Could not resolve required provider {full_name}")
+                continue
+
+            if tier and direct.get('tier') != tier:
+                continue
+
+            providers.append(direct)
+            present.add(full_name)
+            print(f"  Added missing required provider via direct lookup: {full_name}")
+
     return providers
 
 

@@ -54,6 +54,17 @@ RETRY_DELAY = 2  # seconds between retries
 # Global flag for GitHub checks
 CHECK_GITHUB = True
 
+# Registry list endpoint can occasionally miss major providers.
+REQUIRED_PROVIDERS = {
+    'hashicorp/aws',
+    'hashicorp/awscc',
+    'hashicorp/azurerm',
+    'hashicorp/azuread',
+    'hashicorp/azurestack',
+    'hashicorp/google',
+    'hashicorp/google-beta',
+}
+
 
 @dataclass
 class ProviderData:
@@ -170,6 +181,39 @@ def get_all_providers(tier: Optional[str] = None, limit: Optional[int] = None) -
         page += 1
         time.sleep(REQUEST_DELAY)
     
+    # Keep explicit limits stable for ad-hoc debugging runs.
+    if not limit:
+        present = {p.get('full_name', '') for p in providers}
+        for full_name in sorted(REQUIRED_PROVIDERS):
+            if full_name in present:
+                continue
+
+            parts = full_name.split('/', 1)
+            if len(parts) != 2:
+                continue
+
+            namespace, name = parts
+            direct_url = f"{REGISTRY_V2_BASE}/providers/{namespace}/{name}"
+            direct_data = make_request(direct_url)
+
+            if not direct_data or 'data' not in direct_data:
+                print(f"Warning: Could not resolve required provider {full_name}")
+                continue
+
+            attrs = direct_data['data'].get('attributes', {})
+            if tier and attrs.get('tier', '') != tier:
+                continue
+
+            providers.append({
+                'full_name': attrs.get('full-name', full_name),
+                'tier': attrs.get('tier', ''),
+                'namespace': attrs.get('namespace', namespace),
+                'name': attrs.get('name', name),
+                'source': attrs.get('source', ''),
+            })
+            present.add(full_name)
+            print(f"Added missing required provider via direct lookup: {full_name}")
+
     return providers
 
 
