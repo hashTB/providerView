@@ -159,7 +159,7 @@ Click on any non-zero feature count (Actions, Resources, etc.) to see:
 
 The included workflow (`.github/workflows/update-dashboard.yml`) provides:
 
-1. **Scheduled runs** - Daily at 6 AM UTC
+1. **Scheduled runs** - On the 1st of each month and weekly on Thursdays at 6 AM UTC
 2. **Manual dispatch** - Run on demand with options:
    - Tier selection (all, official, partner)
    - Provider limit

@@ -1,8 +1,10 @@
 name: Update Terraform Provider Dashboard
 
 on:
-  # Run weekly on Thursdays at 6 AM UTC
+  # Run on the 1st of each month and weekly on Thursdays at 6 AM UTC.
+  # If the 1st falls on a Thursday, both schedules may fire on the same day.
   schedule:
+    - cron: '0 6 1 * *'
     - cron: '0 6 * * 4'
   
   # Allow manual trigger with stage selection
