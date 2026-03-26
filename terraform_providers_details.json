@@ -81,7 +81,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:06.435124"
+    "docs_refreshed_at": "2026-03-26T08:05:30.951383"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -218,6 +218,11 @@
           "title": "codebuild_start_build",
           "slug": "codebuild_start_build",
           "subcategory": "CodeBuild"
+        },
+        {
+          "title": "dms_start_replication_task_assessment_run",
+          "slug": "dms_start_replication_task_assessment_run",
+          "subcategory": "DMS (Database Migration)"
         },
         {
           "title": "dynamodb_create_backup",
@@ -1055,6 +1060,11 @@
           "title": "dx_router_configuration",
           "slug": "dx_router_configuration",
           "subcategory": "Direct Connect"
+        },
+        {
+          "title": "dynamodb_backups",
+          "slug": "dynamodb_backups",
+          "subcategory": "DynamoDB"
         },
         {
           "title": "dynamodb_table",
@@ -2182,6 +2192,11 @@
           "subcategory": "Managed Streaming for Kafka"
         },
         {
+          "title": "msk_topic",
+          "slug": "msk_topic",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
           "title": "msk_vpc_connection",
           "slug": "msk_vpc_connection",
           "subcategory": "Managed Streaming for Kafka"
@@ -2880,6 +2895,11 @@
           "title": "sagemaker_prebuilt_ecr_image",
           "slug": "sagemaker_prebuilt_ecr_image",
           "subcategory": "SageMaker AI"
+        },
+        {
+          "title": "savingsplans_offerings",
+          "slug": "savingsplans_offerings",
+          "subcategory": "Savings Plans"
         },
         {
           "title": "savingsplans_savings_plan",
@@ -3675,6 +3695,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "ec2_transit_gateway_metering_policy",
+          "slug": "ec2_transit_gateway_metering_policy",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
           "title": "ecr_repository",
           "slug": "ecr_repository",
           "subcategory": "ECR (Elastic Container Registry)"
@@ -3712,6 +3737,11 @@
         {
           "title": "iam_role_policy_attachment",
           "slug": "iam_role_policy_attachment",
+          "subcategory": "IAM (Identity & Access Management)"
+        },
+        {
+          "title": "iam_user",
+          "slug": "iam_user",
           "subcategory": "IAM (Identity & Access Management)"
         },
         {
@@ -3765,6 +3795,21 @@
           "subcategory": "ELB (Elastic Load Balancing)"
         },
         {
+          "title": "msk_cluster",
+          "slug": "msk_cluster",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
+          "title": "msk_serverless_cluster",
+          "slug": "msk_serverless_cluster",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
+          "title": "msk_topic",
+          "slug": "msk_topic",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
           "title": "opensearchserverless_collection",
           "slug": "opensearchserverless_collection",
           "subcategory": "OpenSearch Serverless"
@@ -3778,6 +3823,11 @@
           "title": "route53_record",
           "slug": "route53_record",
           "subcategory": "Route 53"
+        },
+        {
+          "title": "route53_resolver_rule",
+          "slug": "route53_resolver_rule",
+          "subcategory": "Route 53 Resolver"
         },
         {
           "title": "route53_resolver_rule_association",
@@ -3802,6 +3852,11 @@
         {
           "title": "s3_bucket_lifecycle_configuration",
           "slug": "s3_bucket_lifecycle_configuration",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
+          "title": "s3_bucket_ownership_controls",
+          "slug": "s3_bucket_ownership_controls",
           "subcategory": "S3 (Simple Storage)"
         },
         {
@@ -3835,6 +3890,11 @@
           "subcategory": "S3 (Simple Storage)"
         },
         {
+          "title": "sagemaker_algorithm",
+          "slug": "sagemaker_algorithm",
+          "subcategory": "SageMaker AI"
+        },
+        {
           "title": "secretsmanager_secret",
           "slug": "secretsmanager_secret",
           "subcategory": "Secrets Manager"
@@ -3865,9 +3925,19 @@
           "subcategory": "SQS (Simple Queue)"
         },
         {
+          "title": "ssm_document",
+          "slug": "ssm_document",
+          "subcategory": "SSM (Systems Manager)"
+        },
+        {
           "title": "ssm_parameter",
           "slug": "ssm_parameter",
           "subcategory": "SSM (Systems Manager)"
+        },
+        {
+          "title": "ssoadmin_account_assignment",
+          "slug": "ssoadmin_account_assignment",
+          "subcategory": "SSO Admin"
         },
         {
           "title": "subnet",
@@ -3880,6 +3950,11 @@
           "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
+          "title": "vpc_endpoint",
+          "slug": "vpc_endpoint",
+          "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
           "title": "vpc_security_group_egress_rule",
           "slug": "vpc_security_group_egress_rule",
           "subcategory": "VPC (Virtual Private Cloud)"
@@ -3888,6 +3963,21 @@
           "title": "vpc_security_group_ingress_rule",
           "slug": "vpc_security_group_ingress_rule",
           "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
+          "title": "wafv2_web_acl_rule",
+          "slug": "wafv2_web_acl_rule",
+          "subcategory": "WAF"
+        },
+        {
+          "title": "workmail_domain",
+          "slug": "workmail_domain",
+          "subcategory": "WorkMail"
+        },
+        {
+          "title": "workmail_organization",
+          "slug": "workmail_organization",
+          "subcategory": "WorkMail"
         }
       ],
       "overview": [
@@ -6589,6 +6679,16 @@
           "subcategory": "Transit Gateway"
         },
         {
+          "title": "ec2_transit_gateway_metering_policy",
+          "slug": "ec2_transit_gateway_metering_policy",
+          "subcategory": "Transit Gateway"
+        },
+        {
+          "title": "ec2_transit_gateway_metering_policy_entry",
+          "slug": "ec2_transit_gateway_metering_policy_entry",
+          "subcategory": "Transit Gateway"
+        },
+        {
           "title": "ec2_transit_gateway_multicast_domain",
           "slug": "ec2_transit_gateway_multicast_domain",
           "subcategory": "Transit Gateway"
@@ -8619,6 +8719,11 @@
           "subcategory": "Managed Streaming for Kafka"
         },
         {
+          "title": "msk_topic",
+          "slug": "msk_topic",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
           "title": "msk_vpc_connection",
           "slug": "msk_vpc_connection",
           "subcategory": "Managed Streaming for Kafka"
@@ -8951,6 +9056,11 @@
         {
           "title": "observabilityadmin_centralization_rule_for_organization",
           "slug": "observabilityadmin_centralization_rule_for_organization",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_telemetry_enrichment",
+          "slug": "observabilityadmin_telemetry_enrichment",
           "subcategory": "CloudWatch Observability Admin"
         },
         {
@@ -10197,6 +10307,11 @@
           "title": "s3vectors_vector_bucket_policy",
           "slug": "s3vectors_vector_bucket_policy",
           "subcategory": "S3 Vectors"
+        },
+        {
+          "title": "sagemaker_algorithm",
+          "slug": "sagemaker_algorithm",
+          "subcategory": "SageMaker AI"
         },
         {
           "title": "sagemaker_app",
@@ -11809,6 +11924,11 @@
           "subcategory": "WAF"
         },
         {
+          "title": "wafv2_web_acl_rule",
+          "slug": "wafv2_web_acl_rule",
+          "subcategory": "WAF"
+        },
+        {
           "title": "wafv2_web_acl_rule_group_association",
           "slug": "wafv2_web_acl_rule_group_association",
           "subcategory": "WAF"
@@ -11822,6 +11942,21 @@
           "title": "waf_xss_match_set",
           "slug": "waf_xss_match_set",
           "subcategory": "WAF Classic"
+        },
+        {
+          "title": "workmail_default_domain",
+          "slug": "workmail_default_domain",
+          "subcategory": "WorkMail"
+        },
+        {
+          "title": "workmail_domain",
+          "slug": "workmail_domain",
+          "subcategory": "WorkMail"
+        },
+        {
+          "title": "workmail_organization",
+          "slug": "workmail_organization",
+          "subcategory": "WorkMail"
         },
         {
           "title": "workspaces_connection_alias",
@@ -11955,7 +12090,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-12T08:14:58.739775"
+    "docs_refreshed_at": "2026-03-26T08:05:19.554276"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -12994,6 +13129,16 @@
         {
           "title": "batch_job_queues",
           "slug": "batch_job_queues",
+          "subcategory": ""
+        },
+        {
+          "title": "batch_quota_share",
+          "slug": "batch_quota_share",
+          "subcategory": ""
+        },
+        {
+          "title": "batch_quota_shares",
+          "slug": "batch_quota_shares",
           "subcategory": ""
         },
         {
@@ -15377,6 +15522,16 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_prefix_list_resolver_target",
+          "slug": "ec2_ipam_prefix_list_resolver_target",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_ipam_prefix_list_resolver_targets",
+          "slug": "ec2_ipam_prefix_list_resolver_targets",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_resource_discoveries",
           "slug": "ec2_ipam_resource_discoveries",
           "subcategory": ""
@@ -15734,6 +15889,16 @@
         {
           "title": "ec2_spot_fleets",
           "slug": "ec2_spot_fleets",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_sql_ha_standby_detected_instance",
+          "slug": "ec2_sql_ha_standby_detected_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_sql_ha_standby_detected_instances",
+          "slug": "ec2_sql_ha_standby_detected_instances",
           "subcategory": ""
         },
         {
@@ -17674,6 +17839,16 @@
         {
           "title": "inspectorv2_filters",
           "slug": "inspectorv2_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "interconnect_connection",
+          "slug": "interconnect_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "interconnect_connections",
+          "slug": "interconnect_connections",
           "subcategory": ""
         },
         {
@@ -23182,6 +23357,11 @@
           "subcategory": ""
         },
         {
+          "title": "uxc_account_customization",
+          "slug": "uxc_account_customization",
+          "subcategory": ""
+        },
+        {
           "title": "verifiedpermissions_identity_source",
           "slug": "verifiedpermissions_identity_source",
           "subcategory": ""
@@ -24013,6 +24193,11 @@
         {
           "title": "batch_job_queue",
           "slug": "batch_job_queue",
+          "subcategory": ""
+        },
+        {
+          "title": "batch_quota_share",
+          "slug": "batch_quota_share",
           "subcategory": ""
         },
         {
@@ -24956,6 +25141,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_prefix_list_resolver_target",
+          "slug": "ec2_ipam_prefix_list_resolver_target",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_resource_discovery",
           "slug": "ec2_ipam_resource_discovery",
           "subcategory": ""
@@ -25128,6 +25318,11 @@
         {
           "title": "ec2_spot_fleet",
           "slug": "ec2_spot_fleet",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_sql_ha_standby_detected_instance",
+          "slug": "ec2_sql_ha_standby_detected_instance",
           "subcategory": ""
         },
         {
@@ -25993,6 +26188,11 @@
         {
           "title": "inspectorv2_filter",
           "slug": "inspectorv2_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "interconnect_connection",
+          "slug": "interconnect_connection",
           "subcategory": ""
         },
         {
@@ -29220,6 +29420,11 @@
           "subcategory": ""
         },
         {
+          "title": "batch_quota_share",
+          "slug": "batch_quota_share",
+          "subcategory": ""
+        },
+        {
           "title": "batch_scheduling_policy",
           "slug": "batch_scheduling_policy",
           "subcategory": ""
@@ -30650,6 +30855,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_prefix_list_resolver_target",
+          "slug": "ec2_ipam_prefix_list_resolver_target",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_resource_discovery",
           "slug": "ec2_ipam_resource_discovery",
           "subcategory": ""
@@ -30827,6 +31037,11 @@
         {
           "title": "ec2_spot_fleet",
           "slug": "ec2_spot_fleet",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_sql_ha_standby_detected_instance",
+          "slug": "ec2_sql_ha_standby_detected_instance",
           "subcategory": ""
         },
         {
@@ -31892,6 +32107,11 @@
         {
           "title": "inspectorv2_filter",
           "slug": "inspectorv2_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "interconnect_connection",
+          "slug": "interconnect_connection",
           "subcategory": ""
         },
         {
@@ -34945,6 +35165,11 @@
           "subcategory": ""
         },
         {
+          "title": "uxc_account_customization",
+          "slug": "uxc_account_customization",
+          "subcategory": ""
+        },
+        {
           "title": "verifiedpermissions_identity_source",
           "slug": "verifiedpermissions_identity_source",
           "subcategory": ""
@@ -35211,7 +35436,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:55.397968"
+    "docs_refreshed_at": "2026-03-26T08:05:20.109048"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -35645,7 +35870,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:55.752501"
+    "docs_refreshed_at": "2026-03-26T08:05:20.516979"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -43572,7 +43797,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:56.191618"
+    "docs_refreshed_at": "2026-03-26T08:05:21.020927"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -43921,7 +44146,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:56.547963"
+    "docs_refreshed_at": "2026-03-26T08:05:21.436528"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -44929,6 +45154,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_endpoint_groups",
+          "slug": "compute_network_endpoint_groups",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_peering",
           "slug": "compute_network_peering",
           "subcategory": "Compute Engine"
@@ -49019,6 +49249,11 @@
           "subcategory": "Dialogflow"
         },
         {
+          "title": "dialogflow_environment",
+          "slug": "dialogflow_environment",
+          "subcategory": "Dialogflow"
+        },
+        {
           "title": "dialogflow_fulfillment",
           "slug": "dialogflow_fulfillment",
           "subcategory": "Dialogflow"
@@ -50111,6 +50346,11 @@
         {
           "title": "kms_organization_kaj_policy_config",
           "slug": "kms_organization_kaj_policy_config",
+          "subcategory": "Cloud Key Management Service"
+        },
+        {
+          "title": "kms_project_autokey_config",
+          "slug": "kms_project_autokey_config",
           "subcategory": "Cloud Key Management Service"
         },
         {
@@ -51820,7 +52060,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:57.092911"
+    "docs_refreshed_at": "2026-03-26T08:05:21.922882"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -52561,6 +52801,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_endpoint_groups",
+          "slug": "compute_network_endpoint_groups",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_peering",
           "slug": "compute_network_peering",
           "subcategory": "Compute Engine"
@@ -56651,6 +56896,11 @@
           "subcategory": "Dialogflow"
         },
         {
+          "title": "dialogflow_environment",
+          "slug": "dialogflow_environment",
+          "subcategory": "Dialogflow"
+        },
+        {
           "title": "dialogflow_fulfillment",
           "slug": "dialogflow_fulfillment",
           "subcategory": "Dialogflow"
@@ -57743,6 +57993,11 @@
         {
           "title": "kms_organization_kaj_policy_config",
           "slug": "kms_organization_kaj_policy_config",
+          "subcategory": "Cloud Key Management Service"
+        },
+        {
+          "title": "kms_project_autokey_config",
+          "slug": "kms_project_autokey_config",
           "subcategory": "Cloud Key Management Service"
         },
         {
@@ -59452,7 +59707,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:57.627209"
+    "docs_refreshed_at": "2026-03-26T08:05:22.409873"
   },
   "4ek0/neko": {
     "docs": {
@@ -59499,7 +59754,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:58.222722"
+    "docs_refreshed_at": "2026-03-26T08:05:23.137494"
   },
   "Azure/azapi": {
     "docs": {
@@ -63105,7 +63360,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:58.607042"
+    "docs_refreshed_at": "2026-03-26T08:05:23.568932"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -64350,7 +64605,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:58.968092"
+    "docs_refreshed_at": "2026-03-26T08:05:23.978340"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -64745,7 +65000,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:59.325629"
+    "docs_refreshed_at": "2026-03-26T08:05:24.384531"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -64998,7 +65253,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T07:59:59.677575"
+    "docs_refreshed_at": "2026-03-26T08:05:24.797720"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -65017,7 +65272,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:00.074413"
+    "docs_refreshed_at": "2026-03-26T08:05:25.204884"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -65064,7 +65319,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:00.431147"
+    "docs_refreshed_at": "2026-03-26T08:05:25.608578"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -65194,7 +65449,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:01.232034"
+    "docs_refreshed_at": "2026-03-26T08:05:26.443930"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -65738,7 +65993,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:02.037037"
+    "docs_refreshed_at": "2026-03-26T08:05:27.269002"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -68923,7 +69178,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:02.497788"
+    "docs_refreshed_at": "2026-03-26T08:05:27.683461"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -69832,7 +70087,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:03.510564"
+    "docs_refreshed_at": "2026-03-26T08:05:28.098770"
   },
   "SAP/btp": {
     "docs": {
@@ -70477,7 +70732,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:03.859909"
+    "docs_refreshed_at": "2026-03-26T08:05:28.511107"
   },
   "SAP/scc": {
     "docs": {
@@ -70682,7 +70937,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:04.228118"
+    "docs_refreshed_at": "2026-03-26T08:05:28.920023"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -70729,7 +70984,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:04.580953"
+    "docs_refreshed_at": "2026-03-26T08:05:29.321576"
   },
   "Sokren/aap": {
     "docs": {
@@ -70812,7 +71067,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:04.939232"
+    "docs_refreshed_at": "2026-03-26T08:05:29.730253"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -70848,7 +71103,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:05.292846"
+    "docs_refreshed_at": "2026-03-26T08:05:30.136579"
   },
   "adampie/ctf": {
     "docs": {
@@ -70895,7 +71150,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:06.079399"
+    "docs_refreshed_at": "2026-03-26T08:05:30.542206"
   },
   "ansible/ansible": {
     "docs": {
@@ -70943,7 +71198,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:06.786087"
+    "docs_refreshed_at": "2026-03-26T08:05:31.366115"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -70991,7 +71246,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:07.267095"
+    "docs_refreshed_at": "2026-03-26T08:05:31.782807"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -71017,7 +71272,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:07.621142"
+    "docs_refreshed_at": "2026-03-26T08:05:32.191973"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -71074,7 +71329,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:07.973436"
+    "docs_refreshed_at": "2026-03-26T08:05:32.596853"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -71093,7 +71348,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:08.324815"
+    "docs_refreshed_at": "2026-03-26T08:05:33.054116"
   },
   "cysp/braze": {
     "docs": {
@@ -71119,7 +71374,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:08.865945"
+    "docs_refreshed_at": "2026-03-26T08:05:33.457065"
   },
   "cysp/contentful": {
     "docs": {
@@ -71262,7 +71517,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:09.701519"
+    "docs_refreshed_at": "2026-03-26T08:05:33.869697"
   },
   "dbanck/concept": {
     "docs": {
@@ -71298,7 +71553,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:10.096827"
+    "docs_refreshed_at": "2026-03-26T08:05:34.277603"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -71626,11 +71881,6 @@
           "subcategory": "Device Management"
         },
         {
-          "title": "graph_beta_device_management_windows_update_catalog_item",
-          "slug": "graph_beta_device_management_windows_update_catalog_item",
-          "subcategory": "Device Management"
-        },
-        {
           "title": "graph_beta_device_management_windows_update_ring",
           "slug": "graph_beta_device_management_windows_update_ring",
           "subcategory": "Device Management"
@@ -71646,6 +71896,11 @@
           "subcategory": "Identity and Access"
         },
         {
+          "title": "graph_beta_identity_and_access_device",
+          "slug": "graph_beta_identity_and_access_device",
+          "subcategory": "Identity and Access"
+        },
+        {
           "title": "graph_beta_identity_and_access_directory_setting_templates",
           "slug": "graph_beta_identity_and_access_directory_setting_templates",
           "subcategory": "Identity and Access"
@@ -71653,11 +71908,6 @@
         {
           "title": "graph_beta_identity_and_access_role_definitions",
           "slug": "graph_beta_identity_and_access_role_definitions",
-          "subcategory": "Identity and Access"
-        },
-        {
-          "title": "graph_beta_identity_and_access_subscribed_skus",
-          "slug": "graph_beta_identity_and_access_subscribed_skus",
           "subcategory": "Identity and Access"
         },
         {
@@ -71716,6 +71966,41 @@
           "subcategory": "Windows 365"
         },
         {
+          "title": "graph_beta_windows_updates_applicable_content",
+          "slug": "graph_beta_windows_updates_applicable_content",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_catalog_enteries",
+          "slug": "graph_beta_windows_updates_catalog_enteries",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_catalog_enteries_item",
+          "slug": "graph_beta_windows_updates_catalog_enteries_item",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_compliance_changes",
+          "slug": "graph_beta_windows_updates_compliance_changes",
+          "subcategory": ""
+        },
+        {
+          "title": "graph_beta_windows_updates_device_enrollment",
+          "slug": "graph_beta_windows_updates_device_enrollment",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_product",
+          "slug": "graph_beta_windows_updates_product",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_identity_and_access_subscribed_skus",
+          "slug": "graph_identity_and_access_subscribed_skus",
+          "subcategory": "Identity and Access"
+        },
+        {
           "title": "utility_deployment_scheduler",
           "slug": "utility_deployment_scheduler",
           "subcategory": "Utility"
@@ -71723,11 +72008,6 @@
         {
           "title": "utility_entra_id_sid_converter",
           "slug": "utility_entra_id_sid_converter",
-          "subcategory": "Utility"
-        },
-        {
-          "title": "utility_guid_list_sharder",
-          "slug": "utility_guid_list_sharder",
           "subcategory": "Utility"
         },
         {
@@ -72126,11 +72406,6 @@
           "subcategory": "Device Management"
         },
         {
-          "title": "graph_beta_device_management_autopatch_groups",
-          "slug": "graph_beta_device_management_autopatch_groups",
-          "subcategory": "Device Management"
-        },
-        {
           "title": "graph_beta_device_management_device_category",
           "slug": "graph_beta_device_management_device_category",
           "subcategory": "Device Management"
@@ -72516,6 +72791,61 @@
           "subcategory": "Windows 365"
         },
         {
+          "title": "graph_beta_windows_updates_autopatch_content_approval",
+          "slug": "graph_beta_windows_updates_autopatch_content_approval",
+          "subcategory": ""
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_deployment",
+          "slug": "graph_beta_windows_updates_autopatch_deployment",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_deployment_audience",
+          "slug": "graph_beta_windows_updates_autopatch_deployment_audience",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_deployment_state",
+          "slug": "graph_beta_windows_updates_autopatch_deployment_state",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_device_registration",
+          "slug": "graph_beta_windows_updates_autopatch_device_registration",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_operational_insights_connection",
+          "slug": "graph_beta_windows_updates_autopatch_operational_insights_connection",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_policy",
+          "slug": "graph_beta_windows_updates_autopatch_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_policy_approval",
+          "slug": "graph_beta_windows_updates_autopatch_policy_approval",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_ring",
+          "slug": "graph_beta_windows_updates_autopatch_ring",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_autopatch_updatable_asset_group",
+          "slug": "graph_beta_windows_updates_autopatch_updatable_asset_group",
+          "subcategory": "Windows Updates"
+        },
+        {
+          "title": "graph_beta_windows_updates_update_policy",
+          "slug": "graph_beta_windows_updates_update_policy",
+          "subcategory": "Windows Updates"
+        },
+        {
           "title": "graph_device_management_device_configuration_assignment",
           "slug": "graph_device_management_device_configuration_assignment",
           "subcategory": "Device Management"
@@ -72539,10 +72869,15 @@
           "title": "powershell_microsoft_teams_teams_meeting_policy",
           "slug": "powershell_microsoft_teams_teams_meeting_policy",
           "subcategory": "Microsoft Teams"
+        },
+        {
+          "title": "utility_guid_list_sharder",
+          "slug": "utility_guid_list_sharder",
+          "subcategory": "Utility"
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:10.465277"
+    "docs_refreshed_at": "2026-03-26T08:05:34.702434"
   },
   "drewmullen/aap": {
     "docs": {
@@ -72650,7 +72985,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:10.816490"
+    "docs_refreshed_at": "2026-03-26T08:05:35.110162"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -72715,7 +73050,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:11.171138"
+    "docs_refreshed_at": "2026-03-26T08:05:35.513562"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -72818,7 +73153,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:11.521539"
+    "docs_refreshed_at": "2026-03-26T08:05:35.981828"
   },
   "hashicorp/local": {
     "docs": {
@@ -72880,7 +73215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:12.218062"
+    "docs_refreshed_at": "2026-03-26T08:05:36.793846"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -80551,7 +80886,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:12.636521"
+    "docs_refreshed_at": "2026-03-26T08:05:37.246820"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -81334,7 +81669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:12.988873"
+    "docs_refreshed_at": "2026-03-26T08:05:37.883197"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -81472,7 +81807,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:14.956905"
+    "docs_refreshed_at": "2026-03-26T08:05:38.701605"
   },
   "magodo/restful": {
     "docs": {
@@ -81531,7 +81866,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:15.613390"
+    "docs_refreshed_at": "2026-03-26T08:05:39.105997"
   },
   "marshallford/ansible": {
     "docs": {
@@ -81583,7 +81918,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:15.965853"
+    "docs_refreshed_at": "2026-03-26T08:05:39.517218"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -81725,7 +82060,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:16.670016"
+    "docs_refreshed_at": "2026-03-26T08:05:40.335968"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -81783,7 +82118,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:17.022907"
+    "docs_refreshed_at": "2026-03-26T08:05:40.747483"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -81830,7 +82165,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:17.376683"
+    "docs_refreshed_at": "2026-03-26T08:05:41.157174"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -83269,7 +83604,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:17.736677"
+    "docs_refreshed_at": "2026-03-26T08:05:41.585669"
   },
   "soffensive/soff": {
     "docs": {
@@ -83316,7 +83651,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:18.084165"
+    "docs_refreshed_at": "2026-03-26T08:05:41.996087"
   },
   "thrashr888/registry": {
     "docs": {
@@ -83404,7 +83739,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:18.449438"
+    "docs_refreshed_at": "2026-03-26T08:05:42.444257"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -83669,7 +84004,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:19.159983"
+    "docs_refreshed_at": "2026-03-26T08:05:43.298799"
   },
   "waldur/waldur": {
     "docs": {
@@ -84054,7 +84389,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:19.857200"
+    "docs_refreshed_at": "2026-03-26T08:05:44.147077"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -84307,7 +84642,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:01.649878"
+    "docs_refreshed_at": "2026-03-26T08:05:26.853472"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -84362,7 +84697,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:11.870294"
+    "docs_refreshed_at": "2026-03-26T08:05:36.389406"
   },
   "timofurrer/desec": {
     "docs": {
@@ -84378,13 +84713,13 @@
           "subcategory": ""
         },
         {
-          "title": "record",
-          "slug": "record",
+          "title": "rrset",
+          "slug": "rrset",
           "subcategory": ""
         },
         {
-          "title": "records",
-          "slug": "records",
+          "title": "rrsets",
+          "slug": "rrsets",
           "subcategory": ""
         },
         {
@@ -84427,6 +84762,11 @@
           "subcategory": ""
         },
         {
+          "title": "openpgpkey_dane",
+          "slug": "openpgpkey_dane",
+          "subcategory": ""
+        },
+        {
           "title": "parse_dnskey",
           "slug": "parse_dnskey",
           "subcategory": ""
@@ -84466,8 +84806,8 @@
           "subcategory": ""
         },
         {
-          "title": "record",
-          "slug": "record",
+          "title": "rrset",
+          "slug": "rrset",
           "subcategory": ""
         },
         {
@@ -84495,13 +84835,13 @@
           "subcategory": ""
         },
         {
-          "title": "record",
-          "slug": "record",
+          "title": "records",
+          "slug": "records",
           "subcategory": ""
         },
         {
-          "title": "records",
-          "slug": "records",
+          "title": "rrset",
+          "slug": "rrset",
           "subcategory": ""
         },
         {
@@ -84516,7 +84856,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:18.809507"
+    "docs_refreshed_at": "2026-03-26T08:05:42.854849"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -84599,7 +84939,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:19.506750"
+    "docs_refreshed_at": "2026-03-26T08:05:43.742036"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -87789,7 +88129,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:00.796027"
+    "docs_refreshed_at": "2026-03-26T08:05:26.035516"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -88084,7 +88424,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:13.346169"
+    "docs_refreshed_at": "2026-03-26T08:05:38.293005"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -88202,6 +88542,6 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-03-19T08:00:16.320032"
+    "docs_refreshed_at": "2026-03-26T08:05:39.921158"
   }
 }
