@@ -168,6 +168,12 @@ jobs:
           python3 refresh_provider_details.py --exclude-cloud
           echo "=== Other provider details refreshed ==="
 
+      - name: Run AzureRM list validation
+        run: |
+          python3 generate_azurerm_list_check.py
+          echo "=== AzureRM list validation generated ==="
+          ls -la data/azurerm_list_check.json docs/azurerm-list-check.html
+
       - name: Generate HTML dashboard
         run: |
           if [ -f "terraform_providers.csv" ]; then
@@ -216,7 +222,9 @@ jobs:
           git add docs/index.html
           git add docs/terraform_providers.csv
           git add docs/downloads.html 2>/dev/null || true
+          git add docs/azurerm-list-check.html 2>/dev/null || true
           git add terraform_providers_details.json 2>/dev/null || true
+          git add data/azurerm_list_check.json 2>/dev/null || true
           git add data/snapshots/*.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
           
@@ -236,6 +244,8 @@ jobs:
           cp index.html _site/
           cp terraform_providers.csv _site/
           cp docs/downloads.html _site/ 2>/dev/null || true
+          cp docs/azurerm-list-check.html _site/ 2>/dev/null || true
+          cp data/azurerm_list_check.json _site/data/ 2>/dev/null || true
           cp data/history.json _site/data/ 2>/dev/null || true
           
       - name: Upload artifact

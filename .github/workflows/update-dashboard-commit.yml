@@ -46,9 +46,15 @@ jobs:
             python3 tf_provider_scanner.py --tier $TIER --output terraform_providers.csv --no-github
           fi
 
+      - name: Run AzureRM list validation
+        run: |
+          python3 generate_azurerm_list_check.py
+          echo "=== AzureRM list validation generated ==="
+
       - name: Generate HTML dashboard
         run: |
           python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
+          python3 generate_download_trends.py
           cp terraform_providers.csv docs/
 
       - name: Commit and push changes
@@ -56,5 +62,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add terraform_providers.csv docs/
+          git add data/azurerm_list_check.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Update provider dashboard $(date +'%Y-%m-%d')"
           git push

@@ -627,6 +627,7 @@ HTML_PART2 = '''</p>
         <nav class="topnav">
             <a href="index.html" class="active">All Providers</a>
             <a href="downloads.html">📈 Download Trends</a>
+            <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
         </nav>
         
         <div class="metrics" id="metrics">
@@ -859,6 +860,9 @@ HTML_PART3D = ''';
 
 HTML_PART3E = ''';
         const awsIdentityData = '''
+
+HTML_PART3F = ''';
+    const azurermListCheck = '''
 
 HTML_PART4 = ''';
         
@@ -1140,6 +1144,21 @@ HTML_PART4 = ''';
             html += '<div class="identity-bar-fill" style="width: ' + listPercentage + '%; background: linear-gradient(90deg, #8b5cf6 0%, #7c3aed 100%);"></div>';
             html += '</div>';
             html += '</div>';
+
+            if (isAzure && azurermListCheck && azurermListCheck.validation) {
+                var validation = azurermListCheck.validation;
+                var validationIcon = validation.matches ? '✅' : '⚠️';
+                html += '<div style="margin-bottom: 20px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;">';
+                html += '<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">';
+                html += '<span><strong>' + validationIcon + ' AzureRM List Validation</strong></span>';
+                html += '<a href="azurerm-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
+                html += '</div>';
+                html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
+                html += 'Dashboard list resources: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Gist scan with list: <strong style="color: var(--text);">' + validation.gist_with_list + '</strong>';
+                html += '</div>';
+                html += '</div>';
+            }
             
             // Two-column breakdown
             html += '<div class="identity-breakdown">';
@@ -1602,6 +1621,28 @@ HTML_PART4 = ''';
             if (!data || data === 0) return '0';
             return '<span class="clickable" onclick="openModal(\\'' + row.provider + '\\', \\'' + row.version + '\\', \\'' + category + '\\')">' + formatNumber(data) + '</span>';
         }
+
+        function getAzurermListCheckBadge() {
+            if (!azurermListCheck || !azurermListCheck.validation) return '';
+
+            var validation = azurermListCheck.validation;
+            var matches = validation.matches;
+            var icon = matches ? '✅' : '⚠️';
+            var title = matches
+                ? 'Validated against latest AzureRM gist scan: ' + validation.gist_with_list + ' matches dashboard ' + validation.dashboard_list_resources
+                : 'AzureRM gist validation mismatch: gist ' + validation.gist_with_list + ' vs dashboard ' + validation.dashboard_list_resources;
+
+            return ' <a href="azurerm-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
+        }
+
+        function renderListResources(data, type, row) {
+            if (type !== 'display') return data;
+            var content = renderClickable(data, type, row, 'list-resources');
+            if (row.provider === 'hashicorp/azurerm' && data && data > 0) {
+                content += getAzurermListCheckBadge();
+            }
+            return content;
+        }
         
         // Render identities with click for Azure and AWS
         function renderIdentities(data, type, row) {
@@ -1674,7 +1715,7 @@ HTML_PART4 = ''';
                         return formatNumber(d || 0); 
                     }},
                     { data: 'resources', render: function(d, t, row) { return renderClickable(d, t, row, 'resources'); } },
-                    { data: 'list_resources', render: function(d, t, row) { return renderClickable(d, t, row, 'list-resources'); } },
+                    { data: 'list_resources', render: function(d, t, row) { return renderListResources(d, t, row); } },
                     { data: 'actions', render: function(d, t, row) { return renderClickable(d, t, row, 'actions'); } },
                     { data: 'identities', render: function(d, t, row) { return renderIdentities(d, t, row); } },
                     { data: 'data_sources', render: function(d, t, row) { return renderClickable(d, t, row, 'data-sources'); } },
@@ -1891,6 +1932,22 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
             aws_identity_json = '{}'
     except FileNotFoundError:
         print(f"   ⚠️  No AWS identity file found, identity popup will be disabled for AWS")
+
+    # Try to load AzureRM list validation JSON
+    azurerm_list_check_json = '{}'
+    azurerm_list_check_path = csv_dir / 'data' / 'azurerm_list_check.json'
+
+    print(f"   Looking for AzureRM list validation at: {azurerm_list_check_path.absolute()}")
+    try:
+        with open(azurerm_list_check_path, 'r', encoding='utf-8') as f:
+            azurerm_list_check_json = f.read()
+        if azurerm_list_check_json.strip() and azurerm_list_check_json.strip() != '{}':
+            print(f"   ✅ Loaded AzureRM list validation from {azurerm_list_check_path}")
+        else:
+            print(f"   ⚠️  AzureRM list validation file exists but is empty")
+            azurerm_list_check_json = '{}'
+    except FileNotFoundError:
+        print(f"   ⚠️  No AzureRM list validation file found")
     
     html = (
         HTML_PART1 +
@@ -1907,6 +1964,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         azure_identity_json +
         HTML_PART3E +
         aws_identity_json +
+        HTML_PART3F +
+        azurerm_list_check_json +
         HTML_PART4
     )
     

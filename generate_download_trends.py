@@ -329,6 +329,7 @@ def generate_html(dates, series):
     <nav class="topnav">
         <a href="index.html">All Providers</a>
         <a href="downloads.html" class="active">📈 Download Trends</a>
+        <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
     </nav>
     <p class="subtitle">
         Cumulative totals plus Terraform Registry week/month/year download summaries

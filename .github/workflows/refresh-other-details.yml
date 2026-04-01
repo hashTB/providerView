@@ -46,6 +46,11 @@ jobs:
           echo ""
           echo "=== Done ==="
 
+      - name: Run AzureRM list validation
+        run: |
+          python3 generate_azurerm_list_check.py
+          echo "=== AzureRM list validation generated ==="
+
       - name: Regenerate dashboard
         if: github.event.inputs.regenerate_dashboard != 'no'
         run: |
@@ -79,7 +84,9 @@ jobs:
           git add docs/index.html 2>/dev/null || true
           git add docs/terraform_providers.csv 2>/dev/null || true
           git add docs/downloads.html 2>/dev/null || true
+          git add docs/azurerm-list-check.html 2>/dev/null || true
           git add index.html 2>/dev/null || true
+          git add data/azurerm_list_check.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
 
           if git diff --staged --quiet; then
