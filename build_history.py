@@ -70,16 +70,23 @@ def load_snapshot_json(filepath: str) -> dict:
             docs = p.get('docs', {})
             if not isinstance(docs, dict):
                 docs = {}
+
+            # Newer raw snapshots may place feature counts at top-level instead of under docs.
+            def pick_metric(metric_name: str, default=0):
+                if metric_name in docs and docs.get(metric_name) is not None:
+                    return docs.get(metric_name, default)
+                return p.get(metric_name, default)
+
             converted[name] = {
                 'downloads': p.get('downloads', 0),
-                'resources': docs.get('resources', 0),
-                'data_sources': docs.get('data_sources', 0),
-                'list_resources': docs.get('list_resources', 0),
-                'actions': docs.get('actions', 0),
-                'ephemeral_resources': docs.get('ephemeral_resources', 0),
-                'functions': docs.get('functions', 0),
-                'total_features': docs.get('total_features', 0),
-                'version': p.get('version', ''),
+                'resources': pick_metric('resources', 0),
+                'data_sources': pick_metric('data_sources', 0),
+                'list_resources': pick_metric('list_resources', 0),
+                'actions': pick_metric('actions', 0),
+                'ephemeral_resources': pick_metric('ephemeral_resources', 0),
+                'functions': pick_metric('functions', 0),
+                'total_features': pick_metric('total_features', 0),
+                'version': p.get('version', p.get('latest_version', '')),
                 'version_count': p.get('version_count', 0),
             }
         return converted
