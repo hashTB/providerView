@@ -1,0 +1,55 @@
+name: Deploy GitHub Pages (On Push)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/**
+      - data/history.json
+      - data/azurerm_list_check.json
+      - .github/workflows/deploy-pages-on-push.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-on-push
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Build Pages artifact
+        run: |
+          mkdir -p _site/data
+
+          # Primary pages from docs/
+          cp docs/index.html _site/index.html
+          cp docs/downloads.html _site/downloads.html 2>/dev/null || true
+          cp docs/azurerm-list-check.html _site/azurerm-list-check.html 2>/dev/null || true
+          cp docs/terraform_providers.csv _site/terraform_providers.csv 2>/dev/null || true
+
+          # JSON data used by client-side views
+          cp data/history.json _site/data/history.json 2>/dev/null || true
+          cp data/azurerm_list_check.json _site/data/azurerm_list_check.json 2>/dev/null || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
