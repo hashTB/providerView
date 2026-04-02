@@ -13,6 +13,8 @@
             --text: #e2e8f0;
             --text-muted: #94a3b8;
             --border: #334155;
+            --good: #22c55e;
+            --warn: #f59e0b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -22,17 +24,9 @@
             line-height: 1.6;
             padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-
-        .header {
-            margin-bottom: 10px;
-        }
-        .header h1 {
-            font-size: 1.8rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header { margin-bottom: 10px; }
+        .header h1 { font-size: 1.8rem; display: flex; align-items: center; gap: 10px; }
         .header h1 svg { height: 1.2em; }
         .topnav {
             display: flex;
@@ -59,17 +53,12 @@
             background: rgba(6, 182, 212, 0.1);
             font-weight: 600;
         }
-        .subtitle {
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-        }
-
+        .subtitle { color: var(--text-muted); margin-bottom: 24px; font-size: 0.9rem; }
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 12px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
         }
         .card {
             background: var(--bg-card);
@@ -78,10 +67,7 @@
             padding: 16px;
             text-align: center;
         }
-        .card .value {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
+        .card .value { font-size: 1.5rem; font-weight: 700; }
         .card .label {
             font-size: 0.75rem;
             color: var(--text-muted);
@@ -89,12 +75,7 @@
             letter-spacing: 0.05em;
             margin-top: 4px;
         }
-        .card .group {
-            font-size: 0.65rem;
-            color: var(--text-muted);
-            opacity: 0.7;
-        }
-
+        .card .group { font-size: 0.65rem; color: var(--text-muted); opacity: 0.7; }
         .note {
             background: rgba(6, 182, 212, 0.08);
             border: 1px solid rgba(6, 182, 212, 0.25);
@@ -104,33 +85,27 @@
             margin-bottom: 24px;
             padding: 14px 16px;
         }
-
-        .chart-section {
+        .section {
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 24px;
+            overflow-x: auto;
         }
-        .chart-section h2 {
-            font-size: 1.2rem;
-            margin-bottom: 16px;
-            color: var(--text);
-        }
-        .chart-wrap {
-            position: relative;
-            height: 400px;
-        }
-        @media (max-width: 768px) {
-            .chart-wrap { height: 300px; }
-        }
-
-        .toggle-row {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 16px;
-        }
+        .section h2 { font-size: 1.2rem; margin-bottom: 8px; }
+        .section .sub { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 14px; }
+        .chart-wrap { position: relative; height: 380px; }
+        @media (max-width: 768px) { .chart-wrap { height: 300px; } }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
+        td:first-child, th:first-child { text-align: left; }
+        tr:hover td { background: rgba(6, 182, 212, 0.05); }
+        .pct-pos { color: var(--good); }
+        .pct-neg { color: #f97316; }
+        .pct-na { color: var(--text-muted); }
+        .toggle-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
         .toggle-row label {
             display: flex;
             align-items: center;
@@ -139,35 +114,7 @@
             cursor: pointer;
             color: var(--text-muted);
         }
-        .toggle-row input[type="checkbox"] {
-            accent-color: var(--primary);
-        }
-
-        .table-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 24px;
-            overflow-x: auto;
-        }
-        .table-section h2 {
-            font-size: 1.2rem;
-            margin-bottom: 16px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.85rem;
-        }
-        th, td {
-            padding: 10px 12px;
-            text-align: right;
-            border-bottom: 1px solid var(--border);
-        }
-        th { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
-        td:first-child, th:first-child { text-align: left; }
-        tr:hover td { background: rgba(6, 182, 212, 0.05); }
+        .toggle-row input[type="checkbox"] { accent-color: var(--primary); }
     </style>
 </head>
 <body>
@@ -184,10 +131,9 @@
         <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
     </nav>
     <p class="subtitle">
-        Cumulative totals plus Terraform Registry week/month/year download summaries
-        for AWS, Azure, and GCP Terraform providers
+        Consolidated monthly totals and rates for Azure/AWS/GCP, plus key providers
         &middot; 10 snapshots from 2026-01-27 to 2026-04-01
-        &middot; Generated 2026-04-01 13:33
+        &middot; Generated 2026-04-02 18:48
     </p>
 
     <div class="cards">
@@ -229,12 +175,69 @@
     </div>
 
     <div class="note">
-        Registry week/month/year metrics are stored only in snapshots captured after the
-        fetcher started saving <code>download_summary</code>. Older dates may show gaps for
-        those charts until new scheduled runs accumulate more history.
+        Monthly comparisons below use month buckets and take the latest snapshot within each month.
+        MoM/QoQ/YoY are computed from the Registry monthly metric when available.
+        YoY requires at least 13 months of monthly points, so it may show N/A for now.
     </div>
 
-    <div class="table-section">
+    <div class="section">
+        <h2>Cloud Family Monthly Consolidation</h2>
+        <div class="sub">Azure includes AzureRM, AzAPI, AzureAD, Microsoft Fabric. Compare against consolidated AWS and GCP.</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Family</th>
+                    <th>Latest Month</th>
+                    <th>Monthly Total</th>
+                    <th>MoM</th>
+                    <th>QoQ</th>
+                    <th>YoY</th>
+                    <th>Providers Included</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Azure</td><td>2026-04</td><td>26.943M</td><td><span class="pct-neg">-36.8%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td><td>hashicorp/azurerm, azure/azapi, hashicorp/azuread, microsoft/fabric</td></tr>
+                <tr><td>AWS</td><td>2026-04</td><td>49.712M</td><td><span class="pct-neg">-50.5%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td><td>hashicorp/aws, hashicorp/awscc</td></tr>
+                <tr><td>GCP</td><td>2026-04</td><td>27.422M</td><td><span class="pct-neg">-48.9%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td><td>hashicorp/google, hashicorp/google-beta</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Consolidated Cloud Monthly Trend</h2>
+        <div class="sub">Month-end bucketed totals for Azure vs AWS vs GCP.</div>
+        <div class="toggle-row" id="family-toggles"></div>
+        <div class="chart-wrap"><canvas id="familyMonthlyChart"></canvas></div>
+    </div>
+
+    <div class="section">
+        <h2>Key Provider Monthly Totals and Rates</h2>
+        <div class="sub">Use this to inspect one provider at a time (for example AzureRM, AzAPI, AWS, Google).</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Provider</th>
+                    <th>Latest Month</th>
+                    <th>Monthly Total</th>
+                    <th>MoM</th>
+                    <th>QoQ</th>
+                    <th>YoY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Azure RM <span class="pct-na">(hashicorp/azurerm)</span></td><td>2026-04</td><td>16.121M</td><td><span class="pct-neg">-44.3%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>AzAPI <span class="pct-na">(azure/azapi)</span></td><td>2026-04</td><td>3.365M</td><td><span class="pct-neg">-53.4%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>Azure AD <span class="pct-na">(hashicorp/azuread)</span></td><td>2026-04</td><td>7.417M</td><td><span class="pct-neg">-45.9%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>Microsoft Fabric <span class="pct-na">(microsoft/fabric)</span></td><td>2026-04</td><td>39.247K</td><td><span class="pct-neg">-53.8%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>AWS <span class="pct-na">(hashicorp/aws)</span></td><td>2026-04</td><td>49.102M</td><td><span class="pct-neg">-50.5%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>AWS CC <span class="pct-na">(hashicorp/awscc)</span></td><td>2026-04</td><td>609.544K</td><td><span class="pct-neg">-47.8%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>Google <span class="pct-na">(hashicorp/google)</span></td><td>2026-04</td><td>18.466M</td><td><span class="pct-neg">-47.9%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+                <tr><td>Google Beta <span class="pct-na">(hashicorp/google-beta)</span></td><td>2026-04</td><td>8.956M</td><td><span class="pct-neg">-50.9%</span></td><td><span class="pct-na">N/A</span></td><td><span class="pct-na">N/A</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
         <h2>Latest Registry Summary</h2>
         <table>
             <thead>
@@ -250,131 +253,90 @@
                 <tr>
                     <td>AWS</td>
                     <td>21.836M</td>
-                    <td>0</td>
+                    <td>99.257M</td>
                     <td>429.918M</td>
                     <td>5.816B</td>
                 </tr>
                 <tr>
                     <td>AWS CC</td>
                     <td>272.471K</td>
-                    <td>0</td>
+                    <td>1.168M</td>
                     <td>5.169M</td>
                     <td>39.967M</td>
                 </tr>
                 <tr>
                     <td>Azure RM</td>
                     <td>6.800M</td>
-                    <td>0</td>
+                    <td>28.934M</td>
                     <td>128.900M</td>
                     <td>1.411B</td>
                 </tr>
                 <tr>
                     <td>Azure AD</td>
                     <td>3.097M</td>
-                    <td>0</td>
+                    <td>13.701M</td>
                     <td>59.345M</td>
                     <td>531.450M</td>
                 </tr>
                 <tr>
                     <td>Azure Stack</td>
                     <td>1.348K</td>
-                    <td>0</td>
+                    <td>6.322K</td>
                     <td>20.755K</td>
                     <td>1.775M</td>
                 </tr>
                 <tr>
                     <td>Google</td>
                     <td>8.003M</td>
-                    <td>0</td>
+                    <td>35.442M</td>
                     <td>157.891M</td>
                     <td>1.812B</td>
                 </tr>
                 <tr>
                     <td>Google Beta</td>
                     <td>3.701M</td>
-                    <td>0</td>
+                    <td>18.240M</td>
                     <td>78.146M</td>
                     <td>940.723M</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
-    <div class="chart-section">
+    <div class="section">
         <h2>Cumulative Downloads Over Time</h2>
-        <p class="subtitle">Provider-level total downloads captured in each snapshot</p>
+        <div class="sub">Provider-level total downloads captured in each snapshot</div>
         <div class="toggle-row" id="total-toggles"></div>
-        <div class="chart-wrap">
-            <canvas id="totalChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="totalChart"></canvas></div>
     </div>
 
-    <div class="chart-section">
+    <div class="section">
         <h2>Registry Weekly Downloads</h2>
-        <p class="subtitle">Terraform Registry summary metric for downloads this week</p>
+        <div class="sub">Terraform Registry summary metric for downloads this week</div>
         <div class="toggle-row" id="week-toggles"></div>
-        <div class="chart-wrap">
-            <canvas id="weekChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="weekChart"></canvas></div>
     </div>
 
-    <div class="chart-section">
+    <div class="section">
         <h2>Registry Monthly Downloads</h2>
-        <p class="subtitle">Terraform Registry summary metric for downloads this month</p>
+        <div class="sub">Terraform Registry summary metric for downloads this month</div>
         <div class="toggle-row" id="month-toggles"></div>
-        <div class="chart-wrap">
-            <canvas id="monthChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="monthChart"></canvas></div>
     </div>
 
-    <div class="chart-section">
+    <div class="section">
         <h2>Registry Yearly Downloads</h2>
-        <p class="subtitle">Terraform Registry summary metric for downloads this year</p>
+        <div class="sub">Terraform Registry summary metric for downloads this year</div>
         <div class="toggle-row" id="year-toggles"></div>
-        <div class="chart-wrap">
-            <canvas id="yearChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="yearChart"></canvas></div>
     </div>
 
 
-
-    <!-- Data table -->
-    <div class="table-section">
-        <h2>Cumulative Totals By Snapshot</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>AWS</th>
-                    <th>AWS CC</th>
-                    <th>Azure RM</th>
-                    <th>Azure AD</th>
-                    <th>Azure Stack</th>
-                    <th>Google</th>
-                    <th>Google Beta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>2026-01-27</td><td>5.503B</td><td>36.157M</td><td>1.317B</td><td>487.114M</td><td>1.759M</td><td>1.698B</td><td>883.099M</td></tr>
-                <tr><td>2026-01-29</td><td>5.513B</td><td>36.302M</td><td>1.320B</td><td>488.563M</td><td>1.759M</td><td>1.701B</td><td>884.828M</td></tr>
-                <tr><td>2026-02-05</td><td>5.548B</td><td>36.735M</td><td>N/A</td><td>493.193M</td><td>1.761M</td><td>1.714B</td><td>891.026M</td></tr>
-                <tr><td>2026-02-12</td><td>5.583B</td><td>37.170M</td><td>1.341B</td><td>498.040M</td><td>1.762M</td><td>1.727B</td><td>897.592M</td></tr>
-                <tr><td>2026-02-19</td><td>5.617B</td><td>37.604M</td><td>N/A</td><td>504.030M</td><td>1.763M</td><td>1.740B</td><td>904.163M</td></tr>
-                <tr><td>2026-02-26</td><td>5.654B</td><td>38.036M</td><td>1.363B</td><td>508.544M</td><td>1.765M</td><td>1.753B</td><td>911.120M</td></tr>
-                <tr><td>2026-03-05</td><td>5.690B</td><td>38.463M</td><td>1.373B</td><td>513.534M</td><td>1.766M</td><td>1.767B</td><td>917.949M</td></tr>
-                <tr><td>2026-03-12</td><td>5.728B</td><td>38.901M</td><td>1.384B</td><td>518.815M</td><td>1.769M</td><td>1.780B</td><td>924.909M</td></tr>
-                <tr><td>2026-03-19</td><td>5.766B</td><td>39.357M</td><td>1.395B</td><td>524.033M</td><td>1.771M</td><td>1.794B</td><td>931.767M</td></tr>
-                <tr><td>2026-04-01</td><td>5.816B</td><td>39.967M</td><td>1.411B</td><td>531.450M</td><td>1.775M</td><td>1.812B</td><td>940.723M</td></tr>
-            </tbody>
-        </table>
-    </div>
 </div>
 
 <script>
 const dates = ["2026-01-27", "2026-01-29", "2026-02-05", "2026-02-12", "2026-02-19", "2026-02-26", "2026-03-05", "2026-03-12", "2026-03-19", "2026-04-01"];
-const chartData = {"total": [{"label": "AWS", "data": [5502683032, 5513280975, 5547996232, 5582874796, 5617048573, 5653581979, 5690094504, 5727674891, 5766460220, 5815562472], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [36156922, 36302375, 36735196, 37169752, 37603976, 38036449, 38462915, 38900936, 39357260, 39966804], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [1316733942, 1319753207, null, 1340780923, null, 1362591887, 1373032312, 1383951808, 1395338606, 1411459513], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [487114313, 488563478, 493193480, 498039562, 504029609, 508544260, 513533689, 518814802, 524032847, 531449791], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [1758891, 1759394, 1760633, 1762037, 1763352, 1764671, 1765832, 1769156, 1771463, 1775031], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [1697511529, 1701212606, 1714080670, 1726921093, 1739783379, 1753379244, 1766736906, 1780295709, 1793716283, 1812182781], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [883098573, 884827834, 891025876, 897592491, 904163488, 911119934, 917948913, 924908568, 931767293, 940722883], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "week": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 39997047, 21835667], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 470839, 272471], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 11730711, 6800014], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 5385305, 3096572], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 2499, 1348], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 13847758, 8003031], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 7069276, 3700572], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "month": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 99257294, 0], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 1168026, 0], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 28933625, 0], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 13700855, 0], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 6322, 0], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 35442188, 0], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 18240331, 0], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "year": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 380815821, 429918073], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 4559763, 5169307], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 112779006, 128899913], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 51928469, 59345413], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 17187, 20755], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 139424268, 157890766], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 69190290, 78145880], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}]};
+const chartData = {"series": {"total": [{"label": "AWS", "data": [5502683032, 5513280975, 5547996232, 5582874796, 5617048573, 5653581979, 5690094504, 5727674891, 5766460220, 5815562472], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [36156922, 36302375, 36735196, 37169752, 37603976, 38036449, 38462915, 38900936, 39357260, 39966804], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [1316733942, 1319753207, null, 1340780923, null, 1362591887, 1373032312, 1383951808, 1395338606, 1411459513], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [487114313, 488563478, 493193480, 498039562, 504029609, 508544260, 513533689, 518814802, 524032847, 531449791], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [1758891, 1759394, 1760633, 1762037, 1763352, 1764671, 1765832, 1769156, 1771463, 1775031], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [1697511529, 1701212606, 1714080670, 1726921093, 1739783379, 1753379244, 1766736906, 1780295709, 1793716283, 1812182781], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [883098573, 884827834, 891025876, 897592491, 904163488, 911119934, 917948913, 924908568, 931767293, 940722883], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "week": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 39997047, 21835667], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 470839, 272471], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 11730711, 6800014], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 5385305, 3096572], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 2499, 1348], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 13847758, 8003031], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 7069276, 3700572], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "month": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 99257294, null], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 1168026, null], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 28933625, null], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 13700855, null], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 6322, null], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 35442188, null], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 18240331, null], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}], "year": [{"label": "AWS", "data": [null, null, null, null, null, null, null, null, 380815821, 429918073], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "AWS CC", "data": [null, null, null, null, null, null, null, null, 4559763, 5169307], "borderColor": "#FF6600", "backgroundColor": "#FF660020", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure RM", "data": [null, null, null, null, null, null, null, null, 112779006, 128899913], "borderColor": "#0078D4", "backgroundColor": "#0078D420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure AD", "data": [null, null, null, null, null, null, null, null, 51928469, 59345413], "borderColor": "#50A0E6", "backgroundColor": "#50A0E620", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Azure Stack", "data": [null, null, null, null, null, null, null, null, 17187, 20755], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google", "data": [null, null, null, null, null, null, null, null, 139424268, 157890766], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}, {"label": "Google Beta", "data": [null, null, null, null, null, null, null, null, 69190290, 78145880], "borderColor": "#34A853", "backgroundColor": "#34A85320", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 6, "tension": 0.3, "spanGaps": true}]}, "familyMonths": ["2026-01", "2026-02", "2026-03", "2026-04"], "familyDatasets": [{"label": "Azure", "data": [null, 70766552, 42634480, 26942575], "borderColor": "#00BCF2", "backgroundColor": "#00BCF220", "borderWidth": 3, "pointRadius": 4, "spanGaps": true, "tension": 0.25}, {"label": "AWS", "data": [null, 142035078, 100425320, 49711796], "borderColor": "#FF9900", "backgroundColor": "#FF990020", "borderWidth": 3, "pointRadius": 4, "spanGaps": true, "tension": 0.25}, {"label": "GCP", "data": [null, 78458738, 53682519, 27422088], "borderColor": "#4285F4", "backgroundColor": "#4285F420", "borderWidth": 3, "pointRadius": 4, "spanGaps": true, "tension": 0.25}]};
 
-// Number formatting for axes
 function fmtAxis(value) {
     if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
     if (value >= 1e6) return (value / 1e6).toFixed(3) + 'M';
@@ -426,25 +388,26 @@ const chartDefaults = {
     }
 };
 
-function createLineChart(canvasId, datasets) {
+function createLineChart(canvasId, labels, datasets) {
     const ctx = document.getElementById(canvasId).getContext('2d');
     return new Chart(ctx, {
         type: 'line',
-        data: { labels: dates, datasets },
+        data: { labels, datasets },
         options: chartDefaults,
     });
 }
 
 const charts = {
-    total: createLineChart('totalChart', chartData.total),
-    week: createLineChart('weekChart', chartData.week),
-    month: createLineChart('monthChart', chartData.month),
-    year: createLineChart('yearChart', chartData.year),
+    total: createLineChart('totalChart', dates, chartData.series.total),
+    week: createLineChart('weekChart', dates, chartData.series.week),
+    month: createLineChart('monthChart', dates, chartData.series.month),
+    year: createLineChart('yearChart', dates, chartData.series.year),
+    family: createLineChart('familyMonthlyChart', chartData.familyMonths, chartData.familyDatasets),
 };
 
-// Build toggle checkboxes for each chart
 function buildToggles(chart, containerId) {
     const container = document.getElementById(containerId);
+    if (!container) return;
     chart.data.datasets.forEach((ds, idx) => {
         const label = document.createElement('label');
         const cb = document.createElement('input');
@@ -460,6 +423,7 @@ function buildToggles(chart, containerId) {
     });
 }
 
+buildToggles(charts.family, 'family-toggles');
 buildToggles(charts.total, 'total-toggles');
 buildToggles(charts.week, 'week-toggles');
 buildToggles(charts.month, 'month-toggles');
