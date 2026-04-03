@@ -48,6 +48,7 @@ FAMILY_COLORS = {
 
 PR_LOOKBACK_DAYS = int(os.getenv("CLOUD_DEVEX_PR_LOOKBACK_DAYS", "180"))
 PR_PER_REPO_MAX = int(os.getenv("CLOUD_DEVEX_PR_PER_REPO_MAX", "100"))
+PR_TABLE_MAX_PER_FAMILY = int(os.getenv("CLOUD_DEVEX_PR_TABLE_MAX_PER_FAMILY", "200"))
 
 ASSOCIATION_INTERNAL = {"OWNER", "MEMBER", "COLLABORATOR"}
 
@@ -200,6 +201,7 @@ def fetch_pr_attribution(repo, family, user_company_cache):
         "cloud_vendor_count": 0,
         "community_count": 0,
         "sampled_closed_prs": 0,
+        "merged_prs": [],
     }
     if not repo:
         return result
@@ -248,6 +250,19 @@ def fetch_pr_attribution(repo, family, user_company_cache):
             result["cloud_vendor_count"] += 1
         else:
             result["community_count"] += 1
+
+        result["merged_prs"].append(
+            {
+                "number": pr.get("number"),
+                "title": pr.get("title") or "",
+                "html_url": pr.get("html_url") or "",
+                "author_login": login,
+                "author_company": company,
+                "author_association": assoc,
+                "bucket": bucket,
+                "merged_at": merged_at,
+            }
+        )
 
     return result
 
@@ -336,6 +351,7 @@ def build_rows(csv_rows, sources):
                 "pr_cloud_vendor": pr_attr.get("cloud_vendor_count", 0),
                 "pr_community": pr_attr.get("community_count", 0),
                 "pr_sampled_closed": pr_attr.get("sampled_closed_prs", 0),
+                "merged_prs": pr_attr.get("merged_prs", []),
                 **go_mod,
             }
             rows.append(enriched)
@@ -388,8 +404,50 @@ def summarize_family(rows, family):
     }
 
 
+def build_pr_views(rows):
+    family_provider_rows = {"Azure": [], "AWS": [], "GCP": []}
+    family_pr_rows = {"Azure": [], "AWS": [], "GCP": []}
+
+    for r in rows:
+        family_provider_rows[r["family"]].append(
+            {
+                "provider": r["provider"],
+                "repo": r.get("repo") or "",
+                "total": r["pr_merged_total"],
+                "internal": r["pr_internal"],
+                "cloud_vendor": r["pr_cloud_vendor"],
+                "community": r["pr_community"],
+            }
+        )
+
+        for pr in r.get("merged_prs", []):
+            family_pr_rows[r["family"]].append(
+                {
+                    "provider": r["provider"],
+                    "repo": r.get("repo") or "",
+                    "number": pr.get("number"),
+                    "title": pr.get("title") or "",
+                    "html_url": pr.get("html_url") or "",
+                    "author_login": pr.get("author_login") or "",
+                    "author_company": pr.get("author_company") or "",
+                    "author_association": pr.get("author_association") or "",
+                    "bucket": pr.get("bucket") or "community",
+                    "merged_at": pr.get("merged_at") or "",
+                }
+            )
+
+    for fam in ("Azure", "AWS", "GCP"):
+        family_provider_rows[fam].sort(key=lambda x: x["provider"])
+        family_pr_rows[fam].sort(key=lambda x: x["merged_at"], reverse=True)
+        if len(family_pr_rows[fam]) > PR_TABLE_MAX_PER_FAMILY:
+            family_pr_rows[fam] = family_pr_rows[fam][:PR_TABLE_MAX_PER_FAMILY]
+
+    return family_provider_rows, family_pr_rows
+
+
 def generate_html(rows, family_summary):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    family_provider_rows, family_pr_rows = build_pr_views(rows)
 
     def badge(flag):
         return "yes" if flag else "no"
@@ -443,6 +501,60 @@ def generate_html(rows, family_summary):
             f"<td>{s['pr_cloud_vendor_pct']}%</td>"
             f"<td>{s['pr_community_pct']}%</td>"
             "</tr>"
+        )
+
+    family_provider_tables = []
+    for fam in ("Azure", "AWS", "GCP"):
+        table_rows = []
+        for p in family_provider_rows[fam]:
+            table_rows.append(
+                "<tr>"
+                f"<td>{p['provider']}</td>"
+                f"<td>{p['repo']}</td>"
+                f"<td>{p['total']}</td>"
+                f"<td>{p['internal']}</td>"
+                f"<td>{p['cloud_vendor']}</td>"
+                f"<td>{p['community']}</td>"
+                "</tr>"
+            )
+        family_provider_tables.append(
+            "<div class=\"section\">"
+            f"<h2>{fam} PR Contribution Split by Provider</h2>"
+            "<table>"
+            "<thead><tr>"
+            "<th>Provider</th><th>Repo</th><th>Merged PRs</th><th>Internal</th><th>Cloud-vendor</th><th>Community</th>"
+            "</tr></thead>"
+            f"<tbody>{''.join(table_rows)}</tbody>"
+            "</table>"
+            "</div>"
+        )
+
+    family_pr_tables = []
+    for fam in ("Azure", "AWS", "GCP"):
+        rows_html = []
+        for pr in family_pr_rows[fam]:
+            rows_html.append(
+                "<tr>"
+                f"<td>{iso_to_date(pr['merged_at'])}</td>"
+                f"<td>{pr['provider']}</td>"
+                f"<td>{pr['repo']}</td>"
+                f"<td>{pr['author_login']}</td>"
+                f"<td>{pr['author_company'] or ''}</td>"
+                f"<td>{pr['author_association']}</td>"
+                f"<td>{pr['bucket']}</td>"
+                f"<td><a href=\"{pr['html_url']}\" target=\"_blank\">#{pr['number']} {pr['title']}</a></td>"
+                "</tr>"
+            )
+        family_pr_tables.append(
+            "<div class=\"section\">"
+            f"<h2>{fam} Merged PRs (last {PR_LOOKBACK_DAYS} days, newest first)</h2>"
+            "<table>"
+            "<thead><tr>"
+            "<th>Merged</th><th>Provider</th><th>Repo</th><th>Author</th><th>Company</th><th>Assoc</th><th>Bucket</th><th>PR</th>"
+            "</tr></thead>"
+            f"<tbody>{''.join(rows_html)}</tbody>"
+            "</table>"
+            "</div>"
         )
 
     return f"""<!DOCTYPE html>
@@ -551,11 +663,16 @@ def generate_html(rows, family_summary):
       </table>
     </div>
 
+        {''.join(family_provider_tables)}
+
+        {''.join(family_pr_tables)}
+
     <div class=\"section\">
       <div class=\"note\">
         Signals in this page are public and fetched from GitHub API endpoints for each provider repository.
                 Cohort values come from providerView CSV, while repo/go.mod and PR attribution are fetched live at generation time.
                 PR buckets: internal = OWNER/MEMBER/COLLABORATOR, cloud-vendor = login or company matches cloud family keywords, community = all others.
+                PR detail tables are capped per family by CLOUD_DEVEX_PR_TABLE_MAX_PER_FAMILY (default: {PR_TABLE_MAX_PER_FAMILY}).
       </div>
     </div>
   </div>
@@ -583,6 +700,7 @@ def main():
         fam: summarize_family(rows, fam)
         for fam in ("Azure", "AWS", "GCP")
     }
+    family_provider_rows, family_pr_rows = build_pr_views(rows)
 
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(
@@ -591,6 +709,10 @@ def main():
                 "generated_at": datetime.now().isoformat(),
                 "families": family_summary,
                 "rows": rows,
+                "pr_views": {
+                    "provider_split": family_provider_rows,
+                    "merged_timeline": family_pr_rows,
+                },
             },
             indent=2,
         ),

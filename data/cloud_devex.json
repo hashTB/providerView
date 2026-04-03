@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-03T19:28:26.892484",
+  "generated_at": "2026-04-03T19:51:34.560234",
   "families": {
     "Azure": {
       "count": 5,
       "framework_only_pct": 20.0,
       "sdk_only_pct": 20.0,
       "mixed_pct": 60.0,
-      "mux_pct": 20.0,
+      "mux_pct": 0.0,
       "sdk_v1_pct": 0.0,
       "archived_count": 0,
-      "avg_repo_age_years": 5.74,
-      "pr_total": 194,
-      "pr_internal_pct": 45.9,
-      "pr_cloud_vendor_pct": 5.7,
-      "pr_community_pct": 48.5
+      "avg_repo_age_years": null,
+      "pr_total": 0,
+      "pr_internal_pct": 0,
+      "pr_cloud_vendor_pct": 0,
+      "pr_community_pct": 0
     },
     "AWS": {
       "count": 2,
@@ -59,24 +59,25 @@
       "downloads": 0,
       "source": "https://github.com/hashicorp/terraform-provider-azurerm",
       "repo": "hashicorp/terraform-provider-azurerm",
-      "repo_created_at": "2017-06-05T20:53:54Z",
-      "repo_pushed_at": "2026-04-03T20:13:34Z",
+      "repo_created_at": null,
+      "repo_pushed_at": null,
       "repo_archived": false,
-      "repo_stars": 4920,
-      "repo_open_issues": 3849,
-      "repo_age_years": 8.83,
+      "repo_stars": 0,
+      "repo_open_issues": 0,
+      "repo_age_years": null,
       "pr_window_days": 180,
-      "pr_merged_total": 55,
-      "pr_internal": 30,
-      "pr_cloud_vendor": 3,
-      "pr_community": 22,
-      "pr_sampled_closed": 100,
-      "has_framework": true,
-      "has_mux": true,
-      "has_sdk_v2": true,
+      "pr_merged_total": 0,
+      "pr_internal": 0,
+      "pr_cloud_vendor": 0,
+      "pr_community": 0,
+      "pr_sampled_closed": 0,
+      "merged_prs": [],
+      "has_framework": false,
+      "has_mux": false,
+      "has_sdk_v2": false,
       "has_sdk_v1": false,
       "in_tree": false,
-      "go_mod_not_found": false
+      "go_mod_not_found": true
     },
     {
       "family": "Azure",
@@ -92,24 +93,25 @@
       "downloads": 0,
       "source": "https://github.com/Azure/terraform-provider-azapi",
       "repo": "Azure/terraform-provider-azapi",
-      "repo_created_at": "2021-09-22T06:52:12Z",
-      "repo_pushed_at": "2026-04-01T08:23:31Z",
+      "repo_created_at": null,
+      "repo_pushed_at": null,
       "repo_archived": false,
-      "repo_stars": 235,
-      "repo_open_issues": 101,
-      "repo_age_years": 4.53,
+      "repo_stars": 0,
+      "repo_open_issues": 0,
+      "repo_age_years": null,
       "pr_window_days": 180,
-      "pr_merged_total": 46,
-      "pr_internal": 33,
-      "pr_cloud_vendor": 7,
-      "pr_community": 6,
-      "pr_sampled_closed": 100,
-      "has_framework": true,
+      "pr_merged_total": 0,
+      "pr_internal": 0,
+      "pr_cloud_vendor": 0,
+      "pr_community": 0,
+      "pr_sampled_closed": 0,
+      "merged_prs": [],
+      "has_framework": false,
       "has_mux": false,
-      "has_sdk_v2": true,
+      "has_sdk_v2": false,
       "has_sdk_v1": false,
       "in_tree": false,
-      "go_mod_not_found": false
+      "go_mod_not_found": true
     },
     {
       "family": "Azure",
@@ -125,24 +127,25 @@
       "downloads": 0,
       "source": "https://github.com/hashicorp/terraform-provider-azuread",
       "repo": "hashicorp/terraform-provider-azuread",
-      "repo_created_at": "2019-01-08T16:35:14Z",
-      "repo_pushed_at": "2026-03-19T02:22:22Z",
+      "repo_created_at": null,
+      "repo_pushed_at": null,
       "repo_archived": false,
-      "repo_stars": 477,
-      "repo_open_issues": 362,
-      "repo_age_years": 7.23,
+      "repo_stars": 0,
+      "repo_open_issues": 0,
+      "repo_age_years": null,
       "pr_window_days": 180,
-      "pr_merged_total": 26,
-      "pr_internal": 19,
-      "pr_cloud_vendor": 1,
-      "pr_community": 6,
-      "pr_sampled_closed": 100,
+      "pr_merged_total": 0,
+      "pr_internal": 0,
+      "pr_cloud_vendor": 0,
+      "pr_community": 0,
+      "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
-      "has_sdk_v2": true,
+      "has_sdk_v2": false,
       "has_sdk_v1": false,
       "in_tree": false,
-      "go_mod_not_found": false
+      "go_mod_not_found": true
     },
     {
       "family": "Azure",
@@ -158,24 +161,25 @@
       "downloads": 823937,
       "source": "https://github.com/microsoft/terraform-provider-fabric",
       "repo": "microsoft/terraform-provider-fabric",
-      "repo_created_at": "2023-11-20T17:35:32Z",
-      "repo_pushed_at": "2026-04-02T15:25:32Z",
+      "repo_created_at": null,
+      "repo_pushed_at": null,
       "repo_archived": false,
-      "repo_stars": 113,
-      "repo_open_issues": 56,
-      "repo_age_years": 2.37,
+      "repo_stars": 0,
+      "repo_open_issues": 0,
+      "repo_age_years": null,
       "pr_window_days": 180,
-      "pr_merged_total": 67,
-      "pr_internal": 7,
+      "pr_merged_total": 0,
+      "pr_internal": 0,
       "pr_cloud_vendor": 0,
-      "pr_community": 60,
-      "pr_sampled_closed": 100,
-      "has_framework": true,
+      "pr_community": 0,
+      "pr_sampled_closed": 0,
+      "merged_prs": [],
+      "has_framework": false,
       "has_mux": false,
-      "has_sdk_v2": true,
+      "has_sdk_v2": false,
       "has_sdk_v1": false,
       "in_tree": false,
-      "go_mod_not_found": false
+      "go_mod_not_found": true
     },
     {
       "family": "Azure",
@@ -203,6 +207,7 @@
       "pr_cloud_vendor": 0,
       "pr_community": 0,
       "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
       "has_sdk_v2": false,
@@ -236,6 +241,7 @@
       "pr_cloud_vendor": 0,
       "pr_community": 0,
       "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
       "has_sdk_v2": false,
@@ -269,6 +275,7 @@
       "pr_cloud_vendor": 0,
       "pr_community": 0,
       "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
       "has_sdk_v2": false,
@@ -302,6 +309,7 @@
       "pr_cloud_vendor": 0,
       "pr_community": 0,
       "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
       "has_sdk_v2": false,
@@ -335,6 +343,7 @@
       "pr_cloud_vendor": 0,
       "pr_community": 0,
       "pr_sampled_closed": 0,
+      "merged_prs": [],
       "has_framework": false,
       "has_mux": false,
       "has_sdk_v2": false,
@@ -342,5 +351,92 @@
       "in_tree": false,
       "go_mod_not_found": true
     }
-  ]
+  ],
+  "pr_views": {
+    "provider_split": {
+      "Azure": [
+        {
+          "provider": "azure/azapi",
+          "repo": "Azure/terraform-provider-azapi",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "hashicorp/azuread",
+          "repo": "hashicorp/terraform-provider-azuread",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "hashicorp/azurestack",
+          "repo": "hashicorp/terraform-provider-azurestack",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "microsoft/fabric",
+          "repo": "microsoft/terraform-provider-fabric",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        }
+      ],
+      "AWS": [
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "hashicorp/awscc",
+          "repo": "hashicorp/terraform-provider-awscc",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        }
+      ],
+      "GCP": [
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "total": 0,
+          "internal": 0,
+          "cloud_vendor": 0,
+          "community": 0
+        }
+      ]
+    },
+    "merged_timeline": {
+      "Azure": [],
+      "AWS": [],
+      "GCP": []
+    }
+  }
 }
