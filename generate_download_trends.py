@@ -153,6 +153,16 @@ def build_monthly_series(dates, monthly_snap_values, total_snap_values):
     return months, values
 
 
+def filter_completed_months(months, values):
+    """Keep only fully completed months by excluding current YYYY-MM bucket."""
+    current_month = datetime.now().strftime("%Y-%m")
+    filtered = [(m, v) for m, v in zip(months, values) if m < current_month]
+    if not filtered:
+        # If only current-month data exists, keep original data instead of empty output.
+        return months, values
+    return [m for m, _ in filtered], [v for _, v in filtered]
+
+
 def load_snapshots():
     files = sorted(glob.glob("data/raw/providers_[0-9][0-9][0-9][0-9]-*.json"))
     if not files:
@@ -303,24 +313,39 @@ def generate_html(data):
     family_monthly = data["family_monthly"]
     key_monthly = data["key_monthly"]
 
+    completed_family_monthly = {}
+    for family, values in family_monthly.items():
+        months, month_values = filter_completed_months(values["months"], values["values"])
+        completed_family_monthly[family] = {"months": months, "values": month_values}
+
+    completed_key_monthly = {}
+    for provider, values in key_monthly.items():
+        months, month_values = filter_completed_months(values["months"], values["values"])
+        completed_key_monthly[provider] = {"months": months, "values": month_values}
+
     chart_datasets = {metric: build_datasets(metric_series) for metric, metric_series in series.items()}
     latest_total = latest_metric_values(series["total"])
     latest_summary = {metric: latest_metric_values(series[metric]) for metric in ("week", "month", "year")}
 
     family_rates = {
         family: compute_rate_summary(v["months"], v["values"])
-        for family, v in family_monthly.items()
+        for family, v in completed_family_monthly.items()
     }
     key_rates = {
         provider: compute_rate_summary(v["months"], v["values"])
-        for provider, v in key_monthly.items()
+        for provider, v in completed_key_monthly.items()
     }
 
     # Build consolidated family chart on month buckets
-    union_months = sorted({m for fam in family_monthly.values() for m in fam["months"]})
+    union_months = sorted({m for fam in completed_family_monthly.values() for m in fam["months"]})
     family_chart_datasets = []
     for family, meta in CLOUD_FAMILIES.items():
-        month_to_value = dict(zip(family_monthly[family]["months"], family_monthly[family]["values"]))
+        month_to_value = dict(
+            zip(
+                completed_family_monthly[family]["months"],
+                completed_family_monthly[family]["values"],
+            )
+        )
         family_chart_datasets.append(
             {
                 "label": family,
@@ -488,6 +513,7 @@ def generate_html(data):
 
     <div class=\"note\">
         Monthly comparisons below use month buckets and take the latest snapshot within each month.
+        Monthly trend tables and cloud comparison chart use latest completed month (current partial month excluded).
         MoM/QoQ/YoY are computed from the Registry monthly metric when available.
         YoY requires at least 13 months of monthly points, so it may show N/A for now.
     </div>
