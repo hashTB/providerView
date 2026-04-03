@@ -83,14 +83,15 @@
     <nav class="topnav">
         <a href="index.html">All Providers</a>
         <a href="downloads.html">📈 Download Trends</a>
+        <a href="cloud-devex.html">Cloud DevEx</a>
         <a href="azurerm-list-check.html" class="active">✅ AzureRM List Check</a>
     </nav>
-    <p class="subtitle">Latest gist-backed AzureRM source scan compared against the dashboard list-resources count. Generated 2026-04-01T13:51:03.848151.</p>
+    <p class="subtitle">Latest gist-backed AzureRM source scan compared against the dashboard list-resources count. Generated 2026-04-03T19:14:47.383883.</p>
 
     <div class="cards">
         <div class="card"><div class="value">45</div><div class="label">Dashboard List Resources</div></div>
         <div class="card"><div class="value">46</div><div class="label">Gist Scan With List</div></div>
-        <div class="card"><div class="value">1,128</div><div class="label">AzureRM Resources Scanned</div></div>
+        <div class="card"><div class="value">1,129</div><div class="label">AzureRM Resources Scanned</div></div>
         <div class="card"><div class="value">⚠️</div><div class="label">Counts do not match</div></div>
     </div>
 
@@ -107,7 +108,7 @@
                 <div class="meta-row"><span>Last active</span><span>N/A</span></div>
             </div>
             <div>
-                <div class="meta-row"><span>AzureRM repo commit</span><span><code>ed0d90f64ffbe7036efb9e2963c4fadde6f65716</code></span></div>
+                <div class="meta-row"><span>AzureRM repo commit</span><span><code>c5beefc85c69936cef7f89fcbe654636b47ed45b</code></span></div>
                 <div class="meta-row"><span>Script SHA-256</span><span><code>5686b2b3705f172e...</code></span></div>
             </div>
         </div>
@@ -175,6 +176,7 @@ datashare                      azurerm_data_share                               
 datashare                      azurerm_data_share_account                              [untyped] ✅ Identity
 datashare                      azurerm_data_share_dataset_kusto_cluster                [untyped] ✅ Identity
 datashare                      azurerm_data_share_dataset_kusto_database               [untyped] ✅ Identity
+eventgrid                      azurerm_eventgrid_namespace_topic                       [typed] ✅ Identity
 firewall                       azurerm_firewall                                        [untyped] ✅ Identity 📋 List
 firewall                       azurerm_firewall_policy                                 [untyped] ✅ Identity 📋 List
 firewall                       azurerm_firewall_policy_rule_collection_group           [untyped] ✅ Identity 📋 List
@@ -251,13 +253,13 @@ workloads                      azurerm_workloads_sap_three_tier_virtual_instance
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources with Identity Implemented
 ───────────────────────────────────────────────────────────────────────────────────
-   Total with Identity:  131 of 1128 (11%)
-   ├─ Typed:             38
+   Total with Identity:  132 of 1129 (11%)
+   ├─ Typed:             39
    └─ Untyped:           93
 
    List Support:
-   ├─ 📋 With List:      46 (35% of identity, 4% of total)
-   └─ ⬜ Without List:   85
+   ├─ 📋 With List:      46 (34% of identity, 4% of total)
+   └─ ⬜ Without List:   86
 ═══════════════════════════════════════════════════════════════════════════════════</pre>
     </div>
 
@@ -693,6 +695,7 @@ eventgrid                      azurerm_eventgrid_domain                         
 eventgrid                      azurerm_eventgrid_domain_topic                          [untyped] ⬜ Missing List | ❌ Identity (eligible)
 eventgrid                      azurerm_eventgrid_event_subscription                    [untyped] ⬜ Missing List | ❌ Identity (scoped_id)
 eventgrid                      azurerm_eventgrid_namespace                             [typed] ⬜ Missing List | ❌ Identity (eligible)
+eventgrid                      azurerm_eventgrid_namespace_topic                       [typed] ⬜ Missing List | ✅ Identity
 eventgrid                      azurerm_eventgrid_partner_configuration                 [typed] ⬜ Missing List | ❌ Identity (eligible)
 eventgrid                      azurerm_eventgrid_partner_namespace                     [typed] ⬜ Missing List | ❌ Identity (eligible)
 eventgrid                      azurerm_eventgrid_partner_registration                  [typed] ⬜ Missing List | ❌ Identity (eligible)
@@ -1347,10 +1350,10 @@ web                            azurerm_static_site_custom_domain                
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources Missing List Implementation
 ───────────────────────────────────────────────────────────────────────────────────
-   Total Missing List:   1079
+   Total Missing List:   1080
 
    Of these, Identity Status:
-   ✅ Have Identity:     85 (Ready for List)
+   ✅ Have Identity:     86 (Ready for List)
    ❌ Missing Identity:  994
 ═══════════════════════════════════════════════════════════════════════════════════</pre>
     </div>
@@ -2356,7 +2359,7 @@ web                            azurerm_static_site_custom_domain                
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources Missing Identity
 ───────────────────────────────────────────────────────────────────────────────────
-   Total Missing:        994 of 1128 (88%)
+   Total Missing:        994 of 1129 (88%)
    ├─ Typed:             378
    └─ Untyped:           616
 

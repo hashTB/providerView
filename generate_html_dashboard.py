@@ -627,6 +627,7 @@ HTML_PART2 = '''</p>
         <nav class="topnav">
             <a href="index.html" class="active">All Providers</a>
             <a href="downloads.html">📈 Download Trends</a>
+                <a href="cloud-devex.html">Cloud DevEx</a>
             <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
         </nav>
         

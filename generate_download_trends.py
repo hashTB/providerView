@@ -490,7 +490,8 @@ def generate_html(data):
     </div>
     <nav class=\"topnav\">
         <a href=\"index.html\">All Providers</a>
-        <a href=\"downloads.html\" class=\"active\">📈 Download Trends</a>
+                    <a href=\"downloads.html\" class=\"active\">📈 Download Trends</a>
+                    <a href=\"cloud-devex.html\">Cloud DevEx</a>
         <a href=\"azurerm-list-check.html\">✅ AzureRM List Check</a>
     </nav>
     <p class=\"subtitle\">

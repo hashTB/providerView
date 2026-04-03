@@ -55,6 +55,7 @@ jobs:
         run: |
           python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
           python3 generate_download_trends.py
+          python3 generate_cloud_devex.py
           cp terraform_providers.csv docs/
 
       - name: Commit and push changes
@@ -63,5 +64,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add terraform_providers.csv docs/
           git add data/azurerm_list_check.json 2>/dev/null || true
+          git add data/cloud_devex.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Update provider dashboard $(date +'%Y-%m-%d')"
           git push

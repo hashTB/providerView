@@ -8,6 +8,7 @@ on:
       - docs/**
       - data/history.json
       - data/azurerm_list_check.json
+      - data/cloud_devex.json
       - .github/workflows/deploy-pages-on-push.yml
   workflow_dispatch:
 
@@ -39,11 +40,13 @@ jobs:
           cp docs/index.html _site/index.html
           cp docs/downloads.html _site/downloads.html 2>/dev/null || true
           cp docs/azurerm-list-check.html _site/azurerm-list-check.html 2>/dev/null || true
+          cp docs/cloud-devex.html _site/cloud-devex.html 2>/dev/null || true
           cp docs/terraform_providers.csv _site/terraform_providers.csv 2>/dev/null || true
 
           # JSON data used by client-side views
           cp data/history.json _site/data/history.json 2>/dev/null || true
           cp data/azurerm_list_check.json _site/data/azurerm_list_check.json 2>/dev/null || true
+          cp data/cloud_devex.json _site/data/cloud_devex.json 2>/dev/null || true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
