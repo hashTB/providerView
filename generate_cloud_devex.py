@@ -18,7 +18,7 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 
@@ -44,6 +44,17 @@ FAMILY_COLORS = {
     "Azure": "#00BCF2",
     "AWS": "#FF9900",
     "GCP": "#4285F4",
+}
+
+PR_LOOKBACK_DAYS = int(os.getenv("CLOUD_DEVEX_PR_LOOKBACK_DAYS", "180"))
+PR_PER_REPO_MAX = int(os.getenv("CLOUD_DEVEX_PR_PER_REPO_MAX", "100"))
+
+ASSOCIATION_INTERNAL = {"OWNER", "MEMBER", "COLLABORATOR"}
+
+VENDOR_KEYWORDS = {
+    "Azure": ["microsoft", "azure"],
+    "AWS": ["amazon", "aws"],
+    "GCP": ["google", "alphabet"],
 }
 
 
@@ -158,6 +169,89 @@ def fetch_repo_metadata(repo):
     }
 
 
+def fetch_user_company(login):
+    if not login:
+        return ""
+    try:
+        data = fetch_json(f"https://api.github.com/users/{login}")
+    except (urllib.error.HTTPError, urllib.error.URLError):
+        return ""
+    return (data.get("company") or "").strip()
+
+
+def classify_pr_author(family, login, company, author_association):
+    assoc = (author_association or "").upper()
+    if assoc in ASSOCIATION_INTERNAL:
+        return "internal"
+
+    hay = f"{(login or '').lower()} {(company or '').lower()}"
+    keywords = VENDOR_KEYWORDS.get(family, [])
+    if any(k in hay for k in keywords):
+        return "cloud-vendor"
+
+    return "community"
+
+
+def fetch_pr_attribution(repo, family, user_company_cache):
+    result = {
+        "window_days": PR_LOOKBACK_DAYS,
+        "merged_total": 0,
+        "internal_count": 0,
+        "cloud_vendor_count": 0,
+        "community_count": 0,
+        "sampled_closed_prs": 0,
+    }
+    if not repo:
+        return result
+
+    url = (
+        f"https://api.github.com/repos/{repo}/pulls"
+        f"?state=closed&sort=updated&direction=desc&per_page={PR_PER_REPO_MAX}"
+    )
+    try:
+        pulls = fetch_json(url)
+    except (urllib.error.HTTPError, urllib.error.URLError):
+        return result
+
+    if not isinstance(pulls, list):
+        return result
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=PR_LOOKBACK_DAYS)
+    result["sampled_closed_prs"] = len(pulls)
+
+    for pr in pulls:
+        merged_at = pr.get("merged_at")
+        if not merged_at:
+            continue
+        try:
+            merged_dt = datetime.fromisoformat(merged_at.replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if merged_dt < cutoff:
+            continue
+
+        user = pr.get("user") or {}
+        login = user.get("login") or ""
+        assoc = pr.get("author_association") or ""
+
+        if login in user_company_cache:
+            company = user_company_cache[login]
+        else:
+            company = fetch_user_company(login)
+            user_company_cache[login] = company
+
+        bucket = classify_pr_author(family, login, company, assoc)
+        result["merged_total"] += 1
+        if bucket == "internal":
+            result["internal_count"] += 1
+        elif bucket == "cloud-vendor":
+            result["cloud_vendor_count"] += 1
+        else:
+            result["community_count"] += 1
+
+    return result
+
+
 def fetch_gomod_flags(repo, default_branch):
     if not repo:
         return {
@@ -206,6 +300,7 @@ def fetch_gomod_flags(repo, default_branch):
 
 def build_rows(csv_rows, sources):
     rows = []
+    user_company_cache = {}
     for family, providers in CLOUD_PROVIDERS.items():
         for full_name in providers:
             row = csv_rows.get(full_name.lower(), {})
@@ -213,6 +308,7 @@ def build_rows(csv_rows, sources):
             repo = source_to_repo(source)
             repo_meta = fetch_repo_metadata(repo)
             go_mod = fetch_gomod_flags(repo, repo_meta.get("default_branch", "main"))
+            pr_attr = fetch_pr_attribution(repo, family, user_company_cache)
 
             enriched = {
                 "family": family,
@@ -234,6 +330,12 @@ def build_rows(csv_rows, sources):
                 "repo_stars": repo_meta.get("stars", 0),
                 "repo_open_issues": repo_meta.get("open_issues", 0),
                 "repo_age_years": years_since(repo_meta.get("created_at")),
+                "pr_window_days": pr_attr.get("window_days", PR_LOOKBACK_DAYS),
+                "pr_merged_total": pr_attr.get("merged_total", 0),
+                "pr_internal": pr_attr.get("internal_count", 0),
+                "pr_cloud_vendor": pr_attr.get("cloud_vendor_count", 0),
+                "pr_community": pr_attr.get("community_count", 0),
+                "pr_sampled_closed": pr_attr.get("sampled_closed_prs", 0),
                 **go_mod,
             }
             rows.append(enriched)
@@ -253,10 +355,21 @@ def summarize_family(rows, family):
             "sdk_v1_pct": 0,
             "archived_count": 0,
             "avg_repo_age_years": None,
+            "pr_total": 0,
+            "pr_internal_pct": 0,
+            "pr_cloud_vendor_pct": 0,
+            "pr_community_pct": 0,
         }
 
     def pct(v):
         return round((v / count) * 100, 1)
+
+    pr_total = sum(r["pr_merged_total"] for r in fam_rows)
+
+    def pr_pct(v):
+        if pr_total == 0:
+            return 0
+        return round((v / pr_total) * 100, 1)
 
     ages = [r["repo_age_years"] for r in fam_rows if r["repo_age_years"] is not None]
     return {
@@ -268,6 +381,10 @@ def summarize_family(rows, family):
         "sdk_v1_pct": pct(sum(1 for r in fam_rows if r["has_sdk_v1"])),
         "archived_count": sum(1 for r in fam_rows if r["repo_archived"]),
         "avg_repo_age_years": round(sum(ages) / len(ages), 2) if ages else None,
+        "pr_total": pr_total,
+        "pr_internal_pct": pr_pct(sum(r["pr_internal"] for r in fam_rows)),
+        "pr_cloud_vendor_pct": pr_pct(sum(r["pr_cloud_vendor"] for r in fam_rows)),
+        "pr_community_pct": pr_pct(sum(r["pr_community"] for r in fam_rows)),
     }
 
 
@@ -299,6 +416,10 @@ def generate_html(rows, family_summary):
             f"<td>{iso_to_date(r['repo_created_at'])}</td>"
             f"<td>{r['repo_age_years'] if r['repo_age_years'] is not None else 'N/A'}</td>"
             f"<td>{iso_to_date(r['repo_pushed_at'])}</td>"
+            f"<td>{r['pr_merged_total']}</td>"
+            f"<td>{r['pr_internal']}</td>"
+            f"<td>{r['pr_cloud_vendor']}</td>"
+            f"<td>{r['pr_community']}</td>"
             f"<td><a href=\"{r['source']}\" target=\"_blank\">repo</a></td>"
             "</tr>"
         )
@@ -317,6 +438,10 @@ def generate_html(rows, family_summary):
             f"<td>{s['sdk_v1_pct']}%</td>"
             f"<td>{s['archived_count']}</td>"
             f"<td>{s['avg_repo_age_years'] if s['avg_repo_age_years'] is not None else 'N/A'}</td>"
+            f"<td>{s['pr_total']}</td>"
+            f"<td>{s['pr_internal_pct']}%</td>"
+            f"<td>{s['pr_cloud_vendor_pct']}%</td>"
+            f"<td>{s['pr_community_pct']}%</td>"
             "</tr>"
         )
 
@@ -378,6 +503,10 @@ def generate_html(rows, family_summary):
             <th>SDK v1 usage</th>
             <th>Archived repos</th>
             <th>Avg repo age (years)</th>
+                        <th>Merged PRs ({PR_LOOKBACK_DAYS}d)</th>
+                        <th>PR Internal %</th>
+                        <th>PR Cloud-vendor %</th>
+                        <th>PR Community %</th>
           </tr>
         </thead>
         <tbody>
@@ -409,6 +538,10 @@ def generate_html(rows, family_summary):
             <th>Repo created</th>
             <th>Repo age</th>
             <th>Last push</th>
+                        <th>Merged PRs ({PR_LOOKBACK_DAYS}d)</th>
+                        <th>Internal</th>
+                        <th>Cloud-vendor</th>
+                        <th>Community</th>
             <th>Source</th>
           </tr>
         </thead>
@@ -421,7 +554,8 @@ def generate_html(rows, family_summary):
     <div class=\"section\">
       <div class=\"note\">
         Signals in this page are public and fetched from GitHub API endpoints for each provider repository.
-        Cohort values come from providerView CSV, while repo/go.mod fields are fetched live at generation time.
+                Cohort values come from providerView CSV, while repo/go.mod and PR attribution are fetched live at generation time.
+                PR buckets: internal = OWNER/MEMBER/COLLABORATOR, cloud-vendor = login or company matches cloud family keywords, community = all others.
       </div>
     </div>
   </div>
