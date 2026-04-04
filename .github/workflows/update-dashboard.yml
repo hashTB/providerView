@@ -175,6 +175,8 @@ jobs:
           ls -la data/azurerm_list_check.json docs/azurerm-list-check.html
 
       - name: Generate cloud devex page
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 generate_cloud_devex.py
           echo "=== Cloud DevEx page generated ==="

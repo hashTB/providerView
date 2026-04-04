@@ -52,6 +52,8 @@ jobs:
           echo "=== AzureRM list validation generated ==="
 
       - name: Generate HTML dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 generate_html_dashboard.py terraform_providers.csv docs/index.html
           python3 generate_download_trends.py

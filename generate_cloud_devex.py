@@ -50,6 +50,12 @@ PR_LOOKBACK_DAYS = int(os.getenv("CLOUD_DEVEX_PR_LOOKBACK_DAYS", "180"))
 PR_PER_REPO_MAX = int(os.getenv("CLOUD_DEVEX_PR_PER_REPO_MAX", "100"))
 PR_TABLE_MAX_PER_FAMILY = int(os.getenv("CLOUD_DEVEX_PR_TABLE_MAX_PER_FAMILY", "200"))
 
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN") or ""
+USE_USER_PROFILE_LOOKUP = os.getenv(
+    "CLOUD_DEVEX_USE_USER_PROFILE_LOOKUP",
+    "1" if GITHUB_TOKEN else "0",
+).strip().lower() in {"1", "true", "yes", "y"}
+
 ASSOCIATION_INTERNAL = {"OWNER", "MEMBER", "COLLABORATOR"}
 
 VENDOR_KEYWORDS = {
@@ -103,9 +109,8 @@ def fmt_num(n):
 
 def fetch_json(url):
     headers = {"User-Agent": "providerView-cloud-devex/1.0"}
-    token = os.getenv("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read())
@@ -202,6 +207,7 @@ def fetch_pr_attribution(repo, family, user_company_cache):
         "community_count": 0,
         "sampled_closed_prs": 0,
         "merged_prs": [],
+        "fetch_error": "",
     }
     if not repo:
         return result
@@ -212,7 +218,11 @@ def fetch_pr_attribution(repo, family, user_company_cache):
     )
     try:
         pulls = fetch_json(url)
-    except (urllib.error.HTTPError, urllib.error.URLError):
+    except urllib.error.HTTPError as e:
+        result["fetch_error"] = f"HTTP {e.code}: {e.reason}"
+        return result
+    except urllib.error.URLError as e:
+        result["fetch_error"] = f"URL error: {e.reason}"
         return result
 
     if not isinstance(pulls, list):
@@ -239,7 +249,7 @@ def fetch_pr_attribution(repo, family, user_company_cache):
         if login in user_company_cache:
             company = user_company_cache[login]
         else:
-            company = fetch_user_company(login)
+            company = fetch_user_company(login) if USE_USER_PROFILE_LOOKUP else ""
             user_company_cache[login] = company
 
         bucket = classify_pr_author(family, login, company, assoc)
@@ -313,9 +323,10 @@ def fetch_gomod_flags(repo, default_branch):
     }
 
 
-def build_rows(csv_rows, sources):
+def build_rows(csv_rows, sources, previous_pr_cache=None):
     rows = []
     user_company_cache = {}
+    previous_pr_cache = previous_pr_cache or {}
     for family, providers in CLOUD_PROVIDERS.items():
         for full_name in providers:
             row = csv_rows.get(full_name.lower(), {})
@@ -324,6 +335,23 @@ def build_rows(csv_rows, sources):
             repo_meta = fetch_repo_metadata(repo)
             go_mod = fetch_gomod_flags(repo, repo_meta.get("default_branch", "main"))
             pr_attr = fetch_pr_attribution(repo, family, user_company_cache)
+            cached_pr = previous_pr_cache.get(full_name.lower(), {})
+
+            pr_merged_total = pr_attr.get("merged_total", 0)
+            pr_internal = pr_attr.get("internal_count", 0)
+            pr_cloud_vendor = pr_attr.get("cloud_vendor_count", 0)
+            pr_community = pr_attr.get("community_count", 0)
+            pr_sampled_closed = pr_attr.get("sampled_closed_prs", 0)
+            merged_prs = pr_attr.get("merged_prs", [])
+            pr_fetch_error = pr_attr.get("fetch_error", "")
+
+            if pr_fetch_error and cached_pr:
+                pr_merged_total = int(cached_pr.get("pr_merged_total", 0) or 0)
+                pr_internal = int(cached_pr.get("pr_internal", 0) or 0)
+                pr_cloud_vendor = int(cached_pr.get("pr_cloud_vendor", 0) or 0)
+                pr_community = int(cached_pr.get("pr_community", 0) or 0)
+                pr_sampled_closed = int(cached_pr.get("pr_sampled_closed", 0) or 0)
+                merged_prs = cached_pr.get("merged_prs", []) or []
 
             enriched = {
                 "family": family,
@@ -346,12 +374,13 @@ def build_rows(csv_rows, sources):
                 "repo_open_issues": repo_meta.get("open_issues", 0),
                 "repo_age_years": years_since(repo_meta.get("created_at")),
                 "pr_window_days": pr_attr.get("window_days", PR_LOOKBACK_DAYS),
-                "pr_merged_total": pr_attr.get("merged_total", 0),
-                "pr_internal": pr_attr.get("internal_count", 0),
-                "pr_cloud_vendor": pr_attr.get("cloud_vendor_count", 0),
-                "pr_community": pr_attr.get("community_count", 0),
-                "pr_sampled_closed": pr_attr.get("sampled_closed_prs", 0),
-                "merged_prs": pr_attr.get("merged_prs", []),
+                "pr_merged_total": pr_merged_total,
+                "pr_internal": pr_internal,
+                "pr_cloud_vendor": pr_cloud_vendor,
+                "pr_community": pr_community,
+                "pr_sampled_closed": pr_sampled_closed,
+                "pr_fetch_error": pr_fetch_error,
+                "merged_prs": merged_prs,
                 **go_mod,
             }
             rows.append(enriched)
@@ -417,6 +446,7 @@ def build_pr_views(rows):
                 "internal": r["pr_internal"],
                 "cloud_vendor": r["pr_cloud_vendor"],
                 "community": r["pr_community"],
+                "status": r.get("pr_fetch_error") or "ok",
             }
         )
 
@@ -478,6 +508,7 @@ def generate_html(rows, family_summary):
             f"<td>{r['pr_internal']}</td>"
             f"<td>{r['pr_cloud_vendor']}</td>"
             f"<td>{r['pr_community']}</td>"
+            f"<td>{r['pr_fetch_error'] or 'ok'}</td>"
             f"<td><a href=\"{r['source']}\" target=\"_blank\">repo</a></td>"
             "</tr>"
         )
@@ -515,6 +546,7 @@ def generate_html(rows, family_summary):
                 f"<td>{p['internal']}</td>"
                 f"<td>{p['cloud_vendor']}</td>"
                 f"<td>{p['community']}</td>"
+                f"<td>{p['status']}</td>"
                 "</tr>"
             )
         family_provider_tables.append(
@@ -522,7 +554,7 @@ def generate_html(rows, family_summary):
             f"<h2>{fam} PR Contribution Split by Provider</h2>"
             "<table>"
             "<thead><tr>"
-            "<th>Provider</th><th>Repo</th><th>Merged PRs</th><th>Internal</th><th>Cloud-vendor</th><th>Community</th>"
+            "<th>Provider</th><th>Repo</th><th>Merged PRs</th><th>Internal</th><th>Cloud-vendor</th><th>Community</th><th>Status</th>"
             "</tr></thead>"
             f"<tbody>{''.join(table_rows)}</tbody>"
             "</table>"
@@ -654,6 +686,7 @@ def generate_html(rows, family_summary):
                         <th>Internal</th>
                         <th>Cloud-vendor</th>
                         <th>Community</th>
+                        <th>PR Status</th>
             <th>Source</th>
           </tr>
         </thead>
@@ -672,6 +705,7 @@ def generate_html(rows, family_summary):
         Signals in this page are public and fetched from GitHub API endpoints for each provider repository.
                 Cohort values come from providerView CSV, while repo/go.mod and PR attribution are fetched live at generation time.
                 PR buckets: internal = OWNER/MEMBER/COLLABORATOR, cloud-vendor = login or company matches cloud family keywords, community = all others.
+                To avoid API quota failures, author company lookup is enabled only when a GitHub token is present, unless overridden.
                 PR detail tables are capped per family by CLOUD_DEVEX_PR_TABLE_MAX_PER_FAMILY (default: {PR_TABLE_MAX_PER_FAMILY}).
       </div>
     </div>
@@ -694,7 +728,19 @@ def main():
 
     csv_rows = load_provider_csv(csv_path)
     sources = load_sources(raw_path)
-    rows = build_rows(csv_rows, sources)
+
+    previous_pr_cache = {}
+    if out_json.exists():
+        try:
+            existing = json.loads(out_json.read_text(encoding="utf-8"))
+            for row in existing.get("rows", []):
+                provider = (row.get("provider") or "").strip().lower()
+                if provider:
+                    previous_pr_cache[provider] = row
+        except (json.JSONDecodeError, OSError):
+            previous_pr_cache = {}
+
+    rows = build_rows(csv_rows, sources, previous_pr_cache=previous_pr_cache)
 
     family_summary = {
         fam: summarize_family(rows, fam)

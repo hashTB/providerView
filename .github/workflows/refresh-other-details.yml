@@ -52,6 +52,8 @@ jobs:
           echo "=== AzureRM list validation generated ==="
 
       - name: Generate cloud devex page
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 generate_cloud_devex.py
           echo "=== Cloud DevEx page generated ==="
