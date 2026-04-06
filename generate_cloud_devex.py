@@ -630,6 +630,7 @@ def generate_html(rows, family_summary):
       <a href=\"downloads.html\">Download Trends</a>
       <a href=\"cloud-devex.html\" class=\"active\">Cloud DevEx</a>
       <a href=\"azurerm-list-check.html\">AzureRM List Check</a>
+            <a href=\"aws-list-check.html\">AWS List Check</a>
     </nav>
     <p class=\"subtitle\">Public GitHub signals for core cloud provider repos (Azure, AWS, GCP). Generated {now}.</p>
 

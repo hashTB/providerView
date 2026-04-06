@@ -493,6 +493,7 @@ def generate_html(data):
                     <a href=\"downloads.html\" class=\"active\">📈 Download Trends</a>
                     <a href=\"cloud-devex.html\">Cloud DevEx</a>
         <a href=\"azurerm-list-check.html\">✅ AzureRM List Check</a>
+        <a href=\"aws-list-check.html\">AWS List Check</a>
     </nav>
     <p class=\"subtitle\">
         Consolidated monthly totals and rates for Azure/AWS/GCP, plus key providers

@@ -629,6 +629,7 @@ HTML_PART2 = '''</p>
             <a href="downloads.html">📈 Download Trends</a>
                 <a href="cloud-devex.html">Cloud DevEx</a>
             <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
+            <a href="aws-list-check.html">AWS List Check</a>
         </nav>
         
         <div class="metrics" id="metrics">
@@ -864,6 +865,9 @@ HTML_PART3E = ''';
 
 HTML_PART3F = ''';
     const azurermListCheck = '''
+
+HTML_PART3G = ''';
+    const awsListCheck = '''
 
 HTML_PART4 = ''';
         
@@ -1157,6 +1161,21 @@ HTML_PART4 = ''';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
                 html += 'Dashboard list resources: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
                 html += 'Gist scan with list: <strong style="color: var(--text);">' + validation.gist_with_list + '</strong>';
+                html += '</div>';
+                html += '</div>';
+            }
+
+            if (isAWS && awsListCheck && awsListCheck.validation) {
+                var awsValidation = awsListCheck.validation;
+                var awsValidationIcon = awsValidation.matches ? '✅' : '⚠️';
+                html += '<div style="margin-bottom: 20px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;">';
+                html += '<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">';
+                html += '<span><strong>' + awsValidationIcon + ' AWS List Validation</strong></span>';
+                html += '<a href="aws-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
+                html += '</div>';
+                html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
+                html += 'Dashboard list resources: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Tracking script implemented list: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1636,11 +1655,27 @@ HTML_PART4 = ''';
             return ' <a href="azurerm-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
 
+        function getAwsListCheckBadge() {
+            if (!awsListCheck || !awsListCheck.validation) return '';
+
+            var validation = awsListCheck.validation;
+            var matches = validation.matches;
+            var icon = matches ? '✅' : '⚠️';
+            var title = matches
+                ? 'Validated against latest AWS tracking script: ' + validation.script_implemented_list + ' matches dashboard ' + validation.dashboard_list_resources
+                : 'AWS tracking validation mismatch: script ' + validation.script_implemented_list + ' vs dashboard ' + validation.dashboard_list_resources;
+
+            return ' <a href="aws-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
+        }
+
         function renderListResources(data, type, row) {
             if (type !== 'display') return data;
             var content = renderClickable(data, type, row, 'list-resources');
             if (row.provider === 'hashicorp/azurerm' && data && data > 0) {
                 content += getAzurermListCheckBadge();
+            }
+            if (row.provider === 'hashicorp/aws' && data && data > 0) {
+                content += getAwsListCheckBadge();
             }
             return content;
         }
@@ -1949,6 +1984,22 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
             azurerm_list_check_json = '{}'
     except FileNotFoundError:
         print(f"   ⚠️  No AzureRM list validation file found")
+
+    # Try to load AWS list validation JSON
+    aws_list_check_json = '{}'
+    aws_list_check_path = csv_dir / 'data' / 'aws_list_check.json'
+
+    print(f"   Looking for AWS list validation at: {aws_list_check_path.absolute()}")
+    try:
+        with open(aws_list_check_path, 'r', encoding='utf-8') as f:
+            aws_list_check_json = f.read()
+        if aws_list_check_json.strip() and aws_list_check_json.strip() != '{}':
+            print(f"   ✅ Loaded AWS list validation from {aws_list_check_path}")
+        else:
+            print(f"   ⚠️  AWS list validation file exists but is empty")
+            aws_list_check_json = '{}'
+    except FileNotFoundError:
+        print(f"   ⚠️  No AWS list validation file found")
     
     html = (
         HTML_PART1 +
@@ -1967,6 +2018,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         aws_identity_json +
         HTML_PART3F +
         azurerm_list_check_json +
+        HTML_PART3G +
+        aws_list_check_json +
         HTML_PART4
     )
     
