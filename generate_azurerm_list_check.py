@@ -125,6 +125,51 @@ def parse_mode_summary(output: str, mode: str) -> dict:
     return summary
 
 
+def parse_implemented_service_coverage(output: str) -> list[dict]:
+    service_stats: dict[str, dict[str, set[str]]] = {}
+    row_pattern = re.compile(
+        r"^\s*([a-z0-9_]+)\s+(azurerm_[a-z0-9_]+)\s+(?:\[[^\]]+\]\s+)?✅ Identity(?:\s+📋 List)?\s*$"
+    )
+
+    for line in output.splitlines():
+        if "SUMMARY:" in line or "══" in line or "──" in line:
+            continue
+
+        match = row_pattern.match(line)
+        if not match:
+            continue
+
+        service = match.group(1)
+        resource = match.group(2)
+        has_list = "📋 List" in line
+
+        if service not in service_stats:
+            service_stats[service] = {"identity": set(), "list": set()}
+
+        service_stats[service]["identity"].add(resource)
+        if has_list:
+            service_stats[service]["list"].add(resource)
+
+    rows = []
+    for service, stats in service_stats.items():
+        total_identity = len(stats["identity"])
+        list_count = len(stats["list"])
+        if total_identity == 0:
+            continue
+        percent = round((list_count / total_identity) * 100)
+        rows.append(
+            {
+                "service": service,
+                "list_resources": list_count,
+                "identity_resources": total_identity,
+                "percent": percent,
+            }
+        )
+
+    rows.sort(key=lambda row: (-row["list_resources"], -row["percent"], row["service"]))
+    return rows
+
+
 def load_dashboard_list_count(details_path: Path) -> int | None:
     try:
         with open(details_path, "r", encoding="utf-8") as f:
@@ -165,6 +210,8 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
     if total_resources is not None and list_summary.get("missing_list") is not None:
         derived_total_with_list = total_resources - list_summary["missing_list"]
 
+    service_rows = parse_implemented_service_coverage(outputs["implemented"]["stdout"])
+
     matches = (
         dashboard_count is not None
         and gist_with_list is not None
@@ -198,6 +245,10 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
             }
             for mode, result in outputs.items()
         },
+        "service_coverage": {
+            "services_with_list": len([row for row in service_rows if row["list_resources"] > 0]),
+            "top_services": [row for row in service_rows if row["list_resources"] > 0][:15],
+        },
         "validation": {
             "matches": matches,
             "dashboard_list_resources": dashboard_count,
@@ -222,11 +273,28 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
     validation = summary["validation"]
     gist = summary["gist"]
     repo = summary["source_repo"]
+    coverage = summary.get("service_coverage", {})
     match_icon = "✅" if validation["matches"] else "⚠️"
     match_text = "match" if validation["matches"] else "do not match"
 
     def fmt_val(value: int | None) -> str:
         return "N/A" if value is None else f"{value:,}"
+
+    top_rows = coverage.get("top_services", [])
+    if top_rows:
+        table_rows = "\n".join(
+            (
+                "<tr>"
+                f"<td><code>{html.escape(row['service'])}</code></td>"
+                f"<td>{fmt_val(row['list_resources'])}</td>"
+                f"<td>{fmt_val(row['identity_resources'])}</td>"
+                f"<td>{fmt_val(row['percent'])}%</td>"
+                "</tr>"
+            )
+            for row in top_rows
+        )
+    else:
+        table_rows = '<tr><td colspan="4" style="color: var(--text-muted);">No service-level list coverage found.</td></tr>'
 
     html_text = f"""<!DOCTYPE html>
 <html lang=\"en\">
@@ -305,6 +373,9 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
         }}
         code {{ color: #93c5fd; }}
         a {{ color: var(--primary); }}
+        table {{ width: 100%; border-collapse: collapse; margin-top: 10px; }}
+        th, td {{ border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; font-size: 0.9rem; }}
+        th {{ color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }}
     </style>
 </head>
 <body>
@@ -343,6 +414,24 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
                 <div class=\"meta-row\"><span>Script SHA-256</span><span><code>{html.escape(gist['script_sha256'][:16])}...</code></span></div>
             </div>
         </div>
+    </div>
+
+    <div class="section">
+        <h2>Best Covered Services (List)</h2>
+        <p class="subtitle" style="margin-bottom: 12px;">Top services by list-enabled resources from implemented mode. Services with at least one list-enabled resource: <strong>{fmt_val(coverage.get('services_with_list'))}</strong>.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>List Resources</th>
+                    <th>Identity Resources</th>
+                    <th>Coverage</th>
+                </tr>
+            </thead>
+            <tbody>
+                {table_rows}
+            </tbody>
+        </table>
     </div>
 
 {render_output_block('Implemented Mode Output', 'implemented', outputs['implemented']['stdout'])}

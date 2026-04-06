@@ -133,6 +133,8 @@ def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path:
     dashboard_count = load_dashboard_list_count(details_path)
     implemented = parsed["overall"].get("implemented")
     total = parsed["overall"].get("total")
+    service_rows = [s for s in parsed.get("services", []) if s.get("implemented", 0) > 0]
+    service_rows.sort(key=lambda s: (-s["implemented"], -s["percent"], s["service"]))
 
     matches = (
         dashboard_count is not None
@@ -164,6 +166,10 @@ def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path:
             "stderr_line_count": len(output["stderr"].splitlines()),
             "parsed": parsed,
         },
+        "service_coverage": {
+            "services_with_list": len(service_rows),
+            "top_services": service_rows[:15],
+        },
         "validation": {
             "matches": matches,
             "dashboard_list_resources": dashboard_count,
@@ -179,6 +185,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     script = summary["tracking_script"]
     repo = summary["source_repo"]
     parsed = summary["script_results"]["parsed"]
+    coverage = summary.get("service_coverage", {})
     match_icon = "OK" if validation["matches"] else "WARN"
     match_text = "match" if validation["matches"] else "do not match"
 
@@ -186,6 +193,22 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         return "N/A" if value is None else f"{value:,}"
 
     escaped_output = html.escape(output["stdout"].strip() or "(no output)")
+    top_rows = coverage.get("top_services", [])
+
+    if top_rows:
+        table_rows = "\n".join(
+            (
+                "<tr>"
+                f"<td><code>{html.escape(row['service'])}</code></td>"
+                f"<td>{fmt_val(row['implemented'])}</td>"
+                f"<td>{fmt_val(row['total'])}</td>"
+                f"<td>{fmt_val(row['percent'])}%</td>"
+                "</tr>"
+            )
+            for row in top_rows
+        )
+    else:
+        table_rows = '<tr><td colspan="4" style="color: var(--text-muted);">No service-level list coverage found.</td></tr>'
 
     html_text = f"""<!DOCTYPE html>
 <html lang=\"en\">
@@ -262,6 +285,9 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         }}
         code {{ color: #93c5fd; }}
         a {{ color: var(--primary); }}
+        table {{ width: 100%; border-collapse: collapse; margin-top: 10px; }}
+        th, td {{ border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; font-size: 0.9rem; }}
+        th {{ color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }}
     </style>
 </head>
 <body>
@@ -276,6 +302,24 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     </nav>
     <p class=\"subtitle\">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated {html.escape(summary['generated_at'])}.</p>
 
+
+    <div class="section">
+        <h2>Best Covered Services (List)</h2>
+        <p class="subtitle" style="margin-bottom: 12px;">Top services by implemented list resources. Services with at least one list-enabled resource: <strong>{fmt_val(coverage.get('services_with_list'))}</strong>.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>List Resources</th>
+                    <th>Total Resources</th>
+                    <th>Coverage</th>
+                </tr>
+            </thead>
+            <tbody>
+                {table_rows}
+            </tbody>
+        </table>
+    </div>
     <div class=\"cards\">
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_implemented_list'])}</div><div class=\"label\">Tracking Script List Resources</div></div>

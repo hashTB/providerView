@@ -73,6 +73,9 @@
         }
         code { color: #93c5fd; }
         a { color: var(--primary); }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; font-size: 0.9rem; }
+        th { color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
     </style>
 </head>
 <body>
@@ -85,8 +88,40 @@
         <a href="azurerm-list-check.html">AzureRM List Check</a>
         <a href="aws-list-check.html" class="active">AWS List Check</a>
     </nav>
-    <p class="subtitle">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated 2026-04-06T14:03:42.050645.</p>
+    <p class="subtitle">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated 2026-04-06T14:24:06.427440.</p>
 
+
+    <div class="section">
+        <h2>Best Covered Services (List)</h2>
+        <p class="subtitle" style="margin-bottom: 12px;">Top services by implemented list resources. Services with at least one list-enabled resource: <strong>32</strong>.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>List Resources</th>
+                    <th>Total Resources</th>
+                    <th>Coverage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>ec2</code></td><td>12</td><td>155</td><td>7%</td></tr>
+<tr><td><code>s3</code></td><td>10</td><td>26</td><td>38%</td></tr>
+<tr><td><code>iam</code></td><td>5</td><td>35</td><td>14%</td></tr>
+<tr><td><code>workmail</code></td><td>4</td><td>5</td><td>80%</td></tr>
+<tr><td><code>elbv2</code></td><td>4</td><td>8</td><td>50%</td></tr>
+<tr><td><code>kafka</code></td><td>3</td><td>9</td><td>33%</td></tr>
+<tr><td><code>lambda</code></td><td>3</td><td>14</td><td>21%</td></tr>
+<tr><td><code>appflow</code></td><td>2</td><td>2</td><td>100%</td></tr>
+<tr><td><code>cleanrooms</code></td><td>2</td><td>3</td><td>66%</td></tr>
+<tr><td><code>batch</code></td><td>2</td><td>4</td><td>50%</td></tr>
+<tr><td><code>secretsmanager</code></td><td>2</td><td>4</td><td>50%</td></tr>
+<tr><td><code>sns</code></td><td>2</td><td>6</td><td>33%</td></tr>
+<tr><td><code>ecs</code></td><td>2</td><td>8</td><td>25%</td></tr>
+<tr><td><code>events</code></td><td>2</td><td>9</td><td>22%</td></tr>
+<tr><td><code>kms</code></td><td>2</td><td>9</td><td>22%</td></tr>
+            </tbody>
+        </table>
+    </div>
     <div class="cards">
         <div class="card"><div class="value">71</div><div class="label">Registry-Reflected List Resources</div></div>
         <div class="card"><div class="value">77</div><div class="label">Tracking Script List Resources</div></div>
@@ -103,7 +138,7 @@
                 <div class="meta-row"><span>Tracking issue</span><span><a href="https://github.com/hashicorp/terraform-provider-aws/issues/47005">open</a></span></div>
                 <div class="meta-row"><span>Tracking script</span><span><a href="https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/main/.ci/scripts/generate-list-tracking.sh">open</a></span></div>
                 <div class="meta-row"><span>Script path</span><span><code>.ci/scripts/generate-list-tracking.sh</code></span></div>
-                <div class="meta-row"><span>Script last updated</span><span>2026-04-06 18:03:42 UTC</span></div>
+                <div class="meta-row"><span>Script last updated</span><span>2026-04-06 18:24:06 UTC</span></div>
                 <div class="meta-row"><span>Service blocks</span><span>236</span></div>
             </div>
             <div>
@@ -3154,7 +3189,7 @@ Expand a service below to see service-level progress.
 
 &lt;/details&gt;
 
-*Last updated: 2026-04-06 18:03:42 UTC*</pre>
+*Last updated: 2026-04-06 18:24:06 UTC*</pre>
     </div>
 </div>
 </body>
