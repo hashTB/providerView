@@ -76,18 +76,37 @@ def parse_tracking_output(output: str) -> dict:
     updated_match = re.search(r"\*Last updated:\s*([^*]+)\*", output)
 
     services = []
-    for match in re.finditer(
-        r"<details><summary><code>([^<]+)</code>\s+(\d+)%\s*\((\d+)/(\d+)\)(?:\s+[^<]+)?</summary>",
-        output,
-    ):
+    service_resources = {}
+    details_pattern = re.compile(
+        r"<details><summary><code>([^<]+)</code>\s+(\d+)%\s*\((\d+)/(\d+)\)(?:\s+[^<]+)?</summary><br>\s*(.*?)\s*</details>",
+        re.S,
+    )
+    for match in details_pattern.finditer(output):
+        service = match.group(1)
         services.append(
             {
-                "service": match.group(1),
+                "service": service,
                 "percent": int(match.group(2)),
                 "implemented": int(match.group(3)),
                 "total": int(match.group(4)),
             }
         )
+
+        service_block = match.group(5)
+        all_resources = []
+        list_resources = []
+        for row in re.finditer(r"\|\s+`([^`]+)`\s+\|\s+([✅❌])\s+\|\s+([✅❌])\s+\|", service_block):
+            resource_path = row.group(1).strip()
+            if not resource_path:
+                continue
+            all_resources.append(resource_path)
+            if row.group(3) == "✅":
+                list_resources.append(resource_path)
+
+        service_resources[service] = {
+            "all_resources": sorted(set(all_resources)),
+            "list_resources": sorted(set(list_resources)),
+        }
 
     return {
         "overall": {
@@ -97,6 +116,7 @@ def parse_tracking_output(output: str) -> dict:
         },
         "service_count": len(services),
         "services": services,
+        "service_resources": service_resources,
         "last_updated": updated_match.group(1).strip() if updated_match else None,
     }
 
@@ -169,6 +189,7 @@ def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path:
         "service_coverage": {
             "services_with_list": len(service_rows),
             "top_services": service_rows[:15],
+            "service_resources": parsed.get("service_resources", {}),
         },
         "validation": {
             "matches": matches,
@@ -194,12 +215,13 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
 
     escaped_output = html.escape(output["stdout"].strip() or "(no output)")
     top_rows = coverage.get("top_services", [])
+    service_resources_js = json.dumps(coverage.get("service_resources", {}), ensure_ascii=False)
 
     if top_rows:
         table_rows = "\n".join(
             (
                 "<tr>"
-                f"<td><code>{html.escape(row['service'])}</code></td>"
+                f"<td><button class=\"service-link\" data-service=\"{html.escape(row['service'])}\">{html.escape(row['service'])}</button></td>"
                 f"<td>{fmt_val(row['implemented'])}</td>"
                 f"<td>{fmt_val(row['total'])}</td>"
                 f"<td>{fmt_val(row['percent'])}%</td>"
@@ -298,6 +320,53 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
             font-size: 0.9rem;
         }}
         .table-controls input {{ min-width: 240px; }}
+        .service-link {{
+            background: none;
+            border: none;
+            color: #93c5fd;
+            cursor: pointer;
+            padding: 0;
+            font: inherit;
+            text-decoration: underline;
+        }}
+        .service-link:hover {{ color: #bfdbfe; }}
+        .modal {{
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            z-index: 999;
+        }}
+        .modal.open {{ display: flex; }}
+        .modal-card {{
+            width: min(860px, 100%);
+            max-height: 82vh;
+            overflow: auto;
+            background: #0b1220;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }}
+        .modal-head {{ display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 10px; }}
+        .modal-title {{ font-size: 1.05rem; font-weight: 700; }}
+        .modal-close {{
+            background: #111827;
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 8px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }}
+        .resource-columns {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }}
+        .resource-box {{ background: #111827; border: 1px solid var(--border); border-radius: 10px; padding: 12px; }}
+        .resource-box h3 {{ font-size: 0.9rem; margin-bottom: 8px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }}
+        .resource-list {{ list-style: none; margin: 0; padding: 0; max-height: 52vh; overflow: auto; }}
+        .resource-list li {{ padding: 4px 0; border-bottom: 1px solid rgba(148, 163, 184, 0.15); font-size: 0.85rem; }}
+        .resource-list li:last-child {{ border-bottom: none; }}
+        .resource-empty {{ color: var(--text-muted); font-size: 0.85rem; }}
     </style>
 </head>
 <body>
@@ -331,7 +400,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
                 <tr>
                     <th>Service</th>
                     <th>List Resources</th>
-                    <th>Total Resources</th>
+                    <th>Provider Total Resources</th>
                     <th>Coverage</th>
                 </tr>
             </thead>
@@ -372,7 +441,81 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         <pre>{escaped_output}</pre>
     </div>
 </div>
+<div class="modal" id="service-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
+        <div class="modal-head">
+            <div class="modal-title" id="service-modal-title">Service Resources</div>
+            <button class="modal-close" id="service-modal-close" type="button">Close</button>
+        </div>
+        <div class="resource-columns">
+            <div class="resource-box">
+                <h3>Provider Resources</h3>
+                <ul class="resource-list" id="service-all-list"></ul>
+                <p class="resource-empty" id="service-all-empty" style="display:none;">No resources found for this service.</p>
+            </div>
+            <div class="resource-box">
+                <h3>List-Enabled Resources</h3>
+                <ul class="resource-list" id="service-list-list"></ul>
+                <p class="resource-empty" id="service-list-empty" style="display:none;">No list-enabled resources in this service.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
+    const serviceResources = {service_resources_js};
+
+    function fillResourceList(listElement, emptyElement, values) {{
+        listElement.innerHTML = '';
+        const items = Array.isArray(values) ? values : [];
+        if (!items.length) {{
+            emptyElement.style.display = 'block';
+            return;
+        }}
+        emptyElement.style.display = 'none';
+        items.forEach((value) => {{
+            const li = document.createElement('li');
+            li.textContent = value;
+            listElement.appendChild(li);
+        }});
+    }}
+
+    function initServiceModal() {{
+        const modal = document.getElementById('service-modal');
+        const closeBtn = document.getElementById('service-modal-close');
+        const title = document.getElementById('service-modal-title');
+        const allList = document.getElementById('service-all-list');
+        const allEmpty = document.getElementById('service-all-empty');
+        const listList = document.getElementById('service-list-list');
+        const listEmpty = document.getElementById('service-list-empty');
+        if (!modal || !closeBtn || !title || !allList || !allEmpty || !listList || !listEmpty) return;
+
+        const close = () => {{
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+        }};
+
+        closeBtn.addEventListener('click', close);
+        modal.addEventListener('click', (event) => {{
+            if (event.target === modal) close();
+        }});
+        document.addEventListener('keydown', (event) => {{
+            if (event.key === 'Escape' && modal.classList.contains('open')) close();
+        }});
+
+        document.addEventListener('click', (event) => {{
+            const trigger = event.target.closest('.service-link');
+            if (!trigger) return;
+
+            const service = trigger.getAttribute('data-service') || '';
+            const data = serviceResources[service] || {{ all_resources: [], list_resources: [] }};
+            title.textContent = `${{service}} Resources`;
+            fillResourceList(allList, allEmpty, data.all_resources);
+            fillResourceList(listList, listEmpty, data.list_resources);
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+        }});
+    }}
+
     function initCoverageTable(tableId, searchId, sortId) {{
         const table = document.getElementById(tableId);
         const search = document.getElementById(searchId);
@@ -415,6 +558,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         render();
     }}
 
+    initServiceModal();
     initCoverageTable('aws-coverage-table', 'aws-service-search', 'aws-service-sort');
 </script>
 </body>
