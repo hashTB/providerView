@@ -288,6 +288,16 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         table {{ width: 100%; border-collapse: collapse; margin-top: 10px; }}
         th, td {{ border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; font-size: 0.9rem; }}
         th {{ color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }}
+        .table-controls {{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; margin-bottom: 8px; }}
+        .table-controls input, .table-controls select {{
+            background: #111827;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            padding: 8px 10px;
+            font-size: 0.9rem;
+        }}
+        .table-controls input {{ min-width: 240px; }}
     </style>
 </head>
 <body>
@@ -306,7 +316,17 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     <div class="section">
         <h2>Best Covered Services (List)</h2>
         <p class="subtitle" style="margin-bottom: 12px;">Top services by implemented list resources. Services with at least one list-enabled resource: <strong>{fmt_val(coverage.get('services_with_list'))}</strong>.</p>
-        <table>
+        <div class="table-controls">
+            <input id="aws-service-search" type="text" placeholder="Search by service (e.g. ec2, s3, iam)" />
+            <select id="aws-service-sort">
+                <option value="list_desc" selected>Sort: List Resources (high to low)</option>
+                <option value="coverage_desc">Sort: Coverage % (high to low)</option>
+                <option value="coverage_asc">Sort: Coverage % (low to high)</option>
+                <option value="service_asc">Sort: Service (A-Z)</option>
+                <option value="service_desc">Sort: Service (Z-A)</option>
+            </select>
+        </div>
+        <table id="aws-coverage-table">
             <thead>
                 <tr>
                     <th>Service</th>
@@ -352,6 +372,51 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         <pre>{escaped_output}</pre>
     </div>
 </div>
+<script>
+    function initCoverageTable(tableId, searchId, sortId) {{
+        const table = document.getElementById(tableId);
+        const search = document.getElementById(searchId);
+        const sort = document.getElementById(sortId);
+        if (!table || !search || !sort) return;
+
+        const tbody = table.querySelector('tbody');
+        const allRows = Array.from(tbody.querySelectorAll('tr')).map((row) => {{
+            const cells = row.querySelectorAll('td');
+            if (cells.length < 4) return null;
+
+            const service = cells[0].innerText.trim();
+            const listResources = parseInt(cells[1].innerText.replace(/,/g, ''), 10) || 0;
+            const totalResources = parseInt(cells[2].innerText.replace(/,/g, ''), 10) || 0;
+            const coverage = parseInt(cells[3].innerText.replace('%', '').trim(), 10) || 0;
+            return {{ row, service, listResources, totalResources, coverage }};
+        }}).filter(Boolean);
+
+        function compare(a, b, mode) {{
+            if (mode === 'service_asc') return a.service.localeCompare(b.service);
+            if (mode === 'service_desc') return b.service.localeCompare(a.service);
+            if (mode === 'coverage_desc') return (b.coverage - a.coverage) || (b.listResources - a.listResources) || a.service.localeCompare(b.service);
+            if (mode === 'coverage_asc') return (a.coverage - b.coverage) || (b.listResources - a.listResources) || a.service.localeCompare(b.service);
+            return (b.listResources - a.listResources) || (b.coverage - a.coverage) || a.service.localeCompare(b.service);
+        }}
+
+        function render() {{
+            const q = search.value.trim().toLowerCase();
+            const mode = sort.value;
+            const visible = allRows
+                .filter((item) => item.service.toLowerCase().includes(q))
+                .sort((a, b) => compare(a, b, mode));
+
+            tbody.innerHTML = '';
+            visible.forEach((item) => tbody.appendChild(item.row));
+        }}
+
+        search.addEventListener('input', render);
+        sort.addEventListener('change', render);
+        render();
+    }}
+
+    initCoverageTable('aws-coverage-table', 'aws-service-search', 'aws-service-sort');
+</script>
 </body>
 </html>
 """
