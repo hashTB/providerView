@@ -125,7 +125,7 @@ def parse_mode_summary(output: str, mode: str) -> dict:
     return summary
 
 
-def parse_implemented_service_coverage(output: str) -> list[dict]:
+def parse_implemented_service_coverage(output: str) -> dict[str, dict[str, set[str]]]:
     service_stats: dict[str, dict[str, set[str]]] = {}
     row_pattern = re.compile(
         r"^\s*([a-z0-9_]+)\s+(azurerm_[a-z0-9_]+)\s+(?:\[[^\]]+\]\s+)?✅ Identity(?:\s+📋 List)?\s*$"
@@ -150,24 +150,23 @@ def parse_implemented_service_coverage(output: str) -> list[dict]:
         if has_list:
             service_stats[service]["list"].add(resource)
 
-    rows = []
-    for service, stats in service_stats.items():
-        total_identity = len(stats["identity"])
-        list_count = len(stats["list"])
-        if total_identity == 0:
-            continue
-        percent = round((list_count / total_identity) * 100)
-        rows.append(
-            {
-                "service": service,
-                "list_resources": list_count,
-                "identity_resources": total_identity,
-                "percent": percent,
-            }
-        )
+    return service_stats
 
-    rows.sort(key=lambda row: (-row["list_resources"], -row["percent"], row["service"]))
-    return rows
+
+def parse_missing_list_service_coverage(output: str) -> dict[str, set[str]]:
+    service_stats: dict[str, set[str]] = {}
+    row_pattern = re.compile(r"^\s*([a-z0-9_]+)\s+(azurerm_[a-z0-9_]+)\s+.*⬜ Missing List.*$")
+
+    for line in output.splitlines():
+        match = row_pattern.match(line)
+        if not match:
+            continue
+
+        service = match.group(1)
+        resource = match.group(2)
+        service_stats.setdefault(service, set()).add(resource)
+
+    return service_stats
 
 
 def load_dashboard_list_count(details_path: Path) -> int | None:
@@ -210,7 +209,32 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
     if total_resources is not None and list_summary.get("missing_list") is not None:
         derived_total_with_list = total_resources - list_summary["missing_list"]
 
-    service_rows = parse_implemented_service_coverage(outputs["implemented"]["stdout"])
+    implemented_by_service = parse_implemented_service_coverage(outputs["implemented"]["stdout"])
+    missing_list_by_service = parse_missing_list_service_coverage(outputs["list"]["stdout"])
+
+    service_rows = []
+    all_services = set(implemented_by_service.keys()) | set(missing_list_by_service.keys())
+    for service in all_services:
+        implemented = implemented_by_service.get(service, {"identity": set(), "list": set()})
+        list_resources = implemented.get("list", set())
+        missing_resources = missing_list_by_service.get(service, set())
+
+        total_resources = len(list_resources | missing_resources)
+        if total_resources == 0:
+            continue
+
+        list_count = len(list_resources)
+        coverage_percent = round((list_count / total_resources) * 100)
+        service_rows.append(
+            {
+                "service": service,
+                "list_resources": list_count,
+                "total_resources": total_resources,
+                "percent": coverage_percent,
+            }
+        )
+
+    service_rows.sort(key=lambda row: (-row["list_resources"], -row["percent"], row["service"]))
 
     matches = (
         dashboard_count is not None
@@ -287,7 +311,7 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
                 "<tr>"
                 f"<td><code>{html.escape(row['service'])}</code></td>"
                 f"<td>{fmt_val(row['list_resources'])}</td>"
-                f"<td>{fmt_val(row['identity_resources'])}</td>"
+                f"<td>{fmt_val(row['total_resources'])}</td>"
                 f"<td>{fmt_val(row['percent'])}%</td>"
                 "</tr>"
             )
@@ -424,7 +448,7 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
                 <tr>
                     <th>Service</th>
                     <th>List Resources</th>
-                    <th>Identity Resources</th>
+                    <th>Total Resources</th>
                     <th>Coverage</th>
                 </tr>
             </thead>

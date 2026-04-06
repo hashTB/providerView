@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T14:23:21.866728",
+  "generated_at": "2026-04-06T14:37:35.721676",
   "gist": {
     "page_url": "https://gist.github.com/katbyte/502302a237bb765e0d24236070f0fa31",
     "raw_url": "https://gist.githubusercontent.com/katbyte/502302a237bb765e0d24236070f0fa31/raw/list_identity_list.sh",
@@ -54,86 +54,86 @@
       {
         "service": "network",
         "list_resources": 16,
-        "identity_resources": 33,
-        "percent": 48
+        "total_resources": 94,
+        "percent": 17
       },
       {
         "service": "mssql",
         "list_resources": 5,
-        "identity_resources": 5,
-        "percent": 100
+        "total_resources": 24,
+        "percent": 21
       },
       {
         "service": "mysql",
         "list_resources": 4,
-        "identity_resources": 4,
-        "percent": 100
+        "total_resources": 5,
+        "percent": 80
       },
       {
         "service": "privatedns",
         "list_resources": 4,
-        "identity_resources": 4,
+        "total_resources": 9,
+        "percent": 44
+      },
+      {
+        "service": "workloads",
+        "list_resources": 3,
+        "total_resources": 3,
         "percent": 100
       },
       {
         "service": "firewall",
         "list_resources": 3,
-        "identity_resources": 3,
-        "percent": 100
-      },
-      {
-        "service": "workloads",
-        "list_resources": 3,
-        "identity_resources": 3,
-        "percent": 100
+        "total_resources": 6,
+        "percent": 50
       },
       {
         "service": "storage",
         "list_resources": 3,
-        "identity_resources": 10,
-        "percent": 30
-      },
-      {
-        "service": "redis",
-        "list_resources": 2,
-        "identity_resources": 2,
-        "percent": 100
+        "total_resources": 25,
+        "percent": 12
       },
       {
         "service": "voiceservices",
         "list_resources": 2,
-        "identity_resources": 2,
+        "total_resources": 2,
         "percent": 100
       },
       {
-        "service": "automation",
+        "service": "redis",
+        "list_resources": 2,
+        "total_resources": 5,
+        "percent": 40
+      },
+      {
+        "service": "videoindexer",
         "list_resources": 1,
-        "identity_resources": 1,
+        "total_resources": 1,
         "percent": 100
       },
       {
         "service": "cognitive",
         "list_resources": 1,
-        "identity_resources": 1,
-        "percent": 100
-      },
-      {
-        "service": "videoindexer",
-        "list_resources": 1,
-        "identity_resources": 1,
-        "percent": 100
-      },
-      {
-        "service": "appservice",
-        "list_resources": 1,
-        "identity_resources": 2,
-        "percent": 50
+        "total_resources": 6,
+        "percent": 17
       },
       {
         "service": "resource",
         "list_resources": 1,
-        "identity_resources": 2,
-        "percent": 50
+        "total_resources": 12,
+        "percent": 8
+      },
+      {
+        "service": "appservice",
+        "list_resources": 1,
+        "total_resources": 22,
+        "percent": 5
+      },
+      {
+        "service": "automation",
+        "list_resources": 1,
+        "total_resources": 28,
+        "percent": 4
       }
     ]
   },
@@ -142,6 +142,6 @@
     "dashboard_list_resources": 45,
     "gist_with_list": 47,
     "derived_total_with_list": 50,
-    "total_resources": 1129
+    "total_resources": 94
   }
 }
