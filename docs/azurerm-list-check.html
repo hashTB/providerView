@@ -85,19 +85,20 @@
         <a href="downloads.html">📈 Download Trends</a>
         <a href="cloud-devex.html">Cloud DevEx</a>
         <a href="azurerm-list-check.html" class="active">✅ AzureRM List Check</a>
+        <a href="aws-list-check.html">AWS List Check</a>
     </nav>
-    <p class="subtitle">Latest gist-backed AzureRM source scan compared against the dashboard list-resources count. Generated 2026-04-03T19:14:47.383883.</p>
+    <p class="subtitle">Latest gist-backed AzureRM source scan compared against Registry-reflected list resources for hashicorp/azurerm. Generated 2026-04-06T14:02:56.763257.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">45</div><div class="label">Dashboard List Resources</div></div>
-        <div class="card"><div class="value">46</div><div class="label">Gist Scan With List</div></div>
+        <div class="card"><div class="value">45</div><div class="label">Registry-Reflected List Resources</div></div>
+        <div class="card"><div class="value">47</div><div class="label">Gist Scan With List</div></div>
         <div class="card"><div class="value">1,129</div><div class="label">AzureRM Resources Scanned</div></div>
         <div class="card"><div class="value">⚠️</div><div class="label">Counts do not match</div></div>
     </div>
 
     <div class="note">
-        <strong>⚠️ Validation:</strong> dashboard shows <strong>45</strong>,
-        gist scan reports <strong>46</strong> list-enabled resources.
+        <strong>⚠️ Validation:</strong> Registry currently reflects <strong>45</strong>,
+        gist scan reports <strong>47</strong> list-enabled resources.
         This script fetches the latest secret gist on each run, so gist changes automatically flow into the next workflow execution.
         <div class="meta-grid">
             <div>
@@ -108,7 +109,7 @@
                 <div class="meta-row"><span>Last active</span><span>N/A</span></div>
             </div>
             <div>
-                <div class="meta-row"><span>AzureRM repo commit</span><span><code>c5beefc85c69936cef7f89fcbe654636b47ed45b</code></span></div>
+                <div class="meta-row"><span>AzureRM repo commit</span><span><code>ac8ebf84f741566dfc7620aef9e588584365edcb</code></span></div>
                 <div class="meta-row"><span>Script SHA-256</span><span><code>5686b2b3705f172e...</code></span></div>
             </div>
         </div>
@@ -227,6 +228,7 @@ network                        azurerm_virtual_network_peering                  
 network                        azurerm_web_application_firewall_policy                 [untyped] ✅ Identity 📋 List
 postgres                       azurerm_postgresql_flexible_server_firewall_rule        [untyped] ✅ Identity
 privatedns                     azurerm_private_dns_a_record                            [untyped] ✅ Identity 📋 List
+privatedns                     azurerm_private_dns_cname_record                        [untyped] ✅ Identity 📋 List
 privatedns                     azurerm_private_dns_zone                                [untyped] ✅ Identity 📋 List
 privatedns                     azurerm_private_dns_zone_virtual_network_link           [untyped] ✅ Identity 📋 List
 redis                          azurerm_redis_cache                                     [untyped] ✅ Identity 📋 List
@@ -253,12 +255,12 @@ workloads                      azurerm_workloads_sap_three_tier_virtual_instance
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources with Identity Implemented
 ───────────────────────────────────────────────────────────────────────────────────
-   Total with Identity:  132 of 1129 (11%)
+   Total with Identity:  133 of 1129 (11%)
    ├─ Typed:             39
-   └─ Untyped:           93
+   └─ Untyped:           94
 
    List Support:
-   ├─ 📋 With List:      46 (34% of identity, 4% of total)
+   ├─ 📋 With List:      47 (35% of identity, 4% of total)
    └─ ⬜ Without List:   86
 ═══════════════════════════════════════════════════════════════════════════════════</pre>
     </div>
@@ -1068,7 +1070,6 @@ postgres                       azurerm_postgresql_server_key                    
 postgres                       azurerm_postgresql_virtual_network_rule                 [untyped] ⬜ Missing List | ❌ Identity (nested_resource)
 powerbi                        azurerm_powerbi_embedded                                [untyped] ⬜ Missing List | ❌ Identity (eligible)
 privatedns                     azurerm_private_dns_aaaa_record                         [untyped] ⬜ Missing List | ❌ Identity (numeric_segment)
-privatedns                     azurerm_private_dns_cname_record                        [untyped] ⬜ Missing List | ❌ Identity (eligible)
 privatedns                     azurerm_private_dns_mx_record                           [untyped] ⬜ Missing List | ❌ Identity (eligible)
 privatedns                     azurerm_private_dns_ptr_record                          [untyped] ⬜ Missing List | ❌ Identity (eligible)
 privatedns                     azurerm_private_dns_srv_record                          [untyped] ⬜ Missing List | ❌ Identity (eligible)
@@ -1350,11 +1351,11 @@ web                            azurerm_static_site_custom_domain                
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources Missing List Implementation
 ───────────────────────────────────────────────────────────────────────────────────
-   Total Missing List:   1080
+   Total Missing List:   1079
 
    Of these, Identity Status:
    ✅ Have Identity:     86 (Ready for List)
-   ❌ Missing Identity:  994
+   ❌ Missing Identity:  993
 ═══════════════════════════════════════════════════════════════════════════════════</pre>
     </div>
 
@@ -2085,7 +2086,6 @@ postgres                       azurerm_postgresql_server_key                    
 postgres                       azurerm_postgresql_virtual_network_rule                 [untyped] ⚠️  Nested (compare-values)
 powerbi                        azurerm_powerbi_embedded                                [untyped] ✅ ELIGIBLE
 privatedns                     azurerm_private_dns_aaaa_record                         [untyped] ❌ Numeric Segment (v2/v3)
-privatedns                     azurerm_private_dns_cname_record                        [untyped] ✅ ELIGIBLE
 privatedns                     azurerm_private_dns_mx_record                           [untyped] ✅ ELIGIBLE
 privatedns                     azurerm_private_dns_ptr_record                          [untyped] ✅ ELIGIBLE
 privatedns                     azurerm_private_dns_srv_record                          [untyped] ✅ ELIGIBLE
@@ -2359,12 +2359,12 @@ web                            azurerm_static_site_custom_domain                
 ═══════════════════════════════════════════════════════════════════════════════════
 📊 SUMMARY: Resources Missing Identity
 ───────────────────────────────────────────────────────────────────────────────────
-   Total Missing:        994 of 1129 (88%)
+   Total Missing:        993 of 1129 (87%)
    ├─ Typed:             378
-   └─ Untyped:           616
+   └─ Untyped:           615
 
    By Category:
-   ├─ ✅ Eligible:       384 (ready to implement)
+   ├─ ✅ Eligible:       383 (ready to implement)
    ├─ ⚠️  Custom Parse:   265 (uses internal parse pkg)
    ├─ ⚠️  Nested:         159 (ID segment from ID property)
    ├─ ❌ Scoped ID:      40 (variable parent scope)

@@ -317,17 +317,17 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
         <a href=\"azurerm-list-check.html\" class=\"active\">✅ AzureRM List Check</a>
         <a href=\"aws-list-check.html\">AWS List Check</a>
     </nav>
-    <p class=\"subtitle\">Latest gist-backed AzureRM source scan compared against the dashboard list-resources count. Generated {html.escape(summary['generated_at'])}.</p>
+    <p class=\"subtitle\">Latest gist-backed AzureRM source scan compared against Registry-reflected list resources for hashicorp/azurerm. Generated {html.escape(summary['generated_at'])}.</p>
 
     <div class=\"cards\">
-        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Dashboard List Resources</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['gist_with_list'])}</div><div class=\"label\">Gist Scan With List</div></div>
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['total_resources'])}</div><div class=\"label\">AzureRM Resources Scanned</div></div>
         <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Counts {match_text}</div></div>
     </div>
 
     <div class=\"note\">
-        <strong>{match_icon} Validation:</strong> dashboard shows <strong>{fmt_val(validation['dashboard_list_resources'])}</strong>,
+        <strong>{match_icon} Validation:</strong> Registry currently reflects <strong>{fmt_val(validation['dashboard_list_resources'])}</strong>,
         gist scan reports <strong>{fmt_val(validation['gist_with_list'])}</strong> list-enabled resources.
         This script fetches the latest secret gist on each run, so gist changes automatically flow into the next workflow execution.
         <div class=\"meta-grid\">

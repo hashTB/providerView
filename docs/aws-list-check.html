@@ -85,24 +85,25 @@
         <a href="azurerm-list-check.html">AzureRM List Check</a>
         <a href="aws-list-check.html" class="active">AWS List Check</a>
     </nav>
-    <p class="subtitle">Latest aws list-tracking scan compared against dashboard list-resources count. Generated 2026-04-06T13:48:14.449472.</p>
+    <p class="subtitle">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated 2026-04-06T14:03:42.050645.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">71</div><div class="label">Dashboard List Resources</div></div>
-        <div class="card"><div class="value">77</div><div class="label">Script Implemented List</div></div>
+        <div class="card"><div class="value">71</div><div class="label">Registry-Reflected List Resources</div></div>
+        <div class="card"><div class="value">77</div><div class="label">Tracking Script List Resources</div></div>
         <div class="card"><div class="value">1,615</div><div class="label">AWS Resources Scanned</div></div>
         <div class="card"><div class="value">WARN</div><div class="label">Counts do not match</div></div>
     </div>
 
     <div class="note">
-        <strong>WARN Validation:</strong> dashboard shows <strong>71</strong>,
-        tracking script reports <strong>77</strong> list-enabled resources.
+        <strong>WARN Validation:</strong> Registry currently reflects <strong>71</strong> list resources,
+        while the tracking script reports <strong>77</strong> list-enabled resources.
+        This script fetches the latest upstream AWS tracking script on each run, so upstream script changes flow into the next workflow execution.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Tracking issue</span><span><a href="https://github.com/hashicorp/terraform-provider-aws/issues/47005">open</a></span></div>
                 <div class="meta-row"><span>Tracking script</span><span><a href="https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/main/.ci/scripts/generate-list-tracking.sh">open</a></span></div>
                 <div class="meta-row"><span>Script path</span><span><code>.ci/scripts/generate-list-tracking.sh</code></span></div>
-                <div class="meta-row"><span>Script last updated</span><span>2026-04-06 17:48:14 UTC</span></div>
+                <div class="meta-row"><span>Script last updated</span><span>2026-04-06 18:03:42 UTC</span></div>
                 <div class="meta-row"><span>Service blocks</span><span>236</span></div>
             </div>
             <div>
@@ -3153,7 +3154,7 @@ Expand a service below to see service-level progress.
 
 &lt;/details&gt;
 
-*Last updated: 2026-04-06 17:48:14 UTC*</pre>
+*Last updated: 2026-04-06 18:03:42 UTC*</pre>
     </div>
 </div>
 </body>

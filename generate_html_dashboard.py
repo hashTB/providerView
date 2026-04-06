@@ -19,6 +19,25 @@ from pathlib import Path
 from datetime import datetime
 
 
+def load_embedded_json(json_path: Path, empty_message: str, loaded_message: str) -> str:
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            payload = json.load(f)
+    except FileNotFoundError:
+        print(empty_message)
+        return '{}'
+    except json.JSONDecodeError as exc:
+        print(f"   ⚠️  Failed to parse JSON from {json_path}: {exc}")
+        return '{}'
+
+    if payload in ({}, [], None):
+        print(f"   ⚠️  {json_path.name} exists but is empty")
+        return '{}'
+
+    print(loaded_message)
+    return json.dumps(payload, ensure_ascii=False, indent=2)
+
+
 HTML_PART1 = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1159,7 +1178,7 @@ HTML_PART4 = ''';
                 html += '<a href="azurerm-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
                 html += '</div>';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
-                html += 'Dashboard list resources: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
                 html += 'Gist scan with list: <strong style="color: var(--text);">' + validation.gist_with_list + '</strong>';
                 html += '</div>';
                 html += '</div>';
@@ -1174,8 +1193,8 @@ HTML_PART4 = ''';
                 html += '<a href="aws-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
                 html += '</div>';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
-                html += 'Dashboard list resources: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
-                html += 'Tracking script implemented list: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
+                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Tracking script list resources: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1649,8 +1668,8 @@ HTML_PART4 = ''';
             var matches = validation.matches;
             var icon = matches ? '✅' : '⚠️';
             var title = matches
-                ? 'Validated against latest AzureRM gist scan: ' + validation.gist_with_list + ' matches dashboard ' + validation.dashboard_list_resources
-                : 'AzureRM gist validation mismatch: gist ' + validation.gist_with_list + ' vs dashboard ' + validation.dashboard_list_resources;
+                ? 'Validated against latest AzureRM gist scan: ' + validation.gist_with_list + ' matches Registry-reflected ' + validation.dashboard_list_resources
+                : 'AzureRM gist validation mismatch: gist ' + validation.gist_with_list + ' vs Registry-reflected ' + validation.dashboard_list_resources;
 
             return ' <a href="azurerm-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
@@ -1662,8 +1681,8 @@ HTML_PART4 = ''';
             var matches = validation.matches;
             var icon = matches ? '✅' : '⚠️';
             var title = matches
-                ? 'Validated against latest AWS tracking script: ' + validation.script_implemented_list + ' matches dashboard ' + validation.dashboard_list_resources
-                : 'AWS tracking validation mismatch: script ' + validation.script_implemented_list + ' vs dashboard ' + validation.dashboard_list_resources;
+                ? 'Validated against latest AWS tracking script: ' + validation.script_implemented_list + ' matches Registry-reflected ' + validation.dashboard_list_resources
+                : 'AWS tracking validation mismatch: script ' + validation.script_implemented_list + ' vs Registry-reflected ' + validation.dashboard_list_resources;
 
             return ' <a href="aws-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
@@ -1970,36 +1989,24 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         print(f"   ⚠️  No AWS identity file found, identity popup will be disabled for AWS")
 
     # Try to load AzureRM list validation JSON
-    azurerm_list_check_json = '{}'
     azurerm_list_check_path = csv_dir / 'data' / 'azurerm_list_check.json'
 
     print(f"   Looking for AzureRM list validation at: {azurerm_list_check_path.absolute()}")
-    try:
-        with open(azurerm_list_check_path, 'r', encoding='utf-8') as f:
-            azurerm_list_check_json = f.read()
-        if azurerm_list_check_json.strip() and azurerm_list_check_json.strip() != '{}':
-            print(f"   ✅ Loaded AzureRM list validation from {azurerm_list_check_path}")
-        else:
-            print(f"   ⚠️  AzureRM list validation file exists but is empty")
-            azurerm_list_check_json = '{}'
-    except FileNotFoundError:
-        print(f"   ⚠️  No AzureRM list validation file found")
+    azurerm_list_check_json = load_embedded_json(
+        azurerm_list_check_path,
+        '   ⚠️  No AzureRM list validation file found',
+        f"   ✅ Loaded AzureRM list validation from {azurerm_list_check_path}",
+    )
 
     # Try to load AWS list validation JSON
-    aws_list_check_json = '{}'
     aws_list_check_path = csv_dir / 'data' / 'aws_list_check.json'
 
     print(f"   Looking for AWS list validation at: {aws_list_check_path.absolute()}")
-    try:
-        with open(aws_list_check_path, 'r', encoding='utf-8') as f:
-            aws_list_check_json = f.read()
-        if aws_list_check_json.strip() and aws_list_check_json.strip() != '{}':
-            print(f"   ✅ Loaded AWS list validation from {aws_list_check_path}")
-        else:
-            print(f"   ⚠️  AWS list validation file exists but is empty")
-            aws_list_check_json = '{}'
-    except FileNotFoundError:
-        print(f"   ⚠️  No AWS list validation file found")
+    aws_list_check_json = load_embedded_json(
+        aws_list_check_path,
+        '   ⚠️  No AWS list validation file found',
+        f"   ✅ Loaded AWS list validation from {aws_list_check_path}",
+    )
     
     html = (
         HTML_PART1 +

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T19:14:47.383883",
+  "generated_at": "2026-04-06T14:02:56.763257",
   "gist": {
     "page_url": "https://gist.github.com/katbyte/502302a237bb765e0d24236070f0fa31",
     "raw_url": "https://gist.githubusercontent.com/katbyte/502302a237bb765e0d24236070f0fa31/raw/list_identity_list.sh",
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-azurerm",
-    "commit": "c5beefc85c69936cef7f89fcbe654636b47ed45b"
+    "commit": "ac8ebf84f741566dfc7620aef9e588584365edcb"
   },
   "dashboard": {
     "provider": "hashicorp/azurerm",
@@ -20,39 +20,39 @@
     "implemented": {
       "returncode": 0,
       "summary": {
-        "with_identity": 132,
+        "with_identity": 133,
         "total_resources": 1129,
-        "with_list": 46,
+        "with_list": 47,
         "without_list": 86
       },
-      "stdout_line_count": 144,
+      "stdout_line_count": 145,
       "stderr_line_count": 0
     },
     "list": {
       "returncode": 0,
       "summary": {
-        "missing_list": 1080,
+        "missing_list": 1079,
         "have_identity": 86,
-        "missing_identity": 994
+        "missing_identity": 993
       },
-      "stdout_line_count": 1090,
+      "stdout_line_count": 1089,
       "stderr_line_count": 0
     },
     "identity": {
       "returncode": 0,
       "summary": {
-        "missing_identity": 994,
+        "missing_identity": 993,
         "total_resources": 1129
       },
-      "stdout_line_count": 1014,
+      "stdout_line_count": 1013,
       "stderr_line_count": 0
     }
   },
   "validation": {
     "matches": false,
     "dashboard_list_resources": 45,
-    "gist_with_list": 46,
-    "derived_total_with_list": 49,
+    "gist_with_list": 47,
+    "derived_total_with_list": 50,
     "total_resources": 1129
   }
 }
