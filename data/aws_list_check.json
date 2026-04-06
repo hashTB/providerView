@@ -1,0 +1,1458 @@
+{
+  "generated_at": "2026-04-06T13:48:14.449472",
+  "issue": {
+    "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
+  },
+  "tracking_script": {
+    "repo_path": ".ci/scripts/generate-list-tracking.sh",
+    "raw_url": "https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/main/.ci/scripts/generate-list-tracking.sh",
+    "script_sha256": "5b5ac461e391895ad2d8b31cc7f6cb2641bf93be4098a0a0570e9cdac7b20a2d"
+  },
+  "source_repo": {
+    "repo": "hashicorp/terraform-provider-aws",
+    "commit": "cef06e8ec9483545688efca12134d66c26dc02a2"
+  },
+  "dashboard": {
+    "provider": "hashicorp/aws",
+    "list_resources": 71
+  },
+  "script_results": {
+    "returncode": 0,
+    "stdout_line_count": 3040,
+    "stderr_line_count": 0,
+    "parsed": {
+      "overall": {
+        "percent": 4,
+        "implemented": 77,
+        "total": 1615
+      },
+      "service_count": 236,
+      "services": [
+        {
+          "service": "accessanalyzer",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "account",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "acm",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "acmpca",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "amp",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "amplify",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "apigateway",
+          "percent": 0,
+          "implemented": 0,
+          "total": 26
+        },
+        {
+          "service": "apigatewayv2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "appautoscaling",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "appconfig",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "appfabric",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "appflow",
+          "percent": 100,
+          "implemented": 2,
+          "total": 2
+        },
+        {
+          "service": "appintegrations",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "applicationinsights",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "appmesh",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "apprunner",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "appstream",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "appsync",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "arcregionswitch",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "athena",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "auditmanager",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "autoscaling",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "autoscalingplans",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "backup",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "batch",
+          "percent": 50,
+          "implemented": 2,
+          "total": 4
+        },
+        {
+          "service": "bcmdataexports",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "bedrock",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "bedrockagent",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "bedrockagentcore",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "billing",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "budgets",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "ce",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "chatbot",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "chime",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "chimesdkmediapipelines",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "chimesdkvoice",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "cleanrooms",
+          "percent": 66,
+          "implemented": 2,
+          "total": 3
+        },
+        {
+          "service": "cloud9",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "cloudcontrol",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "cloudformation",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "cloudfront",
+          "percent": 4,
+          "implemented": 1,
+          "total": 21
+        },
+        {
+          "service": "cloudfrontkeyvaluestore",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "cloudhsmv2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "cloudsearch",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "cloudtrail",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "cloudwatch",
+          "percent": 16,
+          "implemented": 1,
+          "total": 6
+        },
+        {
+          "service": "codeartifact",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "codebuild",
+          "percent": 16,
+          "implemented": 1,
+          "total": 6
+        },
+        {
+          "service": "codecatalyst",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "codecommit",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "codeconnections",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "codeguruprofiler",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "codegurureviewer",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "codepipeline",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "codestarconnections",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "codestarnotifications",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "cognitoidentity",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "cognitoidp",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "comprehend",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "computeoptimizer",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "configservice",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "connect",
+          "percent": 0,
+          "implemented": 0,
+          "total": 17
+        },
+        {
+          "service": "controltower",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "costoptimizationhub",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "cur",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "customerprofiles",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "dataexchange",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "datapipeline",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "datasync",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "datazone",
+          "percent": 0,
+          "implemented": 0,
+          "total": 10
+        },
+        {
+          "service": "dax",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "deploy",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "detective",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "devicefarm",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "devopsguru",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "directconnect",
+          "percent": 0,
+          "implemented": 0,
+          "total": 19
+        },
+        {
+          "service": "dlm",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "dms",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "docdb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "docdbelastic",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "drs",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "ds",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "dsql",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "dynamodb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "ec2",
+          "percent": 7,
+          "implemented": 12,
+          "total": 155
+        },
+        {
+          "service": "ecr",
+          "percent": 10,
+          "implemented": 1,
+          "total": 10
+        },
+        {
+          "service": "ecrpublic",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "ecs",
+          "percent": 25,
+          "implemented": 2,
+          "total": 8
+        },
+        {
+          "service": "efs",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "eks",
+          "percent": 11,
+          "implemented": 1,
+          "total": 9
+        },
+        {
+          "service": "elasticache",
+          "percent": 0,
+          "implemented": 0,
+          "total": 10
+        },
+        {
+          "service": "elasticbeanstalk",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "elasticsearch",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "elastictranscoder",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "elb",
+          "percent": 11,
+          "implemented": 1,
+          "total": 9
+        },
+        {
+          "service": "elbv2",
+          "percent": 50,
+          "implemented": 4,
+          "total": 8
+        },
+        {
+          "service": "emr",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "emrcontainers",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "emrserverless",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "events",
+          "percent": 22,
+          "implemented": 2,
+          "total": 9
+        },
+        {
+          "service": "evidently",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "finspace",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "firehose",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "fis",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "fms",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "fsx",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "gamelift",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "glacier",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "globalaccelerator",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "glue",
+          "percent": 5,
+          "implemented": 1,
+          "total": 20
+        },
+        {
+          "service": "grafana",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "guardduty",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "iam",
+          "percent": 14,
+          "implemented": 5,
+          "total": 35
+        },
+        {
+          "service": "identitystore",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "imagebuilder",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "inspector",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "inspector2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "internetmonitor",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "invoicing",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "iot",
+          "percent": 0,
+          "implemented": 0,
+          "total": 19
+        },
+        {
+          "service": "ivs",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "ivschat",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "kafka",
+          "percent": 33,
+          "implemented": 3,
+          "total": 9
+        },
+        {
+          "service": "kafkaconnect",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "kendra",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "keyspaces",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "kinesis",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "kinesisanalytics",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "kinesisanalyticsv2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "kinesisvideo",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "kms",
+          "percent": 22,
+          "implemented": 2,
+          "total": 9
+        },
+        {
+          "service": "lakeformation",
+          "percent": 0,
+          "implemented": 0,
+          "total": 10
+        },
+        {
+          "service": "lambda",
+          "percent": 21,
+          "implemented": 3,
+          "total": 14
+        },
+        {
+          "service": "lexmodels",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "lexv2models",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "licensemanager",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "lightsail",
+          "percent": 0,
+          "implemented": 0,
+          "total": 23
+        },
+        {
+          "service": "location",
+          "percent": 0,
+          "implemented": 0,
+          "total": 6
+        },
+        {
+          "service": "logs",
+          "percent": 5,
+          "implemented": 1,
+          "total": 17
+        },
+        {
+          "service": "m2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "macie2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "mediaconvert",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "medialive",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "mediapackage",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "mediapackagev2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "mediastore",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "memorydb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "mq",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "mwaa",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "neptune",
+          "percent": 0,
+          "implemented": 0,
+          "total": 9
+        },
+        {
+          "service": "neptunegraph",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "networkfirewall",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "networkflowmonitor",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "networkmanager",
+          "percent": 0,
+          "implemented": 0,
+          "total": 21
+        },
+        {
+          "service": "networkmonitor",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "notifications",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "notificationscontacts",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "oam",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "observabilityadmin",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "odb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "opensearch",
+          "percent": 0,
+          "implemented": 0,
+          "total": 10
+        },
+        {
+          "service": "opensearchserverless",
+          "percent": 16,
+          "implemented": 1,
+          "total": 6
+        },
+        {
+          "service": "organizations",
+          "percent": 12,
+          "implemented": 1,
+          "total": 8
+        },
+        {
+          "service": "osis",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "paymentcryptography",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "pinpoint",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "pinpointsmsvoicev2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "pipes",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "qbusiness",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "qldb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "quicksight",
+          "percent": 0,
+          "implemented": 0,
+          "total": 25
+        },
+        {
+          "service": "ram",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "rbin",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "rds",
+          "percent": 0,
+          "implemented": 0,
+          "total": 29
+        },
+        {
+          "service": "redshift",
+          "percent": 0,
+          "implemented": 0,
+          "total": 24
+        },
+        {
+          "service": "redshiftdata",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "redshiftserverless",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "rekognition",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "resiliencehub",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "resourceexplorer2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "resourcegroups",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "rolesanywhere",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "route53",
+          "percent": 7,
+          "implemented": 1,
+          "total": 14
+        },
+        {
+          "service": "route53domains",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "route53profiles",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "route53recoverycontrolconfig",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "route53recoveryreadiness",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "route53resolver",
+          "percent": 18,
+          "implemented": 2,
+          "total": 11
+        },
+        {
+          "service": "rum",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "s3",
+          "percent": 38,
+          "implemented": 10,
+          "total": 26
+        },
+        {
+          "service": "s3control",
+          "percent": 0,
+          "implemented": 0,
+          "total": 16
+        },
+        {
+          "service": "s3outposts",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "s3tables",
+          "percent": 0,
+          "implemented": 0,
+          "total": 7
+        },
+        {
+          "service": "s3vectors",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "sagemaker",
+          "percent": 5,
+          "implemented": 2,
+          "total": 36
+        },
+        {
+          "service": "savingsplans",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "scheduler",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "schemas",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "secretsmanager",
+          "percent": 50,
+          "implemented": 2,
+          "total": 4
+        },
+        {
+          "service": "securityhub",
+          "percent": 0,
+          "implemented": 0,
+          "total": 15
+        },
+        {
+          "service": "securitylake",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "serverlessrepo",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "servicecatalog",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "servicecatalogappregistry",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "servicediscovery",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "servicequotas",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "ses",
+          "percent": 0,
+          "implemented": 0,
+          "total": 14
+        },
+        {
+          "service": "sesv2",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "sfn",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "shield",
+          "percent": 0,
+          "implemented": 0,
+          "total": 8
+        },
+        {
+          "service": "signer",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "sns",
+          "percent": 33,
+          "implemented": 2,
+          "total": 6
+        },
+        {
+          "service": "sqs",
+          "percent": 25,
+          "implemented": 1,
+          "total": 4
+        },
+        {
+          "service": "ssm",
+          "percent": 16,
+          "implemented": 2,
+          "total": 12
+        },
+        {
+          "service": "ssmcontacts",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "ssmincidents",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "ssmquicksetup",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "ssoadmin",
+          "percent": 7,
+          "implemented": 1,
+          "total": 14
+        },
+        {
+          "service": "storagegateway",
+          "percent": 0,
+          "implemented": 0,
+          "total": 10
+        },
+        {
+          "service": "swf",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "synthetics",
+          "percent": 0,
+          "implemented": 0,
+          "total": 3
+        },
+        {
+          "service": "timestreaminfluxdb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "timestreamquery",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "timestreamwrite",
+          "percent": 0,
+          "implemented": 0,
+          "total": 2
+        },
+        {
+          "service": "transcribe",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "transfer",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "uxc",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "verifiedpermissions",
+          "percent": 0,
+          "implemented": 0,
+          "total": 5
+        },
+        {
+          "service": "vpclattice",
+          "percent": 0,
+          "implemented": 0,
+          "total": 15
+        },
+        {
+          "service": "waf",
+          "percent": 0,
+          "implemented": 0,
+          "total": 12
+        },
+        {
+          "service": "wafregional",
+          "percent": 0,
+          "implemented": 0,
+          "total": 13
+        },
+        {
+          "service": "wafv2",
+          "percent": 11,
+          "implemented": 1,
+          "total": 9
+        },
+        {
+          "service": "workmail",
+          "percent": 80,
+          "implemented": 4,
+          "total": 5
+        },
+        {
+          "service": "workspaces",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        },
+        {
+          "service": "workspacesweb",
+          "percent": 0,
+          "implemented": 0,
+          "total": 18
+        },
+        {
+          "service": "xray",
+          "percent": 0,
+          "implemented": 0,
+          "total": 4
+        }
+      ],
+      "last_updated": "2026-04-06 17:48:14 UTC"
+    }
+  },
+  "validation": {
+    "matches": false,
+    "dashboard_list_resources": 71,
+    "script_implemented_list": 77,
+    "script_total_resources": 1615,
+    "script_percent": 4
+  }
+}

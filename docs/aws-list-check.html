@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS List Validation</title>
+    <style>
+        :root {
+            --primary: #06b6d4;
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1280px; margin: 0 auto; }
+        h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .topnav {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .topnav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 12px 20px;
+            transition: all 0.2s;
+            border-right: 1px solid var(--border);
+        }
+        .topnav a:last-child { border-right: none; }
+        .topnav a:hover { color: var(--text); background: rgba(6, 182, 212, 0.1); }
+        .topnav a.active { color: var(--primary); background: rgba(6, 182, 212, 0.1); font-weight: 600; }
+        .subtitle { color: var(--text-muted); margin-bottom: 24px; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+        .value { font-size: 1.6rem; font-weight: 700; }
+        .label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+        .note, .section { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .note { color: var(--text-muted); }
+        .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 14px; }
+        .meta-row { display: flex; justify-content: space-between; gap: 12px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
+        .meta-row span:last-child { color: var(--text); text-align: right; }
+        .section h2 { margin-bottom: 12px; font-size: 1.2rem; }
+        pre {
+            background: #111827;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            overflow-x: auto;
+            color: #dbeafe;
+            font-size: 0.84rem;
+        }
+        code { color: #93c5fd; }
+        a { color: var(--primary); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>AWS List Validation</h1>
+    <nav class="topnav">
+        <a href="index.html">All Providers</a>
+        <a href="downloads.html">Download Trends</a>
+        <a href="cloud-devex.html">Cloud DevEx</a>
+        <a href="azurerm-list-check.html">AzureRM List Check</a>
+        <a href="aws-list-check.html" class="active">AWS List Check</a>
+    </nav>
+    <p class="subtitle">Latest aws list-tracking scan compared against dashboard list-resources count. Generated 2026-04-06T13:48:14.449472.</p>
+
+    <div class="cards">
+        <div class="card"><div class="value">71</div><div class="label">Dashboard List Resources</div></div>
+        <div class="card"><div class="value">77</div><div class="label">Script Implemented List</div></div>
+        <div class="card"><div class="value">1,615</div><div class="label">AWS Resources Scanned</div></div>
+        <div class="card"><div class="value">WARN</div><div class="label">Counts do not match</div></div>
+    </div>
+
+    <div class="note">
+        <strong>WARN Validation:</strong> dashboard shows <strong>71</strong>,
+        tracking script reports <strong>77</strong> list-enabled resources.
+        <div class="meta-grid">
+            <div>
+                <div class="meta-row"><span>Tracking issue</span><span><a href="https://github.com/hashicorp/terraform-provider-aws/issues/47005">open</a></span></div>
+                <div class="meta-row"><span>Tracking script</span><span><a href="https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/main/.ci/scripts/generate-list-tracking.sh">open</a></span></div>
+                <div class="meta-row"><span>Script path</span><span><code>.ci/scripts/generate-list-tracking.sh</code></span></div>
+                <div class="meta-row"><span>Script last updated</span><span>2026-04-06 17:48:14 UTC</span></div>
+                <div class="meta-row"><span>Service blocks</span><span>236</span></div>
+            </div>
+            <div>
+                <div class="meta-row"><span>AWS repo commit</span><span><code>cef06e8ec9483545688efca12134d66c26dc02a2</code></span></div>
+                <div class="meta-row"><span>Overall progress</span><span>4% (77/1,615)</span></div>
+                <div class="meta-row"><span>Script SHA-256</span><span><code>5b5ac461e391895a...</code></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Raw Script Output</h2>
+        <pre>### Implementation Progress:
+
+Overall: `[▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 4% (77/1615)`
+
+Expand a service below to see service-level progress.
+
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;accessanalyzer&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `accessanalyzer/analyzer.go` | ❌ | ❌ |
+| `accessanalyzer/archive_rule.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;account&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `account/alternate_contact.go` | ❌ | ❌ |
+| `account/primary_contact.go` | ❌ | ❌ |
+| `account/region.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;acm&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `acm/certificate.go` | ✅ | ❌ |
+| `acm/certificate_validation.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;acmpca&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `acmpca/certificate.go` | ✅ | ❌ |
+| `acmpca/certificate_authority.go` | ✅ | ❌ |
+| `acmpca/certificate_authority_certificate.go` | ✅ | ❌ |
+| `acmpca/permission.go` | ❌ | ❌ |
+| `acmpca/policy.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;amp&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `amp/alert_manager_definition.go` | ❌ | ❌ |
+| `amp/query_logging_configuration.go` | ❌ | ❌ |
+| `amp/resource_policy.go` | ❌ | ❌ |
+| `amp/rule_group_namespace.go` | ✅ | ❌ |
+| `amp/scraper.go` | ❌ | ❌ |
+| `amp/workspace.go` | ❌ | ❌ |
+| `amp/workspace_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;amplify&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `amplify/app.go` | ❌ | ❌ |
+| `amplify/backend_environment.go` | ❌ | ❌ |
+| `amplify/branch.go` | ❌ | ❌ |
+| `amplify/domain_association.go` | ❌ | ❌ |
+| `amplify/webhook.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;apigateway&lt;/code&gt; 0% (0/26)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `apigateway/account.go` | ❌ | ❌ |
+| `apigateway/api_key.go` | ❌ | ❌ |
+| `apigateway/authorizer.go` | ❌ | ❌ |
+| `apigateway/base_path_mapping.go` | ❌ | ❌ |
+| `apigateway/client_certificate.go` | ❌ | ❌ |
+| `apigateway/deployment.go` | ❌ | ❌ |
+| `apigateway/documentation_part.go` | ❌ | ❌ |
+| `apigateway/documentation_version.go` | ❌ | ❌ |
+| `apigateway/domain_name.go` | ❌ | ❌ |
+| `apigateway/domain_name_access_association.go` | ✅ | ❌ |
+| `apigateway/gateway_response.go` | ❌ | ❌ |
+| `apigateway/integration.go` | ❌ | ❌ |
+| `apigateway/integration_response.go` | ❌ | ❌ |
+| `apigateway/method.go` | ❌ | ❌ |
+| `apigateway/method_response.go` | ❌ | ❌ |
+| `apigateway/method_settings.go` | ❌ | ❌ |
+| `apigateway/model.go` | ❌ | ❌ |
+| `apigateway/request_validator.go` | ❌ | ❌ |
+| `apigateway/resource.go` | ❌ | ❌ |
+| `apigateway/rest_api.go` | ❌ | ❌ |
+| `apigateway/rest_api_policy.go` | ❌ | ❌ |
+| `apigateway/rest_api_put.go` | ❌ | ❌ |
+| `apigateway/stage.go` | ❌ | ❌ |
+| `apigateway/usage_plan.go` | ❌ | ❌ |
+| `apigateway/usage_plan_key.go` | ❌ | ❌ |
+| `apigateway/vpc_link.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;apigatewayv2&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `apigatewayv2/api.go` | ❌ | ❌ |
+| `apigatewayv2/api_mapping.go` | ❌ | ❌ |
+| `apigatewayv2/authorizer.go` | ❌ | ❌ |
+| `apigatewayv2/deployment.go` | ❌ | ❌ |
+| `apigatewayv2/domain_name.go` | ❌ | ❌ |
+| `apigatewayv2/integration.go` | ❌ | ❌ |
+| `apigatewayv2/integration_response.go` | ❌ | ❌ |
+| `apigatewayv2/model.go` | ❌ | ❌ |
+| `apigatewayv2/route.go` | ❌ | ❌ |
+| `apigatewayv2/route_response.go` | ❌ | ❌ |
+| `apigatewayv2/routing_rule.go` | ❌ | ❌ |
+| `apigatewayv2/stage.go` | ❌ | ❌ |
+| `apigatewayv2/vpc_link.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appautoscaling&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appautoscaling/policy.go` | ❌ | ❌ |
+| `appautoscaling/scheduled_action.go` | ❌ | ❌ |
+| `appautoscaling/target.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appconfig&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appconfig/application.go` | ❌ | ❌ |
+| `appconfig/configuration_profile.go` | ❌ | ❌ |
+| `appconfig/deployment.go` | ❌ | ❌ |
+| `appconfig/deployment_strategy.go` | ❌ | ❌ |
+| `appconfig/environment.go` | ❌ | ❌ |
+| `appconfig/extension.go` | ❌ | ❌ |
+| `appconfig/extension_association.go` | ❌ | ❌ |
+| `appconfig/hosted_configuration_version.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appfabric&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appfabric/app_authorization.go` | ❌ | ❌ |
+| `appfabric/app_authorization_connection.go` | ❌ | ❌ |
+| `appfabric/app_bundle.go` | ✅ | ❌ |
+| `appfabric/ingestion.go` | ❌ | ❌ |
+| `appfabric/ingestion_destination.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appflow&lt;/code&gt; 100% (2/2) ✅&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appflow/connector_profile.go` | ✅ | ✅ |
+| `appflow/flow.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appintegrations&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appintegrations/data_integration.go` | ❌ | ❌ |
+| `appintegrations/event_integration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;applicationinsights&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `applicationinsights/application.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appmesh&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appmesh/gateway_route.go` | ❌ | ❌ |
+| `appmesh/mesh.go` | ❌ | ❌ |
+| `appmesh/route.go` | ❌ | ❌ |
+| `appmesh/virtual_gateway.go` | ❌ | ❌ |
+| `appmesh/virtual_node.go` | ❌ | ❌ |
+| `appmesh/virtual_router.go` | ❌ | ❌ |
+| `appmesh/virtual_service.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;apprunner&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `apprunner/auto_scaling_configuration_version.go` | ✅ | ❌ |
+| `apprunner/connection.go` | ❌ | ❌ |
+| `apprunner/custom_domain_association.go` | ❌ | ❌ |
+| `apprunner/default_auto_scaling_configuration_version.go` | ❌ | ❌ |
+| `apprunner/deployment.go` | ❌ | ❌ |
+| `apprunner/observability_configuration.go` | ✅ | ❌ |
+| `apprunner/service.go` | ✅ | ❌ |
+| `apprunner/vpc_connector.go` | ✅ | ❌ |
+| `apprunner/vpc_ingress_connection.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appstream&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appstream/directory_config.go` | ❌ | ❌ |
+| `appstream/fleet.go` | ❌ | ❌ |
+| `appstream/fleet_stack_association.go` | ❌ | ❌ |
+| `appstream/image_builder.go` | ❌ | ❌ |
+| `appstream/stack.go` | ❌ | ❌ |
+| `appstream/user.go` | ❌ | ❌ |
+| `appstream/user_stack_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;appsync&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `appsync/api.go` | ❌ | ❌ |
+| `appsync/api_cache.go` | ❌ | ❌ |
+| `appsync/api_key.go` | ❌ | ❌ |
+| `appsync/channel_namespace.go` | ❌ | ❌ |
+| `appsync/datasource.go` | ❌ | ❌ |
+| `appsync/domain_name.go` | ❌ | ❌ |
+| `appsync/domain_name_api_association.go` | ❌ | ❌ |
+| `appsync/function.go` | ❌ | ❌ |
+| `appsync/graphql_api.go` | ❌ | ❌ |
+| `appsync/resolver.go` | ❌ | ❌ |
+| `appsync/source_api_association.go` | ❌ | ❌ |
+| `appsync/type.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;arcregionswitch&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `arcregionswitch/plan.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;athena&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `athena/capacity_reservation.go` | ❌ | ❌ |
+| `athena/data_catalog.go` | ❌ | ❌ |
+| `athena/database.go` | ❌ | ❌ |
+| `athena/named_query.go` | ❌ | ❌ |
+| `athena/prepared_statement.go` | ❌ | ❌ |
+| `athena/workgroup.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;auditmanager&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `auditmanager/account_registration.go` | ❌ | ❌ |
+| `auditmanager/assessment.go` | ❌ | ❌ |
+| `auditmanager/assessment_delegation.go` | ❌ | ❌ |
+| `auditmanager/assessment_report.go` | ❌ | ❌ |
+| `auditmanager/control.go` | ❌ | ❌ |
+| `auditmanager/framework.go` | ❌ | ❌ |
+| `auditmanager/framework_share.go` | ❌ | ❌ |
+| `auditmanager/organization_admin_account_registration.go` | ❌ | ❌ |
+| `auditmanager/sweep.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;autoscaling&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `autoscaling/attachment.go` | ❌ | ❌ |
+| `autoscaling/group.go` | ❌ | ❌ |
+| `autoscaling/group_tag.go` | ❌ | ❌ |
+| `autoscaling/launch_configuration.go` | ❌ | ❌ |
+| `autoscaling/lifecycle_hook.go` | ❌ | ❌ |
+| `autoscaling/notification.go` | ❌ | ❌ |
+| `autoscaling/policy.go` | ❌ | ❌ |
+| `autoscaling/schedule.go` | ❌ | ❌ |
+| `autoscaling/traffic_source_attachment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;autoscalingplans&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `autoscalingplans/scaling_plan.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;backup&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `backup/framework.go` | ❌ | ❌ |
+| `backup/global_settings.go` | ❌ | ❌ |
+| `backup/logically_air_gapped_vault.go` | ❌ | ❌ |
+| `backup/plan.go` | ❌ | ❌ |
+| `backup/region_settings.go` | ❌ | ❌ |
+| `backup/report_plan.go` | ❌ | ❌ |
+| `backup/restore_testing_plan.go` | ❌ | ❌ |
+| `backup/restore_testing_selection.go` | ❌ | ❌ |
+| `backup/selection.go` | ❌ | ❌ |
+| `backup/vault.go` | ❌ | ❌ |
+| `backup/vault_lock_configuration.go` | ❌ | ❌ |
+| `backup/vault_notifications.go` | ❌ | ❌ |
+| `backup/vault_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;batch&lt;/code&gt; 50% (2/4) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `batch/compute_environment.go` | ❌ | ❌ |
+| `batch/job_definition.go` | ✅ | ✅ |
+| `batch/job_queue.go` | ✅ | ✅ |
+| `batch/scheduling_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;bcmdataexports&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `bcmdataexports/export.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;bedrock&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `bedrock/custom_model.go` | ✅ | ❌ |
+| `bedrock/guardrail.go` | ❌ | ❌ |
+| `bedrock/guardrail_version.go` | ❌ | ❌ |
+| `bedrock/inference_profile.go` | ❌ | ❌ |
+| `bedrock/model_invocation_logging_configuration.go` | ❌ | ❌ |
+| `bedrock/provisioned_model_throughput.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;bedrockagent&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `bedrockagent/agent.go` | ❌ | ❌ |
+| `bedrockagent/agent_action_group.go` | ❌ | ❌ |
+| `bedrockagent/agent_alias.go` | ❌ | ❌ |
+| `bedrockagent/agent_collaborator.go` | ❌ | ❌ |
+| `bedrockagent/agent_knowledge_base_association.go` | ❌ | ❌ |
+| `bedrockagent/data_source.go` | ❌ | ❌ |
+| `bedrockagent/flow.go` | ❌ | ❌ |
+| `bedrockagent/knowledge_base.go` | ❌ | ❌ |
+| `bedrockagent/prompt.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;bedrockagentcore&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `bedrockagentcore/agent_runtime.go` | ❌ | ❌ |
+| `bedrockagentcore/agent_runtime_endpoint.go` | ❌ | ❌ |
+| `bedrockagentcore/api_key_credential_provider.go` | ❌ | ❌ |
+| `bedrockagentcore/browser.go` | ❌ | ❌ |
+| `bedrockagentcore/code_interpreter.go` | ❌ | ❌ |
+| `bedrockagentcore/gateway.go` | ❌ | ❌ |
+| `bedrockagentcore/gateway_target.go` | ❌ | ❌ |
+| `bedrockagentcore/memory.go` | ❌ | ❌ |
+| `bedrockagentcore/memory_strategy.go` | ❌ | ❌ |
+| `bedrockagentcore/oauth2_credential_provider.go` | ❌ | ❌ |
+| `bedrockagentcore/token_vault_cmk.go` | ❌ | ❌ |
+| `bedrockagentcore/workload_identity.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;billing&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `billing/view.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;budgets&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `budgets/budget.go` | ❌ | ❌ |
+| `budgets/budget_action.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ce&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ce/anomaly_monitor.go` | ✅ | ❌ |
+| `ce/anomaly_subscription.go` | ✅ | ❌ |
+| `ce/cost_allocation_tag.go` | ❌ | ❌ |
+| `ce/cost_category.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;chatbot&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `chatbot/slack_channel_configuration.go` | ❌ | ❌ |
+| `chatbot/teams_channel_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;chime&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `chime/voice_connector.go` | ❌ | ❌ |
+| `chime/voice_connector_group.go` | ❌ | ❌ |
+| `chime/voice_connector_logging.go` | ❌ | ❌ |
+| `chime/voice_connector_origination.go` | ❌ | ❌ |
+| `chime/voice_connector_streaming.go` | ❌ | ❌ |
+| `chime/voice_connector_termination.go` | ❌ | ❌ |
+| `chime/voice_connector_termination_credentials.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;chimesdkmediapipelines&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `chimesdkmediapipelines/media_insights_pipeline_configuration.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;chimesdkvoice&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `chimesdkvoice/global_settings.go` | ❌ | ❌ |
+| `chimesdkvoice/sip_media_application.go` | ❌ | ❌ |
+| `chimesdkvoice/sip_rule.go` | ❌ | ❌ |
+| `chimesdkvoice/voice_profile_domain.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cleanrooms&lt;/code&gt; 66% (2/3) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cleanrooms/collaboration.go` | ✅ | ✅ |
+| `cleanrooms/configured_table.go` | ✅ | ✅ |
+| `cleanrooms/membership.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloud9&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloud9/environment_ec2.go` | ❌ | ❌ |
+| `cloud9/environment_membership.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudcontrol&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudcontrol/resource.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudformation&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudformation/stack.go` | ❌ | ❌ |
+| `cloudformation/stack_instances.go` | ❌ | ❌ |
+| `cloudformation/stack_set.go` | ❌ | ❌ |
+| `cloudformation/stack_set_instance.go` | ❌ | ❌ |
+| `cloudformation/type.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudfront&lt;/code&gt; 4% (1/21) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudfront/cache_policy.go` | ❌ | ❌ |
+| `cloudfront/connection_function.go` | ❌ | ❌ |
+| `cloudfront/connection_group.go` | ❌ | ❌ |
+| `cloudfront/continuous_deployment_policy.go` | ❌ | ❌ |
+| `cloudfront/distribution.go` | ❌ | ❌ |
+| `cloudfront/distribution_tenant.go` | ❌ | ❌ |
+| `cloudfront/field_level_encryption_config.go` | ❌ | ❌ |
+| `cloudfront/field_level_encryption_profile.go` | ❌ | ❌ |
+| `cloudfront/function.go` | ❌ | ❌ |
+| `cloudfront/key_group.go` | ❌ | ❌ |
+| `cloudfront/key_value_store.go` | ✅ | ✅ |
+| `cloudfront/monitoring_subscription.go` | ❌ | ❌ |
+| `cloudfront/multitenant_distribution.go` | ❌ | ❌ |
+| `cloudfront/origin_access_control.go` | ❌ | ❌ |
+| `cloudfront/origin_access_identity.go` | ❌ | ❌ |
+| `cloudfront/origin_request_policy.go` | ❌ | ❌ |
+| `cloudfront/public_key.go` | ❌ | ❌ |
+| `cloudfront/realtime_log_config.go` | ✅ | ❌ |
+| `cloudfront/response_headers_policy.go` | ❌ | ❌ |
+| `cloudfront/trust_store.go` | ❌ | ❌ |
+| `cloudfront/vpc_origin.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudfrontkeyvaluestore&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudfrontkeyvaluestore/key.go` | ✅ | ❌ |
+| `cloudfrontkeyvaluestore/keys_exclusive.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudhsmv2&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudhsmv2/cluster.go` | ❌ | ❌ |
+| `cloudhsmv2/hsm.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudsearch&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudsearch/domain.go` | ❌ | ❌ |
+| `cloudsearch/domain_service_access_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudtrail&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudtrail/event_data_store.go` | ✅ | ❌ |
+| `cloudtrail/organization_delegated_admin_account.go` | ❌ | ❌ |
+| `cloudtrail/trail.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cloudwatch&lt;/code&gt; 16% (1/6) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cloudwatch/composite_alarm.go` | ❌ | ❌ |
+| `cloudwatch/contributor_insight_rule.go` | ❌ | ❌ |
+| `cloudwatch/contributor_managed_insight_rule.go` | ❌ | ❌ |
+| `cloudwatch/dashboard.go` | ❌ | ❌ |
+| `cloudwatch/metric_alarm.go` | ✅ | ✅ |
+| `cloudwatch/metric_stream.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codeartifact&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codeartifact/domain.go` | ✅ | ❌ |
+| `codeartifact/domain_permissions_policy.go` | ✅ | ❌ |
+| `codeartifact/repository.go` | ✅ | ❌ |
+| `codeartifact/repository_permissions_policy.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codebuild&lt;/code&gt; 16% (1/6) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codebuild/fleet.go` | ✅ | ❌ |
+| `codebuild/project.go` | ✅ | ✅ |
+| `codebuild/report_group.go` | ✅ | ❌ |
+| `codebuild/resource_policy.go` | ✅ | ❌ |
+| `codebuild/source_credential.go` | ✅ | ❌ |
+| `codebuild/webhook.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codecatalyst&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codecatalyst/dev_environment.go` | ❌ | ❌ |
+| `codecatalyst/project.go` | ❌ | ❌ |
+| `codecatalyst/source_repository.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codecommit&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codecommit/approval_rule_template.go` | ❌ | ❌ |
+| `codecommit/approval_rule_template_association.go` | ❌ | ❌ |
+| `codecommit/repository.go` | ❌ | ❌ |
+| `codecommit/trigger.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codeconnections&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codeconnections/connection.go` | ✅ | ❌ |
+| `codeconnections/host.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codeguruprofiler&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codeguruprofiler/profiling_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codegurureviewer&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codegurureviewer/repository_association.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codepipeline&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codepipeline/codepipeline.go` | ❌ | ❌ |
+| `codepipeline/custom_action_type.go` | ❌ | ❌ |
+| `codepipeline/webhook.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codestarconnections&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codestarconnections/connection.go` | ✅ | ❌ |
+| `codestarconnections/host.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;codestarnotifications&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `codestarnotifications/notification_rule.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cognitoidentity&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cognitoidentity/pool.go` | ❌ | ❌ |
+| `cognitoidentity/pool_provider_principal_tag.go` | ❌ | ❌ |
+| `cognitoidentity/pool_roles_attachment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cognitoidp&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cognitoidp/identity_provider.go` | ❌ | ❌ |
+| `cognitoidp/log_delivery_configuration.go` | ✅ | ❌ |
+| `cognitoidp/managed_login_branding.go` | ❌ | ❌ |
+| `cognitoidp/managed_user_pool_client.go` | ❌ | ❌ |
+| `cognitoidp/resource_server.go` | ❌ | ❌ |
+| `cognitoidp/risk_configuration.go` | ❌ | ❌ |
+| `cognitoidp/user.go` | ❌ | ❌ |
+| `cognitoidp/user_group.go` | ❌ | ❌ |
+| `cognitoidp/user_in_group.go` | ❌ | ❌ |
+| `cognitoidp/user_pool.go` | ❌ | ❌ |
+| `cognitoidp/user_pool_client.go` | ❌ | ❌ |
+| `cognitoidp/user_pool_domain.go` | ❌ | ❌ |
+| `cognitoidp/user_pool_ui_customization.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;comprehend&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `comprehend/document_classifier.go` | ✅ | ❌ |
+| `comprehend/entity_recognizer.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;computeoptimizer&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `computeoptimizer/enrollment_status.go` | ❌ | ❌ |
+| `computeoptimizer/recommendation_preferences.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;configservice&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `configservice/aggregate_authorization.go` | ❌ | ❌ |
+| `configservice/config_rule.go` | ❌ | ❌ |
+| `configservice/configuration_aggregator.go` | ❌ | ❌ |
+| `configservice/configuration_recorder.go` | ❌ | ❌ |
+| `configservice/configuration_recorder_status.go` | ❌ | ❌ |
+| `configservice/conformance_pack.go` | ❌ | ❌ |
+| `configservice/delivery_channel.go` | ❌ | ❌ |
+| `configservice/organization_conformance_pack.go` | ❌ | ❌ |
+| `configservice/organization_custom_policy_rule.go` | ❌ | ❌ |
+| `configservice/organization_custom_rule.go` | ❌ | ❌ |
+| `configservice/organization_managed_rule.go` | ❌ | ❌ |
+| `configservice/remediation_configuration.go` | ❌ | ❌ |
+| `configservice/retention_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;connect&lt;/code&gt; 0% (0/17)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `connect/bot_association.go` | ❌ | ❌ |
+| `connect/contact_flow.go` | ❌ | ❌ |
+| `connect/contact_flow_module.go` | ❌ | ❌ |
+| `connect/hours_of_operation.go` | ❌ | ❌ |
+| `connect/instance.go` | ✅ | ❌ |
+| `connect/instance_storage_config.go` | ❌ | ❌ |
+| `connect/lambda_function_association.go` | ❌ | ❌ |
+| `connect/phone_number.go` | ✅ | ❌ |
+| `connect/phone_number_contact_flow_association.go` | ❌ | ❌ |
+| `connect/queue.go` | ❌ | ❌ |
+| `connect/quick_connect.go` | ❌ | ❌ |
+| `connect/routing_profile.go` | ❌ | ❌ |
+| `connect/security_profile.go` | ❌ | ❌ |
+| `connect/user.go` | ❌ | ❌ |
+| `connect/user_hierarchy_group.go` | ❌ | ❌ |
+| `connect/user_hierarchy_structure.go` | ❌ | ❌ |
+| `connect/vocabulary.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;controltower&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `controltower/baseline.go` | ❌ | ❌ |
+| `controltower/control.go` | ❌ | ❌ |
+| `controltower/landing_zone.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;costoptimizationhub&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `costoptimizationhub/enrollment_status.go` | ❌ | ❌ |
+| `costoptimizationhub/preferences.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;cur&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `cur/report_definition.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;customerprofiles&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `customerprofiles/domain.go` | ❌ | ❌ |
+| `customerprofiles/profile.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dataexchange&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dataexchange/data_set.go` | ❌ | ❌ |
+| `dataexchange/event_action.go` | ❌ | ❌ |
+| `dataexchange/revision.go` | ❌ | ❌ |
+| `dataexchange/revision_assets.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;datapipeline&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `datapipeline/pipeline.go` | ❌ | ❌ |
+| `datapipeline/pipeline_definition.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;datasync&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `datasync/agent.go` | ✅ | ❌ |
+| `datasync/location_azure_blob.go` | ✅ | ❌ |
+| `datasync/location_efs.go` | ✅ | ❌ |
+| `datasync/location_fsx_lustre_file_system.go` | ❌ | ❌ |
+| `datasync/location_fsx_ontap_file_system.go` | ❌ | ❌ |
+| `datasync/location_fsx_openzfs_file_system.go` | ❌ | ❌ |
+| `datasync/location_fsx_windows_file_system.go` | ❌ | ❌ |
+| `datasync/location_hdfs.go` | ✅ | ❌ |
+| `datasync/location_nfs.go` | ✅ | ❌ |
+| `datasync/location_object_storage.go` | ✅ | ❌ |
+| `datasync/location_s3.go` | ✅ | ❌ |
+| `datasync/location_smb.go` | ✅ | ❌ |
+| `datasync/task.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;datazone&lt;/code&gt; 0% (0/10)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `datazone/asset_type.go` | ❌ | ❌ |
+| `datazone/domain.go` | ❌ | ❌ |
+| `datazone/environment.go` | ❌ | ❌ |
+| `datazone/environment_blueprint_configuration.go` | ❌ | ❌ |
+| `datazone/environment_profile.go` | ❌ | ❌ |
+| `datazone/form_type.go` | ❌ | ❌ |
+| `datazone/glossary.go` | ❌ | ❌ |
+| `datazone/glossary_term.go` | ❌ | ❌ |
+| `datazone/project.go` | ❌ | ❌ |
+| `datazone/user_profile.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dax&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dax/cluster.go` | ❌ | ❌ |
+| `dax/parameter_group.go` | ❌ | ❌ |
+| `dax/subnet_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;deploy&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `deploy/app.go` | ❌ | ❌ |
+| `deploy/deployment_config.go` | ❌ | ❌ |
+| `deploy/deployment_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;detective&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `detective/graph.go` | ❌ | ❌ |
+| `detective/invitation_accepter.go` | ❌ | ❌ |
+| `detective/member.go` | ❌ | ❌ |
+| `detective/organization_admin_account.go` | ❌ | ❌ |
+| `detective/organization_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;devicefarm&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `devicefarm/device_pool.go` | ✅ | ❌ |
+| `devicefarm/instance_profile.go` | ✅ | ❌ |
+| `devicefarm/network_profile.go` | ✅ | ❌ |
+| `devicefarm/project.go` | ✅ | ❌ |
+| `devicefarm/test_grid_project.go` | ✅ | ❌ |
+| `devicefarm/upload.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;devopsguru&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `devopsguru/event_sources_config.go` | ❌ | ❌ |
+| `devopsguru/notification_channel.go` | ❌ | ❌ |
+| `devopsguru/resource_collection.go` | ❌ | ❌ |
+| `devopsguru/service_integration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;directconnect&lt;/code&gt; 0% (0/19)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `directconnect/bgp_peer.go` | ❌ | ❌ |
+| `directconnect/connection.go` | ❌ | ❌ |
+| `directconnect/connection_association.go` | ❌ | ❌ |
+| `directconnect/connection_confirmation.go` | ❌ | ❌ |
+| `directconnect/gateway.go` | ✅ | ❌ |
+| `directconnect/gateway_association.go` | ❌ | ❌ |
+| `directconnect/gateway_association_proposal.go` | ❌ | ❌ |
+| `directconnect/hosted_connection.go` | ❌ | ❌ |
+| `directconnect/hosted_private_virtual_interface.go` | ❌ | ❌ |
+| `directconnect/hosted_private_virtual_interface_accepter.go` | ❌ | ❌ |
+| `directconnect/hosted_public_virtual_interface.go` | ❌ | ❌ |
+| `directconnect/hosted_public_virtual_interface_accepter.go` | ❌ | ❌ |
+| `directconnect/hosted_transit_virtual_interface.go` | ❌ | ❌ |
+| `directconnect/hosted_transit_virtual_interface_accepter.go` | ❌ | ❌ |
+| `directconnect/lag.go` | ❌ | ❌ |
+| `directconnect/macsec_key_association.go` | ❌ | ❌ |
+| `directconnect/private_virtual_interface.go` | ❌ | ❌ |
+| `directconnect/public_virtual_interface.go` | ❌ | ❌ |
+| `directconnect/transit_virtual_interface.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dlm&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dlm/lifecycle_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dms&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dms/certificate.go` | ❌ | ❌ |
+| `dms/endpoint.go` | ❌ | ❌ |
+| `dms/event_subscription.go` | ❌ | ❌ |
+| `dms/replication_config.go` | ✅ | ❌ |
+| `dms/replication_instance.go` | ❌ | ❌ |
+| `dms/replication_subnet_group.go` | ❌ | ❌ |
+| `dms/replication_task.go` | ❌ | ❌ |
+| `dms/s3_endpoint.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;docdb&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `docdb/cluster.go` | ❌ | ❌ |
+| `docdb/cluster_instance.go` | ❌ | ❌ |
+| `docdb/cluster_parameter_group.go` | ❌ | ❌ |
+| `docdb/cluster_snapshot.go` | ❌ | ❌ |
+| `docdb/event_subscription.go` | ❌ | ❌ |
+| `docdb/global_cluster.go` | ❌ | ❌ |
+| `docdb/subnet_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;docdbelastic&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `docdbelastic/cluster.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;drs&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `drs/replication_configuration_template.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ds&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ds/conditional_forwarder.go` | ❌ | ❌ |
+| `ds/directory.go` | ❌ | ❌ |
+| `ds/log_subscription.go` | ❌ | ❌ |
+| `ds/radius_settings.go` | ❌ | ❌ |
+| `ds/region.go` | ❌ | ❌ |
+| `ds/shared_directory.go` | ❌ | ❌ |
+| `ds/shared_directory_accepter.go` | ❌ | ❌ |
+| `ds/trust.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dsql&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dsql/cluster.go` | ❌ | ❌ |
+| `dsql/cluster_peering.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;dynamodb&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `dynamodb/contributor_insights.go` | ❌ | ❌ |
+| `dynamodb/global_secondary_index.go` | ✅ | ❌ |
+| `dynamodb/global_table.go` | ❌ | ❌ |
+| `dynamodb/kinesis_streaming_destination.go` | ❌ | ❌ |
+| `dynamodb/resource_policy.go` | ✅ | ❌ |
+| `dynamodb/table.go` | ❌ | ❌ |
+| `dynamodb/table_export.go` | ✅ | ❌ |
+| `dynamodb/table_item.go` | ❌ | ❌ |
+| `dynamodb/table_replica.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ec2&lt;/code&gt; 7% (12/155) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ec2/ebs_default_kms_key.go` | ❌ | ❌ |
+| `ec2/ebs_encryption_by_default.go` | ❌ | ❌ |
+| `ec2/ebs_fast_snapshot_restore.go` | ❌ | ❌ |
+| `ec2/ebs_snapshot.go` | ❌ | ❌ |
+| `ec2/ebs_snapshot_block_public_access.go` | ❌ | ❌ |
+| `ec2/ebs_snapshot_copy.go` | ❌ | ❌ |
+| `ec2/ebs_snapshot_create_volume_permission.go` | ❌ | ❌ |
+| `ec2/ebs_snapshot_import.go` | ❌ | ❌ |
+| `ec2/ebs_volume.go` | ❌ | ❌ |
+| `ec2/ebs_volume_attachment.go` | ❌ | ❌ |
+| `ec2/ec2_allowed_images_settings.go` | ❌ | ❌ |
+| `ec2/ec2_ami.go` | ❌ | ❌ |
+| `ec2/ec2_ami_copy.go` | ❌ | ❌ |
+| `ec2/ec2_ami_from_instance.go` | ❌ | ❌ |
+| `ec2/ec2_ami_launch_permission.go` | ❌ | ❌ |
+| `ec2/ec2_availability_zone_group.go` | ❌ | ❌ |
+| `ec2/ec2_capacity_block_reservation.go` | ❌ | ❌ |
+| `ec2/ec2_capacity_reservation.go` | ❌ | ❌ |
+| `ec2/ec2_default_credit_specification.go` | ❌ | ❌ |
+| `ec2/ec2_eip.go` | ❌ | ❌ |
+| `ec2/ec2_eip_association.go` | ❌ | ❌ |
+| `ec2/ec2_eip_domain_name.go` | ❌ | ❌ |
+| `ec2/ec2_fleet.go` | ❌ | ❌ |
+| `ec2/ec2_host.go` | ❌ | ❌ |
+| `ec2/ec2_image_block_public_access.go` | ❌ | ❌ |
+| `ec2/ec2_instance.go` | ✅ | ✅ |
+| `ec2/ec2_instance_connect_endpoint.go` | ❌ | ❌ |
+| `ec2/ec2_instance_metadata_defaults.go` | ❌ | ❌ |
+| `ec2/ec2_instance_state.go` | ❌ | ❌ |
+| `ec2/ec2_key_pair.go` | ❌ | ❌ |
+| `ec2/ec2_launch_template.go` | ❌ | ❌ |
+| `ec2/ec2_placement_group.go` | ❌ | ❌ |
+| `ec2/ec2_secondary_network.go` | ✅ | ✅ |
+| `ec2/ec2_secondary_subnet.go` | ✅ | ✅ |
+| `ec2/ec2_serial_console_access.go` | ❌ | ❌ |
+| `ec2/ec2_spot_datafeed_subscription.go` | ❌ | ❌ |
+| `ec2/ec2_spot_fleet_request.go` | ❌ | ❌ |
+| `ec2/ec2_spot_instance_request.go` | ❌ | ❌ |
+| `ec2/outposts_local_gateway_route.go` | ❌ | ❌ |
+| `ec2/outposts_local_gateway_route_table_vpc_association.go` | ❌ | ❌ |
+| `ec2/transitgateway_.go` | ❌ | ❌ |
+| `ec2/transitgateway_connect.go` | ❌ | ❌ |
+| `ec2/transitgateway_connect_peer.go` | ❌ | ❌ |
+| `ec2/transitgateway_default_route_table_association.go` | ❌ | ❌ |
+| `ec2/transitgateway_default_route_table_propagation.go` | ❌ | ❌ |
+| `ec2/transitgateway_metering_policy.go` | ✅ | ✅ |
+| `ec2/transitgateway_metering_policy_entry.go` | ❌ | ❌ |
+| `ec2/transitgateway_multicast_domain.go` | ❌ | ❌ |
+| `ec2/transitgateway_multicast_domain_association.go` | ❌ | ❌ |
+| `ec2/transitgateway_multicast_group_member.go` | ❌ | ❌ |
+| `ec2/transitgateway_multicast_group_source.go` | ❌ | ❌ |
+| `ec2/transitgateway_peering_attachment.go` | ❌ | ❌ |
+| `ec2/transitgateway_peering_attachment_accepter.go` | ❌ | ❌ |
+| `ec2/transitgateway_policy_table.go` | ❌ | ❌ |
+| `ec2/transitgateway_policy_table_association.go` | ❌ | ❌ |
+| `ec2/transitgateway_prefix_list_reference.go` | ❌ | ❌ |
+| `ec2/transitgateway_route.go` | ❌ | ❌ |
+| `ec2/transitgateway_route_table.go` | ❌ | ❌ |
+| `ec2/transitgateway_route_table_association.go` | ❌ | ❌ |
+| `ec2/transitgateway_route_table_propagation.go` | ❌ | ❌ |
+| `ec2/transitgateway_vpc_attachment.go` | ❌ | ❌ |
+| `ec2/transitgateway_vpc_attachment_accepter.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_endpoint.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_group.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_instance.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_instance_logging_configuration.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_instance_trust_provider_attachment.go` | ❌ | ❌ |
+| `ec2/verifiedaccess_trust_provider.go` | ❌ | ❌ |
+| `ec2/vpc_.go` | ✅ | ❌ |
+| `ec2/vpc_block_public_access_exclusion.go` | ❌ | ❌ |
+| `ec2/vpc_block_public_access_options.go` | ❌ | ❌ |
+| `ec2/vpc_default_network_acl.go` | ❌ | ❌ |
+| `ec2/vpc_default_route_table.go` | ❌ | ❌ |
+| `ec2/vpc_default_security_group.go` | ❌ | ❌ |
+| `ec2/vpc_default_subnet.go` | ❌ | ❌ |
+| `ec2/vpc_default_vpc.go` | ❌ | ❌ |
+| `ec2/vpc_default_vpc_dhcp_options.go` | ❌ | ❌ |
+| `ec2/vpc_dhcp_options.go` | ❌ | ❌ |
+| `ec2/vpc_dhcp_options_association.go` | ❌ | ❌ |
+| `ec2/vpc_egress_only_internet_gateway.go` | ❌ | ❌ |
+| `ec2/vpc_encryption_control.go` | ✅ | ❌ |
+| `ec2/vpc_endpoint.go` | ✅ | ✅ |
+| `ec2/vpc_endpoint_connection_accepter.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_connection_notification.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_policy.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_private_dns.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_route_table_association.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_security_group_association.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_service.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_service_allowed_principal.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_service_private_dns_verification.go` | ❌ | ❌ |
+| `ec2/vpc_endpoint_subnet_association.go` | ❌ | ❌ |
+| `ec2/vpc_flow_log.go` | ❌ | ❌ |
+| `ec2/vpc_internet_gateway.go` | ❌ | ❌ |
+| `ec2/vpc_internet_gateway_attachment.go` | ❌ | ❌ |
+| `ec2/vpc_ipam.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_organization_admin_account.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_pool.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_pool_cidr.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_pool_cidr_allocation.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_preview_next_cidr.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_resource_discovery.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_resource_discovery_association.go` | ❌ | ❌ |
+| `ec2/vpc_ipam_scope.go` | ❌ | ❌ |
+| `ec2/vpc_ipv4_cidr_block_association.go` | ❌ | ❌ |
+| `ec2/vpc_ipv6_cidr_block_association.go` | ❌ | ❌ |
+| `ec2/vpc_main_route_table_association.go` | ❌ | ❌ |
+| `ec2/vpc_managed_prefix_list_entry.go` | ❌ | ❌ |
+| `ec2/vpc_nat_gateway.go` | ❌ | ❌ |
+| `ec2/vpc_nat_gateway_eip_association.go` | ❌ | ❌ |
+| `ec2/vpc_network_acl.go` | ❌ | ❌ |
+| `ec2/vpc_network_acl_association.go` | ❌ | ❌ |
+| `ec2/vpc_network_acl_rule.go` | ✅ | ❌ |
+| `ec2/vpc_network_insights_analysis.go` | ❌ | ❌ |
+| `ec2/vpc_network_insights_path.go` | ❌ | ❌ |
+| `ec2/vpc_network_interface.go` | ❌ | ❌ |
+| `ec2/vpc_network_interface_attachment.go` | ❌ | ❌ |
+| `ec2/vpc_network_interface_permission.go` | ❌ | ❌ |
+| `ec2/vpc_network_interface_sg_attachment.go` | ❌ | ❌ |
+| `ec2/vpc_network_performance_metric_subscription.go` | ❌ | ❌ |
+| `ec2/vpc_peering_connection.go` | ❌ | ❌ |
+| `ec2/vpc_peering_connection_accepter.go` | ❌ | ❌ |
+| `ec2/vpc_peering_connection_options.go` | ❌ | ❌ |
+| `ec2/vpc_route.go` | ✅ | ✅ |
+| `ec2/vpc_route_server.go` | ❌ | ❌ |
+| `ec2/vpc_route_server_endpoint.go` | ❌ | ❌ |
+| `ec2/vpc_route_server_peer.go` | ❌ | ❌ |
+| `ec2/vpc_route_server_propagation.go` | ❌ | ❌ |
+| `ec2/vpc_route_server_vpc_association.go` | ❌ | ❌ |
+| `ec2/vpc_route_table.go` | ✅ | ✅ |
+| `ec2/vpc_route_table_association.go` | ✅ | ✅ |
+| `ec2/vpc_security_group.go` | ✅ | ✅ |
+| `ec2/vpc_security_group_egress_rule.go` | ✅ | ✅ |
+| `ec2/vpc_security_group_ingress_rule.go` | ✅ | ✅ |
+| `ec2/vpc_security_group_rule.go` | ❌ | ❌ |
+| `ec2/vpc_security_group_rules_exclusive.go` | ❌ | ❌ |
+| `ec2/vpc_security_group_vpc_association.go` | ✅ | ❌ |
+| `ec2/vpc_subnet.go` | ✅ | ✅ |
+| `ec2/vpc_subnet_cidr_reservation.go` | ❌ | ❌ |
+| `ec2/vpc_traffic_mirror_filter.go` | ❌ | ❌ |
+| `ec2/vpc_traffic_mirror_filter_rule.go` | ❌ | ❌ |
+| `ec2/vpc_traffic_mirror_session.go` | ❌ | ❌ |
+| `ec2/vpc_traffic_mirror_target.go` | ❌ | ❌ |
+| `ec2/vpnclient_authorization_rule.go` | ❌ | ❌ |
+| `ec2/vpnclient_endpoint.go` | ❌ | ❌ |
+| `ec2/vpnclient_network_association.go` | ❌ | ❌ |
+| `ec2/vpnclient_route.go` | ❌ | ❌ |
+| `ec2/vpnsite_concentrator.go` | ❌ | ❌ |
+| `ec2/vpnsite_connection.go` | ❌ | ❌ |
+| `ec2/vpnsite_connection_route.go` | ❌ | ❌ |
+| `ec2/vpnsite_customer_gateway.go` | ❌ | ❌ |
+| `ec2/vpnsite_gateway.go` | ❌ | ❌ |
+| `ec2/vpnsite_gateway_attachment.go` | ❌ | ❌ |
+| `ec2/vpnsite_gateway_route_propagation.go` | ❌ | ❌ |
+| `ec2/wavelength_carrier_gateway.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ecr&lt;/code&gt; 10% (1/10) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ecr/account_setting.go` | ❌ | ❌ |
+| `ecr/lifecycle_policy.go` | ✅ | ❌ |
+| `ecr/pull_through_cache_rule.go` | ❌ | ❌ |
+| `ecr/pull_time_update_exclusion.go` | ❌ | ❌ |
+| `ecr/registry_policy.go` | ❌ | ❌ |
+| `ecr/registry_scanning_configuration.go` | ❌ | ❌ |
+| `ecr/replication_configuration.go` | ❌ | ❌ |
+| `ecr/repository.go` | ✅ | ✅ |
+| `ecr/repository_creation_template.go` | ❌ | ❌ |
+| `ecr/repository_policy.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ecrpublic&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ecrpublic/repository.go` | ❌ | ❌ |
+| `ecrpublic/repository_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ecs&lt;/code&gt; 25% (2/8) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ecs/account_setting_default.go` | ❌ | ❌ |
+| `ecs/capacity_provider.go` | ✅ | ❌ |
+| `ecs/cluster.go` | ❌ | ❌ |
+| `ecs/cluster_capacity_providers.go` | ❌ | ❌ |
+| `ecs/express_gateway_service.go` | ❌ | ❌ |
+| `ecs/service.go` | ✅ | ✅ |
+| `ecs/task_definition.go` | ✅ | ✅ |
+| `ecs/task_set.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;efs&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `efs/access_point.go` | ❌ | ❌ |
+| `efs/backup_policy.go` | ❌ | ❌ |
+| `efs/file_system.go` | ❌ | ❌ |
+| `efs/file_system_policy.go` | ❌ | ❌ |
+| `efs/mount_target.go` | ❌ | ❌ |
+| `efs/replication_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;eks&lt;/code&gt; 11% (1/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `eks/access_entry.go` | ❌ | ❌ |
+| `eks/access_policy_association.go` | ❌ | ❌ |
+| `eks/addon.go` | ❌ | ❌ |
+| `eks/capability.go` | ❌ | ❌ |
+| `eks/cluster.go` | ✅ | ✅ |
+| `eks/fargate_profile.go` | ❌ | ❌ |
+| `eks/identity_provider_config.go` | ❌ | ❌ |
+| `eks/node_group.go` | ❌ | ❌ |
+| `eks/pod_identity_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elasticache&lt;/code&gt; 0% (0/10)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elasticache/cluster.go` | ❌ | ❌ |
+| `elasticache/global_replication_group.go` | ❌ | ❌ |
+| `elasticache/parameter_group.go` | ❌ | ❌ |
+| `elasticache/replication_group.go` | ❌ | ❌ |
+| `elasticache/reserved_cache_node.go` | ❌ | ❌ |
+| `elasticache/serverless_cache.go` | ❌ | ❌ |
+| `elasticache/subnet_group.go` | ❌ | ❌ |
+| `elasticache/user.go` | ❌ | ❌ |
+| `elasticache/user_group.go` | ❌ | ❌ |
+| `elasticache/user_group_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elasticbeanstalk&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elasticbeanstalk/application.go` | ❌ | ❌ |
+| `elasticbeanstalk/application_version.go` | ❌ | ❌ |
+| `elasticbeanstalk/configuration_template.go` | ❌ | ❌ |
+| `elasticbeanstalk/environment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elasticsearch&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elasticsearch/domain.go` | ❌ | ❌ |
+| `elasticsearch/domain_policy.go` | ❌ | ❌ |
+| `elasticsearch/domain_saml_options.go` | ❌ | ❌ |
+| `elasticsearch/vpc_endpoint.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elastictranscoder&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elastictranscoder/pipeline.go` | ❌ | ❌ |
+| `elastictranscoder/preset.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elb&lt;/code&gt; 11% (1/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elb/app_cookie_stickiness_policy.go` | ❌ | ❌ |
+| `elb/attachment.go` | ❌ | ❌ |
+| `elb/backend_server_policy.go` | ❌ | ❌ |
+| `elb/lb_cookie_stickiness_policy.go` | ❌ | ❌ |
+| `elb/lb_ssl_negotiation_policy.go` | ❌ | ❌ |
+| `elb/listener_policy.go` | ❌ | ❌ |
+| `elb/load_balancer.go` | ✅ | ✅ |
+| `elb/policy.go` | ❌ | ❌ |
+| `elb/proxy_protocol_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;elbv2&lt;/code&gt; 50% (4/8) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `elbv2/listener.go` | ✅ | ✅ |
+| `elbv2/listener_certificate.go` | ❌ | ❌ |
+| `elbv2/listener_rule.go` | ✅ | ✅ |
+| `elbv2/load_balancer.go` | ✅ | ✅ |
+| `elbv2/target_group.go` | ✅ | ✅ |
+| `elbv2/target_group_attachment.go` | ✅ | ❌ |
+| `elbv2/trust_store.go` | ✅ | ❌ |
+| `elbv2/trust_store_revocation.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;emr&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `emr/block_public_access_configuration.go` | ❌ | ❌ |
+| `emr/cluster.go` | ❌ | ❌ |
+| `emr/instance_fleet.go` | ❌ | ❌ |
+| `emr/instance_group.go` | ❌ | ❌ |
+| `emr/managed_scaling_policy.go` | ❌ | ❌ |
+| `emr/security_configuration.go` | ❌ | ❌ |
+| `emr/studio.go` | ❌ | ❌ |
+| `emr/studio_session_mapping.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;emrcontainers&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `emrcontainers/job_template.go` | ❌ | ❌ |
+| `emrcontainers/virtual_cluster.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;emrserverless&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `emrserverless/application.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;events&lt;/code&gt; 22% (2/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `events/api_destination.go` | ❌ | ❌ |
+| `events/archive.go` | ❌ | ❌ |
+| `events/bus.go` | ❌ | ❌ |
+| `events/bus_policy.go` | ❌ | ❌ |
+| `events/connection.go` | ❌ | ❌ |
+| `events/endpoint.go` | ❌ | ❌ |
+| `events/permission.go` | ❌ | ❌ |
+| `events/rule.go` | ✅ | ✅ |
+| `events/target.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;evidently&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `evidently/feature.go` | ❌ | ❌ |
+| `evidently/launch.go` | ❌ | ❌ |
+| `evidently/project.go` | ❌ | ❌ |
+| `evidently/segment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;finspace&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `finspace/kx_cluster.go` | ❌ | ❌ |
+| `finspace/kx_database.go` | ❌ | ❌ |
+| `finspace/kx_dataview.go` | ❌ | ❌ |
+| `finspace/kx_environment.go` | ❌ | ❌ |
+| `finspace/kx_scaling_group.go` | ❌ | ❌ |
+| `finspace/kx_user.go` | ❌ | ❌ |
+| `finspace/kx_volume.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;firehose&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `firehose/delivery_stream.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;fis&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `fis/experiment_template.go` | ❌ | ❌ |
+| `fis/target_account_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;fms&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `fms/admin_account.go` | ❌ | ❌ |
+| `fms/policy.go` | ❌ | ❌ |
+| `fms/resource_set.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;fsx&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `fsx/backup.go` | ❌ | ❌ |
+| `fsx/data_repository_association.go` | ❌ | ❌ |
+| `fsx/file_cache.go` | ❌ | ❌ |
+| `fsx/lustre_file_system.go` | ❌ | ❌ |
+| `fsx/ontap_file_system.go` | ❌ | ❌ |
+| `fsx/ontap_storage_virtual_machine.go` | ❌ | ❌ |
+| `fsx/ontap_volume.go` | ❌ | ❌ |
+| `fsx/openzfs_file_system.go` | ❌ | ❌ |
+| `fsx/openzfs_snapshot.go` | ❌ | ❌ |
+| `fsx/openzfs_volume.go` | ❌ | ❌ |
+| `fsx/s3_access_point_attachment.go` | ❌ | ❌ |
+| `fsx/windows_file_system.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;gamelift&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `gamelift/alias.go` | ❌ | ❌ |
+| `gamelift/build.go` | ❌ | ❌ |
+| `gamelift/fleet.go` | ❌ | ❌ |
+| `gamelift/game_server_group.go` | ❌ | ❌ |
+| `gamelift/game_session_queue.go` | ❌ | ❌ |
+| `gamelift/script.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;glacier&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `glacier/vault.go` | ❌ | ❌ |
+| `glacier/vault_lock.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;globalaccelerator&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `globalaccelerator/accelerator.go` | ✅ | ❌ |
+| `globalaccelerator/cross_account_attachment.go` | ✅ | ❌ |
+| `globalaccelerator/custom_routing_accelerator.go` | ✅ | ❌ |
+| `globalaccelerator/custom_routing_endpoint_group.go` | ✅ | ❌ |
+| `globalaccelerator/custom_routing_listener.go` | ✅ | ❌ |
+| `globalaccelerator/endpoint_group.go` | ✅ | ❌ |
+| `globalaccelerator/listener.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;glue&lt;/code&gt; 5% (1/20) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `glue/catalog_database.go` | ❌ | ❌ |
+| `glue/catalog_table.go` | ❌ | ❌ |
+| `glue/catalog_table_optimizer.go` | ❌ | ❌ |
+| `glue/classifier.go` | ❌ | ❌ |
+| `glue/connection.go` | ❌ | ❌ |
+| `glue/crawler.go` | ❌ | ❌ |
+| `glue/data_catalog_encryption_settings.go` | ❌ | ❌ |
+| `glue/data_quality_ruleset.go` | ❌ | ❌ |
+| `glue/dev_endpoint.go` | ❌ | ❌ |
+| `glue/job.go` | ✅ | ✅ |
+| `glue/ml_transform.go` | ❌ | ❌ |
+| `glue/partition.go` | ❌ | ❌ |
+| `glue/partition_index.go` | ❌ | ❌ |
+| `glue/registry.go` | ✅ | ❌ |
+| `glue/resource_policy.go` | ❌ | ❌ |
+| `glue/schema.go` | ✅ | ❌ |
+| `glue/security_configuration.go` | ❌ | ❌ |
+| `glue/trigger.go` | ❌ | ❌ |
+| `glue/user_defined_function.go` | ❌ | ❌ |
+| `glue/workflow.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;grafana&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `grafana/license_association.go` | ❌ | ❌ |
+| `grafana/role_association.go` | ❌ | ❌ |
+| `grafana/workspace.go` | ❌ | ❌ |
+| `grafana/workspace_api_key.go` | ❌ | ❌ |
+| `grafana/workspace_saml_configuration.go` | ❌ | ❌ |
+| `grafana/workspace_service_account.go` | ❌ | ❌ |
+| `grafana/workspace_service_account_token.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;guardduty&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `guardduty/detector.go` | ❌ | ❌ |
+| `guardduty/detector_feature.go` | ❌ | ❌ |
+| `guardduty/filter.go` | ❌ | ❌ |
+| `guardduty/invite_accepter.go` | ❌ | ❌ |
+| `guardduty/ipset.go` | ❌ | ❌ |
+| `guardduty/malware_protection_plan.go` | ❌ | ❌ |
+| `guardduty/member.go` | ❌ | ❌ |
+| `guardduty/member_detector_feature.go` | ❌ | ❌ |
+| `guardduty/organization_admin_account.go` | ❌ | ❌ |
+| `guardduty/organization_configuration.go` | ❌ | ❌ |
+| `guardduty/organization_configuration_feature.go` | ❌ | ❌ |
+| `guardduty/publishing_destination.go` | ❌ | ❌ |
+| `guardduty/threatintelset.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;iam&lt;/code&gt; 14% (5/35) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `iam/access_key.go` | ❌ | ❌ |
+| `iam/account_alias.go` | ❌ | ❌ |
+| `iam/account_password_policy.go` | ❌ | ❌ |
+| `iam/group.go` | ❌ | ❌ |
+| `iam/group_membership.go` | ❌ | ❌ |
+| `iam/group_policies_exclusive.go` | ❌ | ❌ |
+| `iam/group_policy.go` | ❌ | ❌ |
+| `iam/group_policy_attachment.go` | ❌ | ❌ |
+| `iam/group_policy_attachments_exclusive.go` | ❌ | ❌ |
+| `iam/instance_profile.go` | ❌ | ❌ |
+| `iam/openid_connect_provider.go` | ✅ | ❌ |
+| `iam/organizations_features.go` | ❌ | ❌ |
+| `iam/outbound_web_identity_federation.go` | ❌ | ❌ |
+| `iam/policy.go` | ✅ | ✅ |
+| `iam/policy_attachment.go` | ❌ | ❌ |
+| `iam/role.go` | ✅ | ✅ |
+| `iam/role_policies_exclusive.go` | ❌ | ❌ |
+| `iam/role_policy.go` | ✅ | ✅ |
+| `iam/role_policy_attachment.go` | ✅ | ✅ |
+| `iam/role_policy_attachments_exclusive.go` | ❌ | ❌ |
+| `iam/saml_provider.go` | ✅ | ❌ |
+| `iam/security_token_service_preferences.go` | ❌ | ❌ |
+| `iam/server_certificate.go` | ❌ | ❌ |
+| `iam/service_linked_role.go` | ✅ | ❌ |
+| `iam/service_specific_credential.go` | ❌ | ❌ |
+| `iam/signing_certificate.go` | ❌ | ❌ |
+| `iam/user.go` | ✅ | ✅ |
+| `iam/user_group_membership.go` | ❌ | ❌ |
+| `iam/user_login_profile.go` | ❌ | ❌ |
+| `iam/user_policies_exclusive.go` | ❌ | ❌ |
+| `iam/user_policy.go` | ❌ | ❌ |
+| `iam/user_policy_attachment.go` | ❌ | ❌ |
+| `iam/user_policy_attachments_exclusive.go` | ❌ | ❌ |
+| `iam/user_ssh_key.go` | ❌ | ❌ |
+| `iam/virtual_mfa_device.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;identitystore&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `identitystore/group.go` | ❌ | ❌ |
+| `identitystore/group_membership.go` | ❌ | ❌ |
+| `identitystore/user.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;imagebuilder&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `imagebuilder/component.go` | ❌ | ❌ |
+| `imagebuilder/container_recipe.go` | ✅ | ❌ |
+| `imagebuilder/distribution_configuration.go` | ✅ | ❌ |
+| `imagebuilder/image.go` | ✅ | ❌ |
+| `imagebuilder/image_pipeline.go` | ✅ | ❌ |
+| `imagebuilder/image_recipe.go` | ✅ | ❌ |
+| `imagebuilder/infrastructure_configuration.go` | ✅ | ❌ |
+| `imagebuilder/lifecycle_policy.go` | ✅ | ❌ |
+| `imagebuilder/workflow.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;inspector&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `inspector/assessment_target.go` | ✅ | ❌ |
+| `inspector/assessment_template.go` | ✅ | ❌ |
+| `inspector/resource_group.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;inspector2&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `inspector2/delegated_admin_account.go` | ❌ | ❌ |
+| `inspector2/enabler.go` | ❌ | ❌ |
+| `inspector2/filter.go` | ✅ | ❌ |
+| `inspector2/member_association.go` | ❌ | ❌ |
+| `inspector2/organization_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;internetmonitor&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `internetmonitor/monitor.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;invoicing&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `invoicing/invoice_unit.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;iot&lt;/code&gt; 0% (0/19)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `iot/authorizer.go` | ❌ | ❌ |
+| `iot/billing_group.go` | ❌ | ❌ |
+| `iot/ca_certificate.go` | ❌ | ❌ |
+| `iot/certificate.go` | ❌ | ❌ |
+| `iot/domain_configuration.go` | ❌ | ❌ |
+| `iot/event_configurations.go` | ❌ | ❌ |
+| `iot/indexing_configuration.go` | ❌ | ❌ |
+| `iot/logging_options.go` | ❌ | ❌ |
+| `iot/policy.go` | ❌ | ❌ |
+| `iot/policy_attachment.go` | ❌ | ❌ |
+| `iot/provisioning_template.go` | ❌ | ❌ |
+| `iot/role_alias.go` | ❌ | ❌ |
+| `iot/thing.go` | ❌ | ❌ |
+| `iot/thing_group.go` | ❌ | ❌ |
+| `iot/thing_group_membership.go` | ❌ | ❌ |
+| `iot/thing_principal_attachment.go` | ❌ | ❌ |
+| `iot/thing_type.go` | ❌ | ❌ |
+| `iot/topic_rule.go` | ❌ | ❌ |
+| `iot/topic_rule_destination.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ivs&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ivs/channel.go` | ✅ | ❌ |
+| `ivs/playback_key_pair.go` | ✅ | ❌ |
+| `ivs/recording_configuration.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ivschat&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ivschat/logging_configuration.go` | ✅ | ❌ |
+| `ivschat/room.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kafka&lt;/code&gt; 33% (3/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kafka/cluster.go` | ✅ | ✅ |
+| `kafka/cluster_policy.go` | ❌ | ❌ |
+| `kafka/configuration.go` | ❌ | ❌ |
+| `kafka/replicator.go` | ❌ | ❌ |
+| `kafka/scram_secret_association.go` | ❌ | ❌ |
+| `kafka/serverless_cluster.go` | ✅ | ✅ |
+| `kafka/single_scram_secret_association.go` | ❌ | ❌ |
+| `kafka/topic.go` | ✅ | ✅ |
+| `kafka/vpc_connection.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kafkaconnect&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kafkaconnect/connector.go` | ❌ | ❌ |
+| `kafkaconnect/custom_plugin.go` | ❌ | ❌ |
+| `kafkaconnect/worker_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kendra&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kendra/data_source.go` | ❌ | ❌ |
+| `kendra/experience.go` | ✅ | ❌ |
+| `kendra/faq.go` | ❌ | ❌ |
+| `kendra/index.go` | ❌ | ❌ |
+| `kendra/thesaurus.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;keyspaces&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `keyspaces/keyspace.go` | ❌ | ❌ |
+| `keyspaces/table.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kinesis&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kinesis/resource_policy.go` | ✅ | ❌ |
+| `kinesis/stream.go` | ❌ | ❌ |
+| `kinesis/stream_consumer.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kinesisanalytics&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kinesisanalytics/application.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kinesisanalyticsv2&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kinesisanalyticsv2/application.go` | ❌ | ❌ |
+| `kinesisanalyticsv2/application_snapshot.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kinesisvideo&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kinesisvideo/stream.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;kms&lt;/code&gt; 22% (2/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `kms/alias.go` | ✅ | ✅ |
+| `kms/ciphertext.go` | ❌ | ❌ |
+| `kms/custom_key_store.go` | ❌ | ❌ |
+| `kms/external_key.go` | ❌ | ❌ |
+| `kms/grant.go` | ❌ | ❌ |
+| `kms/key.go` | ✅ | ✅ |
+| `kms/key_policy.go` | ❌ | ❌ |
+| `kms/replica_external_key.go` | ❌ | ❌ |
+| `kms/replica_key.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;lakeformation&lt;/code&gt; 0% (0/10)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `lakeformation/data_cells_filter.go` | ❌ | ❌ |
+| `lakeformation/data_lake_settings.go` | ❌ | ❌ |
+| `lakeformation/identity_center_configuration.go` | ✅ | ❌ |
+| `lakeformation/lf_tag.go` | ❌ | ❌ |
+| `lakeformation/lf_tag_expression.go` | ❌ | ❌ |
+| `lakeformation/opt_in.go` | ❌ | ❌ |
+| `lakeformation/permissions.go` | ❌ | ❌ |
+| `lakeformation/resource.go` | ❌ | ❌ |
+| `lakeformation/resource_lf_tag.go` | ❌ | ❌ |
+| `lakeformation/resource_lf_tags.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;lambda&lt;/code&gt; 21% (3/14) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `lambda/alias.go` | ❌ | ❌ |
+| `lambda/capacity_provider.go` | ✅ | ✅ |
+| `lambda/code_signing_config.go` | ❌ | ❌ |
+| `lambda/event_source_mapping.go` | ❌ | ❌ |
+| `lambda/function.go` | ✅ | ✅ |
+| `lambda/function_event_invoke_config.go` | ❌ | ❌ |
+| `lambda/function_recursion_config.go` | ❌ | ❌ |
+| `lambda/function_url.go` | ❌ | ❌ |
+| `lambda/invocation.go` | ❌ | ❌ |
+| `lambda/layer_version.go` | ❌ | ❌ |
+| `lambda/layer_version_permission.go` | ❌ | ❌ |
+| `lambda/permission.go` | ✅ | ✅ |
+| `lambda/provisioned_concurrency_config.go` | ❌ | ❌ |
+| `lambda/runtime_management_config.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;lexmodels&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `lexmodels/bot.go` | ❌ | ❌ |
+| `lexmodels/bot_alias.go` | ❌ | ❌ |
+| `lexmodels/intent.go` | ❌ | ❌ |
+| `lexmodels/slot_type.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;lexv2models&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `lexv2models/bot.go` | ❌ | ❌ |
+| `lexv2models/bot_locale.go` | ❌ | ❌ |
+| `lexv2models/bot_version.go` | ❌ | ❌ |
+| `lexv2models/intent.go` | ❌ | ❌ |
+| `lexv2models/slot.go` | ❌ | ❌ |
+| `lexv2models/slot_type.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;licensemanager&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `licensemanager/association.go` | ❌ | ❌ |
+| `licensemanager/grant.go` | ❌ | ❌ |
+| `licensemanager/grant_accepter.go` | ❌ | ❌ |
+| `licensemanager/license_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;lightsail&lt;/code&gt; 0% (0/23)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `lightsail/bucket.go` | ❌ | ❌ |
+| `lightsail/bucket_access_key.go` | ❌ | ❌ |
+| `lightsail/bucket_resource_access.go` | ❌ | ❌ |
+| `lightsail/certificate.go` | ❌ | ❌ |
+| `lightsail/container_service.go` | ❌ | ❌ |
+| `lightsail/container_service_deployment_version.go` | ❌ | ❌ |
+| `lightsail/database.go` | ❌ | ❌ |
+| `lightsail/disk.go` | ❌ | ❌ |
+| `lightsail/disk_attachment.go` | ❌ | ❌ |
+| `lightsail/distribution.go` | ❌ | ❌ |
+| `lightsail/domain.go` | ❌ | ❌ |
+| `lightsail/domain_entry.go` | ❌ | ❌ |
+| `lightsail/instance.go` | ❌ | ❌ |
+| `lightsail/instance_public_ports.go` | ❌ | ❌ |
+| `lightsail/key_pair.go` | ❌ | ❌ |
+| `lightsail/lb.go` | ❌ | ❌ |
+| `lightsail/lb_attachment.go` | ❌ | ❌ |
+| `lightsail/lb_certificate.go` | ❌ | ❌ |
+| `lightsail/lb_certificate_attachment.go` | ❌ | ❌ |
+| `lightsail/lb_https_redirection_policy.go` | ❌ | ❌ |
+| `lightsail/lb_stickiness_policy.go` | ❌ | ❌ |
+| `lightsail/static_ip.go` | ❌ | ❌ |
+| `lightsail/static_ip_attachment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;location&lt;/code&gt; 0% (0/6)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `location/geofence_collection.go` | ❌ | ❌ |
+| `location/map.go` | ❌ | ❌ |
+| `location/place_index.go` | ❌ | ❌ |
+| `location/route_calculator.go` | ❌ | ❌ |
+| `location/tracker.go` | ❌ | ❌ |
+| `location/tracker_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;logs&lt;/code&gt; 5% (1/17) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `logs/account_policy.go` | ❌ | ❌ |
+| `logs/anomaly_detector.go` | ❌ | ❌ |
+| `logs/data_protection_policy.go` | ❌ | ❌ |
+| `logs/delivery.go` | ❌ | ❌ |
+| `logs/delivery_destination.go` | ❌ | ❌ |
+| `logs/delivery_destination_policy.go` | ❌ | ❌ |
+| `logs/delivery_source.go` | ❌ | ❌ |
+| `logs/destination.go` | ❌ | ❌ |
+| `logs/destination_policy.go` | ❌ | ❌ |
+| `logs/group.go` | ✅ | ✅ |
+| `logs/index_policy.go` | ❌ | ❌ |
+| `logs/metric_filter.go` | ❌ | ❌ |
+| `logs/query_definition.go` | ❌ | ❌ |
+| `logs/resource_policy.go` | ❌ | ❌ |
+| `logs/stream.go` | ❌ | ❌ |
+| `logs/subscription_filter.go` | ❌ | ❌ |
+| `logs/transformer.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;m2&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `m2/application.go` | ❌ | ❌ |
+| `m2/deployment.go` | ❌ | ❌ |
+| `m2/environment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;macie2&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `macie2/account.go` | ❌ | ❌ |
+| `macie2/classification_export_configuration.go` | ❌ | ❌ |
+| `macie2/classification_job.go` | ❌ | ❌ |
+| `macie2/custom_data_identifier.go` | ❌ | ❌ |
+| `macie2/findings_filter.go` | ❌ | ❌ |
+| `macie2/invitation_accepter.go` | ❌ | ❌ |
+| `macie2/member.go` | ❌ | ❌ |
+| `macie2/organization_admin_account.go` | ❌ | ❌ |
+| `macie2/organization_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mediaconvert&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mediaconvert/queue.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;medialive&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `medialive/channel.go` | ❌ | ❌ |
+| `medialive/input.go` | ❌ | ❌ |
+| `medialive/input_security_group.go` | ❌ | ❌ |
+| `medialive/multiplex.go` | ❌ | ❌ |
+| `medialive/multiplex_program.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mediapackage&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mediapackage/channel.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mediapackagev2&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mediapackagev2/channel_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mediastore&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mediastore/container.go` | ❌ | ❌ |
+| `mediastore/container_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;memorydb&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `memorydb/acl.go` | ❌ | ❌ |
+| `memorydb/cluster.go` | ❌ | ❌ |
+| `memorydb/multi_region_cluster.go` | ❌ | ❌ |
+| `memorydb/parameter_group.go` | ❌ | ❌ |
+| `memorydb/snapshot.go` | ❌ | ❌ |
+| `memorydb/subnet_group.go` | ❌ | ❌ |
+| `memorydb/user.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mq&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mq/broker.go` | ❌ | ❌ |
+| `mq/configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;mwaa&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `mwaa/environment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;neptune&lt;/code&gt; 0% (0/9)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `neptune/cluster.go` | ❌ | ❌ |
+| `neptune/cluster_endpoint.go` | ❌ | ❌ |
+| `neptune/cluster_instance.go` | ❌ | ❌ |
+| `neptune/cluster_parameter_group.go` | ❌ | ❌ |
+| `neptune/cluster_snapshot.go` | ❌ | ❌ |
+| `neptune/event_subscription.go` | ❌ | ❌ |
+| `neptune/global_cluster.go` | ❌ | ❌ |
+| `neptune/parameter_group.go` | ❌ | ❌ |
+| `neptune/subnet_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;neptunegraph&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `neptunegraph/graph.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;networkfirewall&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `networkfirewall/firewall.go` | ❌ | ❌ |
+| `networkfirewall/firewall_policy.go` | ❌ | ❌ |
+| `networkfirewall/firewall_transit_gateway_attachment_accepter.go` | ❌ | ❌ |
+| `networkfirewall/logging_configuration.go` | ❌ | ❌ |
+| `networkfirewall/resource_policy.go` | ❌ | ❌ |
+| `networkfirewall/rule_group.go` | ❌ | ❌ |
+| `networkfirewall/tls_inspection_configuration.go` | ✅ | ❌ |
+| `networkfirewall/vpc_endpoint_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;networkflowmonitor&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `networkflowmonitor/monitor.go` | ❌ | ❌ |
+| `networkflowmonitor/scope.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;networkmanager&lt;/code&gt; 0% (0/21)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `networkmanager/attachment_accepter.go` | ❌ | ❌ |
+| `networkmanager/attachment_routing_policy_label.go` | ❌ | ❌ |
+| `networkmanager/connect_attachment.go` | ❌ | ❌ |
+| `networkmanager/connect_peer.go` | ❌ | ❌ |
+| `networkmanager/connection.go` | ❌ | ❌ |
+| `networkmanager/core_network.go` | ❌ | ❌ |
+| `networkmanager/core_network_policy_attachment.go` | ❌ | ❌ |
+| `networkmanager/customer_gateway_association.go` | ❌ | ❌ |
+| `networkmanager/device.go` | ❌ | ❌ |
+| `networkmanager/dx_gateway_attachment.go` | ❌ | ❌ |
+| `networkmanager/global_network.go` | ❌ | ❌ |
+| `networkmanager/link.go` | ❌ | ❌ |
+| `networkmanager/link_association.go` | ❌ | ❌ |
+| `networkmanager/prefix_list_association.go` | ✅ | ❌ |
+| `networkmanager/site.go` | ❌ | ❌ |
+| `networkmanager/site_to_site_vpn_attachment.go` | ❌ | ❌ |
+| `networkmanager/transit_gateway_connect_peer_association.go` | ❌ | ❌ |
+| `networkmanager/transit_gateway_peering.go` | ❌ | ❌ |
+| `networkmanager/transit_gateway_registration.go` | ❌ | ❌ |
+| `networkmanager/transit_gateway_route_table_attachment.go` | ❌ | ❌ |
+| `networkmanager/vpc_attachment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;networkmonitor&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `networkmonitor/monitor.go` | ❌ | ❌ |
+| `networkmonitor/probe.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;notifications&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `notifications/channel_association.go` | ❌ | ❌ |
+| `notifications/event_rule.go` | ❌ | ❌ |
+| `notifications/managed_notification_account_contact_association.go` | ❌ | ❌ |
+| `notifications/managed_notification_additional_channel_association.go` | ❌ | ❌ |
+| `notifications/notification_configuration.go` | ❌ | ❌ |
+| `notifications/notification_hub.go` | ❌ | ❌ |
+| `notifications/organizational_unit_association.go` | ❌ | ❌ |
+| `notifications/organizations_access.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;notificationscontacts&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `notificationscontacts/email_contact.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;oam&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `oam/link.go` | ❌ | ❌ |
+| `oam/sink.go` | ❌ | ❌ |
+| `oam/sink_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;observabilityadmin&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `observabilityadmin/centralization_rule_for_organization.go` | ❌ | ❌ |
+| `observabilityadmin/telemetry_enrichment.go` | ❌ | ❌ |
+| `observabilityadmin/telemetry_pipeline.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;odb&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `odb/cloud_autonomous_vm_cluster.go` | ❌ | ❌ |
+| `odb/cloud_exadata_infrastructure.go` | ❌ | ❌ |
+| `odb/cloud_vm_cluster.go` | ❌ | ❌ |
+| `odb/network.go` | ❌ | ❌ |
+| `odb/network_peering_connection.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;opensearch&lt;/code&gt; 0% (0/10)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `opensearch/application.go` | ❌ | ❌ |
+| `opensearch/authorize_vpc_endpoint_access.go` | ❌ | ❌ |
+| `opensearch/domain.go` | ❌ | ❌ |
+| `opensearch/domain_policy.go` | ❌ | ❌ |
+| `opensearch/domain_saml_options.go` | ❌ | ❌ |
+| `opensearch/inbound_connection_accepter.go` | ❌ | ❌ |
+| `opensearch/outbound_connection.go` | ❌ | ❌ |
+| `opensearch/package.go` | ❌ | ❌ |
+| `opensearch/package_association.go` | ❌ | ❌ |
+| `opensearch/vpc_endpoint.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;opensearchserverless&lt;/code&gt; 16% (1/6) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `opensearchserverless/access_policy.go` | ✅ | ❌ |
+| `opensearchserverless/collection.go` | ✅ | ✅ |
+| `opensearchserverless/lifecycle_policy.go` | ✅ | ❌ |
+| `opensearchserverless/security_config.go` | ✅ | ❌ |
+| `opensearchserverless/security_policy.go` | ✅ | ❌ |
+| `opensearchserverless/vpc_endpoint.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;organizations&lt;/code&gt; 12% (1/8) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `organizations/account.go` | ✅ | ❌ |
+| `organizations/aws_service_access.go` | ✅ | ✅ |
+| `organizations/delegated_administrator.go` | ✅ | ❌ |
+| `organizations/organization.go` | ✅ | ❌ |
+| `organizations/organizational_unit.go` | ✅ | ❌ |
+| `organizations/policy.go` | ✅ | ❌ |
+| `organizations/policy_attachment.go` | ✅ | ❌ |
+| `organizations/resource_policy.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;osis&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `osis/pipeline.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;paymentcryptography&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `paymentcryptography/key.go` | ✅ | ❌ |
+| `paymentcryptography/key_alias.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;pinpoint&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `pinpoint/adm_channel.go` | ❌ | ❌ |
+| `pinpoint/apns_channel.go` | ❌ | ❌ |
+| `pinpoint/apns_sandbox_channel.go` | ❌ | ❌ |
+| `pinpoint/apns_voip_channel.go` | ❌ | ❌ |
+| `pinpoint/apns_voip_sandbox_channel.go` | ❌ | ❌ |
+| `pinpoint/app.go` | ❌ | ❌ |
+| `pinpoint/baidu_channel.go` | ❌ | ❌ |
+| `pinpoint/email_channel.go` | ❌ | ❌ |
+| `pinpoint/email_template.go` | ❌ | ❌ |
+| `pinpoint/event_stream.go` | ❌ | ❌ |
+| `pinpoint/gcm_channel.go` | ❌ | ❌ |
+| `pinpoint/sms_channel.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;pinpointsmsvoicev2&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `pinpointsmsvoicev2/configuration_set.go` | ❌ | ❌ |
+| `pinpointsmsvoicev2/phone_number.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;pipes&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `pipes/pipe.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;qbusiness&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `qbusiness/application.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;qldb&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `qldb/ledger.go` | ❌ | ❌ |
+| `qldb/stream.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;quicksight&lt;/code&gt; 0% (0/25)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `quicksight/account_settings.go` | ❌ | ❌ |
+| `quicksight/account_subscription.go` | ❌ | ❌ |
+| `quicksight/analysis.go` | ❌ | ❌ |
+| `quicksight/custom_permissions.go` | ❌ | ❌ |
+| `quicksight/dashboard.go` | ❌ | ❌ |
+| `quicksight/data_set.go` | ❌ | ❌ |
+| `quicksight/data_source.go` | ❌ | ❌ |
+| `quicksight/folder.go` | ❌ | ❌ |
+| `quicksight/folder_membership.go` | ❌ | ❌ |
+| `quicksight/group.go` | ❌ | ❌ |
+| `quicksight/group_membership.go` | ❌ | ❌ |
+| `quicksight/iam_policy_assignment.go` | ❌ | ❌ |
+| `quicksight/ingestion.go` | ❌ | ❌ |
+| `quicksight/ip_restriction.go` | ❌ | ❌ |
+| `quicksight/key_registration.go` | ❌ | ❌ |
+| `quicksight/namespace.go` | ❌ | ❌ |
+| `quicksight/refresh_schedule.go` | ❌ | ❌ |
+| `quicksight/role_custom_permission.go` | ❌ | ❌ |
+| `quicksight/role_membership.go` | ❌ | ❌ |
+| `quicksight/template.go` | ❌ | ❌ |
+| `quicksight/template_alias.go` | ❌ | ❌ |
+| `quicksight/theme.go` | ❌ | ❌ |
+| `quicksight/user.go` | ❌ | ❌ |
+| `quicksight/user_custom_permission.go` | ❌ | ❌ |
+| `quicksight/vpc_connection.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ram&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ram/permission.go` | ✅ | ❌ |
+| `ram/principal_association.go` | ❌ | ❌ |
+| `ram/resource_association.go` | ❌ | ❌ |
+| `ram/resource_share.go` | ❌ | ❌ |
+| `ram/resource_share_accepter.go` | ❌ | ❌ |
+| `ram/resource_share_associations_exclusive.go` | ✅ | ❌ |
+| `ram/sharing_with_organization.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;rbin&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `rbin/rule.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;rds&lt;/code&gt; 0% (0/29)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `rds/certificate.go` | ❌ | ❌ |
+| `rds/cluster.go` | ❌ | ❌ |
+| `rds/cluster_activity_stream.go` | ❌ | ❌ |
+| `rds/cluster_endpoint.go` | ❌ | ❌ |
+| `rds/cluster_instance.go` | ❌ | ❌ |
+| `rds/cluster_parameter_group.go` | ❌ | ❌ |
+| `rds/cluster_role_association.go` | ❌ | ❌ |
+| `rds/cluster_snapshot.go` | ❌ | ❌ |
+| `rds/cluster_snapshot_copy.go` | ❌ | ❌ |
+| `rds/custom_db_engine_version.go` | ❌ | ❌ |
+| `rds/event_subscription.go` | ❌ | ❌ |
+| `rds/export_task.go` | ❌ | ❌ |
+| `rds/global_cluster.go` | ❌ | ❌ |
+| `rds/instance.go` | ❌ | ❌ |
+| `rds/instance_automated_backups_replication.go` | ❌ | ❌ |
+| `rds/instance_role_association.go` | ❌ | ❌ |
+| `rds/instance_state.go` | ❌ | ❌ |
+| `rds/integration.go` | ✅ | ❌ |
+| `rds/option_group.go` | ❌ | ❌ |
+| `rds/parameter_group.go` | ❌ | ❌ |
+| `rds/proxy.go` | ❌ | ❌ |
+| `rds/proxy_default_target_group.go` | ❌ | ❌ |
+| `rds/proxy_endpoint.go` | ❌ | ❌ |
+| `rds/proxy_target.go` | ❌ | ❌ |
+| `rds/reserved_instance.go` | ❌ | ❌ |
+| `rds/shard_group.go` | ❌ | ❌ |
+| `rds/snapshot.go` | ❌ | ❌ |
+| `rds/snapshot_copy.go` | ❌ | ❌ |
+| `rds/subnet_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;redshift&lt;/code&gt; 0% (0/24)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `redshift/authentication_profile.go` | ❌ | ❌ |
+| `redshift/cluster.go` | ❌ | ❌ |
+| `redshift/cluster_iam_roles.go` | ❌ | ❌ |
+| `redshift/cluster_snapshot.go` | ❌ | ❌ |
+| `redshift/data_share_authorization.go` | ❌ | ❌ |
+| `redshift/data_share_consumer_association.go` | ❌ | ❌ |
+| `redshift/endpoint_access.go` | ❌ | ❌ |
+| `redshift/endpoint_authorization.go` | ❌ | ❌ |
+| `redshift/event_subscription.go` | ❌ | ❌ |
+| `redshift/hsm_client_certificate.go` | ❌ | ❌ |
+| `redshift/hsm_configuration.go` | ❌ | ❌ |
+| `redshift/idc_application.go` | ❌ | ❌ |
+| `redshift/integration.go` | ✅ | ❌ |
+| `redshift/logging.go` | ❌ | ❌ |
+| `redshift/parameter_group.go` | ❌ | ❌ |
+| `redshift/partner.go` | ❌ | ❌ |
+| `redshift/resource_policy.go` | ❌ | ❌ |
+| `redshift/scheduled_action.go` | ❌ | ❌ |
+| `redshift/snapshot_copy.go` | ❌ | ❌ |
+| `redshift/snapshot_copy_grant.go` | ❌ | ❌ |
+| `redshift/snapshot_schedule.go` | ❌ | ❌ |
+| `redshift/snapshot_schedule_association.go` | ❌ | ❌ |
+| `redshift/subnet_group.go` | ❌ | ❌ |
+| `redshift/usage_limit.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;redshiftdata&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `redshiftdata/statement.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;redshiftserverless&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `redshiftserverless/custom_domain_association.go` | ❌ | ❌ |
+| `redshiftserverless/endpoint_access.go` | ❌ | ❌ |
+| `redshiftserverless/namespace.go` | ❌ | ❌ |
+| `redshiftserverless/resource_policy.go` | ❌ | ❌ |
+| `redshiftserverless/snapshot.go` | ❌ | ❌ |
+| `redshiftserverless/usage_limit.go` | ❌ | ❌ |
+| `redshiftserverless/workgroup.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;rekognition&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `rekognition/collection.go` | ❌ | ❌ |
+| `rekognition/project.go` | ❌ | ❌ |
+| `rekognition/stream_processor.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;resiliencehub&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `resiliencehub/resiliency_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;resourceexplorer2&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `resourceexplorer2/index.go` | ✅ | ❌ |
+| `resourceexplorer2/view.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;resourcegroups&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `resourcegroups/group.go` | ❌ | ❌ |
+| `resourcegroups/resource.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;rolesanywhere&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `rolesanywhere/profile.go` | ❌ | ❌ |
+| `rolesanywhere/trust_anchor.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53&lt;/code&gt; 7% (1/14) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53/cidr_collection.go` | ❌ | ❌ |
+| `route53/cidr_location.go` | ❌ | ❌ |
+| `route53/delegation_set.go` | ❌ | ❌ |
+| `route53/health_check.go` | ❌ | ❌ |
+| `route53/hosted_zone_dnssec.go` | ❌ | ❌ |
+| `route53/key_signing_key.go` | ❌ | ❌ |
+| `route53/query_log.go` | ❌ | ❌ |
+| `route53/record.go` | ✅ | ✅ |
+| `route53/records_exclusive.go` | ❌ | ❌ |
+| `route53/traffic_policy.go` | ❌ | ❌ |
+| `route53/traffic_policy_instance.go` | ❌ | ❌ |
+| `route53/vpc_association_authorization.go` | ❌ | ❌ |
+| `route53/zone.go` | ❌ | ❌ |
+| `route53/zone_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53domains&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53domains/delegation_signer_record.go` | ❌ | ❌ |
+| `route53domains/domain.go` | ❌ | ❌ |
+| `route53domains/registered_domain.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53profiles&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53profiles/association.go` | ❌ | ❌ |
+| `route53profiles/profile.go` | ❌ | ❌ |
+| `route53profiles/resource_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53recoverycontrolconfig&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53recoverycontrolconfig/cluster.go` | ❌ | ❌ |
+| `route53recoverycontrolconfig/control_panel.go` | ❌ | ❌ |
+| `route53recoverycontrolconfig/routing_control.go` | ❌ | ❌ |
+| `route53recoverycontrolconfig/safety_rule.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53recoveryreadiness&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53recoveryreadiness/cell.go` | ❌ | ❌ |
+| `route53recoveryreadiness/readiness_check.go` | ❌ | ❌ |
+| `route53recoveryreadiness/recovery_group.go` | ❌ | ❌ |
+| `route53recoveryreadiness/resource_set.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;route53resolver&lt;/code&gt; 18% (2/11) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `route53resolver/config.go` | ❌ | ❌ |
+| `route53resolver/dnssec_config.go` | ❌ | ❌ |
+| `route53resolver/endpoint.go` | ❌ | ❌ |
+| `route53resolver/firewall_config.go` | ❌ | ❌ |
+| `route53resolver/firewall_rule.go` | ❌ | ❌ |
+| `route53resolver/firewall_rule_group.go` | ❌ | ❌ |
+| `route53resolver/firewall_rule_group_association.go` | ❌ | ❌ |
+| `route53resolver/query_log_config.go` | ❌ | ❌ |
+| `route53resolver/query_log_config_association.go` | ❌ | ❌ |
+| `route53resolver/rule.go` | ✅ | ✅ |
+| `route53resolver/rule_association.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;rum&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `rum/app_monitor.go` | ❌ | ❌ |
+| `rum/metrics_destination.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;s3&lt;/code&gt; 38% (10/26) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `s3/bucket.go` | ✅ | ✅ |
+| `s3/bucket_abac.go` | ❌ | ❌ |
+| `s3/bucket_accelerate_configuration.go` | ❌ | ❌ |
+| `s3/bucket_acl.go` | ✅ | ✅ |
+| `s3/bucket_analytics_configuration.go` | ❌ | ❌ |
+| `s3/bucket_cors_configuration.go` | ✅ | ❌ |
+| `s3/bucket_intelligent_tiering_configuration.go` | ❌ | ❌ |
+| `s3/bucket_inventory.go` | ❌ | ❌ |
+| `s3/bucket_lifecycle_configuration.go` | ✅ | ✅ |
+| `s3/bucket_logging.go` | ✅ | ❌ |
+| `s3/bucket_metadata_configuration.go` | ✅ | ❌ |
+| `s3/bucket_metric.go` | ❌ | ❌ |
+| `s3/bucket_notification.go` | ✅ | ❌ |
+| `s3/bucket_object.go` | ✅ | ❌ |
+| `s3/bucket_object_lock_configuration.go` | ❌ | ❌ |
+| `s3/bucket_ownership_controls.go` | ✅ | ✅ |
+| `s3/bucket_policy.go` | ✅ | ✅ |
+| `s3/bucket_public_access_block.go` | ✅ | ✅ |
+| `s3/bucket_replication_configuration.go` | ❌ | ❌ |
+| `s3/bucket_request_payment_configuration.go` | ❌ | ❌ |
+| `s3/bucket_server_side_encryption_configuration.go` | ✅ | ✅ |
+| `s3/bucket_versioning.go` | ✅ | ✅ |
+| `s3/bucket_website_configuration.go` | ✅ | ❌ |
+| `s3/directory_bucket.go` | ✅ | ✅ |
+| `s3/object.go` | ✅ | ✅ |
+| `s3/object_copy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;s3control&lt;/code&gt; 0% (0/16)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `s3control/access_grant.go` | ❌ | ❌ |
+| `s3control/access_grants_instance.go` | ❌ | ❌ |
+| `s3control/access_grants_instance_resource_policy.go` | ❌ | ❌ |
+| `s3control/access_grants_location.go` | ❌ | ❌ |
+| `s3control/access_point.go` | ❌ | ❌ |
+| `s3control/access_point_policy.go` | ❌ | ❌ |
+| `s3control/account_public_access_block.go` | ❌ | ❌ |
+| `s3control/bucket.go` | ✅ | ❌ |
+| `s3control/bucket_lifecycle_configuration.go` | ❌ | ❌ |
+| `s3control/bucket_policy.go` | ❌ | ❌ |
+| `s3control/directory_bucket_access_point_scope.go` | ❌ | ❌ |
+| `s3control/multi_region_access_point.go` | ❌ | ❌ |
+| `s3control/multi_region_access_point_policy.go` | ❌ | ❌ |
+| `s3control/object_lambda_access_point.go` | ❌ | ❌ |
+| `s3control/object_lambda_access_point_policy.go` | ❌ | ❌ |
+| `s3control/storage_lens_configuration.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;s3outposts&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `s3outposts/endpoint.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;s3tables&lt;/code&gt; 0% (0/7)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `s3tables/namespace.go` | ❌ | ❌ |
+| `s3tables/table.go` | ❌ | ❌ |
+| `s3tables/table_bucket.go` | ✅ | ❌ |
+| `s3tables/table_bucket_policy.go` | ✅ | ❌ |
+| `s3tables/table_bucket_replication.go` | ✅ | ❌ |
+| `s3tables/table_policy.go` | ❌ | ❌ |
+| `s3tables/table_replication.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;s3vectors&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `s3vectors/index.go` | ✅ | ❌ |
+| `s3vectors/vector_bucket.go` | ✅ | ❌ |
+| `s3vectors/vector_bucket_policy.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;sagemaker&lt;/code&gt; 5% (2/36) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `sagemaker/algorithm.go` | ✅ | ✅ |
+| `sagemaker/app.go` | ❌ | ❌ |
+| `sagemaker/app_image_config.go` | ❌ | ❌ |
+| `sagemaker/code_repository.go` | ❌ | ❌ |
+| `sagemaker/data_quality_job_definition.go` | ❌ | ❌ |
+| `sagemaker/device.go` | ❌ | ❌ |
+| `sagemaker/device_fleet.go` | ❌ | ❌ |
+| `sagemaker/domain.go` | ❌ | ❌ |
+| `sagemaker/endpoint.go` | ❌ | ❌ |
+| `sagemaker/endpoint_configuration.go` | ❌ | ❌ |
+| `sagemaker/feature_group.go` | ❌ | ❌ |
+| `sagemaker/flow_definition.go` | ❌ | ❌ |
+| `sagemaker/hub.go` | ❌ | ❌ |
+| `sagemaker/human_task_ui.go` | ❌ | ❌ |
+| `sagemaker/image.go` | ❌ | ❌ |
+| `sagemaker/image_version.go` | ❌ | ❌ |
+| `sagemaker/labeling_job.go` | ❌ | ❌ |
+| `sagemaker/mlflow_app.go` | ✅ | ❌ |
+| `sagemaker/mlflow_tracking_server.go` | ❌ | ❌ |
+| `sagemaker/model.go` | ❌ | ❌ |
+| `sagemaker/model_card.go` | ❌ | ❌ |
+| `sagemaker/model_card_export_job.go` | ❌ | ❌ |
+| `sagemaker/model_package_group.go` | ❌ | ❌ |
+| `sagemaker/model_package_group_policy.go` | ❌ | ❌ |
+| `sagemaker/monitoring_schedule.go` | ❌ | ❌ |
+| `sagemaker/notebook_instance.go` | ❌ | ❌ |
+| `sagemaker/notebook_instance_lifecycle_configuration.go` | ❌ | ❌ |
+| `sagemaker/pipeline.go` | ❌ | ❌ |
+| `sagemaker/project.go` | ❌ | ❌ |
+| `sagemaker/servicecatalog_portfolio_status.go` | ❌ | ❌ |
+| `sagemaker/space.go` | ❌ | ❌ |
+| `sagemaker/studio_lifecycle_config.go` | ❌ | ❌ |
+| `sagemaker/training_job.go` | ✅ | ✅ |
+| `sagemaker/user_profile.go` | ✅ | ❌ |
+| `sagemaker/workforce.go` | ❌ | ❌ |
+| `sagemaker/workteam.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;savingsplans&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `savingsplans/savings_plan.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;scheduler&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `scheduler/schedule.go` | ❌ | ❌ |
+| `scheduler/schedule_group.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;schemas&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `schemas/discoverer.go` | ❌ | ❌ |
+| `schemas/registry.go` | ❌ | ❌ |
+| `schemas/registry_policy.go` | ❌ | ❌ |
+| `schemas/schema.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;secretsmanager&lt;/code&gt; 50% (2/4) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `secretsmanager/secret.go` | ✅ | ✅ |
+| `secretsmanager/secret_policy.go` | ✅ | ❌ |
+| `secretsmanager/secret_rotation.go` | ✅ | ❌ |
+| `secretsmanager/secret_version.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;securityhub&lt;/code&gt; 0% (0/15)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `securityhub/account.go` | ❌ | ❌ |
+| `securityhub/action_target.go` | ❌ | ❌ |
+| `securityhub/automation_rule.go` | ✅ | ❌ |
+| `securityhub/configuration_policy.go` | ❌ | ❌ |
+| `securityhub/configuration_policy_association.go` | ❌ | ❌ |
+| `securityhub/finding_aggregator.go` | ❌ | ❌ |
+| `securityhub/insight.go` | ❌ | ❌ |
+| `securityhub/invite_accepter.go` | ❌ | ❌ |
+| `securityhub/member.go` | ❌ | ❌ |
+| `securityhub/organization_admin_account.go` | ❌ | ❌ |
+| `securityhub/organization_configuration.go` | ❌ | ❌ |
+| `securityhub/product_subscription.go` | ❌ | ❌ |
+| `securityhub/standards_control.go` | ❌ | ❌ |
+| `securityhub/standards_control_association.go` | ❌ | ❌ |
+| `securityhub/standards_subscription.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;securitylake&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `securitylake/aws_log_source.go` | ❌ | ❌ |
+| `securitylake/custom_log_source.go` | ❌ | ❌ |
+| `securitylake/data_lake.go` | ✅ | ❌ |
+| `securitylake/subscriber.go` | ❌ | ❌ |
+| `securitylake/subscriber_notification.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;serverlessrepo&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `serverlessrepo/cloudformation_stack.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;servicecatalog&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `servicecatalog/budget_resource_association.go` | ❌ | ❌ |
+| `servicecatalog/constraint.go` | ❌ | ❌ |
+| `servicecatalog/organizations_access.go` | ❌ | ❌ |
+| `servicecatalog/portfolio.go` | ❌ | ❌ |
+| `servicecatalog/portfolio_share.go` | ❌ | ❌ |
+| `servicecatalog/principal_portfolio_association.go` | ❌ | ❌ |
+| `servicecatalog/product.go` | ❌ | ❌ |
+| `servicecatalog/product_portfolio_association.go` | ❌ | ❌ |
+| `servicecatalog/provisioned_product.go` | ❌ | ❌ |
+| `servicecatalog/provisioning_artifact.go` | ❌ | ❌ |
+| `servicecatalog/service_action.go` | ❌ | ❌ |
+| `servicecatalog/tag_option.go` | ❌ | ❌ |
+| `servicecatalog/tag_option_resource_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;servicecatalogappregistry&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `servicecatalogappregistry/application.go` | ❌ | ❌ |
+| `servicecatalogappregistry/attribute_group.go` | ❌ | ❌ |
+| `servicecatalogappregistry/attribute_group_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;servicediscovery&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `servicediscovery/http_namespace.go` | ❌ | ❌ |
+| `servicediscovery/instance.go` | ❌ | ❌ |
+| `servicediscovery/private_dns_namespace.go` | ❌ | ❌ |
+| `servicediscovery/public_dns_namespace.go` | ❌ | ❌ |
+| `servicediscovery/service.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;servicequotas&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `servicequotas/auto_management.go` | ❌ | ❌ |
+| `servicequotas/service_quota.go` | ❌ | ❌ |
+| `servicequotas/template.go` | ❌ | ❌ |
+| `servicequotas/template_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ses&lt;/code&gt; 0% (0/14)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ses/active_receipt_rule_set.go` | ❌ | ❌ |
+| `ses/configuration_set.go` | ❌ | ❌ |
+| `ses/domain_dkim.go` | ❌ | ❌ |
+| `ses/domain_identity.go` | ❌ | ❌ |
+| `ses/domain_identity_verification.go` | ❌ | ❌ |
+| `ses/domain_mail_from.go` | ❌ | ❌ |
+| `ses/email_identity.go` | ❌ | ❌ |
+| `ses/event_destination.go` | ❌ | ❌ |
+| `ses/identity_notification_topic.go` | ❌ | ❌ |
+| `ses/identity_policy.go` | ❌ | ❌ |
+| `ses/receipt_filter.go` | ❌ | ❌ |
+| `ses/receipt_rule.go` | ❌ | ❌ |
+| `ses/receipt_rule_set.go` | ❌ | ❌ |
+| `ses/template.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;sesv2&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `sesv2/account_suppression_attributes.go` | ❌ | ❌ |
+| `sesv2/account_vdm_attributes.go` | ❌ | ❌ |
+| `sesv2/configuration_set.go` | ❌ | ❌ |
+| `sesv2/configuration_set_event_destination.go` | ❌ | ❌ |
+| `sesv2/dedicated_ip_assignment.go` | ❌ | ❌ |
+| `sesv2/dedicated_ip_pool.go` | ❌ | ❌ |
+| `sesv2/email_identity.go` | ❌ | ❌ |
+| `sesv2/email_identity_feedback_attributes.go` | ❌ | ❌ |
+| `sesv2/email_identity_mail_from_attributes.go` | ❌ | ❌ |
+| `sesv2/email_identity_policy.go` | ❌ | ❌ |
+| `sesv2/tenant.go` | ❌ | ❌ |
+| `sesv2/tenant_resource_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;sfn&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `sfn/activity.go` | ✅ | ❌ |
+| `sfn/alias.go` | ✅ | ❌ |
+| `sfn/state_machine.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;shield&lt;/code&gt; 0% (0/8)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `shield/application_layer_automatic_response.go` | ✅ | ❌ |
+| `shield/drt_access_log_bucket_association.go` | ❌ | ❌ |
+| `shield/drt_access_role_arn_association.go` | ❌ | ❌ |
+| `shield/proactive_engagement.go` | ❌ | ❌ |
+| `shield/protection.go` | ❌ | ❌ |
+| `shield/protection_group.go` | ❌ | ❌ |
+| `shield/protection_health_check_association.go` | ❌ | ❌ |
+| `shield/subscription.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;signer&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `signer/signing_job.go` | ❌ | ❌ |
+| `signer/signing_profile.go` | ❌ | ❌ |
+| `signer/signing_profile_permission.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;sns&lt;/code&gt; 33% (2/6) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `sns/platform_application.go` | ❌ | ❌ |
+| `sns/sms_preferences.go` | ❌ | ❌ |
+| `sns/topic.go` | ✅ | ✅ |
+| `sns/topic_data_protection_policy.go` | ✅ | ❌ |
+| `sns/topic_policy.go` | ✅ | ❌ |
+| `sns/topic_subscription.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;sqs&lt;/code&gt; 25% (1/4) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `sqs/queue.go` | ❌ | ✅ |
+| `sqs/queue_policy.go` | ❌ | ❌ |
+| `sqs/queue_redrive_allow_policy.go` | ❌ | ❌ |
+| `sqs/queue_redrive_policy.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ssm&lt;/code&gt; 16% (2/12) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ssm/activation.go` | ❌ | ❌ |
+| `ssm/association.go` | ✅ | ❌ |
+| `ssm/default_patch_baseline.go` | ❌ | ❌ |
+| `ssm/document.go` | ✅ | ✅ |
+| `ssm/maintenance_window.go` | ✅ | ❌ |
+| `ssm/maintenance_window_target.go` | ✅ | ❌ |
+| `ssm/maintenance_window_task.go` | ✅ | ❌ |
+| `ssm/parameter.go` | ✅ | ✅ |
+| `ssm/patch_baseline.go` | ✅ | ❌ |
+| `ssm/patch_group.go` | ❌ | ❌ |
+| `ssm/resource_data_sync.go` | ❌ | ❌ |
+| `ssm/service_setting.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ssmcontacts&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ssmcontacts/contact.go` | ✅ | ❌ |
+| `ssmcontacts/contact_channel.go` | ✅ | ❌ |
+| `ssmcontacts/plan.go` | ❌ | ❌ |
+| `ssmcontacts/rotation.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ssmincidents&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ssmincidents/replication_set.go` | ❌ | ❌ |
+| `ssmincidents/response_plan.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ssmquicksetup&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ssmquicksetup/configuration_manager.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;ssoadmin&lt;/code&gt; 7% (1/14) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `ssoadmin/account_assignment.go` | ✅ | ✅ |
+| `ssoadmin/application.go` | ✅ | ❌ |
+| `ssoadmin/application_access_scope.go` | ❌ | ❌ |
+| `ssoadmin/application_assignment.go` | ❌ | ❌ |
+| `ssoadmin/application_assignment_configuration.go` | ✅ | ❌ |
+| `ssoadmin/customer_managed_policy_attachment.go` | ❌ | ❌ |
+| `ssoadmin/customer_managed_policy_attachments_exclusive.go` | ✅ | ❌ |
+| `ssoadmin/instance_access_control_attributes.go` | ❌ | ❌ |
+| `ssoadmin/managed_policy_attachment.go` | ❌ | ❌ |
+| `ssoadmin/managed_policy_attachments_exclusive.go` | ✅ | ❌ |
+| `ssoadmin/permission_set.go` | ❌ | ❌ |
+| `ssoadmin/permission_set_inline_policy.go` | ❌ | ❌ |
+| `ssoadmin/permissions_boundary_attachment.go` | ❌ | ❌ |
+| `ssoadmin/trusted_token_issuer.go` | ✅ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;storagegateway&lt;/code&gt; 0% (0/10)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `storagegateway/cache.go` | ❌ | ❌ |
+| `storagegateway/cached_iscsi_volume.go` | ❌ | ❌ |
+| `storagegateway/file_system_association.go` | ❌ | ❌ |
+| `storagegateway/gateway.go` | ❌ | ❌ |
+| `storagegateway/nfs_file_share.go` | ❌ | ❌ |
+| `storagegateway/smb_file_share.go` | ❌ | ❌ |
+| `storagegateway/stored_iscsi_volume.go` | ❌ | ❌ |
+| `storagegateway/tape_pool.go` | ❌ | ❌ |
+| `storagegateway/upload_buffer.go` | ❌ | ❌ |
+| `storagegateway/working_storage.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;swf&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `swf/domain.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;synthetics&lt;/code&gt; 0% (0/3)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `synthetics/canary.go` | ❌ | ❌ |
+| `synthetics/group.go` | ❌ | ❌ |
+| `synthetics/group_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;timestreaminfluxdb&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `timestreaminfluxdb/db_cluster.go` | ❌ | ❌ |
+| `timestreaminfluxdb/db_instance.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;timestreamquery&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `timestreamquery/scheduled_query.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;timestreamwrite&lt;/code&gt; 0% (0/2)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `timestreamwrite/database.go` | ❌ | ❌ |
+| `timestreamwrite/table.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;transcribe&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `transcribe/language_model.go` | ❌ | ❌ |
+| `transcribe/medical_vocabulary.go` | ❌ | ❌ |
+| `transcribe/vocabulary.go` | ❌ | ❌ |
+| `transcribe/vocabulary_filter.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;transfer&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `transfer/access.go` | ❌ | ❌ |
+| `transfer/agreement.go` | ❌ | ❌ |
+| `transfer/certificate.go` | ❌ | ❌ |
+| `transfer/connector.go` | ❌ | ❌ |
+| `transfer/host_key.go` | ❌ | ❌ |
+| `transfer/profile.go` | ❌ | ❌ |
+| `transfer/server.go` | ❌ | ❌ |
+| `transfer/ssh_key.go` | ❌ | ❌ |
+| `transfer/user.go` | ❌ | ❌ |
+| `transfer/web_app.go` | ❌ | ❌ |
+| `transfer/web_app_customization.go` | ❌ | ❌ |
+| `transfer/workflow.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;uxc&lt;/code&gt; 0% (0/1)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `uxc/account_customizations.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;verifiedpermissions&lt;/code&gt; 0% (0/5)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `verifiedpermissions/identity_source.go` | ❌ | ❌ |
+| `verifiedpermissions/policy.go` | ❌ | ❌ |
+| `verifiedpermissions/policy_store.go` | ❌ | ❌ |
+| `verifiedpermissions/policy_template.go` | ❌ | ❌ |
+| `verifiedpermissions/schema.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;vpclattice&lt;/code&gt; 0% (0/15)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `vpclattice/access_log_subscription.go` | ❌ | ❌ |
+| `vpclattice/auth_policy.go` | ❌ | ❌ |
+| `vpclattice/domain_verification.go` | ❌ | ❌ |
+| `vpclattice/listener.go` | ❌ | ❌ |
+| `vpclattice/listener_rule.go` | ❌ | ❌ |
+| `vpclattice/resource_configuration.go` | ❌ | ❌ |
+| `vpclattice/resource_gateway.go` | ❌ | ❌ |
+| `vpclattice/resource_policy.go` | ❌ | ❌ |
+| `vpclattice/service.go` | ❌ | ❌ |
+| `vpclattice/service_network.go` | ❌ | ❌ |
+| `vpclattice/service_network_resource_association.go` | ❌ | ❌ |
+| `vpclattice/service_network_service_association.go` | ❌ | ❌ |
+| `vpclattice/service_network_vpc_association.go` | ❌ | ❌ |
+| `vpclattice/target_group.go` | ❌ | ❌ |
+| `vpclattice/target_group_attachment.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;waf&lt;/code&gt; 0% (0/12)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `waf/byte_match_set.go` | ❌ | ❌ |
+| `waf/geo_match_set.go` | ❌ | ❌ |
+| `waf/ipset.go` | ❌ | ❌ |
+| `waf/rate_based_rule.go` | ❌ | ❌ |
+| `waf/regex_match_set.go` | ❌ | ❌ |
+| `waf/regex_pattern_set.go` | ❌ | ❌ |
+| `waf/rule.go` | ❌ | ❌ |
+| `waf/rule_group.go` | ❌ | ❌ |
+| `waf/size_constraint_set.go` | ❌ | ❌ |
+| `waf/sql_injection_match_set.go` | ❌ | ❌ |
+| `waf/web_acl.go` | ❌ | ❌ |
+| `waf/xss_match_set.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;wafregional&lt;/code&gt; 0% (0/13)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `wafregional/byte_match_set.go` | ❌ | ❌ |
+| `wafregional/geo_match_set.go` | ❌ | ❌ |
+| `wafregional/ipset.go` | ❌ | ❌ |
+| `wafregional/rate_based_rule.go` | ❌ | ❌ |
+| `wafregional/regex_match_set.go` | ❌ | ❌ |
+| `wafregional/regex_pattern_set.go` | ❌ | ❌ |
+| `wafregional/rule.go` | ❌ | ❌ |
+| `wafregional/rule_group.go` | ❌ | ❌ |
+| `wafregional/size_constraint_set.go` | ❌ | ❌ |
+| `wafregional/sql_injection_match_set.go` | ❌ | ❌ |
+| `wafregional/web_acl.go` | ❌ | ❌ |
+| `wafregional/web_acl_association.go` | ❌ | ❌ |
+| `wafregional/xss_match_set.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;wafv2&lt;/code&gt; 11% (1/9) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `wafv2/api_key.go` | ❌ | ❌ |
+| `wafv2/ip_set.go` | ❌ | ❌ |
+| `wafv2/regex_pattern_set.go` | ❌ | ❌ |
+| `wafv2/rule_group.go` | ❌ | ❌ |
+| `wafv2/web_acl.go` | ❌ | ❌ |
+| `wafv2/web_acl_association.go` | ❌ | ❌ |
+| `wafv2/web_acl_logging_configuration.go` | ❌ | ❌ |
+| `wafv2/web_acl_rule.go` | ✅ | ✅ |
+| `wafv2/web_acl_rule_group_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;workmail&lt;/code&gt; 80% (4/5) 🟡&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `workmail/default_domain.go` | ✅ | ❌ |
+| `workmail/domain.go` | ✅ | ✅ |
+| `workmail/group.go` | ✅ | ✅ |
+| `workmail/organization.go` | ✅ | ✅ |
+| `workmail/user.go` | ✅ | ✅ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;workspaces&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `workspaces/connection_alias.go` | ❌ | ❌ |
+| `workspaces/directory.go` | ❌ | ❌ |
+| `workspaces/ip_group.go` | ❌ | ❌ |
+| `workspaces/workspace.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;workspacesweb&lt;/code&gt; 0% (0/18)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `workspacesweb/browser_settings.go` | ❌ | ❌ |
+| `workspacesweb/browser_settings_association.go` | ❌ | ❌ |
+| `workspacesweb/data_protection_settings.go` | ❌ | ❌ |
+| `workspacesweb/data_protection_settings_association.go` | ❌ | ❌ |
+| `workspacesweb/identity_provider.go` | ❌ | ❌ |
+| `workspacesweb/ip_access_settings.go` | ❌ | ❌ |
+| `workspacesweb/ip_access_settings_association.go` | ❌ | ❌ |
+| `workspacesweb/network_settings.go` | ❌ | ❌ |
+| `workspacesweb/network_settings_association.go` | ❌ | ❌ |
+| `workspacesweb/portal.go` | ❌ | ❌ |
+| `workspacesweb/session_logger.go` | ❌ | ❌ |
+| `workspacesweb/session_logger_association.go` | ❌ | ❌ |
+| `workspacesweb/trust_store.go` | ❌ | ❌ |
+| `workspacesweb/trust_store_association.go` | ❌ | ❌ |
+| `workspacesweb/user_access_logging_settings.go` | ❌ | ❌ |
+| `workspacesweb/user_access_logging_settings_association.go` | ❌ | ❌ |
+| `workspacesweb/user_settings.go` | ❌ | ❌ |
+| `workspacesweb/user_settings_association.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;&lt;code&gt;xray&lt;/code&gt; 0% (0/4)&lt;/summary&gt;&lt;br&gt;
+
+| Resource File | Resource Identity | List |
+|---|:---:|:---:|
+| `xray/encryption_config.go` | ❌ | ❌ |
+| `xray/group.go` | ✅ | ❌ |
+| `xray/resource_policy.go` | ❌ | ❌ |
+| `xray/sampling_rule.go` | ❌ | ❌ |
+
+&lt;/details&gt;
+
+*Last updated: 2026-04-06 17:48:14 UTC*</pre>
+    </div>
+</div>
+</body>
+</html>
