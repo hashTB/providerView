@@ -474,7 +474,7 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
         <a href=\"index.html\">All Providers</a>
         <a href=\"downloads.html\">📈 Download Trends</a>
         <a href=\"cloud-devex.html\">Cloud DevEx</a>
-        <a href=\"azurerm-list-check.html\" class=\"active\">✅ AzureRM List Check</a>
+        <a href=\"azurerm-list-check.html\" class=\"active\">AzureRM List Check</a>
         <a href=\"aws-list-check.html\">AWS List Check</a>
     </nav>
     <p class=\"subtitle\">Latest gist-backed AzureRM source scan compared against Registry-reflected list resources for hashicorp/azurerm. Generated {html.escape(summary['generated_at'])}.</p>
@@ -506,7 +506,7 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
     </div>
 
     <div class="section">
-        <h2>Best Covered Services (List)</h2>
+        <h2>Service Coverage (List)</h2>
         <p class="subtitle" style="margin-bottom: 12px;">Top services by list-enabled resources from implemented mode. Services with at least one list-enabled resource: <strong>{fmt_val(coverage.get('services_with_list'))}</strong>.</p>
         <div class="table-controls">
             <input id="az-service-search" type="text" placeholder="Search by service (e.g. network, storage, mssql)" />
