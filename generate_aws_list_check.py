@@ -207,7 +207,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     repo = summary["source_repo"]
     parsed = summary["script_results"]["parsed"]
     coverage = summary.get("service_coverage", {})
-    match_icon = "OK" if validation["matches"] else "WARN"
+    match_icon = "✅" if validation["matches"] else "⚠️"
     match_text = "match" if validation["matches"] else "do not match"
 
     def fmt_val(value: int | None) -> str:
@@ -370,6 +370,32 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     </style>
 </head>
 <body>
+<div class=\"container\">
+    <h1>AWS List Validation</h1>
+    <nav class=\"topnav\">
+        <a href=\"index.html\">All Providers</a>
+        <a href=\"downloads.html\">📈 Download Trends</a>
+        <a href=\"cloud-devex.html\">Cloud DevEx</a>
+        <a href=\"azurerm-list-check.html\">AzureRM List Check</a>
+        <a href=\"aws-list-check.html\" class=\"active\">AWS List Check</a>
+    </nav>
+    <p class=\"subtitle\">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated {html.escape(summary['generated_at'])}.</p>
+
+    <div class=\"cards\">
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_implemented_list'])}</div><div class=\"label\">Tracking Script List Resources</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_total_resources'])}</div><div class=\"label\">AWS Resources Scanned</div></div>
+        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Counts {match_text}</div></div>
+    </div>
+
+    <div class=\"note\">
+        <strong>{match_icon} Validation:</strong> Registry currently reflects <strong>{fmt_val(validation['dashboard_list_resources'])}</strong> list resources,
+        script scan reports <strong>{fmt_val(validation['script_implemented_list'])}</strong> list-enabled resources.
+        This script fetches the latest upstream AWS tracking script on each run, so upstream script changes flow into the next workflow execution.
+        <div class=\"meta-grid\">
+            <div>
+                <div class=\"meta-row\"><span>Tracking issue</span><span><a href=\"{html.escape(summary['issue']['url'])}\">open</a></span></div>
+                <div class=\"meta-row\"><span>Tracking script</span><span><a href=\"{html.escape(script['raw_url'])}\">open</a></span></div>
                 <div class=\"meta-row\"><span>Script path</span><span><code>{html.escape(script['repo_path'])}</code></span></div>
                 <div class=\"meta-row\"><span>Script last updated</span><span>{html.escape(parsed.get('last_updated') or 'N/A')}</span></div>
                 <div class=\"meta-row\"><span>Service blocks</span><span>{fmt_val(parsed.get('service_count'))}</span></div>
