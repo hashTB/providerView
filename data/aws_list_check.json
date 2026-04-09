@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T14:15:40.536490",
+  "generated_at": "2026-04-09T11:11:59.620633",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "d88f7e08fe07ab058bd88f1a0e400400c6c855bf"
+    "commit": "8749e0524ae4900f8cbd86250ed5e9e0c402de12"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -18,15 +18,15 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3040,
+    "stdout_line_count": 3052,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 4,
-        "implemented": 77,
-        "total": 1615
+        "percent": 5,
+        "implemented": 87,
+        "total": 1621
       },
-      "service_count": 236,
+      "service_count": 237,
       "services": [
         {
           "service": "accessanalyzer",
@@ -390,8 +390,8 @@
         },
         {
           "service": "configservice",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 7,
+          "implemented": 1,
           "total": 13
         },
         {
@@ -534,8 +534,8 @@
         },
         {
           "service": "ec2",
-          "percent": 7,
-          "implemented": 12,
+          "percent": 8,
+          "implemented": 13,
           "total": 155
         },
         {
@@ -996,9 +996,9 @@
         },
         {
           "service": "opensearchserverless",
-          "percent": 16,
-          "implemented": 1,
-          "total": 6
+          "percent": 28,
+          "implemented": 2,
+          "total": 7
         },
         {
           "service": "organizations",
@@ -1175,6 +1175,12 @@
           "total": 16
         },
         {
+          "service": "s3files",
+          "percent": 100,
+          "implemented": 5,
+          "total": 5
+        },
+        {
           "service": "s3outposts",
           "percent": 0,
           "implemented": 0,
@@ -1308,8 +1314,8 @@
         },
         {
           "service": "ssm",
-          "percent": 16,
-          "implemented": 2,
+          "percent": 33,
+          "implemented": 4,
           "total": 12
         },
         {
@@ -2082,7 +2088,9 @@
             "configservice/remediation_configuration.go",
             "configservice/retention_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "configservice/config_rule.go"
+          ]
         },
         "connect": {
           "all_resources": [
@@ -2494,6 +2502,7 @@
             "ec2/ec2_secondary_subnet.go",
             "ec2/transitgateway_metering_policy.go",
             "ec2/vpc_endpoint.go",
+            "ec2/vpc_nat_gateway.go",
             "ec2/vpc_route.go",
             "ec2/vpc_route_table.go",
             "ec2/vpc_route_table_association.go",
@@ -3406,13 +3415,15 @@
           "all_resources": [
             "opensearchserverless/access_policy.go",
             "opensearchserverless/collection.go",
+            "opensearchserverless/collection_group.go",
             "opensearchserverless/lifecycle_policy.go",
             "opensearchserverless/security_config.go",
             "opensearchserverless/security_policy.go",
             "opensearchserverless/vpc_endpoint.go"
           ],
           "list_resources": [
-            "opensearchserverless/collection.go"
+            "opensearchserverless/collection.go",
+            "opensearchserverless/collection_group.go"
           ]
         },
         "organizations": {
@@ -3794,6 +3805,22 @@
           ],
           "list_resources": []
         },
+        "s3files": {
+          "all_resources": [
+            "s3files/access_point.go",
+            "s3files/file_system.go",
+            "s3files/file_system_policy.go",
+            "s3files/mount_target.go",
+            "s3files/synchronization_configuration.go"
+          ],
+          "list_resources": [
+            "s3files/access_point.go",
+            "s3files/file_system.go",
+            "s3files/file_system_policy.go",
+            "s3files/mount_target.go",
+            "s3files/synchronization_configuration.go"
+          ]
+        },
         "s3outposts": {
           "all_resources": [
             "s3outposts/endpoint.go"
@@ -4085,8 +4112,10 @@
             "ssm/service_setting.go"
           ],
           "list_resources": [
+            "ssm/association.go",
             "ssm/document.go",
-            "ssm/parameter.go"
+            "ssm/parameter.go",
+            "ssm/patch_group.go"
           ]
         },
         "ssmcontacts": {
@@ -4351,16 +4380,16 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-07 18:15:40 UTC"
+      "last_updated": "2026-04-09 15:11:59 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 32,
+    "services_with_list": 34,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 7,
-        "implemented": 12,
+        "percent": 8,
+        "implemented": 13,
         "total": 155
       },
       {
@@ -4368,6 +4397,12 @@
         "percent": 38,
         "implemented": 10,
         "total": 26
+      },
+      {
+        "service": "s3files",
+        "percent": 100,
+        "implemented": 5,
+        "total": 5
       },
       {
         "service": "iam",
@@ -4386,6 +4421,12 @@
         "percent": 50,
         "implemented": 4,
         "total": 8
+      },
+      {
+        "service": "ssm",
+        "percent": 33,
+        "implemented": 4,
+        "total": 12
       },
       {
         "service": "kafka",
@@ -4430,22 +4471,10 @@
         "total": 6
       },
       {
-        "service": "ecs",
-        "percent": 25,
+        "service": "opensearchserverless",
+        "percent": 28,
         "implemented": 2,
-        "total": 8
-      },
-      {
-        "service": "events",
-        "percent": 22,
-        "implemented": 2,
-        "total": 9
-      },
-      {
-        "service": "kms",
-        "percent": 22,
-        "implemented": 2,
-        "total": 9
+        "total": 7
       }
     ],
     "service_resources": {
@@ -5085,7 +5114,9 @@
           "configservice/remediation_configuration.go",
           "configservice/retention_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "configservice/config_rule.go"
+        ]
       },
       "connect": {
         "all_resources": [
@@ -5497,6 +5528,7 @@
           "ec2/ec2_secondary_subnet.go",
           "ec2/transitgateway_metering_policy.go",
           "ec2/vpc_endpoint.go",
+          "ec2/vpc_nat_gateway.go",
           "ec2/vpc_route.go",
           "ec2/vpc_route_table.go",
           "ec2/vpc_route_table_association.go",
@@ -6409,13 +6441,15 @@
         "all_resources": [
           "opensearchserverless/access_policy.go",
           "opensearchserverless/collection.go",
+          "opensearchserverless/collection_group.go",
           "opensearchserverless/lifecycle_policy.go",
           "opensearchserverless/security_config.go",
           "opensearchserverless/security_policy.go",
           "opensearchserverless/vpc_endpoint.go"
         ],
         "list_resources": [
-          "opensearchserverless/collection.go"
+          "opensearchserverless/collection.go",
+          "opensearchserverless/collection_group.go"
         ]
       },
       "organizations": {
@@ -6797,6 +6831,22 @@
         ],
         "list_resources": []
       },
+      "s3files": {
+        "all_resources": [
+          "s3files/access_point.go",
+          "s3files/file_system.go",
+          "s3files/file_system_policy.go",
+          "s3files/mount_target.go",
+          "s3files/synchronization_configuration.go"
+        ],
+        "list_resources": [
+          "s3files/access_point.go",
+          "s3files/file_system.go",
+          "s3files/file_system_policy.go",
+          "s3files/mount_target.go",
+          "s3files/synchronization_configuration.go"
+        ]
+      },
       "s3outposts": {
         "all_resources": [
           "s3outposts/endpoint.go"
@@ -7088,8 +7138,10 @@
           "ssm/service_setting.go"
         ],
         "list_resources": [
+          "ssm/association.go",
           "ssm/document.go",
-          "ssm/parameter.go"
+          "ssm/parameter.go",
+          "ssm/patch_group.go"
         ]
       },
       "ssmcontacts": {
@@ -7358,8 +7410,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 71,
-    "script_implemented_list": 77,
-    "script_total_resources": 1615,
-    "script_percent": 4
+    "script_implemented_list": 87,
+    "script_total_resources": 1621,
+    "script_percent": 5
   }
 }

@@ -27,8 +27,6 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-from scan_azure_identity_detailed import clone_or_update_repo
-
 GIST_PAGE_URL = "https://gist.github.com/katbyte/502302a237bb765e0d24236070f0fa31"
 GIST_RAW_FALLBACK_URL = (
     "https://gist.githubusercontent.com/katbyte/502302a237bb765e0d24236070f0fa31/raw/"
@@ -38,6 +36,34 @@ USER_AGENT = "providerView-azurerm-list-check/1.0"
 RAW_OUTPUT_JSON = "data/azurerm_list_check.json"
 REPORT_HTML = "docs/azurerm-list-check.html"
 DETAILS_FILE = "terraform_providers_details.json"
+
+
+def clone_or_update_repo(repos_dir: Path) -> Path | None:
+    """Clone or update the Azure provider repo used by list validation."""
+    repo_url = "https://github.com/hashicorp/terraform-provider-azurerm.git"
+    repo_dir = repos_dir / "hashicorp_terraform-provider-azurerm"
+
+    if repo_dir.exists():
+        print("  Updating terraform-provider-azurerm...")
+        result = subprocess.run(
+            ["git", "-C", str(repo_dir), "pull", "--ff-only"],
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            print(f"  Warning: git pull failed: {result.stderr}")
+    else:
+        print("  Cloning terraform-provider-azurerm...")
+        result = subprocess.run(
+            ["git", "clone", "--depth", "1", repo_url, str(repo_dir)],
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            print(f"  Error: git clone failed: {result.stderr}")
+            return None
+
+    return repo_dir
 
 
 def fetch_text(url: str) -> str:
