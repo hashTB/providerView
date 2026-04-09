@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T11:11:59.620633",
+  "generated_at": "2026-04-09T15:30:04.098360",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -14,7 +14,7 @@
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 71
+    "list_resources": 87
   },
   "script_results": {
     "returncode": 0,
@@ -4380,7 +4380,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-09 15:11:59 UTC"
+      "last_updated": "2026-04-09 15:30:04 UTC"
     }
   },
   "service_coverage": {
@@ -7408,8 +7408,8 @@
     }
   },
   "validation": {
-    "matches": false,
-    "dashboard_list_resources": 71,
+    "matches": true,
+    "dashboard_list_resources": 87,
     "script_implemented_list": 87,
     "script_total_resources": 1621,
     "script_percent": 5
