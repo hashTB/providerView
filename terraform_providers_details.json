@@ -3675,6 +3675,41 @@
       ],
       "list-resources": [
         {
+          "title": "api_gateway_integration",
+          "slug": "api_gateway_integration",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "api_gateway_integration_response",
+          "slug": "api_gateway_integration_response",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "api_gateway_method",
+          "slug": "api_gateway_method",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "api_gateway_method_response",
+          "slug": "api_gateway_method_response",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "api_gateway_resource",
+          "slug": "api_gateway_resource",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "api_gateway_rest_api",
+          "slug": "api_gateway_rest_api",
+          "subcategory": "API Gateway"
+        },
+        {
+          "title": "apigatewayv2_route",
+          "slug": "apigatewayv2_route",
+          "subcategory": "API Gateway V2"
+        },
+        {
           "title": "appflow_connector_profile",
           "slug": "appflow_connector_profile",
           "subcategory": "AppFlow"
@@ -3705,9 +3740,19 @@
           "subcategory": "Clean Rooms"
         },
         {
+          "title": "cloudfront_distribution",
+          "slug": "cloudfront_distribution",
+          "subcategory": "CloudFront"
+        },
+        {
           "title": "cloudfront_key_value_store",
           "slug": "cloudfront_key_value_store",
           "subcategory": "CloudFront"
+        },
+        {
+          "title": "cloudwatch_alarm_mute_rule",
+          "slug": "cloudwatch_alarm_mute_rule",
+          "subcategory": "CloudWatch"
         },
         {
           "title": "cloudwatch_event_rule",
@@ -3722,6 +3767,11 @@
         {
           "title": "cloudwatch_log_group",
           "slug": "cloudwatch_log_group",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
+          "title": "cloudwatch_log_subscription_filter",
+          "slug": "cloudwatch_log_subscription_filter",
           "subcategory": "CloudWatch Logs"
         },
         {
@@ -3875,6 +3925,11 @@
           "subcategory": "Managed Streaming for Kafka"
         },
         {
+          "title": "nat_gateway",
+          "slug": "nat_gateway",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
           "title": "opensearchserverless_collection",
           "slug": "opensearchserverless_collection",
           "subcategory": "OpenSearch Serverless"
@@ -4022,6 +4077,11 @@
         {
           "title": "sns_topic",
           "slug": "sns_topic",
+          "subcategory": "SNS (Simple Notification)"
+        },
+        {
+          "title": "sns_topic_policy",
+          "slug": "sns_topic_policy",
           "subcategory": "SNS (Simple Notification)"
         },
         {
@@ -5362,6 +5422,11 @@
           "title": "cloudtrail_organization_delegated_admin_account",
           "slug": "cloudtrail_organization_delegated_admin_account",
           "subcategory": "CloudTrail"
+        },
+        {
+          "title": "cloudwatch_alarm_mute_rule",
+          "slug": "cloudwatch_alarm_mute_rule",
+          "subcategory": "CloudWatch"
         },
         {
           "title": "cloudwatch_composite_alarm",
@@ -12280,7 +12345,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:26.283365"
+    "docs_refreshed_at": "2026-04-16T08:52:10.098204"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -12604,11 +12669,6 @@
         {
           "title": "apigatewayv2_stage",
           "slug": "apigatewayv2_stage",
-          "subcategory": ""
-        },
-        {
-          "title": "apigatewayv2_stages",
-          "slug": "apigatewayv2_stages",
           "subcategory": ""
         },
         {
@@ -20267,6 +20327,16 @@
           "subcategory": ""
         },
         {
+          "title": "neptunegraph_graph_snapshot",
+          "slug": "neptunegraph_graph_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "neptunegraph_graph_snapshots",
+          "slug": "neptunegraph_graph_snapshots",
+          "subcategory": ""
+        },
+        {
           "title": "neptunegraph_private_graph_endpoint",
           "slug": "neptunegraph_private_graph_endpoint",
           "subcategory": ""
@@ -24271,11 +24341,6 @@
           "subcategory": ""
         },
         {
-          "title": "apigatewayv2_stage",
-          "slug": "apigatewayv2_stage",
-          "subcategory": ""
-        },
-        {
           "title": "apigatewayv2_vpc_link",
           "slug": "apigatewayv2_vpc_link",
           "subcategory": ""
@@ -27608,6 +27673,11 @@
         {
           "title": "neptunegraph_graph",
           "slug": "neptunegraph_graph",
+          "subcategory": ""
+        },
+        {
+          "title": "neptunegraph_graph_snapshot",
+          "slug": "neptunegraph_graph_snapshot",
           "subcategory": ""
         },
         {
@@ -33770,6 +33840,11 @@
           "subcategory": ""
         },
         {
+          "title": "neptunegraph_graph_snapshot",
+          "slug": "neptunegraph_graph_snapshot",
+          "subcategory": ""
+        },
+        {
           "title": "neptunegraph_private_graph_endpoint",
           "slug": "neptunegraph_private_graph_endpoint",
           "subcategory": ""
@@ -36011,7 +36086,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:26.805671"
+    "docs_refreshed_at": "2026-04-16T08:52:10.588157"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36445,7 +36520,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:27.174061"
+    "docs_refreshed_at": "2026-04-16T08:52:10.966216"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -37497,6 +37572,11 @@
           "title": "managed_application_definition",
           "slug": "managed_application_definition",
           "subcategory": "Managed Applications"
+        },
+        {
+          "title": "managed_devops_pool",
+          "slug": "managed_devops_pool",
+          "subcategory": "Managed DevOps Pools"
         },
         {
           "title": "managed_disk",
@@ -38664,6 +38744,11 @@
         {
           "title": "private_dns_a_record",
           "slug": "private_dns_a_record",
+          "subcategory": "Private DNS"
+        },
+        {
+          "title": "private_dns_cname_record",
+          "slug": "private_dns_cname_record",
           "subcategory": "Private DNS"
         },
         {
@@ -40356,6 +40441,11 @@
           "subcategory": "DataProtection"
         },
         {
+          "title": "data_protection_backup_instance_data_lake_storage",
+          "slug": "data_protection_backup_instance_data_lake_storage",
+          "subcategory": "DataProtection"
+        },
+        {
           "title": "data_protection_backup_instance_disk",
           "slug": "data_protection_backup_instance_disk",
           "subcategory": "DataProtection"
@@ -41679,6 +41769,11 @@
           "title": "managed_application_definition",
           "slug": "managed_application_definition",
           "subcategory": "Managed Applications"
+        },
+        {
+          "title": "managed_devops_pool",
+          "slug": "managed_devops_pool",
+          "subcategory": "Managed DevOps Pools"
         },
         {
           "title": "managed_disk",
@@ -44407,7 +44502,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:27.626455"
+    "docs_refreshed_at": "2026-04-16T08:52:11.454390"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -44756,7 +44851,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:28.059160"
+    "docs_refreshed_at": "2026-04-16T08:52:11.831423"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46294,6 +46389,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "google_vertex_ai_reasoning_engine_query",
+          "slug": "google_vertex_ai_reasoning_engine_query",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "healthcare_consent_store_iam_policy",
           "slug": "healthcare_consent_store_iam_policy",
           "subcategory": "Cloud Healthcare"
@@ -46354,6 +46454,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_iam_policy",
+          "slug": "iap_agent_registry_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_app_engine_service_iam_policy",
           "slug": "iap_app_engine_service_iam_policy",
           "subcategory": "Identity-Aware Proxy"
@@ -46366,6 +46471,11 @@
         {
           "title": "iap_client",
           "slug": "iap_client",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_location_web_iam_policy",
+          "slug": "iap_location_web_iam_policy",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -47184,6 +47294,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_reasoning_engine_iam_policy",
+          "slug": "vertex_ai_reasoning_engine_iam_policy",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_announcements",
           "slug": "vmwareengine_announcements",
           "subcategory": "Cloud VMware Engine"
@@ -47751,6 +47866,11 @@
         {
           "title": "apigee_sharedflow_deployment",
           "slug": "apigee_sharedflow_deployment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_space",
+          "slug": "apigee_space",
           "subcategory": "Apigee"
         },
         {
@@ -50809,6 +50929,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_iam",
+          "slug": "iap_agent_registry_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_app_engine_service_iam",
           "slug": "iap_app_engine_service_iam",
           "subcategory": "Identity-Aware Proxy"
@@ -50826,6 +50951,11 @@
         {
           "title": "iap_client",
           "slug": "iap_client",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_location_web_iam",
+          "slug": "iap_location_web_iam",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -52634,6 +52764,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_reasoning_engine_iam",
+          "slug": "vertex_ai_reasoning_engine_iam",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -52704,6 +52839,11 @@
           "subcategory": "Workflows"
         },
         {
+          "title": "workload_identity_service_agent",
+          "slug": "workload_identity_service_agent",
+          "subcategory": "Workload Identity API"
+        },
+        {
           "title": "workstations_workstation",
           "slug": "workstations_workstation",
           "subcategory": "Cloud Workstations"
@@ -52730,7 +52870,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:28.583130"
+    "docs_refreshed_at": "2026-04-16T08:52:12.346127"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54001,6 +54141,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "google_vertex_ai_reasoning_engine_query",
+          "slug": "google_vertex_ai_reasoning_engine_query",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "healthcare_consent_store_iam_policy",
           "slug": "healthcare_consent_store_iam_policy",
           "subcategory": "Cloud Healthcare"
@@ -54061,6 +54206,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_iam_policy",
+          "slug": "iap_agent_registry_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_app_engine_service_iam_policy",
           "slug": "iap_app_engine_service_iam_policy",
           "subcategory": "Identity-Aware Proxy"
@@ -54073,6 +54223,11 @@
         {
           "title": "iap_client",
           "slug": "iap_client",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_location_web_iam_policy",
+          "slug": "iap_location_web_iam_policy",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -54891,6 +55046,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_reasoning_engine_iam_policy",
+          "slug": "vertex_ai_reasoning_engine_iam_policy",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_announcements",
           "slug": "vmwareengine_announcements",
           "subcategory": "Cloud VMware Engine"
@@ -55458,6 +55618,11 @@
         {
           "title": "apigee_sharedflow_deployment",
           "slug": "apigee_sharedflow_deployment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_space",
+          "slug": "apigee_space",
           "subcategory": "Apigee"
         },
         {
@@ -58516,6 +58681,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_iam",
+          "slug": "iap_agent_registry_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_app_engine_service_iam",
           "slug": "iap_app_engine_service_iam",
           "subcategory": "Identity-Aware Proxy"
@@ -58533,6 +58703,11 @@
         {
           "title": "iap_client",
           "slug": "iap_client",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_location_web_iam",
+          "slug": "iap_location_web_iam",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -60341,6 +60516,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_reasoning_engine_iam",
+          "slug": "vertex_ai_reasoning_engine_iam",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -60411,6 +60591,11 @@
           "subcategory": "Workflows"
         },
         {
+          "title": "workload_identity_service_agent",
+          "slug": "workload_identity_service_agent",
+          "subcategory": "Workload Identity API"
+        },
+        {
           "title": "workstations_workstation",
           "slug": "workstations_workstation",
           "subcategory": "Cloud Workstations"
@@ -60437,7 +60622,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-09T15:45:29.095043"
+    "docs_refreshed_at": "2026-04-16T08:52:12.858019"
   },
   "4ek0/neko": {
     "docs": {

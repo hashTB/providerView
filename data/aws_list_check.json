@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T15:46:23.139406",
+  "generated_at": "2026-04-16T08:53:05.717858",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "8749e0524ae4900f8cbd86250ed5e9e0c402de12"
+    "commit": "f1062960aaf01ddca46e8e6b3164ed20a2c1fe64"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 87
+    "list_resources": 99
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3052,
+    "stdout_line_count": 3053,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 5,
-        "implemented": 87,
-        "total": 1621
+        "percent": 6,
+        "implemented": 99,
+        "total": 1622
       },
       "service_count": 237,
       "services": [
@@ -66,14 +66,14 @@
         },
         {
           "service": "apigateway",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 23,
+          "implemented": 6,
           "total": 26
         },
         {
           "service": "apigatewayv2",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 15,
+          "implemented": 2,
           "total": 13
         },
         {
@@ -270,8 +270,8 @@
         },
         {
           "service": "cloudfront",
-          "percent": 4,
-          "implemented": 1,
+          "percent": 9,
+          "implemented": 2,
           "total": 21
         },
         {
@@ -300,9 +300,9 @@
         },
         {
           "service": "cloudwatch",
-          "percent": 16,
-          "implemented": 1,
-          "total": 6
+          "percent": 28,
+          "implemented": 2,
+          "total": 7
         },
         {
           "service": "codeartifact",
@@ -858,8 +858,8 @@
         },
         {
           "service": "logs",
-          "percent": 5,
-          "implemented": 1,
+          "percent": 11,
+          "implemented": 2,
           "total": 17
         },
         {
@@ -1302,8 +1302,8 @@
         },
         {
           "service": "sns",
-          "percent": 33,
-          "implemented": 2,
+          "percent": 50,
+          "implemented": 3,
           "total": 6
         },
         {
@@ -1535,7 +1535,14 @@
             "apigateway/usage_plan_key.go",
             "apigateway/vpc_link.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "apigateway/integration.go",
+            "apigateway/integration_response.go",
+            "apigateway/method.go",
+            "apigateway/method_response.go",
+            "apigateway/resource.go",
+            "apigateway/rest_api.go"
+          ]
         },
         "apigatewayv2": {
           "all_resources": [
@@ -1553,7 +1560,10 @@
             "apigatewayv2/stage.go",
             "apigatewayv2/vpc_link.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "apigatewayv2/api.go",
+            "apigatewayv2/route.go"
+          ]
         },
         "appautoscaling": {
           "all_resources": [
@@ -1908,6 +1918,7 @@
             "cloudfront/vpc_origin.go"
           ],
           "list_resources": [
+            "cloudfront/distribution.go",
             "cloudfront/key_value_store.go"
           ]
         },
@@ -1942,6 +1953,7 @@
         },
         "cloudwatch": {
           "all_resources": [
+            "cloudwatch/alarm_mute_rule.go",
             "cloudwatch/composite_alarm.go",
             "cloudwatch/contributor_insight_rule.go",
             "cloudwatch/contributor_managed_insight_rule.go",
@@ -1950,6 +1962,7 @@
             "cloudwatch/metric_stream.go"
           ],
           "list_resources": [
+            "cloudwatch/alarm_mute_rule.go",
             "cloudwatch/metric_alarm.go"
           ]
         },
@@ -3193,7 +3206,8 @@
             "logs/transformer.go"
           ],
           "list_resources": [
-            "logs/group.go"
+            "logs/group.go",
+            "logs/subscription_filter.go"
           ]
         },
         "m2": {
@@ -4082,6 +4096,7 @@
           ],
           "list_resources": [
             "sns/topic.go",
+            "sns/topic_policy.go",
             "sns/topic_subscription.go"
           ]
         },
@@ -4380,11 +4395,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-09 15:46:23 UTC"
+      "last_updated": "2026-04-16 08:53:05 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 34,
+    "services_with_list": 36,
     "top_services": [
       {
         "service": "ec2",
@@ -4396,6 +4411,12 @@
         "service": "s3",
         "percent": 38,
         "implemented": 10,
+        "total": 26
+      },
+      {
+        "service": "apigateway",
+        "percent": 23,
+        "implemented": 6,
         "total": 26
       },
       {
@@ -4427,6 +4448,12 @@
         "percent": 33,
         "implemented": 4,
         "total": 12
+      },
+      {
+        "service": "sns",
+        "percent": 50,
+        "implemented": 3,
+        "total": 6
       },
       {
         "service": "kafka",
@@ -4463,18 +4490,6 @@
         "percent": 50,
         "implemented": 2,
         "total": 4
-      },
-      {
-        "service": "sns",
-        "percent": 33,
-        "implemented": 2,
-        "total": 6
-      },
-      {
-        "service": "opensearchserverless",
-        "percent": 28,
-        "implemented": 2,
-        "total": 7
       }
     ],
     "service_resources": {
@@ -4561,7 +4576,14 @@
           "apigateway/usage_plan_key.go",
           "apigateway/vpc_link.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "apigateway/integration.go",
+          "apigateway/integration_response.go",
+          "apigateway/method.go",
+          "apigateway/method_response.go",
+          "apigateway/resource.go",
+          "apigateway/rest_api.go"
+        ]
       },
       "apigatewayv2": {
         "all_resources": [
@@ -4579,7 +4601,10 @@
           "apigatewayv2/stage.go",
           "apigatewayv2/vpc_link.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "apigatewayv2/api.go",
+          "apigatewayv2/route.go"
+        ]
       },
       "appautoscaling": {
         "all_resources": [
@@ -4934,6 +4959,7 @@
           "cloudfront/vpc_origin.go"
         ],
         "list_resources": [
+          "cloudfront/distribution.go",
           "cloudfront/key_value_store.go"
         ]
       },
@@ -4968,6 +4994,7 @@
       },
       "cloudwatch": {
         "all_resources": [
+          "cloudwatch/alarm_mute_rule.go",
           "cloudwatch/composite_alarm.go",
           "cloudwatch/contributor_insight_rule.go",
           "cloudwatch/contributor_managed_insight_rule.go",
@@ -4976,6 +5003,7 @@
           "cloudwatch/metric_stream.go"
         ],
         "list_resources": [
+          "cloudwatch/alarm_mute_rule.go",
           "cloudwatch/metric_alarm.go"
         ]
       },
@@ -6219,7 +6247,8 @@
           "logs/transformer.go"
         ],
         "list_resources": [
-          "logs/group.go"
+          "logs/group.go",
+          "logs/subscription_filter.go"
         ]
       },
       "m2": {
@@ -7108,6 +7137,7 @@
         ],
         "list_resources": [
           "sns/topic.go",
+          "sns/topic_policy.go",
           "sns/topic_subscription.go"
         ]
       },
@@ -7409,9 +7439,9 @@
   },
   "validation": {
     "matches": true,
-    "dashboard_list_resources": 87,
-    "script_implemented_list": 87,
-    "script_total_resources": 1621,
-    "script_percent": 5
+    "dashboard_list_resources": 99,
+    "script_implemented_list": 99,
+    "script_total_resources": 1622,
+    "script_percent": 6
   }
 }
