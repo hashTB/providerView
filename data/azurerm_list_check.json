@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T08:52:47.975249",
+  "generated_at": "2026-04-19T09:22:44.149257",
   "gist": {
     "page_url": "https://gist.github.com/katbyte/502302a237bb765e0d24236070f0fa31",
     "raw_url": "https://gist.githubusercontent.com/katbyte/502302a237bb765e0d24236070f0fa31/raw/list_identity_list.sh",
@@ -10,11 +10,11 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-azurerm",
-    "commit": "8e67ab23b3286076750d386ddc1d2800d1925ab1"
+    "commit": "e5976ec80fd9021c1a79ea0ece35339d87ea97dc"
   },
   "dashboard": {
     "provider": "hashicorp/azurerm",
-    "list_resources": 47
+    "list_resources": 49
   },
   "gist_results": {
     "implemented": {
@@ -143,286 +143,32 @@
       }
     ],
     "service_resources": {
-      "arckubernetes": {
+      "dynatrace": {
         "all_resources": [
-          "azurerm_arc_kubernetes_cluster",
-          "azurerm_arc_kubernetes_cluster_extension",
-          "azurerm_arc_kubernetes_flux_configuration",
-          "azurerm_arc_kubernetes_provisioned_cluster"
+          "azurerm_dynatrace_monitor",
+          "azurerm_dynatrace_tag_rules"
         ],
         "list_resources": []
       },
-      "managementgroup": {
+      "loganalytics": {
         "all_resources": [
-          "azurerm_management_group",
-          "azurerm_management_group_subscription_association"
+          "azurerm_log_analytics_cluster",
+          "azurerm_log_analytics_cluster_customer_managed_key",
+          "azurerm_log_analytics_data_export_rule",
+          "azurerm_log_analytics_datasource_windows_event",
+          "azurerm_log_analytics_datasource_windows_performance_counter",
+          "azurerm_log_analytics_linked_service",
+          "azurerm_log_analytics_linked_storage_account",
+          "azurerm_log_analytics_query_pack",
+          "azurerm_log_analytics_query_pack_query",
+          "azurerm_log_analytics_saved_search",
+          "azurerm_log_analytics_solution",
+          "azurerm_log_analytics_storage_insights",
+          "azurerm_log_analytics_workspace",
+          "azurerm_log_analytics_workspace_table",
+          "azurerm_log_analytics_workspace_table_custom_log"
         ],
         "list_resources": []
-      },
-      "mysql": {
-        "all_resources": [
-          "azurerm_mysql_flexible_database",
-          "azurerm_mysql_flexible_server",
-          "azurerm_mysql_flexible_server_active_directory_administrator",
-          "azurerm_mysql_flexible_server_configuration",
-          "azurerm_mysql_flexible_server_firewall_rule"
-        ],
-        "list_resources": [
-          "azurerm_mysql_flexible_database",
-          "azurerm_mysql_flexible_server",
-          "azurerm_mysql_flexible_server_configuration",
-          "azurerm_mysql_flexible_server_firewall_rule"
-        ]
-      },
-      "elasticsan": {
-        "all_resources": [
-          "azurerm_elastic_san",
-          "azurerm_elastic_san_volume",
-          "azurerm_elastic_san_volume_group"
-        ],
-        "list_resources": []
-      },
-      "eventgrid": {
-        "all_resources": [
-          "azurerm_eventgrid_domain",
-          "azurerm_eventgrid_domain_topic",
-          "azurerm_eventgrid_event_subscription",
-          "azurerm_eventgrid_namespace",
-          "azurerm_eventgrid_namespace_topic",
-          "azurerm_eventgrid_partner_configuration",
-          "azurerm_eventgrid_partner_namespace",
-          "azurerm_eventgrid_partner_registration",
-          "azurerm_eventgrid_system_topic",
-          "azurerm_eventgrid_system_topic_event_subscription",
-          "azurerm_eventgrid_topic"
-        ],
-        "list_resources": []
-      },
-      "appconfiguration": {
-        "all_resources": [
-          "azurerm_app_configuration",
-          "azurerm_app_configuration_feature",
-          "azurerm_app_configuration_key"
-        ],
-        "list_resources": []
-      },
-      "bot": {
-        "all_resources": [
-          "azurerm_bot_channel_alexa",
-          "azurerm_bot_channel_direct_line_speech",
-          "azurerm_bot_channel_directline",
-          "azurerm_bot_channel_email",
-          "azurerm_bot_channel_facebook",
-          "azurerm_bot_channel_line",
-          "azurerm_bot_channel_ms_teams",
-          "azurerm_bot_channel_slack",
-          "azurerm_bot_channel_sms",
-          "azurerm_bot_channel_web_chat",
-          "azurerm_bot_channels_registration",
-          "azurerm_bot_connection",
-          "azurerm_bot_service_azure_bot",
-          "azurerm_bot_web_app",
-          "azurerm_healthbot"
-        ],
-        "list_resources": []
-      },
-      "sentinel": {
-        "all_resources": [
-          "azurerm_sentinel_alert_rule_anomaly_built_in",
-          "azurerm_sentinel_alert_rule_anomaly_duplicate",
-          "azurerm_sentinel_alert_rule_fusion",
-          "azurerm_sentinel_alert_rule_machine_learning_behavior_analytics",
-          "azurerm_sentinel_alert_rule_ms_security_incident",
-          "azurerm_sentinel_alert_rule_nrt",
-          "azurerm_sentinel_alert_rule_scheduled",
-          "azurerm_sentinel_alert_rule_threat_intelligence",
-          "azurerm_sentinel_automation_rule",
-          "azurerm_sentinel_data_connector_aws_cloud_trail",
-          "azurerm_sentinel_data_connector_aws_s3",
-          "azurerm_sentinel_data_connector_azure_active_directory",
-          "azurerm_sentinel_data_connector_azure_advanced_threat_protection",
-          "azurerm_sentinel_data_connector_azure_security_center",
-          "azurerm_sentinel_data_connector_dynamics_365",
-          "azurerm_sentinel_data_connector_iot",
-          "azurerm_sentinel_data_connector_microsoft_cloud_app_security",
-          "azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection",
-          "azurerm_sentinel_data_connector_microsoft_threat_intelligence",
-          "azurerm_sentinel_data_connector_microsoft_threat_protection",
-          "azurerm_sentinel_data_connector_office_365",
-          "azurerm_sentinel_data_connector_office_365_project",
-          "azurerm_sentinel_data_connector_office_atp",
-          "azurerm_sentinel_data_connector_office_irm",
-          "azurerm_sentinel_data_connector_office_power_bi",
-          "azurerm_sentinel_data_connector_threat_intelligence",
-          "azurerm_sentinel_data_connector_threat_intelligence_taxii",
-          "azurerm_sentinel_log_analytics_workspace_onboarding",
-          "azurerm_sentinel_metadata",
-          "azurerm_sentinel_threat_intelligence_indicator",
-          "azurerm_sentinel_watchlist",
-          "azurerm_sentinel_watchlist_item"
-        ],
-        "list_resources": []
-      },
-      "consumption": {
-        "all_resources": [
-          "azurerm_consumption_budget_management_group",
-          "azurerm_consumption_budget_resource_group",
-          "azurerm_consumption_budget_subscription"
-        ],
-        "list_resources": []
-      },
-      "servicebus": {
-        "all_resources": [
-          "azurerm_servicebus_namespace",
-          "azurerm_servicebus_namespace_authorization_rule",
-          "azurerm_servicebus_namespace_customer_managed_key",
-          "azurerm_servicebus_namespace_disaster_recovery_config",
-          "azurerm_servicebus_queue",
-          "azurerm_servicebus_queue_authorization_rule",
-          "azurerm_servicebus_subscription",
-          "azurerm_servicebus_subscription_rule",
-          "azurerm_servicebus_topic",
-          "azurerm_servicebus_topic_authorization_rule"
-        ],
-        "list_resources": []
-      },
-      "cognitive": {
-        "all_resources": [
-          "azurerm_ai_services",
-          "azurerm_cognitive_account",
-          "azurerm_cognitive_account_project",
-          "azurerm_cognitive_account_rai_blocklist",
-          "azurerm_cognitive_account_rai_policy",
-          "azurerm_cognitive_deployment"
-        ],
-        "list_resources": [
-          "azurerm_cognitive_account"
-        ]
-      },
-      "fabric": {
-        "all_resources": [
-          "azurerm_fabric_capacity"
-        ],
-        "list_resources": []
-      },
-      "fluidrelay": {
-        "all_resources": [
-          "azurerm_fluid_relay_server"
-        ],
-        "list_resources": []
-      },
-      "databoxedge": {
-        "all_resources": [
-          "azurerm_databox_edge_device"
-        ],
-        "list_resources": []
-      },
-      "managedidentity": {
-        "all_resources": [
-          "azurerm_federated_identity_credential",
-          "azurerm_user_assigned_identity"
-        ],
-        "list_resources": []
-      },
-      "automanage": {
-        "all_resources": [
-          "azurerm_arc_machine_automanage_configuration_assignment",
-          "azurerm_automanage_configuration",
-          "azurerm_virtual_machine_automanage_configuration_assignment"
-        ],
-        "list_resources": []
-      },
-      "maps": {
-        "all_resources": [
-          "azurerm_maps_account",
-          "azurerm_maps_creator"
-        ],
-        "list_resources": []
-      },
-      "firewall": {
-        "all_resources": [
-          "azurerm_firewall",
-          "azurerm_firewall_application_rule_collection",
-          "azurerm_firewall_nat_rule_collection",
-          "azurerm_firewall_network_rule_collection",
-          "azurerm_firewall_policy",
-          "azurerm_firewall_policy_rule_collection_group"
-        ],
-        "list_resources": [
-          "azurerm_firewall",
-          "azurerm_firewall_policy",
-          "azurerm_firewall_policy_rule_collection_group"
-        ]
-      },
-      "managedredis": {
-        "all_resources": [
-          "azurerm_managed_redis",
-          "azurerm_managed_redis_access_policy_assignment",
-          "azurerm_managed_redis_geo_replication"
-        ],
-        "list_resources": []
-      },
-      "vmware": {
-        "all_resources": [
-          "azurerm_vmware_cluster",
-          "azurerm_vmware_express_route_authorization",
-          "azurerm_vmware_netapp_volume_attachment",
-          "azurerm_vmware_private_cloud"
-        ],
-        "list_resources": []
-      },
-      "keyvault": {
-        "all_resources": [
-          "azurerm_key_vault",
-          "azurerm_key_vault_access_policy",
-          "azurerm_key_vault_certificate",
-          "azurerm_key_vault_certificate_contacts",
-          "azurerm_key_vault_certificate_issuer",
-          "azurerm_key_vault_key",
-          "azurerm_key_vault_managed_storage_account",
-          "azurerm_key_vault_managed_storage_account_sas_token_definition",
-          "azurerm_key_vault_secret"
-        ],
-        "list_resources": []
-      },
-      "batch": {
-        "all_resources": [
-          "azurerm_batch_account",
-          "azurerm_batch_application",
-          "azurerm_batch_certificate",
-          "azurerm_batch_job",
-          "azurerm_batch_pool"
-        ],
-        "list_resources": []
-      },
-      "appservice": {
-        "all_resources": [
-          "azurerm_app_service_environment_v3",
-          "azurerm_app_service_source_control",
-          "azurerm_app_service_source_control_slot",
-          "azurerm_function_app_active_slot",
-          "azurerm_function_app_flex_consumption",
-          "azurerm_function_app_function",
-          "azurerm_function_app_hybrid_connection",
-          "azurerm_linux_function_app",
-          "azurerm_linux_function_app_slot",
-          "azurerm_linux_web_app",
-          "azurerm_linux_web_app_slot",
-          "azurerm_service_plan",
-          "azurerm_source_control_token",
-          "azurerm_static_web_app",
-          "azurerm_static_web_app_custom_domain",
-          "azurerm_static_web_app_function_app_registration",
-          "azurerm_web_app_active_slot",
-          "azurerm_web_app_hybrid_connection",
-          "azurerm_windows_function_app",
-          "azurerm_windows_function_app_slot",
-          "azurerm_windows_web_app",
-          "azurerm_windows_web_app_slot"
-        ],
-        "list_resources": [
-          "azurerm_service_plan"
-        ]
       },
       "authorization": {
         "all_resources": [
@@ -435,95 +181,26 @@
         ],
         "list_resources": []
       },
-      "policy": {
+      "dashboard": {
         "all_resources": [
-          "azurerm_management_group_policy_assignment",
-          "azurerm_management_group_policy_exemption",
-          "azurerm_management_group_policy_remediation",
-          "azurerm_management_group_policy_set_definition",
-          "azurerm_policy_definition",
-          "azurerm_policy_set_definition",
-          "azurerm_policy_virtual_machine_configuration_assignment",
-          "azurerm_resource_group_policy_assignment",
-          "azurerm_resource_group_policy_exemption",
-          "azurerm_resource_group_policy_remediation",
-          "azurerm_resource_policy_assignment",
-          "azurerm_resource_policy_exemption",
-          "azurerm_resource_policy_remediation",
-          "azurerm_subscription_policy_assignment",
-          "azurerm_subscription_policy_remediation"
+          "azurerm_dashboard_grafana",
+          "azurerm_dashboard_grafana_managed_private_endpoint"
         ],
         "list_resources": []
       },
-      "redis": {
+      "codesigning": {
         "all_resources": [
-          "azurerm_redis_cache",
-          "azurerm_redis_cache_access_policy",
-          "azurerm_redis_cache_access_policy_assignment",
-          "azurerm_redis_firewall_rule",
-          "azurerm_redis_linked_server"
-        ],
-        "list_resources": [
-          "azurerm_redis_cache",
-          "azurerm_redis_firewall_rule"
-        ]
-      },
-      "azurestackhci": {
-        "all_resources": [
-          "azurerm_stack_hci_cluster",
-          "azurerm_stack_hci_deployment_setting",
-          "azurerm_stack_hci_extension",
-          "azurerm_stack_hci_logical_network",
-          "azurerm_stack_hci_marketplace_gallery_image",
-          "azurerm_stack_hci_network_interface",
-          "azurerm_stack_hci_storage_path",
-          "azurerm_stack_hci_virtual_hard_disk"
+          "azurerm_trusted_signing_account"
         ],
         "list_resources": []
       },
-      "manageddevopspools": {
+      "communication": {
         "all_resources": [
-          "azurerm_managed_devops_pool"
-        ],
-        "list_resources": []
-      },
-      "loadtestservice": {
-        "all_resources": [
-          "azurerm_load_test"
-        ],
-        "list_resources": []
-      },
-      "iotcentral": {
-        "all_resources": [
-          "azurerm_iotcentral_application",
-          "azurerm_iotcentral_application_network_rule_set",
-          "azurerm_iotcentral_organization"
-        ],
-        "list_resources": []
-      },
-      "portal": {
-        "all_resources": [
-          "azurerm_portal_dashboard",
-          "azurerm_portal_tenant_configuration"
-        ],
-        "list_resources": []
-      },
-      "extendedlocation": {
-        "all_resources": [
-          "azurerm_extended_custom_location",
-          "azurerm_extended_location_custom_location"
-        ],
-        "list_resources": []
-      },
-      "devtestlabs": {
-        "all_resources": [
-          "azurerm_dev_test_global_vm_shutdown_schedule",
-          "azurerm_dev_test_lab",
-          "azurerm_dev_test_linux_virtual_machine",
-          "azurerm_dev_test_policy",
-          "azurerm_dev_test_schedule",
-          "azurerm_dev_test_virtual_network",
-          "azurerm_dev_test_windows_virtual_machine"
+          "azurerm_communication_service",
+          "azurerm_communication_service_email_domain_association",
+          "azurerm_email_communication_service",
+          "azurerm_email_communication_service_domain",
+          "azurerm_email_communication_service_domain_sender_username"
         ],
         "list_resources": []
       },
@@ -542,11 +219,16 @@
         ],
         "list_resources": []
       },
-      "connections": {
+      "trafficmanager": {
         "all_resources": [
-          "azurerm_api_connection"
+          "azurerm_traffic_manager_azure_endpoint",
+          "azurerm_traffic_manager_external_endpoint",
+          "azurerm_traffic_manager_nested_endpoint",
+          "azurerm_traffic_manager_profile"
         ],
-        "list_resources": []
+        "list_resources": [
+          "azurerm_traffic_manager_profile"
+        ]
       },
       "compute": {
         "all_resources": [
@@ -587,48 +269,132 @@
         ],
         "list_resources": []
       },
-      "kusto": {
+      "synapse": {
         "all_resources": [
-          "azurerm_kusto_attached_database_configuration",
-          "azurerm_kusto_cluster",
-          "azurerm_kusto_cluster_managed_private_endpoint",
-          "azurerm_kusto_cluster_principal_assignment",
-          "azurerm_kusto_cosmosdb_data_connection",
-          "azurerm_kusto_database",
-          "azurerm_kusto_database_principal_assignment",
-          "azurerm_kusto_eventgrid_data_connection",
-          "azurerm_kusto_eventhub_data_connection",
-          "azurerm_kusto_iothub_data_connection",
-          "azurerm_kusto_script"
+          "azurerm_synapse_firewall_rule",
+          "azurerm_synapse_integration_runtime_azure",
+          "azurerm_synapse_integration_runtime_self_hosted",
+          "azurerm_synapse_linked_service",
+          "azurerm_synapse_managed_private_endpoint",
+          "azurerm_synapse_private_link_hub",
+          "azurerm_synapse_role_assignment",
+          "azurerm_synapse_spark_pool",
+          "azurerm_synapse_sql_pool",
+          "azurerm_synapse_sql_pool_extended_auditing_policy",
+          "azurerm_synapse_sql_pool_security_alert_policy",
+          "azurerm_synapse_sql_pool_vulnerability_assessment",
+          "azurerm_synapse_sql_pool_vulnerability_assessment_baseline",
+          "azurerm_synapse_sql_pool_workload_classifier",
+          "azurerm_synapse_sql_pool_workload_group",
+          "azurerm_synapse_workspace",
+          "azurerm_synapse_workspace_aad_admin",
+          "azurerm_synapse_workspace_extended_auditing_policy",
+          "azurerm_synapse_workspace_security_alert_policy",
+          "azurerm_synapse_workspace_sql_aad_admin",
+          "azurerm_synapse_workspace_vulnerability_assessment"
         ],
         "list_resources": []
       },
-      "hdinsight": {
+      "databasemigration": {
         "all_resources": [
-          "azurerm_hdinsight_hadoop_cluster",
-          "azurerm_hdinsight_hbase_cluster",
-          "azurerm_hdinsight_interactive_query_cluster",
-          "azurerm_hdinsight_kafka_cluster",
-          "azurerm_hdinsight_spark_cluster"
+          "azurerm_database_migration_project",
+          "azurerm_database_migration_service"
         ],
         "list_resources": []
       },
-      "paloalto": {
+      "mysql": {
         "all_resources": [
-          "azurerm_palo_alto_local_rulestack",
-          "azurerm_palo_alto_local_rulestack_certificate",
-          "azurerm_palo_alto_local_rulestack_fqdn_list",
-          "azurerm_palo_alto_local_rulestack_outbound_trust_certificate_association",
-          "azurerm_palo_alto_local_rulestack_outbound_untrust_certificate_association",
-          "azurerm_palo_alto_local_rulestack_prefix_list",
-          "azurerm_palo_alto_local_rulestack_rule",
-          "azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack",
-          "azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama",
-          "azurerm_palo_alto_next_generation_firewall_virtual_hub_strata_cloud_manager",
-          "azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack",
-          "azurerm_palo_alto_next_generation_firewall_virtual_network_panorama",
-          "azurerm_palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager",
-          "azurerm_palo_alto_virtual_network_appliance"
+          "azurerm_mysql_flexible_database",
+          "azurerm_mysql_flexible_server",
+          "azurerm_mysql_flexible_server_active_directory_administrator",
+          "azurerm_mysql_flexible_server_configuration",
+          "azurerm_mysql_flexible_server_firewall_rule"
+        ],
+        "list_resources": [
+          "azurerm_mysql_flexible_database",
+          "azurerm_mysql_flexible_server",
+          "azurerm_mysql_flexible_server_configuration",
+          "azurerm_mysql_flexible_server_firewall_rule"
+        ]
+      },
+      "redisenterprise": {
+        "all_resources": [
+          "azurerm_redis_enterprise_cluster",
+          "azurerm_redis_enterprise_database"
+        ],
+        "list_resources": []
+      },
+      "firewall": {
+        "all_resources": [
+          "azurerm_firewall",
+          "azurerm_firewall_application_rule_collection",
+          "azurerm_firewall_nat_rule_collection",
+          "azurerm_firewall_network_rule_collection",
+          "azurerm_firewall_policy",
+          "azurerm_firewall_policy_rule_collection_group"
+        ],
+        "list_resources": [
+          "azurerm_firewall",
+          "azurerm_firewall_policy",
+          "azurerm_firewall_policy_rule_collection_group"
+        ]
+      },
+      "bot": {
+        "all_resources": [
+          "azurerm_bot_channel_alexa",
+          "azurerm_bot_channel_direct_line_speech",
+          "azurerm_bot_channel_directline",
+          "azurerm_bot_channel_email",
+          "azurerm_bot_channel_facebook",
+          "azurerm_bot_channel_line",
+          "azurerm_bot_channel_ms_teams",
+          "azurerm_bot_channel_slack",
+          "azurerm_bot_channel_sms",
+          "azurerm_bot_channel_web_chat",
+          "azurerm_bot_channels_registration",
+          "azurerm_bot_connection",
+          "azurerm_bot_service_azure_bot",
+          "azurerm_bot_web_app",
+          "azurerm_healthbot"
+        ],
+        "list_resources": []
+      },
+      "lighthouse": {
+        "all_resources": [
+          "azurerm_lighthouse_assignment",
+          "azurerm_lighthouse_definition"
+        ],
+        "list_resources": []
+      },
+      "arcresourcebridge": {
+        "all_resources": [
+          "azurerm_arc_resource_bridge_appliance"
+        ],
+        "list_resources": []
+      },
+      "subscription": {
+        "all_resources": [
+          "azurerm_subscription"
+        ],
+        "list_resources": []
+      },
+      "policy": {
+        "all_resources": [
+          "azurerm_management_group_policy_assignment",
+          "azurerm_management_group_policy_exemption",
+          "azurerm_management_group_policy_remediation",
+          "azurerm_management_group_policy_set_definition",
+          "azurerm_policy_definition",
+          "azurerm_policy_set_definition",
+          "azurerm_policy_virtual_machine_configuration_assignment",
+          "azurerm_resource_group_policy_assignment",
+          "azurerm_resource_group_policy_exemption",
+          "azurerm_resource_group_policy_remediation",
+          "azurerm_resource_policy_assignment",
+          "azurerm_resource_policy_exemption",
+          "azurerm_resource_policy_remediation",
+          "azurerm_subscription_policy_assignment",
+          "azurerm_subscription_policy_remediation"
         ],
         "list_resources": []
       },
@@ -655,69 +421,29 @@
         ],
         "list_resources": []
       },
-      "mssqlmanagedinstance": {
+      "datashare": {
         "all_resources": [
-          "azurerm_mssql_managed_database",
-          "azurerm_mssql_managed_instance",
-          "azurerm_mssql_managed_instance_active_directory_administrator",
-          "azurerm_mssql_managed_instance_failover_group",
-          "azurerm_mssql_managed_instance_security_alert_policy",
-          "azurerm_mssql_managed_instance_start_stop_schedule",
-          "azurerm_mssql_managed_instance_transparent_data_encryption",
-          "azurerm_mssql_managed_instance_vulnerability_assessment"
+          "azurerm_data_share",
+          "azurerm_data_share_account",
+          "azurerm_data_share_dataset_blob_storage",
+          "azurerm_data_share_dataset_data_lake_gen2",
+          "azurerm_data_share_dataset_kusto_cluster",
+          "azurerm_data_share_dataset_kusto_database"
         ],
         "list_resources": []
       },
-      "dns": {
+      "redis": {
         "all_resources": [
-          "azurerm_dns_a_record",
-          "azurerm_dns_aaaa_record",
-          "azurerm_dns_caa_record",
-          "azurerm_dns_cname_record",
-          "azurerm_dns_mx_record",
-          "azurerm_dns_ns_record",
-          "azurerm_dns_ptr_record",
-          "azurerm_dns_srv_record",
-          "azurerm_dns_txt_record",
-          "azurerm_dns_zone"
+          "azurerm_redis_cache",
+          "azurerm_redis_cache_access_policy",
+          "azurerm_redis_cache_access_policy_assignment",
+          "azurerm_redis_firewall_rule",
+          "azurerm_redis_linked_server"
         ],
-        "list_resources": []
-      },
-      "search": {
-        "all_resources": [
-          "azurerm_search_service",
-          "azurerm_search_shared_private_link_service"
-        ],
-        "list_resources": []
-      },
-      "dataprotection": {
-        "all_resources": [
-          "azurerm_data_protection_backup_instance_blob_storage",
-          "azurerm_data_protection_backup_instance_data_lake_storage",
-          "azurerm_data_protection_backup_instance_disk",
-          "azurerm_data_protection_backup_instance_kubernetes_cluster",
-          "azurerm_data_protection_backup_instance_mysql_flexible_server",
-          "azurerm_data_protection_backup_instance_postgresql",
-          "azurerm_data_protection_backup_instance_postgresql_flexible_server",
-          "azurerm_data_protection_backup_policy_blob_storage",
-          "azurerm_data_protection_backup_policy_data_lake_storage",
-          "azurerm_data_protection_backup_policy_disk",
-          "azurerm_data_protection_backup_policy_kubernetes_cluster",
-          "azurerm_data_protection_backup_policy_mysql_flexible_server",
-          "azurerm_data_protection_backup_policy_postgresql",
-          "azurerm_data_protection_backup_policy_postgresql_flexible_server",
-          "azurerm_data_protection_backup_vault",
-          "azurerm_data_protection_backup_vault_customer_managed_key",
-          "azurerm_data_protection_resource_guard"
-        ],
-        "list_resources": []
-      },
-      "databasemigration": {
-        "all_resources": [
-          "azurerm_database_migration_project",
-          "azurerm_database_migration_service"
-        ],
-        "list_resources": []
+        "list_resources": [
+          "azurerm_redis_cache",
+          "azurerm_redis_firewall_rule"
+        ]
       },
       "privatedns": {
         "all_resources": [
@@ -738,31 +464,32 @@
           "azurerm_private_dns_zone_virtual_network_link"
         ]
       },
-      "loganalytics": {
+      "cosmos": {
         "all_resources": [
-          "azurerm_log_analytics_cluster",
-          "azurerm_log_analytics_cluster_customer_managed_key",
-          "azurerm_log_analytics_data_export_rule",
-          "azurerm_log_analytics_datasource_windows_event",
-          "azurerm_log_analytics_datasource_windows_performance_counter",
-          "azurerm_log_analytics_linked_service",
-          "azurerm_log_analytics_linked_storage_account",
-          "azurerm_log_analytics_query_pack",
-          "azurerm_log_analytics_query_pack_query",
-          "azurerm_log_analytics_saved_search",
-          "azurerm_log_analytics_solution",
-          "azurerm_log_analytics_storage_insights",
-          "azurerm_log_analytics_workspace",
-          "azurerm_log_analytics_workspace_table",
-          "azurerm_log_analytics_workspace_table_custom_log"
-        ],
-        "list_resources": []
-      },
-      "hybridcompute": {
-        "all_resources": [
-          "azurerm_arc_machine",
-          "azurerm_arc_machine_extension",
-          "azurerm_arc_private_link_scope"
+          "azurerm_cosmosdb_account",
+          "azurerm_cosmosdb_cassandra_cluster",
+          "azurerm_cosmosdb_cassandra_datacenter",
+          "azurerm_cosmosdb_cassandra_keyspace",
+          "azurerm_cosmosdb_cassandra_table",
+          "azurerm_cosmosdb_gremlin_database",
+          "azurerm_cosmosdb_gremlin_graph",
+          "azurerm_cosmosdb_mongo_collection",
+          "azurerm_cosmosdb_mongo_database",
+          "azurerm_cosmosdb_mongo_role_definition",
+          "azurerm_cosmosdb_mongo_user_definition",
+          "azurerm_cosmosdb_postgresql_cluster",
+          "azurerm_cosmosdb_postgresql_coordinator_configuration",
+          "azurerm_cosmosdb_postgresql_firewall_rule",
+          "azurerm_cosmosdb_postgresql_node_configuration",
+          "azurerm_cosmosdb_postgresql_role",
+          "azurerm_cosmosdb_sql_container",
+          "azurerm_cosmosdb_sql_database",
+          "azurerm_cosmosdb_sql_dedicated_gateway",
+          "azurerm_cosmosdb_sql_function",
+          "azurerm_cosmosdb_sql_role_assignment",
+          "azurerm_cosmosdb_sql_role_definition",
+          "azurerm_cosmosdb_sql_stored_procedure",
+          "azurerm_cosmosdb_sql_trigger"
         ],
         "list_resources": []
       },
@@ -787,39 +514,197 @@
         ],
         "list_resources": []
       },
-      "storage": {
+      "applicationinsights": {
         "all_resources": [
-          "azurerm_storage_account",
-          "azurerm_storage_account_customer_managed_key",
-          "azurerm_storage_account_local_user",
-          "azurerm_storage_account_network_rule",
-          "azurerm_storage_account_queue_properties",
-          "azurerm_storage_account_static_website",
-          "azurerm_storage_blob",
-          "azurerm_storage_blob_inventory_policy",
-          "azurerm_storage_container",
-          "azurerm_storage_container_immutability_policy",
-          "azurerm_storage_data_lake_gen2_filesystem",
-          "azurerm_storage_data_lake_gen2_path",
-          "azurerm_storage_encryption_scope",
-          "azurerm_storage_management_policy",
-          "azurerm_storage_object_replication",
-          "azurerm_storage_queue",
-          "azurerm_storage_share",
-          "azurerm_storage_share_directory",
-          "azurerm_storage_share_file",
-          "azurerm_storage_sync",
-          "azurerm_storage_sync_cloud_endpoint",
-          "azurerm_storage_sync_group",
-          "azurerm_storage_sync_server_endpoint",
-          "azurerm_storage_table",
-          "azurerm_storage_table_entity"
+          "azurerm_application_insights",
+          "azurerm_application_insights_analytics_item",
+          "azurerm_application_insights_api_key",
+          "azurerm_application_insights_smart_detection_rule",
+          "azurerm_application_insights_standard_web_test",
+          "azurerm_application_insights_web_test",
+          "azurerm_application_insights_workbook",
+          "azurerm_application_insights_workbook_template"
         ],
-        "list_resources": [
-          "azurerm_storage_account",
-          "azurerm_storage_account_customer_managed_key",
-          "azurerm_storage_sync"
-        ]
+        "list_resources": []
+      },
+      "blueprints": {
+        "all_resources": [
+          "azurerm_blueprint_assignment"
+        ],
+        "list_resources": []
+      },
+      "oracle": {
+        "all_resources": [
+          "azurerm_oracle_autonomous_database",
+          "azurerm_oracle_autonomous_database_backup",
+          "azurerm_oracle_autonomous_database_clone_from_backup",
+          "azurerm_oracle_autonomous_database_clone_from_database",
+          "azurerm_oracle_cloud_vm_cluster",
+          "azurerm_oracle_exadata_infrastructure",
+          "azurerm_oracle_exascale_database_storage_vault",
+          "azurerm_oracle_resource_anchor"
+        ],
+        "list_resources": []
+      },
+      "managementgroup": {
+        "all_resources": [
+          "azurerm_management_group",
+          "azurerm_management_group_subscription_association"
+        ],
+        "list_resources": []
+      },
+      "keyvault": {
+        "all_resources": [
+          "azurerm_key_vault",
+          "azurerm_key_vault_access_policy",
+          "azurerm_key_vault_certificate",
+          "azurerm_key_vault_certificate_contacts",
+          "azurerm_key_vault_certificate_issuer",
+          "azurerm_key_vault_key",
+          "azurerm_key_vault_managed_storage_account",
+          "azurerm_key_vault_managed_storage_account_sas_token_definition",
+          "azurerm_key_vault_secret"
+        ],
+        "list_resources": []
+      },
+      "redhatopenshift": {
+        "all_resources": [
+          "azurerm_redhat_openshift_cluster"
+        ],
+        "list_resources": []
+      },
+      "datafactory": {
+        "all_resources": [
+          "azurerm_data_factory",
+          "azurerm_data_factory_credential_service_principal",
+          "azurerm_data_factory_credential_user_managed_identity",
+          "azurerm_data_factory_custom_dataset",
+          "azurerm_data_factory_customer_managed_key",
+          "azurerm_data_factory_data_flow",
+          "azurerm_data_factory_dataset_azure_sql_table",
+          "azurerm_data_factory_dataset_binary",
+          "azurerm_data_factory_dataset_cosmosdb_sqlapi",
+          "azurerm_data_factory_dataset_delimited_text",
+          "azurerm_data_factory_dataset_http",
+          "azurerm_data_factory_dataset_mysql",
+          "azurerm_data_factory_dataset_parquet",
+          "azurerm_data_factory_dataset_postgresql",
+          "azurerm_data_factory_dataset_snowflake",
+          "azurerm_data_factory_dataset_sql_server",
+          "azurerm_data_factory_flowlet_data_flow",
+          "azurerm_data_factory_integration_runtime_azure",
+          "azurerm_data_factory_integration_runtime_azure_ssis",
+          "azurerm_data_factory_integration_runtime_self_hosted",
+          "azurerm_data_factory_linked_custom_service",
+          "azurerm_data_factory_linked_service_azure_blob_storage",
+          "azurerm_data_factory_linked_service_azure_databricks",
+          "azurerm_data_factory_linked_service_azure_file_storage",
+          "azurerm_data_factory_linked_service_azure_function",
+          "azurerm_data_factory_linked_service_azure_search",
+          "azurerm_data_factory_linked_service_azure_sql_database",
+          "azurerm_data_factory_linked_service_azure_table_storage",
+          "azurerm_data_factory_linked_service_cosmosdb",
+          "azurerm_data_factory_linked_service_data_lake_storage_gen2",
+          "azurerm_data_factory_linked_service_key_vault",
+          "azurerm_data_factory_linked_service_kusto",
+          "azurerm_data_factory_linked_service_mysql",
+          "azurerm_data_factory_linked_service_odata",
+          "azurerm_data_factory_linked_service_odbc",
+          "azurerm_data_factory_linked_service_postgresql",
+          "azurerm_data_factory_linked_service_sftp",
+          "azurerm_data_factory_linked_service_snowflake",
+          "azurerm_data_factory_linked_service_sql_managed_instance",
+          "azurerm_data_factory_linked_service_sql_server",
+          "azurerm_data_factory_linked_service_synapse",
+          "azurerm_data_factory_linked_service_web",
+          "azurerm_data_factory_managed_private_endpoint",
+          "azurerm_data_factory_pipeline",
+          "azurerm_data_factory_trigger_blob_event",
+          "azurerm_data_factory_trigger_custom_event",
+          "azurerm_data_factory_trigger_schedule",
+          "azurerm_data_factory_trigger_tumbling_window"
+        ],
+        "list_resources": []
+      },
+      "nginx": {
+        "all_resources": [
+          "azurerm_nginx_api_key",
+          "azurerm_nginx_certificate",
+          "azurerm_nginx_configuration",
+          "azurerm_nginx_deployment"
+        ],
+        "list_resources": []
+      },
+      "paloalto": {
+        "all_resources": [
+          "azurerm_palo_alto_local_rulestack",
+          "azurerm_palo_alto_local_rulestack_certificate",
+          "azurerm_palo_alto_local_rulestack_fqdn_list",
+          "azurerm_palo_alto_local_rulestack_outbound_trust_certificate_association",
+          "azurerm_palo_alto_local_rulestack_outbound_untrust_certificate_association",
+          "azurerm_palo_alto_local_rulestack_prefix_list",
+          "azurerm_palo_alto_local_rulestack_rule",
+          "azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack",
+          "azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama",
+          "azurerm_palo_alto_next_generation_firewall_virtual_hub_strata_cloud_manager",
+          "azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack",
+          "azurerm_palo_alto_next_generation_firewall_virtual_network_panorama",
+          "azurerm_palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager",
+          "azurerm_palo_alto_virtual_network_appliance"
+        ],
+        "list_resources": []
+      },
+      "hybridcompute": {
+        "all_resources": [
+          "azurerm_arc_machine",
+          "azurerm_arc_machine_extension",
+          "azurerm_arc_private_link_scope"
+        ],
+        "list_resources": []
+      },
+      "search": {
+        "all_resources": [
+          "azurerm_search_service",
+          "azurerm_search_shared_private_link_service"
+        ],
+        "list_resources": []
+      },
+      "batch": {
+        "all_resources": [
+          "azurerm_batch_account",
+          "azurerm_batch_application",
+          "azurerm_batch_certificate",
+          "azurerm_batch_job",
+          "azurerm_batch_pool"
+        ],
+        "list_resources": []
+      },
+      "arckubernetes": {
+        "all_resources": [
+          "azurerm_arc_kubernetes_cluster",
+          "azurerm_arc_kubernetes_cluster_extension",
+          "azurerm_arc_kubernetes_flux_configuration",
+          "azurerm_arc_kubernetes_provisioned_cluster"
+        ],
+        "list_resources": []
+      },
+      "machinelearning": {
+        "all_resources": [
+          "azurerm_ai_foundry",
+          "azurerm_ai_foundry_project",
+          "azurerm_machine_learning_compute_cluster",
+          "azurerm_machine_learning_compute_instance",
+          "azurerm_machine_learning_datastore_blobstorage",
+          "azurerm_machine_learning_datastore_datalake_gen2",
+          "azurerm_machine_learning_datastore_fileshare",
+          "azurerm_machine_learning_inference_cluster",
+          "azurerm_machine_learning_synapse_spark",
+          "azurerm_machine_learning_workspace",
+          "azurerm_machine_learning_workspace_network_outbound_rule_fqdn",
+          "azurerm_machine_learning_workspace_network_outbound_rule_private_endpoint",
+          "azurerm_machine_learning_workspace_network_outbound_rule_service_tag"
+        ],
+        "list_resources": []
       },
       "apimanagement": {
         "all_resources": [
@@ -880,22 +765,47 @@
         ],
         "list_resources": []
       },
-      "costmanagement": {
+      "sentinel": {
         "all_resources": [
-          "azurerm_billing_account_cost_management_export",
-          "azurerm_cost_anomaly_alert",
-          "azurerm_cost_management_scheduled_action",
-          "azurerm_resource_group_cost_management_export",
-          "azurerm_resource_group_cost_management_view",
-          "azurerm_subscription_cost_management_export",
-          "azurerm_subscription_cost_management_view"
+          "azurerm_sentinel_alert_rule_anomaly_built_in",
+          "azurerm_sentinel_alert_rule_anomaly_duplicate",
+          "azurerm_sentinel_alert_rule_fusion",
+          "azurerm_sentinel_alert_rule_machine_learning_behavior_analytics",
+          "azurerm_sentinel_alert_rule_ms_security_incident",
+          "azurerm_sentinel_alert_rule_nrt",
+          "azurerm_sentinel_alert_rule_scheduled",
+          "azurerm_sentinel_alert_rule_threat_intelligence",
+          "azurerm_sentinel_automation_rule",
+          "azurerm_sentinel_data_connector_aws_cloud_trail",
+          "azurerm_sentinel_data_connector_aws_s3",
+          "azurerm_sentinel_data_connector_azure_active_directory",
+          "azurerm_sentinel_data_connector_azure_advanced_threat_protection",
+          "azurerm_sentinel_data_connector_azure_security_center",
+          "azurerm_sentinel_data_connector_dynamics_365",
+          "azurerm_sentinel_data_connector_iot",
+          "azurerm_sentinel_data_connector_microsoft_cloud_app_security",
+          "azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection",
+          "azurerm_sentinel_data_connector_microsoft_threat_intelligence",
+          "azurerm_sentinel_data_connector_microsoft_threat_protection",
+          "azurerm_sentinel_data_connector_office_365",
+          "azurerm_sentinel_data_connector_office_365_project",
+          "azurerm_sentinel_data_connector_office_atp",
+          "azurerm_sentinel_data_connector_office_irm",
+          "azurerm_sentinel_data_connector_office_power_bi",
+          "azurerm_sentinel_data_connector_threat_intelligence",
+          "azurerm_sentinel_data_connector_threat_intelligence_taxii",
+          "azurerm_sentinel_log_analytics_workspace_onboarding",
+          "azurerm_sentinel_metadata",
+          "azurerm_sentinel_threat_intelligence_indicator",
+          "azurerm_sentinel_watchlist",
+          "azurerm_sentinel_watchlist_item"
         ],
         "list_resources": []
       },
-      "lighthouse": {
+      "maps": {
         "all_resources": [
-          "azurerm_lighthouse_assignment",
-          "azurerm_lighthouse_definition"
+          "azurerm_maps_account",
+          "azurerm_maps_creator"
         ],
         "list_resources": []
       },
@@ -913,25 +823,95 @@
         ],
         "list_resources": []
       },
-      "advisor": {
+      "storage": {
         "all_resources": [
-          "azurerm_advisor_suppression"
+          "azurerm_storage_account",
+          "azurerm_storage_account_customer_managed_key",
+          "azurerm_storage_account_local_user",
+          "azurerm_storage_account_network_rule",
+          "azurerm_storage_account_queue_properties",
+          "azurerm_storage_account_static_website",
+          "azurerm_storage_blob",
+          "azurerm_storage_blob_inventory_policy",
+          "azurerm_storage_container",
+          "azurerm_storage_container_immutability_policy",
+          "azurerm_storage_data_lake_gen2_filesystem",
+          "azurerm_storage_data_lake_gen2_path",
+          "azurerm_storage_encryption_scope",
+          "azurerm_storage_management_policy",
+          "azurerm_storage_object_replication",
+          "azurerm_storage_queue",
+          "azurerm_storage_share",
+          "azurerm_storage_share_directory",
+          "azurerm_storage_share_file",
+          "azurerm_storage_sync",
+          "azurerm_storage_sync_cloud_endpoint",
+          "azurerm_storage_sync_group",
+          "azurerm_storage_sync_server_endpoint",
+          "azurerm_storage_table",
+          "azurerm_storage_table_entity"
+        ],
+        "list_resources": [
+          "azurerm_storage_account",
+          "azurerm_storage_account_customer_managed_key",
+          "azurerm_storage_sync"
+        ]
+      },
+      "connections": {
+        "all_resources": [
+          "azurerm_api_connection"
         ],
         "list_resources": []
       },
-      "confidentialledger": {
+      "dns": {
         "all_resources": [
-          "azurerm_confidential_ledger"
+          "azurerm_dns_a_record",
+          "azurerm_dns_aaaa_record",
+          "azurerm_dns_caa_record",
+          "azurerm_dns_cname_record",
+          "azurerm_dns_mx_record",
+          "azurerm_dns_ns_record",
+          "azurerm_dns_ptr_record",
+          "azurerm_dns_srv_record",
+          "azurerm_dns_txt_record",
+          "azurerm_dns_zone"
         ],
         "list_resources": []
       },
-      "managedhsm": {
+      "legacy": {
         "all_resources": [
-          "azurerm_key_vault_managed_hardware_security_module",
-          "azurerm_key_vault_managed_hardware_security_module_key",
-          "azurerm_key_vault_managed_hardware_security_module_key_rotation_policy",
-          "azurerm_key_vault_managed_hardware_security_module_role_assignment",
-          "azurerm_key_vault_managed_hardware_security_module_role_definition"
+          "azurerm_virtual_machine",
+          "azurerm_virtual_machine_scale_set"
+        ],
+        "list_resources": []
+      },
+      "customproviders": {
+        "all_resources": [
+          "azurerm_custom_resource_provider"
+        ],
+        "list_resources": []
+      },
+      "domainservices": {
+        "all_resources": [
+          "azurerm_active_directory_domain_service",
+          "azurerm_active_directory_domain_service_replica_set",
+          "azurerm_active_directory_domain_service_trust"
+        ],
+        "list_resources": []
+      },
+      "appconfiguration": {
+        "all_resources": [
+          "azurerm_app_configuration",
+          "azurerm_app_configuration_feature",
+          "azurerm_app_configuration_key"
+        ],
+        "list_resources": []
+      },
+      "iotcentral": {
+        "all_resources": [
+          "azurerm_iotcentral_application",
+          "azurerm_iotcentral_application_network_rule_set",
+          "azurerm_iotcentral_organization"
         ],
         "list_resources": []
       },
@@ -951,202 +931,41 @@
         ],
         "list_resources": []
       },
-      "graphservices": {
+      "kusto": {
         "all_resources": [
-          "azurerm_graph_services_account"
+          "azurerm_kusto_attached_database_configuration",
+          "azurerm_kusto_cluster",
+          "azurerm_kusto_cluster_managed_private_endpoint",
+          "azurerm_kusto_cluster_principal_assignment",
+          "azurerm_kusto_cosmosdb_data_connection",
+          "azurerm_kusto_database",
+          "azurerm_kusto_database_principal_assignment",
+          "azurerm_kusto_eventgrid_data_connection",
+          "azurerm_kusto_eventhub_data_connection",
+          "azurerm_kusto_iothub_data_connection",
+          "azurerm_kusto_script"
         ],
         "list_resources": []
       },
-      "maintenance": {
+      "voiceservices": {
         "all_resources": [
-          "azurerm_maintenance_assignment_dedicated_host",
-          "azurerm_maintenance_assignment_dynamic_scope",
-          "azurerm_maintenance_assignment_virtual_machine",
-          "azurerm_maintenance_assignment_virtual_machine_scale_set",
-          "azurerm_maintenance_configuration"
-        ],
-        "list_resources": []
-      },
-      "communication": {
-        "all_resources": [
-          "azurerm_communication_service",
-          "azurerm_communication_service_email_domain_association",
-          "azurerm_email_communication_service",
-          "azurerm_email_communication_service_domain",
-          "azurerm_email_communication_service_domain_sender_username"
-        ],
-        "list_resources": []
-      },
-      "resource": {
-        "all_resources": [
-          "azurerm_management_group_template_deployment",
-          "azurerm_management_lock",
-          "azurerm_resource_deployment_script_azure_cli",
-          "azurerm_resource_deployment_script_azure_power_shell",
-          "azurerm_resource_group",
-          "azurerm_resource_group_template_deployment",
-          "azurerm_resource_management_private_link",
-          "azurerm_resource_management_private_link_association",
-          "azurerm_resource_provider_feature_registration",
-          "azurerm_resource_provider_registration",
-          "azurerm_subscription_template_deployment",
-          "azurerm_tenant_template_deployment"
+          "azurerm_voice_services_communications_gateway",
+          "azurerm_voice_services_communications_gateway_test_line"
         ],
         "list_resources": [
-          "azurerm_resource_group"
+          "azurerm_voice_services_communications_gateway",
+          "azurerm_voice_services_communications_gateway_test_line"
         ]
       },
-      "networkfunction": {
+      "purview": {
         "all_resources": [
-          "azurerm_network_function_azure_traffic_collector",
-          "azurerm_network_function_collector_policy"
+          "azurerm_purview_account"
         ],
         "list_resources": []
       },
-      "oracle": {
+      "manageddevopspools": {
         "all_resources": [
-          "azurerm_oracle_autonomous_database",
-          "azurerm_oracle_autonomous_database_backup",
-          "azurerm_oracle_autonomous_database_clone_from_backup",
-          "azurerm_oracle_autonomous_database_clone_from_database",
-          "azurerm_oracle_cloud_vm_cluster",
-          "azurerm_oracle_exadata_infrastructure",
-          "azurerm_oracle_exascale_database_storage_vault",
-          "azurerm_oracle_resource_anchor"
-        ],
-        "list_resources": []
-      },
-      "serviceconnector": {
-        "all_resources": [
-          "azurerm_app_service_connection",
-          "azurerm_function_app_connection",
-          "azurerm_spring_cloud_connection"
-        ],
-        "list_resources": []
-      },
-      "relay": {
-        "all_resources": [
-          "azurerm_relay_hybrid_connection",
-          "azurerm_relay_hybrid_connection_authorization_rule",
-          "azurerm_relay_namespace",
-          "azurerm_relay_namespace_authorization_rule"
-        ],
-        "list_resources": []
-      },
-      "containers": {
-        "all_resources": [
-          "azurerm_container_connected_registry",
-          "azurerm_container_group",
-          "azurerm_container_registry",
-          "azurerm_container_registry_agent_pool",
-          "azurerm_container_registry_cache_rule",
-          "azurerm_container_registry_credential_set",
-          "azurerm_container_registry_scope_map",
-          "azurerm_container_registry_task",
-          "azurerm_container_registry_task_schedule_run_now",
-          "azurerm_container_registry_token",
-          "azurerm_container_registry_token_password",
-          "azurerm_container_registry_webhook",
-          "azurerm_kubernetes_cluster",
-          "azurerm_kubernetes_cluster_deployment_safeguard",
-          "azurerm_kubernetes_cluster_extension",
-          "azurerm_kubernetes_cluster_node_pool",
-          "azurerm_kubernetes_cluster_trusted_access_role_binding",
-          "azurerm_kubernetes_fleet_manager",
-          "azurerm_kubernetes_fleet_update_run",
-          "azurerm_kubernetes_fleet_update_strategy",
-          "azurerm_kubernetes_flux_configuration"
-        ],
-        "list_resources": []
-      },
-      "loadbalancer": {
-        "all_resources": [
-          "azurerm_lb",
-          "azurerm_lb_backend_address_pool",
-          "azurerm_lb_backend_address_pool_address",
-          "azurerm_lb_nat_pool",
-          "azurerm_lb_nat_rule",
-          "azurerm_lb_outbound_rule",
-          "azurerm_lb_probe",
-          "azurerm_lb_rule"
-        ],
-        "list_resources": []
-      },
-      "securitycenter": {
-        "all_resources": [
-          "azurerm_advanced_threat_protection",
-          "azurerm_iot_security_device_group",
-          "azurerm_iot_security_solution",
-          "azurerm_security_center_assessment",
-          "azurerm_security_center_assessment_policy",
-          "azurerm_security_center_auto_provisioning",
-          "azurerm_security_center_automation",
-          "azurerm_security_center_contact",
-          "azurerm_security_center_server_vulnerability_assessment_virtual_machine",
-          "azurerm_security_center_server_vulnerability_assessments_setting",
-          "azurerm_security_center_setting",
-          "azurerm_security_center_storage_defender",
-          "azurerm_security_center_subscription_pricing",
-          "azurerm_security_center_workspace"
-        ],
-        "list_resources": []
-      },
-      "servicefabric": {
-        "all_resources": [
-          "azurerm_service_fabric_cluster"
-        ],
-        "list_resources": []
-      },
-      "springcloud": {
-        "all_resources": [
-          "azurerm_spring_cloud_accelerator",
-          "azurerm_spring_cloud_active_deployment",
-          "azurerm_spring_cloud_api_portal",
-          "azurerm_spring_cloud_api_portal_custom_domain",
-          "azurerm_spring_cloud_app",
-          "azurerm_spring_cloud_app_cosmosdb_association",
-          "azurerm_spring_cloud_app_dynamics_application_performance_monitoring",
-          "azurerm_spring_cloud_app_mysql_association",
-          "azurerm_spring_cloud_app_redis_association",
-          "azurerm_spring_cloud_application_insights_application_performance_monitoring",
-          "azurerm_spring_cloud_application_live_view",
-          "azurerm_spring_cloud_build_deployment",
-          "azurerm_spring_cloud_build_pack_binding",
-          "azurerm_spring_cloud_builder",
-          "azurerm_spring_cloud_certificate",
-          "azurerm_spring_cloud_configuration_service",
-          "azurerm_spring_cloud_container_deployment",
-          "azurerm_spring_cloud_custom_domain",
-          "azurerm_spring_cloud_customized_accelerator",
-          "azurerm_spring_cloud_dev_tool_portal",
-          "azurerm_spring_cloud_dynatrace_application_performance_monitoring",
-          "azurerm_spring_cloud_elastic_application_performance_monitoring",
-          "azurerm_spring_cloud_gateway",
-          "azurerm_spring_cloud_gateway_custom_domain",
-          "azurerm_spring_cloud_gateway_route_config",
-          "azurerm_spring_cloud_java_deployment",
-          "azurerm_spring_cloud_new_relic_application_performance_monitoring",
-          "azurerm_spring_cloud_service",
-          "azurerm_spring_cloud_storage"
-        ],
-        "list_resources": []
-      },
-      "datashare": {
-        "all_resources": [
-          "azurerm_data_share",
-          "azurerm_data_share_account",
-          "azurerm_data_share_dataset_blob_storage",
-          "azurerm_data_share_dataset_data_lake_gen2",
-          "azurerm_data_share_dataset_kusto_cluster",
-          "azurerm_data_share_dataset_kusto_database"
-        ],
-        "list_resources": []
-      },
-      "databricks": {
-        "all_resources": [
-          "azurerm_databricks_access_connector",
-          "azurerm_databricks_virtual_network_peering",
-          "azurerm_databricks_workspace"
+          "azurerm_managed_devops_pool"
         ],
         "list_resources": []
       },
@@ -1266,90 +1085,72 @@
           "azurerm_web_application_firewall_policy"
         ]
       },
-      "iothub": {
+      "automanage": {
         "all_resources": [
-          "azurerm_iothub",
-          "azurerm_iothub_certificate",
-          "azurerm_iothub_consumer_group",
-          "azurerm_iothub_device_update_account",
-          "azurerm_iothub_device_update_instance",
-          "azurerm_iothub_dps",
-          "azurerm_iothub_dps_certificate",
-          "azurerm_iothub_dps_shared_access_policy",
-          "azurerm_iothub_endpoint_cosmosdb_account",
-          "azurerm_iothub_endpoint_eventhub",
-          "azurerm_iothub_endpoint_servicebus_queue",
-          "azurerm_iothub_endpoint_servicebus_topic",
-          "azurerm_iothub_endpoint_storage_container",
-          "azurerm_iothub_enrichment",
-          "azurerm_iothub_fallback_route",
-          "azurerm_iothub_file_upload",
-          "azurerm_iothub_route",
-          "azurerm_iothub_shared_access_policy"
+          "azurerm_arc_machine_automanage_configuration_assignment",
+          "azurerm_automanage_configuration",
+          "azurerm_virtual_machine_automanage_configuration_assignment"
         ],
         "list_resources": []
       },
-      "datafactory": {
+      "managedredis": {
         "all_resources": [
-          "azurerm_data_factory",
-          "azurerm_data_factory_credential_service_principal",
-          "azurerm_data_factory_credential_user_managed_identity",
-          "azurerm_data_factory_custom_dataset",
-          "azurerm_data_factory_customer_managed_key",
-          "azurerm_data_factory_data_flow",
-          "azurerm_data_factory_dataset_azure_sql_table",
-          "azurerm_data_factory_dataset_binary",
-          "azurerm_data_factory_dataset_cosmosdb_sqlapi",
-          "azurerm_data_factory_dataset_delimited_text",
-          "azurerm_data_factory_dataset_http",
-          "azurerm_data_factory_dataset_mysql",
-          "azurerm_data_factory_dataset_parquet",
-          "azurerm_data_factory_dataset_postgresql",
-          "azurerm_data_factory_dataset_snowflake",
-          "azurerm_data_factory_dataset_sql_server",
-          "azurerm_data_factory_flowlet_data_flow",
-          "azurerm_data_factory_integration_runtime_azure",
-          "azurerm_data_factory_integration_runtime_azure_ssis",
-          "azurerm_data_factory_integration_runtime_self_hosted",
-          "azurerm_data_factory_linked_custom_service",
-          "azurerm_data_factory_linked_service_azure_blob_storage",
-          "azurerm_data_factory_linked_service_azure_databricks",
-          "azurerm_data_factory_linked_service_azure_file_storage",
-          "azurerm_data_factory_linked_service_azure_function",
-          "azurerm_data_factory_linked_service_azure_search",
-          "azurerm_data_factory_linked_service_azure_sql_database",
-          "azurerm_data_factory_linked_service_azure_table_storage",
-          "azurerm_data_factory_linked_service_cosmosdb",
-          "azurerm_data_factory_linked_service_data_lake_storage_gen2",
-          "azurerm_data_factory_linked_service_key_vault",
-          "azurerm_data_factory_linked_service_kusto",
-          "azurerm_data_factory_linked_service_mysql",
-          "azurerm_data_factory_linked_service_odata",
-          "azurerm_data_factory_linked_service_odbc",
-          "azurerm_data_factory_linked_service_postgresql",
-          "azurerm_data_factory_linked_service_sftp",
-          "azurerm_data_factory_linked_service_snowflake",
-          "azurerm_data_factory_linked_service_sql_managed_instance",
-          "azurerm_data_factory_linked_service_sql_server",
-          "azurerm_data_factory_linked_service_synapse",
-          "azurerm_data_factory_linked_service_web",
-          "azurerm_data_factory_managed_private_endpoint",
-          "azurerm_data_factory_pipeline",
-          "azurerm_data_factory_trigger_blob_event",
-          "azurerm_data_factory_trigger_custom_event",
-          "azurerm_data_factory_trigger_schedule",
-          "azurerm_data_factory_trigger_tumbling_window"
+          "azurerm_managed_redis",
+          "azurerm_managed_redis_access_policy_assignment",
+          "azurerm_managed_redis_geo_replication"
         ],
         "list_resources": []
       },
-      "voiceservices": {
+      "resource": {
         "all_resources": [
-          "azurerm_voice_services_communications_gateway",
-          "azurerm_voice_services_communications_gateway_test_line"
+          "azurerm_management_group_template_deployment",
+          "azurerm_management_lock",
+          "azurerm_resource_deployment_script_azure_cli",
+          "azurerm_resource_deployment_script_azure_power_shell",
+          "azurerm_resource_group",
+          "azurerm_resource_group_template_deployment",
+          "azurerm_resource_management_private_link",
+          "azurerm_resource_management_private_link_association",
+          "azurerm_resource_provider_feature_registration",
+          "azurerm_resource_provider_registration",
+          "azurerm_subscription_template_deployment",
+          "azurerm_tenant_template_deployment"
         ],
         "list_resources": [
-          "azurerm_voice_services_communications_gateway",
-          "azurerm_voice_services_communications_gateway_test_line"
+          "azurerm_resource_group"
+        ]
+      },
+      "serviceconnector": {
+        "all_resources": [
+          "azurerm_app_service_connection",
+          "azurerm_function_app_connection",
+          "azurerm_spring_cloud_connection"
+        ],
+        "list_resources": []
+      },
+      "vmware": {
+        "all_resources": [
+          "azurerm_vmware_cluster",
+          "azurerm_vmware_express_route_authorization",
+          "azurerm_vmware_netapp_volume_attachment",
+          "azurerm_vmware_private_cloud"
+        ],
+        "list_resources": []
+      },
+      "datadog": {
+        "all_resources": [
+          "azurerm_datadog_monitor",
+          "azurerm_datadog_monitor_sso_configuration",
+          "azurerm_datadog_monitor_tag_rule"
+        ],
+        "list_resources": []
+      },
+      "videoindexer": {
+        "all_resources": [
+          "azurerm_video_indexer_account"
+        ],
+        "list_resources": [
+          "azurerm_video_indexer_account"
         ]
       },
       "signalr": {
@@ -1377,61 +1178,291 @@
         ],
         "list_resources": []
       },
-      "codesigning": {
+      "storagecache": {
         "all_resources": [
-          "azurerm_trusted_signing_account"
+          "azurerm_hpc_cache",
+          "azurerm_hpc_cache_access_policy",
+          "azurerm_hpc_cache_blob_nfs_target",
+          "azurerm_hpc_cache_blob_target",
+          "azurerm_hpc_cache_nfs_target",
+          "azurerm_managed_lustre_file_system"
         ],
         "list_resources": []
       },
-      "customproviders": {
+      "aadb2c": {
         "all_resources": [
-          "azurerm_custom_resource_provider"
+          "azurerm_aadb2c_directory"
         ],
         "list_resources": []
       },
-      "attestation": {
+      "eventgrid": {
         "all_resources": [
-          "azurerm_attestation_provider"
+          "azurerm_eventgrid_domain",
+          "azurerm_eventgrid_domain_topic",
+          "azurerm_eventgrid_event_subscription",
+          "azurerm_eventgrid_namespace",
+          "azurerm_eventgrid_namespace_topic",
+          "azurerm_eventgrid_partner_configuration",
+          "azurerm_eventgrid_partner_namespace",
+          "azurerm_eventgrid_partner_registration",
+          "azurerm_eventgrid_system_topic",
+          "azurerm_eventgrid_system_topic_event_subscription",
+          "azurerm_eventgrid_topic"
         ],
         "list_resources": []
       },
-      "servicenetworking": {
+      "servicefabricmanaged": {
         "all_resources": [
-          "azurerm_application_load_balancer",
-          "azurerm_application_load_balancer_frontend",
-          "azurerm_application_load_balancer_security_policy",
-          "azurerm_application_load_balancer_subnet_association"
+          "azurerm_service_fabric_managed_cluster"
         ],
         "list_resources": []
       },
-      "videoindexer": {
+      "loadtestservice": {
         "all_resources": [
-          "azurerm_video_indexer_account"
+          "azurerm_load_test"
         ],
-        "list_resources": [
-          "azurerm_video_indexer_account"
-        ]
+        "list_resources": []
       },
-      "trafficmanager": {
+      "springcloud": {
         "all_resources": [
-          "azurerm_traffic_manager_azure_endpoint",
-          "azurerm_traffic_manager_external_endpoint",
-          "azurerm_traffic_manager_nested_endpoint",
-          "azurerm_traffic_manager_profile"
+          "azurerm_spring_cloud_accelerator",
+          "azurerm_spring_cloud_active_deployment",
+          "azurerm_spring_cloud_api_portal",
+          "azurerm_spring_cloud_api_portal_custom_domain",
+          "azurerm_spring_cloud_app",
+          "azurerm_spring_cloud_app_cosmosdb_association",
+          "azurerm_spring_cloud_app_dynamics_application_performance_monitoring",
+          "azurerm_spring_cloud_app_mysql_association",
+          "azurerm_spring_cloud_app_redis_association",
+          "azurerm_spring_cloud_application_insights_application_performance_monitoring",
+          "azurerm_spring_cloud_application_live_view",
+          "azurerm_spring_cloud_build_deployment",
+          "azurerm_spring_cloud_build_pack_binding",
+          "azurerm_spring_cloud_builder",
+          "azurerm_spring_cloud_certificate",
+          "azurerm_spring_cloud_configuration_service",
+          "azurerm_spring_cloud_container_deployment",
+          "azurerm_spring_cloud_custom_domain",
+          "azurerm_spring_cloud_customized_accelerator",
+          "azurerm_spring_cloud_dev_tool_portal",
+          "azurerm_spring_cloud_dynatrace_application_performance_monitoring",
+          "azurerm_spring_cloud_elastic_application_performance_monitoring",
+          "azurerm_spring_cloud_gateway",
+          "azurerm_spring_cloud_gateway_custom_domain",
+          "azurerm_spring_cloud_gateway_route_config",
+          "azurerm_spring_cloud_java_deployment",
+          "azurerm_spring_cloud_new_relic_application_performance_monitoring",
+          "azurerm_spring_cloud_service",
+          "azurerm_spring_cloud_storage"
         ],
-        "list_resources": [
-          "azurerm_traffic_manager_profile"
-        ]
+        "list_resources": []
       },
-      "purview": {
+      "consumption": {
         "all_resources": [
-          "azurerm_purview_account"
+          "azurerm_consumption_budget_management_group",
+          "azurerm_consumption_budget_resource_group",
+          "azurerm_consumption_budget_subscription"
+        ],
+        "list_resources": []
+      },
+      "cdn": {
+        "all_resources": [
+          "azurerm_cdn_endpoint",
+          "azurerm_cdn_endpoint_custom_domain",
+          "azurerm_cdn_frontdoor_custom_domain",
+          "azurerm_cdn_frontdoor_endpoint",
+          "azurerm_cdn_frontdoor_firewall_policy",
+          "azurerm_cdn_frontdoor_origin",
+          "azurerm_cdn_frontdoor_origin_group",
+          "azurerm_cdn_frontdoor_profile",
+          "azurerm_cdn_frontdoor_route",
+          "azurerm_cdn_frontdoor_rule",
+          "azurerm_cdn_frontdoor_rule_set",
+          "azurerm_cdn_frontdoor_secret",
+          "azurerm_cdn_frontdoor_security_policy",
+          "azurerm_cdn_profile"
+        ],
+        "list_resources": []
+      },
+      "notificationhub": {
+        "all_resources": [
+          "azurerm_notification_hub",
+          "azurerm_notification_hub_authorization_rule",
+          "azurerm_notification_hub_namespace"
+        ],
+        "list_resources": []
+      },
+      "fluidrelay": {
+        "all_resources": [
+          "azurerm_fluid_relay_server"
+        ],
+        "list_resources": []
+      },
+      "postgres": {
+        "all_resources": [
+          "azurerm_postgresql_active_directory_administrator",
+          "azurerm_postgresql_configuration",
+          "azurerm_postgresql_database",
+          "azurerm_postgresql_firewall_rule",
+          "azurerm_postgresql_flexible_server",
+          "azurerm_postgresql_flexible_server_active_directory_administrator",
+          "azurerm_postgresql_flexible_server_backup",
+          "azurerm_postgresql_flexible_server_configuration",
+          "azurerm_postgresql_flexible_server_database",
+          "azurerm_postgresql_flexible_server_firewall_rule",
+          "azurerm_postgresql_flexible_server_virtual_endpoint",
+          "azurerm_postgresql_server",
+          "azurerm_postgresql_server_key",
+          "azurerm_postgresql_virtual_network_rule"
+        ],
+        "list_resources": []
+      },
+      "storagemover": {
+        "all_resources": [
+          "azurerm_storage_mover",
+          "azurerm_storage_mover_agent",
+          "azurerm_storage_mover_job_definition",
+          "azurerm_storage_mover_project",
+          "azurerm_storage_mover_source_endpoint",
+          "azurerm_storage_mover_target_endpoint"
+        ],
+        "list_resources": []
+      },
+      "recoveryservices": {
+        "all_resources": [
+          "azurerm_backup_policy_file_share",
+          "azurerm_backup_policy_vm",
+          "azurerm_backup_policy_vm_workload",
+          "azurerm_backup_protected_file_share",
+          "azurerm_backup_protected_vm",
+          "azurerm_backup_protection_container_storage",
+          "azurerm_recovery_services_vault",
+          "azurerm_recovery_services_vault_resource_guard_association",
+          "azurerm_site_recovery_fabric",
+          "azurerm_site_recovery_hyperv_network_mapping",
+          "azurerm_site_recovery_hyperv_replication_policy",
+          "azurerm_site_recovery_hyperv_replication_policy_association",
+          "azurerm_site_recovery_network_mapping",
+          "azurerm_site_recovery_protection_container",
+          "azurerm_site_recovery_protection_container_mapping",
+          "azurerm_site_recovery_replicated_vm",
+          "azurerm_site_recovery_replication_policy",
+          "azurerm_site_recovery_replication_recovery_plan",
+          "azurerm_site_recovery_services_vault_hyperv_site",
+          "azurerm_site_recovery_vmware_replicated_vm",
+          "azurerm_site_recovery_vmware_replication_policy",
+          "azurerm_site_recovery_vmware_replication_policy_association"
+        ],
+        "list_resources": []
+      },
+      "networkfunction": {
+        "all_resources": [
+          "azurerm_network_function_azure_traffic_collector",
+          "azurerm_network_function_collector_policy"
+        ],
+        "list_resources": []
+      },
+      "powerbi": {
+        "all_resources": [
+          "azurerm_powerbi_embedded"
+        ],
+        "list_resources": []
+      },
+      "confidentialledger": {
+        "all_resources": [
+          "azurerm_confidential_ledger"
         ],
         "list_resources": []
       },
       "hsm": {
         "all_resources": [
           "azurerm_dedicated_hardware_security_module"
+        ],
+        "list_resources": []
+      },
+      "dataprotection": {
+        "all_resources": [
+          "azurerm_data_protection_backup_instance_blob_storage",
+          "azurerm_data_protection_backup_instance_data_lake_storage",
+          "azurerm_data_protection_backup_instance_disk",
+          "azurerm_data_protection_backup_instance_kubernetes_cluster",
+          "azurerm_data_protection_backup_instance_mysql_flexible_server",
+          "azurerm_data_protection_backup_instance_postgresql",
+          "azurerm_data_protection_backup_instance_postgresql_flexible_server",
+          "azurerm_data_protection_backup_policy_blob_storage",
+          "azurerm_data_protection_backup_policy_data_lake_storage",
+          "azurerm_data_protection_backup_policy_disk",
+          "azurerm_data_protection_backup_policy_kubernetes_cluster",
+          "azurerm_data_protection_backup_policy_mysql_flexible_server",
+          "azurerm_data_protection_backup_policy_postgresql",
+          "azurerm_data_protection_backup_policy_postgresql_flexible_server",
+          "azurerm_data_protection_backup_vault",
+          "azurerm_data_protection_backup_vault_customer_managed_key",
+          "azurerm_data_protection_resource_guard"
+        ],
+        "list_resources": []
+      },
+      "privatednsresolver": {
+        "all_resources": [
+          "azurerm_private_dns_resolver",
+          "azurerm_private_dns_resolver_dns_forwarding_ruleset",
+          "azurerm_private_dns_resolver_forwarding_rule",
+          "azurerm_private_dns_resolver_inbound_endpoint",
+          "azurerm_private_dns_resolver_outbound_endpoint",
+          "azurerm_private_dns_resolver_virtual_network_link"
+        ],
+        "list_resources": []
+      },
+      "newrelic": {
+        "all_resources": [
+          "azurerm_new_relic_monitor",
+          "azurerm_new_relic_tag_rule"
+        ],
+        "list_resources": []
+      },
+      "securitycenter": {
+        "all_resources": [
+          "azurerm_advanced_threat_protection",
+          "azurerm_iot_security_device_group",
+          "azurerm_iot_security_solution",
+          "azurerm_security_center_assessment",
+          "azurerm_security_center_assessment_policy",
+          "azurerm_security_center_auto_provisioning",
+          "azurerm_security_center_automation",
+          "azurerm_security_center_contact",
+          "azurerm_security_center_server_vulnerability_assessment_virtual_machine",
+          "azurerm_security_center_server_vulnerability_assessments_setting",
+          "azurerm_security_center_setting",
+          "azurerm_security_center_storage_defender",
+          "azurerm_security_center_subscription_pricing",
+          "azurerm_security_center_workspace"
+        ],
+        "list_resources": []
+      },
+      "loadbalancer": {
+        "all_resources": [
+          "azurerm_lb",
+          "azurerm_lb_backend_address_pool",
+          "azurerm_lb_backend_address_pool_address",
+          "azurerm_lb_nat_pool",
+          "azurerm_lb_nat_rule",
+          "azurerm_lb_outbound_rule",
+          "azurerm_lb_probe",
+          "azurerm_lb_rule"
+        ],
+        "list_resources": []
+      },
+      "chaosstudio": {
+        "all_resources": [
+          "azurerm_chaos_studio_capability",
+          "azurerm_chaos_studio_experiment"
+        ],
+        "list_resources": []
+      },
+      "managedapplications": {
+        "all_resources": [
+          "azurerm_managed_application",
+          "azurerm_managed_application_definition"
         ],
         "list_resources": []
       },
@@ -1443,113 +1474,147 @@
         ],
         "list_resources": []
       },
-      "dashboard": {
+      "hdinsight": {
         "all_resources": [
-          "azurerm_dashboard_grafana",
-          "azurerm_dashboard_grafana_managed_private_endpoint"
+          "azurerm_hdinsight_hadoop_cluster",
+          "azurerm_hdinsight_hbase_cluster",
+          "azurerm_hdinsight_interactive_query_cluster",
+          "azurerm_hdinsight_kafka_cluster",
+          "azurerm_hdinsight_spark_cluster"
         ],
         "list_resources": []
       },
-      "newrelic": {
+      "attestation": {
         "all_resources": [
-          "azurerm_new_relic_monitor",
-          "azurerm_new_relic_tag_rule"
+          "azurerm_attestation_provider"
         ],
         "list_resources": []
       },
-      "subscription": {
+      "advisor": {
         "all_resources": [
-          "azurerm_subscription"
+          "azurerm_advisor_suppression"
         ],
         "list_resources": []
       },
-      "arcresourcebridge": {
+      "workloads": {
         "all_resources": [
-          "azurerm_arc_resource_bridge_appliance"
-        ],
-        "list_resources": []
-      },
-      "machinelearning": {
-        "all_resources": [
-          "azurerm_ai_foundry",
-          "azurerm_ai_foundry_project",
-          "azurerm_machine_learning_compute_cluster",
-          "azurerm_machine_learning_compute_instance",
-          "azurerm_machine_learning_datastore_blobstorage",
-          "azurerm_machine_learning_datastore_datalake_gen2",
-          "azurerm_machine_learning_datastore_fileshare",
-          "azurerm_machine_learning_inference_cluster",
-          "azurerm_machine_learning_synapse_spark",
-          "azurerm_machine_learning_workspace",
-          "azurerm_machine_learning_workspace_network_outbound_rule_fqdn",
-          "azurerm_machine_learning_workspace_network_outbound_rule_private_endpoint",
-          "azurerm_machine_learning_workspace_network_outbound_rule_service_tag"
-        ],
-        "list_resources": []
-      },
-      "mssql": {
-        "all_resources": [
-          "azurerm_mssql_database",
-          "azurerm_mssql_database_extended_auditing_policy",
-          "azurerm_mssql_database_vulnerability_assessment_rule_baseline",
-          "azurerm_mssql_elasticpool",
-          "azurerm_mssql_failover_group",
-          "azurerm_mssql_firewall_rule",
-          "azurerm_mssql_job",
-          "azurerm_mssql_job_agent",
-          "azurerm_mssql_job_credential",
-          "azurerm_mssql_job_schedule",
-          "azurerm_mssql_job_step",
-          "azurerm_mssql_job_target_group",
-          "azurerm_mssql_outbound_firewall_rule",
-          "azurerm_mssql_server",
-          "azurerm_mssql_server_dns_alias",
-          "azurerm_mssql_server_extended_auditing_policy",
-          "azurerm_mssql_server_microsoft_support_auditing_policy",
-          "azurerm_mssql_server_security_alert_policy",
-          "azurerm_mssql_server_transparent_data_encryption",
-          "azurerm_mssql_server_vulnerability_assessment",
-          "azurerm_mssql_virtual_machine",
-          "azurerm_mssql_virtual_machine_availability_group_listener",
-          "azurerm_mssql_virtual_machine_group",
-          "azurerm_mssql_virtual_network_rule"
+          "azurerm_workloads_sap_discovery_virtual_instance",
+          "azurerm_workloads_sap_single_node_virtual_instance",
+          "azurerm_workloads_sap_three_tier_virtual_instance"
         ],
         "list_resources": [
-          "azurerm_mssql_database",
-          "azurerm_mssql_elasticpool",
-          "azurerm_mssql_job_agent",
-          "azurerm_mssql_server",
-          "azurerm_mssql_virtual_machine"
+          "azurerm_workloads_sap_discovery_virtual_instance",
+          "azurerm_workloads_sap_single_node_virtual_instance",
+          "azurerm_workloads_sap_three_tier_virtual_instance"
         ]
       },
-      "elastic": {
+      "portal": {
         "all_resources": [
-          "azurerm_elastic_cloud_elasticsearch"
+          "azurerm_portal_dashboard",
+          "azurerm_portal_tenant_configuration"
         ],
         "list_resources": []
       },
-      "eventhub": {
+      "servicebus": {
         "all_resources": [
-          "azurerm_eventhub",
-          "azurerm_eventhub_authorization_rule",
-          "azurerm_eventhub_cluster",
-          "azurerm_eventhub_consumer_group",
-          "azurerm_eventhub_namespace",
-          "azurerm_eventhub_namespace_authorization_rule",
-          "azurerm_eventhub_namespace_disaster_recovery_config",
-          "azurerm_eventhub_namespace_schema_group"
+          "azurerm_servicebus_namespace",
+          "azurerm_servicebus_namespace_authorization_rule",
+          "azurerm_servicebus_namespace_customer_managed_key",
+          "azurerm_servicebus_namespace_disaster_recovery_config",
+          "azurerm_servicebus_queue",
+          "azurerm_servicebus_queue_authorization_rule",
+          "azurerm_servicebus_subscription",
+          "azurerm_servicebus_subscription_rule",
+          "azurerm_servicebus_topic",
+          "azurerm_servicebus_topic_authorization_rule"
         ],
         "list_resources": []
       },
-      "powerbi": {
+      "desktopvirtualization": {
         "all_resources": [
-          "azurerm_powerbi_embedded"
+          "azurerm_virtual_desktop_application",
+          "azurerm_virtual_desktop_application_group",
+          "azurerm_virtual_desktop_host_pool",
+          "azurerm_virtual_desktop_host_pool_registration_info",
+          "azurerm_virtual_desktop_scaling_plan",
+          "azurerm_virtual_desktop_scaling_plan_host_pool_association",
+          "azurerm_virtual_desktop_workspace",
+          "azurerm_virtual_desktop_workspace_application_group_association"
         ],
         "list_resources": []
       },
-      "blueprints": {
+      "servicefabric": {
         "all_resources": [
-          "azurerm_blueprint_assignment"
+          "azurerm_service_fabric_cluster"
+        ],
+        "list_resources": []
+      },
+      "streamanalytics": {
+        "all_resources": [
+          "azurerm_stream_analytics_cluster",
+          "azurerm_stream_analytics_function_javascript_uda",
+          "azurerm_stream_analytics_function_javascript_udf",
+          "azurerm_stream_analytics_job",
+          "azurerm_stream_analytics_job_schedule",
+          "azurerm_stream_analytics_job_storage_account",
+          "azurerm_stream_analytics_managed_private_endpoint",
+          "azurerm_stream_analytics_output_blob",
+          "azurerm_stream_analytics_output_cosmosdb",
+          "azurerm_stream_analytics_output_eventhub",
+          "azurerm_stream_analytics_output_function",
+          "azurerm_stream_analytics_output_mssql",
+          "azurerm_stream_analytics_output_powerbi",
+          "azurerm_stream_analytics_output_servicebus_queue",
+          "azurerm_stream_analytics_output_servicebus_topic",
+          "azurerm_stream_analytics_output_synapse",
+          "azurerm_stream_analytics_output_table",
+          "azurerm_stream_analytics_reference_input_blob",
+          "azurerm_stream_analytics_reference_input_mssql",
+          "azurerm_stream_analytics_stream_input_blob",
+          "azurerm_stream_analytics_stream_input_eventhub",
+          "azurerm_stream_analytics_stream_input_eventhub_v2",
+          "azurerm_stream_analytics_stream_input_iothub"
+        ],
+        "list_resources": []
+      },
+      "extendedlocation": {
+        "all_resources": [
+          "azurerm_extended_custom_location",
+          "azurerm_extended_location_custom_location"
+        ],
+        "list_resources": []
+      },
+      "healthcare": {
+        "all_resources": [
+          "azurerm_healthcare_dicom_service",
+          "azurerm_healthcare_fhir_service",
+          "azurerm_healthcare_medtech_service",
+          "azurerm_healthcare_medtech_service_fhir_destination",
+          "azurerm_healthcare_service",
+          "azurerm_healthcare_workspace"
+        ],
+        "list_resources": []
+      },
+      "iothub": {
+        "all_resources": [
+          "azurerm_iothub",
+          "azurerm_iothub_certificate",
+          "azurerm_iothub_consumer_group",
+          "azurerm_iothub_device_update_account",
+          "azurerm_iothub_device_update_instance",
+          "azurerm_iothub_dps",
+          "azurerm_iothub_dps_certificate",
+          "azurerm_iothub_dps_shared_access_policy",
+          "azurerm_iothub_endpoint_cosmosdb_account",
+          "azurerm_iothub_endpoint_eventhub",
+          "azurerm_iothub_endpoint_servicebus_queue",
+          "azurerm_iothub_endpoint_servicebus_topic",
+          "azurerm_iothub_endpoint_storage_container",
+          "azurerm_iothub_enrichment",
+          "azurerm_iothub_fallback_route",
+          "azurerm_iothub_file_upload",
+          "azurerm_iothub_route",
+          "azurerm_iothub_shared_access_policy"
         ],
         "list_resources": []
       },
@@ -1589,187 +1654,41 @@
           "azurerm_automation_account"
         ]
       },
-      "frontdoor": {
+      "eventhub": {
         "all_resources": [
-          "azurerm_frontdoor",
-          "azurerm_frontdoor_custom_https_configuration",
-          "azurerm_frontdoor_firewall_policy",
-          "azurerm_frontdoor_rules_engine"
+          "azurerm_eventhub",
+          "azurerm_eventhub_authorization_rule",
+          "azurerm_eventhub_cluster",
+          "azurerm_eventhub_consumer_group",
+          "azurerm_eventhub_namespace",
+          "azurerm_eventhub_namespace_authorization_rule",
+          "azurerm_eventhub_namespace_disaster_recovery_config",
+          "azurerm_eventhub_namespace_schema_group"
         ],
         "list_resources": []
       },
-      "redisenterprise": {
+      "databoxedge": {
         "all_resources": [
-          "azurerm_redis_enterprise_cluster",
-          "azurerm_redis_enterprise_database"
+          "azurerm_databox_edge_device"
         ],
         "list_resources": []
       },
-      "datadog": {
+      "managedhsm": {
         "all_resources": [
-          "azurerm_datadog_monitor",
-          "azurerm_datadog_monitor_sso_configuration",
-          "azurerm_datadog_monitor_tag_rule"
+          "azurerm_key_vault_managed_hardware_security_module",
+          "azurerm_key_vault_managed_hardware_security_module_key",
+          "azurerm_key_vault_managed_hardware_security_module_key_rotation_policy",
+          "azurerm_key_vault_managed_hardware_security_module_role_assignment",
+          "azurerm_key_vault_managed_hardware_security_module_role_definition"
         ],
         "list_resources": []
       },
-      "servicefabricmanaged": {
+      "relay": {
         "all_resources": [
-          "azurerm_service_fabric_managed_cluster"
-        ],
-        "list_resources": []
-      },
-      "aadb2c": {
-        "all_resources": [
-          "azurerm_aadb2c_directory"
-        ],
-        "list_resources": []
-      },
-      "cosmos": {
-        "all_resources": [
-          "azurerm_cosmosdb_account",
-          "azurerm_cosmosdb_cassandra_cluster",
-          "azurerm_cosmosdb_cassandra_datacenter",
-          "azurerm_cosmosdb_cassandra_keyspace",
-          "azurerm_cosmosdb_cassandra_table",
-          "azurerm_cosmosdb_gremlin_database",
-          "azurerm_cosmosdb_gremlin_graph",
-          "azurerm_cosmosdb_mongo_collection",
-          "azurerm_cosmosdb_mongo_database",
-          "azurerm_cosmosdb_mongo_role_definition",
-          "azurerm_cosmosdb_mongo_user_definition",
-          "azurerm_cosmosdb_postgresql_cluster",
-          "azurerm_cosmosdb_postgresql_coordinator_configuration",
-          "azurerm_cosmosdb_postgresql_firewall_rule",
-          "azurerm_cosmosdb_postgresql_node_configuration",
-          "azurerm_cosmosdb_postgresql_role",
-          "azurerm_cosmosdb_sql_container",
-          "azurerm_cosmosdb_sql_database",
-          "azurerm_cosmosdb_sql_dedicated_gateway",
-          "azurerm_cosmosdb_sql_function",
-          "azurerm_cosmosdb_sql_role_assignment",
-          "azurerm_cosmosdb_sql_role_definition",
-          "azurerm_cosmosdb_sql_stored_procedure",
-          "azurerm_cosmosdb_sql_trigger"
-        ],
-        "list_resources": []
-      },
-      "healthcare": {
-        "all_resources": [
-          "azurerm_healthcare_dicom_service",
-          "azurerm_healthcare_fhir_service",
-          "azurerm_healthcare_medtech_service",
-          "azurerm_healthcare_medtech_service_fhir_destination",
-          "azurerm_healthcare_service",
-          "azurerm_healthcare_workspace"
-        ],
-        "list_resources": []
-      },
-      "redhatopenshift": {
-        "all_resources": [
-          "azurerm_redhat_openshift_cluster"
-        ],
-        "list_resources": []
-      },
-      "domainservices": {
-        "all_resources": [
-          "azurerm_active_directory_domain_service",
-          "azurerm_active_directory_domain_service_replica_set",
-          "azurerm_active_directory_domain_service_trust"
-        ],
-        "list_resources": []
-      },
-      "legacy": {
-        "all_resources": [
-          "azurerm_virtual_machine",
-          "azurerm_virtual_machine_scale_set"
-        ],
-        "list_resources": []
-      },
-      "workloads": {
-        "all_resources": [
-          "azurerm_workloads_sap_discovery_virtual_instance",
-          "azurerm_workloads_sap_single_node_virtual_instance",
-          "azurerm_workloads_sap_three_tier_virtual_instance"
-        ],
-        "list_resources": [
-          "azurerm_workloads_sap_discovery_virtual_instance",
-          "azurerm_workloads_sap_single_node_virtual_instance",
-          "azurerm_workloads_sap_three_tier_virtual_instance"
-        ]
-      },
-      "qumulo": {
-        "all_resources": [
-          "azurerm_qumulo_file_system"
-        ],
-        "list_resources": []
-      },
-      "storagemover": {
-        "all_resources": [
-          "azurerm_storage_mover",
-          "azurerm_storage_mover_agent",
-          "azurerm_storage_mover_job_definition",
-          "azurerm_storage_mover_project",
-          "azurerm_storage_mover_source_endpoint",
-          "azurerm_storage_mover_target_endpoint"
-        ],
-        "list_resources": []
-      },
-      "systemcentervirtualmachinemanager": {
-        "all_resources": [
-          "azurerm_system_center_virtual_machine_manager_availability_set",
-          "azurerm_system_center_virtual_machine_manager_cloud",
-          "azurerm_system_center_virtual_machine_manager_server",
-          "azurerm_system_center_virtual_machine_manager_virtual_machine_instance",
-          "azurerm_system_center_virtual_machine_manager_virtual_machine_instance_guest_agent",
-          "azurerm_system_center_virtual_machine_manager_virtual_machine_template",
-          "azurerm_system_center_virtual_machine_manager_virtual_network"
-        ],
-        "list_resources": []
-      },
-      "recoveryservices": {
-        "all_resources": [
-          "azurerm_backup_policy_file_share",
-          "azurerm_backup_policy_vm",
-          "azurerm_backup_policy_vm_workload",
-          "azurerm_backup_protected_file_share",
-          "azurerm_backup_protected_vm",
-          "azurerm_backup_protection_container_storage",
-          "azurerm_recovery_services_vault",
-          "azurerm_recovery_services_vault_resource_guard_association",
-          "azurerm_site_recovery_fabric",
-          "azurerm_site_recovery_hyperv_network_mapping",
-          "azurerm_site_recovery_hyperv_replication_policy",
-          "azurerm_site_recovery_hyperv_replication_policy_association",
-          "azurerm_site_recovery_network_mapping",
-          "azurerm_site_recovery_protection_container",
-          "azurerm_site_recovery_protection_container_mapping",
-          "azurerm_site_recovery_replicated_vm",
-          "azurerm_site_recovery_replication_policy",
-          "azurerm_site_recovery_replication_recovery_plan",
-          "azurerm_site_recovery_services_vault_hyperv_site",
-          "azurerm_site_recovery_vmware_replicated_vm",
-          "azurerm_site_recovery_vmware_replication_policy",
-          "azurerm_site_recovery_vmware_replication_policy_association"
-        ],
-        "list_resources": []
-      },
-      "analysisservices": {
-        "all_resources": [
-          "azurerm_analysis_services_server"
-        ],
-        "list_resources": []
-      },
-      "applicationinsights": {
-        "all_resources": [
-          "azurerm_application_insights",
-          "azurerm_application_insights_analytics_item",
-          "azurerm_application_insights_api_key",
-          "azurerm_application_insights_smart_detection_rule",
-          "azurerm_application_insights_standard_web_test",
-          "azurerm_application_insights_web_test",
-          "azurerm_application_insights_workbook",
-          "azurerm_application_insights_workbook_template"
+          "azurerm_relay_hybrid_connection",
+          "azurerm_relay_hybrid_connection_authorization_rule",
+          "azurerm_relay_namespace",
+          "azurerm_relay_namespace_authorization_rule"
         ],
         "list_resources": []
       },
@@ -1783,48 +1702,40 @@
         ],
         "list_resources": []
       },
-      "notificationhub": {
+      "mssqlmanagedinstance": {
         "all_resources": [
-          "azurerm_notification_hub",
-          "azurerm_notification_hub_authorization_rule",
-          "azurerm_notification_hub_namespace"
+          "azurerm_mssql_managed_database",
+          "azurerm_mssql_managed_instance",
+          "azurerm_mssql_managed_instance_active_directory_administrator",
+          "azurerm_mssql_managed_instance_failover_group",
+          "azurerm_mssql_managed_instance_security_alert_policy",
+          "azurerm_mssql_managed_instance_start_stop_schedule",
+          "azurerm_mssql_managed_instance_transparent_data_encryption",
+          "azurerm_mssql_managed_instance_vulnerability_assessment"
         ],
         "list_resources": []
       },
-      "storagecache": {
+      "devtestlabs": {
         "all_resources": [
-          "azurerm_hpc_cache",
-          "azurerm_hpc_cache_access_policy",
-          "azurerm_hpc_cache_blob_nfs_target",
-          "azurerm_hpc_cache_blob_target",
-          "azurerm_hpc_cache_nfs_target",
-          "azurerm_managed_lustre_file_system"
+          "azurerm_dev_test_global_vm_shutdown_schedule",
+          "azurerm_dev_test_lab",
+          "azurerm_dev_test_linux_virtual_machine",
+          "azurerm_dev_test_policy",
+          "azurerm_dev_test_schedule",
+          "azurerm_dev_test_virtual_network",
+          "azurerm_dev_test_windows_virtual_machine"
         ],
         "list_resources": []
       },
-      "postgres": {
+      "costmanagement": {
         "all_resources": [
-          "azurerm_postgresql_active_directory_administrator",
-          "azurerm_postgresql_configuration",
-          "azurerm_postgresql_database",
-          "azurerm_postgresql_firewall_rule",
-          "azurerm_postgresql_flexible_server",
-          "azurerm_postgresql_flexible_server_active_directory_administrator",
-          "azurerm_postgresql_flexible_server_backup",
-          "azurerm_postgresql_flexible_server_configuration",
-          "azurerm_postgresql_flexible_server_database",
-          "azurerm_postgresql_flexible_server_firewall_rule",
-          "azurerm_postgresql_flexible_server_virtual_endpoint",
-          "azurerm_postgresql_server",
-          "azurerm_postgresql_server_key",
-          "azurerm_postgresql_virtual_network_rule"
-        ],
-        "list_resources": []
-      },
-      "managedapplications": {
-        "all_resources": [
-          "azurerm_managed_application",
-          "azurerm_managed_application_definition"
+          "azurerm_billing_account_cost_management_export",
+          "azurerm_cost_anomaly_alert",
+          "azurerm_cost_management_scheduled_action",
+          "azurerm_resource_group_cost_management_export",
+          "azurerm_resource_group_cost_management_view",
+          "azurerm_subscription_cost_management_export",
+          "azurerm_subscription_cost_management_view"
         ],
         "list_resources": []
       },
@@ -1851,133 +1762,222 @@
         ],
         "list_resources": []
       },
-      "nginx": {
+      "cognitive": {
         "all_resources": [
-          "azurerm_nginx_api_key",
-          "azurerm_nginx_certificate",
-          "azurerm_nginx_configuration",
-          "azurerm_nginx_deployment"
+          "azurerm_ai_services",
+          "azurerm_cognitive_account",
+          "azurerm_cognitive_account_project",
+          "azurerm_cognitive_account_rai_blocklist",
+          "azurerm_cognitive_account_rai_policy",
+          "azurerm_cognitive_deployment"
+        ],
+        "list_resources": [
+          "azurerm_cognitive_account"
+        ]
+      },
+      "maintenance": {
+        "all_resources": [
+          "azurerm_maintenance_assignment_dedicated_host",
+          "azurerm_maintenance_assignment_dynamic_scope",
+          "azurerm_maintenance_assignment_virtual_machine",
+          "azurerm_maintenance_assignment_virtual_machine_scale_set",
+          "azurerm_maintenance_configuration"
         ],
         "list_resources": []
       },
-      "dynatrace": {
+      "containers": {
         "all_resources": [
-          "azurerm_dynatrace_monitor",
-          "azurerm_dynatrace_tag_rules"
+          "azurerm_container_connected_registry",
+          "azurerm_container_group",
+          "azurerm_container_registry",
+          "azurerm_container_registry_agent_pool",
+          "azurerm_container_registry_cache_rule",
+          "azurerm_container_registry_credential_set",
+          "azurerm_container_registry_scope_map",
+          "azurerm_container_registry_task",
+          "azurerm_container_registry_task_schedule_run_now",
+          "azurerm_container_registry_token",
+          "azurerm_container_registry_token_password",
+          "azurerm_container_registry_webhook",
+          "azurerm_kubernetes_cluster",
+          "azurerm_kubernetes_cluster_deployment_safeguard",
+          "azurerm_kubernetes_cluster_extension",
+          "azurerm_kubernetes_cluster_node_pool",
+          "azurerm_kubernetes_cluster_trusted_access_role_binding",
+          "azurerm_kubernetes_fleet_manager",
+          "azurerm_kubernetes_fleet_update_run",
+          "azurerm_kubernetes_fleet_update_strategy",
+          "azurerm_kubernetes_flux_configuration"
         ],
         "list_resources": []
       },
-      "desktopvirtualization": {
+      "systemcentervirtualmachinemanager": {
         "all_resources": [
-          "azurerm_virtual_desktop_application",
-          "azurerm_virtual_desktop_application_group",
-          "azurerm_virtual_desktop_host_pool",
-          "azurerm_virtual_desktop_host_pool_registration_info",
-          "azurerm_virtual_desktop_scaling_plan",
-          "azurerm_virtual_desktop_scaling_plan_host_pool_association",
-          "azurerm_virtual_desktop_workspace",
-          "azurerm_virtual_desktop_workspace_application_group_association"
+          "azurerm_system_center_virtual_machine_manager_availability_set",
+          "azurerm_system_center_virtual_machine_manager_cloud",
+          "azurerm_system_center_virtual_machine_manager_server",
+          "azurerm_system_center_virtual_machine_manager_virtual_machine_instance",
+          "azurerm_system_center_virtual_machine_manager_virtual_machine_instance_guest_agent",
+          "azurerm_system_center_virtual_machine_manager_virtual_machine_template",
+          "azurerm_system_center_virtual_machine_manager_virtual_network"
         ],
         "list_resources": []
       },
-      "streamanalytics": {
+      "mssql": {
         "all_resources": [
-          "azurerm_stream_analytics_cluster",
-          "azurerm_stream_analytics_function_javascript_uda",
-          "azurerm_stream_analytics_function_javascript_udf",
-          "azurerm_stream_analytics_job",
-          "azurerm_stream_analytics_job_schedule",
-          "azurerm_stream_analytics_job_storage_account",
-          "azurerm_stream_analytics_managed_private_endpoint",
-          "azurerm_stream_analytics_output_blob",
-          "azurerm_stream_analytics_output_cosmosdb",
-          "azurerm_stream_analytics_output_eventhub",
-          "azurerm_stream_analytics_output_function",
-          "azurerm_stream_analytics_output_mssql",
-          "azurerm_stream_analytics_output_powerbi",
-          "azurerm_stream_analytics_output_servicebus_queue",
-          "azurerm_stream_analytics_output_servicebus_topic",
-          "azurerm_stream_analytics_output_synapse",
-          "azurerm_stream_analytics_output_table",
-          "azurerm_stream_analytics_reference_input_blob",
-          "azurerm_stream_analytics_reference_input_mssql",
-          "azurerm_stream_analytics_stream_input_blob",
-          "azurerm_stream_analytics_stream_input_eventhub",
-          "azurerm_stream_analytics_stream_input_eventhub_v2",
-          "azurerm_stream_analytics_stream_input_iothub"
+          "azurerm_mssql_database",
+          "azurerm_mssql_database_extended_auditing_policy",
+          "azurerm_mssql_database_vulnerability_assessment_rule_baseline",
+          "azurerm_mssql_elasticpool",
+          "azurerm_mssql_failover_group",
+          "azurerm_mssql_firewall_rule",
+          "azurerm_mssql_job",
+          "azurerm_mssql_job_agent",
+          "azurerm_mssql_job_credential",
+          "azurerm_mssql_job_schedule",
+          "azurerm_mssql_job_step",
+          "azurerm_mssql_job_target_group",
+          "azurerm_mssql_outbound_firewall_rule",
+          "azurerm_mssql_server",
+          "azurerm_mssql_server_dns_alias",
+          "azurerm_mssql_server_extended_auditing_policy",
+          "azurerm_mssql_server_microsoft_support_auditing_policy",
+          "azurerm_mssql_server_security_alert_policy",
+          "azurerm_mssql_server_transparent_data_encryption",
+          "azurerm_mssql_server_vulnerability_assessment",
+          "azurerm_mssql_virtual_machine",
+          "azurerm_mssql_virtual_machine_availability_group_listener",
+          "azurerm_mssql_virtual_machine_group",
+          "azurerm_mssql_virtual_network_rule"
+        ],
+        "list_resources": [
+          "azurerm_mssql_database",
+          "azurerm_mssql_elasticpool",
+          "azurerm_mssql_job_agent",
+          "azurerm_mssql_server",
+          "azurerm_mssql_virtual_machine"
+        ]
+      },
+      "databricks": {
+        "all_resources": [
+          "azurerm_databricks_access_connector",
+          "azurerm_databricks_virtual_network_peering",
+          "azurerm_databricks_workspace"
         ],
         "list_resources": []
       },
-      "synapse": {
+      "fabric": {
         "all_resources": [
-          "azurerm_synapse_firewall_rule",
-          "azurerm_synapse_integration_runtime_azure",
-          "azurerm_synapse_integration_runtime_self_hosted",
-          "azurerm_synapse_linked_service",
-          "azurerm_synapse_managed_private_endpoint",
-          "azurerm_synapse_private_link_hub",
-          "azurerm_synapse_role_assignment",
-          "azurerm_synapse_spark_pool",
-          "azurerm_synapse_sql_pool",
-          "azurerm_synapse_sql_pool_extended_auditing_policy",
-          "azurerm_synapse_sql_pool_security_alert_policy",
-          "azurerm_synapse_sql_pool_vulnerability_assessment",
-          "azurerm_synapse_sql_pool_vulnerability_assessment_baseline",
-          "azurerm_synapse_sql_pool_workload_classifier",
-          "azurerm_synapse_sql_pool_workload_group",
-          "azurerm_synapse_workspace",
-          "azurerm_synapse_workspace_aad_admin",
-          "azurerm_synapse_workspace_extended_auditing_policy",
-          "azurerm_synapse_workspace_security_alert_policy",
-          "azurerm_synapse_workspace_sql_aad_admin",
-          "azurerm_synapse_workspace_vulnerability_assessment"
+          "azurerm_fabric_capacity"
         ],
         "list_resources": []
       },
-      "cdn": {
+      "azurestackhci": {
         "all_resources": [
-          "azurerm_cdn_endpoint",
-          "azurerm_cdn_endpoint_custom_domain",
-          "azurerm_cdn_frontdoor_custom_domain",
-          "azurerm_cdn_frontdoor_endpoint",
-          "azurerm_cdn_frontdoor_firewall_policy",
-          "azurerm_cdn_frontdoor_origin",
-          "azurerm_cdn_frontdoor_origin_group",
-          "azurerm_cdn_frontdoor_profile",
-          "azurerm_cdn_frontdoor_route",
-          "azurerm_cdn_frontdoor_rule",
-          "azurerm_cdn_frontdoor_rule_set",
-          "azurerm_cdn_frontdoor_secret",
-          "azurerm_cdn_frontdoor_security_policy",
-          "azurerm_cdn_profile"
+          "azurerm_stack_hci_cluster",
+          "azurerm_stack_hci_deployment_setting",
+          "azurerm_stack_hci_extension",
+          "azurerm_stack_hci_logical_network",
+          "azurerm_stack_hci_marketplace_gallery_image",
+          "azurerm_stack_hci_network_interface",
+          "azurerm_stack_hci_storage_path",
+          "azurerm_stack_hci_virtual_hard_disk"
         ],
         "list_resources": []
       },
-      "privatednsresolver": {
+      "qumulo": {
         "all_resources": [
-          "azurerm_private_dns_resolver",
-          "azurerm_private_dns_resolver_dns_forwarding_ruleset",
-          "azurerm_private_dns_resolver_forwarding_rule",
-          "azurerm_private_dns_resolver_inbound_endpoint",
-          "azurerm_private_dns_resolver_outbound_endpoint",
-          "azurerm_private_dns_resolver_virtual_network_link"
+          "azurerm_qumulo_file_system"
         ],
         "list_resources": []
       },
-      "chaosstudio": {
+      "appservice": {
         "all_resources": [
-          "azurerm_chaos_studio_capability",
-          "azurerm_chaos_studio_experiment"
+          "azurerm_app_service_environment_v3",
+          "azurerm_app_service_source_control",
+          "azurerm_app_service_source_control_slot",
+          "azurerm_function_app_active_slot",
+          "azurerm_function_app_flex_consumption",
+          "azurerm_function_app_function",
+          "azurerm_function_app_hybrid_connection",
+          "azurerm_linux_function_app",
+          "azurerm_linux_function_app_slot",
+          "azurerm_linux_web_app",
+          "azurerm_linux_web_app_slot",
+          "azurerm_service_plan",
+          "azurerm_source_control_token",
+          "azurerm_static_web_app",
+          "azurerm_static_web_app_custom_domain",
+          "azurerm_static_web_app_function_app_registration",
+          "azurerm_web_app_active_slot",
+          "azurerm_web_app_hybrid_connection",
+          "azurerm_windows_function_app",
+          "azurerm_windows_function_app_slot",
+          "azurerm_windows_web_app",
+          "azurerm_windows_web_app_slot"
+        ],
+        "list_resources": [
+          "azurerm_service_plan"
+        ]
+      },
+      "frontdoor": {
+        "all_resources": [
+          "azurerm_frontdoor",
+          "azurerm_frontdoor_custom_https_configuration",
+          "azurerm_frontdoor_firewall_policy",
+          "azurerm_frontdoor_rules_engine"
+        ],
+        "list_resources": []
+      },
+      "elastic": {
+        "all_resources": [
+          "azurerm_elastic_cloud_elasticsearch"
+        ],
+        "list_resources": []
+      },
+      "managedidentity": {
+        "all_resources": [
+          "azurerm_federated_identity_credential",
+          "azurerm_user_assigned_identity"
+        ],
+        "list_resources": []
+      },
+      "analysisservices": {
+        "all_resources": [
+          "azurerm_analysis_services_server"
+        ],
+        "list_resources": []
+      },
+      "servicenetworking": {
+        "all_resources": [
+          "azurerm_application_load_balancer",
+          "azurerm_application_load_balancer_frontend",
+          "azurerm_application_load_balancer_security_policy",
+          "azurerm_application_load_balancer_subnet_association"
+        ],
+        "list_resources": []
+      },
+      "elasticsan": {
+        "all_resources": [
+          "azurerm_elastic_san",
+          "azurerm_elastic_san_volume",
+          "azurerm_elastic_san_volume_group"
+        ],
+        "list_resources": []
+      },
+      "graphservices": {
+        "all_resources": [
+          "azurerm_graph_services_account"
         ],
         "list_resources": []
       }
     }
   },
   "validation": {
-    "matches": false,
-    "dashboard_list_resources": 47,
+    "matches": true,
+    "dashboard_list_resources": 49,
     "gist_with_list": 49,
     "derived_total_with_list": 52,
-    "total_resources": 2
+    "total_resources": 1
   }
 }
