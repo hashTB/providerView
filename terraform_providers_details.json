@@ -81,7 +81,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:22.130663"
+    "docs_refreshed_at": "2026-04-23T08:57:56.496862"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -60823,7 +60823,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:13.418836"
+    "docs_refreshed_at": "2026-04-23T08:57:48.429768"
   },
   "Azure/azapi": {
     "docs": {
@@ -64429,7 +64429,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:13.865363"
+    "docs_refreshed_at": "2026-04-23T08:57:48.828139"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -64557,6 +64557,11 @@
           "subcategory": "BGP"
         },
         {
+          "title": "bgp_bmp_server",
+          "slug": "bgp_bmp_server",
+          "subcategory": "BGP"
+        },
+        {
           "title": "bgp_ipv4_mvpn_neighbor",
           "slug": "bgp_ipv4_mvpn_neighbor",
           "subcategory": "BGP"
@@ -64679,6 +64684,16 @@
         {
           "title": "device_sensor",
           "slug": "device_sensor",
+          "subcategory": "System"
+        },
+        {
+          "title": "device_tracking",
+          "slug": "device_tracking",
+          "subcategory": "System"
+        },
+        {
+          "title": "device_tracking_policy",
+          "slug": "device_tracking_policy",
           "subcategory": "System"
         },
         {
@@ -65183,6 +65198,11 @@
           "subcategory": "BGP"
         },
         {
+          "title": "bgp_bmp_server",
+          "slug": "bgp_bmp_server",
+          "subcategory": "BGP"
+        },
+        {
           "title": "bgp_ipv4_mvpn_neighbor",
           "slug": "bgp_ipv4_mvpn_neighbor",
           "subcategory": "BGP"
@@ -65315,6 +65335,16 @@
         {
           "title": "device_sensor",
           "slug": "device_sensor",
+          "subcategory": "System"
+        },
+        {
+          "title": "device_tracking",
+          "slug": "device_tracking",
+          "subcategory": "System"
+        },
+        {
+          "title": "device_tracking_policy",
+          "slug": "device_tracking_policy",
           "subcategory": "System"
         },
         {
@@ -65674,7 +65704,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:14.323148"
+    "docs_refreshed_at": "2026-04-23T08:57:49.246055"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -65779,6 +65809,11 @@
         {
           "title": "loopback_interface",
           "slug": "loopback_interface",
+          "subcategory": "Interface"
+        },
+        {
+          "title": "management_interface",
+          "slug": "management_interface",
           "subcategory": "Interface"
         },
         {
@@ -66008,6 +66043,11 @@
           "subcategory": "Interface"
         },
         {
+          "title": "management_interface",
+          "slug": "management_interface",
+          "subcategory": "Interface"
+        },
+        {
           "title": "ntp",
           "slug": "ntp",
           "subcategory": "System"
@@ -66099,7 +66139,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:14.723045"
+    "docs_refreshed_at": "2026-04-23T08:57:49.674483"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66356,13 +66396,18 @@
           "subcategory": ""
         },
         {
+          "title": "static_apache",
+          "slug": "static_apache",
+          "subcategory": ""
+        },
+        {
           "title": "v",
           "slug": "v",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:15.133506"
+    "docs_refreshed_at": "2026-04-23T08:57:50.046942"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66381,7 +66426,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:15.528743"
+    "docs_refreshed_at": "2026-04-23T08:57:50.421125"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66428,7 +66473,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:15.930168"
+    "docs_refreshed_at": "2026-04-23T08:57:50.809827"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66558,7 +66603,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:16.817482"
+    "docs_refreshed_at": "2026-04-23T08:57:51.567038"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67102,7 +67147,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:18.432455"
+    "docs_refreshed_at": "2026-04-23T08:57:53.061712"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70287,7 +70332,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:18.880685"
+    "docs_refreshed_at": "2026-04-23T08:57:53.445199"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71441,7 +71486,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:19.292515"
+    "docs_refreshed_at": "2026-04-23T08:57:53.827922"
   },
   "SAP/btp": {
     "docs": {
@@ -72156,7 +72201,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:19.701387"
+    "docs_refreshed_at": "2026-04-23T08:57:54.204012"
   },
   "SAP/scc": {
     "docs": {
@@ -72361,7 +72406,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:20.098029"
+    "docs_refreshed_at": "2026-04-23T08:57:54.573323"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72408,7 +72453,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:20.502764"
+    "docs_refreshed_at": "2026-04-23T08:57:54.939293"
   },
   "Sokren/aap": {
     "docs": {
@@ -72491,7 +72536,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:20.921629"
+    "docs_refreshed_at": "2026-04-23T08:57:55.308959"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -72541,7 +72586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:21.323009"
+    "docs_refreshed_at": "2026-04-23T08:57:55.679190"
   },
   "adampie/ctf": {
     "docs": {
@@ -72588,7 +72633,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:21.725947"
+    "docs_refreshed_at": "2026-04-23T08:57:56.058908"
   },
   "ansible/ansible": {
     "docs": {
@@ -72636,7 +72681,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:22.529855"
+    "docs_refreshed_at": "2026-04-23T08:57:56.882656"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -72684,7 +72729,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:22.923434"
+    "docs_refreshed_at": "2026-04-23T08:57:57.253129"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -72710,7 +72755,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:23.320468"
+    "docs_refreshed_at": "2026-04-23T08:57:57.628202"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -72767,7 +72812,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:23.734611"
+    "docs_refreshed_at": "2026-04-23T08:57:57.998696"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -72786,7 +72831,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:24.787870"
+    "docs_refreshed_at": "2026-04-23T08:57:58.744924"
   },
   "cysp/braze": {
     "docs": {
@@ -72812,7 +72857,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:25.602426"
+    "docs_refreshed_at": "2026-04-23T08:57:59.508928"
   },
   "cysp/contentful": {
     "docs": {
@@ -72955,7 +73000,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:26.008875"
+    "docs_refreshed_at": "2026-04-23T08:57:59.886414"
   },
   "dbanck/concept": {
     "docs": {
@@ -72991,7 +73036,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:26.401702"
+    "docs_refreshed_at": "2026-04-23T08:58:00.270560"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74340,7 +74385,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:26.870590"
+    "docs_refreshed_at": "2026-04-23T08:58:00.693233"
   },
   "drewmullen/aap": {
     "docs": {
@@ -74448,7 +74493,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:27.265578"
+    "docs_refreshed_at": "2026-04-23T08:58:01.065333"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -74513,7 +74558,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:28.133500"
+    "docs_refreshed_at": "2026-04-23T08:58:01.891237"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -74616,7 +74661,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:28.539634"
+    "docs_refreshed_at": "2026-04-23T08:58:02.270353"
   },
   "hashicorp/local": {
     "docs": {
@@ -74678,7 +74723,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:29.335629"
+    "docs_refreshed_at": "2026-04-23T08:58:03.034412"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82349,7 +82394,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:30.270500"
+    "docs_refreshed_at": "2026-04-23T08:58:03.880534"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83162,7 +83207,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:30.683078"
+    "docs_refreshed_at": "2026-04-23T08:58:04.268681"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83300,7 +83345,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:31.917472"
+    "docs_refreshed_at": "2026-04-23T08:58:05.394625"
   },
   "magodo/restful": {
     "docs": {
@@ -83359,7 +83404,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:32.717608"
+    "docs_refreshed_at": "2026-04-23T08:58:06.516219"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83411,7 +83456,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:33.115988"
+    "docs_refreshed_at": "2026-04-23T08:58:06.894557"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -83553,7 +83598,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:33.914864"
+    "docs_refreshed_at": "2026-04-23T08:58:07.639072"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -83696,7 +83741,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:34.330881"
+    "docs_refreshed_at": "2026-04-23T08:58:08.014995"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -83743,7 +83788,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:34.768812"
+    "docs_refreshed_at": "2026-04-23T08:58:08.382705"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -84161,6 +84206,11 @@
           "subcategory": "Instances"
         },
         {
+          "title": "interlink_link",
+          "slug": "interlink_link",
+          "subcategory": "Interlink"
+        },
+        {
           "title": "interlink_partner",
           "slug": "interlink_partner",
           "subcategory": "Interlink"
@@ -84178,6 +84228,11 @@
         {
           "title": "interlink_pops",
           "slug": "interlink_pops",
+          "subcategory": "Interlink"
+        },
+        {
+          "title": "interlink_routing_policy",
+          "slug": "interlink_routing_policy",
           "subcategory": "Interlink"
         },
         {
@@ -84956,6 +85011,16 @@
           "subcategory": "Instances"
         },
         {
+          "title": "interlink_link",
+          "slug": "interlink_link",
+          "subcategory": "Interlink"
+        },
+        {
+          "title": "interlink_routing_policy",
+          "slug": "interlink_routing_policy",
+          "subcategory": "Interlink"
+        },
+        {
           "title": "iot_device",
           "slug": "iot_device",
           "subcategory": "IoT Hub"
@@ -85327,7 +85392,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:35.590606"
+    "docs_refreshed_at": "2026-04-23T08:58:09.139895"
   },
   "soffensive/soff": {
     "docs": {
@@ -85374,7 +85439,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:36.411608"
+    "docs_refreshed_at": "2026-04-23T08:58:09.877026"
   },
   "thrashr888/registry": {
     "docs": {
@@ -85462,7 +85527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:37.193353"
+    "docs_refreshed_at": "2026-04-23T08:58:10.613079"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -85727,7 +85792,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:37.988518"
+    "docs_refreshed_at": "2026-04-23T08:58:11.419834"
   },
   "waldur/waldur": {
     "docs": {
@@ -86112,7 +86177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:38.789370"
+    "docs_refreshed_at": "2026-04-23T08:58:12.166773"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -86365,7 +86430,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:17.220884"
+    "docs_refreshed_at": "2026-04-23T08:57:51.936470"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -86420,7 +86485,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:28.936124"
+    "docs_refreshed_at": "2026-04-23T08:58:02.653560"
   },
   "timofurrer/desec": {
     "docs": {
@@ -86579,7 +86644,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:37.597611"
+    "docs_refreshed_at": "2026-04-23T08:58:10.990214"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -86662,7 +86727,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:38.385820"
+    "docs_refreshed_at": "2026-04-23T08:58:11.795273"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -89852,7 +89917,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:16.349381"
+    "docs_refreshed_at": "2026-04-23T08:57:51.192821"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90147,7 +90212,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:31.511392"
+    "docs_refreshed_at": "2026-04-23T08:58:05.016649"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90265,7 +90330,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:33.519657"
+    "docs_refreshed_at": "2026-04-23T08:58:07.269488"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -90435,7 +90500,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:17.629566"
+    "docs_refreshed_at": "2026-04-23T08:57:52.309211"
   },
   "branchgrove/debian": {
     "docs": {
@@ -90550,7 +90615,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:24.392283"
+    "docs_refreshed_at": "2026-04-23T08:57:58.376283"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -90990,7 +91055,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:27.728244"
+    "docs_refreshed_at": "2026-04-23T08:58:01.464516"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -91525,7 +91590,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:29.777257"
+    "docs_refreshed_at": "2026-04-23T08:58:03.435750"
   },
   "juju/juju": {
     "docs": {
@@ -91760,7 +91825,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:31.118542"
+    "docs_refreshed_at": "2026-04-23T08:58:04.639798"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -91861,7 +91926,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:18.025051"
+    "docs_refreshed_at": "2026-04-23T08:57:52.685657"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92269,7 +92334,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:25.191048"
+    "docs_refreshed_at": "2026-04-23T08:57:59.124718"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -92392,7 +92457,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:32.324291"
+    "docs_refreshed_at": "2026-04-23T08:58:05.773655"
   },
   "radeksimko/test": {
     "docs": {
@@ -92439,175 +92504,55 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:35.157593"
+    "docs_refreshed_at": "2026-04-23T08:58:08.758421"
   },
   "sebastianfs82/komodo": {
     "docs": {
       "actions": [
         {
-          "title": "deploy_deployment",
-          "slug": "deploy_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "destroy_deployment",
-          "slug": "destroy_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "pause_deployment",
-          "slug": "pause_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "pull_deployment",
-          "slug": "pull_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "repo_build",
-          "slug": "repo_build",
-          "subcategory": "Repos"
-        },
-        {
-          "title": "repo_clone",
-          "slug": "repo_clone",
-          "subcategory": "Repos"
-        },
-        {
-          "title": "repo_pull",
-          "slug": "repo_pull",
-          "subcategory": "Repos"
-        },
-        {
-          "title": "restart_deployment",
-          "slug": "restart_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "run_action",
-          "slug": "run_action",
+          "title": "action",
+          "slug": "action",
           "subcategory": "Actions"
         },
         {
-          "title": "run_build",
-          "slug": "run_build",
-          "subcategory": "Builds"
-        },
-        {
-          "title": "run_procedure",
-          "slug": "run_procedure",
-          "subcategory": "Procedures"
-        },
-        {
-          "title": "run_sync",
-          "slug": "run_sync",
-          "subcategory": "Resource Syncs"
-        },
-        {
-          "title": "server_prune_builders",
-          "slug": "server_prune_builders",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_buildx",
-          "slug": "server_prune_buildx",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_containers",
-          "slug": "server_prune_containers",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_images",
-          "slug": "server_prune_images",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_networks",
-          "slug": "server_prune_networks",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_system",
-          "slug": "server_prune_system",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "server_prune_volumes",
-          "slug": "server_prune_volumes",
-          "subcategory": "Servers"
-        },
-        {
-          "title": "stack_deploy",
-          "slug": "stack_deploy",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_deploy_if_changed",
-          "slug": "stack_deploy_if_changed",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_destroy",
-          "slug": "stack_destroy",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_pause",
-          "slug": "stack_pause",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_pull",
-          "slug": "stack_pull",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_restart",
-          "slug": "stack_restart",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_run_service",
-          "slug": "stack_run_service",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_start",
-          "slug": "stack_start",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_stop",
-          "slug": "stack_stop",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "stack_unpause",
-          "slug": "stack_unpause",
-          "subcategory": "Stacks"
-        },
-        {
-          "title": "start_deployment",
-          "slug": "start_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "stop_deployment",
-          "slug": "stop_deployment",
-          "subcategory": "Deployments"
-        },
-        {
-          "title": "test_alerter",
-          "slug": "test_alerter",
+          "title": "alerter",
+          "slug": "alerter",
           "subcategory": "Alerters"
         },
         {
-          "title": "unpause_deployment",
-          "slug": "unpause_deployment",
+          "title": "build",
+          "slug": "build",
+          "subcategory": "Builds"
+        },
+        {
+          "title": "deployment",
+          "slug": "deployment",
           "subcategory": "Deployments"
+        },
+        {
+          "title": "procedure",
+          "slug": "procedure",
+          "subcategory": "Procedures"
+        },
+        {
+          "title": "repo",
+          "slug": "repo",
+          "subcategory": "Repos"
+        },
+        {
+          "title": "resource_sync",
+          "slug": "resource_sync",
+          "subcategory": "Resource Syncs"
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "stack",
+          "slug": "stack",
+          "subcategory": "Stacks"
         }
       ],
       "data-sources": [
@@ -92952,7 +92897,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:36.004542"
+    "docs_refreshed_at": "2026-04-23T08:58:09.509486"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93172,6 +93117,179 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:54:36.802804"
+    "docs_refreshed_at": "2026-04-23T08:58:10.245345"
+  },
+  "lcp-llp/veeambackup": {
+    "docs": {
+      "actions": [
+        {
+          "title": "vbr_start_backup_job",
+          "slug": "vbr_start_backup_job",
+          "subcategory": "VBR (Backup & Replication)"
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "azure_backup_repositories",
+          "slug": "azure_backup_repositories",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_cosmos_accounts",
+          "slug": "azure_cosmos_accounts",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_file_shares",
+          "slug": "azure_file_shares",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_resource_groups",
+          "slug": "azure_resource_groups",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_service_account",
+          "slug": "azure_service_account",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_service_accounts",
+          "slug": "azure_service_accounts",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_sql_databases",
+          "slug": "azure_sql_databases",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_sql_servers",
+          "slug": "azure_sql_servers",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_storage_accounts",
+          "slug": "azure_storage_accounts",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_subscriptions",
+          "slug": "azure_subscriptions",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_vm_restore_point",
+          "slug": "azure_vm_restore_point",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_vm_restore_points",
+          "slug": "azure_vm_restore_points",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_vms",
+          "slug": "azure_vms",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "vbr_cloud_credential",
+          "slug": "vbr_cloud_credential",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_cloud_credentials",
+          "slug": "vbr_cloud_credentials",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_proxies",
+          "slug": "vbr_proxies",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_repositories",
+          "slug": "vbr_repositories",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_unstructured_data_servers",
+          "slug": "vbr_unstructured_data_servers",
+          "subcategory": "VBR (Backup & Replication)"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "azure_cosmos_db_backup_policy",
+          "slug": "azure_cosmos_db_backup_policy",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_file_shares_backup_policy",
+          "slug": "azure_file_shares_backup_policy",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_repository",
+          "slug": "azure_repository",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_service_account",
+          "slug": "azure_service_account",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_sql_backup_policy",
+          "slug": "azure_sql_backup_policy",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_vm_backup_policy",
+          "slug": "azure_vm_backup_policy",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "vbr_amazon_cloud_credential",
+          "slug": "vbr_amazon_cloud_credential",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_azure_cloud_credential",
+          "slug": "vbr_azure_cloud_credential",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_file_share_backup_job",
+          "slug": "vbr_file_share_backup_job",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_object_storage_backup_job",
+          "slug": "vbr_object_storage_backup_job",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_repository",
+          "slug": "vbr_repository",
+          "subcategory": "VBR (Backup & Replication)"
+        },
+        {
+          "title": "vbr_unstructured_data_server",
+          "slug": "vbr_unstructured_data_server",
+          "subcategory": "VBR (Backup & Replication)"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-04-23T08:58:06.145127"
   }
 }
