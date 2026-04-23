@@ -1227,6 +1227,16 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "ec2_service_link_virtual_interface",
+          "slug": "ec2_service_link_virtual_interface",
+          "subcategory": "Outposts (EC2)"
+        },
+        {
+          "title": "ec2_service_link_virtual_interfaces",
+          "slug": "ec2_service_link_virtual_interfaces",
+          "subcategory": "Outposts (EC2)"
+        },
+        {
           "title": "ec2_spot_price",
           "slug": "ec2_spot_price",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -3705,6 +3715,11 @@
           "subcategory": "API Gateway"
         },
         {
+          "title": "apigatewayv2_api",
+          "slug": "apigatewayv2_api",
+          "subcategory": "API Gateway V2"
+        },
+        {
           "title": "apigatewayv2_route",
           "slug": "apigatewayv2_route",
           "subcategory": "API Gateway V2"
@@ -3770,6 +3785,11 @@
           "subcategory": "CloudWatch Logs"
         },
         {
+          "title": "cloudwatch_log_metric_filter",
+          "slug": "cloudwatch_log_metric_filter",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
           "title": "cloudwatch_log_subscription_filter",
           "slug": "cloudwatch_log_subscription_filter",
           "subcategory": "CloudWatch Logs"
@@ -3788,6 +3808,16 @@
           "title": "config_config_rule",
           "slug": "config_config_rule",
           "subcategory": "Config"
+        },
+        {
+          "title": "config_remediation_configuration",
+          "slug": "config_remediation_configuration",
+          "subcategory": "Config"
+        },
+        {
+          "title": "ec2_ebs_volume",
+          "slug": "ec2_ebs_volume",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
           "title": "ec2_secondary_network",
@@ -3818,6 +3848,11 @@
           "title": "ecs_task_definition",
           "slug": "ecs_task_definition",
           "subcategory": "ECS (Elastic Container)"
+        },
+        {
+          "title": "eip",
+          "slug": "eip",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
           "title": "eks_cluster",
@@ -3860,8 +3895,18 @@
           "subcategory": "IAM (Identity & Access Management)"
         },
         {
+          "title": "iam_user_policy_attachment",
+          "slug": "iam_user_policy_attachment",
+          "subcategory": "IAM (Identity & Access Management)"
+        },
+        {
           "title": "instance",
           "slug": "instance",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "internet_gateway",
+          "slug": "internet_gateway",
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
@@ -3885,9 +3930,19 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambda_layer_version",
+          "slug": "lambda_layer_version",
+          "subcategory": "Lambda"
+        },
+        {
           "title": "lambda_permission",
           "slug": "lambda_permission",
           "subcategory": "Lambda"
+        },
+        {
+          "title": "launch_template",
+          "slug": "launch_template",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
           "title": "lb",
@@ -3963,6 +4018,11 @@
           "title": "route53_resolver_rule_association",
           "slug": "route53_resolver_rule_association",
           "subcategory": "Route 53 Resolver"
+        },
+        {
+          "title": "route53_zone",
+          "slug": "route53_zone",
+          "subcategory": "Route 53"
         },
         {
           "title": "route_table",
@@ -4055,6 +4115,11 @@
           "subcategory": "SageMaker AI"
         },
         {
+          "title": "sagemaker_hyper_parameter_tuning_job",
+          "slug": "sagemaker_hyper_parameter_tuning_job",
+          "subcategory": "SageMaker AI"
+        },
+        {
           "title": "sagemaker_training_job",
           "slug": "sagemaker_training_job",
           "subcategory": "SageMaker AI"
@@ -4095,6 +4160,11 @@
           "subcategory": "SQS (Simple Queue)"
         },
         {
+          "title": "sqs_queue_policy",
+          "slug": "sqs_queue_policy",
+          "subcategory": "SQS (Simple Queue)"
+        },
+        {
           "title": "ssm_association",
           "slug": "ssm_association",
           "subcategory": "SSM (Systems Manager)"
@@ -4123,6 +4193,11 @@
           "title": "subnet",
           "slug": "subnet",
           "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
+          "title": "volume_attachment",
+          "slug": "volume_attachment",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
           "title": "vpc",
@@ -5584,6 +5659,11 @@
           "subcategory": "CloudWatch"
         },
         {
+          "title": "cloudwatch_otel_enrichment",
+          "slug": "cloudwatch_otel_enrichment",
+          "subcategory": "CloudWatch"
+        },
+        {
           "title": "cloudwatch_query_definition",
           "slug": "cloudwatch_query_definition",
           "subcategory": "CloudWatch Logs"
@@ -6691,6 +6771,11 @@
         {
           "title": "ebs_volume",
           "slug": "ebs_volume",
+          "subcategory": "EBS (EC2)"
+        },
+        {
+          "title": "ebs_volume_copy",
+          "slug": "ebs_volume_copy",
           "subcategory": "EBS (EC2)"
         },
         {
@@ -10609,6 +10694,11 @@
           "subcategory": "SageMaker AI"
         },
         {
+          "title": "sagemaker_hyper_parameter_tuning_job",
+          "slug": "sagemaker_hyper_parameter_tuning_job",
+          "subcategory": "SageMaker AI"
+        },
+        {
           "title": "sagemaker_image",
           "slug": "sagemaker_image",
           "subcategory": "SageMaker AI"
@@ -12345,7 +12435,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:10.098204"
+    "docs_refreshed_at": "2026-04-23T08:55:39.941353"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -36086,7 +36176,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:10.588157"
+    "docs_refreshed_at": "2026-04-23T08:55:40.456058"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36520,7 +36610,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:10.966216"
+    "docs_refreshed_at": "2026-04-23T08:55:40.824847"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -38817,6 +38907,11 @@
           "subcategory": "Storage"
         },
         {
+          "title": "traffic_manager_profile",
+          "slug": "traffic_manager_profile",
+          "subcategory": "Network"
+        },
+        {
           "title": "video_indexer_account",
           "slug": "video_indexer_account",
           "subcategory": "Video Indexer"
@@ -38845,6 +38940,11 @@
           "title": "web_application_firewall_policy",
           "slug": "web_application_firewall_policy",
           "subcategory": "Network"
+        },
+        {
+          "title": "web_pubsub",
+          "slug": "web_pubsub",
+          "subcategory": "Messaging"
         },
         {
           "title": "workloads_sap_discovery_virtual_instance",
@@ -39521,6 +39621,11 @@
           "subcategory": "Automation"
         },
         {
+          "title": "automation_runtime_environment_package",
+          "slug": "automation_runtime_environment_package",
+          "subcategory": "Automation"
+        },
+        {
           "title": "automation_schedule",
           "slug": "automation_schedule",
           "subcategory": "Automation"
@@ -39903,6 +40008,11 @@
         {
           "title": "container_app_environment_dapr_component",
           "slug": "container_app_environment_dapr_component",
+          "subcategory": "Container Apps"
+        },
+        {
+          "title": "container_app_environment_managed_certificate",
+          "slug": "container_app_environment_managed_certificate",
           "subcategory": "Container Apps"
         },
         {
@@ -44502,7 +44612,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:11.454390"
+    "docs_refreshed_at": "2026-04-23T08:55:41.256616"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -44851,7 +44961,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:11.831423"
+    "docs_refreshed_at": "2026-04-23T08:55:41.635363"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46264,6 +46374,11 @@
           "subcategory": "Filestore"
         },
         {
+          "title": "firebase_admin_sdk_config",
+          "slug": "firebase_admin_sdk_config",
+          "subcategory": "Firebase"
+        },
+        {
           "title": "firebase_android_app",
           "slug": "firebase_android_app",
           "subcategory": "Firebase"
@@ -47505,6 +47620,11 @@
           "subcategory": ""
         },
         {
+          "title": "Use list resources with terraform query (Google Cloud provider)",
+          "slug": "using_list_resources_with_terraform_query",
+          "subcategory": ""
+        },
+        {
           "title": "Use write-only arguments in the Google Cloud provider",
           "slug": "using_write_only_arguments",
           "subcategory": ""
@@ -47538,6 +47658,13 @@
           "title": "Terraform provider for Google Cloud 7.0.0 Upgrade Guide",
           "slug": "version_7_upgrade",
           "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "google_service_account",
+          "slug": "google_service_account",
+          "subcategory": "Cloud Platform"
         }
       ],
       "overview": [
@@ -50429,6 +50556,11 @@
           "subcategory": "Cloud Storage for Firebase"
         },
         {
+          "title": "firebase_storage_default_bucket",
+          "slug": "firebase_storage_default_bucket",
+          "subcategory": "Cloud Storage for Firebase"
+        },
+        {
           "title": "firebase_web_app",
           "slug": "firebase_web_app",
           "subcategory": "Firebase"
@@ -52101,37 +52233,37 @@
         {
           "title": "saas_runtime_release",
           "slug": "saas_runtime_release",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_rollout_kind",
           "slug": "saas_runtime_rollout_kind",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_saas",
           "slug": "saas_runtime_saas",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_tenant",
           "slug": "saas_runtime_tenant",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit",
           "slug": "saas_runtime_unit",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit_kind",
           "slug": "saas_runtime_unit_kind",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit_operation",
           "slug": "saas_runtime_unit_operation",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "scc_event_threat_detection_custom_module",
@@ -52870,7 +53002,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:12.346127"
+    "docs_refreshed_at": "2026-04-23T08:55:42.095320"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54016,6 +54148,11 @@
           "subcategory": "Filestore"
         },
         {
+          "title": "firebase_admin_sdk_config",
+          "slug": "firebase_admin_sdk_config",
+          "subcategory": "Firebase"
+        },
+        {
           "title": "firebase_android_app",
           "slug": "firebase_android_app",
           "subcategory": "Firebase"
@@ -55257,6 +55394,11 @@
           "subcategory": ""
         },
         {
+          "title": "Use list resources with terraform query (Google Cloud provider)",
+          "slug": "using_list_resources_with_terraform_query",
+          "subcategory": ""
+        },
+        {
           "title": "Use write-only arguments in the Google Cloud provider",
           "slug": "using_write_only_arguments",
           "subcategory": ""
@@ -55290,6 +55432,13 @@
           "title": "Terraform provider for Google Cloud 7.0.0 Upgrade Guide",
           "slug": "version_7_upgrade",
           "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "google_service_account",
+          "slug": "google_service_account",
+          "subcategory": "Cloud Platform"
         }
       ],
       "overview": [
@@ -58181,6 +58330,11 @@
           "subcategory": "Cloud Storage for Firebase"
         },
         {
+          "title": "firebase_storage_default_bucket",
+          "slug": "firebase_storage_default_bucket",
+          "subcategory": "Cloud Storage for Firebase"
+        },
+        {
           "title": "firebase_web_app",
           "slug": "firebase_web_app",
           "subcategory": "Firebase"
@@ -59853,37 +60007,37 @@
         {
           "title": "saas_runtime_release",
           "slug": "saas_runtime_release",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_rollout_kind",
           "slug": "saas_runtime_rollout_kind",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_saas",
           "slug": "saas_runtime_saas",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_tenant",
           "slug": "saas_runtime_tenant",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit",
           "slug": "saas_runtime_unit",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit_kind",
           "slug": "saas_runtime_unit_kind",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "saas_runtime_unit_operation",
           "slug": "saas_runtime_unit_operation",
-          "subcategory": "SaaS Runtime"
+          "subcategory": "App Lifecycle Manager (SaaS Runtime)"
         },
         {
           "title": "scc_event_threat_detection_custom_module",
@@ -60622,7 +60776,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-16T08:52:12.858019"
+    "docs_refreshed_at": "2026-04-23T08:55:42.555396"
   },
   "4ek0/neko": {
     "docs": {

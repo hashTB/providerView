@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T08:53:05.717858",
+  "generated_at": "2026-04-23T08:56:34.023966",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "f1062960aaf01ddca46e8e6b3164ed20a2c1fe64"
+    "commit": "e48e60f83c2495531f59332309c5bf7ab52d5fb2"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 99
+    "list_resources": 112
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3053,
+    "stdout_line_count": 3056,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 6,
-        "implemented": 99,
-        "total": 1622
+        "implemented": 110,
+        "total": 1625
       },
       "service_count": 237,
       "services": [
@@ -300,9 +300,9 @@
         },
         {
           "service": "cloudwatch",
-          "percent": 28,
+          "percent": 25,
           "implemented": 2,
-          "total": 7
+          "total": 8
         },
         {
           "service": "codeartifact",
@@ -390,8 +390,8 @@
         },
         {
           "service": "configservice",
-          "percent": 7,
-          "implemented": 1,
+          "percent": 15,
+          "implemented": 2,
           "total": 13
         },
         {
@@ -534,9 +534,9 @@
         },
         {
           "service": "ec2",
-          "percent": 8,
-          "implemented": 13,
-          "total": 155
+          "percent": 10,
+          "implemented": 17,
+          "total": 156
         },
         {
           "service": "ecr",
@@ -702,8 +702,8 @@
         },
         {
           "service": "iam",
-          "percent": 14,
-          "implemented": 5,
+          "percent": 17,
+          "implemented": 6,
           "total": 35
         },
         {
@@ -822,8 +822,8 @@
         },
         {
           "service": "lambda",
-          "percent": 21,
-          "implemented": 3,
+          "percent": 28,
+          "implemented": 4,
           "total": 14
         },
         {
@@ -858,8 +858,8 @@
         },
         {
           "service": "logs",
-          "percent": 11,
-          "implemented": 2,
+          "percent": 17,
+          "implemented": 3,
           "total": 17
         },
         {
@@ -1122,8 +1122,8 @@
         },
         {
           "service": "route53",
-          "percent": 7,
-          "implemented": 1,
+          "percent": 14,
+          "implemented": 2,
           "total": 14
         },
         {
@@ -1200,9 +1200,9 @@
         },
         {
           "service": "sagemaker",
-          "percent": 5,
-          "implemented": 2,
-          "total": 36
+          "percent": 8,
+          "implemented": 3,
+          "total": 37
         },
         {
           "service": "savingsplans",
@@ -1308,8 +1308,8 @@
         },
         {
           "service": "sqs",
-          "percent": 25,
-          "implemented": 1,
+          "percent": 50,
+          "implemented": 2,
           "total": 4
         },
         {
@@ -1959,7 +1959,8 @@
             "cloudwatch/contributor_managed_insight_rule.go",
             "cloudwatch/dashboard.go",
             "cloudwatch/metric_alarm.go",
-            "cloudwatch/metric_stream.go"
+            "cloudwatch/metric_stream.go",
+            "cloudwatch/otel_enrichment.go"
           ],
           "list_resources": [
             "cloudwatch/alarm_mute_rule.go",
@@ -2102,7 +2103,8 @@
             "configservice/retention_configuration.go"
           ],
           "list_resources": [
-            "configservice/config_rule.go"
+            "configservice/config_rule.go",
+            "configservice/remediation_configuration.go"
           ]
         },
         "connect": {
@@ -2363,6 +2365,7 @@
             "ec2/ebs_snapshot_import.go",
             "ec2/ebs_volume.go",
             "ec2/ebs_volume_attachment.go",
+            "ec2/ebs_volume_copy.go",
             "ec2/ec2_allowed_images_settings.go",
             "ec2/ec2_ami.go",
             "ec2/ec2_ami_copy.go",
@@ -2510,11 +2513,15 @@
             "ec2/wavelength_carrier_gateway.go"
           ],
           "list_resources": [
+            "ec2/ebs_volume.go",
+            "ec2/ebs_volume_attachment.go",
             "ec2/ec2_instance.go",
+            "ec2/ec2_launch_template.go",
             "ec2/ec2_secondary_network.go",
             "ec2/ec2_secondary_subnet.go",
             "ec2/transitgateway_metering_policy.go",
             "ec2/vpc_endpoint.go",
+            "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
             "ec2/vpc_route.go",
             "ec2/vpc_route_table.go",
@@ -2898,7 +2905,8 @@
             "iam/role.go",
             "iam/role_policy.go",
             "iam/role_policy_attachment.go",
-            "iam/user.go"
+            "iam/user.go",
+            "iam/user_policy_attachment.go"
           ]
         },
         "identitystore": {
@@ -3114,6 +3122,7 @@
           "list_resources": [
             "lambda/capacity_provider.go",
             "lambda/function.go",
+            "lambda/layer_version.go",
             "lambda/permission.go"
           ]
         },
@@ -3207,6 +3216,7 @@
           ],
           "list_resources": [
             "logs/group.go",
+            "logs/metric_filter.go",
             "logs/subscription_filter.go"
           ]
         },
@@ -3693,7 +3703,8 @@
             "route53/zone_association.go"
           ],
           "list_resources": [
-            "route53/record.go"
+            "route53/record.go",
+            "route53/zone.go"
           ]
         },
         "route53domains": {
@@ -3877,6 +3888,7 @@
             "sagemaker/flow_definition.go",
             "sagemaker/hub.go",
             "sagemaker/human_task_ui.go",
+            "sagemaker/hyper_parameter_tuning_job.go",
             "sagemaker/image.go",
             "sagemaker/image_version.go",
             "sagemaker/labeling_job.go",
@@ -3902,6 +3914,7 @@
           ],
           "list_resources": [
             "sagemaker/algorithm.go",
+            "sagemaker/hyper_parameter_tuning_job.go",
             "sagemaker/training_job.go"
           ]
         },
@@ -4108,7 +4121,8 @@
             "sqs/queue_redrive_policy.go"
           ],
           "list_resources": [
-            "sqs/queue.go"
+            "sqs/queue.go",
+            "sqs/queue_policy.go"
           ]
         },
         "ssm": {
@@ -4395,7 +4409,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-16 08:53:05 UTC"
+      "last_updated": "2026-04-23 08:56:33 UTC"
     }
   },
   "service_coverage": {
@@ -4403,9 +4417,9 @@
     "top_services": [
       {
         "service": "ec2",
-        "percent": 8,
-        "implemented": 13,
-        "total": 155
+        "percent": 10,
+        "implemented": 17,
+        "total": 156
       },
       {
         "service": "s3",
@@ -4420,16 +4434,16 @@
         "total": 26
       },
       {
+        "service": "iam",
+        "percent": 17,
+        "implemented": 6,
+        "total": 35
+      },
+      {
         "service": "s3files",
         "percent": 100,
         "implemented": 5,
         "total": 5
-      },
-      {
-        "service": "iam",
-        "percent": 14,
-        "implemented": 5,
-        "total": 35
       },
       {
         "service": "workmail",
@@ -4450,6 +4464,12 @@
         "total": 12
       },
       {
+        "service": "lambda",
+        "percent": 28,
+        "implemented": 4,
+        "total": 14
+      },
+      {
         "service": "sns",
         "percent": 50,
         "implemented": 3,
@@ -4462,10 +4482,16 @@
         "total": 9
       },
       {
-        "service": "lambda",
-        "percent": 21,
+        "service": "logs",
+        "percent": 17,
         "implemented": 3,
-        "total": 14
+        "total": 17
+      },
+      {
+        "service": "sagemaker",
+        "percent": 8,
+        "implemented": 3,
+        "total": 37
       },
       {
         "service": "appflow",
@@ -4478,18 +4504,6 @@
         "percent": 66,
         "implemented": 2,
         "total": 3
-      },
-      {
-        "service": "batch",
-        "percent": 50,
-        "implemented": 2,
-        "total": 4
-      },
-      {
-        "service": "secretsmanager",
-        "percent": 50,
-        "implemented": 2,
-        "total": 4
       }
     ],
     "service_resources": {
@@ -5000,7 +5014,8 @@
           "cloudwatch/contributor_managed_insight_rule.go",
           "cloudwatch/dashboard.go",
           "cloudwatch/metric_alarm.go",
-          "cloudwatch/metric_stream.go"
+          "cloudwatch/metric_stream.go",
+          "cloudwatch/otel_enrichment.go"
         ],
         "list_resources": [
           "cloudwatch/alarm_mute_rule.go",
@@ -5143,7 +5158,8 @@
           "configservice/retention_configuration.go"
         ],
         "list_resources": [
-          "configservice/config_rule.go"
+          "configservice/config_rule.go",
+          "configservice/remediation_configuration.go"
         ]
       },
       "connect": {
@@ -5404,6 +5420,7 @@
           "ec2/ebs_snapshot_import.go",
           "ec2/ebs_volume.go",
           "ec2/ebs_volume_attachment.go",
+          "ec2/ebs_volume_copy.go",
           "ec2/ec2_allowed_images_settings.go",
           "ec2/ec2_ami.go",
           "ec2/ec2_ami_copy.go",
@@ -5551,11 +5568,15 @@
           "ec2/wavelength_carrier_gateway.go"
         ],
         "list_resources": [
+          "ec2/ebs_volume.go",
+          "ec2/ebs_volume_attachment.go",
           "ec2/ec2_instance.go",
+          "ec2/ec2_launch_template.go",
           "ec2/ec2_secondary_network.go",
           "ec2/ec2_secondary_subnet.go",
           "ec2/transitgateway_metering_policy.go",
           "ec2/vpc_endpoint.go",
+          "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
           "ec2/vpc_route.go",
           "ec2/vpc_route_table.go",
@@ -5939,7 +5960,8 @@
           "iam/role.go",
           "iam/role_policy.go",
           "iam/role_policy_attachment.go",
-          "iam/user.go"
+          "iam/user.go",
+          "iam/user_policy_attachment.go"
         ]
       },
       "identitystore": {
@@ -6155,6 +6177,7 @@
         "list_resources": [
           "lambda/capacity_provider.go",
           "lambda/function.go",
+          "lambda/layer_version.go",
           "lambda/permission.go"
         ]
       },
@@ -6248,6 +6271,7 @@
         ],
         "list_resources": [
           "logs/group.go",
+          "logs/metric_filter.go",
           "logs/subscription_filter.go"
         ]
       },
@@ -6734,7 +6758,8 @@
           "route53/zone_association.go"
         ],
         "list_resources": [
-          "route53/record.go"
+          "route53/record.go",
+          "route53/zone.go"
         ]
       },
       "route53domains": {
@@ -6918,6 +6943,7 @@
           "sagemaker/flow_definition.go",
           "sagemaker/hub.go",
           "sagemaker/human_task_ui.go",
+          "sagemaker/hyper_parameter_tuning_job.go",
           "sagemaker/image.go",
           "sagemaker/image_version.go",
           "sagemaker/labeling_job.go",
@@ -6943,6 +6969,7 @@
         ],
         "list_resources": [
           "sagemaker/algorithm.go",
+          "sagemaker/hyper_parameter_tuning_job.go",
           "sagemaker/training_job.go"
         ]
       },
@@ -7149,7 +7176,8 @@
           "sqs/queue_redrive_policy.go"
         ],
         "list_resources": [
-          "sqs/queue.go"
+          "sqs/queue.go",
+          "sqs/queue_policy.go"
         ]
       },
       "ssm": {
@@ -7438,10 +7466,10 @@
     }
   },
   "validation": {
-    "matches": true,
-    "dashboard_list_resources": 99,
-    "script_implemented_list": 99,
-    "script_total_resources": 1622,
+    "matches": false,
+    "dashboard_list_resources": 112,
+    "script_implemented_list": 110,
+    "script_total_resources": 1625,
     "script_percent": 6
   }
 }
