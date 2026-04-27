@@ -889,6 +889,9 @@ HTML_PART3F = ''';
 HTML_PART3G = ''';
     const awsListCheck = '''
 
+HTML_PART3H = ''';
+    const googleListCheck = '''
+
 HTML_PART4 = ''';
         
         function setColor(primary, dark) {
@@ -1196,6 +1199,23 @@ HTML_PART4 = ''';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
                 html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
                 html += 'Tracking script list resources: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
+                html += '</div>';
+                html += '</div>';
+            }
+
+            var isGoogle = (provider === 'hashicorp/google' || provider === 'hashicorp/google-beta');
+            if (isGoogle && googleListCheck && googleListCheck.validation) {
+                var gValidation = googleListCheck.validation;
+                var gValidationIcon = gValidation.matches ? '✅' : '⚠️';
+                html += '<div style="margin-bottom: 20px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;">';
+                html += '<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">';
+                html += '<span><strong>' + gValidationIcon + ' Google List Validation</strong></span>';
+                html += '<a href="google-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
+                html += '</div>';
+                html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
+                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + gValidation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Source TypeNames: <strong style="color: var(--text);">' + gValidation.code_list_resources + '</strong> &middot; ';
+                html += 'Registered constructors: <strong style="color: var(--text);">' + gValidation.registered_count + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1688,6 +1708,19 @@ HTML_PART4 = ''';
             return ' <a href="aws-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
 
+        function getGoogleListCheckBadge() {
+            if (!googleListCheck || !googleListCheck.validation) return '';
+
+            var validation = googleListCheck.validation;
+            var matches = validation.matches;
+            var icon = matches ? '✅' : '⚠️';
+            var title = matches
+                ? 'Validated against terraform-provider-google source: ' + validation.code_list_resources + ' TypeName(s) match Registry-reflected ' + validation.dashboard_list_resources
+                : 'Google source validation mismatch: source ' + validation.code_list_resources + ' vs Registry-reflected ' + validation.dashboard_list_resources;
+
+            return ' <a href="google-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
+        }
+
         function renderListResources(data, type, row) {
             if (type !== 'display') return data;
             var content = renderClickable(data, type, row, 'list-resources');
@@ -1696,6 +1729,9 @@ HTML_PART4 = ''';
             }
             if (row.provider === 'hashicorp/aws' && data && data > 0) {
                 content += getAwsListCheckBadge();
+            }
+            if ((row.provider === 'hashicorp/google' || row.provider === 'hashicorp/google-beta') && data && data > 0) {
+                content += getGoogleListCheckBadge();
             }
             return content;
         }
@@ -2008,6 +2044,16 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         '   ⚠️  No AWS list validation file found',
         f"   ✅ Loaded AWS list validation from {aws_list_check_path}",
     )
+
+    # Try to load Google list validation JSON
+    google_list_check_path = csv_dir / 'data' / 'google_list_check.json'
+
+    print(f"   Looking for Google list validation at: {google_list_check_path.absolute()}")
+    google_list_check_json = load_embedded_json(
+        google_list_check_path,
+        '   ⚠️  No Google list validation file found',
+        f"   ✅ Loaded Google list validation from {google_list_check_path}",
+    )
     
     html = (
         HTML_PART1 +
@@ -2028,6 +2074,8 @@ def generate_html(csv_path: str, output_path: str = 'dashboard.html', history_fi
         azurerm_list_check_json +
         HTML_PART3G +
         aws_list_check_json +
+        HTML_PART3H +
+        google_list_check_json +
         HTML_PART4
     )
     
