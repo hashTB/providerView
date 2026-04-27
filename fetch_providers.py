@@ -33,9 +33,15 @@ REGISTRY_V1_BASE = "https://registry.terraform.io/v1"
 REGISTRY_V2_BASE = "https://registry.terraform.io/v2"
 
 # Request headers
+# Include a date-stamped UA so each daily run lands on a distinct CDN cache key,
+# and explicit no-cache directives to discourage stale CDN responses (we observed
+# weekly snapshots returning identical totals because of CDN caching).
+_RUN_STAMP = datetime.now().strftime('%Y%m%d')
 HEADERS = {
-    "User-Agent": "TerraformProviderScanner/2.0",
+    "User-Agent": f"TerraformProviderScanner/2.1 (run={_RUN_STAMP})",
     "Accept": "application/json",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 # Rate limiting
@@ -89,15 +95,37 @@ def get_provider_by_full_name(full_name: str) -> Optional[Dict]:
 
 
 def make_request(url: str, retries: int = MAX_RETRIES) -> Optional[Dict]:
-    """Make an API request with retry logic."""
+    """Make an API request with retry logic.
+
+    Adds a per-call cache-buster query param so CDN edge caches can't return a
+    stale response keyed only on the URL. Honours ``Retry-After`` on HTTP 429.
+    """
+    sep = '&' if '?' in url else '?'
+    bust_url = f"{url}{sep}_={int(time.time() * 1000)}"
     for attempt in range(retries):
         try:
-            request = Request(url, headers=HEADERS)
+            request = Request(bust_url, headers=HEADERS)
             with urlopen(request, timeout=30) as response:
                 data = json.loads(response.read().decode('utf-8'))
             time.sleep(REQUEST_DELAY)
             return data
-        except (HTTPError, URLError, json.JSONDecodeError) as e:
+        except HTTPError as e:
+            if e.code == 429 and attempt < retries - 1:
+                wait = RETRY_DELAY
+                try:
+                    wait = max(wait, int(e.headers.get('Retry-After', RETRY_DELAY)))
+                except (TypeError, ValueError):
+                    pass
+                print(f"  HTTP 429 from {url}; sleeping {wait}s then retrying")
+                time.sleep(wait)
+                continue
+            if attempt < retries - 1:
+                print(f"  Retry {attempt + 1}/{retries} for {url}: {e}")
+                time.sleep(RETRY_DELAY)
+            else:
+                print(f"  Failed after {retries} attempts: {url}")
+                return None
+        except (URLError, json.JSONDecodeError) as e:
             if attempt < retries - 1:
                 print(f"  Retry {attempt + 1}/{retries} for {url}: {e}")
                 time.sleep(RETRY_DELAY)
@@ -275,20 +303,34 @@ def get_provider_download_summary(provider_id: str) -> dict:
     The Registry page uses this undocumented v2 endpoint to show the current
     week/month/year/total download figures. We persist it in raw snapshots so
     the trends page can render the Registry's own numbers over time.
+
+    If the response comes back with ``total == 0`` (a known stale-CDN failure
+    mode where the endpoint silently returns zeros), we retry up to twice with
+    a brief delay before giving up.
     """
     url = f"{REGISTRY_V2_BASE}/providers/{provider_id}/downloads/summary?version=all"
-    data = make_request(url)
 
-    if not data or 'data' not in data:
-        return {}
+    for attempt in range(3):
+        data = make_request(url)
+        if not data or 'data' not in data:
+            return {}
 
-    attrs = data['data'].get('attributes', {})
-    return {
-        'week': attrs.get('week'),
-        'month': attrs.get('month'),
-        'year': attrs.get('year'),
-        'total': attrs.get('total'),
-    }
+        attrs = data['data'].get('attributes', {})
+        result = {
+            'week': attrs.get('week'),
+            'month': attrs.get('month'),
+            'year': attrs.get('year'),
+            'total': attrs.get('total'),
+        }
+        # Treat all-zero responses as suspect and retry — the Registry returns
+        # real numbers when called interactively but the scheduled runner
+        # occasionally gets a zeroed response.
+        if result['total'] not in (None, 0):
+            return result
+        if attempt < 2:
+            print(f"  Summary returned total=0 for provider id={provider_id}; retrying ({attempt + 1}/2)")
+            time.sleep(RETRY_DELAY)
+    return result
 
 
 def fetch_provider_details(provider: dict) -> dict:
