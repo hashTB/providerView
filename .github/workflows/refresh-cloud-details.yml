@@ -56,6 +56,11 @@ jobs:
           python3 generate_aws_list_check.py
           echo "=== AWS list validation generated ==="
 
+      - name: Run Google list validation
+        run: |
+          python3 generate_google_list_check.py
+          echo "=== Google list validation generated ==="
+
       - name: Generate cloud devex page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -98,10 +103,12 @@ jobs:
           git add docs/downloads.html 2>/dev/null || true
           git add docs/azurerm-list-check.html 2>/dev/null || true
           git add docs/aws-list-check.html 2>/dev/null || true
+          git add docs/google-list-check.html 2>/dev/null || true
           git add docs/cloud-devex.html 2>/dev/null || true
           git add index.html 2>/dev/null || true
           git add data/azurerm_list_check.json 2>/dev/null || true
           git add data/aws_list_check.json 2>/dev/null || true
+          git add data/google_list_check.json 2>/dev/null || true
           git add data/cloud_devex.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
 

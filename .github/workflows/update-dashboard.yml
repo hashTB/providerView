@@ -177,6 +177,12 @@ jobs:
           echo "=== AWS list validation generated ==="
           ls -la data/aws_list_check.json docs/aws-list-check.html
 
+      - name: Run Google list validation
+        run: |
+          python3 generate_google_list_check.py
+          echo "=== Google list validation generated ==="
+          ls -la data/google_list_check.json docs/google-list-check.html
+
       - name: Generate cloud devex page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -225,10 +231,12 @@ jobs:
           git add docs/downloads.html 2>/dev/null || true
           git add docs/azurerm-list-check.html 2>/dev/null || true
           git add docs/aws-list-check.html 2>/dev/null || true
+          git add docs/google-list-check.html 2>/dev/null || true
           git add docs/cloud-devex.html 2>/dev/null || true
           git add terraform_providers_details.json 2>/dev/null || true
           git add data/azurerm_list_check.json 2>/dev/null || true
           git add data/aws_list_check.json 2>/dev/null || true
+          git add data/google_list_check.json 2>/dev/null || true
           git add data/cloud_devex.json 2>/dev/null || true
           git add data/history.json 2>/dev/null || true
           
@@ -359,9 +367,11 @@ jobs:
           cp docs/downloads.html _site/ 2>/dev/null || true
           cp docs/azurerm-list-check.html _site/ 2>/dev/null || true
           cp docs/aws-list-check.html _site/ 2>/dev/null || true
+          cp docs/google-list-check.html _site/ 2>/dev/null || true
           cp docs/cloud-devex.html _site/ 2>/dev/null || true
           cp data/azurerm_list_check.json _site/data/ 2>/dev/null || true
           cp data/aws_list_check.json _site/data/ 2>/dev/null || true
+          cp data/google_list_check.json _site/data/ 2>/dev/null || true
           cp data/cloud_devex.json _site/data/ 2>/dev/null || true
           cp data/history.json _site/data/ 2>/dev/null || true
           

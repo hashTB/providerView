@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-04-27T16:52:32.009358",
+  "source_repo": {
+    "repo": "hashicorp/terraform-provider-google",
+    "url": "https://github.com/hashicorp/terraform-provider-google.git",
+    "commit": "fc6f52239084800d9fc2562337e494e5bf0499e7"
+  },
+  "registration_file": {
+    "path": "google/fwprovider/framework_provider_mmv1_resources.go",
+    "sha256": "4f331d9334e7569c59fa852a28335ae7ac8cfeea688bf6e098d60ba894f28ef6",
+    "note": "Magic Modules generator emits these registrations into the provider repo. Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/fwprovider/framework_provider_mmv1_resources.go."
+  },
+  "dashboard": {
+    "provider": "hashicorp/google",
+    "list_resources": 1
+  },
+  "registrations": {
+    "generated": [],
+    "handwritten": [
+      {
+        "package": "resourcemanager",
+        "constructor": "NewGoogleServiceAccountListResource",
+        "line": 34
+      }
+    ]
+  },
+  "by_service": {
+    "resourcemanager": [
+      {
+        "file": "google/services/resourcemanager/list_google_service_account.go",
+        "type_name": "google_service_account",
+        "constructor": "NewGoogleServiceAccountListResource"
+      }
+    ]
+  },
+  "cross_check": {
+    "registered_constructors": [
+      "NewGoogleServiceAccountListResource"
+    ],
+    "file_constructors": [
+      "NewGoogleServiceAccountListResource"
+    ],
+    "file_type_names": [
+      "google_service_account"
+    ],
+    "missing_files_for_registration": [],
+    "orphan_files_without_registration": [],
+    "registration_count": 1,
+    "file_type_name_count": 1,
+    "signals_agree": true
+  },
+  "service_coverage": {
+    "services_with_list": 1,
+    "rows": [
+      {
+        "service": "resourcemanager",
+        "list_resources": 1
+      }
+    ],
+    "service_resources": {
+      "resourcemanager": {
+        "list_resources": [
+          "google_service_account"
+        ]
+      }
+    }
+  },
+  "validation": {
+    "matches": true,
+    "dashboard_list_resources": 1,
+    "code_list_resources": 1,
+    "registered_count": 1,
+    "signals_agree": true
+  }
+}

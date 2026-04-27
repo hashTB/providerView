@@ -649,6 +649,7 @@ HTML_PART2 = '''</p>
                 <a href="cloud-devex.html">Cloud DevEx</a>
             <a href="azurerm-list-check.html">✅ AzureRM List Check</a>
             <a href="aws-list-check.html">AWS List Check</a>
+            <a href="google-list-check.html">Google List Check</a>
         </nav>
         
         <div class="metrics" id="metrics">

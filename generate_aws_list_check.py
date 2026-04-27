@@ -404,6 +404,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         <a href=\"cloud-devex.html\">Cloud DevEx</a>
         <a href=\"azurerm-list-check.html\">AzureRM List Check</a>
         <a href=\"aws-list-check.html\" class=\"active\">AWS List Check</a>
+        <a href=\"google-list-check.html\">Google List Check</a>
     </nav>
     <p class=\"subtitle\">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated {html.escape(summary['generated_at'])}.</p>
 
