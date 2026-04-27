@@ -12435,7 +12435,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:39.941353"
+    "docs_refreshed_at": "2026-04-27T20:56:08.204303"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -36176,7 +36176,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:40.456058"
+    "docs_refreshed_at": "2026-04-27T20:56:08.689710"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36610,7 +36610,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:40.824847"
+    "docs_refreshed_at": "2026-04-27T20:56:09.045810"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -38900,6 +38900,21 @@
           "title": "storage_account_customer_managed_key",
           "slug": "storage_account_customer_managed_key",
           "subcategory": "Storage"
+        },
+        {
+          "title": "storage_mover",
+          "slug": "storage_mover",
+          "subcategory": "Storage Mover"
+        },
+        {
+          "title": "storage_mover_agent",
+          "slug": "storage_mover_agent",
+          "subcategory": "Storage Mover"
+        },
+        {
+          "title": "storage_mover_source_endpoint",
+          "slug": "storage_mover_source_endpoint",
+          "subcategory": "Storage Mover"
         },
         {
           "title": "storage_sync",
@@ -44612,7 +44627,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:41.256616"
+    "docs_refreshed_at": "2026-04-27T20:56:09.448138"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -44961,7 +44976,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:41.635363"
+    "docs_refreshed_at": "2026-04-27T20:56:09.811682"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53002,7 +53017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:42.095320"
+    "docs_refreshed_at": "2026-04-27T20:56:10.239569"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -60776,7 +60791,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:55:42.555396"
+    "docs_refreshed_at": "2026-04-27T20:56:10.668823"
   },
   "4ek0/neko": {
     "docs": {

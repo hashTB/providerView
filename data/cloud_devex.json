@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T09:23:19.088024",
+  "generated_at": "2026-04-27T20:57:42.706701",
   "families": {
     "Azure": {
       "count": 5,
@@ -10,10 +10,10 @@
       "sdk_v1_pct": 0.0,
       "archived_count": 1,
       "avg_repo_age_years": 6.21,
-      "pr_total": 215,
-      "pr_internal_pct": 43.3,
+      "pr_total": 218,
+      "pr_internal_pct": 44.5,
       "pr_cloud_vendor_pct": 6.0,
-      "pr_community_pct": 50.7
+      "pr_community_pct": 49.5
     },
     "AWS": {
       "count": 2,
@@ -24,10 +24,10 @@
       "sdk_v1_pct": 0.0,
       "archived_count": 0,
       "avg_repo_age_years": 6.96,
-      "pr_total": 185,
-      "pr_internal_pct": 39.5,
-      "pr_cloud_vendor_pct": 3.2,
-      "pr_community_pct": 57.3
+      "pr_total": 180,
+      "pr_internal_pct": 35.6,
+      "pr_cloud_vendor_pct": 3.3,
+      "pr_community_pct": 61.1
     },
     "GCP": {
       "count": 2,
@@ -37,7 +37,7 @@
       "mux_pct": 100.0,
       "sdk_v1_pct": 0.0,
       "archived_count": 0,
-      "avg_repo_age_years": 8.24,
+      "avg_repo_age_years": 8.25,
       "pr_total": 199,
       "pr_internal_pct": 100.0,
       "pr_cloud_vendor_pct": 0.0,
@@ -60,19 +60,99 @@
       "source": "https://github.com/hashicorp/terraform-provider-azurerm",
       "repo": "hashicorp/terraform-provider-azurerm",
       "repo_created_at": "2017-06-05T20:53:54Z",
-      "repo_pushed_at": "2026-04-26T06:51:57Z",
+      "repo_pushed_at": "2026-04-27T20:10:15Z",
       "repo_archived": false,
       "repo_stars": 4930,
-      "repo_open_issues": 3825,
+      "repo_open_issues": 3831,
       "repo_age_years": 8.89,
       "pr_window_days": 180,
-      "pr_merged_total": 71,
-      "pr_internal": 37,
-      "pr_cloud_vendor": 5,
-      "pr_community": 29,
+      "pr_merged_total": 75,
+      "pr_internal": 41,
+      "pr_cloud_vendor": 6,
+      "pr_community": 28,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 32245,
+          "title": "workflow: mark CI failure comments outdated on pass",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32245",
+          "author_login": "katbyte",
+          "author_company": "@hashicorp",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T15:20:58Z"
+        },
+        {
+          "number": 31957,
+          "title": "[New Data Source:] `azurerm_cdn_frontdoor_security_policy` ",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31957",
+          "author_login": "WodansSon",
+          "author_company": "Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T13:20:33Z"
+        },
+        {
+          "number": 32034,
+          "title": "`tooling` - add VCR support to acceptance testing",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32034",
+          "author_login": "jackofallops",
+          "author_company": "@hashicorp",
+          "author_association": "MEMBER",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T07:23:38Z"
+        },
+        {
+          "number": 31670,
+          "title": "new resource `azurerm_kubernetes_cluster_deployment_safeguard`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31670",
+          "author_login": "ms-henglu",
+          "author_company": "Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T14:51:03Z"
+        },
+        {
+          "number": 32060,
+          "title": "remove detailed post",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32060",
+          "author_login": "mstroob",
+          "author_company": "Hashicorp",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-03-27T15:07:20Z"
+        },
+        {
+          "number": 31197,
+          "title": "`azurerm_nat_gateway/azurerm_public_ip/azurerm_public_ip_prefix` - support for new SKU `StandardV2`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31197",
+          "author_login": "neil-yechenwei",
+          "author_company": "Microsoft",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "cloud-vendor",
+          "merged_at": "2026-03-27T15:55:09Z"
+        },
+        {
+          "number": 30376,
+          "title": "`azurerm_application_gateway` - support for `backend`, `listener` and `routing_rule` block",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/30376",
+          "author_login": "teowa",
+          "author_company": "@Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T16:36:30Z"
+        },
+        {
+          "number": 31932,
+          "title": "automation: split automation_connection_certificate CreateUpdate into separate Create and Update",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31932",
+          "author_login": "katbyte",
+          "author_company": "@hashicorp",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T23:51:08Z"
+        },
         {
           "number": 32046,
           "title": "do not use cache to build cache",
@@ -742,46 +822,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-03-16T21:07:49Z"
-        },
-        {
-          "number": 31935,
-          "title": "automation_certificate: split CreateUpdate into separate Create and Update",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31935",
-          "author_login": "katbyte",
-          "author_company": "@hashicorp",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-03-16T21:22:37Z"
-        },
-        {
-          "number": 31929,
-          "title": "consumption: convert budget resources to use typed models with Decode/Encode",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31929",
-          "author_login": "katbyte",
-          "author_company": "@hashicorp",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T22:06:54Z"
-        },
-        {
-          "number": 32126,
-          "title": "List and identity implementation - azurerm_web_pubsub",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32126",
-          "author_login": "aayushsingh2502",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-15T11:35:07Z"
-        },
-        {
-          "number": 32108,
-          "title": "`kubernetes_cluster_node_pool_data_source.go` : add `node_image_version`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32108",
-          "author_login": "anurag-hashicorp",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-14T18:24:33Z"
         }
       ],
       "has_framework": true,
@@ -806,15 +846,15 @@
       "source": "https://github.com/Azure/terraform-provider-azapi",
       "repo": "Azure/terraform-provider-azapi",
       "repo_created_at": "2021-09-22T06:52:12Z",
-      "repo_pushed_at": "2026-04-24T06:09:54Z",
+      "repo_pushed_at": "2026-04-27T00:58:56Z",
       "repo_archived": false,
       "repo_stars": 237,
-      "repo_open_issues": 114,
+      "repo_open_issues": 115,
       "repo_age_years": 4.59,
       "pr_window_days": 180,
-      "pr_merged_total": 43,
+      "pr_merged_total": 42,
       "pr_internal": 31,
-      "pr_cloud_vendor": 6,
+      "pr_cloud_vendor": 5,
       "pr_community": 6,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
@@ -1238,16 +1278,6 @@
           "author_association": "MEMBER",
           "bucket": "internal",
           "merged_at": "2025-10-30T05:45:49Z"
-        },
-        {
-          "number": 1004,
-          "title": "add example Microsoft.DocumentDB_mongoClusters@2025-09-01",
-          "html_url": "https://github.com/Azure/terraform-provider-azapi/pull/1004",
-          "author_login": "teowa",
-          "author_company": "@Microsoft",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "cloud-vendor",
-          "merged_at": "2025-10-29T02:45:29Z"
         }
       ],
       "has_framework": true,
@@ -1276,7 +1306,7 @@
       "repo_archived": false,
       "repo_stars": 478,
       "repo_open_issues": 368,
-      "repo_age_years": 7.29,
+      "repo_age_years": 7.3,
       "pr_window_days": 180,
       "pr_merged_total": 28,
       "pr_internal": 20,
@@ -1588,7 +1618,7 @@
       "source": "https://github.com/microsoft/terraform-provider-fabric",
       "repo": "microsoft/terraform-provider-fabric",
       "repo_created_at": "2023-11-20T17:35:32Z",
-      "repo_pushed_at": "2026-04-25T21:40:06Z",
+      "repo_pushed_at": "2026-04-27T13:04:23Z",
       "repo_archived": false,
       "repo_stars": 115,
       "repo_open_issues": 67,
@@ -1601,6 +1631,16 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 947,
+          "title": "feat(wellknown): add snowflake database to wellknown",
+          "html_url": "https://github.com/microsoft/terraform-provider-fabric/pull/947",
+          "author_login": "CatalinDabuleanu",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:21:27Z"
+        },
         {
           "number": 944,
           "title": "build(deps): bump github.com/microsoft/fabric-sdk-go from 0.16.0 to 0.17.0 in the all group",
@@ -2320,16 +2360,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-01-29T12:14:08Z"
-        },
-        {
-          "number": 789,
-          "title": "build(deps): bump the all group across 1 directory with 4 updates",
-          "html_url": "https://github.com/microsoft/terraform-provider-fabric/pull/789",
-          "author_login": "dependabot[bot]",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2025-12-29T11:11:29Z"
         }
       ],
       "has_framework": true,
@@ -2358,7 +2388,7 @@
       "repo_archived": true,
       "repo_stars": 40,
       "repo_open_issues": 39,
-      "repo_age_years": 7.85,
+      "repo_age_years": 7.86,
       "pr_window_days": 180,
       "pr_merged_total": 0,
       "pr_internal": 0,
@@ -2389,19 +2419,159 @@
       "source": "https://github.com/hashicorp/terraform-provider-aws",
       "repo": "hashicorp/terraform-provider-aws",
       "repo_created_at": "2017-06-05T20:37:52Z",
-      "repo_pushed_at": "2026-04-24T20:16:32Z",
+      "repo_pushed_at": "2026-04-27T20:01:42Z",
       "repo_archived": false,
-      "repo_stars": 10856,
+      "repo_stars": 10857,
       "repo_open_issues": 3466,
       "repo_age_years": 8.89,
       "pr_window_days": 180,
-      "pr_merged_total": 92,
-      "pr_internal": 30,
+      "pr_merged_total": 88,
+      "pr_internal": 23,
       "pr_cloud_vendor": 6,
-      "pr_community": 56,
+      "pr_community": 59,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 46953,
+          "title": "r/aws_vpc, r/aws_subnet: Add GuardDuty managed resource cleanup on destroy",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/46953",
+          "author_login": "JMRacke",
+          "author_company": "Amazon Web Services",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "cloud-vendor",
+          "merged_at": "2026-04-27T20:00:59Z"
+        },
+        {
+          "number": 47568,
+          "title": "resource/aws_ecs_express_gateway_service: Various fixes and test fixes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47568",
+          "author_login": "gdavison",
+          "author_company": "@hashicorp",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T19:58:27Z"
+        },
+        {
+          "number": 46343,
+          "title": "New Resource: `aws_arczonalshift_autoshift_observer_notification_status`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/46343",
+          "author_login": "theluispestana-jpmc",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T16:54:58Z"
+        },
+        {
+          "number": 47633,
+          "title": "build(deps): bump the aws-sdk-go-v2 group across 1 directory with 10 updates",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47633",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T13:08:28Z"
+        },
+        {
+          "number": 47625,
+          "title": "r/aws_globalaccelerator_cross_account_attachment: Fix panics when removing `resource` blocks",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47625",
+          "author_login": "ewbankkit",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:53Z"
+        },
+        {
+          "number": 47622,
+          "title": "New list resource: `aws_securityhub_insight`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47622",
+          "author_login": "ewbankkit",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:42Z"
+        },
+        {
+          "number": 47356,
+          "title": "New Resource: aws_securityhub_v2_account",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47356",
+          "author_login": "MarshallJones92",
+          "author_company": "",
+          "author_association": "NONE",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:28Z"
+        },
+        {
+          "number": 47618,
+          "title": "build(deps): bump github.com/hashicorp/terraform-plugin-testing from 1.15.0 to 1.16.0 in the terraform-devex group across 1 directory",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47618",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:40:26Z"
+        },
+        {
+          "number": 47636,
+          "title": "r/aws_pinpoint_app: Lower minimum of `limits.messages_per_second` from 50 to 1",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47636",
+          "author_login": "lamanotrama",
+          "author_company": "Quipper",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:39:53Z"
+        },
+        {
+          "number": 47616,
+          "title": "build(deps): bump slackapi/slack-github-action from 3.0.1 to 3.0.2",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47616",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:24:08Z"
+        },
+        {
+          "number": 47615,
+          "title": "build(deps): bump integrations/github from 6.11.1 to 6.12.0 in /infrastructure/repository",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47615",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:23:33Z"
+        },
+        {
+          "number": 47078,
+          "title": "fix(security hub): allow SELF_MANAGED_SECURITY_HUB",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47078",
+          "author_login": "JonZeolla",
+          "author_company": "@Zenable-io",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:17:12Z"
+        },
+        {
+          "number": 47273,
+          "title": "feat: add support for mq configuration deletion",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47273",
+          "author_login": "stefanfreitag",
+          "author_company": "RWE Supply & Trading GmbH",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-15T20:31:11Z"
+        },
+        {
+          "number": 47574,
+          "title": "fix: update a validation in the resource",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47574",
+          "author_login": "stefanfreitag",
+          "author_company": "RWE Supply & Trading GmbH",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-22T20:08:52Z"
+        },
         {
           "number": 47098,
           "title": "docs: update resource counts",
@@ -3141,186 +3311,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-04-16T12:20:52Z"
-        },
-        {
-          "number": 47467,
-          "title": "r/aws_iam_user_policy_attachment: add RI and List support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47467",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T12:35:55Z"
-        },
-        {
-          "number": 47470,
-          "title": "Add CHANGELOG entry for v6.42.0",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47470",
-          "author_login": "github-actions[bot]",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-15T19:11:03Z"
-        },
-        {
-          "number": 47472,
-          "title": "r/aws_apigatewayv2_api: add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47472",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T20:31:39Z"
-        },
-        {
-          "number": 47473,
-          "title": "Build with Go v1.26.2",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47473",
-          "author_login": "ewbankkit",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T13:22:54Z"
-        },
-        {
-          "number": 47478,
-          "title": "\ud83e\udd16\ud83e\udd16\ud83e\udd16 New data sources: `aws_ec2_service_link_virtual_interface`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47478",
-          "author_login": "micbegin",
-          "author_company": "@aws",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "cloud-vendor",
-          "merged_at": "2026-04-17T16:44:49Z"
-        },
-        {
-          "number": 47581,
-          "title": "Prepare for v6.42.0 release",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47581",
-          "author_login": "gdavison",
-          "author_company": "@hashicorp",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-22T22:29:45Z"
-        },
-        {
-          "number": 47578,
-          "title": "docs: add missing `skaff` subcommands",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47578",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T21:01:32Z"
-        },
-        {
-          "number": 45632,
-          "title": "Add update support for aws_rds_integration resource modification",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/45632",
-          "author_login": "sushan-suresh",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-22T21:01:18Z"
-        },
-        {
-          "number": 47561,
-          "title": "[New List Resource]: `aws_ebs_volume_attachment`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47561",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T17:59:23Z"
-        },
-        {
-          "number": 47481,
-          "title": "Remove CDKTF documentation: part 3/6 (python resources)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47481",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T21:43:58Z"
-        },
-        {
-          "number": 47557,
-          "title": "[New List Resource]: `aws_eip`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47557",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T18:54:51Z"
-        },
-        {
-          "number": 47482,
-          "title": "Remove CDKTF documentation: part 4/6 (other)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47482",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T21:44:29Z"
-        },
-        {
-          "number": 47091,
-          "title": "bugfix: r/ec2_eip: Handle UnsupportedOperation error in EIP domain name attribute lookup",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47091",
-          "author_login": "Sewci0",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T18:53:49Z"
-        },
-        {
-          "number": 47529,
-          "title": "New List Resource: `aws_internet_gateway`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47529",
-          "author_login": "taruntej-a",
-          "author_company": "@LiciousTech",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T16:20:32Z"
-        },
-        {
-          "number": 47484,
-          "title": "The last remnants of the CDKTF have been swept away",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47484",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T01:32:42Z"
-        },
-        {
-          "number": 47551,
-          "title": "f/aws_ebs_volume: Add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47551",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T15:02:20Z"
-        },
-        {
-          "number": 47555,
-          "title": "Support S3 Inventory for directory buckets",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47555",
-          "author_login": "ewbankkit",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T14:24:12Z"
-        },
-        {
-          "number": 47489,
-          "title": "f/aws_sqs_queue_policy: Add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47489",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T12:36:07Z"
         }
       ],
       "has_framework": true,
@@ -3345,19 +3335,29 @@
       "source": "https://github.com/hashicorp/terraform-provider-awscc",
       "repo": "hashicorp/terraform-provider-awscc",
       "repo_created_at": "2021-04-15T16:00:50Z",
-      "repo_pushed_at": "2026-04-24T05:19:32Z",
+      "repo_pushed_at": "2026-04-27T17:07:24Z",
       "repo_archived": false,
       "repo_stars": 304,
-      "repo_open_issues": 361,
+      "repo_open_issues": 359,
       "repo_age_years": 5.03,
       "pr_window_days": 180,
-      "pr_merged_total": 93,
-      "pr_internal": 43,
+      "pr_merged_total": 92,
+      "pr_internal": 41,
       "pr_cloud_vendor": 0,
-      "pr_community": 50,
+      "pr_community": 51,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 3132,
+          "title": "build(deps): bump github.com/hashicorp/terraform-plugin-testing from 1.15.0 to 1.16.0 in the terraform-devex group",
+          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3132",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T17:07:23Z"
+        },
         {
           "number": 3129,
           "title": "2026-04-22 schema updates",
@@ -4267,26 +4267,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-02-12T19:53:48Z"
-        },
-        {
-          "number": 3010,
-          "title": "Add example for awscc_ec2_vpc_encryption_control",
-          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3010",
-          "author_login": "wellsiau-aws",
-          "author_company": "AWS",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-02-12T19:53:17Z"
-        },
-        {
-          "number": 3009,
-          "title": "Add example for awscc_bedrockagentcore_workload_identity",
-          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3009",
-          "author_login": "wellsiau-aws",
-          "author_company": "AWS",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-02-12T19:52:34Z"
         }
       ],
       "has_framework": true,
@@ -4311,10 +4291,10 @@
       "source": "https://github.com/hashicorp/terraform-provider-google",
       "repo": "hashicorp/terraform-provider-google",
       "repo_created_at": "2017-06-05T20:54:02Z",
-      "repo_pushed_at": "2026-04-26T03:05:49Z",
+      "repo_pushed_at": "2026-04-27T20:29:30Z",
       "repo_archived": false,
       "repo_stars": 2607,
-      "repo_open_issues": 2419,
+      "repo_open_issues": 2412,
       "repo_age_years": 8.89,
       "pr_window_days": 180,
       "pr_merged_total": 100,
@@ -4324,6 +4304,106 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 27109,
+          "title": "Update composer v2 image version in tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27109",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T20:29:31Z"
+        },
+        {
+          "number": 27108,
+          "title": "firestore_index: Add support for search indexes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27108",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T19:18:21Z"
+        },
+        {
+          "number": 27107,
+          "title": "Add resource manager tags to Image",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27107",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T18:54:32Z"
+        },
+        {
+          "number": 27106,
+          "title": "Add ULL mirroring collector rule",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27106",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T17:36:21Z"
+        },
+        {
+          "number": 26626,
+          "title": "Add Transport Resource",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26626",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T16:47:08Z"
+        },
+        {
+          "number": 26629,
+          "title": "Add license headers for yaml files",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26629",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T20:31:07Z"
+        },
+        {
+          "number": 26630,
+          "title": "auto fix compute test crash",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26630",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T20:41:32Z"
+        },
+        {
+          "number": 26631,
+          "title": "Update Test Generation: Update example template",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26631",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T22:03:37Z"
+        },
+        {
+          "number": 26632,
+          "title": "update golang.org/api to v0.273.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26632",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T22:31:15Z"
+        },
+        {
+          "number": 26633,
+          "title": "Convert DCL resources to handwritten",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26633",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T22:34:34Z"
+        },
         {
           "number": 26613,
           "title": "feat: add Chronicle NativeDashboard resource",
@@ -5223,106 +5303,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-22T01:10:16Z"
-        },
-        {
-          "number": 27039,
-          "title": "Fix TestAccComputeRolloutPlan* tests",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27039",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T01:04:19Z"
-        },
-        {
-          "number": 27036,
-          "title": "Extended registry product struct to include REP Url & custom endpoint information & add custom endpoint fields based on registry",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27036",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T22:39:36Z"
-        },
-        {
-          "number": 27035,
-          "title": "Calculate mtls closer to universe domain",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27035",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T22:13:07Z"
-        },
-        {
-          "number": 27034,
-          "title": "feat: add erase_windows_vss_signature to compute instance",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27034",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T21:00:49Z"
-        },
-        {
-          "number": 27033,
-          "title": "feat(datastream): add deletion_policy to google_datastream_private_connection",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27033",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T20:57:16Z"
-        },
-        {
-          "number": 27032,
-          "title": "Fix Tag Key Import Issue from issue #20073",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27032",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T20:51:13Z"
-        },
-        {
-          "number": 27030,
-          "title": "Removed google_chronicle_feed note from 7.28",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27030",
-          "author_login": "melinath",
-          "author_company": "Google",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T19:13:02Z"
-        },
-        {
-          "number": 27031,
-          "title": "Add 7.29.0 changelog to main",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27031",
-          "author_login": "rileykarson",
-          "author_company": "@google",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T19:04:30Z"
-        },
-        {
-          "number": 26988,
-          "title": "changelog - 7.29.0",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26988",
-          "author_login": "shuyama1",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T17:04:12Z"
-        },
-        {
-          "number": 27029,
-          "title": "feat(bigqueryconnection): add `configuration` block to `google_bigquery_connection`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27029",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T16:53:44Z"
         }
       ],
       "has_framework": true,
@@ -5347,11 +5327,11 @@
       "source": "https://github.com/hashicorp/terraform-provider-google-beta",
       "repo": "hashicorp/terraform-provider-google-beta",
       "repo_created_at": "2018-09-20T17:28:45Z",
-      "repo_pushed_at": "2026-04-26T03:12:30Z",
+      "repo_pushed_at": "2026-04-27T20:29:40Z",
       "repo_archived": false,
       "repo_stars": 308,
       "repo_open_issues": 4,
-      "repo_age_years": 7.59,
+      "repo_age_years": 7.6,
       "pr_window_days": 180,
       "pr_merged_total": 99,
       "pr_internal": 99,
@@ -5360,6 +5340,46 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 12078,
+          "title": "Update composer v2 image version in tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12078",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T20:29:40Z"
+        },
+        {
+          "number": 12077,
+          "title": "firestore_index: Add support for search indexes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12077",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T19:18:24Z"
+        },
+        {
+          "number": 12076,
+          "title": "Add resource manager tags to Image",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12076",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T18:54:43Z"
+        },
+        {
+          "number": 12075,
+          "title": "Add ULL mirroring collector rule",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12075",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T17:36:24Z"
+        },
         {
           "number": 12074,
           "title": "Migrated Compute instance network interface to use transport_tpg.SendRequest",
@@ -6309,46 +6329,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-16T18:29:21Z"
-        },
-        {
-          "number": 11978,
-          "title": "Add support for dataproc cluster engine",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11978",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T18:05:36Z"
-        },
-        {
-          "number": 11977,
-          "title": "`ephemeral`: ability to assert values + update ephemeral resource acctests",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11977",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T17:25:12Z"
-        },
-        {
-          "number": 11976,
-          "title": "Add Terraform support for Data table Row for v1 endpoint",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11976",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T17:20:04Z"
-        },
-        {
-          "number": 11975,
-          "title": "Fix Field-level blocker for field name for two resources.",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11975",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T16:43:01Z"
         }
       ],
       "has_framework": true,
@@ -6365,9 +6345,9 @@
         {
           "provider": "azure/azapi",
           "repo": "Azure/terraform-provider-azapi",
-          "total": 43,
+          "total": 42,
           "internal": 31,
-          "cloud_vendor": 6,
+          "cloud_vendor": 5,
           "community": 6,
           "status": "ok"
         },
@@ -6383,10 +6363,10 @@
         {
           "provider": "hashicorp/azurerm",
           "repo": "hashicorp/terraform-provider-azurerm",
-          "total": 71,
-          "internal": 37,
-          "cloud_vendor": 5,
-          "community": 29,
+          "total": 75,
+          "internal": 41,
+          "cloud_vendor": 6,
+          "community": 28,
           "status": "ok"
         },
         {
@@ -6412,19 +6392,19 @@
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
-          "total": 92,
-          "internal": 30,
+          "total": 88,
+          "internal": 23,
           "cloud_vendor": 6,
-          "community": 56,
+          "community": 59,
           "status": "ok"
         },
         {
           "provider": "hashicorp/awscc",
           "repo": "hashicorp/terraform-provider-awscc",
-          "total": 93,
-          "internal": 43,
+          "total": 92,
+          "internal": 41,
           "cloud_vendor": 0,
-          "community": 50,
+          "community": 51,
           "status": "ok"
         }
       ],
@@ -6451,6 +6431,42 @@
     },
     "merged_timeline": {
       "Azure": [
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 32245,
+          "title": "workflow: mark CI failure comments outdated on pass",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32245",
+          "author_login": "katbyte",
+          "author_company": "@hashicorp",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T15:20:58Z"
+        },
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 31957,
+          "title": "[New Data Source:] `azurerm_cdn_frontdoor_security_policy` ",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31957",
+          "author_login": "WodansSon",
+          "author_company": "Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T13:20:33Z"
+        },
+        {
+          "provider": "microsoft/fabric",
+          "repo": "microsoft/terraform-provider-fabric",
+          "number": 947,
+          "title": "feat(wellknown): add snowflake database to wellknown",
+          "html_url": "https://github.com/microsoft/terraform-provider-fabric/pull/947",
+          "author_login": "CatalinDabuleanu",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:21:27Z"
+        },
         {
           "provider": "microsoft/fabric",
           "repo": "microsoft/terraform-provider-fabric",
@@ -7052,18 +7068,6 @@
           "merged_at": "2026-04-16T11:38:46Z"
         },
         {
-          "provider": "hashicorp/azurerm",
-          "repo": "hashicorp/terraform-provider-azurerm",
-          "number": 31929,
-          "title": "consumption: convert budget resources to use typed models with Decode/Encode",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31929",
-          "author_login": "katbyte",
-          "author_company": "@hashicorp",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T22:06:54Z"
-        },
-        {
           "provider": "microsoft/fabric",
           "repo": "microsoft/terraform-provider-fabric",
           "number": 917,
@@ -7074,30 +7078,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-04-15T11:46:51Z"
-        },
-        {
-          "provider": "hashicorp/azurerm",
-          "repo": "hashicorp/terraform-provider-azurerm",
-          "number": 32126,
-          "title": "List and identity implementation - azurerm_web_pubsub",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32126",
-          "author_login": "aayushsingh2502",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-15T11:35:07Z"
-        },
-        {
-          "provider": "hashicorp/azurerm",
-          "repo": "hashicorp/terraform-provider-azurerm",
-          "number": 32108,
-          "title": "`kubernetes_cluster_node_pool_data_source.go` : add `node_image_version`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32108",
-          "author_login": "anurag-hashicorp",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-14T18:24:33Z"
         },
         {
           "provider": "microsoft/fabric",
@@ -7340,6 +7320,18 @@
           "merged_at": "2026-03-28T00:16:18Z"
         },
         {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 31932,
+          "title": "automation: split automation_connection_certificate CreateUpdate into separate Create and Update",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31932",
+          "author_login": "katbyte",
+          "author_company": "@hashicorp",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T23:51:08Z"
+        },
+        {
           "provider": "microsoft/fabric",
           "repo": "microsoft/terraform-provider-fabric",
           "number": 688,
@@ -7364,6 +7356,30 @@
           "merged_at": "2026-03-27T19:34:12Z"
         },
         {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 30376,
+          "title": "`azurerm_application_gateway` - support for `backend`, `listener` and `routing_rule` block",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/30376",
+          "author_login": "teowa",
+          "author_company": "@Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T16:36:30Z"
+        },
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 31197,
+          "title": "`azurerm_nat_gateway/azurerm_public_ip/azurerm_public_ip_prefix` - support for new SKU `StandardV2`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31197",
+          "author_login": "neil-yechenwei",
+          "author_company": "Microsoft",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "cloud-vendor",
+          "merged_at": "2026-03-27T15:55:09Z"
+        },
+        {
           "provider": "microsoft/fabric",
           "repo": "microsoft/terraform-provider-fabric",
           "number": 875,
@@ -7376,6 +7392,30 @@
           "merged_at": "2026-03-27T15:34:48Z"
         },
         {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 32060,
+          "title": "remove detailed post",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32060",
+          "author_login": "mstroob",
+          "author_company": "Hashicorp",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-03-27T15:07:20Z"
+        },
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 31670,
+          "title": "new resource `azurerm_kubernetes_cluster_deployment_safeguard`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31670",
+          "author_login": "ms-henglu",
+          "author_company": "Microsoft",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T14:51:03Z"
+        },
+        {
           "provider": "microsoft/fabric",
           "repo": "microsoft/terraform-provider-fabric",
           "number": 882,
@@ -7386,6 +7426,18 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-03-27T11:15:37Z"
+        },
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 32034,
+          "title": "`tooling` - add VCR support to acceptance testing",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/32034",
+          "author_login": "jackofallops",
+          "author_company": "@hashicorp",
+          "author_association": "MEMBER",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T07:23:38Z"
         },
         {
           "provider": "azure/azapi",
@@ -7890,18 +7942,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-03-17T17:51:29Z"
-        },
-        {
-          "provider": "hashicorp/azurerm",
-          "repo": "hashicorp/terraform-provider-azurerm",
-          "number": 31935,
-          "title": "automation_certificate: split CreateUpdate into separate Create and Update",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/31935",
-          "author_login": "katbyte",
-          "author_company": "@hashicorp",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-03-16T21:22:37Z"
         },
         {
           "provider": "hashicorp/azurerm",
@@ -8684,18 +8724,6 @@
           "merged_at": "2026-01-05T03:05:23Z"
         },
         {
-          "provider": "microsoft/fabric",
-          "repo": "microsoft/terraform-provider-fabric",
-          "number": 789,
-          "title": "build(deps): bump the all group across 1 directory with 4 updates",
-          "html_url": "https://github.com/microsoft/terraform-provider-fabric/pull/789",
-          "author_login": "dependabot[bot]",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2025-12-29T11:11:29Z"
-        },
-        {
           "provider": "azure/azapi",
           "repo": "Azure/terraform-provider-azapi",
           "number": 1024,
@@ -8802,57 +8830,165 @@
           "author_association": "MEMBER",
           "bucket": "internal",
           "merged_at": "2025-11-18T19:31:54Z"
-        },
-        {
-          "provider": "hashicorp/azuread",
-          "repo": "hashicorp/terraform-provider-azuread",
-          "number": 1804,
-          "title": "dependencies: update `golang.org/x/crypto` to `v0.44.0`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1804",
-          "author_login": "jackofallops",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2025-11-18T18:51:59Z"
-        },
-        {
-          "provider": "hashicorp/azuread",
-          "repo": "hashicorp/terraform-provider-azuread",
-          "number": 1789,
-          "title": "CHANGELOG for `v3.7.0`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1789",
-          "author_login": "jackofallops",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2025-11-18T18:29:15Z"
-        },
-        {
-          "provider": "hashicorp/azuread",
-          "repo": "hashicorp/terraform-provider-azuread",
-          "number": 1796,
-          "title": "`azuread_conditional_access_policy` - add support for the `authentication_flow_transfer_methods` property",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1796",
-          "author_login": "sreallymatt",
-          "author_company": "@hashicorp",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2025-11-18T15:39:01Z"
-        },
-        {
-          "provider": "azure/azapi",
-          "repo": "Azure/terraform-provider-azapi",
-          "number": 1016,
-          "title": "Add ResourceRemarks support to sync-reference-doc tool",
-          "html_url": "https://github.com/Azure/terraform-provider-azapi/pull/1016",
-          "author_login": "ms-henglu",
-          "author_company": "Microsoft",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2025-11-18T02:04:07Z"
         }
       ],
       "AWS": [
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 46953,
+          "title": "r/aws_vpc, r/aws_subnet: Add GuardDuty managed resource cleanup on destroy",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/46953",
+          "author_login": "JMRacke",
+          "author_company": "Amazon Web Services",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "cloud-vendor",
+          "merged_at": "2026-04-27T20:00:59Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47568,
+          "title": "resource/aws_ecs_express_gateway_service: Various fixes and test fixes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47568",
+          "author_login": "gdavison",
+          "author_company": "@hashicorp",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T19:58:27Z"
+        },
+        {
+          "provider": "hashicorp/awscc",
+          "repo": "hashicorp/terraform-provider-awscc",
+          "number": 3132,
+          "title": "build(deps): bump github.com/hashicorp/terraform-plugin-testing from 1.15.0 to 1.16.0 in the terraform-devex group",
+          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3132",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T17:07:23Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 46343,
+          "title": "New Resource: `aws_arczonalshift_autoshift_observer_notification_status`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/46343",
+          "author_login": "theluispestana-jpmc",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T16:54:58Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47633,
+          "title": "build(deps): bump the aws-sdk-go-v2 group across 1 directory with 10 updates",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47633",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T13:08:28Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47625,
+          "title": "r/aws_globalaccelerator_cross_account_attachment: Fix panics when removing `resource` blocks",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47625",
+          "author_login": "ewbankkit",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:53Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47622,
+          "title": "New list resource: `aws_securityhub_insight`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47622",
+          "author_login": "ewbankkit",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:42Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47356,
+          "title": "New Resource: aws_securityhub_v2_account",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47356",
+          "author_login": "MarshallJones92",
+          "author_company": "",
+          "author_association": "NONE",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:50:28Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47618,
+          "title": "build(deps): bump github.com/hashicorp/terraform-plugin-testing from 1.15.0 to 1.16.0 in the terraform-devex group across 1 directory",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47618",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:40:26Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47636,
+          "title": "r/aws_pinpoint_app: Lower minimum of `limits.messages_per_second` from 50 to 1",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47636",
+          "author_login": "lamanotrama",
+          "author_company": "Quipper",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:39:53Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47616,
+          "title": "build(deps): bump slackapi/slack-github-action from 3.0.1 to 3.0.2",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47616",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:24:08Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47615,
+          "title": "build(deps): bump integrations/github from 6.11.1 to 6.12.0 in /infrastructure/repository",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47615",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:23:33Z"
+        },
+        {
+          "provider": "hashicorp/aws",
+          "repo": "hashicorp/terraform-provider-aws",
+          "number": 47078,
+          "title": "fix(security hub): allow SELF_MANAGED_SECURITY_HUB",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47078",
+          "author_login": "JonZeolla",
+          "author_company": "@Zenable-io",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T12:17:12Z"
+        },
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
@@ -8928,38 +9064,14 @@
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
-          "number": 47581,
-          "title": "Prepare for v6.42.0 release",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47581",
-          "author_login": "gdavison",
-          "author_company": "@hashicorp",
+          "number": 47574,
+          "title": "fix: update a validation in the resource",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47574",
+          "author_login": "stefanfreitag",
+          "author_company": "RWE Supply & Trading GmbH",
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
-          "merged_at": "2026-04-22T22:29:45Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47578,
-          "title": "docs: add missing `skaff` subcommands",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47578",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T21:01:32Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 45632,
-          "title": "Add update support for aws_rds_integration resource modification",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/45632",
-          "author_login": "sushan-suresh",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-22T21:01:18Z"
+          "merged_at": "2026-04-22T20:08:52Z"
         },
         {
           "provider": "hashicorp/awscc",
@@ -8974,18 +9086,6 @@
           "merged_at": "2026-04-22T20:00:34Z"
         },
         {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47561,
-          "title": "[New List Resource]: `aws_ebs_volume_attachment`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47561",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T17:59:23Z"
-        },
-        {
           "provider": "hashicorp/awscc",
           "repo": "hashicorp/terraform-provider-awscc",
           "number": 3125,
@@ -8998,30 +9098,6 @@
           "merged_at": "2026-04-22T17:13:05Z"
         },
         {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47557,
-          "title": "[New List Resource]: `aws_eip`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47557",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T18:54:51Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47091,
-          "title": "bugfix: r/ec2_eip: Handle UnsupportedOperation error in EIP domain name attribute lookup",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47091",
-          "author_login": "Sewci0",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T18:53:49Z"
-        },
-        {
           "provider": "hashicorp/awscc",
           "repo": "hashicorp/terraform-provider-awscc",
           "number": 3128,
@@ -9032,42 +9108,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-04-21T18:37:55Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47529,
-          "title": "New List Resource: `aws_internet_gateway`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47529",
-          "author_login": "taruntej-a",
-          "author_company": "@LiciousTech",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T16:20:32Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47551,
-          "title": "f/aws_ebs_volume: Add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47551",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T15:02:20Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47555,
-          "title": "Support S3 Inventory for directory buckets",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47555",
-          "author_login": "ewbankkit",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-21T14:24:12Z"
         },
         {
           "provider": "hashicorp/aws",
@@ -9144,18 +9184,6 @@
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
-          "number": 47478,
-          "title": "\ud83e\udd16\ud83e\udd16\ud83e\udd16 New data sources: `aws_ec2_service_link_virtual_interface`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47478",
-          "author_login": "micbegin",
-          "author_company": "@aws",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "cloud-vendor",
-          "merged_at": "2026-04-17T16:44:49Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
           "number": 46207,
           "title": "Peer cidr management",
           "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/46207",
@@ -9204,42 +9232,6 @@
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
-          "number": 47473,
-          "title": "Build with Go v1.26.2",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47473",
-          "author_login": "ewbankkit",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T13:22:54Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47489,
-          "title": "f/aws_sqs_queue_policy: Add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47489",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T12:36:07Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47467,
-          "title": "r/aws_iam_user_policy_attachment: add RI and List support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47467",
-          "author_login": "subham-ibmhc",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-16T12:35:55Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
           "number": 47443,
           "title": "[Enhancement] aws_imagebuilder_lifecycle_policy: Support wildcard for `resource_selection.recipe.semantic_version`",
           "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47443",
@@ -9252,50 +9244,14 @@
         {
           "provider": "hashicorp/aws",
           "repo": "hashicorp/terraform-provider-aws",
-          "number": 47484,
-          "title": "The last remnants of the CDKTF have been swept away",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47484",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T01:32:42Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47482,
-          "title": "Remove CDKTF documentation: part 4/6 (other)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47482",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T21:44:29Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47481,
-          "title": "Remove CDKTF documentation: part 3/6 (python resources)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47481",
-          "author_login": "YakDriver",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T21:43:58Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47472,
-          "title": "r/aws_apigatewayv2_api: add list support",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47472",
-          "author_login": "jar-b",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2026-04-15T20:31:39Z"
+          "number": 47273,
+          "title": "feat: add support for mq configuration deletion",
+          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47273",
+          "author_login": "stefanfreitag",
+          "author_company": "RWE Supply & Trading GmbH",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-15T20:31:11Z"
         },
         {
           "provider": "hashicorp/aws",
@@ -9308,18 +9264,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-04-15T20:26:53Z"
-        },
-        {
-          "provider": "hashicorp/aws",
-          "repo": "hashicorp/terraform-provider-aws",
-          "number": 47470,
-          "title": "Add CHANGELOG entry for v6.42.0",
-          "html_url": "https://github.com/hashicorp/terraform-provider-aws/pull/47470",
-          "author_login": "github-actions[bot]",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-04-15T19:11:03Z"
         },
         {
           "provider": "hashicorp/awscc",
@@ -11048,33 +10992,105 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-02-12T19:53:48Z"
-        },
-        {
-          "provider": "hashicorp/awscc",
-          "repo": "hashicorp/terraform-provider-awscc",
-          "number": 3010,
-          "title": "Add example for awscc_ec2_vpc_encryption_control",
-          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3010",
-          "author_login": "wellsiau-aws",
-          "author_company": "AWS",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-02-12T19:53:17Z"
-        },
-        {
-          "provider": "hashicorp/awscc",
-          "repo": "hashicorp/terraform-provider-awscc",
-          "number": 3009,
-          "title": "Add example for awscc_bedrockagentcore_workload_identity",
-          "html_url": "https://github.com/hashicorp/terraform-provider-awscc/pull/3009",
-          "author_login": "wellsiau-aws",
-          "author_company": "AWS",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-02-12T19:52:34Z"
         }
       ],
       "GCP": [
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12078,
+          "title": "Update composer v2 image version in tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12078",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T20:29:40Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27109,
+          "title": "Update composer v2 image version in tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27109",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T20:29:31Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12077,
+          "title": "firestore_index: Add support for search indexes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12077",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T19:18:24Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27108,
+          "title": "firestore_index: Add support for search indexes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27108",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T19:18:21Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12076,
+          "title": "Add resource manager tags to Image",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12076",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T18:54:43Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27107,
+          "title": "Add resource manager tags to Image",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27107",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T18:54:32Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12075,
+          "title": "Add ULL mirroring collector rule",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12075",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T17:36:24Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27106,
+          "title": "Add ULL mirroring collector rule",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27106",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T17:36:21Z"
+        },
         {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
@@ -12192,18 +12208,6 @@
           "merged_at": "2026-04-22T01:04:20Z"
         },
         {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27039,
-          "title": "Fix TestAccComputeRolloutPlan* tests",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27039",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T01:04:19Z"
-        },
-        {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12027,
@@ -12214,18 +12218,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-21T22:39:38Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27036,
-          "title": "Extended registry product struct to include REP Url & custom endpoint information & add custom endpoint fields based on registry",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27036",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T22:39:36Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12240,18 +12232,6 @@
           "merged_at": "2026-04-21T22:13:08Z"
         },
         {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27035,
-          "title": "Calculate mtls closer to universe domain",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27035",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T22:13:07Z"
-        },
-        {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12025,
@@ -12262,18 +12242,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-21T21:00:51Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27034,
-          "title": "feat: add erase_windows_vss_signature to compute instance",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27034",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T21:00:49Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12288,30 +12256,6 @@
           "merged_at": "2026-04-21T20:57:18Z"
         },
         {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27033,
-          "title": "feat(datastream): add deletion_policy to google_datastream_private_connection",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27033",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T20:57:16Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27032,
-          "title": "Fix Tag Key Import Issue from issue #20073",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27032",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T20:51:13Z"
-        },
-        {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12023,
@@ -12322,18 +12266,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-21T20:51:10Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27030,
-          "title": "Removed google_chronicle_feed note from 7.28",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27030",
-          "author_login": "melinath",
-          "author_company": "Google",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T19:13:02Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12348,18 +12280,6 @@
           "merged_at": "2026-04-21T19:04:33Z"
         },
         {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27031,
-          "title": "Add 7.29.0 changelog to main",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27031",
-          "author_login": "rileykarson",
-          "author_company": "@google",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T19:04:30Z"
-        },
-        {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12020,
@@ -12370,18 +12290,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-21T18:46:35Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 26988,
-          "title": "changelog - 7.29.0",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26988",
-          "author_login": "shuyama1",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T17:04:12Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12406,18 +12314,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-21T16:53:46Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27029,
-          "title": "feat(bigqueryconnection): add `configuration` block to `google_bigquery_connection`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27029",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-21T16:53:44Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12888,52 +12784,76 @@
           "merged_at": "2026-04-16T18:29:21Z"
         },
         {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11978,
-          "title": "Add support for dataproc cluster engine",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11978",
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26633,
+          "title": "Convert DCL resources to handwritten",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26633",
           "author_login": "modular-magician",
           "author_company": "",
           "author_association": "COLLABORATOR",
           "bucket": "internal",
-          "merged_at": "2026-04-16T18:05:36Z"
+          "merged_at": "2026-03-27T22:34:34Z"
         },
         {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11977,
-          "title": "`ephemeral`: ability to assert values + update ephemeral resource acctests",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11977",
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26632,
+          "title": "update golang.org/api to v0.273.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26632",
           "author_login": "modular-magician",
           "author_company": "",
           "author_association": "COLLABORATOR",
           "bucket": "internal",
-          "merged_at": "2026-04-16T17:25:12Z"
+          "merged_at": "2026-03-27T22:31:15Z"
         },
         {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11976,
-          "title": "Add Terraform support for Data table Row for v1 endpoint",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11976",
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26631,
+          "title": "Update Test Generation: Update example template",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26631",
           "author_login": "modular-magician",
           "author_company": "",
           "author_association": "COLLABORATOR",
           "bucket": "internal",
-          "merged_at": "2026-04-16T17:20:04Z"
+          "merged_at": "2026-03-27T22:03:37Z"
         },
         {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11975,
-          "title": "Fix Field-level blocker for field name for two resources.",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11975",
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26630,
+          "title": "auto fix compute test crash",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26630",
           "author_login": "modular-magician",
           "author_company": "",
           "author_association": "COLLABORATOR",
           "bucket": "internal",
-          "merged_at": "2026-04-16T16:43:01Z"
+          "merged_at": "2026-03-27T20:41:32Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26629,
+          "title": "Add license headers for yaml files",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26629",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T20:31:07Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 26626,
+          "title": "Add Transport Resource",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/26626",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-03-27T16:47:08Z"
         },
         {
           "provider": "hashicorp/google",

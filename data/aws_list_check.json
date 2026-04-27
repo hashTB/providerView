@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T08:56:34.023966",
+  "generated_at": "2026-04-27T20:57:02.352027",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "e48e60f83c2495531f59332309c5bf7ab52d5fb2"
+    "commit": "69e8d810d443c48cd2fea6c4757ddf23bacaec77"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -18,15 +18,15 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3056,
+    "stdout_line_count": 3064,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 6,
-        "implemented": 110,
-        "total": 1625
+        "implemented": 111,
+        "total": 1627
       },
-      "service_count": 237,
+      "service_count": 238,
       "services": [
         {
           "service": "accessanalyzer",
@@ -138,6 +138,12 @@
         },
         {
           "service": "arcregionswitch",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "arczonalshift",
           "percent": 0,
           "implemented": 0,
           "total": 1
@@ -1230,9 +1236,9 @@
         },
         {
           "service": "securityhub",
-          "percent": 0,
-          "implemented": 0,
-          "total": 15
+          "percent": 6,
+          "implemented": 1,
+          "total": 16
         },
         {
           "service": "securitylake",
@@ -1677,6 +1683,12 @@
         "arcregionswitch": {
           "all_resources": [
             "arcregionswitch/plan.go"
+          ],
+          "list_resources": []
+        },
+        "arczonalshift": {
+          "all_resources": [
+            "arczonalshift/autoshift_observer_notification_status.go"
           ],
           "list_resources": []
         },
@@ -3955,6 +3967,7 @@
         "securityhub": {
           "all_resources": [
             "securityhub/account.go",
+            "securityhub/account_v2.go",
             "securityhub/action_target.go",
             "securityhub/automation_rule.go",
             "securityhub/configuration_policy.go",
@@ -3970,7 +3983,9 @@
             "securityhub/standards_control_association.go",
             "securityhub/standards_subscription.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "securityhub/insight.go"
+          ]
         },
         "securitylake": {
           "all_resources": [
@@ -4409,11 +4424,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-23 08:56:33 UTC"
+      "last_updated": "2026-04-27 20:57:02 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 36,
+    "services_with_list": 37,
     "top_services": [
       {
         "service": "ec2",
@@ -4732,6 +4747,12 @@
       "arcregionswitch": {
         "all_resources": [
           "arcregionswitch/plan.go"
+        ],
+        "list_resources": []
+      },
+      "arczonalshift": {
+        "all_resources": [
+          "arczonalshift/autoshift_observer_notification_status.go"
         ],
         "list_resources": []
       },
@@ -7010,6 +7031,7 @@
       "securityhub": {
         "all_resources": [
           "securityhub/account.go",
+          "securityhub/account_v2.go",
           "securityhub/action_target.go",
           "securityhub/automation_rule.go",
           "securityhub/configuration_policy.go",
@@ -7025,7 +7047,9 @@
           "securityhub/standards_control_association.go",
           "securityhub/standards_subscription.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "securityhub/insight.go"
+        ]
       },
       "securitylake": {
         "all_resources": [
@@ -7468,8 +7492,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 112,
-    "script_implemented_list": 110,
-    "script_total_resources": 1625,
+    "script_implemented_list": 111,
+    "script_total_resources": 1627,
     "script_percent": 6
   }
 }
