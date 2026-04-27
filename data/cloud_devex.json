@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T20:57:42.706701",
+  "generated_at": "2026-04-27T22:50:38.270105",
   "families": {
     "Azure": {
       "count": 5,
@@ -10,10 +10,10 @@
       "sdk_v1_pct": 0.0,
       "archived_count": 1,
       "avg_repo_age_years": 6.21,
-      "pr_total": 218,
-      "pr_internal_pct": 44.5,
-      "pr_cloud_vendor_pct": 6.0,
-      "pr_community_pct": 49.5
+      "pr_total": 219,
+      "pr_internal_pct": 44.3,
+      "pr_cloud_vendor_pct": 5.9,
+      "pr_community_pct": 49.8
     },
     "AWS": {
       "count": 2,
@@ -60,10 +60,10 @@
       "source": "https://github.com/hashicorp/terraform-provider-azurerm",
       "repo": "hashicorp/terraform-provider-azurerm",
       "repo_created_at": "2017-06-05T20:53:54Z",
-      "repo_pushed_at": "2026-04-27T20:10:15Z",
+      "repo_pushed_at": "2026-04-27T22:08:39Z",
       "repo_archived": false,
       "repo_stars": 4930,
-      "repo_open_issues": 3831,
+      "repo_open_issues": 3833,
       "repo_age_years": 8.89,
       "pr_window_days": 180,
       "pr_merged_total": 75,
@@ -1302,19 +1302,29 @@
       "source": "https://github.com/hashicorp/terraform-provider-azuread",
       "repo": "hashicorp/terraform-provider-azuread",
       "repo_created_at": "2019-01-08T16:35:14Z",
-      "repo_pushed_at": "2026-04-16T11:39:51Z",
+      "repo_pushed_at": "2026-04-27T20:59:35Z",
       "repo_archived": false,
-      "repo_stars": 478,
-      "repo_open_issues": 368,
+      "repo_stars": 479,
+      "repo_open_issues": 367,
       "repo_age_years": 7.3,
       "pr_window_days": 180,
-      "pr_merged_total": 28,
+      "pr_merged_total": 29,
       "pr_internal": 20,
       "pr_cloud_vendor": 2,
-      "pr_community": 6,
+      "pr_community": 7,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 1861,
+          "title": "build(deps): bump CodelyTV/pr-size-labeler from 1.10.3 to 1.10.4",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1861",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T20:59:33Z"
+        },
         {
           "number": 1863,
           "title": "bugfix: user-agent version header says dev instead of actual provider version",
@@ -1614,7 +1624,7 @@
       "cohort_framework_only": true,
       "cohort_sdkv2_only": false,
       "cohort_mixed": false,
-      "downloads": 0,
+      "downloads": 955103,
       "source": "https://github.com/microsoft/terraform-provider-fabric",
       "repo": "microsoft/terraform-provider-fabric",
       "repo_created_at": "2023-11-20T17:35:32Z",
@@ -4291,7 +4301,7 @@
       "source": "https://github.com/hashicorp/terraform-provider-google",
       "repo": "hashicorp/terraform-provider-google",
       "repo_created_at": "2017-06-05T20:54:02Z",
-      "repo_pushed_at": "2026-04-27T20:29:30Z",
+      "repo_pushed_at": "2026-04-27T22:27:55Z",
       "repo_archived": false,
       "repo_stars": 2607,
       "repo_open_issues": 2412,
@@ -4304,6 +4314,26 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 27111,
+          "title": "universal deletion policy last sync",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27111",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T22:27:55Z"
+        },
+        {
+          "number": 27110,
+          "title": "Moved NewComputeClient -> compute.NewClient",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27110",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T21:45:38Z"
+        },
         {
           "number": 27109,
           "title": "Update composer v2 image version in tests",
@@ -5283,26 +5313,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-22T16:12:18Z"
-        },
-        {
-          "number": 27048,
-          "title": "feat: Add support for the emptyDir DISK medium for cloudrunv2 workerpool",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27048",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T15:41:17Z"
-        },
-        {
-          "number": 27040,
-          "title": "SuppressDiff when ALL_OBJECTS_ENCRYPTION_ENABLED state is used.",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27040",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T01:10:16Z"
         }
       ],
       "has_framework": true,
@@ -5327,7 +5337,7 @@
       "source": "https://github.com/hashicorp/terraform-provider-google-beta",
       "repo": "hashicorp/terraform-provider-google-beta",
       "repo_created_at": "2018-09-20T17:28:45Z",
-      "repo_pushed_at": "2026-04-27T20:29:40Z",
+      "repo_pushed_at": "2026-04-27T22:27:59Z",
       "repo_archived": false,
       "repo_stars": 308,
       "repo_open_issues": 4,
@@ -5340,6 +5350,26 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 12080,
+          "title": "universal deletion policy last sync",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12080",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T22:27:59Z"
+        },
+        {
+          "number": 12079,
+          "title": "Moved NewComputeClient -> compute.NewClient",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12079",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T21:45:46Z"
+        },
         {
           "number": 12078,
           "title": "Update composer v2 image version in tests",
@@ -6309,26 +6339,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-16T20:41:33Z"
-        },
-        {
-          "number": 11980,
-          "title": "Add firebasestorage default bucket",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11980",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T18:36:51Z"
-        },
-        {
-          "number": 11979,
-          "title": "feat(alloydb): Add trackClientAddress field to AlloyDB observability config",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11979",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T18:29:21Z"
         }
       ],
       "has_framework": true,
@@ -6354,10 +6364,10 @@
         {
           "provider": "hashicorp/azuread",
           "repo": "hashicorp/terraform-provider-azuread",
-          "total": 28,
+          "total": 29,
           "internal": 20,
           "cloud_vendor": 2,
-          "community": 6,
+          "community": 7,
           "status": "ok"
         },
         {
@@ -6431,6 +6441,18 @@
     },
     "merged_timeline": {
       "Azure": [
+        {
+          "provider": "hashicorp/azuread",
+          "repo": "hashicorp/terraform-provider-azuread",
+          "number": 1861,
+          "title": "build(deps): bump CodelyTV/pr-size-labeler from 1.10.3 to 1.10.4",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1861",
+          "author_login": "dependabot[bot]",
+          "author_company": "",
+          "author_association": "CONTRIBUTOR",
+          "bucket": "community",
+          "merged_at": "2026-04-27T20:59:33Z"
+        },
         {
           "provider": "hashicorp/azurerm",
           "repo": "hashicorp/terraform-provider-azurerm",
@@ -8818,18 +8840,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2025-11-20T17:58:10Z"
-        },
-        {
-          "provider": "hashicorp/azuread",
-          "repo": "hashicorp/terraform-provider-azuread",
-          "number": 1805,
-          "title": "update release notification channel",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azuread/pull/1805",
-          "author_login": "jackofallops",
-          "author_company": "@hashicorp",
-          "author_association": "MEMBER",
-          "bucket": "internal",
-          "merged_at": "2025-11-18T19:31:54Z"
         }
       ],
       "AWS": [
@@ -10998,6 +11008,54 @@
         {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12080,
+          "title": "universal deletion policy last sync",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12080",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T22:27:59Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27111,
+          "title": "universal deletion policy last sync",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27111",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T22:27:55Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 12079,
+          "title": "Moved NewComputeClient -> compute.NewClient",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12079",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T21:45:46Z"
+        },
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 27110,
+          "title": "Moved NewComputeClient -> compute.NewClient",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27110",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-04-27T21:45:38Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12078,
           "title": "Update composer v2 image version in tests",
           "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/12078",
@@ -12160,18 +12218,6 @@
           "merged_at": "2026-04-22T15:41:19Z"
         },
         {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27048,
-          "title": "feat: Add support for the emptyDir DISK medium for cloudrunv2 workerpool",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27048",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T15:41:17Z"
-        },
-        {
           "provider": "hashicorp/google-beta",
           "repo": "hashicorp/terraform-provider-google-beta",
           "number": 12029,
@@ -12182,18 +12228,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-22T01:10:24Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 27040,
-          "title": "SuppressDiff when ALL_OBJECTS_ENCRYPTION_ENABLED state is used.",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/27040",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-22T01:10:16Z"
         },
         {
           "provider": "hashicorp/google-beta",
@@ -12758,30 +12792,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-04-16T20:41:33Z"
-        },
-        {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11980,
-          "title": "Add firebasestorage default bucket",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11980",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T18:36:51Z"
-        },
-        {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 11979,
-          "title": "feat(alloydb): Add trackClientAddress field to AlloyDB observability config",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/11979",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-04-16T18:29:21Z"
         },
         {
           "provider": "hashicorp/google",
