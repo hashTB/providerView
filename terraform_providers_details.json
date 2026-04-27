@@ -81,7 +81,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:56.496862"
+    "docs_refreshed_at": "2026-04-27T22:51:12.180505"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -60838,7 +60838,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:48.429768"
+    "docs_refreshed_at": "2026-04-27T22:51:03.568323"
   },
   "Azure/azapi": {
     "docs": {
@@ -64444,7 +64444,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:48.828139"
+    "docs_refreshed_at": "2026-04-27T22:51:04.022710"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -65719,7 +65719,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:49.246055"
+    "docs_refreshed_at": "2026-04-27T22:51:04.446067"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -65774,6 +65774,11 @@
         {
           "title": "feature",
           "slug": "feature",
+          "subcategory": "System"
+        },
+        {
+          "title": "hardware_telemetry",
+          "slug": "hardware_telemetry",
           "subcategory": "System"
         },
         {
@@ -66008,6 +66013,11 @@
           "subcategory": "System"
         },
         {
+          "title": "hardware_telemetry",
+          "slug": "hardware_telemetry",
+          "subcategory": "System"
+        },
+        {
           "title": "hmm",
           "slug": "hmm",
           "subcategory": "Overlay"
@@ -66154,7 +66164,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:49.674483"
+    "docs_refreshed_at": "2026-04-27T22:51:04.860939"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66422,7 +66432,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:50.046942"
+    "docs_refreshed_at": "2026-04-27T22:51:05.260153"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66441,7 +66451,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:50.421125"
+    "docs_refreshed_at": "2026-04-27T22:51:05.659975"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66488,7 +66498,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:50.809827"
+    "docs_refreshed_at": "2026-04-27T22:51:06.053623"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66618,7 +66628,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:51.567038"
+    "docs_refreshed_at": "2026-04-27T22:51:06.883411"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67162,7 +67172,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:53.061712"
+    "docs_refreshed_at": "2026-04-27T22:51:08.503409"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70347,7 +70357,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:53.445199"
+    "docs_refreshed_at": "2026-04-27T22:51:08.937352"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71501,7 +71511,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:53.827922"
+    "docs_refreshed_at": "2026-04-27T22:51:09.367337"
   },
   "SAP/btp": {
     "docs": {
@@ -72216,7 +72226,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:54.204012"
+    "docs_refreshed_at": "2026-04-27T22:51:09.761227"
   },
   "SAP/scc": {
     "docs": {
@@ -72421,7 +72431,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:54.573323"
+    "docs_refreshed_at": "2026-04-27T22:51:10.175223"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72468,7 +72478,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:54.939293"
+    "docs_refreshed_at": "2026-04-27T22:51:10.580320"
   },
   "Sokren/aap": {
     "docs": {
@@ -72551,7 +72561,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:55.308959"
+    "docs_refreshed_at": "2026-04-27T22:51:10.970157"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -72601,7 +72611,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:55.679190"
+    "docs_refreshed_at": "2026-04-27T22:51:11.382989"
   },
   "adampie/ctf": {
     "docs": {
@@ -72648,7 +72658,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:56.058908"
+    "docs_refreshed_at": "2026-04-27T22:51:11.775519"
   },
   "ansible/ansible": {
     "docs": {
@@ -72696,7 +72706,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:56.882656"
+    "docs_refreshed_at": "2026-04-27T22:51:12.578179"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -72744,7 +72754,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:57.253129"
+    "docs_refreshed_at": "2026-04-27T22:51:12.980806"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -72770,7 +72780,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:57.628202"
+    "docs_refreshed_at": "2026-04-27T22:51:13.386896"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -72827,7 +72837,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:57.998696"
+    "docs_refreshed_at": "2026-04-27T22:51:13.814090"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -72846,7 +72856,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:58.744924"
+    "docs_refreshed_at": "2026-04-27T22:51:14.619316"
   },
   "cysp/braze": {
     "docs": {
@@ -72872,7 +72882,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:59.508928"
+    "docs_refreshed_at": "2026-04-27T22:51:15.415783"
   },
   "cysp/contentful": {
     "docs": {
@@ -73015,7 +73025,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:59.886414"
+    "docs_refreshed_at": "2026-04-27T22:51:15.831159"
   },
   "dbanck/concept": {
     "docs": {
@@ -73051,7 +73061,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:00.270560"
+    "docs_refreshed_at": "2026-04-27T22:51:16.223923"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74400,7 +74410,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:00.693233"
+    "docs_refreshed_at": "2026-04-27T22:51:16.671224"
   },
   "drewmullen/aap": {
     "docs": {
@@ -74508,7 +74518,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:01.065333"
+    "docs_refreshed_at": "2026-04-27T22:51:17.069494"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -74573,7 +74583,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:01.891237"
+    "docs_refreshed_at": "2026-04-27T22:51:17.882244"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -74676,7 +74686,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:02.270353"
+    "docs_refreshed_at": "2026-04-27T22:51:18.299098"
   },
   "hashicorp/local": {
     "docs": {
@@ -74738,7 +74748,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:03.034412"
+    "docs_refreshed_at": "2026-04-27T22:51:19.143197"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82409,7 +82419,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:03.880534"
+    "docs_refreshed_at": "2026-04-27T22:51:20.480533"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83222,7 +83232,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:04.268681"
+    "docs_refreshed_at": "2026-04-27T22:51:20.890291"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83360,7 +83370,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:05.394625"
+    "docs_refreshed_at": "2026-04-27T22:51:22.101916"
   },
   "magodo/restful": {
     "docs": {
@@ -83419,7 +83429,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:06.516219"
+    "docs_refreshed_at": "2026-04-27T22:51:23.332173"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83471,7 +83481,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:06.894557"
+    "docs_refreshed_at": "2026-04-27T22:51:23.740472"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -83613,7 +83623,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:07.639072"
+    "docs_refreshed_at": "2026-04-27T22:51:24.539200"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -83756,7 +83766,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:08.014995"
+    "docs_refreshed_at": "2026-04-27T22:51:24.943887"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -83803,7 +83813,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:08.382705"
+    "docs_refreshed_at": "2026-04-27T22:51:25.346040"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -85407,7 +85417,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:09.139895"
+    "docs_refreshed_at": "2026-04-27T22:51:26.157271"
   },
   "soffensive/soff": {
     "docs": {
@@ -85454,7 +85464,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:09.877026"
+    "docs_refreshed_at": "2026-04-27T22:51:26.972374"
   },
   "thrashr888/registry": {
     "docs": {
@@ -85542,7 +85552,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:10.613079"
+    "docs_refreshed_at": "2026-04-27T22:51:27.762926"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -85807,7 +85817,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:11.419834"
+    "docs_refreshed_at": "2026-04-27T22:51:28.562404"
   },
   "waldur/waldur": {
     "docs": {
@@ -86192,7 +86202,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:12.166773"
+    "docs_refreshed_at": "2026-04-27T22:51:29.358547"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -86445,7 +86455,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:51.936470"
+    "docs_refreshed_at": "2026-04-27T22:51:07.294113"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -86500,7 +86510,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:02.653560"
+    "docs_refreshed_at": "2026-04-27T22:51:18.740175"
   },
   "timofurrer/desec": {
     "docs": {
@@ -86659,7 +86669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:10.990214"
+    "docs_refreshed_at": "2026-04-27T22:51:28.161443"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -86742,7 +86752,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:11.795273"
+    "docs_refreshed_at": "2026-04-27T22:51:28.951908"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -89932,7 +89942,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:51.192821"
+    "docs_refreshed_at": "2026-04-27T22:51:06.482667"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90227,7 +90237,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:05.016649"
+    "docs_refreshed_at": "2026-04-27T22:51:21.695794"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90345,7 +90355,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:07.269488"
+    "docs_refreshed_at": "2026-04-27T22:51:24.140145"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -90515,7 +90525,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:52.309211"
+    "docs_refreshed_at": "2026-04-27T22:51:07.694546"
   },
   "branchgrove/debian": {
     "docs": {
@@ -90630,7 +90640,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:58.376283"
+    "docs_refreshed_at": "2026-04-27T22:51:14.223752"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -90974,6 +90984,11 @@
           "subcategory": ""
         },
         {
+          "title": "connector_sdk_package",
+          "slug": "connector_sdk_package",
+          "subcategory": ""
+        },
+        {
           "title": "destination",
           "slug": "destination",
           "subcategory": ""
@@ -91070,7 +91085,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:01.464516"
+    "docs_refreshed_at": "2026-04-27T22:51:17.478542"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -91605,7 +91620,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:03.435750"
+    "docs_refreshed_at": "2026-04-27T22:51:19.568174"
   },
   "juju/juju": {
     "docs": {
@@ -91840,7 +91855,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:04.639798"
+    "docs_refreshed_at": "2026-04-27T22:51:21.289700"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -91941,7 +91956,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:52.685657"
+    "docs_refreshed_at": "2026-04-27T22:51:08.093596"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92349,7 +92364,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:57:59.124718"
+    "docs_refreshed_at": "2026-04-27T22:51:15.023147"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -92472,7 +92487,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:05.773655"
+    "docs_refreshed_at": "2026-04-27T22:51:22.511730"
   },
   "radeksimko/test": {
     "docs": {
@@ -92519,7 +92534,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:08.758421"
+    "docs_refreshed_at": "2026-04-27T22:51:25.743828"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -92724,12 +92739,12 @@
         {
           "title": "swarm",
           "slug": "swarm",
-          "subcategory": ""
+          "subcategory": "Swarms"
         },
         {
           "title": "swarms",
           "slug": "swarms",
-          "subcategory": ""
+          "subcategory": "Swarms"
         },
         {
           "title": "tag",
@@ -92744,12 +92759,12 @@
         {
           "title": "terminal",
           "slug": "terminal",
-          "subcategory": ""
+          "subcategory": "Terminals"
         },
         {
           "title": "terminals",
           "slug": "terminals",
-          "subcategory": ""
+          "subcategory": "Terminals"
         },
         {
           "title": "user",
@@ -92784,7 +92799,7 @@
         {
           "title": "version",
           "slug": "version",
-          "subcategory": ""
+          "subcategory": "Configuration"
         }
       ],
       "overview": [
@@ -92878,7 +92893,7 @@
         {
           "title": "swarm",
           "slug": "swarm",
-          "subcategory": ""
+          "subcategory": "Swarms"
         },
         {
           "title": "tag",
@@ -92888,7 +92903,7 @@
         {
           "title": "terminal",
           "slug": "terminal",
-          "subcategory": ""
+          "subcategory": "Terminals"
         },
         {
           "title": "user",
@@ -92912,7 +92927,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:09.509486"
+    "docs_refreshed_at": "2026-04-27T22:51:26.562826"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93132,7 +93147,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:10.245345"
+    "docs_refreshed_at": "2026-04-27T22:51:27.372024"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -93305,6 +93320,418 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-23T08:58:06.145127"
+    "docs_refreshed_at": "2026-04-27T22:51:22.924941"
+  },
+  "hetznercloud/hcloud": {
+    "docs": {
+      "actions": [
+        {
+          "title": "server_poweroff",
+          "slug": "server_poweroff",
+          "subcategory": ""
+        },
+        {
+          "title": "server_poweron",
+          "slug": "server_poweron",
+          "subcategory": ""
+        },
+        {
+          "title": "server_reboot",
+          "slug": "server_reboot",
+          "subcategory": ""
+        },
+        {
+          "title": "server_reset",
+          "slug": "server_reset",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "certificate",
+          "slug": "certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "certificates",
+          "slug": "certificates",
+          "subcategory": ""
+        },
+        {
+          "title": "datacenter",
+          "slug": "datacenter",
+          "subcategory": ""
+        },
+        {
+          "title": "datacenters",
+          "slug": "datacenters",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall",
+          "slug": "firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "firewalls",
+          "slug": "firewalls",
+          "subcategory": ""
+        },
+        {
+          "title": "floating_ip",
+          "slug": "floating_ip",
+          "subcategory": ""
+        },
+        {
+          "title": "floating_ips",
+          "slug": "floating_ips",
+          "subcategory": ""
+        },
+        {
+          "title": "image",
+          "slug": "image",
+          "subcategory": ""
+        },
+        {
+          "title": "images",
+          "slug": "images",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer",
+          "slug": "load_balancer",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancers",
+          "slug": "load_balancers",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer_type",
+          "slug": "load_balancer_type",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer_types",
+          "slug": "load_balancer_types",
+          "subcategory": ""
+        },
+        {
+          "title": "location",
+          "slug": "location",
+          "subcategory": ""
+        },
+        {
+          "title": "locations",
+          "slug": "locations",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "networks",
+          "slug": "networks",
+          "subcategory": ""
+        },
+        {
+          "title": "placement_group",
+          "slug": "placement_group",
+          "subcategory": ""
+        },
+        {
+          "title": "placement_groups",
+          "slug": "placement_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "primary_ip",
+          "slug": "primary_ip",
+          "subcategory": ""
+        },
+        {
+          "title": "primary_ips",
+          "slug": "primary_ips",
+          "subcategory": ""
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": ""
+        },
+        {
+          "title": "servers",
+          "slug": "servers",
+          "subcategory": ""
+        },
+        {
+          "title": "server_type",
+          "slug": "server_type",
+          "subcategory": ""
+        },
+        {
+          "title": "server_types",
+          "slug": "server_types",
+          "subcategory": ""
+        },
+        {
+          "title": "ssh_key",
+          "slug": "ssh_key",
+          "subcategory": ""
+        },
+        {
+          "title": "ssh_keys",
+          "slug": "ssh_keys",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box",
+          "slug": "storage_box",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_boxes",
+          "slug": "storage_boxes",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_snapshot",
+          "slug": "storage_box_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_snapshots",
+          "slug": "storage_box_snapshots",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_subaccount",
+          "slug": "storage_box_subaccount",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_subaccounts",
+          "slug": "storage_box_subaccounts",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_type",
+          "slug": "storage_box_type",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_types",
+          "slug": "storage_box_types",
+          "subcategory": ""
+        },
+        {
+          "title": "volume",
+          "slug": "volume",
+          "subcategory": ""
+        },
+        {
+          "title": "volumes",
+          "slug": "volumes",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_rrset",
+          "slug": "zone_rrset",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_rrsets",
+          "slug": "zone_rrsets",
+          "subcategory": ""
+        },
+        {
+          "title": "zones",
+          "slug": "zones",
+          "subcategory": ""
+        }
+      ],
+      "functions": [
+        {
+          "title": "idna",
+          "slug": "idna",
+          "subcategory": ""
+        },
+        {
+          "title": "txt_record",
+          "slug": "txt_record",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Manage resources across multiple Hetzner projects",
+          "slug": "multiple-projects",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "certificate",
+          "slug": "certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall",
+          "slug": "firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_attachment",
+          "slug": "firewall_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "floating_ip",
+          "slug": "floating_ip",
+          "subcategory": ""
+        },
+        {
+          "title": "floating_ip_assignment",
+          "slug": "floating_ip_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer",
+          "slug": "load_balancer",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer_network",
+          "slug": "load_balancer_network",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer_service",
+          "slug": "load_balancer_service",
+          "subcategory": ""
+        },
+        {
+          "title": "load_balancer_target",
+          "slug": "load_balancer_target",
+          "subcategory": ""
+        },
+        {
+          "title": "managed_certificate",
+          "slug": "managed_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "network_route",
+          "slug": "network_route",
+          "subcategory": ""
+        },
+        {
+          "title": "network_subnet",
+          "slug": "network_subnet",
+          "subcategory": ""
+        },
+        {
+          "title": "placement_group",
+          "slug": "placement_group",
+          "subcategory": ""
+        },
+        {
+          "title": "primary_ip",
+          "slug": "primary_ip",
+          "subcategory": ""
+        },
+        {
+          "title": "rdns",
+          "slug": "rdns",
+          "subcategory": ""
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": ""
+        },
+        {
+          "title": "server_network",
+          "slug": "server_network",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "ssh_key",
+          "slug": "ssh_key",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box",
+          "slug": "storage_box",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_snapshot",
+          "slug": "storage_box_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "storage_box_subaccount",
+          "slug": "storage_box_subaccount",
+          "subcategory": ""
+        },
+        {
+          "title": "uploaded_certificate",
+          "slug": "uploaded_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "volume",
+          "slug": "volume",
+          "subcategory": ""
+        },
+        {
+          "title": "volume_attachment",
+          "slug": "volume_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_record",
+          "slug": "zone_record",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_rrset",
+          "slug": "zone_rrset",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-04-27T22:51:19.978580"
   }
 }
