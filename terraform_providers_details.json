@@ -3002,6 +3002,16 @@
           "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
+          "title": "securityhub_enabled_standards",
+          "slug": "securityhub_enabled_standards",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_security_controls",
+          "slug": "securityhub_security_controls",
+          "subcategory": "Security Hub"
+        },
+        {
           "title": "securityhub_standards_control_associations",
           "slug": "securityhub_standards_control_associations",
           "subcategory": "Security Hub"
@@ -3815,8 +3825,18 @@
           "subcategory": "Config"
         },
         {
+          "title": "db_subnet_group",
+          "slug": "db_subnet_group",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
           "title": "ec2_ebs_volume",
           "slug": "ec2_ebs_volume",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "ec2_network_insights_access_scope",
+          "slug": "ec2_network_insights_access_scope",
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
@@ -3868,6 +3888,11 @@
           "title": "glue_job",
           "slug": "glue_job",
           "subcategory": "Glue"
+        },
+        {
+          "title": "iam_group_policy_attachment",
+          "slug": "iam_group_policy_attachment",
+          "subcategory": "IAM (Identity & Access Management)"
         },
         {
           "title": "iam_policy",
@@ -3922,6 +3947,11 @@
         {
           "title": "lambda_capacity_provider",
           "slug": "lambda_capacity_provider",
+          "subcategory": "Lambda"
+        },
+        {
+          "title": "lambda_event_source_mapping",
+          "slug": "lambda_event_source_mapping",
           "subcategory": "Lambda"
         },
         {
@@ -4138,6 +4168,11 @@
           "title": "security_group",
           "slug": "security_group",
           "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "securityhub_insight",
+          "slug": "securityhub_insight",
+          "subcategory": "Security Hub"
         },
         {
           "title": "sns_topic",
@@ -4842,6 +4877,11 @@
           "title": "arcregionswitch_plan",
           "slug": "arcregionswitch_plan",
           "subcategory": "ARC (Application Recovery Controller) Region Switch"
+        },
+        {
+          "title": "arczonalshift_autoshift_observer_notification_status",
+          "slug": "arczonalshift_autoshift_observer_notification_status",
+          "subcategory": "ARC (Application Recovery Controller) Zonal Shift"
         },
         {
           "title": "athena_capacity_reservation",
@@ -6876,6 +6916,11 @@
         {
           "title": "ec2_managed_prefix_list_entry",
           "slug": "ec2_managed_prefix_list_entry",
+          "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
+          "title": "ec2_network_insights_access_scope",
+          "slug": "ec2_network_insights_access_scope",
           "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
@@ -10884,6 +10929,11 @@
           "subcategory": "Security Hub"
         },
         {
+          "title": "securityhub_account_v2",
+          "slug": "securityhub_account_v2",
+          "subcategory": "Security Hub"
+        },
+        {
           "title": "securityhub_action_target",
           "slug": "securityhub_action_target",
           "subcategory": "Security Hub"
@@ -12435,7 +12485,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:50.404612"
+    "docs_refreshed_at": "2026-04-30T09:17:25.490041"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14032,6 +14082,16 @@
           "subcategory": ""
         },
         {
+          "title": "chime_app_instance",
+          "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_app_instances",
+          "slug": "chime_app_instances",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -14509,6 +14569,16 @@
         {
           "title": "cloudwatch_metric_streams",
           "slug": "cloudwatch_metric_streams",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_otel_enrichment",
+          "slug": "cloudwatch_otel_enrichment",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_otel_enrichments",
+          "slug": "cloudwatch_otel_enrichments",
           "subcategory": ""
         },
         {
@@ -15549,6 +15619,16 @@
         {
           "title": "devopsagent_association",
           "slug": "devopsagent_association",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_private_connection",
+          "slug": "devopsagent_private_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_private_connections",
+          "slug": "devopsagent_private_connections",
           "subcategory": ""
         },
         {
@@ -19937,11 +20017,6 @@
           "subcategory": ""
         },
         {
-          "title": "mediaconnect_flow_vpc_interfaces",
-          "slug": "mediaconnect_flow_vpc_interfaces",
-          "subcategory": ""
-        },
-        {
           "title": "mediaconnect_gateway",
           "slug": "mediaconnect_gateway",
           "subcategory": ""
@@ -24142,6 +24217,11 @@
           "subcategory": ""
         },
         {
+          "title": "workspaces_connection_aliases",
+          "slug": "workspaces_connection_aliases",
+          "subcategory": ""
+        },
+        {
           "title": "workspacesinstances_volume",
           "slug": "workspacesinstances_volume",
           "subcategory": ""
@@ -24981,6 +25061,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_app_instance",
+          "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_collaboration",
           "slug": "cleanrooms_collaboration",
           "subcategory": ""
@@ -25193,6 +25278,11 @@
         {
           "title": "cloudwatch_metric_stream",
           "slug": "cloudwatch_metric_stream",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_otel_enrichment",
+          "slug": "cloudwatch_otel_enrichment",
           "subcategory": ""
         },
         {
@@ -25528,6 +25618,11 @@
         {
           "title": "devopsagent_agent_space",
           "slug": "devopsagent_agent_space",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_private_connection",
+          "slug": "devopsagent_private_connection",
           "subcategory": ""
         },
         {
@@ -27556,11 +27651,6 @@
           "subcategory": ""
         },
         {
-          "title": "mediaconnect_flow_vpc_interface",
-          "slug": "mediaconnect_flow_vpc_interface",
-          "subcategory": ""
-        },
-        {
           "title": "mediaconnect_gateway",
           "slug": "mediaconnect_gateway",
           "subcategory": ""
@@ -29331,6 +29421,11 @@
           "subcategory": ""
         },
         {
+          "title": "workspaces_connection_alias",
+          "slug": "workspaces_connection_alias",
+          "subcategory": ""
+        },
+        {
           "title": "workspacesinstances_volume",
           "slug": "workspacesinstances_volume",
           "subcategory": ""
@@ -30365,6 +30460,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_app_instance",
+          "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -30617,6 +30717,11 @@
         {
           "title": "cloudwatch_metric_stream",
           "slug": "cloudwatch_metric_stream",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_otel_enrichment",
+          "slug": "cloudwatch_otel_enrichment",
           "subcategory": ""
         },
         {
@@ -31317,6 +31422,11 @@
         {
           "title": "devopsagent_association",
           "slug": "devopsagent_association",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_private_connection",
+          "slug": "devopsagent_private_connection",
           "subcategory": ""
         },
         {
@@ -36176,7 +36286,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:50.980641"
+    "docs_refreshed_at": "2026-04-30T09:17:26.096118"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36610,7 +36720,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:51.377340"
+    "docs_refreshed_at": "2026-04-30T09:17:26.535539"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -44627,7 +44737,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:51.869177"
+    "docs_refreshed_at": "2026-04-30T09:17:27.048062"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -44976,7 +45086,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:52.261272"
+    "docs_refreshed_at": "2026-04-30T09:17:27.495246"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46244,6 +46354,11 @@
           "subcategory": "Cloud Data Fusion"
         },
         {
+          "title": "data_lineage_config",
+          "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
           "title": "dataplex_aspect_type_iam_policy",
           "slug": "dataplex_aspect_type_iam_policy",
           "subcategory": "Dataplex"
@@ -46822,6 +46937,11 @@
           "title": "netblock_ip_ranges",
           "slug": "netblock_ip_ranges",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "network_connectivity_hub_iam_policy",
+          "slug": "network_connectivity_hub_iam_policy",
+          "subcategory": "Network Connectivity"
         },
         {
           "title": "network_management_connectivity_test_run",
@@ -48128,6 +48248,11 @@
         {
           "title": "artifact_registry_repository_iam",
           "slug": "artifact_registry_repository_iam",
+          "subcategory": "Artifact Registry"
+        },
+        {
+          "title": "artifact_registry_rule",
+          "slug": "artifact_registry_rule",
           "subcategory": "Artifact Registry"
         },
         {
@@ -49791,6 +49916,11 @@
           "subcategory": "Cloud Data Fusion"
         },
         {
+          "title": "data_lineage_config",
+          "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
           "title": "data_loss_prevention_deidentify_template",
           "slug": "data_loss_prevention_deidentify_template",
           "subcategory": "Data Loss Prevention"
@@ -50316,6 +50446,11 @@
           "subcategory": "Document AI"
         },
         {
+          "title": "document_ai_schema",
+          "slug": "document_ai_schema",
+          "subcategory": "Document AI"
+        },
+        {
           "title": "document_ai_warehouse_document_schema",
           "slug": "document_ai_warehouse_document_schema",
           "subcategory": "Document AI Warehouse"
@@ -50554,6 +50689,11 @@
           "title": "firebase_project",
           "slug": "firebase_project",
           "subcategory": "Firebase"
+        },
+        {
+          "title": "firebase_remote_config_remote_config",
+          "slug": "firebase_remote_config_remote_config",
+          "subcategory": "Firebase Remote Config"
         },
         {
           "title": "firebaserules_release",
@@ -51598,6 +51738,11 @@
         {
           "title": "network_connectivity_hub",
           "slug": "network_connectivity_hub",
+          "subcategory": "Network Connectivity"
+        },
+        {
+          "title": "network_connectivity_hub_iam",
+          "slug": "network_connectivity_hub_iam",
           "subcategory": "Network Connectivity"
         },
         {
@@ -53017,7 +53162,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:52.783148"
+    "docs_refreshed_at": "2026-04-30T09:17:28.046397"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54018,6 +54163,11 @@
           "subcategory": "Cloud Data Fusion"
         },
         {
+          "title": "data_lineage_config",
+          "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
           "title": "dataplex_aspect_type_iam_policy",
           "slug": "dataplex_aspect_type_iam_policy",
           "subcategory": "Dataplex"
@@ -54596,6 +54746,11 @@
           "title": "netblock_ip_ranges",
           "slug": "netblock_ip_ranges",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "network_connectivity_hub_iam_policy",
+          "slug": "network_connectivity_hub_iam_policy",
+          "subcategory": "Network Connectivity"
         },
         {
           "title": "network_management_connectivity_test_run",
@@ -55902,6 +56057,11 @@
         {
           "title": "artifact_registry_repository_iam",
           "slug": "artifact_registry_repository_iam",
+          "subcategory": "Artifact Registry"
+        },
+        {
+          "title": "artifact_registry_rule",
+          "slug": "artifact_registry_rule",
           "subcategory": "Artifact Registry"
         },
         {
@@ -57565,6 +57725,11 @@
           "subcategory": "Cloud Data Fusion"
         },
         {
+          "title": "data_lineage_config",
+          "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
           "title": "data_loss_prevention_deidentify_template",
           "slug": "data_loss_prevention_deidentify_template",
           "subcategory": "Data Loss Prevention"
@@ -58090,6 +58255,11 @@
           "subcategory": "Document AI"
         },
         {
+          "title": "document_ai_schema",
+          "slug": "document_ai_schema",
+          "subcategory": "Document AI"
+        },
+        {
           "title": "document_ai_warehouse_document_schema",
           "slug": "document_ai_warehouse_document_schema",
           "subcategory": "Document AI Warehouse"
@@ -58328,6 +58498,11 @@
           "title": "firebase_project",
           "slug": "firebase_project",
           "subcategory": "Firebase"
+        },
+        {
+          "title": "firebase_remote_config_remote_config",
+          "slug": "firebase_remote_config_remote_config",
+          "subcategory": "Firebase Remote Config"
         },
         {
           "title": "firebaserules_release",
@@ -59372,6 +59547,11 @@
         {
           "title": "network_connectivity_hub",
           "slug": "network_connectivity_hub",
+          "subcategory": "Network Connectivity"
+        },
+        {
+          "title": "network_connectivity_hub_iam",
+          "slug": "network_connectivity_hub_iam",
           "subcategory": "Network Connectivity"
         },
         {
@@ -60791,7 +60971,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-27T22:48:53.316452"
+    "docs_refreshed_at": "2026-04-30T09:17:28.577386"
   },
   "4ek0/neko": {
     "docs": {

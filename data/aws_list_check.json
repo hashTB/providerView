@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T22:49:44.626273",
+  "generated_at": "2026-04-30T09:18:21.733533",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "69e8d810d443c48cd2fea6c4757ddf23bacaec77"
+    "commit": "5819fc59a735cbc5e6e5f540590461c7473f5beb"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 112
+    "list_resources": 117
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3064,
+    "stdout_line_count": 3065,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 6,
-        "implemented": 111,
-        "total": 1627
+        "percent": 7,
+        "implemented": 115,
+        "total": 1628
       },
       "service_count": 238,
       "services": [
@@ -540,9 +540,9 @@
         },
         {
           "service": "ec2",
-          "percent": 10,
-          "implemented": 17,
-          "total": 156
+          "percent": 11,
+          "implemented": 18,
+          "total": 157
         },
         {
           "service": "ecr",
@@ -708,8 +708,8 @@
         },
         {
           "service": "iam",
-          "percent": 17,
-          "implemented": 6,
+          "percent": 20,
+          "implemented": 7,
           "total": 35
         },
         {
@@ -828,8 +828,8 @@
         },
         {
           "service": "lambda",
-          "percent": 28,
-          "implemented": 4,
+          "percent": 35,
+          "implemented": 5,
           "total": 14
         },
         {
@@ -1074,8 +1074,8 @@
         },
         {
           "service": "rds",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 3,
+          "implemented": 1,
           "total": 29
         },
         {
@@ -2481,6 +2481,7 @@
             "ec2/vpc_network_acl.go",
             "ec2/vpc_network_acl_association.go",
             "ec2/vpc_network_acl_rule.go",
+            "ec2/vpc_network_insights_access_scope.go",
             "ec2/vpc_network_insights_analysis.go",
             "ec2/vpc_network_insights_path.go",
             "ec2/vpc_network_interface.go",
@@ -2535,6 +2536,7 @@
             "ec2/vpc_endpoint.go",
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
+            "ec2/vpc_network_insights_access_scope.go",
             "ec2/vpc_route.go",
             "ec2/vpc_route_table.go",
             "ec2/vpc_route_table_association.go",
@@ -2913,6 +2915,7 @@
             "iam/virtual_mfa_device.go"
           ],
           "list_resources": [
+            "iam/group_policy_attachment.go",
             "iam/policy.go",
             "iam/role.go",
             "iam/role_policy.go",
@@ -3133,6 +3136,7 @@
           ],
           "list_resources": [
             "lambda/capacity_provider.go",
+            "lambda/event_source_mapping.go",
             "lambda/function.go",
             "lambda/layer_version.go",
             "lambda/permission.go"
@@ -3613,7 +3617,9 @@
             "rds/snapshot_copy.go",
             "rds/subnet_group.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "rds/subnet_group.go"
+          ]
         },
         "redshift": {
           "all_resources": [
@@ -4424,17 +4430,17 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-27 22:49:44 UTC"
+      "last_updated": "2026-04-30 09:18:21 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 37,
+    "services_with_list": 38,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 10,
-        "implemented": 17,
-        "total": 156
+        "percent": 11,
+        "implemented": 18,
+        "total": 157
       },
       {
         "service": "s3",
@@ -4443,22 +4449,28 @@
         "total": 26
       },
       {
+        "service": "iam",
+        "percent": 20,
+        "implemented": 7,
+        "total": 35
+      },
+      {
         "service": "apigateway",
         "percent": 23,
         "implemented": 6,
         "total": 26
       },
       {
-        "service": "iam",
-        "percent": 17,
-        "implemented": 6,
-        "total": 35
-      },
-      {
         "service": "s3files",
         "percent": 100,
         "implemented": 5,
         "total": 5
+      },
+      {
+        "service": "lambda",
+        "percent": 35,
+        "implemented": 5,
+        "total": 14
       },
       {
         "service": "workmail",
@@ -4477,12 +4489,6 @@
         "percent": 33,
         "implemented": 4,
         "total": 12
-      },
-      {
-        "service": "lambda",
-        "percent": 28,
-        "implemented": 4,
-        "total": 14
       },
       {
         "service": "sns",
@@ -5545,6 +5551,7 @@
           "ec2/vpc_network_acl.go",
           "ec2/vpc_network_acl_association.go",
           "ec2/vpc_network_acl_rule.go",
+          "ec2/vpc_network_insights_access_scope.go",
           "ec2/vpc_network_insights_analysis.go",
           "ec2/vpc_network_insights_path.go",
           "ec2/vpc_network_interface.go",
@@ -5599,6 +5606,7 @@
           "ec2/vpc_endpoint.go",
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
+          "ec2/vpc_network_insights_access_scope.go",
           "ec2/vpc_route.go",
           "ec2/vpc_route_table.go",
           "ec2/vpc_route_table_association.go",
@@ -5977,6 +5985,7 @@
           "iam/virtual_mfa_device.go"
         ],
         "list_resources": [
+          "iam/group_policy_attachment.go",
           "iam/policy.go",
           "iam/role.go",
           "iam/role_policy.go",
@@ -6197,6 +6206,7 @@
         ],
         "list_resources": [
           "lambda/capacity_provider.go",
+          "lambda/event_source_mapping.go",
           "lambda/function.go",
           "lambda/layer_version.go",
           "lambda/permission.go"
@@ -6677,7 +6687,9 @@
           "rds/snapshot_copy.go",
           "rds/subnet_group.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "rds/subnet_group.go"
+        ]
       },
       "redshift": {
         "all_resources": [
@@ -7491,9 +7503,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 112,
-    "script_implemented_list": 111,
-    "script_total_resources": 1627,
-    "script_percent": 6
+    "dashboard_list_resources": 117,
+    "script_implemented_list": 115,
+    "script_total_resources": 1628,
+    "script_percent": 7
   }
 }
