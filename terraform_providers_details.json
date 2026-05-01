@@ -12490,7 +12490,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:25.490041"
+    "docs_refreshed_at": "2026-05-01T09:20:08.588458"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -36291,7 +36291,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:26.096118"
+    "docs_refreshed_at": "2026-05-01T09:20:09.093638"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36725,7 +36725,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:26.535539"
+    "docs_refreshed_at": "2026-05-01T09:20:09.450480"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -37041,6 +37041,11 @@
         {
           "title": "cdn_frontdoor_secret",
           "slug": "cdn_frontdoor_secret",
+          "subcategory": "CDN"
+        },
+        {
+          "title": "cdn_frontdoor_security_policy",
+          "slug": "cdn_frontdoor_security_policy",
           "subcategory": "CDN"
         },
         {
@@ -39005,6 +39010,11 @@
           "title": "service_plan",
           "slug": "service_plan",
           "subcategory": "App Service (Web Apps)"
+        },
+        {
+          "title": "signalr_service",
+          "slug": "signalr_service",
+          "subcategory": "Messaging"
         },
         {
           "title": "storage_account",
@@ -44742,7 +44752,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:27.048062"
+    "docs_refreshed_at": "2026-05-01T09:20:09.857520"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45091,7 +45101,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:27.495246"
+    "docs_refreshed_at": "2026-05-01T09:20:10.204604"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53167,7 +53177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:28.046397"
+    "docs_refreshed_at": "2026-05-01T09:20:10.650592"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -60976,7 +60986,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:17:28.577386"
+    "docs_refreshed_at": "2026-05-01T09:20:11.085936"
   },
   "4ek0/neko": {
     "docs": {

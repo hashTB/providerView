@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T09:18:21.733533",
+  "generated_at": "2026-05-01T09:21:04.015824",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "5819fc59a735cbc5e6e5f540590461c7473f5beb"
+    "commit": "2e4ea86cff7c96534d6bcb58ca14d832bb5cd0c7"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -23,7 +23,7 @@
     "parsed": {
       "overall": {
         "percent": 7,
-        "implemented": 115,
+        "implemented": 116,
         "total": 1628
       },
       "service_count": 238,
@@ -1236,8 +1236,8 @@
         },
         {
           "service": "securityhub",
-          "percent": 6,
-          "implemented": 1,
+          "percent": 12,
+          "implemented": 2,
           "total": 16
         },
         {
@@ -3990,7 +3990,8 @@
             "securityhub/standards_subscription.go"
           ],
           "list_resources": [
-            "securityhub/insight.go"
+            "securityhub/insight.go",
+            "securityhub/standards_control.go"
           ]
         },
         "securitylake": {
@@ -4430,7 +4431,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-04-30 09:18:21 UTC"
+      "last_updated": "2026-05-01 09:21:03 UTC"
     }
   },
   "service_coverage": {
@@ -7060,7 +7061,8 @@
           "securityhub/standards_subscription.go"
         ],
         "list_resources": [
-          "securityhub/insight.go"
+          "securityhub/insight.go",
+          "securityhub/standards_control.go"
         ]
       },
       "securitylake": {
@@ -7504,7 +7506,7 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 117,
-    "script_implemented_list": 115,
+    "script_implemented_list": 116,
     "script_total_resources": 1628,
     "script_percent": 7
   }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-30T09:18:25.479359",
+  "generated_at": "2026-05-01T09:21:07.669199",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "162b320031844984fd83afa5324cfa72a8c574a7"
+    "commit": "32404113e51f7bb6eed336e4446ac21fcf0aa7e7"
   },
   "registration_file": {
     "path": "google/fwprovider/framework_provider_mmv1_resources.go",
