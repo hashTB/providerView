@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:49.376145"
+    "docs_refreshed_at": "2026-05-01T09:22:16.585907"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -61033,7 +61033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:39.703906"
+    "docs_refreshed_at": "2026-05-01T09:22:08.016290"
   },
   "Azure/azapi": {
     "docs": {
@@ -64639,7 +64639,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:40.273917"
+    "docs_refreshed_at": "2026-05-01T09:22:08.450189"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -65914,7 +65914,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:40.775418"
+    "docs_refreshed_at": "2026-05-01T09:22:08.869278"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -66359,7 +66359,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:41.248231"
+    "docs_refreshed_at": "2026-05-01T09:22:09.294766"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66627,7 +66627,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:41.747612"
+    "docs_refreshed_at": "2026-05-01T09:22:09.697798"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66646,7 +66646,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:42.181056"
+    "docs_refreshed_at": "2026-05-01T09:22:10.095366"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66693,7 +66693,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:42.614384"
+    "docs_refreshed_at": "2026-05-01T09:22:10.487945"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66823,7 +66823,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:43.557642"
+    "docs_refreshed_at": "2026-05-01T09:22:11.324080"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67367,7 +67367,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:45.397863"
+    "docs_refreshed_at": "2026-05-01T09:22:12.915027"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70552,7 +70552,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:45.874831"
+    "docs_refreshed_at": "2026-05-01T09:22:13.362997"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71831,7 +71831,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:46.337969"
+    "docs_refreshed_at": "2026-05-01T09:22:13.785165"
   },
   "SAP/btp": {
     "docs": {
@@ -72553,7 +72553,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:46.780500"
+    "docs_refreshed_at": "2026-05-01T09:22:14.195136"
   },
   "SAP/scc": {
     "docs": {
@@ -72758,7 +72758,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:47.216568"
+    "docs_refreshed_at": "2026-05-01T09:22:14.596338"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72805,7 +72805,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:47.648405"
+    "docs_refreshed_at": "2026-05-01T09:22:14.996944"
   },
   "Sokren/aap": {
     "docs": {
@@ -72888,7 +72888,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:48.080924"
+    "docs_refreshed_at": "2026-05-01T09:22:15.401382"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -72938,7 +72938,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:48.514463"
+    "docs_refreshed_at": "2026-05-01T09:22:15.796531"
   },
   "adampie/ctf": {
     "docs": {
@@ -72985,7 +72985,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:48.942697"
+    "docs_refreshed_at": "2026-05-01T09:22:16.190584"
   },
   "ansible/ansible": {
     "docs": {
@@ -73033,7 +73033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:49.808274"
+    "docs_refreshed_at": "2026-05-01T09:22:16.986829"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -73081,7 +73081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:50.238591"
+    "docs_refreshed_at": "2026-05-01T09:22:17.404362"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -73107,7 +73107,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:50.670951"
+    "docs_refreshed_at": "2026-05-01T09:22:17.795883"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -73164,7 +73164,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:51.106102"
+    "docs_refreshed_at": "2026-05-01T09:22:18.189106"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -73183,7 +73183,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:51.974087"
+    "docs_refreshed_at": "2026-05-01T09:22:18.983051"
   },
   "cysp/braze": {
     "docs": {
@@ -73209,7 +73209,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:52.836196"
+    "docs_refreshed_at": "2026-05-01T09:22:19.820200"
   },
   "cysp/contentful": {
     "docs": {
@@ -73352,7 +73352,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:53.268296"
+    "docs_refreshed_at": "2026-05-01T09:22:20.248165"
   },
   "dbanck/concept": {
     "docs": {
@@ -73388,7 +73388,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:53.746717"
+    "docs_refreshed_at": "2026-05-01T09:22:20.637002"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74737,7 +74737,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:54.223197"
+    "docs_refreshed_at": "2026-05-01T09:22:21.069305"
   },
   "drewmullen/aap": {
     "docs": {
@@ -74845,7 +74845,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:54.654400"
+    "docs_refreshed_at": "2026-05-01T09:22:21.467922"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -74910,7 +74910,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:55.568760"
+    "docs_refreshed_at": "2026-05-01T09:22:22.343983"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -75013,7 +75013,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:56.002597"
+    "docs_refreshed_at": "2026-05-01T09:22:22.757835"
   },
   "hashicorp/local": {
     "docs": {
@@ -75075,7 +75075,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:56.871514"
+    "docs_refreshed_at": "2026-05-01T09:22:23.553565"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82746,7 +82746,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:58.794073"
+    "docs_refreshed_at": "2026-05-01T09:22:25.321519"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83559,7 +83559,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:59.231779"
+    "docs_refreshed_at": "2026-05-01T09:22:25.731948"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83697,7 +83697,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:00.559240"
+    "docs_refreshed_at": "2026-05-01T09:22:26.937288"
   },
   "magodo/restful": {
     "docs": {
@@ -83756,7 +83756,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:02.523720"
+    "docs_refreshed_at": "2026-05-01T09:22:28.131338"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83808,7 +83808,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:02.970811"
+    "docs_refreshed_at": "2026-05-01T09:22:28.532223"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -83950,7 +83950,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:03.836835"
+    "docs_refreshed_at": "2026-05-01T09:22:29.334587"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -84093,7 +84093,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:04.382106"
+    "docs_refreshed_at": "2026-05-01T09:22:29.724792"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -84140,7 +84140,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:04.840151"
+    "docs_refreshed_at": "2026-05-01T09:22:30.116258"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -85756,7 +85756,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:06.547634"
+    "docs_refreshed_at": "2026-05-01T09:22:32.277127"
   },
   "soffensive/soff": {
     "docs": {
@@ -85803,7 +85803,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:07.428069"
+    "docs_refreshed_at": "2026-05-01T09:22:33.070480"
   },
   "thrashr888/registry": {
     "docs": {
@@ -85891,7 +85891,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:08.313262"
+    "docs_refreshed_at": "2026-05-01T09:22:33.856686"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -86156,7 +86156,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:09.182697"
+    "docs_refreshed_at": "2026-05-01T09:22:34.643294"
   },
   "waldur/waldur": {
     "docs": {
@@ -86541,7 +86541,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:10.067101"
+    "docs_refreshed_at": "2026-05-01T09:22:35.439724"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -86804,7 +86804,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:43.990229"
+    "docs_refreshed_at": "2026-05-01T09:22:11.718121"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -86859,7 +86859,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:56.436671"
+    "docs_refreshed_at": "2026-05-01T09:22:23.161157"
   },
   "timofurrer/desec": {
     "docs": {
@@ -87018,7 +87018,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:08.751033"
+    "docs_refreshed_at": "2026-05-01T09:22:34.253712"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -87101,7 +87101,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:09.624097"
+    "docs_refreshed_at": "2026-05-01T09:22:35.037571"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -90291,7 +90291,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:43.130408"
+    "docs_refreshed_at": "2026-05-01T09:22:10.936941"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90586,7 +90586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:00.122954"
+    "docs_refreshed_at": "2026-05-01T09:22:26.526426"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90704,7 +90704,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:03.403779"
+    "docs_refreshed_at": "2026-05-01T09:22:28.932513"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -90874,7 +90874,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:44.529063"
+    "docs_refreshed_at": "2026-05-01T09:22:12.110658"
   },
   "branchgrove/debian": {
     "docs": {
@@ -90989,7 +90989,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:51.544054"
+    "docs_refreshed_at": "2026-05-01T09:22:18.586222"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -91434,7 +91434,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:55.139867"
+    "docs_refreshed_at": "2026-05-01T09:22:21.868863"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -91969,7 +91969,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:57.375117"
+    "docs_refreshed_at": "2026-05-01T09:22:24.017030"
   },
   "juju/juju": {
     "docs": {
@@ -92204,7 +92204,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:59.672963"
+    "docs_refreshed_at": "2026-05-01T09:22:26.131392"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -92305,7 +92305,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:44.963091"
+    "docs_refreshed_at": "2026-05-01T09:22:12.512660"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92713,7 +92713,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:52.406929"
+    "docs_refreshed_at": "2026-05-01T09:22:19.407883"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -92836,7 +92836,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:01.043060"
+    "docs_refreshed_at": "2026-05-01T09:22:27.337571"
   },
   "radeksimko/test": {
     "docs": {
@@ -92883,7 +92883,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:06.082224"
+    "docs_refreshed_at": "2026-05-01T09:22:31.061721"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -93276,7 +93276,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:06.993776"
+    "docs_refreshed_at": "2026-05-01T09:22:32.669863"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93496,7 +93496,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:07.869964"
+    "docs_refreshed_at": "2026-05-01T09:22:33.462743"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -93669,7 +93669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:01.513665"
+    "docs_refreshed_at": "2026-05-01T09:22:27.733228"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -94081,7 +94081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:57.810896"
+    "docs_refreshed_at": "2026-05-01T09:22:24.446980"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -94550,7 +94550,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:19:58.245811"
+    "docs_refreshed_at": "2026-05-01T09:22:24.848544"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -106516,6 +106516,911 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-04-30T09:20:05.606748"
+    "docs_refreshed_at": "2026-05-01T09:22:30.661997"
+  },
+  "rubrikinc/polaris": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "account",
+          "slug": "account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account",
+          "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_archival_location",
+          "slug": "aws_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_artifacts",
+          "slug": "aws_cnp_artifacts",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_permissions",
+          "slug": "aws_cnp_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_archival_location",
+          "slug": "azure_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_permissions",
+          "slug": "azure_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_subscription",
+          "slug": "azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_archival_location",
+          "slug": "data_center_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_aws_account",
+          "slug": "data_center_aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_azure_subscription",
+          "slug": "data_center_azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "deployment",
+          "slug": "deployment",
+          "subcategory": ""
+        },
+        {
+          "title": "feature_flag",
+          "slug": "feature_flag",
+          "subcategory": ""
+        },
+        {
+          "title": "features",
+          "slug": "features",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_archival_location",
+          "slug": "gcp_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_permissions",
+          "slug": "gcp_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_project",
+          "slug": "gcp_project",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_provider",
+          "slug": "identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "ncd_archival_location",
+          "slug": "ncd_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "object",
+          "slug": "object",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "role_template",
+          "slug": "role_template",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain",
+          "slug": "sla_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_source_cluster",
+          "slug": "sla_source_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "tag_rule",
+          "slug": "tag_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "AWS CNP Account",
+          "slug": "aws_cnp_account",
+          "subcategory": ""
+        },
+        {
+          "title": "AWS Cross Account Role",
+          "slug": "aws_cross_account_role",
+          "subcategory": ""
+        },
+        {
+          "title": "Changelog",
+          "slug": "changelog",
+          "subcategory": ""
+        },
+        {
+          "title": "Manage Permissions",
+          "slug": "permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: beta release",
+          "slug": "upgrade_guide_beta",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.3.0",
+          "slug": "upgrade_guide_v0.3.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.6.0",
+          "slug": "upgrade_guide_v0.6.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.9.0",
+          "slug": "upgrade_guide_v0.9.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.0.0",
+          "slug": "upgrade_guide_v1.0.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.1.0",
+          "slug": "upgrade_guide_v1.1.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.2.0",
+          "slug": "upgrade_guide_v1.2.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.3.0",
+          "slug": "upgrade_guide_v1.3.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.5.0",
+          "slug": "upgrade_guide_v1.5.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.0",
+          "slug": "upgrade_guide_v1.6.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.2",
+          "slug": "upgrade_guide_v1.6.2",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.3",
+          "slug": "upgrade_guide_v1.6.3",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.7.0",
+          "slug": "upgrade_guide_v1.7.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Users and Roles",
+          "slug": "users_and_roles",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "custom_role",
+          "slug": "custom_role",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "aws_account",
+          "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_archival_location",
+          "slug": "aws_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cloud_cluster",
+          "slug": "aws_cloud_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account",
+          "slug": "aws_cnp_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account_attachments",
+          "slug": "aws_cnp_account_attachments",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account_trust_policy",
+          "slug": "aws_cnp_account_trust_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_custom_tags",
+          "slug": "aws_custom_tags",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_exocompute",
+          "slug": "aws_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_exocompute_cluster_attachment",
+          "slug": "aws_exocompute_cluster_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_private_container_registry",
+          "slug": "aws_private_container_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_archival_location",
+          "slug": "azure_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_cloud_cluster",
+          "slug": "azure_cloud_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_custom_tags",
+          "slug": "azure_custom_tags",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_exocompute",
+          "slug": "azure_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_exocompute_cluster_attachment",
+          "slug": "azure_exocompute_cluster_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_private_container_registry",
+          "slug": "azure_private_container_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_service_principal",
+          "slug": "azure_service_principal",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_subscription",
+          "slug": "azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap",
+          "slug": "cdm_bootstrap",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap_cces_aws",
+          "slug": "cdm_bootstrap_cces_aws",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap_cces_azure",
+          "slug": "cdm_bootstrap_cces_azure",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_registration",
+          "slug": "cdm_registration",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_role",
+          "slug": "custom_role",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_archival_location_amazon_s3",
+          "slug": "data_center_archival_location_amazon_s3",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_aws_account",
+          "slug": "data_center_aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_azure_subscription",
+          "slug": "data_center_azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_archival_location",
+          "slug": "gcp_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_custom_labels",
+          "slug": "gcp_custom_labels",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_exocompute",
+          "slug": "gcp_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_project",
+          "slug": "gcp_project",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_service_account",
+          "slug": "gcp_service_account",
+          "subcategory": ""
+        },
+        {
+          "title": "refresh",
+          "slug": "refresh",
+          "subcategory": ""
+        },
+        {
+          "title": "role_assignment",
+          "slug": "role_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain",
+          "slug": "sla_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain_assignment",
+          "slug": "sla_domain_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "tag_rule",
+          "slug": "tag_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-01T09:22:31.463491"
+  },
+  "rubrikinc/rubrik": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "account",
+          "slug": "account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account",
+          "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_archival_location",
+          "slug": "aws_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_artifacts",
+          "slug": "aws_cnp_artifacts",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_permissions",
+          "slug": "aws_cnp_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_archival_location",
+          "slug": "azure_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_permissions",
+          "slug": "azure_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_subscription",
+          "slug": "azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_archival_location",
+          "slug": "data_center_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_aws_account",
+          "slug": "data_center_aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_azure_subscription",
+          "slug": "data_center_azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "deployment",
+          "slug": "deployment",
+          "subcategory": ""
+        },
+        {
+          "title": "feature_flag",
+          "slug": "feature_flag",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_archival_location",
+          "slug": "gcp_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_permissions",
+          "slug": "gcp_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_project",
+          "slug": "gcp_project",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_provider",
+          "slug": "identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "ncd_archival_location",
+          "slug": "ncd_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "object",
+          "slug": "object",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "role_template",
+          "slug": "role_template",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain",
+          "slug": "sla_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_source_cluster",
+          "slug": "sla_source_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "tag_rule",
+          "slug": "tag_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "AWS CNP Account",
+          "slug": "aws_cnp_account",
+          "subcategory": ""
+        },
+        {
+          "title": "AWS Cross Account Role",
+          "slug": "aws_cross_account_role",
+          "subcategory": ""
+        },
+        {
+          "title": "Changelog",
+          "slug": "changelog",
+          "subcategory": ""
+        },
+        {
+          "title": "Manage Permissions",
+          "slug": "permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: beta release",
+          "slug": "upgrade_guide_beta",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.3.0",
+          "slug": "upgrade_guide_v0.3.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.6.0",
+          "slug": "upgrade_guide_v0.6.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v0.9.0",
+          "slug": "upgrade_guide_v0.9.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.0.0",
+          "slug": "upgrade_guide_v1.0.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.1.0",
+          "slug": "upgrade_guide_v1.1.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.2.0",
+          "slug": "upgrade_guide_v1.2.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.3.0",
+          "slug": "upgrade_guide_v1.3.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.5.0",
+          "slug": "upgrade_guide_v1.5.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.0",
+          "slug": "upgrade_guide_v1.6.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.2",
+          "slug": "upgrade_guide_v1.6.2",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.6.3",
+          "slug": "upgrade_guide_v1.6.3",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.7.0",
+          "slug": "upgrade_guide_v1.7.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Users and Roles",
+          "slug": "users_and_roles",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "custom_role",
+          "slug": "custom_role",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "aws_account",
+          "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_archival_location",
+          "slug": "aws_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cloud_cluster",
+          "slug": "aws_cloud_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account",
+          "slug": "aws_cnp_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account_attachments",
+          "slug": "aws_cnp_account_attachments",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_cnp_account_trust_policy",
+          "slug": "aws_cnp_account_trust_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_custom_tags",
+          "slug": "aws_custom_tags",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_exocompute",
+          "slug": "aws_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_exocompute_cluster_attachment",
+          "slug": "aws_exocompute_cluster_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_private_container_registry",
+          "slug": "aws_private_container_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_archival_location",
+          "slug": "azure_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_cloud_cluster",
+          "slug": "azure_cloud_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_custom_tags",
+          "slug": "azure_custom_tags",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_exocompute",
+          "slug": "azure_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_exocompute_cluster_attachment",
+          "slug": "azure_exocompute_cluster_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_private_container_registry",
+          "slug": "azure_private_container_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_service_principal",
+          "slug": "azure_service_principal",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_subscription",
+          "slug": "azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap",
+          "slug": "cdm_bootstrap",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap_cces_aws",
+          "slug": "cdm_bootstrap_cces_aws",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_bootstrap_cces_azure",
+          "slug": "cdm_bootstrap_cces_azure",
+          "subcategory": ""
+        },
+        {
+          "title": "cdm_registration",
+          "slug": "cdm_registration",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_role",
+          "slug": "custom_role",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_archival_location_amazon_s3",
+          "slug": "data_center_archival_location_amazon_s3",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_aws_account",
+          "slug": "data_center_aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "data_center_azure_subscription",
+          "slug": "data_center_azure_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_archival_location",
+          "slug": "gcp_archival_location",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_custom_labels",
+          "slug": "gcp_custom_labels",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_exocompute",
+          "slug": "gcp_exocompute",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_project",
+          "slug": "gcp_project",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_service_account",
+          "slug": "gcp_service_account",
+          "subcategory": ""
+        },
+        {
+          "title": "refresh",
+          "slug": "refresh",
+          "subcategory": ""
+        },
+        {
+          "title": "role_assignment",
+          "slug": "role_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain",
+          "slug": "sla_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "sla_domain_assignment",
+          "slug": "sla_domain_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "sso_group",
+          "slug": "sso_group",
+          "subcategory": ""
+        },
+        {
+          "title": "tag_rule",
+          "slug": "tag_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-01T09:22:31.871134"
   }
 }
