@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:16.585907"
+    "docs_refreshed_at": "2026-05-07T09:46:18.237721"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -61033,7 +61033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:08.016290"
+    "docs_refreshed_at": "2026-05-07T09:46:08.732596"
   },
   "Azure/azapi": {
     "docs": {
@@ -64639,7 +64639,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:08.450189"
+    "docs_refreshed_at": "2026-05-07T09:46:09.221160"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -65914,7 +65914,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:08.869278"
+    "docs_refreshed_at": "2026-05-07T09:46:09.672852"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -65930,6 +65930,11 @@
           "title": "access_list",
           "slug": "access_list",
           "subcategory": "Security"
+        },
+        {
+          "title": "analytics",
+          "slug": "analytics",
+          "subcategory": "Monitoring"
         },
         {
           "title": "bfd",
@@ -65949,7 +65954,7 @@
         {
           "title": "default_qos",
           "slug": "default_qos",
-          "subcategory": "System"
+          "subcategory": "Quality of Service"
         },
         {
           "title": "dhcp",
@@ -65960,6 +65965,11 @@
           "title": "dme",
           "slug": "dme",
           "subcategory": "General"
+        },
+        {
+          "title": "esg",
+          "slug": "esg",
+          "subcategory": "Security"
         },
         {
           "title": "evpn",
@@ -65974,7 +65984,7 @@
         {
           "title": "hardware_telemetry",
           "slug": "hardware_telemetry",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
         },
         {
           "title": "hmm",
@@ -66019,7 +66029,7 @@
         {
           "title": "logging",
           "slug": "logging",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
         },
         {
           "title": "loopback_interface",
@@ -66030,6 +66040,16 @@
           "title": "management_interface",
           "slug": "management_interface",
           "subcategory": "Interface"
+        },
+        {
+          "title": "netflow",
+          "slug": "netflow",
+          "subcategory": "Monitoring"
+        },
+        {
+          "title": "network_qos",
+          "slug": "network_qos",
+          "subcategory": "Quality of Service"
         },
         {
           "title": "ntp",
@@ -66067,9 +66087,14 @@
           "subcategory": "Interface"
         },
         {
+          "title": "ptp",
+          "slug": "ptp",
+          "subcategory": "System"
+        },
+        {
           "title": "queuing_qos",
           "slug": "queuing_qos",
-          "subcategory": "System"
+          "subcategory": "Quality of Service"
         },
         {
           "title": "route_policy",
@@ -66079,7 +66104,12 @@
         {
           "title": "snmp",
           "slug": "snmp",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
+        },
+        {
+          "title": "span",
+          "slug": "span",
+          "subcategory": "Monitoring"
         },
         {
           "title": "spanning_tree",
@@ -66100,6 +66130,11 @@
           "title": "system",
           "slug": "system",
           "subcategory": "System"
+        },
+        {
+          "title": "telemetry",
+          "slug": "telemetry",
+          "subcategory": "Monitoring"
         },
         {
           "title": "user_management",
@@ -66163,6 +66198,11 @@
           "subcategory": "Security"
         },
         {
+          "title": "analytics",
+          "slug": "analytics",
+          "subcategory": "Monitoring"
+        },
+        {
           "title": "bfd",
           "slug": "bfd",
           "subcategory": "System"
@@ -66185,7 +66225,7 @@
         {
           "title": "default_qos",
           "slug": "default_qos",
-          "subcategory": "System"
+          "subcategory": "Quality of Service"
         },
         {
           "title": "dhcp",
@@ -66196,6 +66236,11 @@
           "title": "dme",
           "slug": "dme",
           "subcategory": "General"
+        },
+        {
+          "title": "esg",
+          "slug": "esg",
+          "subcategory": "Security"
         },
         {
           "title": "evpn",
@@ -66210,7 +66255,7 @@
         {
           "title": "hardware_telemetry",
           "slug": "hardware_telemetry",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
         },
         {
           "title": "hmm",
@@ -66255,7 +66300,7 @@
         {
           "title": "logging",
           "slug": "logging",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
         },
         {
           "title": "loopback_interface",
@@ -66266,6 +66311,16 @@
           "title": "management_interface",
           "slug": "management_interface",
           "subcategory": "Interface"
+        },
+        {
+          "title": "netflow",
+          "slug": "netflow",
+          "subcategory": "Monitoring"
+        },
+        {
+          "title": "network_qos",
+          "slug": "network_qos",
+          "subcategory": "Quality of Service"
         },
         {
           "title": "ntp",
@@ -66303,9 +66358,14 @@
           "subcategory": "Interface"
         },
         {
+          "title": "ptp",
+          "slug": "ptp",
+          "subcategory": "System"
+        },
+        {
           "title": "queuing_qos",
           "slug": "queuing_qos",
-          "subcategory": "System"
+          "subcategory": "Quality of Service"
         },
         {
           "title": "route_policy",
@@ -66320,7 +66380,12 @@
         {
           "title": "snmp",
           "slug": "snmp",
-          "subcategory": "System"
+          "subcategory": "Monitoring"
+        },
+        {
+          "title": "span",
+          "slug": "span",
+          "subcategory": "Monitoring"
         },
         {
           "title": "spanning_tree",
@@ -66343,6 +66408,11 @@
           "subcategory": "System"
         },
         {
+          "title": "telemetry",
+          "slug": "telemetry",
+          "subcategory": "Monitoring"
+        },
+        {
           "title": "user_management",
           "slug": "user_management",
           "subcategory": "Security"
@@ -66359,7 +66429,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:09.294766"
+    "docs_refreshed_at": "2026-05-07T09:46:10.128699"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66627,7 +66697,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:09.697798"
+    "docs_refreshed_at": "2026-05-07T09:46:10.569190"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66646,7 +66716,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:10.095366"
+    "docs_refreshed_at": "2026-05-07T09:46:11.012674"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66693,7 +66763,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:10.487945"
+    "docs_refreshed_at": "2026-05-07T09:46:11.450538"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66823,7 +66893,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:11.324080"
+    "docs_refreshed_at": "2026-05-07T09:46:12.355851"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67367,7 +67437,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:12.915027"
+    "docs_refreshed_at": "2026-05-07T09:46:14.146068"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70552,7 +70622,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:13.362997"
+    "docs_refreshed_at": "2026-05-07T09:46:14.620235"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71831,7 +71901,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:13.785165"
+    "docs_refreshed_at": "2026-05-07T09:46:15.087633"
   },
   "SAP/btp": {
     "docs": {
@@ -72553,7 +72623,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:14.195136"
+    "docs_refreshed_at": "2026-05-07T09:46:15.528596"
   },
   "SAP/scc": {
     "docs": {
@@ -72758,7 +72828,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:14.596338"
+    "docs_refreshed_at": "2026-05-07T09:46:15.976829"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72805,7 +72875,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:14.996944"
+    "docs_refreshed_at": "2026-05-07T09:46:16.417359"
   },
   "Sokren/aap": {
     "docs": {
@@ -72888,7 +72958,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:15.401382"
+    "docs_refreshed_at": "2026-05-07T09:46:16.861844"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -72938,7 +73008,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:15.796531"
+    "docs_refreshed_at": "2026-05-07T09:46:17.299434"
   },
   "adampie/ctf": {
     "docs": {
@@ -72985,7 +73055,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:16.190584"
+    "docs_refreshed_at": "2026-05-07T09:46:17.800850"
   },
   "ansible/ansible": {
     "docs": {
@@ -73033,7 +73103,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:16.986829"
+    "docs_refreshed_at": "2026-05-07T09:46:18.684929"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -73081,7 +73151,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:17.404362"
+    "docs_refreshed_at": "2026-05-07T09:46:19.124615"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -73107,7 +73177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:17.795883"
+    "docs_refreshed_at": "2026-05-07T09:46:19.571033"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -73164,7 +73234,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:18.189106"
+    "docs_refreshed_at": "2026-05-07T09:46:20.011384"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -73183,7 +73253,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:18.983051"
+    "docs_refreshed_at": "2026-05-07T09:46:20.905079"
   },
   "cysp/braze": {
     "docs": {
@@ -73209,7 +73279,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:19.820200"
+    "docs_refreshed_at": "2026-05-07T09:46:21.792139"
   },
   "cysp/contentful": {
     "docs": {
@@ -73352,7 +73422,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:20.248165"
+    "docs_refreshed_at": "2026-05-07T09:46:22.239446"
   },
   "dbanck/concept": {
     "docs": {
@@ -73388,7 +73458,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:20.637002"
+    "docs_refreshed_at": "2026-05-07T09:46:22.677945"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74737,7 +74807,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:21.069305"
+    "docs_refreshed_at": "2026-05-07T09:46:23.230386"
   },
   "drewmullen/aap": {
     "docs": {
@@ -74845,7 +74915,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:21.467922"
+    "docs_refreshed_at": "2026-05-07T09:46:23.672398"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -74910,7 +74980,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:22.343983"
+    "docs_refreshed_at": "2026-05-07T09:46:24.604489"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -75013,7 +75083,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:22.757835"
+    "docs_refreshed_at": "2026-05-07T09:46:25.046211"
   },
   "hashicorp/local": {
     "docs": {
@@ -75075,7 +75145,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:23.553565"
+    "docs_refreshed_at": "2026-05-07T09:46:25.927901"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82746,7 +82816,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:25.321519"
+    "docs_refreshed_at": "2026-05-07T09:46:27.815632"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83559,7 +83629,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:25.731948"
+    "docs_refreshed_at": "2026-05-07T09:46:28.258853"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83697,7 +83767,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:26.937288"
+    "docs_refreshed_at": "2026-05-07T09:46:29.585628"
   },
   "magodo/restful": {
     "docs": {
@@ -83756,7 +83826,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:28.131338"
+    "docs_refreshed_at": "2026-05-07T09:46:30.922960"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83808,7 +83878,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:28.532223"
+    "docs_refreshed_at": "2026-05-07T09:46:31.365443"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -83950,7 +84020,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:29.334587"
+    "docs_refreshed_at": "2026-05-07T09:46:32.258923"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -84093,7 +84163,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:29.724792"
+    "docs_refreshed_at": "2026-05-07T09:46:32.704406"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -84140,7 +84210,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:30.116258"
+    "docs_refreshed_at": "2026-05-07T09:46:33.142182"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -85756,7 +85826,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:32.277127"
+    "docs_refreshed_at": "2026-05-07T09:46:35.534234"
   },
   "soffensive/soff": {
     "docs": {
@@ -85803,7 +85873,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:33.070480"
+    "docs_refreshed_at": "2026-05-07T09:46:36.431105"
   },
   "thrashr888/registry": {
     "docs": {
@@ -85891,7 +85961,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:33.856686"
+    "docs_refreshed_at": "2026-05-07T09:46:37.321500"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -86156,7 +86226,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:34.643294"
+    "docs_refreshed_at": "2026-05-07T09:46:38.206885"
   },
   "waldur/waldur": {
     "docs": {
@@ -86541,7 +86611,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:35.439724"
+    "docs_refreshed_at": "2026-05-07T09:46:39.115097"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -86804,7 +86874,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:11.718121"
+    "docs_refreshed_at": "2026-05-07T09:46:12.805398"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -86859,7 +86929,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:23.161157"
+    "docs_refreshed_at": "2026-05-07T09:46:25.484807"
   },
   "timofurrer/desec": {
     "docs": {
@@ -87018,7 +87088,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:34.253712"
+    "docs_refreshed_at": "2026-05-07T09:46:37.764102"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -87101,7 +87171,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:35.037571"
+    "docs_refreshed_at": "2026-05-07T09:46:38.666590"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -90291,7 +90361,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:10.936941"
+    "docs_refreshed_at": "2026-05-07T09:46:11.916300"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90586,7 +90656,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:26.526426"
+    "docs_refreshed_at": "2026-05-07T09:46:29.149166"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90704,7 +90774,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:28.932513"
+    "docs_refreshed_at": "2026-05-07T09:46:31.818873"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -90874,7 +90944,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:12.110658"
+    "docs_refreshed_at": "2026-05-07T09:46:13.257686"
   },
   "branchgrove/debian": {
     "docs": {
@@ -90989,7 +91059,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:18.586222"
+    "docs_refreshed_at": "2026-05-07T09:46:20.460526"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -91434,7 +91504,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:21.868863"
+    "docs_refreshed_at": "2026-05-07T09:46:24.165495"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -91969,7 +92039,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:24.017030"
+    "docs_refreshed_at": "2026-05-07T09:46:26.416280"
   },
   "juju/juju": {
     "docs": {
@@ -92204,7 +92274,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:26.131392"
+    "docs_refreshed_at": "2026-05-07T09:46:28.700337"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -92305,7 +92375,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:12.512660"
+    "docs_refreshed_at": "2026-05-07T09:46:13.701926"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92713,7 +92783,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:19.407883"
+    "docs_refreshed_at": "2026-05-07T09:46:21.349880"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -92836,7 +92906,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:27.337571"
+    "docs_refreshed_at": "2026-05-07T09:46:30.029298"
   },
   "radeksimko/test": {
     "docs": {
@@ -92883,7 +92953,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:31.061721"
+    "docs_refreshed_at": "2026-05-07T09:46:34.119376"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -93276,7 +93346,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:32.669863"
+    "docs_refreshed_at": "2026-05-07T09:46:35.988230"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93496,7 +93566,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:33.462743"
+    "docs_refreshed_at": "2026-05-07T09:46:36.877574"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -93508,6 +93578,21 @@
         }
       ],
       "data-sources": [
+        {
+          "title": "aws_ec2_instances",
+          "slug": "aws_ec2_instances",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_iam_roles",
+          "slug": "aws_iam_roles",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_repositories",
+          "slug": "aws_repositories",
+          "subcategory": "Veeam Backup for AWS"
+        },
         {
           "title": "azure_backup_repositories",
           "slug": "azure_backup_repositories",
@@ -93669,7 +93754,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:27.733228"
+    "docs_refreshed_at": "2026-05-07T09:46:30.469591"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -94081,7 +94166,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:24.446980"
+    "docs_refreshed_at": "2026-05-07T09:46:26.855607"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -94550,7 +94635,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:24.848544"
+    "docs_refreshed_at": "2026-05-07T09:46:27.299222"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -106516,7 +106601,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:30.661997"
+    "docs_refreshed_at": "2026-05-07T09:46:33.678407"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -106971,7 +107056,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:31.463491"
+    "docs_refreshed_at": "2026-05-07T09:46:34.567467"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -107421,6 +107506,6 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:22:31.871134"
+    "docs_refreshed_at": "2026-05-07T09:46:35.073943"
   }
 }
