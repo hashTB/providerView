@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:18.237721"
+    "docs_refreshed_at": "2026-05-14T10:05:51.021217"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -61033,7 +61033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:08.732596"
+    "docs_refreshed_at": "2026-05-14T10:05:42.396167"
   },
   "Azure/azapi": {
     "docs": {
@@ -64639,7 +64639,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:09.221160"
+    "docs_refreshed_at": "2026-05-14T10:05:42.820855"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -64912,6 +64912,11 @@
           "subcategory": "System"
         },
         {
+          "title": "dhcp_pool",
+          "slug": "dhcp_pool",
+          "subcategory": "System"
+        },
+        {
           "title": "dot1x",
           "slug": "dot1x",
           "subcategory": "System"
@@ -65037,9 +65042,29 @@
           "subcategory": "Interface"
         },
         {
+          "title": "ipv6_dhcp_pool",
+          "slug": "ipv6_dhcp_pool",
+          "subcategory": "System"
+        },
+        {
+          "title": "ipv6_local_pool",
+          "slug": "ipv6_local_pool",
+          "subcategory": "System"
+        },
+        {
+          "title": "ipv6_prefix_list",
+          "slug": "ipv6_prefix_list",
+          "subcategory": "System"
+        },
+        {
           "title": "isis",
           "slug": "isis",
           "subcategory": "IS-IS"
+        },
+        {
+          "title": "key_chain",
+          "slug": "key_chain",
+          "subcategory": "Crypto"
         },
         {
           "title": "l2_vfi",
@@ -65097,6 +65122,11 @@
           "subcategory": "System"
         },
         {
+          "title": "object_group",
+          "slug": "object_group",
+          "subcategory": "System"
+        },
+        {
           "title": "ospf",
           "slug": "ospf",
           "subcategory": "OSPF"
@@ -65105,6 +65135,11 @@
           "title": "ospf_vrf",
           "slug": "ospf_vrf",
           "subcategory": "OSPF"
+        },
+        {
+          "title": "parameter_map",
+          "slug": "parameter_map",
+          "subcategory": "QoS"
         },
         {
           "title": "pim",
@@ -65255,6 +65290,16 @@
           "title": "yang",
           "slug": "yang",
           "subcategory": "General"
+        },
+        {
+          "title": "zone_pair_security",
+          "slug": "zone_pair_security",
+          "subcategory": "Security"
+        },
+        {
+          "title": "zone_security",
+          "slug": "zone_security",
+          "subcategory": "Security"
         }
       ],
       "guides": [
@@ -65563,6 +65608,11 @@
           "subcategory": "System"
         },
         {
+          "title": "dhcp_pool",
+          "slug": "dhcp_pool",
+          "subcategory": "System"
+        },
+        {
           "title": "dot1x",
           "slug": "dot1x",
           "subcategory": "System"
@@ -65688,9 +65738,29 @@
           "subcategory": "Interface"
         },
         {
+          "title": "ipv6_dhcp_pool",
+          "slug": "ipv6_dhcp_pool",
+          "subcategory": "System"
+        },
+        {
+          "title": "ipv6_local_pool",
+          "slug": "ipv6_local_pool",
+          "subcategory": "System"
+        },
+        {
+          "title": "ipv6_prefix_list",
+          "slug": "ipv6_prefix_list",
+          "subcategory": "System"
+        },
+        {
           "title": "isis",
           "slug": "isis",
           "subcategory": "IS-IS"
+        },
+        {
+          "title": "key_chain",
+          "slug": "key_chain",
+          "subcategory": "Crypto"
         },
         {
           "title": "l2_vfi",
@@ -65748,6 +65818,11 @@
           "subcategory": "System"
         },
         {
+          "title": "object_group",
+          "slug": "object_group",
+          "subcategory": "System"
+        },
+        {
           "title": "ospf",
           "slug": "ospf",
           "subcategory": "OSPF"
@@ -65756,6 +65831,11 @@
           "title": "ospf_vrf",
           "slug": "ospf_vrf",
           "subcategory": "OSPF"
+        },
+        {
+          "title": "parameter_map",
+          "slug": "parameter_map",
+          "subcategory": "QoS"
         },
         {
           "title": "pim",
@@ -65911,10 +65991,20 @@
           "title": "yang",
           "slug": "yang",
           "subcategory": "General"
+        },
+        {
+          "title": "zone_pair_security",
+          "slug": "zone_pair_security",
+          "subcategory": "Security"
+        },
+        {
+          "title": "zone_security",
+          "slug": "zone_security",
+          "subcategory": "Security"
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:09.672852"
+    "docs_refreshed_at": "2026-05-14T10:05:43.231222"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -66429,7 +66519,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:10.128699"
+    "docs_refreshed_at": "2026-05-14T10:05:43.644130"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66697,7 +66787,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:10.569190"
+    "docs_refreshed_at": "2026-05-14T10:05:44.050043"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66716,7 +66806,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:11.012674"
+    "docs_refreshed_at": "2026-05-14T10:05:44.460948"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66763,7 +66853,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:11.450538"
+    "docs_refreshed_at": "2026-05-14T10:05:44.864295"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66893,7 +66983,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:12.355851"
+    "docs_refreshed_at": "2026-05-14T10:05:45.688167"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67437,7 +67527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:14.146068"
+    "docs_refreshed_at": "2026-05-14T10:05:47.310869"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70622,7 +70712,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:14.620235"
+    "docs_refreshed_at": "2026-05-14T10:05:47.734880"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71901,7 +71991,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:15.087633"
+    "docs_refreshed_at": "2026-05-14T10:05:48.156114"
   },
   "SAP/btp": {
     "docs": {
@@ -72623,7 +72713,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:15.528596"
+    "docs_refreshed_at": "2026-05-14T10:05:48.574978"
   },
   "SAP/scc": {
     "docs": {
@@ -72828,7 +72918,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:15.976829"
+    "docs_refreshed_at": "2026-05-14T10:05:48.982949"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72875,7 +72965,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:16.417359"
+    "docs_refreshed_at": "2026-05-14T10:05:49.387727"
   },
   "Sokren/aap": {
     "docs": {
@@ -72958,7 +73048,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:16.861844"
+    "docs_refreshed_at": "2026-05-14T10:05:49.794313"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -73008,7 +73098,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:17.299434"
+    "docs_refreshed_at": "2026-05-14T10:05:50.207284"
   },
   "adampie/ctf": {
     "docs": {
@@ -73055,7 +73145,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:17.800850"
+    "docs_refreshed_at": "2026-05-14T10:05:50.609809"
   },
   "ansible/ansible": {
     "docs": {
@@ -73103,7 +73193,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:18.684929"
+    "docs_refreshed_at": "2026-05-14T10:05:51.422462"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -73151,7 +73241,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:19.124615"
+    "docs_refreshed_at": "2026-05-14T10:05:51.831863"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -73177,7 +73267,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:19.571033"
+    "docs_refreshed_at": "2026-05-14T10:05:52.240454"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -73234,7 +73324,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:20.011384"
+    "docs_refreshed_at": "2026-05-14T10:05:52.648723"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -73251,9 +73341,16 @@
           "slug": "index",
           "subcategory": ""
         }
+      ],
+      "resources": [
+        {
+          "title": "deferred_index_build",
+          "slug": "deferred_index_build",
+          "subcategory": ""
+        }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:20.905079"
+    "docs_refreshed_at": "2026-05-14T10:05:53.458806"
   },
   "cysp/braze": {
     "docs": {
@@ -73279,7 +73376,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:21.792139"
+    "docs_refreshed_at": "2026-05-14T10:05:54.284890"
   },
   "cysp/contentful": {
     "docs": {
@@ -73422,7 +73519,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:22.239446"
+    "docs_refreshed_at": "2026-05-14T10:05:54.700786"
   },
   "dbanck/concept": {
     "docs": {
@@ -73458,7 +73555,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:22.677945"
+    "docs_refreshed_at": "2026-05-14T10:05:55.112876"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74807,7 +74904,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:23.230386"
+    "docs_refreshed_at": "2026-05-14T10:05:55.539215"
   },
   "drewmullen/aap": {
     "docs": {
@@ -74915,7 +75012,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:23.672398"
+    "docs_refreshed_at": "2026-05-14T10:05:56.346962"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -74980,7 +75077,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:24.604489"
+    "docs_refreshed_at": "2026-05-14T10:05:57.166082"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -75083,7 +75180,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:25.046211"
+    "docs_refreshed_at": "2026-05-14T10:05:57.572184"
   },
   "hashicorp/local": {
     "docs": {
@@ -75145,7 +75242,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:25.927901"
+    "docs_refreshed_at": "2026-05-14T10:05:58.381005"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82816,7 +82913,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:27.815632"
+    "docs_refreshed_at": "2026-05-14T10:06:00.126887"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83629,7 +83726,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:28.258853"
+    "docs_refreshed_at": "2026-05-14T10:06:00.546076"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83767,7 +83864,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:29.585628"
+    "docs_refreshed_at": "2026-05-14T10:06:01.893085"
   },
   "magodo/restful": {
     "docs": {
@@ -83826,7 +83923,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:30.922960"
+    "docs_refreshed_at": "2026-05-14T10:06:03.773808"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83878,7 +83975,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:31.365443"
+    "docs_refreshed_at": "2026-05-14T10:06:04.183053"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -84020,7 +84117,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:32.258923"
+    "docs_refreshed_at": "2026-05-14T10:06:04.995804"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -84163,7 +84260,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:32.704406"
+    "docs_refreshed_at": "2026-05-14T10:06:05.402694"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -84210,7 +84307,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:33.142182"
+    "docs_refreshed_at": "2026-05-14T10:06:05.810654"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -84560,6 +84657,11 @@
         {
           "title": "iam_saml_certificate",
           "slug": "iam_saml_certificate",
+          "subcategory": "IAM"
+        },
+        {
+          "title": "iam_scim",
+          "slug": "iam_scim",
           "subcategory": "IAM"
         },
         {
@@ -85091,9 +85193,54 @@
       ],
       "list-resources": [
         {
+          "title": "ipam_ip",
+          "slug": "ipam_ip",
+          "subcategory": "IPAM"
+        },
+        {
+          "title": "lb",
+          "slug": "lb",
+          "subcategory": "Load Balancers"
+        },
+        {
+          "title": "lb_backend",
+          "slug": "lb_backend",
+          "subcategory": "Load Balancer"
+        },
+        {
+          "title": "lb_frontend",
+          "slug": "lb_frontend",
+          "subcategory": "Load Balancer"
+        },
+        {
+          "title": "mongodb_instance",
+          "slug": "mongodb_instance",
+          "subcategory": "MongoDB\u00ae"
+        },
+        {
+          "title": "rdb_instance",
+          "slug": "rdb_instance",
+          "subcategory": "Databases"
+        },
+        {
+          "title": "redis_cluster",
+          "slug": "redis_cluster",
+          "subcategory": "Redis"
+        },
+        {
           "title": "vpc",
           "slug": "vpc",
           "subcategory": "VPC"
+        },
+        {
+          "title": "vpc_private_network",
+          "slug": "vpc_private_network",
+          "subcategory": "VPC"
+        },
+        {
+          "title": "vpc_public_gateway",
+          "slug": "vpc_public_gateway",
+          "subcategory": "VPC Gateway"
         }
       ],
       "overview": [
@@ -85367,6 +85514,11 @@
         {
           "title": "iam_saml_certificate",
           "slug": "iam_saml_certificate",
+          "subcategory": "IAM"
+        },
+        {
+          "title": "iam_scim",
+          "slug": "iam_scim",
           "subcategory": "IAM"
         },
         {
@@ -85826,7 +85978,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:35.534234"
+    "docs_refreshed_at": "2026-05-14T10:06:08.044400"
   },
   "soffensive/soff": {
     "docs": {
@@ -85873,7 +86025,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:36.431105"
+    "docs_refreshed_at": "2026-05-14T10:06:08.863507"
   },
   "thrashr888/registry": {
     "docs": {
@@ -85961,7 +86113,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:37.321500"
+    "docs_refreshed_at": "2026-05-14T10:06:09.684536"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -86226,7 +86378,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:38.206885"
+    "docs_refreshed_at": "2026-05-14T10:06:10.504046"
   },
   "waldur/waldur": {
     "docs": {
@@ -86611,7 +86763,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:39.115097"
+    "docs_refreshed_at": "2026-05-14T10:06:11.316322"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -86874,7 +87026,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:12.805398"
+    "docs_refreshed_at": "2026-05-14T10:05:46.095618"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -86929,7 +87081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:25.484807"
+    "docs_refreshed_at": "2026-05-14T10:05:57.978074"
   },
   "timofurrer/desec": {
     "docs": {
@@ -87088,7 +87240,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:37.764102"
+    "docs_refreshed_at": "2026-05-14T10:06:10.093966"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -87171,7 +87323,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:38.666590"
+    "docs_refreshed_at": "2026-05-14T10:06:10.910279"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -90361,7 +90513,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:11.916300"
+    "docs_refreshed_at": "2026-05-14T10:05:45.276687"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90656,7 +90808,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:29.149166"
+    "docs_refreshed_at": "2026-05-14T10:06:01.486255"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90774,7 +90926,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:31.818873"
+    "docs_refreshed_at": "2026-05-14T10:06:04.587674"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -90944,7 +91096,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:13.257686"
+    "docs_refreshed_at": "2026-05-14T10:05:46.498957"
   },
   "branchgrove/debian": {
     "docs": {
@@ -91059,7 +91211,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:20.460526"
+    "docs_refreshed_at": "2026-05-14T10:05:53.053960"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -91504,7 +91656,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:24.165495"
+    "docs_refreshed_at": "2026-05-14T10:05:56.756804"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -92039,7 +92191,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:26.416280"
+    "docs_refreshed_at": "2026-05-14T10:05:58.839566"
   },
   "juju/juju": {
     "docs": {
@@ -92274,7 +92426,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:28.700337"
+    "docs_refreshed_at": "2026-05-14T10:06:00.958758"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -92375,7 +92527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:13.701926"
+    "docs_refreshed_at": "2026-05-14T10:05:46.902817"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92608,6 +92760,11 @@
           "subcategory": ""
         },
         {
+          "title": "mta",
+          "slug": "mta",
+          "subcategory": ""
+        },
+        {
           "title": "org",
           "slug": "org",
           "subcategory": ""
@@ -92633,6 +92790,26 @@
           "subcategory": ""
         },
         {
+          "title": "service_broker",
+          "slug": "service_broker",
+          "subcategory": ""
+        },
+        {
+          "title": "service_credential_binding",
+          "slug": "service_credential_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "service_instance",
+          "slug": "service_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "service_route_binding",
+          "slug": "service_route_binding",
+          "subcategory": ""
+        },
+        {
           "title": "space",
           "slug": "space",
           "subcategory": ""
@@ -92645,6 +92822,11 @@
         {
           "title": "space_role",
           "slug": "space_role",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
           "subcategory": ""
         }
       ],
@@ -92783,7 +92965,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:21.349880"
+    "docs_refreshed_at": "2026-05-14T10:05:53.873391"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -92855,6 +93037,11 @@
           "subcategory": ""
         },
         {
+          "title": "compose",
+          "slug": "compose",
+          "subcategory": ""
+        },
+        {
           "title": "config",
           "slug": "config",
           "subcategory": ""
@@ -92906,7 +93093,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:30.029298"
+    "docs_refreshed_at": "2026-05-14T10:06:02.826792"
   },
   "radeksimko/test": {
     "docs": {
@@ -92953,7 +93140,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:34.119376"
+    "docs_refreshed_at": "2026-05-14T10:06:06.706395"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -93346,7 +93533,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:35.988230"
+    "docs_refreshed_at": "2026-05-14T10:06:08.457413"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93566,7 +93753,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:36.877574"
+    "docs_refreshed_at": "2026-05-14T10:06:09.273595"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -93586,6 +93773,11 @@
         {
           "title": "aws_iam_roles",
           "slug": "aws_iam_roles",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_regions",
+          "slug": "aws_regions",
           "subcategory": "Veeam Backup for AWS"
         },
         {
@@ -93693,6 +93885,16 @@
       ],
       "resources": [
         {
+          "title": "aws_ec2_backup_policy",
+          "slug": "aws_ec2_backup_policy",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_iam_role",
+          "slug": "aws_iam_role",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
           "title": "azure_cosmos_db_backup_policy",
           "slug": "azure_cosmos_db_backup_policy",
           "subcategory": "Veeam Backup for Azure"
@@ -93754,7 +93956,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:30.469591"
+    "docs_refreshed_at": "2026-05-14T10:06:03.369644"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -94166,7 +94368,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:26.855607"
+    "docs_refreshed_at": "2026-05-14T10:05:59.253293"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -94635,7 +94837,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:27.299222"
+    "docs_refreshed_at": "2026-05-14T10:05:59.658790"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -106601,7 +106803,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:33.678407"
+    "docs_refreshed_at": "2026-05-14T10:06:06.298996"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -107056,7 +107258,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:34.567467"
+    "docs_refreshed_at": "2026-05-14T10:06:07.116462"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -107506,6 +107708,59 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-07T09:46:35.073943"
+    "docs_refreshed_at": "2026-05-14T10:06:07.622669"
+  },
+  "dmalch/genealogy": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "profile",
+          "slug": "profile",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "document",
+          "slug": "document",
+          "subcategory": ""
+        },
+        {
+          "title": "profile",
+          "slug": "profile",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "document",
+          "slug": "document",
+          "subcategory": ""
+        },
+        {
+          "title": "profile",
+          "slug": "profile",
+          "subcategory": ""
+        },
+        {
+          "title": "union",
+          "slug": "union",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-14T10:05:55.942527"
   }
 }
