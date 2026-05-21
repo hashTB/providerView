@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:51.021217"
+    "docs_refreshed_at": "2026-05-21T10:41:48.922793"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -61033,7 +61033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:42.396167"
+    "docs_refreshed_at": "2026-05-21T10:41:40.539339"
   },
   "Azure/azapi": {
     "docs": {
@@ -64639,7 +64639,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:42.820855"
+    "docs_refreshed_at": "2026-05-21T10:41:40.975536"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -66004,7 +66004,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:43.231222"
+    "docs_refreshed_at": "2026-05-21T10:41:41.357442"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -66170,6 +66170,11 @@
           "title": "pim",
           "slug": "pim",
           "subcategory": "Routing"
+        },
+        {
+          "title": "platform",
+          "slug": "platform",
+          "subcategory": "System"
         },
         {
           "title": "port_channel_interface",
@@ -66443,6 +66448,11 @@
           "subcategory": "Routing"
         },
         {
+          "title": "platform",
+          "slug": "platform",
+          "subcategory": "System"
+        },
+        {
           "title": "port_channel_interface",
           "slug": "port_channel_interface",
           "subcategory": "Interface"
@@ -66519,7 +66529,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:43.644130"
+    "docs_refreshed_at": "2026-05-21T10:41:41.746803"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -66787,7 +66797,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:44.050043"
+    "docs_refreshed_at": "2026-05-21T10:41:42.120051"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -66806,7 +66816,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:44.460948"
+    "docs_refreshed_at": "2026-05-21T10:41:42.494956"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -66853,7 +66863,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:44.864295"
+    "docs_refreshed_at": "2026-05-21T10:41:42.867950"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -66983,7 +66993,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:45.688167"
+    "docs_refreshed_at": "2026-05-21T10:41:43.625462"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -67527,7 +67537,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:47.310869"
+    "docs_refreshed_at": "2026-05-21T10:41:45.115432"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -70712,7 +70722,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:47.734880"
+    "docs_refreshed_at": "2026-05-21T10:41:45.524604"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -71991,7 +72001,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:48.156114"
+    "docs_refreshed_at": "2026-05-21T10:41:45.905227"
   },
   "SAP/btp": {
     "docs": {
@@ -72713,7 +72723,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:48.574978"
+    "docs_refreshed_at": "2026-05-21T10:41:46.283482"
   },
   "SAP/scc": {
     "docs": {
@@ -72918,7 +72928,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:48.982949"
+    "docs_refreshed_at": "2026-05-21T10:41:46.666069"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -72965,7 +72975,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:49.387727"
+    "docs_refreshed_at": "2026-05-21T10:41:47.034213"
   },
   "Sokren/aap": {
     "docs": {
@@ -73048,7 +73058,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:49.794313"
+    "docs_refreshed_at": "2026-05-21T10:41:47.424836"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -73098,7 +73108,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:50.207284"
+    "docs_refreshed_at": "2026-05-21T10:41:47.799778"
   },
   "adampie/ctf": {
     "docs": {
@@ -73145,7 +73155,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:50.609809"
+    "docs_refreshed_at": "2026-05-21T10:41:48.545052"
   },
   "ansible/ansible": {
     "docs": {
@@ -73193,7 +73203,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:51.422462"
+    "docs_refreshed_at": "2026-05-21T10:41:49.295507"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -73241,7 +73251,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:51.831863"
+    "docs_refreshed_at": "2026-05-21T10:41:49.690692"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -73267,7 +73277,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:52.240454"
+    "docs_refreshed_at": "2026-05-21T10:41:50.062724"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -73324,7 +73334,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:52.648723"
+    "docs_refreshed_at": "2026-05-21T10:41:50.435719"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -73350,7 +73360,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:53.458806"
+    "docs_refreshed_at": "2026-05-21T10:41:51.197458"
   },
   "cysp/braze": {
     "docs": {
@@ -73376,7 +73386,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:54.284890"
+    "docs_refreshed_at": "2026-05-21T10:41:52.310635"
   },
   "cysp/contentful": {
     "docs": {
@@ -73519,7 +73529,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:54.700786"
+    "docs_refreshed_at": "2026-05-21T10:41:52.692159"
   },
   "dbanck/concept": {
     "docs": {
@@ -73555,7 +73565,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:55.112876"
+    "docs_refreshed_at": "2026-05-21T10:41:53.801795"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -74904,7 +74914,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:55.539215"
+    "docs_refreshed_at": "2026-05-21T10:41:54.193394"
   },
   "drewmullen/aap": {
     "docs": {
@@ -75012,7 +75022,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:56.346962"
+    "docs_refreshed_at": "2026-05-21T10:41:54.939999"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -75077,7 +75087,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:57.166082"
+    "docs_refreshed_at": "2026-05-21T10:41:56.076266"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -75180,7 +75190,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:57.572184"
+    "docs_refreshed_at": "2026-05-21T10:41:56.448823"
   },
   "hashicorp/local": {
     "docs": {
@@ -75242,7 +75252,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:58.381005"
+    "docs_refreshed_at": "2026-05-21T10:41:57.201662"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -82913,7 +82923,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:00.126887"
+    "docs_refreshed_at": "2026-05-21T10:41:58.822135"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -83726,7 +83736,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:00.546076"
+    "docs_refreshed_at": "2026-05-21T10:41:59.201218"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -83864,7 +83874,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:01.893085"
+    "docs_refreshed_at": "2026-05-21T10:42:00.324751"
   },
   "magodo/restful": {
     "docs": {
@@ -83923,7 +83933,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:03.773808"
+    "docs_refreshed_at": "2026-05-21T10:42:01.453934"
   },
   "marshallford/ansible": {
     "docs": {
@@ -83975,7 +83985,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:04.183053"
+    "docs_refreshed_at": "2026-05-21T10:42:02.250389"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -84117,7 +84127,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:04.995804"
+    "docs_refreshed_at": "2026-05-21T10:42:03.159014"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -84260,7 +84270,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:05.402694"
+    "docs_refreshed_at": "2026-05-21T10:42:03.543247"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -84307,7 +84317,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:05.810654"
+    "docs_refreshed_at": "2026-05-21T10:42:04.305721"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -85978,7 +85988,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:08.044400"
+    "docs_refreshed_at": "2026-05-21T10:42:06.293131"
   },
   "soffensive/soff": {
     "docs": {
@@ -86025,7 +86035,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:08.863507"
+    "docs_refreshed_at": "2026-05-21T10:42:07.075576"
   },
   "thrashr888/registry": {
     "docs": {
@@ -86113,7 +86123,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:09.684536"
+    "docs_refreshed_at": "2026-05-21T10:42:07.823412"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -86378,7 +86388,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:10.504046"
+    "docs_refreshed_at": "2026-05-21T10:42:08.580431"
   },
   "waldur/waldur": {
     "docs": {
@@ -86763,7 +86773,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:11.316322"
+    "docs_refreshed_at": "2026-05-21T10:42:09.388189"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -87026,7 +87036,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:46.095618"
+    "docs_refreshed_at": "2026-05-21T10:41:43.999934"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -87081,7 +87091,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:57.978074"
+    "docs_refreshed_at": "2026-05-21T10:41:56.822966"
   },
   "timofurrer/desec": {
     "docs": {
@@ -87240,7 +87250,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:10.093966"
+    "docs_refreshed_at": "2026-05-21T10:42:08.190630"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -87323,7 +87333,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:10.910279"
+    "docs_refreshed_at": "2026-05-21T10:42:08.956336"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -90513,7 +90523,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:45.276687"
+    "docs_refreshed_at": "2026-05-21T10:41:43.249790"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -90808,7 +90818,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:01.486255"
+    "docs_refreshed_at": "2026-05-21T10:41:59.948669"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -90926,7 +90936,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:04.587674"
+    "docs_refreshed_at": "2026-05-21T10:42:02.653277"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -91096,7 +91106,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:46.498957"
+    "docs_refreshed_at": "2026-05-21T10:41:44.369989"
   },
   "branchgrove/debian": {
     "docs": {
@@ -91211,7 +91221,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:53.053960"
+    "docs_refreshed_at": "2026-05-21T10:41:50.810113"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -91656,7 +91666,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:56.756804"
+    "docs_refreshed_at": "2026-05-21T10:41:55.705614"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -91806,6 +91816,11 @@
         {
           "title": "ssh_key",
           "slug": "ssh_key",
+          "subcategory": ""
+        },
+        {
+          "title": "stack_deployment",
+          "slug": "stack_deployment",
           "subcategory": ""
         },
         {
@@ -92050,6 +92065,16 @@
           "subcategory": ""
         },
         {
+          "title": "registry_provider_version",
+          "slug": "registry_provider_version",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_provider_version_platform",
+          "slug": "registry_provider_version_platform",
+          "subcategory": ""
+        },
+        {
           "title": "run_trigger",
           "slug": "run_trigger",
           "subcategory": ""
@@ -92191,7 +92216,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:58.839566"
+    "docs_refreshed_at": "2026-05-21T10:41:57.658729"
   },
   "juju/juju": {
     "docs": {
@@ -92426,7 +92451,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:00.958758"
+    "docs_refreshed_at": "2026-05-21T10:41:59.573663"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -92527,7 +92552,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:46.902817"
+    "docs_refreshed_at": "2026-05-21T10:41:44.743868"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -92965,11 +92990,16 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:53.873391"
+    "docs_refreshed_at": "2026-05-21T10:41:51.571340"
   },
   "kreuzwerker/docker": {
     "docs": {
       "actions": [
+        {
+          "title": "container_export",
+          "slug": "container_export",
+          "subcategory": ""
+        },
         {
           "title": "exec",
           "slug": "exec",
@@ -92978,6 +93008,21 @@
         {
           "title": "image_import",
           "slug": "image_import",
+          "subcategory": ""
+        },
+        {
+          "title": "image_load",
+          "slug": "image_load",
+          "subcategory": ""
+        },
+        {
+          "title": "image_save",
+          "slug": "image_save",
+          "subcategory": ""
+        },
+        {
+          "title": "system_prune",
+          "slug": "system_prune",
           "subcategory": ""
         }
       ],
@@ -93093,7 +93138,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:02.826792"
+    "docs_refreshed_at": "2026-05-21T10:42:00.699896"
   },
   "radeksimko/test": {
     "docs": {
@@ -93140,7 +93185,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:06.706395"
+    "docs_refreshed_at": "2026-05-21T10:42:05.150344"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -93533,7 +93578,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:08.457413"
+    "docs_refreshed_at": "2026-05-21T10:42:06.701979"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -93682,6 +93727,11 @@
           "subcategory": ""
         },
         {
+          "title": "firewall_policy",
+          "slug": "firewall_policy",
+          "subcategory": ""
+        },
+        {
           "title": "firewall_rule",
           "slug": "firewall_rule",
           "subcategory": ""
@@ -93753,7 +93803,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:09.273595"
+    "docs_refreshed_at": "2026-05-21T10:42:07.448974"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -93773,6 +93823,11 @@
         {
           "title": "aws_iam_roles",
           "slug": "aws_iam_roles",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_rds_instances",
+          "slug": "aws_rds_instances",
           "subcategory": "Veeam Backup for AWS"
         },
         {
@@ -93895,6 +93950,11 @@
           "subcategory": "Veeam Backup for AWS"
         },
         {
+          "title": "aws_rds_backup_policy",
+          "slug": "aws_rds_backup_policy",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
           "title": "azure_cosmos_db_backup_policy",
           "slug": "azure_cosmos_db_backup_policy",
           "subcategory": "Veeam Backup for Azure"
@@ -93956,7 +94016,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:03.369644"
+    "docs_refreshed_at": "2026-05-21T10:42:01.079924"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -94368,7 +94428,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:59.253293"
+    "docs_refreshed_at": "2026-05-21T10:41:58.034557"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -94837,7 +94897,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:59.658790"
+    "docs_refreshed_at": "2026-05-21T10:41:58.403896"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -106803,7 +106863,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:06.298996"
+    "docs_refreshed_at": "2026-05-21T10:42:04.769285"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -107258,7 +107318,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:07.116462"
+    "docs_refreshed_at": "2026-05-21T10:42:05.524331"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -107708,7 +107768,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:06:07.622669"
+    "docs_refreshed_at": "2026-05-21T10:42:05.902635"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -107761,6 +107821,453 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-14T10:05:55.942527"
+    "docs_refreshed_at": "2026-05-21T10:41:54.566586"
+  },
+  "Vivicta-SC/ocp": {
+    "docs": {
+      "actions": [
+        {
+          "title": "await_task",
+          "slug": "await_task",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "customer",
+          "slug": "customer",
+          "subcategory": ""
+        },
+        {
+          "title": "data_protection_policy",
+          "slug": "data_protection_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "domain",
+          "slug": "domain",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        },
+        {
+          "title": "template",
+          "slug": "template",
+          "subcategory": ""
+        },
+        {
+          "title": "tier",
+          "slug": "tier",
+          "subcategory": ""
+        },
+        {
+          "title": "vserver",
+          "slug": "vserver",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "separation_pod",
+          "slug": "separation_pod",
+          "subcategory": ""
+        },
+        {
+          "title": "staas_group",
+          "slug": "staas_group",
+          "subcategory": ""
+        },
+        {
+          "title": "staas_volume",
+          "slug": "staas_volume",
+          "subcategory": ""
+        },
+        {
+          "title": "vm",
+          "slug": "vm",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:41:48.172215"
+  },
+  "compunet-cloud/azurefilesacl": {
+    "docs": {
+      "actions": [
+        {
+          "title": "avd_session_host_cleanup",
+          "slug": "avd_session_host_cleanup",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "avd_session_host_cleanup_marker",
+          "slug": "avd_session_host_cleanup_marker",
+          "subcategory": ""
+        },
+        {
+          "title": "file_acl",
+          "slug": "file_acl",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:41:51.939193"
+  },
+  "day0-sandbox/azavd": {
+    "docs": {
+      "actions": [
+        {
+          "title": "session_host_cleanup",
+          "slug": "session_host_cleanup",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "azure_file_acl",
+          "slug": "azure_file_acl",
+          "subcategory": ""
+        },
+        {
+          "title": "session_host_cleanup_marker",
+          "slug": "session_host_cleanup_marker",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:41:53.066336"
+  },
+  "day0-sandbox/azurefilesacl": {
+    "docs": {
+      "actions": [
+        {
+          "title": "avd_session_host_cleanup",
+          "slug": "avd_session_host_cleanup",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "avd_session_host_cleanup_marker",
+          "slug": "avd_session_host_cleanup_marker",
+          "subcategory": ""
+        },
+        {
+          "title": "file_acl",
+          "slug": "file_acl",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:41:53.436256"
+  },
+  "fianulabs/fianu": {
+    "docs": {
+      "actions": [
+        {
+          "title": "control_test",
+          "slug": "control_test",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "control",
+          "slug": "control",
+          "subcategory": ""
+        },
+        {
+          "title": "gate",
+          "slug": "gate",
+          "subcategory": ""
+        },
+        {
+          "title": "policy",
+          "slug": "policy",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:41:55.316821"
+  },
+  "nomatronio/nomatron": {
+    "docs": {
+      "actions": [
+        {
+          "title": "import_nomad_job",
+          "slug": "import_nomad_job",
+          "subcategory": ""
+        },
+        {
+          "title": "speculative_plan",
+          "slug": "speculative_plan",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "application",
+          "slug": "application",
+          "subcategory": ""
+        },
+        {
+          "title": "approval_policy",
+          "slug": "approval_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "environment",
+          "slug": "environment",
+          "subcategory": ""
+        },
+        {
+          "title": "github_app_integration",
+          "slug": "github_app_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": ""
+        },
+        {
+          "title": "group_member",
+          "slug": "group_member",
+          "subcategory": ""
+        },
+        {
+          "title": "job",
+          "slug": "job",
+          "subcategory": ""
+        },
+        {
+          "title": "network_agent",
+          "slug": "network_agent",
+          "subcategory": ""
+        },
+        {
+          "title": "nomad_cluster",
+          "slug": "nomad_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "oidc_group_mapping",
+          "slug": "oidc_group_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "oidc_provider",
+          "slug": "oidc_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_github_app_integration",
+          "slug": "organization_github_app_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_member",
+          "slug": "organization_member",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_nomad_cluster",
+          "slug": "organization_nomad_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "service_account",
+          "slug": "service_account",
+          "subcategory": ""
+        },
+        {
+          "title": "users",
+          "slug": "users",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "agent_token",
+          "slug": "agent_token",
+          "subcategory": ""
+        },
+        {
+          "title": "service_account_token",
+          "slug": "service_account_token",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "application",
+          "slug": "application",
+          "subcategory": ""
+        },
+        {
+          "title": "approval_policy",
+          "slug": "approval_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "environment",
+          "slug": "environment",
+          "subcategory": ""
+        },
+        {
+          "title": "github_app_integration",
+          "slug": "github_app_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": ""
+        },
+        {
+          "title": "group_member",
+          "slug": "group_member",
+          "subcategory": ""
+        },
+        {
+          "title": "job",
+          "slug": "job",
+          "subcategory": ""
+        },
+        {
+          "title": "network_agent",
+          "slug": "network_agent",
+          "subcategory": ""
+        },
+        {
+          "title": "nomad_cluster",
+          "slug": "nomad_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "oidc_group_mapping",
+          "slug": "oidc_group_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "oidc_provider",
+          "slug": "oidc_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_github_app_integration",
+          "slug": "organization_github_app_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_member",
+          "slug": "organization_member",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_nomad_cluster",
+          "slug": "organization_nomad_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "role_assignment",
+          "slug": "role_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "service_account",
+          "slug": "service_account",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        },
+        {
+          "title": "variable",
+          "slug": "variable",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-05-21T10:42:03.909953"
   }
 }
