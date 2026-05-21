@@ -49,13 +49,22 @@ PROVIDER_REPO_URL = "https://github.com/hashicorp/terraform-provider-google.git"
 PROVIDER_REPO_DIR_NAME = "hashicorp_terraform-provider-google"
 DASHBOARD_PROVIDER = "hashicorp/google"
 
-# Path within the provider repo to the framework registration file.
-REGISTRATION_FILE_REL = Path("google/fwprovider/framework_provider_mmv1_resources.go")
+# Root within the provider repo where we look for list-resource registrations.
+# As of magic-modules PR #17361, the central
+# google/fwprovider/framework_provider_mmv1_resources.go file was removed;
+# list resources now self-register via init() functions calling
+# registry.FrameworkListResource{...}.Register() (collected by
+# registry.FrameworkListResourceFuncs() from framework_provider.go).
+SCAN_ROOT_REL = Path("google")
 SERVICES_DIR_REL = Path("google/services")
 MMV1_SOURCE_NOTE = (
     "Magic Modules generator emits these registrations into the provider repo. "
+    "Each list resource self-registers in an init() block via "
+    "registry.FrameworkListResource{...}.Register(); the provider exposes the "
+    "aggregated set through registry.FrameworkListResourceFuncs(). "
     "Source-of-truth lives in GoogleCloudPlatform/magic-modules under "
-    "mmv1/third_party/terraform/fwprovider/framework_provider_mmv1_resources.go."
+    "mmv1/third_party/terraform/services/<service>/list_*.go and "
+    "mmv1/third_party/terraform/registry/registry.go."
 )
 
 
@@ -104,52 +113,89 @@ def get_repo_commit(repo_dir: Path) -> str | None:
 # Source inspection
 # ---------------------------------------------------------------------------
 
-# Matches: listResourceFunc(<pkg>.New<Name>ListResource())
-REGISTRATION_LINE_RE = re.compile(
-    r"listResourceFunc\(\s*([a-zA-Z0-9_]+)\s*\.\s*(New[A-Za-z0-9_]+ListResource)\s*\(\s*\)\s*\)"
+# Matches: registry.FrameworkListResource{ Name: "...", ProductName: "...",
+#                                          Func: NewXxxListResource, ... }.Register()
+REGISTRATION_BLOCK_RE = re.compile(
+    r"registry\.FrameworkListResource\s*\{(?P<body>[^{}]*)\}\s*\.\s*Register\s*\(\s*\)",
+    re.DOTALL,
 )
-# Matches the slice headers so we can attribute each registration to its bucket.
-SLICE_HEADER_RE = re.compile(
-    r"var\s+(generatedListResources|handwrittenListResources)\s*="
-)
+NAME_FIELD_RE = re.compile(r'Name\s*:\s*"([^"]+)"')
+PRODUCT_FIELD_RE = re.compile(r'ProductName\s*:\s*"([^"]+)"')
+FUNC_FIELD_RE = re.compile(r'Func\s*:\s*([A-Za-z0-9_.]+)')
+# Magic-Modules file headers carry: *** AUTO GENERATED CODE *** Type: <kind> ***
+# where <kind> is "MMv1" (generated) or "Handwritten".
+TYPE_MARKER_RE = re.compile(r"AUTO GENERATED CODE\s*\*+\s*Type:\s*(\w+)")
 # Matches assignments like: listR.TypeName = "google_xxx"
 TYPE_NAME_RE = re.compile(
     r'(?:listR|l|r)\s*\.\s*TypeName\s*=\s*"(google_[a-z0-9_]+)"'
 )
 
 
-def parse_registrations(reg_text: str) -> dict:
-    """Parse the framework_provider_mmv1_resources.go file.
+def scan_registrations(repo_dir: Path) -> tuple[dict, list[dict]]:
+    """Walk the provider repo for ``registry.FrameworkListResource{...}.Register()`` calls.
 
-    Returns::
+    Returns a tuple ``(buckets, source_files)`` where::
 
-        {
-            "generated":   [{"package": ..., "constructor": ..., "line": N}, ...],
-            "handwritten": [{"package": ..., "constructor": ..., "line": N}, ...],
+        buckets = {
+            "generated":   [{"name": ..., "package": ..., "constructor": ...,
+                              "file": ..., "line": N}, ...],
+            "handwritten": [...],
         }
+        source_files = [{"file": rel, "type": "MMv1"|"Handwritten", "registrations": N}, ...]
+
+    Files are classified via the Magic Modules header marker
+    (``*** AUTO GENERATED CODE *** Type: <kind> ***``); anything that isn't
+    explicitly ``MMv1`` is treated as handwritten.
     """
     buckets: dict[str, list[dict]] = {"generated": [], "handwritten": []}
-    current = None
-    for lineno, line in enumerate(reg_text.splitlines(), start=1):
-        header = SLICE_HEADER_RE.search(line)
-        if header:
-            current = "generated" if header.group(1) == "generatedListResources" else "handwritten"
+    source_files: list[dict] = []
+    scan_root = repo_dir / SCAN_ROOT_REL
+    if not scan_root.exists():
+        return buckets, source_files
+
+    for path in sorted(scan_root.rglob("*.go")):
+        if path.name.endswith("_test.go"):
             continue
-        if current is None:
+        try:
+            text = path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
             continue
-        # Closing brace of the slice literal ends the current bucket scope.
-        stripped = line.strip()
-        if stripped.startswith("}"):
-            current = None
+        if "registry.FrameworkListResource" not in text:
             continue
-        match = REGISTRATION_LINE_RE.search(line)
-        if match:
-            buckets[current].append({
-                "package": match.group(1),
-                "constructor": match.group(2),
+
+        type_marker = TYPE_MARKER_RE.search(text)
+        kind = (type_marker.group(1) if type_marker else "").strip()
+        bucket = "generated" if kind.lower() == "mmv1" else "handwritten"
+
+        rel = str(path.relative_to(repo_dir))
+        file_hits = 0
+        for match in REGISTRATION_BLOCK_RE.finditer(text):
+            body = match.group("body")
+            name_m = NAME_FIELD_RE.search(body)
+            func_m = FUNC_FIELD_RE.search(body)
+            if not (name_m and func_m):
+                continue
+            product_m = PRODUCT_FIELD_RE.search(body)
+            lineno = text.count("\n", 0, match.start()) + 1
+            buckets[bucket].append({
+                "name": name_m.group(1),
+                "package": product_m.group(1) if product_m else "",
+                "constructor": func_m.group(1),
+                "file": rel,
                 "line": lineno,
             })
-    return buckets
+            file_hits += 1
+
+        if file_hits:
+            source_files.append({
+                "file": rel,
+                "type": "MMv1" if bucket == "generated" else "Handwritten",
+                "registrations": file_hits,
+            })
+
+    for bucket in buckets.values():
+        bucket.sort(key=lambda e: (e["file"], e["line"]))
+    return buckets, source_files
 
 
 def scan_service_list_files(services_dir: Path) -> dict[str, list[dict]]:
@@ -237,7 +283,9 @@ def cross_check(registrations: dict, by_service: dict[str, list[dict]]) -> dict:
 # Dashboard correlation
 # ---------------------------------------------------------------------------
 
-def load_dashboard_list_count(details_path: Path) -> int | None:
+def load_dashboard_list_resources(details_path: Path) -> list[str] | None:
+    """Return the list-resource slugs the Terraform Registry currently exposes
+    for ``DASHBOARD_PROVIDER``, or ``None`` if the details file is missing."""
     try:
         with open(details_path, "r", encoding="utf-8") as f:
             details = json.load(f)
@@ -247,9 +295,17 @@ def load_dashboard_list_count(details_path: Path) -> int | None:
     entry = details.get(DASHBOARD_PROVIDER, {})
     docs = entry.get("docs", {}) if isinstance(entry, dict) else {}
     list_resources = docs.get("list-resources", []) if isinstance(docs, dict) else []
-    if isinstance(list_resources, list):
-        return len(list_resources)
-    return None
+    if not isinstance(list_resources, list):
+        return []
+    names: list[str] = []
+    for item in list_resources:
+        if isinstance(item, dict):
+            slug = item.get("slug") or item.get("title")
+            if isinstance(slug, str) and slug:
+                names.append(slug)
+        elif isinstance(item, str):
+            names.append(item)
+    return sorted(set(names))
 
 
 # ---------------------------------------------------------------------------
@@ -258,18 +314,26 @@ def load_dashboard_list_count(details_path: Path) -> int | None:
 
 def build_summary(
     repo_dir: Path,
-    reg_text: str,
     registrations: dict,
+    source_files: list[dict],
     by_service: dict[str, list[dict]],
     cross: dict,
     details_path: Path,
 ) -> dict:
-    dashboard_count = load_dashboard_list_count(details_path)
+    dashboard_names = load_dashboard_list_resources(details_path)
+    dashboard_count = None if dashboard_names is None else len(dashboard_names)
     code_count = cross["file_type_name_count"]
-    matches = (
-        dashboard_count is not None
-        and dashboard_count == code_count
-    )
+    code_names = list(cross["file_type_names"])
+
+    dash_set = set(dashboard_names or [])
+    code_set = set(code_names)
+    only_in_registry = sorted(dash_set - code_set)
+    only_in_source = sorted(code_set - dash_set)
+    # The Terraform Registry trails source: a release must be published before
+    # newly-added list resources show up in the Registry docs. Treat
+    # "Registry \u2286 Source" as healthy; flag only when the Registry advertises
+    # something the source no longer implements.
+    matches = dashboard_names is not None and not only_in_registry
 
     service_rows = []
     service_resource_map: dict[str, dict[str, list[str]]] = {}
@@ -286,7 +350,24 @@ def build_summary(
         }
     service_rows.sort(key=lambda row: (-row["list_resources"], row["service"]))
 
-    reg_sha = hashlib.sha256(reg_text.encode("utf-8")).hexdigest()
+    # Hash a canonical, ordering-stable view of every registration so changes
+    # to the upstream wiring produce a stable, comparable fingerprint even
+    # though registrations now live in many files instead of one.
+    canonical = json.dumps(
+        [
+            {
+                "name": entry["name"],
+                "constructor": entry["constructor"],
+                "file": entry["file"],
+            }
+            for bucket_name in ("handwritten", "generated")
+            for entry in registrations.get(bucket_name, [])
+        ],
+        sort_keys=True,
+    ).encode("utf-8")
+    reg_sha = hashlib.sha256(canonical).hexdigest()
+
+    sorted_sources = sorted(source_files, key=lambda x: x["file"])
 
     return {
         "generated_at": datetime.now().isoformat(),
@@ -295,8 +376,10 @@ def build_summary(
             "url": PROVIDER_REPO_URL,
             "commit": get_repo_commit(repo_dir),
         },
-        "registration_file": {
-            "path": str(REGISTRATION_FILE_REL),
+        "registration_sources": {
+            "scan_root": str(SCAN_ROOT_REL),
+            "file_count": len(sorted_sources),
+            "files": sorted_sources,
             "sha256": reg_sha,
             "note": MMV1_SOURCE_NOTE,
         },
@@ -318,6 +401,11 @@ def build_summary(
             "code_list_resources": code_count,
             "registered_count": cross["registration_count"],
             "signals_agree": cross["signals_agree"],
+            "dashboard_list_resource_names": dashboard_names or [],
+            "code_list_resource_names": code_names,
+            "only_in_registry": only_in_registry,
+            "only_in_source": only_in_source,
+            "registry_is_subset": dashboard_names is not None and not only_in_registry,
         },
     }
 
@@ -339,8 +427,9 @@ def render_registration_block(registrations: dict) -> str:
                 f"<p class=\"resource-empty\">No entries.</p></div>"
             )
         rows = "\n".join(
-            f"<li><code>{html.escape(it['package'])}.{html.escape(it['constructor'])}()</code>"
-            f" <span class=\"muted\">line {it['line']}</span></li>"
+            f"<li><code>{html.escape(it.get('name', '') or it['constructor'])}</code>"
+            f" &mdash; <code>{html.escape(it['constructor'])}</code>"
+            f" <span class=\"muted\">{html.escape(it.get('file', ''))}:{it['line']}</span></li>"
             for it in items
         )
         return (
@@ -360,12 +449,18 @@ def generate_report(summary: dict, out_path: Path) -> None:
     validation = summary["validation"]
     cross = summary["cross_check"]
     repo = summary["source_repo"]
-    reg_file = summary["registration_file"]
+    reg_file = summary["registration_sources"]
     coverage = summary.get("service_coverage", {})
 
-    match_icon = "✅" if validation["matches"] else "⚠️"
-    match_text = "match" if validation["matches"] else "do not match"
-    signals_icon = "✅" if validation["signals_agree"] else "⚠️"
+    match_icon = "\u2705" if validation["matches"] else "\u26a0\ufe0f"
+    if validation["matches"]:
+        if validation["only_in_source"]:
+            match_text = "healthy (Registry trails source)"
+        else:
+            match_text = "in sync"
+    else:
+        match_text = "out of sync"
+    signals_icon = "\u2705" if validation["signals_agree"] else "\u26a0\ufe0f"
 
     rows = coverage.get("rows", [])
     service_resources_js = json.dumps(coverage.get("service_resources", {}), ensure_ascii=False)
@@ -403,6 +498,32 @@ def generate_report(summary: dict, out_path: Path) -> None:
     )
 
     registration_block = render_registration_block(summary.get("registrations", {}))
+
+    def _name_list(names: list[str]) -> str:
+        if not names:
+            return '<span class="resource-empty">None.</span>'
+        return " ".join(f"<code>{html.escape(n)}</code>" for n in names)
+
+    diff_html = ""
+    if validation["only_in_source"] or validation["only_in_registry"]:
+        parts = []
+        if validation["only_in_source"]:
+            parts.append(
+                "<div class=\"meta-row\"><span>Source only "
+                "(pending Registry publish)</span><span>"
+                f"{_name_list(validation['only_in_source'])}</span></div>"
+            )
+        if validation["only_in_registry"]:
+            parts.append(
+                "<div class=\"meta-row\"><span>Registry only "
+                "(possible regression)</span><span>"
+                f"{_name_list(validation['only_in_registry'])}</span></div>"
+            )
+        diff_html = (
+            "<div class=\"meta-grid\" style=\"margin-top:12px;\"><div>"
+            + "".join(parts)
+            + "</div></div>"
+        )
 
     html_text = f"""<!DOCTYPE html>
 <html lang=\"en\">
@@ -543,7 +664,7 @@ def generate_report(summary: dict, out_path: Path) -> None:
         <div class=\"card\"><div class=\"value\">{fmt(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
         <div class=\"card\"><div class=\"value\">{fmt(validation['code_list_resources'])}</div><div class=\"label\">Source TypeNames</div></div>
         <div class=\"card\"><div class=\"value\">{fmt(validation['registered_count'])}</div><div class=\"label\">Registered Constructors</div></div>
-        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Counts {match_text}</div></div>
+        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Validation: {match_text}</div></div>
         <div class=\"card\"><div class=\"value\">{signals_icon}</div><div class=\"label\">Source Signals Agree</div></div>
     </div>
 
@@ -559,14 +680,15 @@ def generate_report(summary: dict, out_path: Path) -> None:
             <div>
                 <div class=\"meta-row\"><span>Provider repo</span><span><a href=\"{html.escape(repo['url'])}\">{html.escape(repo['repo'])}</a></span></div>
                 <div class=\"meta-row\"><span>Repo commit</span><span><code>{html.escape(repo['commit'] or 'unknown')}</code></span></div>
-                <div class=\"meta-row\"><span>Registration file</span><span><code>{html.escape(reg_file['path'])}</code></span></div>
-                <div class=\"meta-row\"><span>Reg-file SHA-256</span><span><code>{html.escape(reg_file['sha256'][:16])}...</code></span></div>
+                <div class=\"meta-row\"><span>Registration sources</span><span>{fmt(reg_file['file_count'])} file(s) under <code>{html.escape(reg_file['scan_root'])}/</code></span></div>
+                <div class=\"meta-row\"><span>Registrations SHA-256</span><span><code>{html.escape(reg_file['sha256'][:16])}...</code></span></div>
             </div>
             <div>
                 <div class=\"meta-row\"><span>Dashboard provider</span><span><code>{html.escape(DASHBOARD_PROVIDER)}</code></span></div>
                 <div class=\"meta-row\"><span>Magic Modules note</span><span style=\"text-align:left;\">{html.escape(reg_file['note'])}</span></div>
             </div>
         </div>
+        {diff_html}
     </div>
 
     <div class=\"section\">
@@ -592,7 +714,7 @@ def generate_report(summary: dict, out_path: Path) -> None:
 
     <div class=\"section\">
         <h2>Source Registrations</h2>
-        <p class=\"subtitle\" style=\"margin-bottom: 12px;\">Parsed from <code>{html.escape(str(REGISTRATION_FILE_REL))}</code>.</p>
+        <p class=\"subtitle\" style=\"margin-bottom: 12px;\">Parsed from <code>registry.FrameworkListResource{{...}}.Register()</code> blocks across <strong>{fmt(reg_file['file_count'])}</strong> source file(s) under <code>{html.escape(reg_file['scan_root'])}/</code>.</p>
         {registration_block}
     </div>
 
@@ -725,20 +847,28 @@ def main() -> int:
         print("ERROR: Failed to clone/update terraform-provider-google", file=sys.stderr)
         return 1
 
-    reg_path = repo_dir / REGISTRATION_FILE_REL
-    if not reg_path.exists():
-        print(f"ERROR: registration file not found at {reg_path}", file=sys.stderr)
-        return 2
-    reg_text = reg_path.read_text(encoding="utf-8", errors="replace")
+    reg_text = (
+        "Registrations are sourced from registry.FrameworkListResource{...}.Register() "
+        "blocks across the cloned provider repo."
+    )
+    print(f"  {reg_text}")
 
-    registrations = parse_registrations(reg_text)
+    registrations, source_files = scan_registrations(repo_dir)
+    if not registrations["generated"] and not registrations["handwritten"]:
+        print(
+            "ERROR: no registry.FrameworkListResource{...}.Register() blocks found in "
+            f"{repo_dir / SCAN_ROOT_REL}; upstream layout may have changed again.",
+            file=sys.stderr,
+        )
+        return 2
+
     by_service = scan_service_list_files(repo_dir / SERVICES_DIR_REL)
     cross = cross_check(registrations, by_service)
 
     summary = build_summary(
         repo_dir=repo_dir,
-        reg_text=reg_text,
         registrations=registrations,
+        source_files=source_files,
         by_service=by_service,
         cross=cross,
         details_path=Path(args.details_file),
@@ -754,15 +884,26 @@ def main() -> int:
         "Generated Google list validation artifacts: "
         f"{args.output_json}, {args.output_html}"
     )
+    v = summary["validation"]
     print(
         "Validation: dashboard="
-        f"{summary['validation']['dashboard_list_resources']} "
-        "code="
-        f"{summary['validation']['code_list_resources']} "
-        f"registered={summary['validation']['registered_count']} "
-        f"match={summary['validation']['matches']} "
-        f"signals_agree={summary['validation']['signals_agree']}"
+        f"{v['dashboard_list_resources']} "
+        f"code={v['code_list_resources']} "
+        f"registered={v['registered_count']} "
+        f"match={v['matches']} "
+        f"signals_agree={v['signals_agree']}"
     )
+    if v["only_in_source"]:
+        print(
+            "  Source-only (pending Registry publish): "
+            + ", ".join(v["only_in_source"])
+        )
+    if v["only_in_registry"]:
+        print(
+            "  Registry-only (regression?): "
+            + ", ".join(v["only_in_registry"]),
+            file=sys.stderr,
+        )
     return 0
 
 
