@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T09:21:04.015824",
+  "generated_at": "2026-05-21T18:29:45.351512",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "2e4ea86cff7c96534d6bcb58ca14d832bb5cd0c7"
+    "commit": "4a640711b17d39f371f642778560625c18b9369b"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 117
+    "list_resources": 135
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3065,
+    "stdout_line_count": 3086,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 7,
-        "implemented": 116,
-        "total": 1628
+        "percent": 8,
+        "implemented": 133,
+        "total": 1643
       },
-      "service_count": 238,
+      "service_count": 239,
       "services": [
         {
           "service": "accessanalyzer",
@@ -78,8 +78,8 @@
         },
         {
           "service": "appautoscaling",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 33,
+          "implemented": 1,
           "total": 3
         },
         {
@@ -144,9 +144,9 @@
         },
         {
           "service": "arczonalshift",
-          "percent": 0,
-          "implemented": 0,
-          "total": 1
+          "percent": 50,
+          "implemented": 1,
+          "total": 2
         },
         {
           "service": "athena",
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 0,
-          "implemented": 0,
-          "total": 12
+          "percent": 7,
+          "implemented": 1,
+          "total": 13
         },
         {
           "service": "billing",
@@ -534,20 +534,20 @@
         },
         {
           "service": "dynamodb",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 22,
+          "implemented": 2,
           "total": 9
         },
         {
           "service": "ec2",
-          "percent": 11,
-          "implemented": 18,
+          "percent": 12,
+          "implemented": 19,
           "total": 157
         },
         {
           "service": "ecr",
-          "percent": 10,
-          "implemented": 1,
+          "percent": 20,
+          "implemented": 2,
           "total": 10
         },
         {
@@ -606,8 +606,8 @@
         },
         {
           "service": "elbv2",
-          "percent": 50,
-          "implemented": 4,
+          "percent": 62,
+          "implemented": 5,
           "total": 8
         },
         {
@@ -690,9 +690,9 @@
         },
         {
           "service": "glue",
-          "percent": 5,
-          "implemented": 1,
-          "total": 20
+          "percent": 9,
+          "implemented": 2,
+          "total": 21
         },
         {
           "service": "grafana",
@@ -708,8 +708,8 @@
         },
         {
           "service": "iam",
-          "percent": 20,
-          "implemented": 7,
+          "percent": 22,
+          "implemented": 8,
           "total": 35
         },
         {
@@ -984,9 +984,9 @@
         },
         {
           "service": "observabilityadmin",
-          "percent": 0,
-          "implemented": 0,
-          "total": 3
+          "percent": 28,
+          "implemented": 2,
+          "total": 7
         },
         {
           "service": "odb",
@@ -1014,6 +1014,12 @@
         },
         {
           "service": "osis",
+          "percent": 0,
+          "implemented": 0,
+          "total": 1
+        },
+        {
+          "service": "outposts",
           "percent": 0,
           "implemented": 0,
           "total": 1
@@ -1082,7 +1088,7 @@
           "service": "redshift",
           "percent": 0,
           "implemented": 0,
-          "total": 24
+          "total": 25
         },
         {
           "service": "redshiftdata",
@@ -1128,8 +1134,8 @@
         },
         {
           "service": "route53",
-          "percent": 14,
-          "implemented": 2,
+          "percent": 28,
+          "implemented": 4,
           "total": 14
         },
         {
@@ -1170,15 +1176,15 @@
         },
         {
           "service": "s3",
-          "percent": 38,
-          "implemented": 10,
+          "percent": 42,
+          "implemented": 11,
           "total": 26
         },
         {
           "service": "s3control",
           "percent": 0,
           "implemented": 0,
-          "total": 16
+          "total": 17
         },
         {
           "service": "s3files",
@@ -1236,9 +1242,9 @@
         },
         {
           "service": "securityhub",
-          "percent": 12,
-          "implemented": 2,
-          "total": 16
+          "percent": 21,
+          "implemented": 4,
+          "total": 19
         },
         {
           "service": "securitylake",
@@ -1454,7 +1460,7 @@
           "service": "xray",
           "percent": 0,
           "implemented": 0,
-          "total": 4
+          "total": 6
         }
       ],
       "service_resources": {
@@ -1577,7 +1583,9 @@
             "appautoscaling/scheduled_action.go",
             "appautoscaling/target.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "appautoscaling/policy.go"
+          ]
         },
         "appconfig": {
           "all_resources": [
@@ -1688,9 +1696,12 @@
         },
         "arczonalshift": {
           "all_resources": [
-            "arczonalshift/autoshift_observer_notification_status.go"
+            "arczonalshift/autoshift_observer_notification_status.go",
+            "arczonalshift/zonal_autoshift_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "arczonalshift/zonal_autoshift_configuration.go"
+          ]
         },
         "athena": {
           "all_resources": [
@@ -1807,13 +1818,16 @@
             "bedrockagentcore/code_interpreter.go",
             "bedrockagentcore/gateway.go",
             "bedrockagentcore/gateway_target.go",
+            "bedrockagentcore/harness.go",
             "bedrockagentcore/memory.go",
             "bedrockagentcore/memory_strategy.go",
             "bedrockagentcore/oauth2_credential_provider.go",
             "bedrockagentcore/token_vault_cmk.go",
             "bedrockagentcore/workload_identity.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "bedrockagentcore/harness.go"
+          ]
         },
         "billing": {
           "all_resources": [
@@ -2363,7 +2377,10 @@
             "dynamodb/table_item.go",
             "dynamodb/table_replica.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "dynamodb/global_secondary_index.go",
+            "dynamodb/table.go"
+          ]
         },
         "ec2": {
           "all_resources": [
@@ -2534,6 +2551,7 @@
             "ec2/ec2_secondary_subnet.go",
             "ec2/transitgateway_metering_policy.go",
             "ec2/vpc_endpoint.go",
+            "ec2/vpc_endpoint_route_table_association.go",
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
             "ec2/vpc_network_insights_access_scope.go",
@@ -2560,7 +2578,8 @@
             "ecr/repository_policy.go"
           ],
           "list_resources": [
-            "ecr/repository.go"
+            "ecr/repository.go",
+            "ecr/repository_policy.go"
           ]
         },
         "ecrpublic": {
@@ -2684,7 +2703,8 @@
             "elbv2/listener.go",
             "elbv2/listener_rule.go",
             "elbv2/load_balancer.go",
-            "elbv2/target_group.go"
+            "elbv2/target_group.go",
+            "elbv2/target_group_attachment.go"
           ]
         },
         "emr": {
@@ -2821,6 +2841,7 @@
         },
         "glue": {
           "all_resources": [
+            "glue/catalog.go",
             "glue/catalog_database.go",
             "glue/catalog_table.go",
             "glue/catalog_table_optimizer.go",
@@ -2843,6 +2864,7 @@
             "glue/workflow.go"
           ],
           "list_resources": [
+            "glue/catalog.go",
             "glue/job.go"
           ]
         },
@@ -2915,6 +2937,7 @@
             "iam/virtual_mfa_device.go"
           ],
           "list_resources": [
+            "iam/access_key.go",
             "iam/group_policy_attachment.go",
             "iam/policy.go",
             "iam/role.go",
@@ -3422,9 +3445,16 @@
           "all_resources": [
             "observabilityadmin/centralization_rule_for_organization.go",
             "observabilityadmin/telemetry_enrichment.go",
-            "observabilityadmin/telemetry_pipeline.go"
+            "observabilityadmin/telemetry_evaluation.go",
+            "observabilityadmin/telemetry_evaluation_for_organization.go",
+            "observabilityadmin/telemetry_pipeline.go",
+            "observabilityadmin/telemetry_rule.go",
+            "observabilityadmin/telemetry_rule_for_organization.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "observabilityadmin/telemetry_rule.go",
+            "observabilityadmin/telemetry_rule_for_organization.go"
+          ]
         },
         "odb": {
           "all_resources": [
@@ -3484,6 +3514,12 @@
         "osis": {
           "all_resources": [
             "osis/pipeline.go"
+          ],
+          "list_resources": []
+        },
+        "outposts": {
+          "all_resources": [
+            "outposts/capacity_task.go"
           ],
           "list_resources": []
         },
@@ -3637,6 +3673,7 @@
             "redshift/idc_application.go",
             "redshift/integration.go",
             "redshift/logging.go",
+            "redshift/namespace_registration.go",
             "redshift/parameter_group.go",
             "redshift/partner.go",
             "redshift/resource_policy.go",
@@ -3722,7 +3759,9 @@
           ],
           "list_resources": [
             "route53/record.go",
-            "route53/zone.go"
+            "route53/vpc_association_authorization.go",
+            "route53/zone.go",
+            "route53/zone_association.go"
           ]
         },
         "route53domains": {
@@ -3818,6 +3857,7 @@
             "s3/bucket.go",
             "s3/bucket_acl.go",
             "s3/bucket_lifecycle_configuration.go",
+            "s3/bucket_logging.go",
             "s3/bucket_ownership_controls.go",
             "s3/bucket_policy.go",
             "s3/bucket_public_access_block.go",
@@ -3842,6 +3882,7 @@
             "s3control/directory_bucket_access_point_scope.go",
             "s3control/multi_region_access_point.go",
             "s3control/multi_region_access_point_policy.go",
+            "s3control/multi_region_access_point_routes.go",
             "s3control/object_lambda_access_point.go",
             "s3control/object_lambda_access_point_policy.go",
             "s3control/storage_lens_configuration.go"
@@ -3975,9 +4016,12 @@
             "securityhub/account.go",
             "securityhub/account_v2.go",
             "securityhub/action_target.go",
+            "securityhub/aggregator_v2.go",
             "securityhub/automation_rule.go",
+            "securityhub/automation_rule_v2.go",
             "securityhub/configuration_policy.go",
             "securityhub/configuration_policy_association.go",
+            "securityhub/connector_v2.go",
             "securityhub/finding_aggregator.go",
             "securityhub/insight.go",
             "securityhub/invite_accepter.go",
@@ -3990,6 +4034,8 @@
             "securityhub/standards_subscription.go"
           ],
           "list_resources": [
+            "securityhub/automation_rule_v2.go",
+            "securityhub/connector_v2.go",
             "securityhub/insight.go",
             "securityhub/standards_control.go"
           ]
@@ -4425,34 +4471,36 @@
           "all_resources": [
             "xray/encryption_config.go",
             "xray/group.go",
+            "xray/indexing_rule.go",
             "xray/resource_policy.go",
-            "xray/sampling_rule.go"
+            "xray/sampling_rule.go",
+            "xray/trace_segment_destination.go"
           ],
           "list_resources": []
         }
       },
-      "last_updated": "2026-05-01 09:21:03 UTC"
+      "last_updated": "2026-05-21 18:29:45 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 38,
+    "services_with_list": 43,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 11,
-        "implemented": 18,
+        "percent": 12,
+        "implemented": 19,
         "total": 157
       },
       {
         "service": "s3",
-        "percent": 38,
-        "implemented": 10,
+        "percent": 42,
+        "implemented": 11,
         "total": 26
       },
       {
         "service": "iam",
-        "percent": 20,
-        "implemented": 7,
+        "percent": 22,
+        "implemented": 8,
         "total": 35
       },
       {
@@ -4468,6 +4516,12 @@
         "total": 5
       },
       {
+        "service": "elbv2",
+        "percent": 62,
+        "implemented": 5,
+        "total": 8
+      },
+      {
         "service": "lambda",
         "percent": 35,
         "implemented": 5,
@@ -4480,16 +4534,22 @@
         "total": 5
       },
       {
-        "service": "elbv2",
-        "percent": 50,
-        "implemented": 4,
-        "total": 8
-      },
-      {
         "service": "ssm",
         "percent": 33,
         "implemented": 4,
         "total": 12
+      },
+      {
+        "service": "route53",
+        "percent": 28,
+        "implemented": 4,
+        "total": 14
+      },
+      {
+        "service": "securityhub",
+        "percent": 21,
+        "implemented": 4,
+        "total": 19
       },
       {
         "service": "sns",
@@ -4514,18 +4574,6 @@
         "percent": 8,
         "implemented": 3,
         "total": 37
-      },
-      {
-        "service": "appflow",
-        "percent": 100,
-        "implemented": 2,
-        "total": 2
-      },
-      {
-        "service": "cleanrooms",
-        "percent": 66,
-        "implemented": 2,
-        "total": 3
       }
     ],
     "service_resources": {
@@ -4648,7 +4696,9 @@
           "appautoscaling/scheduled_action.go",
           "appautoscaling/target.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "appautoscaling/policy.go"
+        ]
       },
       "appconfig": {
         "all_resources": [
@@ -4759,9 +4809,12 @@
       },
       "arczonalshift": {
         "all_resources": [
-          "arczonalshift/autoshift_observer_notification_status.go"
+          "arczonalshift/autoshift_observer_notification_status.go",
+          "arczonalshift/zonal_autoshift_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "arczonalshift/zonal_autoshift_configuration.go"
+        ]
       },
       "athena": {
         "all_resources": [
@@ -4878,13 +4931,16 @@
           "bedrockagentcore/code_interpreter.go",
           "bedrockagentcore/gateway.go",
           "bedrockagentcore/gateway_target.go",
+          "bedrockagentcore/harness.go",
           "bedrockagentcore/memory.go",
           "bedrockagentcore/memory_strategy.go",
           "bedrockagentcore/oauth2_credential_provider.go",
           "bedrockagentcore/token_vault_cmk.go",
           "bedrockagentcore/workload_identity.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "bedrockagentcore/harness.go"
+        ]
       },
       "billing": {
         "all_resources": [
@@ -5434,7 +5490,10 @@
           "dynamodb/table_item.go",
           "dynamodb/table_replica.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "dynamodb/global_secondary_index.go",
+          "dynamodb/table.go"
+        ]
       },
       "ec2": {
         "all_resources": [
@@ -5605,6 +5664,7 @@
           "ec2/ec2_secondary_subnet.go",
           "ec2/transitgateway_metering_policy.go",
           "ec2/vpc_endpoint.go",
+          "ec2/vpc_endpoint_route_table_association.go",
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
           "ec2/vpc_network_insights_access_scope.go",
@@ -5631,7 +5691,8 @@
           "ecr/repository_policy.go"
         ],
         "list_resources": [
-          "ecr/repository.go"
+          "ecr/repository.go",
+          "ecr/repository_policy.go"
         ]
       },
       "ecrpublic": {
@@ -5755,7 +5816,8 @@
           "elbv2/listener.go",
           "elbv2/listener_rule.go",
           "elbv2/load_balancer.go",
-          "elbv2/target_group.go"
+          "elbv2/target_group.go",
+          "elbv2/target_group_attachment.go"
         ]
       },
       "emr": {
@@ -5892,6 +5954,7 @@
       },
       "glue": {
         "all_resources": [
+          "glue/catalog.go",
           "glue/catalog_database.go",
           "glue/catalog_table.go",
           "glue/catalog_table_optimizer.go",
@@ -5914,6 +5977,7 @@
           "glue/workflow.go"
         ],
         "list_resources": [
+          "glue/catalog.go",
           "glue/job.go"
         ]
       },
@@ -5986,6 +6050,7 @@
           "iam/virtual_mfa_device.go"
         ],
         "list_resources": [
+          "iam/access_key.go",
           "iam/group_policy_attachment.go",
           "iam/policy.go",
           "iam/role.go",
@@ -6493,9 +6558,16 @@
         "all_resources": [
           "observabilityadmin/centralization_rule_for_organization.go",
           "observabilityadmin/telemetry_enrichment.go",
-          "observabilityadmin/telemetry_pipeline.go"
+          "observabilityadmin/telemetry_evaluation.go",
+          "observabilityadmin/telemetry_evaluation_for_organization.go",
+          "observabilityadmin/telemetry_pipeline.go",
+          "observabilityadmin/telemetry_rule.go",
+          "observabilityadmin/telemetry_rule_for_organization.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "observabilityadmin/telemetry_rule.go",
+          "observabilityadmin/telemetry_rule_for_organization.go"
+        ]
       },
       "odb": {
         "all_resources": [
@@ -6555,6 +6627,12 @@
       "osis": {
         "all_resources": [
           "osis/pipeline.go"
+        ],
+        "list_resources": []
+      },
+      "outposts": {
+        "all_resources": [
+          "outposts/capacity_task.go"
         ],
         "list_resources": []
       },
@@ -6708,6 +6786,7 @@
           "redshift/idc_application.go",
           "redshift/integration.go",
           "redshift/logging.go",
+          "redshift/namespace_registration.go",
           "redshift/parameter_group.go",
           "redshift/partner.go",
           "redshift/resource_policy.go",
@@ -6793,7 +6872,9 @@
         ],
         "list_resources": [
           "route53/record.go",
-          "route53/zone.go"
+          "route53/vpc_association_authorization.go",
+          "route53/zone.go",
+          "route53/zone_association.go"
         ]
       },
       "route53domains": {
@@ -6889,6 +6970,7 @@
           "s3/bucket.go",
           "s3/bucket_acl.go",
           "s3/bucket_lifecycle_configuration.go",
+          "s3/bucket_logging.go",
           "s3/bucket_ownership_controls.go",
           "s3/bucket_policy.go",
           "s3/bucket_public_access_block.go",
@@ -6913,6 +6995,7 @@
           "s3control/directory_bucket_access_point_scope.go",
           "s3control/multi_region_access_point.go",
           "s3control/multi_region_access_point_policy.go",
+          "s3control/multi_region_access_point_routes.go",
           "s3control/object_lambda_access_point.go",
           "s3control/object_lambda_access_point_policy.go",
           "s3control/storage_lens_configuration.go"
@@ -7046,9 +7129,12 @@
           "securityhub/account.go",
           "securityhub/account_v2.go",
           "securityhub/action_target.go",
+          "securityhub/aggregator_v2.go",
           "securityhub/automation_rule.go",
+          "securityhub/automation_rule_v2.go",
           "securityhub/configuration_policy.go",
           "securityhub/configuration_policy_association.go",
+          "securityhub/connector_v2.go",
           "securityhub/finding_aggregator.go",
           "securityhub/insight.go",
           "securityhub/invite_accepter.go",
@@ -7061,6 +7147,8 @@
           "securityhub/standards_subscription.go"
         ],
         "list_resources": [
+          "securityhub/automation_rule_v2.go",
+          "securityhub/connector_v2.go",
           "securityhub/insight.go",
           "securityhub/standards_control.go"
         ]
@@ -7496,8 +7584,10 @@
         "all_resources": [
           "xray/encryption_config.go",
           "xray/group.go",
+          "xray/indexing_rule.go",
           "xray/resource_policy.go",
-          "xray/sampling_rule.go"
+          "xray/sampling_rule.go",
+          "xray/trace_segment_destination.go"
         ],
         "list_resources": []
       }
@@ -7505,9 +7595,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 117,
-    "script_implemented_list": 116,
-    "script_total_resources": 1628,
-    "script_percent": 7
+    "dashboard_list_resources": 135,
+    "script_implemented_list": 133,
+    "script_total_resources": 1643,
+    "script_percent": 8
   }
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-21T13:05:55.159223",
+  "generated_at": "2026-05-21T18:29:50.612751",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "b825d5821f9cc9893be30de45fccb65abbcb4f7e"
+    "commit": "99e08ad1e7773088fd05ec8e9184fa85f0c7249c"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 2,
+    "file_count": 3,
     "files": [
       {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
@@ -18,9 +18,14 @@
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type": "Handwritten",
         "registrations": 1
+      },
+      {
+        "file": "google/services/storage/list_google_storage_bucket.go",
+        "type": "Handwritten",
+        "registrations": 1
       }
     ],
-    "sha256": "28bbfad107fcd1d36c8d4ff870eada220d807a561af38e0ad3dcb357f31ede52",
+    "sha256": "fa84cffd91014050de7400eb354ed89613c8550822636247a8311da3fa768c5b",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -44,6 +49,13 @@
         "constructor": "NewGoogleServiceAccountListResource",
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "line": 41
+      },
+      {
+        "name": "google_storage_bucket",
+        "package": "storage",
+        "constructor": "NewGoogleStorageBucketListResource",
+        "file": "google/services/storage/list_google_storage_bucket.go",
+        "line": 41
       }
     ]
   },
@@ -61,29 +73,39 @@
         "type_name": "google_service_account",
         "constructor": "NewGoogleServiceAccountListResource"
       }
+    ],
+    "storage": [
+      {
+        "file": "google/services/storage/list_google_storage_bucket.go",
+        "type_name": "google_storage_bucket",
+        "constructor": "NewGoogleStorageBucketListResource"
+      }
     ]
   },
   "cross_check": {
     "registered_constructors": [
       "NewCloudRunServiceListResource",
-      "NewGoogleServiceAccountListResource"
+      "NewGoogleServiceAccountListResource",
+      "NewGoogleStorageBucketListResource"
     ],
     "file_constructors": [
       "NewCloudRunServiceListResource",
-      "NewGoogleServiceAccountListResource"
+      "NewGoogleServiceAccountListResource",
+      "NewGoogleStorageBucketListResource"
     ],
     "file_type_names": [
       "google_cloud_run_service",
-      "google_service_account"
+      "google_service_account",
+      "google_storage_bucket"
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 2,
-    "file_type_name_count": 2,
+    "registration_count": 3,
+    "file_type_name_count": 3,
     "signals_agree": true
   },
   "service_coverage": {
-    "services_with_list": 2,
+    "services_with_list": 3,
     "rows": [
       {
         "service": "cloudrun",
@@ -91,6 +113,10 @@
       },
       {
         "service": "resourcemanager",
+        "list_resources": 1
+      },
+      {
+        "service": "storage",
         "list_resources": 1
       }
     ],
@@ -104,25 +130,32 @@
         "list_resources": [
           "google_service_account"
         ]
+      },
+      "storage": {
+        "list_resources": [
+          "google_storage_bucket"
+        ]
       }
     }
   },
   "validation": {
     "matches": true,
     "dashboard_list_resources": 1,
-    "code_list_resources": 2,
-    "registered_count": 2,
+    "code_list_resources": 3,
+    "registered_count": 3,
     "signals_agree": true,
     "dashboard_list_resource_names": [
       "google_service_account"
     ],
     "code_list_resource_names": [
       "google_cloud_run_service",
-      "google_service_account"
+      "google_service_account",
+      "google_storage_bucket"
     ],
     "only_in_registry": [],
     "only_in_source": [
-      "google_cloud_run_service"
+      "google_cloud_run_service",
+      "google_storage_bucket"
     ],
     "registry_is_subset": true
   }

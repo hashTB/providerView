@@ -1607,6 +1607,11 @@
           "subcategory": "Global Accelerator"
         },
         {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
+          "subcategory": "Glue"
+        },
+        {
           "title": "glue_catalog_table",
           "slug": "glue_catalog_table",
           "subcategory": "Glue"
@@ -3740,6 +3745,11 @@
           "subcategory": "API Gateway V2"
         },
         {
+          "title": "appautoscaling_policy",
+          "slug": "appautoscaling_policy",
+          "subcategory": "Application Auto Scaling"
+        },
+        {
           "title": "appflow_connector_profile",
           "slug": "appflow_connector_profile",
           "subcategory": "AppFlow"
@@ -3750,6 +3760,11 @@
           "subcategory": "AppFlow"
         },
         {
+          "title": "arczonalshift_zonal_autoshift_configuration",
+          "slug": "arczonalshift_zonal_autoshift_configuration",
+          "subcategory": "ARC (Application Recovery Controller) Zonal Shift"
+        },
+        {
           "title": "batch_job_definition",
           "slug": "batch_job_definition",
           "subcategory": "Batch"
@@ -3758,6 +3773,11 @@
           "title": "batch_job_queue",
           "slug": "batch_job_queue",
           "subcategory": "Batch"
+        },
+        {
+          "title": "bedrockagentcore_harness",
+          "slug": "bedrockagentcore_harness",
+          "subcategory": "Bedrock AgentCore"
         },
         {
           "title": "cleanrooms_collaboration",
@@ -3835,6 +3855,16 @@
           "subcategory": "RDS (Relational Database)"
         },
         {
+          "title": "dynamodb_global_secondary_index",
+          "slug": "dynamodb_global_secondary_index",
+          "subcategory": "DynamoDB"
+        },
+        {
+          "title": "dynamodb_table",
+          "slug": "dynamodb_table",
+          "subcategory": "DynamoDB"
+        },
+        {
           "title": "ec2_ebs_volume",
           "slug": "ec2_ebs_volume",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -3865,6 +3895,11 @@
           "subcategory": "ECR (Elastic Container Registry)"
         },
         {
+          "title": "ecr_repository_policy",
+          "slug": "ecr_repository_policy",
+          "subcategory": "ECR (Elastic Container Registry)"
+        },
+        {
           "title": "ecs_service",
           "slug": "ecs_service",
           "subcategory": "ECS (Elastic Container)"
@@ -3890,9 +3925,19 @@
           "subcategory": "ELB Classic"
         },
         {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
+          "subcategory": "Glue"
+        },
+        {
           "title": "glue_job",
           "slug": "glue_job",
           "subcategory": "Glue"
+        },
+        {
+          "title": "iam_access_key",
+          "slug": "iam_access_key",
+          "subcategory": "IAM (Identity & Access Management)"
         },
         {
           "title": "iam_group_policy_attachment",
@@ -4000,6 +4045,11 @@
           "subcategory": "ELB (Elastic Load Balancing)"
         },
         {
+          "title": "lb_target_group_attachment",
+          "slug": "lb_target_group_attachment",
+          "subcategory": "ELB (Elastic Load Balancing)"
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": "Managed Streaming for Kafka"
@@ -4018,6 +4068,16 @@
           "title": "nat_gateway",
           "slug": "nat_gateway",
           "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "observabilityadmin_telemetry_rule",
+          "slug": "observabilityadmin_telemetry_rule",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_telemetry_rule_for_organization",
+          "slug": "observabilityadmin_telemetry_rule_for_organization",
+          "subcategory": "CloudWatch Observability Admin"
         },
         {
           "title": "opensearchserverless_collection",
@@ -4055,8 +4115,18 @@
           "subcategory": "Route 53 Resolver"
         },
         {
+          "title": "route53_vpc_association_authorization",
+          "slug": "route53_vpc_association_authorization",
+          "subcategory": "Route 53"
+        },
+        {
           "title": "route53_zone",
           "slug": "route53_zone",
+          "subcategory": "Route 53"
+        },
+        {
+          "title": "route53_zone_association",
+          "slug": "route53_zone_association",
           "subcategory": "Route 53"
         },
         {
@@ -4082,6 +4152,11 @@
         {
           "title": "s3_bucket_lifecycle_configuration",
           "slug": "s3_bucket_lifecycle_configuration",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
+          "title": "s3_bucket_logging",
+          "slug": "s3_bucket_logging",
           "subcategory": "S3 (Simple Storage)"
         },
         {
@@ -4175,8 +4250,23 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "securityhub_automation_rule_v2",
+          "slug": "securityhub_automation_rule_v2",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_connector_v2",
+          "slug": "securityhub_connector_v2",
+          "subcategory": "Security Hub"
+        },
+        {
           "title": "securityhub_insight",
           "slug": "securityhub_insight",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_standards_control",
+          "slug": "securityhub_standards_control",
           "subcategory": "Security Hub"
         },
         {
@@ -4247,6 +4337,11 @@
         {
           "title": "vpc_endpoint",
           "slug": "vpc_endpoint",
+          "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
+          "title": "vpc_endpoint_route_table_association",
+          "slug": "vpc_endpoint_route_table_association",
           "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
@@ -4889,6 +4984,11 @@
           "subcategory": "ARC (Application Recovery Controller) Zonal Shift"
         },
         {
+          "title": "arczonalshift_zonal_autoshift_configuration",
+          "slug": "arczonalshift_zonal_autoshift_configuration",
+          "subcategory": "ARC (Application Recovery Controller) Zonal Shift"
+        },
+        {
           "title": "athena_capacity_reservation",
           "slug": "athena_capacity_reservation",
           "subcategory": "Athena"
@@ -5151,6 +5251,11 @@
         {
           "title": "bedrockagentcore_gateway_target",
           "slug": "bedrockagentcore_gateway_target",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_harness",
+          "slug": "bedrockagentcore_harness",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -7679,6 +7784,11 @@
           "subcategory": "Global Accelerator"
         },
         {
+          "title": "glue_catalog",
+          "slug": "glue_catalog",
+          "subcategory": "Glue"
+        },
+        {
           "title": "glue_catalog_database",
           "slug": "glue_catalog_database",
           "subcategory": "Glue"
@@ -9394,8 +9504,28 @@
           "subcategory": "CloudWatch Observability Admin"
         },
         {
+          "title": "observabilityadmin_telemetry_evaluation",
+          "slug": "observabilityadmin_telemetry_evaluation",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_telemetry_evaluation_for_organization",
+          "slug": "observabilityadmin_telemetry_evaluation_for_organization",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
           "title": "observabilityadmin_telemetry_pipeline",
           "slug": "observabilityadmin_telemetry_pipeline",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_telemetry_rule",
+          "slug": "observabilityadmin_telemetry_rule",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_telemetry_rule_for_organization",
+          "slug": "observabilityadmin_telemetry_rule_for_organization",
           "subcategory": "CloudWatch Observability Admin"
         },
         {
@@ -9557,6 +9687,11 @@
           "title": "osis_pipeline",
           "slug": "osis_pipeline",
           "subcategory": "OpenSearch Ingestion"
+        },
+        {
+          "title": "outposts_capacity_task",
+          "slug": "outposts_capacity_task",
+          "subcategory": "Outposts"
         },
         {
           "title": "paymentcryptography_key",
@@ -10021,6 +10156,11 @@
         {
           "title": "redshift_logging",
           "slug": "redshift_logging",
+          "subcategory": "Redshift"
+        },
+        {
+          "title": "redshift_namespace_registration",
+          "slug": "redshift_namespace_registration",
           "subcategory": "Redshift"
         },
         {
@@ -10944,8 +11084,18 @@
           "subcategory": "Security Hub"
         },
         {
+          "title": "securityhub_aggregator_v2",
+          "slug": "securityhub_aggregator_v2",
+          "subcategory": "Security Hub"
+        },
+        {
           "title": "securityhub_automation_rule",
           "slug": "securityhub_automation_rule",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_automation_rule_v2",
+          "slug": "securityhub_automation_rule_v2",
           "subcategory": "Security Hub"
         },
         {
@@ -10956,6 +11106,11 @@
         {
           "title": "securityhub_configuration_policy_association",
           "slug": "securityhub_configuration_policy_association",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_connector_v2",
+          "slug": "securityhub_connector_v2",
           "subcategory": "Security Hub"
         },
         {
@@ -12479,6 +12634,11 @@
           "subcategory": "X-Ray"
         },
         {
+          "title": "xray_indexing_rule",
+          "slug": "xray_indexing_rule",
+          "subcategory": "X-Ray"
+        },
+        {
           "title": "xray_resource_policy",
           "slug": "xray_resource_policy",
           "subcategory": "X-Ray"
@@ -12487,10 +12647,15 @@
           "title": "xray_sampling_rule",
           "slug": "xray_sampling_rule",
           "subcategory": "X-Ray"
+        },
+        {
+          "title": "xray_trace_segment_destination",
+          "slug": "xray_trace_segment_destination",
+          "subcategory": "X-Ray"
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:08.588458"
+    "docs_refreshed_at": "2026-05-21T18:28:56.788765"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13697,6 +13862,16 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_payment_credential_provider",
+          "slug": "bedrockagentcore_payment_credential_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_payment_credential_providers",
+          "slug": "bedrockagentcore_payment_credential_providers",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_policy",
           "slug": "bedrockagentcore_policy",
           "subcategory": ""
@@ -14089,6 +14264,16 @@
         {
           "title": "chime_app_instance",
           "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_app_instance_bot",
+          "slug": "chime_app_instance_bot",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_app_instance_bots",
+          "slug": "chime_app_instance_bots",
           "subcategory": ""
         },
         {
@@ -17079,6 +17264,16 @@
         {
           "title": "eks_pod_identity_association",
           "slug": "eks_pod_identity_association",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticache_cache_cluster",
+          "slug": "elasticache_cache_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticache_cache_clusters",
+          "slug": "elasticache_cache_clusters",
           "subcategory": ""
         },
         {
@@ -24906,6 +25101,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_payment_credential_provider",
+          "slug": "bedrockagentcore_payment_credential_provider",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
           "subcategory": ""
@@ -25068,6 +25268,11 @@
         {
           "title": "chime_app_instance",
           "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_app_instance_bot",
+          "slug": "chime_app_instance_bot",
           "subcategory": ""
         },
         {
@@ -26298,6 +26503,11 @@
         {
           "title": "eks_cluster",
           "slug": "eks_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticache_cache_cluster",
+          "slug": "elasticache_cache_cluster",
           "subcategory": ""
         },
         {
@@ -30240,6 +30450,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_payment_credential_provider",
+          "slug": "bedrockagentcore_payment_credential_provider",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_policy",
           "slug": "bedrockagentcore_policy",
           "subcategory": ""
@@ -30467,6 +30682,11 @@
         {
           "title": "chime_app_instance",
           "slug": "chime_app_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_app_instance_bot",
+          "slug": "chime_app_instance_bot",
           "subcategory": ""
         },
         {
@@ -32207,6 +32427,11 @@
         {
           "title": "eks_pod_identity_association",
           "slug": "eks_pod_identity_association",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticache_cache_cluster",
+          "slug": "elasticache_cache_cluster",
           "subcategory": ""
         },
         {
@@ -36291,7 +36516,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:09.093638"
+    "docs_refreshed_at": "2026-05-21T18:28:57.396999"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36725,7 +36950,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:09.450480"
+    "docs_refreshed_at": "2026-05-21T18:28:57.849829"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -39007,6 +39232,11 @@
           "subcategory": "Network"
         },
         {
+          "title": "servicebus_namespace",
+          "slug": "servicebus_namespace",
+          "subcategory": "Messaging"
+        },
+        {
           "title": "service_plan",
           "slug": "service_plan",
           "subcategory": "App Service (Web Apps)"
@@ -39037,6 +39267,16 @@
           "subcategory": "Storage Mover"
         },
         {
+          "title": "storage_mover_job_definition",
+          "slug": "storage_mover_job_definition",
+          "subcategory": "Storage Mover"
+        },
+        {
+          "title": "storage_mover_project",
+          "slug": "storage_mover_project",
+          "subcategory": "Storage Mover"
+        },
+        {
           "title": "storage_mover_source_endpoint",
           "slug": "storage_mover_source_endpoint",
           "subcategory": "Storage Mover"
@@ -39045,6 +39285,11 @@
           "title": "storage_sync",
           "slug": "storage_sync",
           "subcategory": "Storage"
+        },
+        {
+          "title": "subnet",
+          "slug": "subnet",
+          "subcategory": "Network"
         },
         {
           "title": "traffic_manager_profile",
@@ -39084,6 +39329,11 @@
         {
           "title": "web_pubsub",
           "slug": "web_pubsub",
+          "subcategory": "Messaging"
+        },
+        {
+          "title": "web_pubsub_socketio",
+          "slug": "web_pubsub_socketio",
           "subcategory": "Messaging"
         },
         {
@@ -44752,7 +45002,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:09.857520"
+    "docs_refreshed_at": "2026-05-21T18:28:58.386032"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45101,7 +45351,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:10.204604"
+    "docs_refreshed_at": "2026-05-21T18:28:58.861487"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -45484,6 +45734,11 @@
           "subcategory": "Artifact Registry"
         },
         {
+          "title": "artifact_registry_file",
+          "slug": "artifact_registry_file",
+          "subcategory": "Artifact Registry"
+        },
+        {
           "title": "artifact_registry_locations",
           "slug": "artifact_registry_locations",
           "subcategory": "Artifact Registry"
@@ -45916,22 +46171,22 @@
         {
           "title": "composer_environment",
           "slug": "composer_environment",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_image_versions",
           "slug": "composer_image_versions",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_config_map",
           "slug": "composer_user_workloads_config_map",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_secret",
           "slug": "composer_user_workloads_secret",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "compute_address",
@@ -46166,6 +46421,11 @@
         {
           "title": "compute_region_instance_template",
           "slug": "compute_region_instance_template",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_instant_snapshot_iam_policy",
+          "slug": "compute_region_instant_snapshot_iam_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -46876,6 +47136,11 @@
         {
           "title": "logging_folder_settings",
           "slug": "logging_folder_settings",
+          "subcategory": "Cloud (Stackdriver) Logging"
+        },
+        {
+          "title": "logging_log_view",
+          "slug": "logging_log_view",
           "subcategory": "Cloud (Stackdriver) Logging"
         },
         {
@@ -48006,6 +48271,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apigee_data_collector",
+          "slug": "apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "apigee_developer",
           "slug": "apigee_developer",
           "subcategory": "Apigee"
@@ -48646,6 +48916,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "ces_app_root_agent_association",
+          "slug": "ces_app_root_agent_association",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
           "title": "ces_app_version",
           "slug": "ces_app_version",
           "subcategory": "Customer Engagement Suite"
@@ -48653,6 +48928,11 @@
         {
           "title": "ces_deployment",
           "slug": "ces_deployment",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
+          "title": "ces_evaluation",
+          "slug": "ces_evaluation",
           "subcategory": "Customer Engagement Suite"
         },
         {
@@ -48978,7 +49258,7 @@
         {
           "title": "composer_environment",
           "slug": "composer_environment",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_config_map",
@@ -48988,7 +49268,7 @@
         {
           "title": "composer_user_workloads_secret",
           "slug": "composer_user_workloads_secret",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "compute_address",
@@ -49461,6 +49741,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_instant_snapshot",
+          "slug": "compute_region_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_instant_snapshot_iam",
+          "slug": "compute_region_instant_snapshot_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_region_network_endpoint",
           "slug": "compute_region_network_endpoint",
           "subcategory": "Compute Engine"
@@ -49743,6 +50033,26 @@
         {
           "title": "contact_center_insights_auto_labeling_rule",
           "slug": "contact_center_insights_auto_labeling_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_encryption_spec",
+          "slug": "contact_center_insights_encryption_spec",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_question",
+          "slug": "contact_center_insights_qa_question",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_scorecard",
+          "slug": "contact_center_insights_qa_scorecard",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_scorecard_revision",
+          "slug": "contact_center_insights_qa_scorecard_revision",
           "subcategory": "Contact Center AI Insights"
         },
         {
@@ -50623,6 +50933,11 @@
         {
           "title": "firebase_app_check_recaptcha_v3_config",
           "slug": "firebase_app_check_recaptcha_v3_config",
+          "subcategory": "Firebase App Check"
+        },
+        {
+          "title": "firebase_app_check_resource_policy",
+          "slug": "firebase_app_check_resource_policy",
           "subcategory": "Firebase App Check"
         },
         {
@@ -51946,6 +52261,11 @@
           "subcategory": "Network Security"
         },
         {
+          "title": "network_security_ull_mirroring_collector_rule",
+          "slug": "network_security_ull_mirroring_collector_rule",
+          "subcategory": "Network Security"
+        },
+        {
           "title": "network_security_ull_mirroring_engine",
           "slug": "network_security_ull_mirroring_engine",
           "subcategory": "Network Security"
@@ -53177,7 +53497,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:10.650592"
+    "docs_refreshed_at": "2026-05-21T18:28:59.425634"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -53293,6 +53613,11 @@
           "subcategory": "Artifact Registry"
         },
         {
+          "title": "artifact_registry_file",
+          "slug": "artifact_registry_file",
+          "subcategory": "Artifact Registry"
+        },
+        {
           "title": "artifact_registry_locations",
           "slug": "artifact_registry_locations",
           "subcategory": "Artifact Registry"
@@ -53725,22 +54050,22 @@
         {
           "title": "composer_environment",
           "slug": "composer_environment",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_image_versions",
           "slug": "composer_image_versions",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_config_map",
           "slug": "composer_user_workloads_config_map",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_secret",
           "slug": "composer_user_workloads_secret",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "compute_address",
@@ -53975,6 +54300,11 @@
         {
           "title": "compute_region_instance_template",
           "slug": "compute_region_instance_template",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_instant_snapshot_iam_policy",
+          "slug": "compute_region_instant_snapshot_iam_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -54685,6 +55015,11 @@
         {
           "title": "logging_folder_settings",
           "slug": "logging_folder_settings",
+          "subcategory": "Cloud (Stackdriver) Logging"
+        },
+        {
+          "title": "logging_log_view",
+          "slug": "logging_log_view",
           "subcategory": "Cloud (Stackdriver) Logging"
         },
         {
@@ -55815,6 +56150,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apigee_data_collector",
+          "slug": "apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "apigee_developer",
           "slug": "apigee_developer",
           "subcategory": "Apigee"
@@ -56455,6 +56795,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "ces_app_root_agent_association",
+          "slug": "ces_app_root_agent_association",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
           "title": "ces_app_version",
           "slug": "ces_app_version",
           "subcategory": "Customer Engagement Suite"
@@ -56462,6 +56807,11 @@
         {
           "title": "ces_deployment",
           "slug": "ces_deployment",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
+          "title": "ces_evaluation",
+          "slug": "ces_evaluation",
           "subcategory": "Customer Engagement Suite"
         },
         {
@@ -56787,7 +57137,7 @@
         {
           "title": "composer_environment",
           "slug": "composer_environment",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "composer_user_workloads_config_map",
@@ -56797,7 +57147,7 @@
         {
           "title": "composer_user_workloads_secret",
           "slug": "composer_user_workloads_secret",
-          "subcategory": "Cloud Composer"
+          "subcategory": "Managed Service for Apache Airflow"
         },
         {
           "title": "compute_address",
@@ -57270,6 +57620,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_instant_snapshot",
+          "slug": "compute_region_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_instant_snapshot_iam",
+          "slug": "compute_region_instant_snapshot_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_region_network_endpoint",
           "slug": "compute_region_network_endpoint",
           "subcategory": "Compute Engine"
@@ -57552,6 +57912,26 @@
         {
           "title": "contact_center_insights_auto_labeling_rule",
           "slug": "contact_center_insights_auto_labeling_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_encryption_spec",
+          "slug": "contact_center_insights_encryption_spec",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_question",
+          "slug": "contact_center_insights_qa_question",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_scorecard",
+          "slug": "contact_center_insights_qa_scorecard",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "contact_center_insights_qa_scorecard_revision",
+          "slug": "contact_center_insights_qa_scorecard_revision",
           "subcategory": "Contact Center AI Insights"
         },
         {
@@ -58432,6 +58812,11 @@
         {
           "title": "firebase_app_check_recaptcha_v3_config",
           "slug": "firebase_app_check_recaptcha_v3_config",
+          "subcategory": "Firebase App Check"
+        },
+        {
+          "title": "firebase_app_check_resource_policy",
+          "slug": "firebase_app_check_resource_policy",
           "subcategory": "Firebase App Check"
         },
         {
@@ -59755,6 +60140,11 @@
           "subcategory": "Network Security"
         },
         {
+          "title": "network_security_ull_mirroring_collector_rule",
+          "slug": "network_security_ull_mirroring_collector_rule",
+          "subcategory": "Network Security"
+        },
+        {
           "title": "network_security_ull_mirroring_engine",
           "slug": "network_security_ull_mirroring_engine",
           "subcategory": "Network Security"
@@ -60986,7 +61376,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-01T09:20:11.085936"
+    "docs_refreshed_at": "2026-05-21T18:29:00.196757"
   },
   "4ek0/neko": {
     "docs": {
