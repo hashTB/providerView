@@ -3780,6 +3780,21 @@
           "subcategory": "Bedrock AgentCore"
         },
         {
+          "title": "bedrockagentcore_online_evaluation_config",
+          "slug": "bedrockagentcore_online_evaluation_config",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_policy_engine",
+          "slug": "bedrockagentcore_policy_engine",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_resource_policy",
+          "slug": "bedrockagentcore_resource_policy",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
           "title": "cleanrooms_collaboration",
           "slug": "cleanrooms_collaboration",
           "subcategory": "Clean Rooms"
@@ -4183,6 +4198,16 @@
           "title": "s3_bucket_versioning",
           "slug": "s3_bucket_versioning",
           "subcategory": "S3 (Simple Storage)"
+        },
+        {
+          "title": "s3control_multi_region_access_point",
+          "slug": "s3control_multi_region_access_point",
+          "subcategory": "S3 Control"
+        },
+        {
+          "title": "s3control_multi_region_access_point_routes",
+          "slug": "s3control_multi_region_access_point_routes",
+          "subcategory": "S3 Control"
         },
         {
           "title": "s3_directory_bucket",
@@ -5271,6 +5296,21 @@
         {
           "title": "bedrockagentcore_oauth2_credential_provider",
           "slug": "bedrockagentcore_oauth2_credential_provider",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_online_evaluation_config",
+          "slug": "bedrockagentcore_online_evaluation_config",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_policy_engine",
+          "slug": "bedrockagentcore_policy_engine",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_resource_policy",
+          "slug": "bedrockagentcore_resource_policy",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -9706,62 +9746,62 @@
         {
           "title": "pinpoint_adm_channel",
           "slug": "pinpoint_adm_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_apns_channel",
           "slug": "pinpoint_apns_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_apns_sandbox_channel",
           "slug": "pinpoint_apns_sandbox_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_apns_voip_channel",
           "slug": "pinpoint_apns_voip_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_apns_voip_sandbox_channel",
           "slug": "pinpoint_apns_voip_sandbox_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_app",
           "slug": "pinpoint_app",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_baidu_channel",
           "slug": "pinpoint_baidu_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_email_channel",
           "slug": "pinpoint_email_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_email_template",
           "slug": "pinpoint_email_template",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_event_stream",
           "slug": "pinpoint_event_stream",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_gcm_channel",
           "slug": "pinpoint_gcm_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpoint_sms_channel",
           "slug": "pinpoint_sms_channel",
-          "subcategory": "Pinpoint"
+          "subcategory": "End User Messaging"
         },
         {
           "title": "pinpointsmsvoicev2_configuration_set",
@@ -10701,6 +10741,11 @@
         {
           "title": "s3control_multi_region_access_point_policy",
           "slug": "s3control_multi_region_access_point_policy",
+          "subcategory": "S3 Control"
+        },
+        {
+          "title": "s3control_multi_region_access_point_routes",
+          "slug": "s3control_multi_region_access_point_routes",
           "subcategory": "S3 Control"
         },
         {
@@ -12655,7 +12700,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:56.788765"
+    "docs_refreshed_at": "2026-05-28T11:39:37.857643"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13292,6 +13337,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_stack_user_association",
+          "slug": "appstream_stack_user_association",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_api",
           "slug": "appsync_api",
           "subcategory": ""
@@ -13829,6 +13879,16 @@
         {
           "title": "bedrockagentcore_gateways",
           "slug": "bedrockagentcore_gateways",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_harness",
+          "slug": "bedrockagentcore_harness",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_harnesses",
+          "slug": "bedrockagentcore_harnesses",
           "subcategory": ""
         },
         {
@@ -25086,6 +25146,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_harness",
+          "slug": "bedrockagentcore_harness",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_memory",
           "slug": "bedrockagentcore_memory",
           "subcategory": ""
@@ -30135,6 +30200,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_stack_user_association",
+          "slug": "appstream_stack_user_association",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_api",
           "slug": "appsync_api",
           "subcategory": ""
@@ -30432,6 +30502,11 @@
         {
           "title": "bedrockagentcore_gateway",
           "slug": "bedrockagentcore_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_harness",
+          "slug": "bedrockagentcore_harness",
           "subcategory": ""
         },
         {
@@ -36516,7 +36591,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:57.396999"
+    "docs_refreshed_at": "2026-05-28T11:39:38.601281"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -36950,7 +37025,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:57.849829"
+    "docs_refreshed_at": "2026-05-28T11:39:39.120182"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45002,7 +45077,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:58.386032"
+    "docs_refreshed_at": "2026-05-28T11:39:39.827958"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45351,7 +45426,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:58.861487"
+    "docs_refreshed_at": "2026-05-28T11:39:40.332659"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46449,6 +46524,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_ssl_policy",
+          "slug": "compute_region_ssl_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_reservation",
           "slug": "compute_reservation",
           "subcategory": "Compute Engine"
@@ -46491,6 +46571,11 @@
         {
           "title": "compute_security_policy",
           "slug": "compute_security_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_service_attachment",
+          "slug": "compute_service_attachment",
           "subcategory": "Compute Engine"
         },
         {
@@ -47309,6 +47394,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_deployment_environments",
+          "slug": "oracle_database_goldengate_deployment_environments",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -47839,8 +47929,8 @@
           "subcategory": "Cloud VMware Engine"
         },
         {
-          "title": "vmwareengine_datastore_html",
-          "slug": "vmwareengine_datastore_html",
+          "title": "vmwareengine_datastore",
+          "slug": "vmwareengine_datastore",
           "subcategory": "Cloud VMware Engine"
         },
         {
@@ -48077,9 +48167,19 @@
       ],
       "list-resources": [
         {
+          "title": "google_cloud_run_service",
+          "slug": "google_cloud_run_service",
+          "subcategory": "Cloud Run"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_storage_bucket",
+          "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
         }
       ],
       "overview": [
@@ -50021,6 +50121,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "config_deployment",
+          "slug": "config_deployment",
+          "subcategory": "Infrastructure Manager"
+        },
+        {
           "title": "contact_center_insights_analysis_rule",
           "slug": "contact_center_insights_analysis_rule",
           "subcategory": "Contact Center AI Insights"
@@ -50643,6 +50748,11 @@
         {
           "title": "dialogflow_intent",
           "slug": "dialogflow_intent",
+          "subcategory": "Dialogflow"
+        },
+        {
+          "title": "dialogflow_sip_trunk",
+          "slug": "dialogflow_sip_trunk",
           "subcategory": "Dialogflow"
         },
         {
@@ -51921,6 +52031,11 @@
           "subcategory": "Memorystore"
         },
         {
+          "title": "migration_center_assets_export_job",
+          "slug": "migration_center_assets_export_job",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_group",
           "slug": "migration_center_group",
           "subcategory": "Migration Center"
@@ -51928,6 +52043,21 @@
         {
           "title": "migration_center_preference_set",
           "slug": "migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_report_config",
+          "slug": "migration_center_report_config",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_settings",
+          "slug": "migration_center_settings",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_source",
+          "slug": "migration_center_source",
           "subcategory": "Migration Center"
         },
         {
@@ -53497,7 +53627,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:28:59.425634"
+    "docs_refreshed_at": "2026-05-28T11:39:40.925985"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54328,6 +54458,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_ssl_policy",
+          "slug": "compute_region_ssl_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_reservation",
           "slug": "compute_reservation",
           "subcategory": "Compute Engine"
@@ -54370,6 +54505,11 @@
         {
           "title": "compute_security_policy",
           "slug": "compute_security_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_service_attachment",
+          "slug": "compute_service_attachment",
           "subcategory": "Compute Engine"
         },
         {
@@ -55188,6 +55328,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_deployment_environments",
+          "slug": "oracle_database_goldengate_deployment_environments",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -55718,8 +55863,8 @@
           "subcategory": "Cloud VMware Engine"
         },
         {
-          "title": "vmwareengine_datastore_html",
-          "slug": "vmwareengine_datastore_html",
+          "title": "vmwareengine_datastore",
+          "slug": "vmwareengine_datastore",
           "subcategory": "Cloud VMware Engine"
         },
         {
@@ -55956,9 +56101,19 @@
       ],
       "list-resources": [
         {
+          "title": "google_cloud_run_service",
+          "slug": "google_cloud_run_service",
+          "subcategory": "Cloud Run"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_storage_bucket",
+          "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
         }
       ],
       "overview": [
@@ -57900,6 +58055,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "config_deployment",
+          "slug": "config_deployment",
+          "subcategory": "Infrastructure Manager"
+        },
+        {
           "title": "contact_center_insights_analysis_rule",
           "slug": "contact_center_insights_analysis_rule",
           "subcategory": "Contact Center AI Insights"
@@ -58522,6 +58682,11 @@
         {
           "title": "dialogflow_intent",
           "slug": "dialogflow_intent",
+          "subcategory": "Dialogflow"
+        },
+        {
+          "title": "dialogflow_sip_trunk",
+          "slug": "dialogflow_sip_trunk",
           "subcategory": "Dialogflow"
         },
         {
@@ -59800,6 +59965,11 @@
           "subcategory": "Memorystore"
         },
         {
+          "title": "migration_center_assets_export_job",
+          "slug": "migration_center_assets_export_job",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_group",
           "slug": "migration_center_group",
           "subcategory": "Migration Center"
@@ -59807,6 +59977,21 @@
         {
           "title": "migration_center_preference_set",
           "slug": "migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_report_config",
+          "slug": "migration_center_report_config",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_settings",
+          "slug": "migration_center_settings",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_source",
+          "slug": "migration_center_source",
           "subcategory": "Migration Center"
         },
         {
@@ -61376,7 +61561,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-21T18:29:00.196757"
+    "docs_refreshed_at": "2026-05-28T11:39:41.457518"
   },
   "4ek0/neko": {
     "docs": {

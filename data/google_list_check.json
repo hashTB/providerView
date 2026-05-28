@@ -1,16 +1,31 @@
 {
-  "generated_at": "2026-05-21T18:29:50.612751",
+  "generated_at": "2026-05-28T11:40:38.419669",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "99e08ad1e7773088fd05ec8e9184fa85f0c7249c"
+    "commit": "c5ecbe0285b38336250cd100e1bf30a8bc204d9b"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 3,
+    "file_count": 7,
     "files": [
       {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_firewall.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_global_address.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_subnetwork.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -20,17 +35,22 @@
         "registrations": 1
       },
       {
+        "file": "google/services/sql/list_sql_database.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/storage/list_google_storage_bucket.go",
         "type": "Handwritten",
         "registrations": 1
       }
     ],
-    "sha256": "fa84cffd91014050de7400eb354ed89613c8550822636247a8311da3fa768c5b",
+    "sha256": "9a65a0948637fcda0add0f4368353625eac19229bfaf6c21709e0079f4b49a9a",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 1
+    "list_resources": 3
   },
   "registrations": {
     "generated": [
@@ -40,6 +60,34 @@
         "constructor": "NewCloudRunServiceListResource",
         "file": "google/services/cloudrun/list_cloud_run_service.go",
         "line": 40
+      },
+      {
+        "name": "google_compute_firewall",
+        "package": "Compute",
+        "constructor": "NewComputeFirewallListResource",
+        "file": "google/services/compute/list_compute_firewall.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_global_address",
+        "package": "Compute",
+        "constructor": "NewComputeGlobalAddressListResource",
+        "file": "google/services/compute/list_compute_global_address.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_subnetwork",
+        "package": "Compute",
+        "constructor": "NewComputeSubnetworkListResource",
+        "file": "google/services/compute/list_compute_subnetwork.go",
+        "line": 40
+      },
+      {
+        "name": "google_sql_database",
+        "package": "SQL",
+        "constructor": "NewSQLDatabaseListResource",
+        "file": "google/services/sql/list_sql_database.go",
+        "line": 40
       }
     ],
     "handwritten": [
@@ -48,7 +96,7 @@
         "package": "resourcemanager",
         "constructor": "NewGoogleServiceAccountListResource",
         "file": "google/services/resourcemanager/list_google_service_account.go",
-        "line": 41
+        "line": 42
       },
       {
         "name": "google_storage_bucket",
@@ -67,11 +115,35 @@
         "constructor": "NewCloudRunServiceListResource"
       }
     ],
+    "compute": [
+      {
+        "file": "google/services/compute/list_compute_firewall.go",
+        "type_name": "google_compute_firewall",
+        "constructor": "NewComputeFirewallListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_global_address.go",
+        "type_name": "google_compute_global_address",
+        "constructor": "NewComputeGlobalAddressListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_subnetwork.go",
+        "type_name": "google_compute_subnetwork",
+        "constructor": "NewComputeSubnetworkListResource"
+      }
+    ],
     "resourcemanager": [
       {
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type_name": "google_service_account",
         "constructor": "NewGoogleServiceAccountListResource"
+      }
+    ],
+    "sql": [
+      {
+        "file": "google/services/sql/list_sql_database.go",
+        "type_name": "google_sql_database",
+        "constructor": "NewSQLDatabaseListResource"
       }
     ],
     "storage": [
@@ -85,34 +157,54 @@
   "cross_check": {
     "registered_constructors": [
       "NewCloudRunServiceListResource",
+      "NewComputeFirewallListResource",
+      "NewComputeGlobalAddressListResource",
+      "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
-      "NewGoogleStorageBucketListResource"
+      "NewGoogleStorageBucketListResource",
+      "NewSQLDatabaseListResource"
     ],
     "file_constructors": [
       "NewCloudRunServiceListResource",
+      "NewComputeFirewallListResource",
+      "NewComputeGlobalAddressListResource",
+      "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
-      "NewGoogleStorageBucketListResource"
+      "NewGoogleStorageBucketListResource",
+      "NewSQLDatabaseListResource"
     ],
     "file_type_names": [
       "google_cloud_run_service",
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_subnetwork",
       "google_service_account",
+      "google_sql_database",
       "google_storage_bucket"
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 3,
-    "file_type_name_count": 3,
+    "registration_count": 7,
+    "file_type_name_count": 7,
     "signals_agree": true
   },
   "service_coverage": {
-    "services_with_list": 3,
+    "services_with_list": 5,
     "rows": [
+      {
+        "service": "compute",
+        "list_resources": 3
+      },
       {
         "service": "cloudrun",
         "list_resources": 1
       },
       {
         "service": "resourcemanager",
+        "list_resources": 1
+      },
+      {
+        "service": "sql",
         "list_resources": 1
       },
       {
@@ -126,9 +218,21 @@
           "google_cloud_run_service"
         ]
       },
+      "compute": {
+        "list_resources": [
+          "google_compute_firewall",
+          "google_compute_global_address",
+          "google_compute_subnetwork"
+        ]
+      },
       "resourcemanager": {
         "list_resources": [
           "google_service_account"
+        ]
+      },
+      "sql": {
+        "list_resources": [
+          "google_sql_database"
         ]
       },
       "storage": {
@@ -140,22 +244,30 @@
   },
   "validation": {
     "matches": true,
-    "dashboard_list_resources": 1,
-    "code_list_resources": 3,
-    "registered_count": 3,
+    "dashboard_list_resources": 3,
+    "code_list_resources": 7,
+    "registered_count": 7,
     "signals_agree": true,
     "dashboard_list_resource_names": [
-      "google_service_account"
-    ],
-    "code_list_resource_names": [
       "google_cloud_run_service",
       "google_service_account",
       "google_storage_bucket"
     ],
+    "code_list_resource_names": [
+      "google_cloud_run_service",
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_subnetwork",
+      "google_service_account",
+      "google_sql_database",
+      "google_storage_bucket"
+    ],
     "only_in_registry": [],
     "only_in_source": [
-      "google_cloud_run_service",
-      "google_storage_bucket"
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_subnetwork",
+      "google_sql_database"
     ],
     "registry_is_subset": true
   }

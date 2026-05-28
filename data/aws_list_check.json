@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T18:29:45.351512",
+  "generated_at": "2026-05-28T11:40:34.651308",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "4a640711b17d39f371f642778560625c18b9369b"
+    "commit": "f4c52da52c448f71a98060e9b7dec26ba66b9200"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 135
+    "list_resources": 140
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3086,
+    "stdout_line_count": 3089,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 8,
-        "implemented": 133,
-        "total": 1643
+        "implemented": 138,
+        "total": 1646
       },
       "service_count": 239,
       "services": [
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 7,
-          "implemented": 1,
-          "total": 13
+          "percent": 25,
+          "implemented": 4,
+          "total": 16
         },
         {
           "service": "billing",
@@ -1182,8 +1182,8 @@
         },
         {
           "service": "s3control",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 11,
+          "implemented": 2,
           "total": 17
         },
         {
@@ -1822,11 +1822,17 @@
             "bedrockagentcore/memory.go",
             "bedrockagentcore/memory_strategy.go",
             "bedrockagentcore/oauth2_credential_provider.go",
+            "bedrockagentcore/online_evaluation_config.go",
+            "bedrockagentcore/policy_engine.go",
+            "bedrockagentcore/resource_policy.go",
             "bedrockagentcore/token_vault_cmk.go",
             "bedrockagentcore/workload_identity.go"
           ],
           "list_resources": [
-            "bedrockagentcore/harness.go"
+            "bedrockagentcore/harness.go",
+            "bedrockagentcore/online_evaluation_config.go",
+            "bedrockagentcore/policy_engine.go",
+            "bedrockagentcore/resource_policy.go"
           ]
         },
         "billing": {
@@ -3887,7 +3893,10 @@
             "s3control/object_lambda_access_point_policy.go",
             "s3control/storage_lens_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "s3control/multi_region_access_point.go",
+            "s3control/multi_region_access_point_routes.go"
+          ]
         },
         "s3files": {
           "all_resources": [
@@ -4479,11 +4488,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-05-21 18:29:45 UTC"
+      "last_updated": "2026-05-28 11:40:34 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 43,
+    "services_with_list": 44,
     "top_services": [
       {
         "service": "ec2",
@@ -4546,6 +4555,12 @@
         "total": 14
       },
       {
+        "service": "bedrockagentcore",
+        "percent": 25,
+        "implemented": 4,
+        "total": 16
+      },
+      {
         "service": "securityhub",
         "percent": 21,
         "implemented": 4,
@@ -4568,12 +4583,6 @@
         "percent": 17,
         "implemented": 3,
         "total": 17
-      },
-      {
-        "service": "sagemaker",
-        "percent": 8,
-        "implemented": 3,
-        "total": 37
       }
     ],
     "service_resources": {
@@ -4935,11 +4944,17 @@
           "bedrockagentcore/memory.go",
           "bedrockagentcore/memory_strategy.go",
           "bedrockagentcore/oauth2_credential_provider.go",
+          "bedrockagentcore/online_evaluation_config.go",
+          "bedrockagentcore/policy_engine.go",
+          "bedrockagentcore/resource_policy.go",
           "bedrockagentcore/token_vault_cmk.go",
           "bedrockagentcore/workload_identity.go"
         ],
         "list_resources": [
-          "bedrockagentcore/harness.go"
+          "bedrockagentcore/harness.go",
+          "bedrockagentcore/online_evaluation_config.go",
+          "bedrockagentcore/policy_engine.go",
+          "bedrockagentcore/resource_policy.go"
         ]
       },
       "billing": {
@@ -7000,7 +7015,10 @@
           "s3control/object_lambda_access_point_policy.go",
           "s3control/storage_lens_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "s3control/multi_region_access_point.go",
+          "s3control/multi_region_access_point_routes.go"
+        ]
       },
       "s3files": {
         "all_resources": [
@@ -7595,9 +7613,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 135,
-    "script_implemented_list": 133,
-    "script_total_resources": 1643,
+    "dashboard_list_resources": 140,
+    "script_implemented_list": 138,
+    "script_total_resources": 1646,
     "script_percent": 8
   }
 }
