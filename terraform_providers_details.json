@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:08.318691"
+    "docs_refreshed_at": "2026-06-01T12:57:16.214664"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -61608,7 +61608,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:41:58.978720"
+    "docs_refreshed_at": "2026-06-01T12:57:06.402524"
   },
   "Azure/azapi": {
     "docs": {
@@ -65219,7 +65219,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:41:59.405703"
+    "docs_refreshed_at": "2026-06-01T12:57:06.872958"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -66584,7 +66584,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:41:59.758217"
+    "docs_refreshed_at": "2026-06-01T12:57:07.324866"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -67109,7 +67109,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:00.180326"
+    "docs_refreshed_at": "2026-06-01T12:57:07.740842"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -67377,7 +67377,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:00.525586"
+    "docs_refreshed_at": "2026-06-01T12:57:08.456533"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -67396,7 +67396,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:00.875362"
+    "docs_refreshed_at": "2026-06-01T12:57:08.864810"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -67443,7 +67443,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:01.220040"
+    "docs_refreshed_at": "2026-06-01T12:57:09.262820"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -67573,7 +67573,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:02.034331"
+    "docs_refreshed_at": "2026-06-01T12:57:10.117210"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -68117,7 +68117,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:04.375955"
+    "docs_refreshed_at": "2026-06-01T12:57:12.135079"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -71302,7 +71302,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:04.764643"
+    "docs_refreshed_at": "2026-06-01T12:57:12.574992"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -72581,7 +72581,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:05.125463"
+    "docs_refreshed_at": "2026-06-01T12:57:13.000774"
   },
   "SAP/btp": {
     "docs": {
@@ -73303,7 +73303,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:05.843567"
+    "docs_refreshed_at": "2026-06-01T12:57:13.402388"
   },
   "SAP/scc": {
     "docs": {
@@ -73508,7 +73508,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:06.197653"
+    "docs_refreshed_at": "2026-06-01T12:57:13.803734"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -73555,7 +73555,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:06.547930"
+    "docs_refreshed_at": "2026-06-01T12:57:14.203114"
   },
   "Sokren/aap": {
     "docs": {
@@ -73638,7 +73638,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:06.893109"
+    "docs_refreshed_at": "2026-06-01T12:57:14.606861"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -73688,7 +73688,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:07.243726"
+    "docs_refreshed_at": "2026-06-01T12:57:15.004798"
   },
   "adampie/ctf": {
     "docs": {
@@ -73735,7 +73735,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:07.968943"
+    "docs_refreshed_at": "2026-06-01T12:57:15.820424"
   },
   "ansible/ansible": {
     "docs": {
@@ -73783,7 +73783,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:08.671222"
+    "docs_refreshed_at": "2026-06-01T12:57:16.610161"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -73831,7 +73831,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:09.020888"
+    "docs_refreshed_at": "2026-06-01T12:57:17.011630"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -73857,7 +73857,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:09.373202"
+    "docs_refreshed_at": "2026-06-01T12:57:17.424190"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -73914,7 +73914,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:09.716576"
+    "docs_refreshed_at": "2026-06-01T12:57:17.822554"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -73940,7 +73940,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:10.413725"
+    "docs_refreshed_at": "2026-06-01T12:57:18.623499"
   },
   "cysp/braze": {
     "docs": {
@@ -73948,6 +73948,11 @@
         {
           "title": "content_block",
           "slug": "content_block",
+          "subcategory": ""
+        },
+        {
+          "title": "email_template",
+          "slug": "email_template",
           "subcategory": ""
         }
       ],
@@ -73963,10 +73968,15 @@
           "title": "content_block",
           "slug": "content_block",
           "subcategory": ""
+        },
+        {
+          "title": "email_template",
+          "slug": "email_template",
+          "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:11.477763"
+    "docs_refreshed_at": "2026-06-01T12:57:19.854775"
   },
   "cysp/contentful": {
     "docs": {
@@ -74109,7 +74119,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:11.827583"
+    "docs_refreshed_at": "2026-06-01T12:57:20.266283"
   },
   "dbanck/concept": {
     "docs": {
@@ -74145,7 +74155,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:12.879701"
+    "docs_refreshed_at": "2026-06-01T12:57:21.478203"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -75494,7 +75504,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:13.245128"
+    "docs_refreshed_at": "2026-06-01T12:57:21.917622"
   },
   "drewmullen/aap": {
     "docs": {
@@ -75602,7 +75612,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:13.939035"
+    "docs_refreshed_at": "2026-06-01T12:57:22.755354"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -75667,7 +75677,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:14.997312"
+    "docs_refreshed_at": "2026-06-01T12:57:24.399003"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -75770,7 +75780,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:15.748498"
+    "docs_refreshed_at": "2026-06-01T12:57:25.241987"
   },
   "hashicorp/local": {
     "docs": {
@@ -75832,7 +75842,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:16.446078"
+    "docs_refreshed_at": "2026-06-01T12:57:26.052185"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -83503,7 +83513,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:17.927171"
+    "docs_refreshed_at": "2026-06-01T12:57:27.805597"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -84316,7 +84326,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:18.284709"
+    "docs_refreshed_at": "2026-06-01T12:57:28.216520"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -84454,7 +84464,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:19.330722"
+    "docs_refreshed_at": "2026-06-01T12:57:29.463135"
   },
   "magodo/restful": {
     "docs": {
@@ -84513,7 +84523,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:20.379910"
+    "docs_refreshed_at": "2026-06-01T12:57:30.666525"
   },
   "marshallford/ansible": {
     "docs": {
@@ -84565,7 +84575,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:20.761899"
+    "docs_refreshed_at": "2026-06-01T12:57:31.064364"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -84707,7 +84717,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:21.455873"
+    "docs_refreshed_at": "2026-06-01T12:57:31.866695"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -84850,7 +84860,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:21.805931"
+    "docs_refreshed_at": "2026-06-01T12:57:32.301817"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -84897,7 +84907,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:22.499436"
+    "docs_refreshed_at": "2026-06-01T12:57:33.155873"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -86568,7 +86578,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:24.935613"
+    "docs_refreshed_at": "2026-06-01T12:57:35.837587"
   },
   "soffensive/soff": {
     "docs": {
@@ -86615,7 +86625,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:25.633494"
+    "docs_refreshed_at": "2026-06-01T12:57:36.641992"
   },
   "thrashr888/registry": {
     "docs": {
@@ -86703,7 +86713,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:26.339239"
+    "docs_refreshed_at": "2026-06-01T12:57:37.474714"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -86968,7 +86978,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:27.046243"
+    "docs_refreshed_at": "2026-06-01T12:57:38.393720"
   },
   "waldur/waldur": {
     "docs": {
@@ -87353,7 +87363,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:27.744010"
+    "docs_refreshed_at": "2026-06-01T12:57:39.515895"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -87616,7 +87626,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:02.412934"
+    "docs_refreshed_at": "2026-06-01T12:57:10.572033"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -87671,7 +87681,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:16.097881"
+    "docs_refreshed_at": "2026-06-01T12:57:25.638218"
   },
   "timofurrer/desec": {
     "docs": {
@@ -87830,7 +87840,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:26.695944"
+    "docs_refreshed_at": "2026-06-01T12:57:37.923103"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -87913,7 +87923,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:27.397697"
+    "docs_refreshed_at": "2026-06-01T12:57:39.072814"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -91103,7 +91113,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:01.621558"
+    "docs_refreshed_at": "2026-06-01T12:57:09.717683"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -91398,7 +91408,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:18.983983"
+    "docs_refreshed_at": "2026-06-01T12:57:29.053612"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -91516,7 +91526,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:21.108844"
+    "docs_refreshed_at": "2026-06-01T12:57:31.461960"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -91686,7 +91696,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:03.656473"
+    "docs_refreshed_at": "2026-06-01T12:57:10.976077"
   },
   "branchgrove/debian": {
     "docs": {
@@ -91801,7 +91811,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:10.064637"
+    "docs_refreshed_at": "2026-06-01T12:57:18.223592"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -92246,7 +92256,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:14.651438"
+    "docs_refreshed_at": "2026-06-01T12:57:24.000349"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -92796,7 +92806,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:16.834105"
+    "docs_refreshed_at": "2026-06-01T12:57:26.493641"
   },
   "juju/juju": {
     "docs": {
@@ -93031,7 +93041,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:18.634364"
+    "docs_refreshed_at": "2026-06-01T12:57:28.654346"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -93132,7 +93142,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:04.022198"
+    "docs_refreshed_at": "2026-06-01T12:57:11.389314"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -93570,7 +93580,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:10.765348"
+    "docs_refreshed_at": "2026-06-01T12:57:19.021729"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -93718,7 +93728,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:19.677777"
+    "docs_refreshed_at": "2026-06-01T12:57:29.859546"
   },
   "radeksimko/test": {
     "docs": {
@@ -93765,7 +93775,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:23.639409"
+    "docs_refreshed_at": "2026-06-01T12:57:34.606529"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -94158,7 +94168,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:25.285097"
+    "docs_refreshed_at": "2026-06-01T12:57:36.240279"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -94383,7 +94393,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:25.982563"
+    "docs_refreshed_at": "2026-06-01T12:57:37.039699"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -94596,7 +94606,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:20.032264"
+    "docs_refreshed_at": "2026-06-01T12:57:30.269892"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -94851,6 +94861,11 @@
           "title": "Manage resources across multiple Hetzner projects",
           "slug": "multiple-projects",
           "subcategory": ""
+        },
+        {
+          "title": "Use Hetzner Object Storage (S3)",
+          "slug": "s3-object-storage",
+          "subcategory": ""
         }
       ],
       "overview": [
@@ -95008,7 +95023,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:17.184922"
+    "docs_refreshed_at": "2026-06-01T12:57:26.916892"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -95477,7 +95492,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:17.534669"
+    "docs_refreshed_at": "2026-06-01T12:57:27.320008"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -107443,7 +107458,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:23.261411"
+    "docs_refreshed_at": "2026-06-01T12:57:34.095661"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -107903,7 +107918,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:24.223473"
+    "docs_refreshed_at": "2026-06-01T12:57:35.014890"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -108353,7 +108368,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:24.576125"
+    "docs_refreshed_at": "2026-06-01T12:57:35.416199"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -108416,7 +108431,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:13.593347"
+    "docs_refreshed_at": "2026-06-01T12:57:22.314392"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -108504,7 +108519,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:07.595362"
+    "docs_refreshed_at": "2026-06-01T12:57:15.420545"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -108535,7 +108550,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:11.115128"
+    "docs_refreshed_at": "2026-06-01T12:57:19.428269"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -108566,7 +108581,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:12.174679"
+    "docs_refreshed_at": "2026-06-01T12:57:20.666538"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -108597,7 +108612,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:12.525151"
+    "docs_refreshed_at": "2026-06-01T12:57:21.066302"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -108633,7 +108648,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:14.283051"
+    "docs_refreshed_at": "2026-06-01T12:57:23.561753"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -108873,7 +108888,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:22.154242"
+    "docs_refreshed_at": "2026-06-01T12:57:32.745770"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -110936,7 +110951,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:15.402914"
+    "docs_refreshed_at": "2026-06-01T12:57:24.840445"
   },
   "pexip/infinity": {
     "docs": {
@@ -111386,7 +111401,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:22.849419"
+    "docs_refreshed_at": "2026-06-01T12:57:33.563401"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -111399,8 +111414,28 @@
       ],
       "data-sources": [
         {
+          "title": "bucket",
+          "slug": "bucket",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster",
+          "slug": "cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "database",
+          "slug": "database",
+          "subcategory": ""
+        },
+        {
           "title": "instance",
           "slug": "instance",
+          "subcategory": ""
+        },
+        {
+          "title": "loadbalancer",
+          "slug": "loadbalancer",
           "subcategory": ""
         },
         {
@@ -111423,8 +111458,28 @@
       ],
       "resources": [
         {
+          "title": "bucket",
+          "slug": "bucket",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster",
+          "slug": "cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "database",
+          "slug": "database",
+          "subcategory": ""
+        },
+        {
           "title": "instance",
           "slug": "instance",
+          "subcategory": ""
+        },
+        {
+          "title": "loadbalancer",
+          "slug": "loadbalancer",
           "subcategory": ""
         },
         {
@@ -111439,6 +111494,743 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:28.090652"
+    "docs_refreshed_at": "2026-06-01T12:57:39.969994"
+  },
+  "elastic/elasticstack": {
+    "docs": {
+      "actions": [
+        {
+          "title": "elasticsearch_connector_sync_job_create",
+          "slug": "elasticsearch_connector_sync_job_create",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticsearch_snapshot_create",
+          "slug": "elasticsearch_snapshot_create",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticsearch_snapshot_restore",
+          "slug": "elasticsearch_snapshot_restore",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "elasticsearch_connector",
+          "slug": "elasticsearch_connector",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "elasticsearch_enrich_policy",
+          "slug": "elasticsearch_enrich_policy",
+          "subcategory": "Enrich"
+        },
+        {
+          "title": "elasticsearch_index_template",
+          "slug": "elasticsearch_index_template",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_indices",
+          "slug": "elasticsearch_indices",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_info",
+          "slug": "elasticsearch_info",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_append",
+          "slug": "elasticsearch_ingest_processor_append",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_bytes",
+          "slug": "elasticsearch_ingest_processor_bytes",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_circle",
+          "slug": "elasticsearch_ingest_processor_circle",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_community_id",
+          "slug": "elasticsearch_ingest_processor_community_id",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_convert",
+          "slug": "elasticsearch_ingest_processor_convert",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_csv",
+          "slug": "elasticsearch_ingest_processor_csv",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_date",
+          "slug": "elasticsearch_ingest_processor_date",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_date_index_name",
+          "slug": "elasticsearch_ingest_processor_date_index_name",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_dissect",
+          "slug": "elasticsearch_ingest_processor_dissect",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_dot_expander",
+          "slug": "elasticsearch_ingest_processor_dot_expander",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_drop",
+          "slug": "elasticsearch_ingest_processor_drop",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_enrich",
+          "slug": "elasticsearch_ingest_processor_enrich",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_fail",
+          "slug": "elasticsearch_ingest_processor_fail",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_fingerprint",
+          "slug": "elasticsearch_ingest_processor_fingerprint",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_foreach",
+          "slug": "elasticsearch_ingest_processor_foreach",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_geoip",
+          "slug": "elasticsearch_ingest_processor_geoip",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_grok",
+          "slug": "elasticsearch_ingest_processor_grok",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_gsub",
+          "slug": "elasticsearch_ingest_processor_gsub",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_html_strip",
+          "slug": "elasticsearch_ingest_processor_html_strip",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_inference",
+          "slug": "elasticsearch_ingest_processor_inference",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_join",
+          "slug": "elasticsearch_ingest_processor_join",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_json",
+          "slug": "elasticsearch_ingest_processor_json",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_kv",
+          "slug": "elasticsearch_ingest_processor_kv",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_lowercase",
+          "slug": "elasticsearch_ingest_processor_lowercase",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_network_direction",
+          "slug": "elasticsearch_ingest_processor_network_direction",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_pipeline",
+          "slug": "elasticsearch_ingest_processor_pipeline",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_registered_domain",
+          "slug": "elasticsearch_ingest_processor_registered_domain",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_remove",
+          "slug": "elasticsearch_ingest_processor_remove",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_rename",
+          "slug": "elasticsearch_ingest_processor_rename",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_reroute",
+          "slug": "elasticsearch_ingest_processor_reroute",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_script",
+          "slug": "elasticsearch_ingest_processor_script",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_set",
+          "slug": "elasticsearch_ingest_processor_set",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_set_security_user",
+          "slug": "elasticsearch_ingest_processor_set_security_user",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_sort",
+          "slug": "elasticsearch_ingest_processor_sort",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_split",
+          "slug": "elasticsearch_ingest_processor_split",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_trim",
+          "slug": "elasticsearch_ingest_processor_trim",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_uppercase",
+          "slug": "elasticsearch_ingest_processor_uppercase",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_uri_parts",
+          "slug": "elasticsearch_ingest_processor_uri_parts",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_urldecode",
+          "slug": "elasticsearch_ingest_processor_urldecode",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_ingest_processor_user_agent",
+          "slug": "elasticsearch_ingest_processor_user_agent",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_query_ruleset",
+          "slug": "elasticsearch_query_ruleset",
+          "subcategory": "Query rules"
+        },
+        {
+          "title": "elasticsearch_security_role",
+          "slug": "elasticsearch_security_role",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_role_mapping",
+          "slug": "elasticsearch_security_role_mapping",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_user",
+          "slug": "elasticsearch_security_user",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_snapshot_repository",
+          "slug": "elasticsearch_snapshot_repository",
+          "subcategory": "Snapshot"
+        },
+        {
+          "title": "elasticsearch_synonym_set",
+          "slug": "elasticsearch_synonym_set",
+          "subcategory": "Synonym"
+        },
+        {
+          "title": "fleet_enrollment_tokens",
+          "slug": "fleet_enrollment_tokens",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_integration",
+          "slug": "fleet_integration",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_output",
+          "slug": "fleet_output",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "kibana_action_connector",
+          "slug": "kibana_action_connector",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_agent",
+          "slug": "kibana_agentbuilder_agent",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_skill",
+          "slug": "kibana_agentbuilder_skill",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_tool",
+          "slug": "kibana_agentbuilder_tool",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_workflow",
+          "slug": "kibana_agentbuilder_workflow",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_export_saved_objects",
+          "slug": "kibana_export_saved_objects",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_role",
+          "slug": "kibana_security_role",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_spaces",
+          "slug": "kibana_spaces",
+          "subcategory": "Kibana"
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "elasticsearch_security_api_key",
+          "slug": "elasticsearch_security_api_key",
+          "subcategory": "Security"
+        }
+      ],
+      "guides": [
+        {
+          "title": "Using the Elastic Stack provider with Elastic Cloud",
+          "slug": "elasticstack-and-cloud",
+          "subcategory": ""
+        },
+        {
+          "title": "Managing Kibana rule and connector resources",
+          "slug": "elasticstack-kibana-rule",
+          "subcategory": ""
+        },
+        {
+          "title": "Advanced Kibana dashboard patterns",
+          "slug": "kibana-dashboard-advanced",
+          "subcategory": ""
+        },
+        {
+          "title": "Getting started with Kibana dashboards",
+          "slug": "kibana-dashboard-getting-started",
+          "subcategory": ""
+        },
+        {
+          "title": "Kibana dashboard operations guide",
+          "slug": "kibana-dashboard-operations",
+          "subcategory": ""
+        },
+        {
+          "title": "Security roles guide",
+          "slug": "security-roles",
+          "subcategory": "Security"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "apm_agent_configuration",
+          "slug": "apm_agent_configuration",
+          "subcategory": "APM"
+        },
+        {
+          "title": "apm_source_map",
+          "slug": "apm_source_map",
+          "subcategory": "APM"
+        },
+        {
+          "title": "elasticsearch_cluster_settings",
+          "slug": "elasticsearch_cluster_settings",
+          "subcategory": "Cluster"
+        },
+        {
+          "title": "elasticsearch_component_template",
+          "slug": "elasticsearch_component_template",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_connector",
+          "slug": "elasticsearch_connector",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "elasticsearch_data_stream",
+          "slug": "elasticsearch_data_stream",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_data_stream_lifecycle",
+          "slug": "elasticsearch_data_stream_lifecycle",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_enrich_policy",
+          "slug": "elasticsearch_enrich_policy",
+          "subcategory": "Enrich"
+        },
+        {
+          "title": "elasticsearch_index",
+          "slug": "elasticsearch_index",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_index_alias",
+          "slug": "elasticsearch_index_alias",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_index_lifecycle",
+          "slug": "elasticsearch_index_lifecycle",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_index_mappings",
+          "slug": "elasticsearch_index_mappings",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_index_template",
+          "slug": "elasticsearch_index_template",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_index_template_ilm_attachment",
+          "slug": "elasticsearch_index_template_ilm_attachment",
+          "subcategory": "Index"
+        },
+        {
+          "title": "elasticsearch_inference_endpoint",
+          "slug": "elasticsearch_inference_endpoint",
+          "subcategory": "Inference"
+        },
+        {
+          "title": "elasticsearch_ingest_pipeline",
+          "slug": "elasticsearch_ingest_pipeline",
+          "subcategory": "Ingest"
+        },
+        {
+          "title": "elasticsearch_logstash_pipeline",
+          "slug": "elasticsearch_logstash_pipeline",
+          "subcategory": "Logstash"
+        },
+        {
+          "title": "elasticsearch_ml_anomaly_detection_job",
+          "slug": "elasticsearch_ml_anomaly_detection_job",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_calendar",
+          "slug": "elasticsearch_ml_calendar",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_calendar_event",
+          "slug": "elasticsearch_ml_calendar_event",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_calendar_job",
+          "slug": "elasticsearch_ml_calendar_job",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_datafeed",
+          "slug": "elasticsearch_ml_datafeed",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_datafeed_state",
+          "slug": "elasticsearch_ml_datafeed_state",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_filter",
+          "slug": "elasticsearch_ml_filter",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_ml_job_state",
+          "slug": "elasticsearch_ml_job_state",
+          "subcategory": "Ml"
+        },
+        {
+          "title": "elasticsearch_query_ruleset",
+          "slug": "elasticsearch_query_ruleset",
+          "subcategory": "Query rules"
+        },
+        {
+          "title": "elasticsearch_script",
+          "slug": "elasticsearch_script",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "elasticsearch_security_api_key",
+          "slug": "elasticsearch_security_api_key",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_role",
+          "slug": "elasticsearch_security_role",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_role_mapping",
+          "slug": "elasticsearch_security_role_mapping",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_system_user",
+          "slug": "elasticsearch_security_system_user",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_security_user",
+          "slug": "elasticsearch_security_user",
+          "subcategory": "Security"
+        },
+        {
+          "title": "elasticsearch_snapshot_lifecycle",
+          "slug": "elasticsearch_snapshot_lifecycle",
+          "subcategory": "Snapshot"
+        },
+        {
+          "title": "elasticsearch_snapshot_repository",
+          "slug": "elasticsearch_snapshot_repository",
+          "subcategory": "Snapshot"
+        },
+        {
+          "title": "elasticsearch_synonym_set",
+          "slug": "elasticsearch_synonym_set",
+          "subcategory": "Synonym"
+        },
+        {
+          "title": "elasticsearch_transform",
+          "slug": "elasticsearch_transform",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "elasticsearch_watch",
+          "slug": "elasticsearch_watch",
+          "subcategory": "Elasticsearch"
+        },
+        {
+          "title": "fleet_agent_download_source",
+          "slug": "fleet_agent_download_source",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_agent_policy",
+          "slug": "fleet_agent_policy",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_custom_integration",
+          "slug": "fleet_custom_integration",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_elastic_defend_integration_policy",
+          "slug": "fleet_elastic_defend_integration_policy",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_integration",
+          "slug": "fleet_integration",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_integration_policy",
+          "slug": "fleet_integration_policy",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_output",
+          "slug": "fleet_output",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_proxy",
+          "slug": "fleet_proxy",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "fleet_server_host",
+          "slug": "fleet_server_host",
+          "subcategory": "Fleet"
+        },
+        {
+          "title": "kibana_action_connector",
+          "slug": "kibana_action_connector",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_agent",
+          "slug": "kibana_agentbuilder_agent",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_skill",
+          "slug": "kibana_agentbuilder_skill",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_tool",
+          "slug": "kibana_agentbuilder_tool",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_agentbuilder_workflow",
+          "slug": "kibana_agentbuilder_workflow",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_alerting_rule",
+          "slug": "kibana_alerting_rule",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_dashboard",
+          "slug": "kibana_dashboard",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_data_view",
+          "slug": "kibana_data_view",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_default_data_view",
+          "slug": "kibana_default_data_view",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_import_saved_objects",
+          "slug": "kibana_import_saved_objects",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_install_prebuilt_rules",
+          "slug": "kibana_install_prebuilt_rules",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_maintenance_window",
+          "slug": "kibana_maintenance_window",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_detection_rule",
+          "slug": "kibana_security_detection_rule",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_enable_rule",
+          "slug": "kibana_security_enable_rule",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_exception_item",
+          "slug": "kibana_security_exception_item",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_exception_list",
+          "slug": "kibana_security_exception_list",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_list",
+          "slug": "kibana_security_list",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_list_data_streams",
+          "slug": "kibana_security_list_data_streams",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_list_item",
+          "slug": "kibana_security_list_item",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_security_role",
+          "slug": "kibana_security_role",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_slo",
+          "slug": "kibana_slo",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_space",
+          "slug": "kibana_space",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_synthetics_monitor",
+          "slug": "kibana_synthetics_monitor",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_synthetics_parameter",
+          "slug": "kibana_synthetics_parameter",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_synthetics_private_location",
+          "slug": "kibana_synthetics_private_location",
+          "subcategory": "Kibana"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-01T12:57:23.167116"
   }
 }
