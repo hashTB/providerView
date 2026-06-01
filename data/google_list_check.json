@@ -1,16 +1,21 @@
 {
-  "generated_at": "2026-05-28T11:40:38.419669",
+  "generated_at": "2026-06-01T12:55:58.496396",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "c5ecbe0285b38336250cd100e1bf30a8bc204d9b"
+    "commit": "e57828c42bad77882b4cadd55687b9c9fb6db220"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 7,
+    "file_count": 10,
     "files": [
       {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_disk.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -21,6 +26,16 @@
       },
       {
         "file": "google/services/compute/list_compute_global_address.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_image.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_snapshot.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -45,7 +60,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "9a65a0948637fcda0add0f4368353625eac19229bfaf6c21709e0079f4b49a9a",
+    "sha256": "f4b88ad7e00d148b54ba1835a4c50f2da1c30f62188a2b61f1866586269647e9",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -62,6 +77,13 @@
         "line": 40
       },
       {
+        "name": "google_compute_disk",
+        "package": "Compute",
+        "constructor": "NewComputeDiskListResource",
+        "file": "google/services/compute/list_compute_disk.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_firewall",
         "package": "Compute",
         "constructor": "NewComputeFirewallListResource",
@@ -73,6 +95,20 @@
         "package": "Compute",
         "constructor": "NewComputeGlobalAddressListResource",
         "file": "google/services/compute/list_compute_global_address.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_image",
+        "package": "Compute",
+        "constructor": "NewComputeImageListResource",
+        "file": "google/services/compute/list_compute_image.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_snapshot",
+        "package": "Compute",
+        "constructor": "NewComputeSnapshotListResource",
+        "file": "google/services/compute/list_compute_snapshot.go",
         "line": 40
       },
       {
@@ -117,6 +153,11 @@
     ],
     "compute": [
       {
+        "file": "google/services/compute/list_compute_disk.go",
+        "type_name": "google_compute_disk",
+        "constructor": "NewComputeDiskListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_firewall.go",
         "type_name": "google_compute_firewall",
         "constructor": "NewComputeFirewallListResource"
@@ -125,6 +166,16 @@
         "file": "google/services/compute/list_compute_global_address.go",
         "type_name": "google_compute_global_address",
         "constructor": "NewComputeGlobalAddressListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_image.go",
+        "type_name": "google_compute_image",
+        "constructor": "NewComputeImageListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_snapshot.go",
+        "type_name": "google_compute_snapshot",
+        "constructor": "NewComputeSnapshotListResource"
       },
       {
         "file": "google/services/compute/list_compute_subnetwork.go",
@@ -157,8 +208,11 @@
   "cross_check": {
     "registered_constructors": [
       "NewCloudRunServiceListResource",
+      "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeImageListResource",
+      "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -166,8 +220,11 @@
     ],
     "file_constructors": [
       "NewCloudRunServiceListResource",
+      "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeImageListResource",
+      "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -175,8 +232,11 @@
     ],
     "file_type_names": [
       "google_cloud_run_service",
+      "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_image",
+      "google_compute_snapshot",
       "google_compute_subnetwork",
       "google_service_account",
       "google_sql_database",
@@ -184,8 +244,8 @@
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 7,
-    "file_type_name_count": 7,
+    "registration_count": 10,
+    "file_type_name_count": 10,
     "signals_agree": true
   },
   "service_coverage": {
@@ -193,7 +253,7 @@
     "rows": [
       {
         "service": "compute",
-        "list_resources": 3
+        "list_resources": 6
       },
       {
         "service": "cloudrun",
@@ -220,8 +280,11 @@
       },
       "compute": {
         "list_resources": [
+          "google_compute_disk",
           "google_compute_firewall",
           "google_compute_global_address",
+          "google_compute_image",
+          "google_compute_snapshot",
           "google_compute_subnetwork"
         ]
       },
@@ -245,8 +308,8 @@
   "validation": {
     "matches": true,
     "dashboard_list_resources": 3,
-    "code_list_resources": 7,
-    "registered_count": 7,
+    "code_list_resources": 10,
+    "registered_count": 10,
     "signals_agree": true,
     "dashboard_list_resource_names": [
       "google_cloud_run_service",
@@ -255,8 +318,11 @@
     ],
     "code_list_resource_names": [
       "google_cloud_run_service",
+      "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_image",
+      "google_compute_snapshot",
       "google_compute_subnetwork",
       "google_service_account",
       "google_sql_database",
@@ -264,8 +330,11 @@
     ],
     "only_in_registry": [],
     "only_in_source": [
+      "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_image",
+      "google_compute_snapshot",
       "google_compute_subnetwork",
       "google_sql_database"
     ],

@@ -12700,7 +12700,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:37.857643"
+    "docs_refreshed_at": "2026-06-01T12:54:59.792333"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -36591,7 +36591,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:38.601281"
+    "docs_refreshed_at": "2026-06-01T12:55:00.251436"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37025,7 +37025,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:39.120182"
+    "docs_refreshed_at": "2026-06-01T12:55:00.599709"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45077,7 +45077,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:39.827958"
+    "docs_refreshed_at": "2026-06-01T12:55:00.993327"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45426,7 +45426,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:40.332659"
+    "docs_refreshed_at": "2026-06-01T12:55:01.360566"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53627,7 +53627,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:40.925985"
+    "docs_refreshed_at": "2026-06-01T12:55:01.822240"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -61561,7 +61561,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:39:41.457518"
+    "docs_refreshed_at": "2026-06-01T12:55:02.265374"
   },
   "4ek0/neko": {
     "docs": {
