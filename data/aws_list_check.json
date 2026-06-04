@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T12:55:54.978697",
+  "generated_at": "2026-06-04T11:12:22.160095",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "e26a14e0d078679494673567ab79363a7c1a60a0"
+    "commit": "78fbcf2a41ec826c2b8807a026c4dd5ed772f1e5"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 140
+    "list_resources": 142
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3089,
+    "stdout_line_count": 3093,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 8,
-        "implemented": 138,
-        "total": 1646
+        "implemented": 140,
+        "total": 1650
       },
       "service_count": 239,
       "services": [
@@ -252,8 +252,8 @@
         },
         {
           "service": "cleanrooms",
-          "percent": 66,
-          "implemented": 2,
+          "percent": 100,
+          "implemented": 3,
           "total": 3
         },
         {
@@ -540,9 +540,9 @@
         },
         {
           "service": "ec2",
-          "percent": 12,
+          "percent": 11,
           "implemented": 19,
-          "total": 157
+          "total": 159
         },
         {
           "service": "ecr",
@@ -794,7 +794,7 @@
           "service": "kinesis",
           "percent": 0,
           "implemented": 0,
-          "total": 3
+          "total": 4
         },
         {
           "service": "kinesisanalytics",
@@ -1038,9 +1038,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 0,
-          "implemented": 0,
-          "total": 2
+          "percent": 33,
+          "implemented": 1,
+          "total": 3
         },
         {
           "service": "pipes",
@@ -1899,7 +1899,8 @@
           ],
           "list_resources": [
             "cleanrooms/collaboration.go",
-            "cleanrooms/configured_table.go"
+            "cleanrooms/configured_table.go",
+            "cleanrooms/membership.go"
           ]
         },
         "cloud9": {
@@ -2430,6 +2431,8 @@
             "ec2/ec2_spot_fleet_request.go",
             "ec2/ec2_spot_instance_request.go",
             "ec2/outposts_local_gateway_route.go",
+            "ec2/outposts_local_gateway_route_table.go",
+            "ec2/outposts_local_gateway_route_table_virtual_interface_group_association.go",
             "ec2/outposts_local_gateway_route_table_vpc_association.go",
             "ec2/transitgateway_.go",
             "ec2/transitgateway_connect.go",
@@ -3089,6 +3092,7 @@
         },
         "kinesis": {
           "all_resources": [
+            "kinesis/account_settings.go",
             "kinesis/resource_policy.go",
             "kinesis/stream.go",
             "kinesis/stream_consumer.go"
@@ -3556,9 +3560,12 @@
         "pinpointsmsvoicev2": {
           "all_resources": [
             "pinpointsmsvoicev2/configuration_set.go",
+            "pinpointsmsvoicev2/event_destination.go",
             "pinpointsmsvoicev2/phone_number.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "pinpointsmsvoicev2/event_destination.go"
+          ]
         },
         "pipes": {
           "all_resources": [
@@ -4488,17 +4495,17 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-06-01 12:55:54 UTC"
+      "last_updated": "2026-06-04 11:12:22 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 44,
+    "services_with_list": 45,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 12,
+        "percent": 11,
         "implemented": 19,
-        "total": 157
+        "total": 159
       },
       {
         "service": "s3",
@@ -4567,6 +4574,12 @@
         "total": 19
       },
       {
+        "service": "cleanrooms",
+        "percent": 100,
+        "implemented": 3,
+        "total": 3
+      },
+      {
         "service": "sns",
         "percent": 50,
         "implemented": 3,
@@ -4577,12 +4590,6 @@
         "percent": 33,
         "implemented": 3,
         "total": 9
-      },
-      {
-        "service": "logs",
-        "percent": 17,
-        "implemented": 3,
-        "total": 17
       }
     ],
     "service_resources": {
@@ -5021,7 +5028,8 @@
         ],
         "list_resources": [
           "cleanrooms/collaboration.go",
-          "cleanrooms/configured_table.go"
+          "cleanrooms/configured_table.go",
+          "cleanrooms/membership.go"
         ]
       },
       "cloud9": {
@@ -5552,6 +5560,8 @@
           "ec2/ec2_spot_fleet_request.go",
           "ec2/ec2_spot_instance_request.go",
           "ec2/outposts_local_gateway_route.go",
+          "ec2/outposts_local_gateway_route_table.go",
+          "ec2/outposts_local_gateway_route_table_virtual_interface_group_association.go",
           "ec2/outposts_local_gateway_route_table_vpc_association.go",
           "ec2/transitgateway_.go",
           "ec2/transitgateway_connect.go",
@@ -6211,6 +6221,7 @@
       },
       "kinesis": {
         "all_resources": [
+          "kinesis/account_settings.go",
           "kinesis/resource_policy.go",
           "kinesis/stream.go",
           "kinesis/stream_consumer.go"
@@ -6678,9 +6689,12 @@
       "pinpointsmsvoicev2": {
         "all_resources": [
           "pinpointsmsvoicev2/configuration_set.go",
+          "pinpointsmsvoicev2/event_destination.go",
           "pinpointsmsvoicev2/phone_number.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "pinpointsmsvoicev2/event_destination.go"
+        ]
       },
       "pipes": {
         "all_resources": [
@@ -7613,9 +7627,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 140,
-    "script_implemented_list": 138,
-    "script_total_resources": 1646,
+    "dashboard_list_resources": 142,
+    "script_implemented_list": 140,
+    "script_total_resources": 1650,
     "script_percent": 8
   }
 }

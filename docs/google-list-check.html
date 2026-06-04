@@ -131,37 +131,37 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-06-01T12:55:58.496396.</p>
+    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-06-04T11:12:25.925099.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">3</div><div class="label">Registry-Reflected List Resources</div></div>
-        <div class="card"><div class="value">10</div><div class="label">Source TypeNames</div></div>
-        <div class="card"><div class="value">10</div><div class="label">Registered Constructors</div></div>
+        <div class="card"><div class="value">7</div><div class="label">Registry-Reflected List Resources</div></div>
+        <div class="card"><div class="value">11</div><div class="label">Source TypeNames</div></div>
+        <div class="card"><div class="value">11</div><div class="label">Registered Constructors</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Validation: healthy (Registry trails source)</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Source Signals Agree</div></div>
     </div>
 
     <div class="note">
         <strong>✅ Validation:</strong> Registry reflects
-        <strong>3</strong>;
-        source inspection finds <strong>10</strong>
-        TypeName(s) across <strong>10</strong> registered constructor(s).
+        <strong>7</strong>;
+        source inspection finds <strong>11</strong>
+        TypeName(s) across <strong>11</strong> registered constructor(s).
         Unlike AWS/Azure (which have established lists of expected resources to track gaps), GCP is
         in the early phase of adopting List Resources — the report focuses on
         <em>what is implemented today</em>.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>e57828c42bad77882b4cadd55687b9c9fb6db220</code></span></div>
-                <div class="meta-row"><span>Registration sources</span><span>10 file(s) under <code>google/</code></span></div>
-                <div class="meta-row"><span>Registrations SHA-256</span><span><code>f4b88ad7e00d148b...</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>30fbe90bdc3edc45161a9ac4a65a5806ae04b547</code></span></div>
+                <div class="meta-row"><span>Registration sources</span><span>11 file(s) under <code>google/</code></span></div>
+                <div class="meta-row"><span>Registrations SHA-256</span><span><code>52965f5650b68d0f...</code></span></div>
             </div>
             <div>
                 <div class="meta-row"><span>Dashboard provider</span><span><code>hashicorp/google</code></span></div>
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_compute_disk</code> <code>google_compute_firewall</code> <code>google_compute_global_address</code> <code>google_compute_image</code> <code>google_compute_snapshot</code> <code>google_compute_subnetwork</code> <code>google_sql_database</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_compute_disk</code> <code>google_compute_image</code> <code>google_compute_snapshot</code> <code>google_storage_hmac_key</code></span></div></div></div>
     </div>
 
     <div class="section">
@@ -181,26 +181,27 @@
             </thead>
             <tbody>
                 <tr><td><button class="service-link" data-service="compute">compute</button></td><td>6</td></tr>
+<tr><td><button class="service-link" data-service="storage">storage</button></td><td>2</td></tr>
 <tr><td><button class="service-link" data-service="cloudrun">cloudrun</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="resourcemanager">resourcemanager</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="sql">sql</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="storage">storage</button></td><td>1</td></tr>
             </tbody>
         </table>
     </div>
 
     <div class="section">
         <h2>Source Registrations</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>10</strong> source file(s) under <code>google/</code>.</p>
+        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>11</strong> source file(s) under <code>google/</code>.</p>
         <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (2)</h3><ul class="resource-list"><li><code>google_service_account</code> &mdash; <code>NewGoogleServiceAccountListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account.go:42</span></li>
-<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (8)</h3><ul class="resource-list"><li><code>google_cloud_run_service</code> &mdash; <code>NewCloudRunServiceListResource</code> <span class="muted">google/services/cloudrun/list_cloud_run_service.go:40</span></li>
+<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (9)</h3><ul class="resource-list"><li><code>google_cloud_run_service</code> &mdash; <code>NewCloudRunServiceListResource</code> <span class="muted">google/services/cloudrun/list_cloud_run_service.go:40</span></li>
 <li><code>google_compute_disk</code> &mdash; <code>NewComputeDiskListResource</code> <span class="muted">google/services/compute/list_compute_disk.go:40</span></li>
 <li><code>google_compute_firewall</code> &mdash; <code>NewComputeFirewallListResource</code> <span class="muted">google/services/compute/list_compute_firewall.go:40</span></li>
 <li><code>google_compute_global_address</code> &mdash; <code>NewComputeGlobalAddressListResource</code> <span class="muted">google/services/compute/list_compute_global_address.go:40</span></li>
 <li><code>google_compute_image</code> &mdash; <code>NewComputeImageListResource</code> <span class="muted">google/services/compute/list_compute_image.go:40</span></li>
 <li><code>google_compute_snapshot</code> &mdash; <code>NewComputeSnapshotListResource</code> <span class="muted">google/services/compute/list_compute_snapshot.go:40</span></li>
 <li><code>google_compute_subnetwork</code> &mdash; <code>NewComputeSubnetworkListResource</code> <span class="muted">google/services/compute/list_compute_subnetwork.go:40</span></li>
-<li><code>google_sql_database</code> &mdash; <code>NewSQLDatabaseListResource</code> <span class="muted">google/services/sql/list_sql_database.go:40</span></li></ul></div></div>
+<li><code>google_sql_database</code> &mdash; <code>NewSQLDatabaseListResource</code> <span class="muted">google/services/sql/list_sql_database.go:40</span></li>
+<li><code>google_storage_hmac_key</code> &mdash; <code>NewStorageHmacKeyListResource</code> <span class="muted">google/services/storage/list_storage_hmac_key.go:40</span></li></ul></div></div>
     </div>
 
     <div class="section">
@@ -215,7 +216,8 @@
 <li><code>google_compute_subnetwork</code></li>
 <li><code>google_service_account</code></li>
 <li><code>google_sql_database</code></li>
-<li><code>google_storage_bucket</code></li></ul>
+<li><code>google_storage_bucket</code></li>
+<li><code>google_storage_hmac_key</code></li></ul>
     </div>
 
     <div class="section">
@@ -237,7 +239,7 @@
     </div>
 </div>
 <script>
-    const serviceResources = {"cloudrun": {"list_resources": ["google_cloud_run_service"]}, "compute": {"list_resources": ["google_compute_disk", "google_compute_firewall", "google_compute_global_address", "google_compute_image", "google_compute_snapshot", "google_compute_subnetwork"]}, "resourcemanager": {"list_resources": ["google_service_account"]}, "sql": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket"]}};
+    const serviceResources = {"cloudrun": {"list_resources": ["google_cloud_run_service"]}, "compute": {"list_resources": ["google_compute_disk", "google_compute_firewall", "google_compute_global_address", "google_compute_image", "google_compute_snapshot", "google_compute_subnetwork"]}, "resourcemanager": {"list_resources": ["google_service_account"]}, "sql": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket", "google_storage_hmac_key"]}};
 
     function fillResourceList(listElement, emptyElement, values) {
         listElement.innerHTML = '';

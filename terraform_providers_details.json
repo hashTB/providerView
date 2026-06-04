@@ -1142,6 +1142,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "ec2_hosts",
+          "slug": "ec2_hosts",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
           "title": "ec2_instance_type",
           "slug": "ec2_instance_type",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -3805,6 +3810,11 @@
           "subcategory": "Clean Rooms"
         },
         {
+          "title": "cleanrooms_membership",
+          "slug": "cleanrooms_membership",
+          "subcategory": "Clean Rooms"
+        },
+        {
           "title": "cloudfront_distribution",
           "slug": "cloudfront_distribution",
           "subcategory": "CloudFront"
@@ -4108,6 +4118,11 @@
           "title": "organizations_aws_service_access",
           "slug": "organizations_aws_service_access",
           "subcategory": "Organizations"
+        },
+        {
+          "title": "pinpointsmsvoicev2_event_destination",
+          "slug": "pinpointsmsvoicev2_event_destination",
+          "subcategory": "End User Messaging SMS"
         },
         {
           "title": "route",
@@ -7054,6 +7069,16 @@
           "subcategory": "Outposts (EC2)"
         },
         {
+          "title": "ec2_local_gateway_route_table",
+          "slug": "ec2_local_gateway_route_table",
+          "subcategory": "Outposts (EC2)"
+        },
+        {
+          "title": "ec2_local_gateway_route_table_virtual_interface_group_association",
+          "slug": "ec2_local_gateway_route_table_virtual_interface_group_association",
+          "subcategory": "Outposts (EC2)"
+        },
+        {
           "title": "ec2_local_gateway_route_table_vpc_association",
           "slug": "ec2_local_gateway_route_table_vpc_association",
           "subcategory": "Outposts (EC2)"
@@ -8494,6 +8519,11 @@
           "subcategory": "Keyspaces (for Apache Cassandra)"
         },
         {
+          "title": "kinesis_account_settings",
+          "slug": "kinesis_account_settings",
+          "subcategory": "Kinesis"
+        },
+        {
           "title": "kinesis_analytics_application",
           "slug": "kinesis_analytics_application",
           "subcategory": "Kinesis Analytics"
@@ -9806,6 +9836,11 @@
         {
           "title": "pinpointsmsvoicev2_configuration_set",
           "slug": "pinpointsmsvoicev2_configuration_set",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
+          "title": "pinpointsmsvoicev2_event_destination",
+          "slug": "pinpointsmsvoicev2_event_destination",
           "subcategory": "End User Messaging SMS"
         },
         {
@@ -12700,7 +12735,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:54:59.792333"
+    "docs_refreshed_at": "2026-06-04T11:11:26.229017"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13919,6 +13954,11 @@
         {
           "title": "bedrockagentcore_online_evaluation_configs",
           "slug": "bedrockagentcore_online_evaluation_configs",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_payment_connector",
+          "slug": "bedrockagentcore_payment_connector",
           "subcategory": ""
         },
         {
@@ -21267,6 +21307,11 @@
           "subcategory": ""
         },
         {
+          "title": "opensearchserverless_collection_index",
+          "slug": "opensearchserverless_collection_index",
+          "subcategory": ""
+        },
+        {
           "title": "opensearchserverless_collections",
           "slug": "opensearchserverless_collections",
           "subcategory": ""
@@ -22069,6 +22114,36 @@
         {
           "title": "resiliencehub_resiliency_policy",
           "slug": "resiliencehub_resiliency_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_policies",
+          "slug": "resiliencehubv2_policies",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_policy",
+          "slug": "resiliencehubv2_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_service",
+          "slug": "resiliencehubv2_service",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_services",
+          "slug": "resiliencehubv2_services",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_system",
+          "slug": "resiliencehubv2_system",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_systems",
+          "slug": "resiliencehubv2_systems",
           "subcategory": ""
         },
         {
@@ -24254,6 +24329,16 @@
         {
           "title": "verifiedpermissions_policy_store",
           "slug": "verifiedpermissions_policy_store",
+          "subcategory": ""
+        },
+        {
+          "title": "verifiedpermissions_policy_store_alias",
+          "slug": "verifiedpermissions_policy_store_alias",
+          "subcategory": ""
+        },
+        {
+          "title": "verifiedpermissions_policy_store_aliases",
+          "slug": "verifiedpermissions_policy_store_aliases",
           "subcategory": ""
         },
         {
@@ -28691,6 +28776,21 @@
           "subcategory": ""
         },
         {
+          "title": "resiliencehubv2_policy",
+          "slug": "resiliencehubv2_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_service",
+          "slug": "resiliencehubv2_service",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_system",
+          "slug": "resiliencehubv2_system",
+          "subcategory": ""
+        },
+        {
           "title": "resourceexplorer2_index",
           "slug": "resourceexplorer2_index",
           "subcategory": ""
@@ -29646,6 +29746,11 @@
           "subcategory": ""
         },
         {
+          "title": "verifiedpermissions_policy_store_alias",
+          "slug": "verifiedpermissions_policy_store_alias",
+          "subcategory": ""
+        },
+        {
           "title": "voiceid_domain",
           "slug": "voiceid_domain",
           "subcategory": ""
@@ -30522,6 +30627,11 @@
         {
           "title": "bedrockagentcore_online_evaluation_config",
           "slug": "bedrockagentcore_online_evaluation_config",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_payment_connector",
+          "slug": "bedrockagentcore_payment_connector",
           "subcategory": ""
         },
         {
@@ -34640,6 +34750,11 @@
           "subcategory": ""
         },
         {
+          "title": "opensearchserverless_collection_index",
+          "slug": "opensearchserverless_collection_index",
+          "subcategory": ""
+        },
+        {
           "title": "opensearchserverless_lifecycle_policy",
           "slug": "opensearchserverless_lifecycle_policy",
           "subcategory": ""
@@ -35102,6 +35217,21 @@
         {
           "title": "resiliencehub_resiliency_policy",
           "slug": "resiliencehub_resiliency_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_policy",
+          "slug": "resiliencehubv2_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_service",
+          "slug": "resiliencehubv2_service",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_system",
+          "slug": "resiliencehubv2_system",
           "subcategory": ""
         },
         {
@@ -36340,6 +36470,11 @@
           "subcategory": ""
         },
         {
+          "title": "verifiedpermissions_policy_store_alias",
+          "slug": "verifiedpermissions_policy_store_alias",
+          "subcategory": ""
+        },
+        {
           "title": "verifiedpermissions_policy_template",
           "slug": "verifiedpermissions_policy_template",
           "subcategory": ""
@@ -36591,7 +36726,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:00.251436"
+    "docs_refreshed_at": "2026-06-04T11:11:26.796668"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37025,7 +37160,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:00.599709"
+    "docs_refreshed_at": "2026-06-04T11:11:27.159725"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45077,7 +45212,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:00.993327"
+    "docs_refreshed_at": "2026-06-04T11:11:27.572166"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45426,7 +45561,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:01.360566"
+    "docs_refreshed_at": "2026-06-04T11:11:27.922204"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -47394,6 +47529,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_connection_types",
+          "slug": "oracle_database_goldengate_connection_types",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_goldengate_deployment_environments",
           "slug": "oracle_database_goldengate_deployment_environments",
           "subcategory": "Oracle Database"
@@ -48172,9 +48312,29 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "google_compute_firewall",
+          "slug": "google_compute_firewall",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_global_address",
+          "slug": "google_compute_global_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_subnetwork",
+          "slug": "google_compute_subnetwork",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_sql_database",
+          "slug": "google_sql_database",
+          "subcategory": "Cloud SQL"
         },
         {
           "title": "google_storage_bucket",
@@ -49046,6 +49206,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "ces_security_settings",
+          "slug": "ces_security_settings",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
           "title": "ces_tool",
           "slug": "ces_tool",
           "subcategory": "Customer Engagement Suite"
@@ -49083,6 +49248,11 @@
         {
           "title": "chronicle_feed",
           "slug": "chronicle_feed",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_findings_refinement",
+          "slug": "chronicle_findings_refinement",
           "subcategory": "Chronicle"
         },
         {
@@ -51571,6 +51741,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_folder_access_policy",
+          "slug": "iam_folder_access_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_folders_policy_binding",
           "slug": "iam_folders_policy_binding",
           "subcategory": "Cloud IAM"
@@ -51593,6 +51768,11 @@
         {
           "title": "iam_principal_access_boundary_policy",
           "slug": "iam_principal_access_boundary_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
+          "title": "iam_project_access_policy",
+          "slug": "iam_project_access_policy",
           "subcategory": "Cloud IAM"
         },
         {
@@ -52036,6 +52216,11 @@
           "subcategory": "Migration Center"
         },
         {
+          "title": "migration_center_discovery_client",
+          "slug": "migration_center_discovery_client",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_group",
           "slug": "migration_center_group",
           "subcategory": "Migration Center"
@@ -52043,6 +52228,11 @@
         {
           "title": "migration_center_preference_set",
           "slug": "migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_report",
+          "slug": "migration_center_report",
           "subcategory": "Migration Center"
         },
         {
@@ -52613,6 +52803,21 @@
         {
           "title": "oracle_database_exascale_db_storage_vault",
           "slug": "oracle_database_exascale_db_storage_vault",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_connection",
+          "slug": "oracle_database_goldengate_connection",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_connection_assignment",
+          "slug": "oracle_database_goldengate_connection_assignment",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_deployment",
+          "slug": "oracle_database_goldengate_deployment",
           "subcategory": "Oracle Database"
         },
         {
@@ -53627,7 +53832,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:01.822240"
+    "docs_refreshed_at": "2026-06-04T11:11:28.349629"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -55328,6 +55533,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_connection_types",
+          "slug": "oracle_database_goldengate_connection_types",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_goldengate_deployment_environments",
           "slug": "oracle_database_goldengate_deployment_environments",
           "subcategory": "Oracle Database"
@@ -56106,9 +56316,29 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "google_compute_firewall",
+          "slug": "google_compute_firewall",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_global_address",
+          "slug": "google_compute_global_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_subnetwork",
+          "slug": "google_compute_subnetwork",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_sql_database",
+          "slug": "google_sql_database",
+          "subcategory": "Cloud SQL"
         },
         {
           "title": "google_storage_bucket",
@@ -56980,6 +57210,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "ces_security_settings",
+          "slug": "ces_security_settings",
+          "subcategory": "Customer Engagement Suite"
+        },
+        {
           "title": "ces_tool",
           "slug": "ces_tool",
           "subcategory": "Customer Engagement Suite"
@@ -57017,6 +57252,11 @@
         {
           "title": "chronicle_feed",
           "slug": "chronicle_feed",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_findings_refinement",
+          "slug": "chronicle_findings_refinement",
           "subcategory": "Chronicle"
         },
         {
@@ -59505,6 +59745,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_folder_access_policy",
+          "slug": "iam_folder_access_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_folders_policy_binding",
           "slug": "iam_folders_policy_binding",
           "subcategory": "Cloud IAM"
@@ -59527,6 +59772,11 @@
         {
           "title": "iam_principal_access_boundary_policy",
           "slug": "iam_principal_access_boundary_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
+          "title": "iam_project_access_policy",
+          "slug": "iam_project_access_policy",
           "subcategory": "Cloud IAM"
         },
         {
@@ -59970,6 +60220,11 @@
           "subcategory": "Migration Center"
         },
         {
+          "title": "migration_center_discovery_client",
+          "slug": "migration_center_discovery_client",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_group",
           "slug": "migration_center_group",
           "subcategory": "Migration Center"
@@ -59977,6 +60232,11 @@
         {
           "title": "migration_center_preference_set",
           "slug": "migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_report",
+          "slug": "migration_center_report",
           "subcategory": "Migration Center"
         },
         {
@@ -60547,6 +60807,21 @@
         {
           "title": "oracle_database_exascale_db_storage_vault",
           "slug": "oracle_database_exascale_db_storage_vault",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_connection",
+          "slug": "oracle_database_goldengate_connection",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_connection_assignment",
+          "slug": "oracle_database_goldengate_connection_assignment",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_deployment",
+          "slug": "oracle_database_goldengate_deployment",
           "subcategory": "Oracle Database"
         },
         {
@@ -61561,7 +61836,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-01T12:55:02.265374"
+    "docs_refreshed_at": "2026-06-04T11:11:28.794240"
   },
   "4ek0/neko": {
     "docs": {

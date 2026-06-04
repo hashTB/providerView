@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-01T12:55:58.496396",
+  "generated_at": "2026-06-04T11:12:25.925099",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "e57828c42bad77882b4cadd55687b9c9fb6db220"
+    "commit": "30fbe90bdc3edc45161a9ac4a65a5806ae04b547"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 10,
+    "file_count": 11,
     "files": [
       {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
@@ -58,14 +58,19 @@
         "file": "google/services/storage/list_google_storage_bucket.go",
         "type": "Handwritten",
         "registrations": 1
+      },
+      {
+        "file": "google/services/storage/list_storage_hmac_key.go",
+        "type": "MMv1",
+        "registrations": 1
       }
     ],
-    "sha256": "f4b88ad7e00d148b54ba1835a4c50f2da1c30f62188a2b61f1866586269647e9",
+    "sha256": "52965f5650b68d0f0feb9744b2d283b06317e5204d1852ca44528eadaa09303d",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 3
+    "list_resources": 7
   },
   "registrations": {
     "generated": [
@@ -123,6 +128,13 @@
         "package": "SQL",
         "constructor": "NewSQLDatabaseListResource",
         "file": "google/services/sql/list_sql_database.go",
+        "line": 40
+      },
+      {
+        "name": "google_storage_hmac_key",
+        "package": "Storage",
+        "constructor": "NewStorageHmacKeyListResource",
+        "file": "google/services/storage/list_storage_hmac_key.go",
         "line": 40
       }
     ],
@@ -202,6 +214,11 @@
         "file": "google/services/storage/list_google_storage_bucket.go",
         "type_name": "google_storage_bucket",
         "constructor": "NewGoogleStorageBucketListResource"
+      },
+      {
+        "file": "google/services/storage/list_storage_hmac_key.go",
+        "type_name": "google_storage_hmac_key",
+        "constructor": "NewStorageHmacKeyListResource"
       }
     ]
   },
@@ -216,7 +233,8 @@
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
-      "NewSQLDatabaseListResource"
+      "NewSQLDatabaseListResource",
+      "NewStorageHmacKeyListResource"
     ],
     "file_constructors": [
       "NewCloudRunServiceListResource",
@@ -228,7 +246,8 @@
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
-      "NewSQLDatabaseListResource"
+      "NewSQLDatabaseListResource",
+      "NewStorageHmacKeyListResource"
     ],
     "file_type_names": [
       "google_cloud_run_service",
@@ -240,12 +259,13 @@
       "google_compute_subnetwork",
       "google_service_account",
       "google_sql_database",
-      "google_storage_bucket"
+      "google_storage_bucket",
+      "google_storage_hmac_key"
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 10,
-    "file_type_name_count": 10,
+    "registration_count": 11,
+    "file_type_name_count": 11,
     "signals_agree": true
   },
   "service_coverage": {
@@ -254,6 +274,10 @@
       {
         "service": "compute",
         "list_resources": 6
+      },
+      {
+        "service": "storage",
+        "list_resources": 2
       },
       {
         "service": "cloudrun",
@@ -265,10 +289,6 @@
       },
       {
         "service": "sql",
-        "list_resources": 1
-      },
-      {
-        "service": "storage",
         "list_resources": 1
       }
     ],
@@ -300,20 +320,25 @@
       },
       "storage": {
         "list_resources": [
-          "google_storage_bucket"
+          "google_storage_bucket",
+          "google_storage_hmac_key"
         ]
       }
     }
   },
   "validation": {
     "matches": true,
-    "dashboard_list_resources": 3,
-    "code_list_resources": 10,
-    "registered_count": 10,
+    "dashboard_list_resources": 7,
+    "code_list_resources": 11,
+    "registered_count": 11,
     "signals_agree": true,
     "dashboard_list_resource_names": [
       "google_cloud_run_service",
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_subnetwork",
       "google_service_account",
+      "google_sql_database",
       "google_storage_bucket"
     ],
     "code_list_resource_names": [
@@ -326,17 +351,15 @@
       "google_compute_subnetwork",
       "google_service_account",
       "google_sql_database",
-      "google_storage_bucket"
+      "google_storage_bucket",
+      "google_storage_hmac_key"
     ],
     "only_in_registry": [],
     "only_in_source": [
       "google_compute_disk",
-      "google_compute_firewall",
-      "google_compute_global_address",
       "google_compute_image",
       "google_compute_snapshot",
-      "google_compute_subnetwork",
-      "google_sql_database"
+      "google_storage_hmac_key"
     ],
     "registry_is_subset": true
   }
