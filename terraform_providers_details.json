@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:35.397841"
+    "docs_refreshed_at": "2026-06-11T11:25:43.849852"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -62178,7 +62178,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:24.217129"
+    "docs_refreshed_at": "2026-06-11T11:25:34.839650"
   },
   "Azure/azapi": {
     "docs": {
@@ -65789,7 +65789,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:24.762900"
+    "docs_refreshed_at": "2026-06-11T11:25:35.691858"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -67154,7 +67154,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:25.240412"
+    "docs_refreshed_at": "2026-06-11T11:25:36.274744"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -67679,7 +67679,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:25.702000"
+    "docs_refreshed_at": "2026-06-11T11:25:36.689599"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -67947,7 +67947,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:26.162305"
+    "docs_refreshed_at": "2026-06-11T11:25:37.049247"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -67966,7 +67966,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:26.615015"
+    "docs_refreshed_at": "2026-06-11T11:25:37.505830"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -68013,7 +68013,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:27.059211"
+    "docs_refreshed_at": "2026-06-11T11:25:37.864325"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -68143,7 +68143,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:28.156762"
+    "docs_refreshed_at": "2026-06-11T11:25:38.581345"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -68687,7 +68687,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:29.977489"
+    "docs_refreshed_at": "2026-06-11T11:25:39.988456"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -71872,7 +71872,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:30.472029"
+    "docs_refreshed_at": "2026-06-11T11:25:40.347251"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -73151,11 +73151,16 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:31.057999"
+    "docs_refreshed_at": "2026-06-11T11:25:40.706761"
   },
   "SAP/btp": {
     "docs": {
       "actions": [
+        {
+          "title": "add_me_as_subaccount_admin",
+          "slug": "add_me_as_subaccount_admin",
+          "subcategory": ""
+        },
         {
           "title": "restore_subaccount",
           "slug": "restore_subaccount",
@@ -73873,7 +73878,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:31.617690"
+    "docs_refreshed_at": "2026-06-11T11:25:41.061931"
   },
   "SAP/scc": {
     "docs": {
@@ -74078,7 +74083,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:32.072193"
+    "docs_refreshed_at": "2026-06-11T11:25:41.412263"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -74125,7 +74130,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:32.572634"
+    "docs_refreshed_at": "2026-06-11T11:25:41.759823"
   },
   "Sokren/aap": {
     "docs": {
@@ -74208,7 +74213,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:33.026105"
+    "docs_refreshed_at": "2026-06-11T11:25:42.110558"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -74258,7 +74263,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:33.478265"
+    "docs_refreshed_at": "2026-06-11T11:25:42.459820"
   },
   "adampie/ctf": {
     "docs": {
@@ -74305,7 +74310,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:34.943849"
+    "docs_refreshed_at": "2026-06-11T11:25:43.505498"
   },
   "ansible/ansible": {
     "docs": {
@@ -74353,7 +74358,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:35.877136"
+    "docs_refreshed_at": "2026-06-11T11:25:44.199650"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -74401,7 +74406,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:36.323769"
+    "docs_refreshed_at": "2026-06-11T11:25:44.555409"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -74427,7 +74432,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:36.778839"
+    "docs_refreshed_at": "2026-06-11T11:25:44.909105"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -74484,7 +74489,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:37.231347"
+    "docs_refreshed_at": "2026-06-11T11:25:45.259877"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -74510,11 +74515,21 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:38.134236"
+    "docs_refreshed_at": "2026-06-11T11:25:45.957858"
   },
   "cysp/braze": {
     "docs": {
       "list-resources": [
+        {
+          "title": "catalog",
+          "slug": "catalog",
+          "subcategory": ""
+        },
+        {
+          "title": "catalog_item",
+          "slug": "catalog_item",
+          "subcategory": ""
+        },
         {
           "title": "content_block",
           "slug": "content_block",
@@ -74535,6 +74550,16 @@
       ],
       "resources": [
         {
+          "title": "catalog",
+          "slug": "catalog",
+          "subcategory": ""
+        },
+        {
+          "title": "catalog_item",
+          "slug": "catalog_item",
+          "subcategory": ""
+        },
+        {
           "title": "content_block",
           "slug": "content_block",
           "subcategory": ""
@@ -74546,7 +74571,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:39.510854"
+    "docs_refreshed_at": "2026-06-11T11:25:47.375065"
   },
   "cysp/contentful": {
     "docs": {
@@ -74689,7 +74714,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:39.958483"
+    "docs_refreshed_at": "2026-06-11T11:25:47.726923"
   },
   "dbanck/concept": {
     "docs": {
@@ -74725,7 +74750,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:41.400699"
+    "docs_refreshed_at": "2026-06-11T11:25:48.776334"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -76074,7 +76099,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:41.994045"
+    "docs_refreshed_at": "2026-06-11T11:25:49.137231"
   },
   "drewmullen/aap": {
     "docs": {
@@ -76182,7 +76207,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:42.947450"
+    "docs_refreshed_at": "2026-06-11T11:25:49.884387"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -76247,7 +76272,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:44.820794"
+    "docs_refreshed_at": "2026-06-11T11:25:51.323893"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -76350,7 +76375,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:45.802672"
+    "docs_refreshed_at": "2026-06-11T11:25:52.064123"
   },
   "hashicorp/local": {
     "docs": {
@@ -76412,7 +76437,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:46.695976"
+    "docs_refreshed_at": "2026-06-11T11:25:52.762470"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -84083,7 +84108,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:48.647773"
+    "docs_refreshed_at": "2026-06-11T11:25:54.597606"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -84896,7 +84921,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:49.110451"
+    "docs_refreshed_at": "2026-06-11T11:25:54.957727"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -85034,7 +85059,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:50.467997"
+    "docs_refreshed_at": "2026-06-11T11:25:56.002631"
   },
   "magodo/restful": {
     "docs": {
@@ -85145,7 +85170,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:52.304862"
+    "docs_refreshed_at": "2026-06-11T11:25:57.100574"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -85287,7 +85312,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:53.285296"
+    "docs_refreshed_at": "2026-06-11T11:25:57.797968"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -85295,6 +85320,16 @@
         {
           "title": "app",
           "slug": "app",
+          "subcategory": ""
+        },
+        {
+          "title": "apple_device_management_device",
+          "slug": "apple_device_management_device",
+          "subcategory": ""
+        },
+        {
+          "title": "apple_device_management_devices",
+          "slug": "apple_device_management_devices",
           "subcategory": ""
         },
         {
@@ -85325,6 +85360,11 @@
         {
           "title": "configurations",
           "slug": "configurations",
+          "subcategory": ""
+        },
+        {
+          "title": "device_management_service",
+          "slug": "device_management_service",
           "subcategory": ""
         },
         {
@@ -85424,13 +85464,18 @@
           "subcategory": ""
         },
         {
+          "title": "default_device_assignment",
+          "slug": "default_device_assignment",
+          "subcategory": ""
+        },
+        {
           "title": "device_management_service",
           "slug": "device_management_service",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:53.799962"
+    "docs_refreshed_at": "2026-06-11T11:25:58.147752"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -85477,7 +85522,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:54.795486"
+    "docs_refreshed_at": "2026-06-11T11:25:58.894067"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -87228,7 +87273,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:58.623716"
+    "docs_refreshed_at": "2026-06-11T11:26:01.794573"
   },
   "soffensive/soff": {
     "docs": {
@@ -87275,7 +87320,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:59.527411"
+    "docs_refreshed_at": "2026-06-11T11:26:02.515464"
   },
   "thrashr888/registry": {
     "docs": {
@@ -87363,7 +87408,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:14:00.426892"
+    "docs_refreshed_at": "2026-06-11T11:26:02.859546"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -88013,7 +88058,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:14:02.689947"
+    "docs_refreshed_at": "2026-06-11T11:26:04.047781"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -88276,7 +88321,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:28.617115"
+    "docs_refreshed_at": "2026-06-11T11:25:38.932392"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -88331,7 +88376,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:46.251011"
+    "docs_refreshed_at": "2026-06-11T11:25:52.410545"
   },
   "timofurrer/desec": {
     "docs": {
@@ -88490,7 +88535,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:14:00.877125"
+    "docs_refreshed_at": "2026-06-11T11:26:03.224095"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -88573,7 +88618,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:14:02.214793"
+    "docs_refreshed_at": "2026-06-11T11:26:03.693436"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -91763,7 +91808,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:27.671356"
+    "docs_refreshed_at": "2026-06-11T11:25:38.233101"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -92058,7 +92103,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:50.016079"
+    "docs_refreshed_at": "2026-06-11T11:25:55.652017"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -92176,7 +92221,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:52.833605"
+    "docs_refreshed_at": "2026-06-11T11:25:57.450214"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -92346,7 +92391,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:29.064015"
+    "docs_refreshed_at": "2026-06-11T11:25:39.283517"
   },
   "branchgrove/debian": {
     "docs": {
@@ -92461,7 +92506,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:37.681200"
+    "docs_refreshed_at": "2026-06-11T11:25:45.610316"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -92906,7 +92951,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:44.326175"
+    "docs_refreshed_at": "2026-06-11T11:25:50.952527"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -93456,7 +93501,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:47.204115"
+    "docs_refreshed_at": "2026-06-11T11:25:53.125530"
   },
   "juju/juju": {
     "docs": {
@@ -93691,7 +93736,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:49.562229"
+    "docs_refreshed_at": "2026-06-11T11:25:55.306221"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -93792,7 +93837,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:29.520448"
+    "docs_refreshed_at": "2026-06-11T11:25:39.636568"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -94230,7 +94275,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:38.609595"
+    "docs_refreshed_at": "2026-06-11T11:25:46.671332"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -94378,7 +94423,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:50.923463"
+    "docs_refreshed_at": "2026-06-11T11:25:56.352217"
   },
   "radeksimko/test": {
     "docs": {
@@ -94425,7 +94470,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:57.223649"
+    "docs_refreshed_at": "2026-06-11T11:26:00.552534"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -94818,7 +94863,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:59.080018"
+    "docs_refreshed_at": "2026-06-11T11:26:02.152203"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -95256,7 +95301,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:51.372028"
+    "docs_refreshed_at": "2026-06-11T11:25:56.702176"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -95673,7 +95718,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:47.656304"
+    "docs_refreshed_at": "2026-06-11T11:25:53.480203"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -96142,7 +96187,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:48.103672"
+    "docs_refreshed_at": "2026-06-11T11:25:54.184666"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -108108,7 +108153,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:56.008373"
+    "docs_refreshed_at": "2026-06-11T11:25:59.672350"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -108568,7 +108613,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:57.681865"
+    "docs_refreshed_at": "2026-06-11T11:26:00.951450"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -109018,7 +109063,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:58.138209"
+    "docs_refreshed_at": "2026-06-11T11:26:01.305702"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -109081,7 +109126,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:42.495713"
+    "docs_refreshed_at": "2026-06-11T11:25:49.492280"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -109169,7 +109214,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:33.933522"
+    "docs_refreshed_at": "2026-06-11T11:25:42.807690"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -109200,7 +109245,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:39.064785"
+    "docs_refreshed_at": "2026-06-11T11:25:47.021087"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -109231,7 +109276,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:40.492361"
+    "docs_refreshed_at": "2026-06-11T11:25:48.079605"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -109262,7 +109307,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:40.947162"
+    "docs_refreshed_at": "2026-06-11T11:25:48.423830"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -109292,13 +109337,18 @@
           "subcategory": ""
         },
         {
+          "title": "index",
+          "slug": "index",
+          "subcategory": ""
+        },
+        {
           "title": "policy",
           "slug": "policy",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:43.870074"
+    "docs_refreshed_at": "2026-06-11T11:25:50.590530"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -109538,7 +109588,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:54.307430"
+    "docs_refreshed_at": "2026-06-11T11:25:58.496486"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -111601,7 +111651,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:45.351827"
+    "docs_refreshed_at": "2026-06-11T11:25:51.720233"
   },
   "pexip/infinity": {
     "docs": {
@@ -112051,7 +112101,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:55.290402"
+    "docs_refreshed_at": "2026-06-11T11:25:59.242534"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -112086,6 +112136,11 @@
         {
           "title": "loadbalancer",
           "slug": "loadbalancer",
+          "subcategory": ""
+        },
+        {
+          "title": "regions",
+          "slug": "regions",
           "subcategory": ""
         },
         {
@@ -112144,7 +112199,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:14:03.148951"
+    "docs_refreshed_at": "2026-06-11T11:26:04.400091"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -112881,7 +112936,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:43.417165"
+    "docs_refreshed_at": "2026-06-11T11:25:50.246092"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -112895,6 +112950,11 @@
           "title": "devops_pipeline_trigger",
           "slug": "devops_pipeline_trigger",
           "subcategory": ""
+        },
+        {
+          "title": "eventgrid_publish_cloudevent",
+          "slug": "eventgrid_publish_cloudevent",
+          "subcategory": ""
         }
       ],
       "overview": [
@@ -112905,7 +112965,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:34.418669"
+    "docs_refreshed_at": "2026-06-11T11:25:43.161497"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -120909,6 +120969,1095 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:13:56.770080"
+    "docs_refreshed_at": "2026-06-11T11:26:00.206108"
+  },
+  "AnasSahel/sailpoint-isc-community": {
+    "docs": {
+      "actions": [
+        {
+          "title": "sync_source_attributes",
+          "slug": "sync_source_attributes",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "access_profile",
+          "slug": "access_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "entitlement",
+          "slug": "entitlement",
+          "subcategory": ""
+        },
+        {
+          "title": "form_definition",
+          "slug": "form_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "governance_group",
+          "slug": "governance_group",
+          "subcategory": ""
+        },
+        {
+          "title": "identity",
+          "slug": "identity",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_attribute",
+          "slug": "identity_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_profile",
+          "slug": "identity_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "launcher",
+          "slug": "launcher",
+          "subcategory": ""
+        },
+        {
+          "title": "lifecycle_state",
+          "slug": "lifecycle_state",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "segment",
+          "slug": "segment",
+          "subcategory": ""
+        },
+        {
+          "title": "source",
+          "slug": "source",
+          "subcategory": ""
+        },
+        {
+          "title": "source_attribute_sync_config",
+          "slug": "source_attribute_sync_config",
+          "subcategory": ""
+        },
+        {
+          "title": "source_provisioning_policy",
+          "slug": "source_provisioning_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "source_schema",
+          "slug": "source_schema",
+          "subcategory": ""
+        },
+        {
+          "title": "transform",
+          "slug": "transform",
+          "subcategory": ""
+        },
+        {
+          "title": "workflow",
+          "slug": "workflow",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "access_profile",
+          "slug": "access_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "entitlement",
+          "slug": "entitlement",
+          "subcategory": ""
+        },
+        {
+          "title": "form_definition",
+          "slug": "form_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "governance_group",
+          "slug": "governance_group",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_attribute",
+          "slug": "identity_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_profile",
+          "slug": "identity_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "launcher",
+          "slug": "launcher",
+          "subcategory": ""
+        },
+        {
+          "title": "lifecycle_state",
+          "slug": "lifecycle_state",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "segment",
+          "slug": "segment",
+          "subcategory": ""
+        },
+        {
+          "title": "source",
+          "slug": "source",
+          "subcategory": ""
+        },
+        {
+          "title": "source_aggregation_schedule",
+          "slug": "source_aggregation_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "source_attribute_sync_config",
+          "slug": "source_attribute_sync_config",
+          "subcategory": ""
+        },
+        {
+          "title": "source_correlation_config",
+          "slug": "source_correlation_config",
+          "subcategory": ""
+        },
+        {
+          "title": "source_provisioning_policy",
+          "slug": "source_provisioning_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "source_schema",
+          "slug": "source_schema",
+          "subcategory": ""
+        },
+        {
+          "title": "transform",
+          "slug": "transform",
+          "subcategory": ""
+        },
+        {
+          "title": "workflow",
+          "slug": "workflow",
+          "subcategory": ""
+        },
+        {
+          "title": "workflow_trigger",
+          "slug": "workflow_trigger",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-11T11:25:35.245518"
+  },
+  "cloudcenmax/cloudcenmax": {
+    "docs": {
+      "actions": [
+        {
+          "title": "server_action",
+          "slug": "server_action",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "account",
+          "slug": "account",
+          "subcategory": ""
+        },
+        {
+          "title": "catalog",
+          "slug": "catalog",
+          "subcategory": ""
+        },
+        {
+          "title": "server_actions",
+          "slug": "server_actions",
+          "subcategory": ""
+        },
+        {
+          "title": "sku",
+          "slug": "sku",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "bucket",
+          "slug": "bucket",
+          "subcategory": ""
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-11T11:25:46.304160"
+  },
+  "ionos-cloud/ionoscloud": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "application_loadbalancer",
+          "slug": "application_loadbalancer",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "application_loadbalancer_forwardingrule",
+          "slug": "application_loadbalancer_forwardingrule",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "autoscaling_group",
+          "slug": "autoscaling_group",
+          "subcategory": "Autoscaling"
+        },
+        {
+          "title": "autoscaling_group_servers",
+          "slug": "autoscaling_group_servers",
+          "subcategory": "Autoscaling"
+        },
+        {
+          "title": "backup_unit",
+          "slug": "backup_unit",
+          "subcategory": "Managed Backup"
+        },
+        {
+          "title": "cdn_distribution",
+          "slug": "cdn_distribution",
+          "subcategory": "CDN"
+        },
+        {
+          "title": "certificate_manager_auto_certificate",
+          "slug": "certificate_manager_auto_certificate",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "certificate_manager_certificate",
+          "slug": "certificate_manager_certificate",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "certificate_manager_provider",
+          "slug": "certificate_manager_provider",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "container_registry",
+          "slug": "container_registry",
+          "subcategory": "Container Registry"
+        },
+        {
+          "title": "container_registry_locations",
+          "slug": "container_registry_locations",
+          "subcategory": "Container Registry"
+        },
+        {
+          "title": "container_registry_token",
+          "slug": "container_registry_token",
+          "subcategory": "Container Registry"
+        },
+        {
+          "title": "contracts",
+          "slug": "contracts",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "cube_server",
+          "slug": "cube_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "datacenter",
+          "slug": "datacenter",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "dbaas_inmemorydb_replica_set",
+          "slug": "dbaas_inmemorydb_replica_set",
+          "subcategory": "Database as a Service - InMemoryDB"
+        },
+        {
+          "title": "dbaas_inmemorydb_snapshot",
+          "slug": "dbaas_inmemorydb_snapshot",
+          "subcategory": "Database as a Service - InMemoryDB"
+        },
+        {
+          "title": "dbaas_mariadb_backups",
+          "slug": "dbaas_mariadb_backups",
+          "subcategory": "Database as a Service - MariaDB"
+        },
+        {
+          "title": "dbaas_mariadb_cluster",
+          "slug": "dbaas_mariadb_cluster",
+          "subcategory": "Database as a Service - MariaDB"
+        },
+        {
+          "title": "dbaas_mongo_cluster",
+          "slug": "dbaas_mongo_cluster",
+          "subcategory": "Database as a Service - MongoDB"
+        },
+        {
+          "title": "dbaas_mongo_template",
+          "slug": "dbaas_mongo_template",
+          "subcategory": "Database as a Service - MongoDB"
+        },
+        {
+          "title": "dbaas_mongo_user",
+          "slug": "dbaas_mongo_user",
+          "subcategory": "Database as a Service - MongoDB"
+        },
+        {
+          "title": "dbaas_pgsql_backups",
+          "slug": "dbaas_pgsql_backups",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_cluster",
+          "slug": "dbaas_pgsql_cluster",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_database",
+          "slug": "dbaas_pgsql_database",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_databases",
+          "slug": "dbaas_pgsql_databases",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_user",
+          "slug": "dbaas_pgsql_user",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_versions",
+          "slug": "dbaas_pgsql_versions",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dns_record",
+          "slug": "dns_record",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "dns_reverse_record",
+          "slug": "dns_reverse_record",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "dns_reverse_records",
+          "slug": "dns_reverse_records",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "dns_zone",
+          "slug": "dns_zone",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "firewall",
+          "slug": "firewall",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "gpu",
+          "slug": "gpu",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "gpus",
+          "slug": "gpus",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "gpu_server",
+          "slug": "gpu_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "image",
+          "slug": "image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "ipblock",
+          "slug": "ipblock",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "ipfailover",
+          "slug": "ipfailover",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "k8s_cluster",
+          "slug": "k8s_cluster",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "k8s_clusters",
+          "slug": "k8s_clusters",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "k8s_node_pool",
+          "slug": "k8s_node_pool",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "k8s_nodepool_nodes",
+          "slug": "k8s_nodepool_nodes",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "kafka_cluster",
+          "slug": "kafka_cluster",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "kafka_topic",
+          "slug": "kafka_topic",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "kafka_user_credentials",
+          "slug": "kafka_user_credentials",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "kafka_users",
+          "slug": "kafka_users",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "lan",
+          "slug": "lan",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "location",
+          "slug": "location",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "logging_pipeline",
+          "slug": "logging_pipeline",
+          "subcategory": "Logging Service"
+        },
+        {
+          "title": "monitoring_pipeline",
+          "slug": "monitoring_pipeline",
+          "subcategory": "Monitoring Service"
+        },
+        {
+          "title": "natgateway",
+          "slug": "natgateway",
+          "subcategory": "NAT Gateway"
+        },
+        {
+          "title": "natgateway_rule",
+          "slug": "natgateway_rule",
+          "subcategory": "NAT Gateway"
+        },
+        {
+          "title": "networkloadbalancer",
+          "slug": "networkloadbalancer",
+          "subcategory": "Network Load Balancer"
+        },
+        {
+          "title": "networkloadbalancer_forwardingrule",
+          "slug": "networkloadbalancer_forwardingrule",
+          "subcategory": "Network Load Balancer"
+        },
+        {
+          "title": "nfs_cluster",
+          "slug": "nfs_cluster",
+          "subcategory": "Network File Storage"
+        },
+        {
+          "title": "nfs_share",
+          "slug": "nfs_share",
+          "subcategory": "Network File Storage"
+        },
+        {
+          "title": "nic",
+          "slug": "nic",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "nsg",
+          "slug": "nsg",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "object_storage_accesskey",
+          "slug": "object_storage_accesskey",
+          "subcategory": "Object storage management"
+        },
+        {
+          "title": "object_storage_region",
+          "slug": "object_storage_region",
+          "subcategory": "Object storage management"
+        },
+        {
+          "title": "pg_backup_location",
+          "slug": "pg_backup_location",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "pg_backups_v2",
+          "slug": "pg_backups_v2",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "pg_clusters_v2",
+          "slug": "pg_clusters_v2",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "pg_cluster_v2",
+          "slug": "pg_cluster_v2",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "pg_versions_v2",
+          "slug": "pg_versions_v2",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "private_crossconnect",
+          "slug": "private_crossconnect",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "resource",
+          "slug": "resource",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "s3_bucket",
+          "slug": "s3_bucket",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_policy",
+          "slug": "s3_bucket_policy",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_key",
+          "slug": "s3_key",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "s3_object",
+          "slug": "s3_object",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_objects",
+          "slug": "s3_objects",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "servers",
+          "slug": "servers",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "share",
+          "slug": "share",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "target_group",
+          "slug": "target_group",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "template",
+          "slug": "template",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "user_object_storage_bucket",
+          "slug": "user_object_storage_bucket",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "vcpu_server",
+          "slug": "vcpu_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "volume",
+          "slug": "volume",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "vpn_ipsec_gateway",
+          "slug": "vpn_ipsec_gateway",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_ipsec_tunnel",
+          "slug": "vpn_ipsec_tunnel",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_wireguard_gateway",
+          "slug": "vpn_wireguard_gateway",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_wireguard_peer",
+          "slug": "vpn_wireguard_peer",
+          "subcategory": "VPN"
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "object_storage_accesskey",
+          "slug": "object_storage_accesskey",
+          "subcategory": "Object storage management"
+        },
+        {
+          "title": "s3_bucket",
+          "slug": "s3_bucket",
+          "subcategory": "Object Storage"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "application_loadbalancer",
+          "slug": "application_loadbalancer",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "application_loadbalancer_forwardingrule",
+          "slug": "application_loadbalancer_forwardingrule",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "autoscaling_group",
+          "slug": "autoscaling_group",
+          "subcategory": "Autoscaling"
+        },
+        {
+          "title": "backup_unit",
+          "slug": "backup_unit",
+          "subcategory": "Managed Backup"
+        },
+        {
+          "title": "cdn_distribution",
+          "slug": "cdn_distribution",
+          "subcategory": "CDN"
+        },
+        {
+          "title": "certificate_manager_auto_certificate",
+          "slug": "certificate_manager_auto_certificate",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "certificate_manager_certificate",
+          "slug": "certificate_manager_certificate",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "certificate_manager_provider",
+          "slug": "certificate_manager_provider",
+          "subcategory": "Certificate Manager Service"
+        },
+        {
+          "title": "container_registry",
+          "slug": "container_registry",
+          "subcategory": "Container Registry"
+        },
+        {
+          "title": "container_registry_token",
+          "slug": "container_registry_token",
+          "subcategory": "Container Registry Token"
+        },
+        {
+          "title": "cube_server",
+          "slug": "cube_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "datacenter",
+          "slug": "datacenter",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "datacenter_nsg_selection",
+          "slug": "datacenter_nsg_selection",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "dbaas_inmemorydb_replica_set",
+          "slug": "dbaas_inmemorydb_replica_set",
+          "subcategory": "Database as a Service - InMemoryDB"
+        },
+        {
+          "title": "dbaas_mariadb_cluster",
+          "slug": "dbaas_mariadb_cluster",
+          "subcategory": "Database as a Service - MariaDB"
+        },
+        {
+          "title": "dbaas_mongo_cluster",
+          "slug": "dbaas_mongo_cluster",
+          "subcategory": "Database as a Service - MongoDB"
+        },
+        {
+          "title": "dbaas_mongo_user",
+          "slug": "dbaas_mongo_user",
+          "subcategory": "Database as a Service - MongoDB"
+        },
+        {
+          "title": "dbaas_pgsql_cluster",
+          "slug": "dbaas_pgsql_cluster",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_database",
+          "slug": "dbaas_pgsql_database",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dbaas_pgsql_user",
+          "slug": "dbaas_pgsql_user",
+          "subcategory": "Database as a Service - Postgres"
+        },
+        {
+          "title": "dns_record",
+          "slug": "dns_record",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "dns_reverse_record",
+          "slug": "dns_reverse_record",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "dns_zone",
+          "slug": "dns_zone",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "firewall",
+          "slug": "firewall",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "gpu_server",
+          "slug": "gpu_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "ipblock",
+          "slug": "ipblock",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "ipfailover",
+          "slug": "ipfailover",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "k8s_cluster",
+          "slug": "k8s_cluster",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "k8s_node_pool",
+          "slug": "k8s_node_pool",
+          "subcategory": "Managed Kubernetes"
+        },
+        {
+          "title": "kafka_cluster",
+          "slug": "kafka_cluster",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "kafka_topic",
+          "slug": "kafka_topic",
+          "subcategory": "Event Streams for Apache Kafka"
+        },
+        {
+          "title": "lan",
+          "slug": "lan",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "loadbalancer",
+          "slug": "loadbalancer",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "logging_pipeline",
+          "slug": "logging_pipeline",
+          "subcategory": "Logging Service"
+        },
+        {
+          "title": "monitoring_pipeline",
+          "slug": "monitoring_pipeline",
+          "subcategory": "Monitoring Service"
+        },
+        {
+          "title": "natgateway",
+          "slug": "natgateway",
+          "subcategory": "NAT Gateway"
+        },
+        {
+          "title": "natgateway_rule",
+          "slug": "natgateway_rule",
+          "subcategory": "NAT Gateway"
+        },
+        {
+          "title": "networkloadbalancer",
+          "slug": "networkloadbalancer",
+          "subcategory": "Network Load Balancer"
+        },
+        {
+          "title": "networkloadbalancer_forwardingrule",
+          "slug": "networkloadbalancer_forwardingrule",
+          "subcategory": "Network Load Balancer"
+        },
+        {
+          "title": "nfs_cluster",
+          "slug": "nfs_cluster",
+          "subcategory": "Network File Storage"
+        },
+        {
+          "title": "nfs_share",
+          "slug": "nfs_share",
+          "subcategory": "Network File Storage"
+        },
+        {
+          "title": "nic",
+          "slug": "nic",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "nsg",
+          "slug": "nsg",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "nsg_firewallrule",
+          "slug": "nsg_firewallrule",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "object_storage_accesskey",
+          "slug": "object_storage_accesskey",
+          "subcategory": "Object storage management"
+        },
+        {
+          "title": "pg_cluster_v2",
+          "slug": "pg_cluster_v2",
+          "subcategory": "Database as a Service - PostgreSQL v2"
+        },
+        {
+          "title": "private_crossconnect",
+          "slug": "private_crossconnect",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "s3_bucket",
+          "slug": "s3_bucket",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_cors_configuration",
+          "slug": "s3_bucket_cors_configuration",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_lifecycle_configuration",
+          "slug": "s3_bucket_lifecycle_configuration",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_object_lock_configuration",
+          "slug": "s3_bucket_object_lock_configuration",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_policy",
+          "slug": "s3_bucket_policy",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_public_access_block",
+          "slug": "s3_bucket_public_access_block",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_server_side_encryption_configuration",
+          "slug": "s3_bucket_server_side_encryption_configuration",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_versioning",
+          "slug": "s3_bucket_versioning",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_bucket_website_configuration",
+          "slug": "s3_bucket_website_configuration",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_key",
+          "slug": "s3_key",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "s3_object",
+          "slug": "s3_object",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "s3_object_copy",
+          "slug": "s3_object_copy",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "server_boot_device_selection",
+          "slug": "server_boot_device_selection",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "share",
+          "slug": "share",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "snapshot",
+          "slug": "snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "target_group",
+          "slug": "target_group",
+          "subcategory": "Application Load Balancer"
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": "User Management"
+        },
+        {
+          "title": "user_object_storage_bucket",
+          "slug": "user_object_storage_bucket",
+          "subcategory": "Object Storage"
+        },
+        {
+          "title": "vcpu_server",
+          "slug": "vcpu_server",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "volume",
+          "slug": "volume",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "vpn_ipsec_gateway",
+          "slug": "vpn_ipsec_gateway",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_ipsec_tunnel",
+          "slug": "vpn_ipsec_tunnel",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_wireguard_gateway",
+          "slug": "vpn_wireguard_gateway",
+          "subcategory": "VPN"
+        },
+        {
+          "title": "vpn_wireguard_peer",
+          "slug": "vpn_wireguard_peer",
+          "subcategory": "VPN"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-11T11:25:53.835967"
   }
 }
