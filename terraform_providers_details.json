@@ -3790,6 +3790,11 @@
           "subcategory": "Bedrock AgentCore"
         },
         {
+          "title": "bedrockagentcore_policy",
+          "slug": "bedrockagentcore_policy",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
           "subcategory": "Bedrock AgentCore"
@@ -3847,6 +3852,11 @@
         {
           "title": "cloudwatch_log_metric_filter",
           "slug": "cloudwatch_log_metric_filter",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
+          "title": "cloudwatch_log_s3_table_integration_source",
+          "slug": "cloudwatch_log_s3_table_integration_source",
           "subcategory": "CloudWatch Logs"
         },
         {
@@ -3923,6 +3933,16 @@
           "title": "ecr_repository_policy",
           "slug": "ecr_repository_policy",
           "subcategory": "ECR (Elastic Container Registry)"
+        },
+        {
+          "title": "ecs_daemon",
+          "slug": "ecs_daemon",
+          "subcategory": "ECS (Elastic Container)"
+        },
+        {
+          "title": "ecs_daemon_task_definition",
+          "slug": "ecs_daemon_task_definition",
+          "subcategory": "ECS (Elastic Container)"
         },
         {
           "title": "ecs_service",
@@ -5319,6 +5339,11 @@
           "subcategory": "Bedrock AgentCore"
         },
         {
+          "title": "bedrockagentcore_policy",
+          "slug": "bedrockagentcore_policy",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
           "subcategory": "Bedrock AgentCore"
@@ -5836,6 +5861,11 @@
         {
           "title": "cloudwatch_log_resource_policy",
           "slug": "cloudwatch_log_resource_policy",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
+          "title": "cloudwatch_log_s3_table_integration_source",
+          "slug": "cloudwatch_log_s3_table_integration_source",
           "subcategory": "CloudWatch Logs"
         },
         {
@@ -7341,6 +7371,16 @@
         {
           "title": "ecs_cluster_capacity_providers",
           "slug": "ecs_cluster_capacity_providers",
+          "subcategory": "ECS (Elastic Container)"
+        },
+        {
+          "title": "ecs_daemon",
+          "slug": "ecs_daemon",
+          "subcategory": "ECS (Elastic Container)"
+        },
+        {
+          "title": "ecs_daemon_task_definition",
+          "slug": "ecs_daemon_task_definition",
           "subcategory": "ECS (Elastic Container)"
         },
         {
@@ -9566,6 +9606,11 @@
         {
           "title": "observabilityadmin_centralization_rule_for_organization",
           "slug": "observabilityadmin_centralization_rule_for_organization",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_s3_table_integration",
+          "slug": "observabilityadmin_s3_table_integration",
           "subcategory": "CloudWatch Observability Admin"
         },
         {
@@ -12735,7 +12780,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:26.229017"
+    "docs_refreshed_at": "2026-06-11T11:23:26.118529"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13367,6 +13412,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_stack_fleet_association",
+          "slug": "appstream_stack_fleet_association",
+          "subcategory": ""
+        },
+        {
           "title": "appstream_stacks",
           "slug": "appstream_stacks",
           "subcategory": ""
@@ -13972,6 +14022,16 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_payment_manager",
+          "slug": "bedrockagentcore_payment_manager",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_payment_managers",
+          "slug": "bedrockagentcore_payment_managers",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_policy",
           "slug": "bedrockagentcore_policy",
           "subcategory": ""
@@ -13984,6 +14044,11 @@
         {
           "title": "bedrockagentcore_policy_engines",
           "slug": "bedrockagentcore_policy_engines",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_resource_policy",
+          "slug": "bedrockagentcore_resource_policy",
           "subcategory": ""
         },
         {
@@ -22132,6 +22197,11 @@
           "subcategory": ""
         },
         {
+          "title": "resiliencehubv2_service_function",
+          "slug": "resiliencehubv2_service_function",
+          "subcategory": ""
+        },
+        {
           "title": "resiliencehubv2_services",
           "slug": "resiliencehubv2_services",
           "subcategory": ""
@@ -22144,6 +22214,11 @@
         {
           "title": "resiliencehubv2_systems",
           "slug": "resiliencehubv2_systems",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_user_journey",
+          "slug": "resiliencehubv2_user_journey",
           "subcategory": ""
         },
         {
@@ -22584,6 +22659,11 @@
         {
           "title": "rtbfabric_link",
           "slug": "rtbfabric_link",
+          "subcategory": ""
+        },
+        {
+          "title": "rtbfabric_link_routing_rule",
+          "slug": "rtbfabric_link_routing_rule",
           "subcategory": ""
         },
         {
@@ -25253,6 +25333,11 @@
         {
           "title": "bedrockagentcore_payment_credential_provider",
           "slug": "bedrockagentcore_payment_credential_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_payment_manager",
+          "slug": "bedrockagentcore_payment_manager",
           "subcategory": ""
         },
         {
@@ -30305,6 +30390,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_stack_fleet_association",
+          "slug": "appstream_stack_fleet_association",
+          "subcategory": ""
+        },
+        {
           "title": "appstream_stack_user_association",
           "slug": "appstream_stack_user_association",
           "subcategory": ""
@@ -30640,6 +30730,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrockagentcore_payment_manager",
+          "slug": "bedrockagentcore_payment_manager",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockagentcore_policy",
           "slug": "bedrockagentcore_policy",
           "subcategory": ""
@@ -30647,6 +30742,11 @@
         {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_resource_policy",
+          "slug": "bedrockagentcore_resource_policy",
           "subcategory": ""
         },
         {
@@ -35230,8 +35330,18 @@
           "subcategory": ""
         },
         {
+          "title": "resiliencehubv2_service_function",
+          "slug": "resiliencehubv2_service_function",
+          "subcategory": ""
+        },
+        {
           "title": "resiliencehubv2_system",
           "slug": "resiliencehubv2_system",
+          "subcategory": ""
+        },
+        {
+          "title": "resiliencehubv2_user_journey",
+          "slug": "resiliencehubv2_user_journey",
           "subcategory": ""
         },
         {
@@ -35487,6 +35597,11 @@
         {
           "title": "rtbfabric_link",
           "slug": "rtbfabric_link",
+          "subcategory": ""
+        },
+        {
+          "title": "rtbfabric_link_routing_rule",
+          "slug": "rtbfabric_link_routing_rule",
           "subcategory": ""
         },
         {
@@ -36726,7 +36841,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:26.796668"
+    "docs_refreshed_at": "2026-06-11T11:23:26.620262"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37160,7 +37275,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:27.159725"
+    "docs_refreshed_at": "2026-06-11T11:23:26.979892"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45212,7 +45327,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:27.572166"
+    "docs_refreshed_at": "2026-06-11T11:23:27.390814"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45561,7 +45676,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:27.922204"
+    "docs_refreshed_at": "2026-06-11T11:23:27.739881"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -45914,6 +46029,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apigee_instance",
+          "slug": "apigee_instance",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "app_engine_default_service_account",
           "slug": "app_engine_default_service_account",
           "subcategory": "App Engine"
@@ -46161,6 +46281,11 @@
         {
           "title": "bigquery_default_service_account",
           "slug": "bigquery_default_service_account",
+          "subcategory": "BigQuery"
+        },
+        {
+          "title": "bigquery_routine_iam_policy",
+          "slug": "bigquery_routine_iam_policy",
           "subcategory": "BigQuery"
         },
         {
@@ -46864,6 +46989,11 @@
           "subcategory": "Dataplex"
         },
         {
+          "title": "dataplex_data_product_iam_policy",
+          "slug": "dataplex_data_product_iam_policy",
+          "subcategory": "Dataplex"
+        },
+        {
           "title": "dataplex_data_quality_rules",
           "slug": "dataplex_data_quality_rules",
           "subcategory": "Dataplex"
@@ -46956,6 +47086,11 @@
         {
           "title": "discovery_engine_data_stores",
           "slug": "discovery_engine_data_stores",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_search_engine_iam_policy",
+          "slug": "discovery_engine_search_engine_iam_policy",
           "subcategory": "Discovery Engine"
         },
         {
@@ -47536,6 +47671,11 @@
         {
           "title": "oracle_database_goldengate_deployment_environments",
           "slug": "oracle_database_goldengate_deployment_environments",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_deployment_types",
+          "slug": "oracle_database_goldengate_deployment_types",
           "subcategory": "Oracle Database"
         },
         {
@@ -48312,6 +48452,11 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "google_compute_disk",
+          "slug": "google_compute_disk",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_firewall",
           "slug": "google_compute_firewall",
           "subcategory": "Compute Engine"
@@ -48319,6 +48464,16 @@
         {
           "title": "google_compute_global_address",
           "slug": "google_compute_global_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_image",
+          "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_snapshot",
+          "slug": "google_compute_snapshot",
           "subcategory": "Compute Engine"
         },
         {
@@ -48339,6 +48494,11 @@
         {
           "title": "google_storage_bucket",
           "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_storage_hmac_key",
+          "slug": "google_storage_hmac_key",
           "subcategory": "Cloud Storage"
         }
       ],
@@ -48533,6 +48693,11 @@
         {
           "title": "apigee_data_collector",
           "slug": "apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_datastore",
+          "slug": "apigee_datastore",
           "subcategory": "Apigee"
         },
         {
@@ -49036,6 +49201,11 @@
           "subcategory": "BigQuery"
         },
         {
+          "title": "bigquery_routine_iam",
+          "slug": "bigquery_routine_iam",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "bigquery_row_access_policy",
           "slug": "bigquery_row_access_policy",
           "subcategory": "BigQuery"
@@ -49221,6 +49391,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "chronicle_custom_list",
+          "slug": "chronicle_custom_list",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_dashboard_chart",
           "slug": "chronicle_dashboard_chart",
           "subcategory": "Chronicle"
@@ -49243,6 +49418,11 @@
         {
           "title": "chronicle_data_table_row",
           "slug": "chronicle_data_table_row",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_environment",
+          "slug": "chronicle_environment",
           "subcategory": "Chronicle"
         },
         {
@@ -50586,6 +50766,11 @@
           "subcategory": "Dataplex"
         },
         {
+          "title": "dataplex_data_product_iam",
+          "slug": "dataplex_data_product_iam",
+          "subcategory": "Dataplex"
+        },
+        {
           "title": "dataplex_datascan",
           "slug": "dataplex_datascan",
           "subcategory": "Dataplex"
@@ -50983,6 +51168,11 @@
         {
           "title": "discovery_engine_search_engine",
           "slug": "discovery_engine_search_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_search_engine_iam",
+          "slug": "discovery_engine_search_engine_iam",
           "subcategory": "Discovery Engine"
         },
         {
@@ -51761,6 +51951,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_organization_access_policy",
+          "slug": "iam_organization_access_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_organizations_policy_binding",
           "slug": "iam_organizations_policy_binding",
           "subcategory": "Cloud IAM"
@@ -52061,6 +52256,11 @@
           "subcategory": "Cloud Key Management Service"
         },
         {
+          "title": "license_manager_configuration",
+          "slug": "license_manager_configuration",
+          "subcategory": "License Manager"
+        },
+        {
           "title": "logging_billing_account_bucket_config",
           "slug": "logging_billing_account_bucket_config",
           "subcategory": "Cloud (Stackdriver) Logging"
@@ -52223,6 +52423,11 @@
         {
           "title": "migration_center_group",
           "slug": "migration_center_group",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_import_job",
+          "slug": "migration_center_import_job",
           "subcategory": "Migration Center"
         },
         {
@@ -53832,7 +54037,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:28.349629"
+    "docs_refreshed_at": "2026-06-11T11:23:28.185183"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -53918,6 +54123,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apigee_instance",
+          "slug": "apigee_instance",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "app_engine_default_service_account",
           "slug": "app_engine_default_service_account",
           "subcategory": "App Engine"
@@ -54165,6 +54375,11 @@
         {
           "title": "bigquery_default_service_account",
           "slug": "bigquery_default_service_account",
+          "subcategory": "BigQuery"
+        },
+        {
+          "title": "bigquery_routine_iam_policy",
+          "slug": "bigquery_routine_iam_policy",
           "subcategory": "BigQuery"
         },
         {
@@ -54868,6 +55083,11 @@
           "subcategory": "Dataplex"
         },
         {
+          "title": "dataplex_data_product_iam_policy",
+          "slug": "dataplex_data_product_iam_policy",
+          "subcategory": "Dataplex"
+        },
+        {
           "title": "dataplex_data_quality_rules",
           "slug": "dataplex_data_quality_rules",
           "subcategory": "Dataplex"
@@ -54960,6 +55180,11 @@
         {
           "title": "discovery_engine_data_stores",
           "slug": "discovery_engine_data_stores",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_search_engine_iam_policy",
+          "slug": "discovery_engine_search_engine_iam_policy",
           "subcategory": "Discovery Engine"
         },
         {
@@ -55540,6 +55765,11 @@
         {
           "title": "oracle_database_goldengate_deployment_environments",
           "slug": "oracle_database_goldengate_deployment_environments",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_goldengate_deployment_types",
+          "slug": "oracle_database_goldengate_deployment_types",
           "subcategory": "Oracle Database"
         },
         {
@@ -56316,6 +56546,11 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "google_compute_disk",
+          "slug": "google_compute_disk",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_firewall",
           "slug": "google_compute_firewall",
           "subcategory": "Compute Engine"
@@ -56323,6 +56558,16 @@
         {
           "title": "google_compute_global_address",
           "slug": "google_compute_global_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_image",
+          "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_snapshot",
+          "slug": "google_compute_snapshot",
           "subcategory": "Compute Engine"
         },
         {
@@ -56343,6 +56588,11 @@
         {
           "title": "google_storage_bucket",
           "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_storage_hmac_key",
+          "slug": "google_storage_hmac_key",
           "subcategory": "Cloud Storage"
         }
       ],
@@ -56537,6 +56787,11 @@
         {
           "title": "apigee_data_collector",
           "slug": "apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_datastore",
+          "slug": "apigee_datastore",
           "subcategory": "Apigee"
         },
         {
@@ -57040,6 +57295,11 @@
           "subcategory": "BigQuery"
         },
         {
+          "title": "bigquery_routine_iam",
+          "slug": "bigquery_routine_iam",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "bigquery_row_access_policy",
           "slug": "bigquery_row_access_policy",
           "subcategory": "BigQuery"
@@ -57225,6 +57485,11 @@
           "subcategory": "Customer Engagement Suite"
         },
         {
+          "title": "chronicle_custom_list",
+          "slug": "chronicle_custom_list",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_dashboard_chart",
           "slug": "chronicle_dashboard_chart",
           "subcategory": "Chronicle"
@@ -57247,6 +57512,11 @@
         {
           "title": "chronicle_data_table_row",
           "slug": "chronicle_data_table_row",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_environment",
+          "slug": "chronicle_environment",
           "subcategory": "Chronicle"
         },
         {
@@ -58590,6 +58860,11 @@
           "subcategory": "Dataplex"
         },
         {
+          "title": "dataplex_data_product_iam",
+          "slug": "dataplex_data_product_iam",
+          "subcategory": "Dataplex"
+        },
+        {
           "title": "dataplex_datascan",
           "slug": "dataplex_datascan",
           "subcategory": "Dataplex"
@@ -58987,6 +59262,11 @@
         {
           "title": "discovery_engine_search_engine",
           "slug": "discovery_engine_search_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_search_engine_iam",
+          "slug": "discovery_engine_search_engine_iam",
           "subcategory": "Discovery Engine"
         },
         {
@@ -59765,6 +60045,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_organization_access_policy",
+          "slug": "iam_organization_access_policy",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_organizations_policy_binding",
           "slug": "iam_organizations_policy_binding",
           "subcategory": "Cloud IAM"
@@ -60065,6 +60350,11 @@
           "subcategory": "Cloud Key Management Service"
         },
         {
+          "title": "license_manager_configuration",
+          "slug": "license_manager_configuration",
+          "subcategory": "License Manager"
+        },
+        {
           "title": "logging_billing_account_bucket_config",
           "slug": "logging_billing_account_bucket_config",
           "subcategory": "Cloud (Stackdriver) Logging"
@@ -60227,6 +60517,11 @@
         {
           "title": "migration_center_group",
           "slug": "migration_center_group",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "migration_center_import_job",
+          "slug": "migration_center_import_job",
           "subcategory": "Migration Center"
         },
         {
@@ -61836,7 +62131,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-04T11:11:28.794240"
+    "docs_refreshed_at": "2026-06-11T11:23:28.645168"
   },
   "4ek0/neko": {
     "docs": {

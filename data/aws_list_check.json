@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T11:12:22.160095",
+  "generated_at": "2026-06-11T11:24:22.876596",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "78fbcf2a41ec826c2b8807a026c4dd5ed772f1e5"
+    "commit": "73f98d62ab8983c854cf4775cc8e02fe4a930a82"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 142
+    "list_resources": 146
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3093,
+    "stdout_line_count": 3098,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 8,
-        "implemented": 140,
-        "total": 1650
+        "implemented": 144,
+        "total": 1655
       },
       "service_count": 239,
       "services": [
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 25,
-          "implemented": 4,
-          "total": 16
+          "percent": 29,
+          "implemented": 5,
+          "total": 17
         },
         {
           "service": "billing",
@@ -558,9 +558,9 @@
         },
         {
           "service": "ecs",
-          "percent": 25,
-          "implemented": 2,
-          "total": 8
+          "percent": 40,
+          "implemented": 4,
+          "total": 10
         },
         {
           "service": "efs",
@@ -864,9 +864,9 @@
         },
         {
           "service": "logs",
-          "percent": 17,
-          "implemented": 3,
-          "total": 17
+          "percent": 22,
+          "implemented": 4,
+          "total": 18
         },
         {
           "service": "m2",
@@ -984,9 +984,9 @@
         },
         {
           "service": "observabilityadmin",
-          "percent": 28,
+          "percent": 25,
           "implemented": 2,
-          "total": 7
+          "total": 8
         },
         {
           "service": "odb",
@@ -1823,6 +1823,7 @@
             "bedrockagentcore/memory_strategy.go",
             "bedrockagentcore/oauth2_credential_provider.go",
             "bedrockagentcore/online_evaluation_config.go",
+            "bedrockagentcore/policy.go",
             "bedrockagentcore/policy_engine.go",
             "bedrockagentcore/resource_policy.go",
             "bedrockagentcore/token_vault_cmk.go",
@@ -1831,6 +1832,7 @@
           "list_resources": [
             "bedrockagentcore/harness.go",
             "bedrockagentcore/online_evaluation_config.go",
+            "bedrockagentcore/policy.go",
             "bedrockagentcore/policy_engine.go",
             "bedrockagentcore/resource_policy.go"
           ]
@@ -2604,12 +2606,16 @@
             "ecs/capacity_provider.go",
             "ecs/cluster.go",
             "ecs/cluster_capacity_providers.go",
+            "ecs/daemon.go",
+            "ecs/daemon_task_definition.go",
             "ecs/express_gateway_service.go",
             "ecs/service.go",
             "ecs/task_definition.go",
             "ecs/task_set.go"
           ],
           "list_resources": [
+            "ecs/daemon.go",
+            "ecs/daemon_task_definition.go",
             "ecs/service.go",
             "ecs/task_definition.go"
           ]
@@ -3259,6 +3265,7 @@
             "logs/metric_filter.go",
             "logs/query_definition.go",
             "logs/resource_policy.go",
+            "logs/s3_table_integration_source.go",
             "logs/stream.go",
             "logs/subscription_filter.go",
             "logs/transformer.go"
@@ -3266,6 +3273,7 @@
           "list_resources": [
             "logs/group.go",
             "logs/metric_filter.go",
+            "logs/s3_table_integration_source.go",
             "logs/subscription_filter.go"
           ]
         },
@@ -3454,6 +3462,7 @@
         "observabilityadmin": {
           "all_resources": [
             "observabilityadmin/centralization_rule_for_organization.go",
+            "observabilityadmin/s3_table_integration.go",
             "observabilityadmin/telemetry_enrichment.go",
             "observabilityadmin/telemetry_evaluation.go",
             "observabilityadmin/telemetry_evaluation_for_organization.go",
@@ -4495,7 +4504,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-06-04 11:12:22 UTC"
+      "last_updated": "2026-06-11 11:24:22 UTC"
     }
   },
   "service_coverage": {
@@ -4544,10 +4553,22 @@
         "total": 14
       },
       {
+        "service": "bedrockagentcore",
+        "percent": 29,
+        "implemented": 5,
+        "total": 17
+      },
+      {
         "service": "workmail",
         "percent": 80,
         "implemented": 4,
         "total": 5
+      },
+      {
+        "service": "ecs",
+        "percent": 40,
+        "implemented": 4,
+        "total": 10
       },
       {
         "service": "ssm",
@@ -4562,10 +4583,10 @@
         "total": 14
       },
       {
-        "service": "bedrockagentcore",
-        "percent": 25,
+        "service": "logs",
+        "percent": 22,
         "implemented": 4,
-        "total": 16
+        "total": 18
       },
       {
         "service": "securityhub",
@@ -4578,18 +4599,6 @@
         "percent": 100,
         "implemented": 3,
         "total": 3
-      },
-      {
-        "service": "sns",
-        "percent": 50,
-        "implemented": 3,
-        "total": 6
-      },
-      {
-        "service": "kafka",
-        "percent": 33,
-        "implemented": 3,
-        "total": 9
       }
     ],
     "service_resources": {
@@ -4952,6 +4961,7 @@
           "bedrockagentcore/memory_strategy.go",
           "bedrockagentcore/oauth2_credential_provider.go",
           "bedrockagentcore/online_evaluation_config.go",
+          "bedrockagentcore/policy.go",
           "bedrockagentcore/policy_engine.go",
           "bedrockagentcore/resource_policy.go",
           "bedrockagentcore/token_vault_cmk.go",
@@ -4960,6 +4970,7 @@
         "list_resources": [
           "bedrockagentcore/harness.go",
           "bedrockagentcore/online_evaluation_config.go",
+          "bedrockagentcore/policy.go",
           "bedrockagentcore/policy_engine.go",
           "bedrockagentcore/resource_policy.go"
         ]
@@ -5733,12 +5744,16 @@
           "ecs/capacity_provider.go",
           "ecs/cluster.go",
           "ecs/cluster_capacity_providers.go",
+          "ecs/daemon.go",
+          "ecs/daemon_task_definition.go",
           "ecs/express_gateway_service.go",
           "ecs/service.go",
           "ecs/task_definition.go",
           "ecs/task_set.go"
         ],
         "list_resources": [
+          "ecs/daemon.go",
+          "ecs/daemon_task_definition.go",
           "ecs/service.go",
           "ecs/task_definition.go"
         ]
@@ -6388,6 +6403,7 @@
           "logs/metric_filter.go",
           "logs/query_definition.go",
           "logs/resource_policy.go",
+          "logs/s3_table_integration_source.go",
           "logs/stream.go",
           "logs/subscription_filter.go",
           "logs/transformer.go"
@@ -6395,6 +6411,7 @@
         "list_resources": [
           "logs/group.go",
           "logs/metric_filter.go",
+          "logs/s3_table_integration_source.go",
           "logs/subscription_filter.go"
         ]
       },
@@ -6583,6 +6600,7 @@
       "observabilityadmin": {
         "all_resources": [
           "observabilityadmin/centralization_rule_for_organization.go",
+          "observabilityadmin/s3_table_integration.go",
           "observabilityadmin/telemetry_enrichment.go",
           "observabilityadmin/telemetry_evaluation.go",
           "observabilityadmin/telemetry_evaluation_for_organization.go",
@@ -7627,9 +7645,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 142,
-    "script_implemented_list": 140,
-    "script_total_resources": 1650,
+    "dashboard_list_resources": 146,
+    "script_implemented_list": 144,
+    "script_total_resources": 1655,
     "script_percent": 8
   }
 }

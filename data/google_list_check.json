@@ -1,16 +1,26 @@
 {
-  "generated_at": "2026-06-04T11:12:25.925099",
+  "generated_at": "2026-06-11T11:24:28.269093",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "30fbe90bdc3edc45161a9ac4a65a5806ae04b547"
+    "commit": "6e24a372beaa24a5c7bb1728b8eed38591ed98ed"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 11,
+    "file_count": 15,
     "files": [
       {
+        "file": "google/services/bigquery/list_bigquery_dataset_access.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -45,6 +55,16 @@
         "registrations": 1
       },
       {
+        "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/pubsub/list_pubsub_subscription.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type": "Handwritten",
         "registrations": 1
@@ -65,20 +85,34 @@
         "registrations": 1
       }
     ],
-    "sha256": "52965f5650b68d0f0feb9744b2d283b06317e5204d1852ca44528eadaa09303d",
+    "sha256": "27d9065f5883e6995def425a7f63bc6dc9f6e53cb040a274316c728a49e81dbf",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 7
+    "list_resources": 11
   },
   "registrations": {
     "generated": [
+      {
+        "name": "google_bigquery_dataset_access",
+        "package": "BigQuery",
+        "constructor": "NewBigQueryDatasetAccessListResource",
+        "file": "google/services/bigquery/list_bigquery_dataset_access.go",
+        "line": 40
+      },
       {
         "name": "google_cloud_run_service",
         "package": "CloudRun",
         "constructor": "NewCloudRunServiceListResource",
         "file": "google/services/cloudrun/list_cloud_run_service.go",
+        "line": 40
+      },
+      {
+        "name": "google_cloud_scheduler_job",
+        "package": "CloudScheduler",
+        "constructor": "NewCloudSchedulerJobListResource",
+        "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
         "line": 40
       },
       {
@@ -124,6 +158,20 @@
         "line": 40
       },
       {
+        "name": "google_monitoring_alert_policy",
+        "package": "Monitoring",
+        "constructor": "NewMonitoringAlertPolicyListResource",
+        "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "line": 40
+      },
+      {
+        "name": "google_pubsub_subscription",
+        "package": "Pubsub",
+        "constructor": "NewPubsubSubscriptionListResource",
+        "file": "google/services/pubsub/list_pubsub_subscription.go",
+        "line": 40
+      },
+      {
         "name": "google_sql_database",
         "package": "SQL",
         "constructor": "NewSQLDatabaseListResource",
@@ -156,11 +204,25 @@
     ]
   },
   "by_service": {
+    "bigquery": [
+      {
+        "file": "google/services/bigquery/list_bigquery_dataset_access.go",
+        "type_name": "google_bigquery_dataset_access",
+        "constructor": "NewBigQueryDatasetAccessListResource"
+      }
+    ],
     "cloudrun": [
       {
         "file": "google/services/cloudrun/list_cloud_run_service.go",
         "type_name": "google_cloud_run_service",
         "constructor": "NewCloudRunServiceListResource"
+      }
+    ],
+    "cloudscheduler": [
+      {
+        "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
+        "type_name": "google_cloud_scheduler_job",
+        "constructor": "NewCloudSchedulerJobListResource"
       }
     ],
     "compute": [
@@ -195,6 +257,20 @@
         "constructor": "NewComputeSubnetworkListResource"
       }
     ],
+    "monitoring": [
+      {
+        "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "type_name": "google_monitoring_alert_policy",
+        "constructor": "NewMonitoringAlertPolicyListResource"
+      }
+    ],
+    "pubsub": [
+      {
+        "file": "google/services/pubsub/list_pubsub_subscription.go",
+        "type_name": "google_pubsub_subscription",
+        "constructor": "NewPubsubSubscriptionListResource"
+      }
+    ],
     "resourcemanager": [
       {
         "file": "google/services/resourcemanager/list_google_service_account.go",
@@ -224,7 +300,9 @@
   },
   "cross_check": {
     "registered_constructors": [
+      "NewBigQueryDatasetAccessListResource",
       "NewCloudRunServiceListResource",
+      "NewCloudSchedulerJobListResource",
       "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
@@ -233,11 +311,15 @@
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewMonitoringAlertPolicyListResource",
+      "NewPubsubSubscriptionListResource",
       "NewSQLDatabaseListResource",
       "NewStorageHmacKeyListResource"
     ],
     "file_constructors": [
+      "NewBigQueryDatasetAccessListResource",
       "NewCloudRunServiceListResource",
+      "NewCloudSchedulerJobListResource",
       "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
@@ -246,17 +328,23 @@
       "NewComputeSubnetworkListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewMonitoringAlertPolicyListResource",
+      "NewPubsubSubscriptionListResource",
       "NewSQLDatabaseListResource",
       "NewStorageHmacKeyListResource"
     ],
     "file_type_names": [
+      "google_bigquery_dataset_access",
       "google_cloud_run_service",
+      "google_cloud_scheduler_job",
       "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
       "google_compute_image",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_monitoring_alert_policy",
+      "google_pubsub_subscription",
       "google_service_account",
       "google_sql_database",
       "google_storage_bucket",
@@ -264,12 +352,12 @@
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 11,
-    "file_type_name_count": 11,
+    "registration_count": 15,
+    "file_type_name_count": 15,
     "signals_agree": true
   },
   "service_coverage": {
-    "services_with_list": 5,
+    "services_with_list": 9,
     "rows": [
       {
         "service": "compute",
@@ -280,7 +368,23 @@
         "list_resources": 2
       },
       {
+        "service": "bigquery",
+        "list_resources": 1
+      },
+      {
         "service": "cloudrun",
+        "list_resources": 1
+      },
+      {
+        "service": "cloudscheduler",
+        "list_resources": 1
+      },
+      {
+        "service": "monitoring",
+        "list_resources": 1
+      },
+      {
+        "service": "pubsub",
         "list_resources": 1
       },
       {
@@ -293,9 +397,19 @@
       }
     ],
     "service_resources": {
+      "bigquery": {
+        "list_resources": [
+          "google_bigquery_dataset_access"
+        ]
+      },
       "cloudrun": {
         "list_resources": [
           "google_cloud_run_service"
+        ]
+      },
+      "cloudscheduler": {
+        "list_resources": [
+          "google_cloud_scheduler_job"
         ]
       },
       "compute": {
@@ -306,6 +420,16 @@
           "google_compute_image",
           "google_compute_snapshot",
           "google_compute_subnetwork"
+        ]
+      },
+      "monitoring": {
+        "list_resources": [
+          "google_monitoring_alert_policy"
+        ]
+      },
+      "pubsub": {
+        "list_resources": [
+          "google_pubsub_subscription"
         ]
       },
       "resourcemanager": {
@@ -328,20 +452,11 @@
   },
   "validation": {
     "matches": true,
-    "dashboard_list_resources": 7,
-    "code_list_resources": 11,
-    "registered_count": 11,
+    "dashboard_list_resources": 11,
+    "code_list_resources": 15,
+    "registered_count": 15,
     "signals_agree": true,
     "dashboard_list_resource_names": [
-      "google_cloud_run_service",
-      "google_compute_firewall",
-      "google_compute_global_address",
-      "google_compute_subnetwork",
-      "google_service_account",
-      "google_sql_database",
-      "google_storage_bucket"
-    ],
-    "code_list_resource_names": [
       "google_cloud_run_service",
       "google_compute_disk",
       "google_compute_firewall",
@@ -354,12 +469,29 @@
       "google_storage_bucket",
       "google_storage_hmac_key"
     ],
-    "only_in_registry": [],
-    "only_in_source": [
+    "code_list_resource_names": [
+      "google_bigquery_dataset_access",
+      "google_cloud_run_service",
+      "google_cloud_scheduler_job",
       "google_compute_disk",
+      "google_compute_firewall",
+      "google_compute_global_address",
       "google_compute_image",
       "google_compute_snapshot",
+      "google_compute_subnetwork",
+      "google_monitoring_alert_policy",
+      "google_pubsub_subscription",
+      "google_service_account",
+      "google_sql_database",
+      "google_storage_bucket",
       "google_storage_hmac_key"
+    ],
+    "only_in_registry": [],
+    "only_in_source": [
+      "google_bigquery_dataset_access",
+      "google_cloud_scheduler_job",
+      "google_monitoring_alert_policy",
+      "google_pubsub_subscription"
     ],
     "registry_is_subset": true
   }
