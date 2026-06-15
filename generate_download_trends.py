@@ -128,6 +128,21 @@ def collapse_to_monthly(dates, values):
     return months, month_values
 
 
+def monthly_snapshot_indices(dates):
+    """Return the index of the latest snapshot in each YYYY-MM bucket, in order.
+
+    Completed months collapse to their month-end snapshot; the current
+    in-progress month keeps whatever its most recent snapshot is.
+    """
+    latest_by_month = {}
+    for idx, date in enumerate(dates):
+        month = date[:7]
+        best = latest_by_month.get(month)
+        if best is None or date > dates[best]:
+            latest_by_month[month] = idx
+    return [latest_by_month[m] for m in sorted(latest_by_month)]
+
+
 def build_monthly_series(dates, monthly_snap_values, total_snap_values):
     """Monthly totals: prefer registry month metric, fallback to cumulative deltas."""
     m_months, m_values = collapse_to_monthly(dates, monthly_snap_values)
@@ -329,6 +344,22 @@ def generate_html(data):
     latest_total = latest_metric_values(series["total"])
     latest_summary = {metric: latest_metric_values(series[metric]) for metric in ("week", "month", "year")}
 
+    # Collapse the cumulative chart to one point per month (latest snapshot in
+    # each month bucket) so the x-axis sits near month-end instead of showing
+    # every snapshot. The current in-progress month keeps its actual last date.
+    # We keep both the aggregated and detailed views so the page can flip.
+    detailed_total_labels = dates
+    detailed_total_datasets = chart_datasets["total"]
+    total_indices = monthly_snapshot_indices(dates)
+    aggregated_total_labels = [dates[i] for i in total_indices]
+    aggregated_total_series = {
+        provider: [series["total"][provider][i] for i in total_indices]
+        for provider in series["total"]
+    }
+    aggregated_total_datasets = build_datasets(aggregated_total_series)
+    # Default the rendered total chart to the aggregated view.
+    chart_datasets["total"] = aggregated_total_datasets
+
     family_rates = {
         family: compute_rate_summary(v["months"], v["values"])
         for family, v in completed_family_monthly.items()
@@ -471,6 +502,19 @@ def generate_html(data):
         .pct-neg {{ color: #f97316; }}
         .pct-na {{ color: var(--text-muted); }}
         .toggle-row {{ display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }}
+        .flip-row {{ display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }}
+        .flip-btn {{
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: border-color 0.15s, color 0.15s;
+        }}
+        .flip-btn:hover {{ border-color: var(--primary); color: var(--primary); }}
+        .flip-note {{ color: var(--text-muted); font-size: 0.8rem; }}
         .toggle-row label {{
             display: flex;
             align-items: center;
@@ -650,10 +694,19 @@ def generate_html(data):
         ("year", "yearChart", "year-toggles"),
     ]
     for metric, chart_id, toggle_id in chart_sections:
+        flip_button = ""
+        if metric == "total":
+            flip_button = (
+                "        <div class=\"flip-row\">"
+                "<button type=\"button\" id=\"total-flip\" class=\"flip-btn\" "
+                "data-view=\"aggregated\">Switch to detailed view</button>"
+                "<span class=\"flip-note\" id=\"total-flip-note\">"
+                "Showing aggregated month-end points</span></div>\n"
+            )
         html += f"""    <div class=\"section\">
         <h2>{METRICS[metric]['title']}</h2>
         <div class=\"sub\">{METRICS[metric]['subtitle']}</div>
-        <div class=\"toggle-row\" id=\"{toggle_id}\"></div>
+{flip_button}        <div class=\"toggle-row\" id=\"{toggle_id}\"></div>
         <div class=\"chart-wrap\"><canvas id=\"{chart_id}\"></canvas></div>
     </div>
 
@@ -664,7 +717,7 @@ def generate_html(data):
 
 <script>
 const dates = {json.dumps(dates)};
-const chartData = {json.dumps({"series": chart_datasets, "familyMonths": union_months, "familyDatasets": family_chart_datasets})};
+const chartData = {json.dumps({"series": chart_datasets, "familyMonths": union_months, "familyDatasets": family_chart_datasets, "totalLabels": aggregated_total_labels, "totalViews": {"aggregated": {"labels": aggregated_total_labels, "datasets": aggregated_total_datasets}, "detailed": {"labels": detailed_total_labels, "datasets": detailed_total_datasets}}})};
 
 function fmtAxis(value) {{
     if (value >= 1e9) return (value / 1e9).toFixed(3) + 'B';
@@ -727,7 +780,7 @@ function createLineChart(canvasId, labels, datasets) {{
 }}
 
 const charts = {{
-    total: createLineChart('totalChart', dates, chartData.series.total),
+    total: createLineChart('totalChart', chartData.totalLabels, chartData.series.total),
     week: createLineChart('weekChart', dates, chartData.series.week),
     month: createLineChart('monthChart', dates, chartData.series.month),
     year: createLineChart('yearChart', dates, chartData.series.year),
@@ -757,6 +810,37 @@ buildToggles(charts.total, 'total-toggles');
 buildToggles(charts.week, 'week-toggles');
 buildToggles(charts.month, 'month-toggles');
 buildToggles(charts.year, 'year-toggles');
+
+// Flip the cumulative chart between aggregated month-end and detailed snapshot views.
+(function() {{
+    const btn = document.getElementById('total-flip');
+    const note = document.getElementById('total-flip-note');
+    const container = document.getElementById('total-toggles');
+    if (!btn) return;
+
+    function applyView(view) {{
+        const v = chartData.totalViews[view];
+        charts.total.data.labels = v.labels;
+        charts.total.data.datasets = JSON.parse(JSON.stringify(v.datasets));
+        charts.total.update();
+        if (container) {{
+            container.innerHTML = '';
+            buildToggles(charts.total, 'total-toggles');
+        }}
+        btn.dataset.view = view;
+        if (view === 'aggregated') {{
+            btn.textContent = 'Switch to detailed view';
+            if (note) note.textContent = 'Showing aggregated month-end points';
+        }} else {{
+            btn.textContent = 'Switch to aggregated view';
+            if (note) note.textContent = 'Showing every snapshot';
+        }}
+    }}
+
+    btn.addEventListener('click', () => {{
+        applyView(btn.dataset.view === 'aggregated' ? 'detailed' : 'aggregated');
+    }});
+}})();
 </script>
 </body>
 </html>
