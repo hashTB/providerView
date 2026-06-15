@@ -23,6 +23,7 @@ PROVIDERS = {
     "azure/azapi": {"label": "AzAPI", "color": "#00B7C3", "group": "Azure"},
     "hashicorp/azuread": {"label": "Azure AD", "color": "#50A0E6", "group": "Azure"},
     "hashicorp/azurestack": {"label": "Azure Stack", "color": "#00BCF2", "group": "Azure"},
+    "microsoft/fabric": {"label": "Microsoft Fabric", "color": "#B83DBA", "group": "Azure"},
     "hashicorp/google": {"label": "Google", "color": "#4285F4", "group": "GCP"},
     "hashicorp/google-beta": {"label": "Google Beta", "color": "#34A853", "group": "GCP"},
 }

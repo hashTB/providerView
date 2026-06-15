@@ -403,9 +403,10 @@ def main():
     # Fetch Registry summary metrics for the tracked cloud providers even when
     # running with --skip-details, since the downloads trends page relies on
     # these values being present in raw snapshots.
+    tracked_lower = {name.lower() for name in TRACKED_DOWNLOAD_SUMMARY_PROVIDERS}
     tracked_providers = [
         provider for provider in providers
-        if provider['full_name'] in TRACKED_DOWNLOAD_SUMMARY_PROVIDERS
+        if provider['full_name'].lower() in tracked_lower
     ]
     if tracked_providers:
         print("Stage 1b: Fetching download summaries for tracked providers...")
