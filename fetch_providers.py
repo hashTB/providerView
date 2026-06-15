@@ -55,8 +55,10 @@ TRACKED_DOWNLOAD_SUMMARY_PROVIDERS = {
     'hashicorp/aws',
     'hashicorp/awscc',
     'hashicorp/azurerm',
+    'azure/azapi',
     'hashicorp/azuread',
     'hashicorp/azurestack',
+    'microsoft/fabric',
     'hashicorp/google',
     'hashicorp/google-beta',
 }

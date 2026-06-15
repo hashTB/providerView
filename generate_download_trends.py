@@ -20,6 +20,7 @@ PROVIDERS = {
     "hashicorp/aws": {"label": "AWS", "color": "#FF9900", "group": "AWS"},
     "hashicorp/awscc": {"label": "AWS CC", "color": "#FF6600", "group": "AWS"},
     "hashicorp/azurerm": {"label": "Azure RM", "color": "#0078D4", "group": "Azure"},
+    "azure/azapi": {"label": "AzAPI", "color": "#00B7C3", "group": "Azure"},
     "hashicorp/azuread": {"label": "Azure AD", "color": "#50A0E6", "group": "Azure"},
     "hashicorp/azurestack": {"label": "Azure Stack", "color": "#00BCF2", "group": "Azure"},
     "hashicorp/google": {"label": "Google", "color": "#4285F4", "group": "GCP"},
