@@ -129,18 +129,22 @@ def collapse_to_monthly(dates, values):
 
 
 def monthly_snapshot_indices(dates):
-    """Return the index of the latest snapshot in each YYYY-MM bucket, in order.
+    """Return snapshot indices aligned to the start of each YYYY-MM bucket.
 
-    Completed months collapse to their month-end snapshot; the current
-    in-progress month keeps whatever its most recent snapshot is.
+    Each month collapses to its earliest snapshot (closest to the 1st). The
+    most recent snapshot overall is always kept as the final point, so the
+    current in-progress month still shows wherever it was actually last picked.
     """
-    latest_by_month = {}
+    earliest_by_month = {}
     for idx, date in enumerate(dates):
         month = date[:7]
-        best = latest_by_month.get(month)
-        if best is None or date > dates[best]:
-            latest_by_month[month] = idx
-    return [latest_by_month[m] for m in sorted(latest_by_month)]
+        best = earliest_by_month.get(month)
+        if best is None or date < dates[best]:
+            earliest_by_month[month] = idx
+    indices = [earliest_by_month[m] for m in sorted(earliest_by_month)]
+    if dates and indices and indices[-1] != len(dates) - 1:
+        indices.append(len(dates) - 1)
+    return indices
 
 
 def build_monthly_series(dates, monthly_snap_values, total_snap_values):
@@ -344,10 +348,10 @@ def generate_html(data):
     latest_total = latest_metric_values(series["total"])
     latest_summary = {metric: latest_metric_values(series[metric]) for metric in ("week", "month", "year")}
 
-    # Collapse the cumulative chart to one point per month (latest snapshot in
-    # each month bucket) so the x-axis sits near month-end instead of showing
-    # every snapshot. The current in-progress month keeps its actual last date.
-    # We keep both the aggregated and detailed views so the page can flip.
+    # Collapse the cumulative chart to one point per month (earliest snapshot in
+    # each month bucket, i.e. closest to the 1st) so the x-axis aligns to month
+    # starts instead of showing every snapshot. The most recent snapshot is kept
+    # as the final point. We keep both the aggregated and detailed views to flip.
     detailed_total_labels = dates
     detailed_total_datasets = chart_datasets["total"]
     total_indices = monthly_snapshot_indices(dates)
@@ -701,7 +705,7 @@ def generate_html(data):
                 "<button type=\"button\" id=\"total-flip\" class=\"flip-btn\" "
                 "data-view=\"aggregated\">Switch to detailed view</button>"
                 "<span class=\"flip-note\" id=\"total-flip-note\">"
-                "Showing aggregated month-end points</span></div>\n"
+                "Showing aggregated month-start points</span></div>\n"
             )
         html += f"""    <div class=\"section\">
         <h2>{METRICS[metric]['title']}</h2>
@@ -830,7 +834,7 @@ buildToggles(charts.year, 'year-toggles');
         btn.dataset.view = view;
         if (view === 'aggregated') {{
             btn.textContent = 'Switch to detailed view';
-            if (note) note.textContent = 'Showing aggregated month-end points';
+            if (note) note.textContent = 'Showing aggregated month-start points';
         }} else {{
             btn.textContent = 'Switch to aggregated view';
             if (note) note.textContent = 'Showing every snapshot';
