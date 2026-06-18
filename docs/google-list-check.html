@@ -131,42 +131,42 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-06-11T11:24:28.269093.</p>
+    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-06-18T11:50:13.648557.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">11</div><div class="label">Registry-Reflected List Resources</div></div>
-        <div class="card"><div class="value">15</div><div class="label">Source TypeNames</div></div>
-        <div class="card"><div class="value">15</div><div class="label">Registered Constructors</div></div>
+        <div class="card"><div class="value">16</div><div class="label">Registry-Reflected List Resources</div></div>
+        <div class="card"><div class="value">27</div><div class="label">Source TypeNames</div></div>
+        <div class="card"><div class="value">27</div><div class="label">Registered Constructors</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Validation: healthy (Registry trails source)</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Source Signals Agree</div></div>
     </div>
 
     <div class="note">
         <strong>✅ Validation:</strong> Registry reflects
-        <strong>11</strong>;
-        source inspection finds <strong>15</strong>
-        TypeName(s) across <strong>15</strong> registered constructor(s).
+        <strong>16</strong>;
+        source inspection finds <strong>27</strong>
+        TypeName(s) across <strong>27</strong> registered constructor(s).
         Unlike AWS/Azure (which have established lists of expected resources to track gaps), GCP is
         in the early phase of adopting List Resources — the report focuses on
         <em>what is implemented today</em>.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>6e24a372beaa24a5c7bb1728b8eed38591ed98ed</code></span></div>
-                <div class="meta-row"><span>Registration sources</span><span>15 file(s) under <code>google/</code></span></div>
-                <div class="meta-row"><span>Registrations SHA-256</span><span><code>27d9065f5883e699...</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>e08e5f19d87ce19e8f364ef33d8907f77024c930</code></span></div>
+                <div class="meta-row"><span>Registration sources</span><span>27 file(s) under <code>google/</code></span></div>
+                <div class="meta-row"><span>Registrations SHA-256</span><span><code>8481d11832942ced...</code></span></div>
             </div>
             <div>
                 <div class="meta-row"><span>Dashboard provider</span><span><code>hashicorp/google</code></span></div>
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_bigquery_dataset_access</code> <code>google_cloud_scheduler_job</code> <code>google_monitoring_alert_policy</code> <code>google_pubsub_subscription</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_compute_address</code> <code>google_compute_cross_site_network</code> <code>google_compute_https_health_check</code> <code>google_compute_node_template</code> <code>google_compute_packet_mirroring</code> <code>google_compute_region_autoscaler</code> <code>google_compute_region_composite_health_check</code> <code>google_compute_region_health_aggregation_policy</code> <code>google_compute_region_health_source</code> <code>google_pubsub_topic</code> <code>google_secret_manager_secret</code></span></div></div></div>
     </div>
 
     <div class="section">
         <h2>Service Coverage (List)</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Services exposing at least one List Resource: <strong>9</strong>.</p>
+        <p class="subtitle" style="margin-bottom: 12px;">Services exposing at least one List Resource: <strong>11</strong>.</p>
         <div class="table-controls">
             <input id="gc-service-search" type="text" placeholder="Search by service (e.g. compute, iam, storage)" />
             <select id="gc-service-sort">
@@ -180,14 +180,16 @@
                 <tr><th>Service</th><th>List Resources</th></tr>
             </thead>
             <tbody>
-                <tr><td><button class="service-link" data-service="compute">compute</button></td><td>6</td></tr>
+                <tr><td><button class="service-link" data-service="compute">compute</button></td><td>15</td></tr>
+<tr><td><button class="service-link" data-service="pubsub">pubsub</button></td><td>2</td></tr>
 <tr><td><button class="service-link" data-service="storage">storage</button></td><td>2</td></tr>
 <tr><td><button class="service-link" data-service="bigquery">bigquery</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="cloudrun">cloudrun</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="cloudscheduler">cloudscheduler</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="dns">dns</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="monitoring">monitoring</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="pubsub">pubsub</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="resourcemanager">resourcemanager</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="secretmanager">secretmanager</button></td><td>1</td></tr>
 <tr><td><button class="service-link" data-service="sql">sql</button></td><td>1</td></tr>
             </tbody>
         </table>
@@ -195,19 +197,31 @@
 
     <div class="section">
         <h2>Source Registrations</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>15</strong> source file(s) under <code>google/</code>.</p>
-        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (2)</h3><ul class="resource-list"><li><code>google_service_account</code> &mdash; <code>NewGoogleServiceAccountListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account.go:42</span></li>
-<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (13)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_access</code> &mdash; <code>NewBigQueryDatasetAccessListResource</code> <span class="muted">google/services/bigquery/list_bigquery_dataset_access.go:40</span></li>
+        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>27</strong> source file(s) under <code>google/</code>.</p>
+        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (3)</h3><ul class="resource-list"><li><code>google_dns_record_set</code> &mdash; <code>NewGoogleDnsRecordSetListResource</code> <span class="muted">google/services/dns/list_google_dns_record_set.go:38</span></li>
+<li><code>google_service_account</code> &mdash; <code>NewGoogleServiceAccountListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account.go:42</span></li>
+<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (24)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_access</code> &mdash; <code>NewBigQueryDatasetAccessListResource</code> <span class="muted">google/services/bigquery/list_bigquery_dataset_access.go:40</span></li>
 <li><code>google_cloud_run_service</code> &mdash; <code>NewCloudRunServiceListResource</code> <span class="muted">google/services/cloudrun/list_cloud_run_service.go:40</span></li>
 <li><code>google_cloud_scheduler_job</code> &mdash; <code>NewCloudSchedulerJobListResource</code> <span class="muted">google/services/cloudscheduler/list_cloud_scheduler_job.go:40</span></li>
+<li><code>google_compute_address</code> &mdash; <code>NewComputeAddressListResource</code> <span class="muted">google/services/compute/list_compute_address.go:40</span></li>
+<li><code>google_compute_cross_site_network</code> &mdash; <code>NewComputeCrossSiteNetworkListResource</code> <span class="muted">google/services/compute/list_compute_cross_site_network.go:40</span></li>
 <li><code>google_compute_disk</code> &mdash; <code>NewComputeDiskListResource</code> <span class="muted">google/services/compute/list_compute_disk.go:40</span></li>
 <li><code>google_compute_firewall</code> &mdash; <code>NewComputeFirewallListResource</code> <span class="muted">google/services/compute/list_compute_firewall.go:40</span></li>
 <li><code>google_compute_global_address</code> &mdash; <code>NewComputeGlobalAddressListResource</code> <span class="muted">google/services/compute/list_compute_global_address.go:40</span></li>
+<li><code>google_compute_https_health_check</code> &mdash; <code>NewComputeHttpsHealthCheckListResource</code> <span class="muted">google/services/compute/list_compute_https_health_check.go:40</span></li>
 <li><code>google_compute_image</code> &mdash; <code>NewComputeImageListResource</code> <span class="muted">google/services/compute/list_compute_image.go:40</span></li>
+<li><code>google_compute_node_template</code> &mdash; <code>NewComputeNodeTemplateListResource</code> <span class="muted">google/services/compute/list_compute_node_template.go:40</span></li>
+<li><code>google_compute_packet_mirroring</code> &mdash; <code>NewComputePacketMirroringListResource</code> <span class="muted">google/services/compute/list_compute_packet_mirroring.go:40</span></li>
+<li><code>google_compute_region_autoscaler</code> &mdash; <code>NewComputeRegionAutoscalerListResource</code> <span class="muted">google/services/compute/list_compute_region_autoscaler.go:40</span></li>
+<li><code>google_compute_region_composite_health_check</code> &mdash; <code>NewComputeRegionCompositeHealthCheckListResource</code> <span class="muted">google/services/compute/list_compute_region_composite_health_check.go:40</span></li>
+<li><code>google_compute_region_health_aggregation_policy</code> &mdash; <code>NewComputeRegionHealthAggregationPolicyListResource</code> <span class="muted">google/services/compute/list_compute_region_health_aggregation_policy.go:40</span></li>
+<li><code>google_compute_region_health_source</code> &mdash; <code>NewComputeRegionHealthSourceListResource</code> <span class="muted">google/services/compute/list_compute_region_health_source.go:40</span></li>
 <li><code>google_compute_snapshot</code> &mdash; <code>NewComputeSnapshotListResource</code> <span class="muted">google/services/compute/list_compute_snapshot.go:40</span></li>
 <li><code>google_compute_subnetwork</code> &mdash; <code>NewComputeSubnetworkListResource</code> <span class="muted">google/services/compute/list_compute_subnetwork.go:40</span></li>
 <li><code>google_monitoring_alert_policy</code> &mdash; <code>NewMonitoringAlertPolicyListResource</code> <span class="muted">google/services/monitoring/list_monitoring_alert_policy.go:40</span></li>
 <li><code>google_pubsub_subscription</code> &mdash; <code>NewPubsubSubscriptionListResource</code> <span class="muted">google/services/pubsub/list_pubsub_subscription.go:40</span></li>
+<li><code>google_pubsub_topic</code> &mdash; <code>NewPubsubTopicListResource</code> <span class="muted">google/services/pubsub/list_pubsub_topic.go:40</span></li>
+<li><code>google_secret_manager_secret</code> &mdash; <code>NewSecretManagerSecretListResource</code> <span class="muted">google/services/secretmanager/list_secret_manager_secret.go:40</span></li>
 <li><code>google_sql_database</code> &mdash; <code>NewSQLDatabaseListResource</code> <span class="muted">google/services/sql/list_sql_database.go:40</span></li>
 <li><code>google_storage_hmac_key</code> &mdash; <code>NewStorageHmacKeyListResource</code> <span class="muted">google/services/storage/list_storage_hmac_key.go:40</span></li></ul></div></div>
     </div>
@@ -218,14 +232,26 @@
         <ul class="resource-list"><li><code>google_bigquery_dataset_access</code></li>
 <li><code>google_cloud_run_service</code></li>
 <li><code>google_cloud_scheduler_job</code></li>
+<li><code>google_compute_address</code></li>
+<li><code>google_compute_cross_site_network</code></li>
 <li><code>google_compute_disk</code></li>
 <li><code>google_compute_firewall</code></li>
 <li><code>google_compute_global_address</code></li>
+<li><code>google_compute_https_health_check</code></li>
 <li><code>google_compute_image</code></li>
+<li><code>google_compute_node_template</code></li>
+<li><code>google_compute_packet_mirroring</code></li>
+<li><code>google_compute_region_autoscaler</code></li>
+<li><code>google_compute_region_composite_health_check</code></li>
+<li><code>google_compute_region_health_aggregation_policy</code></li>
+<li><code>google_compute_region_health_source</code></li>
 <li><code>google_compute_snapshot</code></li>
 <li><code>google_compute_subnetwork</code></li>
+<li><code>google_dns_record_set</code></li>
 <li><code>google_monitoring_alert_policy</code></li>
 <li><code>google_pubsub_subscription</code></li>
+<li><code>google_pubsub_topic</code></li>
+<li><code>google_secret_manager_secret</code></li>
 <li><code>google_service_account</code></li>
 <li><code>google_sql_database</code></li>
 <li><code>google_storage_bucket</code></li>
@@ -251,7 +277,7 @@
     </div>
 </div>
 <script>
-    const serviceResources = {"bigquery": {"list_resources": ["google_bigquery_dataset_access"]}, "cloudrun": {"list_resources": ["google_cloud_run_service"]}, "cloudscheduler": {"list_resources": ["google_cloud_scheduler_job"]}, "compute": {"list_resources": ["google_compute_disk", "google_compute_firewall", "google_compute_global_address", "google_compute_image", "google_compute_snapshot", "google_compute_subnetwork"]}, "monitoring": {"list_resources": ["google_monitoring_alert_policy"]}, "pubsub": {"list_resources": ["google_pubsub_subscription"]}, "resourcemanager": {"list_resources": ["google_service_account"]}, "sql": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket", "google_storage_hmac_key"]}};
+    const serviceResources = {"bigquery": {"list_resources": ["google_bigquery_dataset_access"]}, "cloudrun": {"list_resources": ["google_cloud_run_service"]}, "cloudscheduler": {"list_resources": ["google_cloud_scheduler_job"]}, "compute": {"list_resources": ["google_compute_address", "google_compute_cross_site_network", "google_compute_disk", "google_compute_firewall", "google_compute_global_address", "google_compute_https_health_check", "google_compute_image", "google_compute_node_template", "google_compute_packet_mirroring", "google_compute_region_autoscaler", "google_compute_region_composite_health_check", "google_compute_region_health_aggregation_policy", "google_compute_region_health_source", "google_compute_snapshot", "google_compute_subnetwork"]}, "dns": {"list_resources": ["google_dns_record_set"]}, "monitoring": {"list_resources": ["google_monitoring_alert_policy"]}, "pubsub": {"list_resources": ["google_pubsub_subscription", "google_pubsub_topic"]}, "resourcemanager": {"list_resources": ["google_service_account"]}, "secretmanager": {"list_resources": ["google_secret_manager_secret"]}, "sql": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket", "google_storage_hmac_key"]}};
 
     function fillResourceList(listElement, emptyElement, values) {
         listElement.innerHTML = '';

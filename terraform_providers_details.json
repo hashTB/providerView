@@ -3710,6 +3710,11 @@
       ],
       "list-resources": [
         {
+          "title": "acm_certificate",
+          "slug": "acm_certificate",
+          "subcategory": "ACM (Certificate Manager)"
+        },
+        {
           "title": "api_gateway_integration",
           "slug": "api_gateway_integration",
           "subcategory": "API Gateway"
@@ -3778,6 +3783,11 @@
           "title": "batch_job_queue",
           "slug": "batch_job_queue",
           "subcategory": "Batch"
+        },
+        {
+          "title": "bedrockagentcore_evaluator",
+          "slug": "bedrockagentcore_evaluator",
+          "subcategory": "Bedrock AgentCore"
         },
         {
           "title": "bedrockagentcore_harness",
@@ -4282,6 +4292,11 @@
         {
           "title": "sagemaker_algorithm",
           "slug": "sagemaker_algorithm",
+          "subcategory": "SageMaker AI"
+        },
+        {
+          "title": "sagemaker_hub_content_reference",
+          "slug": "sagemaker_hub_content_reference",
           "subcategory": "SageMaker AI"
         },
         {
@@ -5301,6 +5316,11 @@
         {
           "title": "bedrockagentcore_code_interpreter",
           "slug": "bedrockagentcore_code_interpreter",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_evaluator",
+          "slug": "bedrockagentcore_evaluator",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -11004,6 +11024,11 @@
           "subcategory": "SageMaker AI"
         },
         {
+          "title": "sagemaker_hub_content_reference",
+          "slug": "sagemaker_hub_content_reference",
+          "subcategory": "SageMaker AI"
+        },
+        {
           "title": "sagemaker_human_task_ui",
           "slug": "sagemaker_human_task_ui",
           "subcategory": "SageMaker AI"
@@ -12780,7 +12805,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:26.118529"
+    "docs_refreshed_at": "2026-06-18T11:49:12.712818"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13667,6 +13692,16 @@
           "subcategory": ""
         },
         {
+          "title": "awsexternalanthropic_workspace",
+          "slug": "awsexternalanthropic_workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "awsexternalanthropic_workspaces",
+          "slug": "awsexternalanthropic_workspaces",
+          "subcategory": ""
+        },
+        {
           "title": "b2bi_capabilities",
           "slug": "b2bi_capabilities",
           "subcategory": ""
@@ -13944,6 +13979,16 @@
         {
           "title": "bedrockagentcore_code_interpreter_customs",
           "slug": "bedrockagentcore_code_interpreter_customs",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_configuration_bundle",
+          "slug": "bedrockagentcore_configuration_bundle",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_configuration_bundles",
+          "slug": "bedrockagentcore_configuration_bundles",
           "subcategory": ""
         },
         {
@@ -14914,6 +14959,16 @@
         {
           "title": "cloudwatch_dashboards",
           "slug": "cloudwatch_dashboards",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_log_alarm",
+          "slug": "cloudwatch_log_alarm",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_log_alarms",
+          "slug": "cloudwatch_log_alarms",
           "subcategory": ""
         },
         {
@@ -17552,6 +17607,16 @@
           "subcategory": ""
         },
         {
+          "title": "elasticloadbalancing_load_balancer",
+          "slug": "elasticloadbalancing_load_balancer",
+          "subcategory": ""
+        },
+        {
+          "title": "elasticloadbalancing_load_balancers",
+          "slug": "elasticloadbalancing_load_balancers",
+          "subcategory": ""
+        },
+        {
           "title": "elasticloadbalancingv2_listener",
           "slug": "elasticloadbalancingv2_listener",
           "subcategory": ""
@@ -17604,6 +17669,16 @@
         {
           "title": "elasticloadbalancingv2_trust_stores",
           "slug": "elasticloadbalancingv2_trust_stores",
+          "subcategory": ""
+        },
+        {
+          "title": "elementalinference_dictionaries",
+          "slug": "elementalinference_dictionaries",
+          "subcategory": ""
+        },
+        {
+          "title": "elementalinference_dictionary",
+          "slug": "elementalinference_dictionary",
           "subcategory": ""
         },
         {
@@ -20847,6 +20922,16 @@
           "subcategory": ""
         },
         {
+          "title": "neptune_global_cluster",
+          "slug": "neptune_global_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "neptune_global_clusters",
+          "slug": "neptune_global_clusters",
+          "subcategory": ""
+        },
+        {
           "title": "neptunegraph_graph",
           "slug": "neptunegraph_graph",
           "subcategory": ""
@@ -23082,6 +23167,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_mlflow_app",
+          "slug": "sagemaker_mlflow_app",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_mlflow_apps",
+          "slug": "sagemaker_mlflow_apps",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_mlflow_tracking_server",
           "slug": "sagemaker_mlflow_tracking_server",
           "subcategory": ""
@@ -25161,6 +25256,11 @@
           "subcategory": ""
         },
         {
+          "title": "awsexternalanthropic_workspace",
+          "slug": "awsexternalanthropic_workspace",
+          "subcategory": ""
+        },
+        {
           "title": "b2bi_capability",
           "slug": "b2bi_capability",
           "subcategory": ""
@@ -25298,6 +25398,11 @@
         {
           "title": "bedrockagentcore_code_interpreter_custom",
           "slug": "bedrockagentcore_code_interpreter_custom",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_configuration_bundle",
+          "slug": "bedrockagentcore_configuration_bundle",
           "subcategory": ""
         },
         {
@@ -25718,6 +25823,11 @@
         {
           "title": "cloudwatch_dashboard",
           "slug": "cloudwatch_dashboard",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_log_alarm",
+          "slug": "cloudwatch_log_alarm",
           "subcategory": ""
         },
         {
@@ -26801,6 +26911,11 @@
           "subcategory": ""
         },
         {
+          "title": "elasticloadbalancing_load_balancer",
+          "slug": "elasticloadbalancing_load_balancer",
+          "subcategory": ""
+        },
+        {
           "title": "elasticloadbalancingv2_listener",
           "slug": "elasticloadbalancingv2_listener",
           "subcategory": ""
@@ -26823,6 +26938,11 @@
         {
           "title": "elasticloadbalancingv2_trust_store",
           "slug": "elasticloadbalancingv2_trust_store",
+          "subcategory": ""
+        },
+        {
+          "title": "elementalinference_dictionary",
+          "slug": "elementalinference_dictionary",
           "subcategory": ""
         },
         {
@@ -28301,6 +28421,11 @@
           "subcategory": ""
         },
         {
+          "title": "neptune_global_cluster",
+          "slug": "neptune_global_cluster",
+          "subcategory": ""
+        },
+        {
           "title": "neptunegraph_graph",
           "slug": "neptunegraph_graph",
           "subcategory": ""
@@ -29233,6 +29358,11 @@
         {
           "title": "sagemaker_inference_experiment",
           "slug": "sagemaker_inference_experiment",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_mlflow_app",
+          "slug": "sagemaker_mlflow_app",
           "subcategory": ""
         },
         {
@@ -30545,6 +30675,11 @@
           "subcategory": ""
         },
         {
+          "title": "awsexternalanthropic_workspace",
+          "slug": "awsexternalanthropic_workspace",
+          "subcategory": ""
+        },
+        {
           "title": "b2bi_capability",
           "slug": "b2bi_capability",
           "subcategory": ""
@@ -30687,6 +30822,11 @@
         {
           "title": "bedrockagentcore_code_interpreter_custom",
           "slug": "bedrockagentcore_code_interpreter_custom",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrockagentcore_configuration_bundle",
+          "slug": "bedrockagentcore_configuration_bundle",
           "subcategory": ""
         },
         {
@@ -31222,6 +31362,11 @@
         {
           "title": "cloudwatch_dashboard",
           "slug": "cloudwatch_dashboard",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_log_alarm",
+          "slug": "cloudwatch_log_alarm",
           "subcategory": ""
         },
         {
@@ -32775,6 +32920,11 @@
           "subcategory": ""
         },
         {
+          "title": "elasticloadbalancing_load_balancer",
+          "slug": "elasticloadbalancing_load_balancer",
+          "subcategory": ""
+        },
+        {
           "title": "elasticloadbalancingv2_listener",
           "slug": "elasticloadbalancingv2_listener",
           "subcategory": ""
@@ -32802,6 +32952,11 @@
         {
           "title": "elasticloadbalancingv2_trust_store_revocation",
           "slug": "elasticloadbalancingv2_trust_store_revocation",
+          "subcategory": ""
+        },
+        {
+          "title": "elementalinference_dictionary",
+          "slug": "elementalinference_dictionary",
           "subcategory": ""
         },
         {
@@ -34550,6 +34705,11 @@
           "subcategory": ""
         },
         {
+          "title": "neptune_global_cluster",
+          "slug": "neptune_global_cluster",
+          "subcategory": ""
+        },
+        {
           "title": "neptunegraph_graph",
           "slug": "neptunegraph_graph",
           "subcategory": ""
@@ -35845,6 +36005,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_mlflow_app",
+          "slug": "sagemaker_mlflow_app",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_mlflow_tracking_server",
           "slug": "sagemaker_mlflow_tracking_server",
           "subcategory": ""
@@ -36841,7 +37006,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:26.620262"
+    "docs_refreshed_at": "2026-06-18T11:49:13.162658"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37275,7 +37440,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:26.979892"
+    "docs_refreshed_at": "2026-06-18T11:49:13.514179"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -39427,6 +39592,11 @@
           "subcategory": "Network"
         },
         {
+          "title": "key_vault",
+          "slug": "key_vault",
+          "subcategory": "Key Vault"
+        },
+        {
           "title": "mssql_database",
           "slug": "mssql_database",
           "subcategory": "Database"
@@ -39637,16 +39807,6 @@
           "subcategory": "Network"
         },
         {
-          "title": "voice_services_communications_gateway",
-          "slug": "voice_services_communications_gateway",
-          "subcategory": "Voice Services"
-        },
-        {
-          "title": "voice_services_communications_gateway_test_line",
-          "slug": "voice_services_communications_gateway_test_line",
-          "subcategory": "Voice Services"
-        },
-        {
           "title": "web_application_firewall_policy",
           "slug": "web_application_firewall_policy",
           "subcategory": "Network"
@@ -39654,6 +39814,11 @@
         {
           "title": "web_pubsub",
           "slug": "web_pubsub",
+          "subcategory": "Messaging"
+        },
+        {
+          "title": "web_pubsub_custom_domain",
+          "slug": "web_pubsub_custom_domain",
           "subcategory": "Messaging"
         },
         {
@@ -45191,16 +45356,6 @@
           "subcategory": "Azure VMware Solution"
         },
         {
-          "title": "voice_services_communications_gateway",
-          "slug": "voice_services_communications_gateway",
-          "subcategory": "Voice Services"
-        },
-        {
-          "title": "voice_services_communications_gateway_test_line",
-          "slug": "voice_services_communications_gateway_test_line",
-          "subcategory": "Voice Services"
-        },
-        {
           "title": "vpn_gateway",
           "slug": "vpn_gateway",
           "subcategory": "Network"
@@ -45327,7 +45482,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:27.390814"
+    "docs_refreshed_at": "2026-06-18T11:49:13.917344"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45676,7 +45831,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:27.739881"
+    "docs_refreshed_at": "2026-06-18T11:49:14.272648"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46789,6 +46944,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_target_http_proxy",
+          "slug": "compute_region_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_target_https_proxy",
+          "slug": "compute_region_target_https_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_reservation",
           "slug": "compute_reservation",
           "subcategory": "Compute Engine"
@@ -46886,6 +47051,16 @@
         {
           "title": "compute_subnetworks",
           "slug": "compute_subnetworks",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_target_http_proxy",
+          "slug": "compute_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_target_https_proxy",
+          "slug": "compute_target_https_proxy",
           "subcategory": "Compute Engine"
         },
         {
@@ -47679,6 +47854,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_deployment_versions",
+          "slug": "oracle_database_goldengate_deployment_versions",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -48099,6 +48279,16 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_intelligence_finding",
+          "slug": "storage_control_project_intelligence_finding",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_findings",
+          "slug": "storage_control_project_intelligence_findings",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_insights_dataset_config",
           "slug": "storage_insights_dataset_config",
           "subcategory": "Cloud Storage Insights"
@@ -48447,9 +48637,19 @@
       ],
       "list-resources": [
         {
+          "title": "google_bigquery_dataset_access",
+          "slug": "google_bigquery_dataset_access",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "google_cloud_run_service",
           "slug": "google_cloud_run_service",
           "subcategory": "Cloud Run"
+        },
+        {
+          "title": "google_cloud_scheduler_job",
+          "slug": "google_cloud_scheduler_job",
+          "subcategory": "Cloud Scheduler"
         },
         {
           "title": "google_compute_disk",
@@ -48480,6 +48680,21 @@
           "title": "google_compute_subnetwork",
           "slug": "google_compute_subnetwork",
           "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_dns_record_set",
+          "slug": "google_dns_record_set",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "google_monitoring_alert_policy",
+          "slug": "google_monitoring_alert_policy",
+          "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_pubsub_subscription",
+          "slug": "google_pubsub_subscription",
+          "subcategory": "Cloud Pub/Sub"
         },
         {
           "title": "google_service_account",
@@ -48743,6 +48958,11 @@
         {
           "title": "apigee_environment_api_revision_deployment",
           "slug": "apigee_environment_api_revision_deployment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_environment_debugmask",
+          "slug": "apigee_environment_debugmask",
           "subcategory": "Apigee"
         },
         {
@@ -49441,6 +49661,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_parser",
+          "slug": "chronicle_parser",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_reference_list",
           "slug": "chronicle_reference_list",
           "subcategory": "Chronicle"
@@ -49458,6 +49683,11 @@
         {
           "title": "chronicle_rule_deployment",
           "slug": "chronicle_rule_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_soar_network",
+          "slug": "chronicle_soar_network",
           "subcategory": "Chronicle"
         },
         {
@@ -52426,6 +52656,11 @@
           "subcategory": "Migration Center"
         },
         {
+          "title": "migration_center_import_data_file",
+          "slug": "migration_center_import_data_file",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_import_job",
           "slug": "migration_center_import_job",
           "subcategory": "Migration Center"
@@ -53941,6 +54176,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_tensorboard_experiment",
+          "slug": "vertex_ai_tensorboard_experiment",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_cluster",
           "slug": "vmwareengine_cluster",
           "subcategory": "Cloud VMware Engine"
@@ -54037,7 +54277,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:28.185183"
+    "docs_refreshed_at": "2026-06-18T11:49:14.708596"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54883,6 +55123,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_target_http_proxy",
+          "slug": "compute_region_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_target_https_proxy",
+          "slug": "compute_region_target_https_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_reservation",
           "slug": "compute_reservation",
           "subcategory": "Compute Engine"
@@ -54980,6 +55230,16 @@
         {
           "title": "compute_subnetworks",
           "slug": "compute_subnetworks",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_target_http_proxy",
+          "slug": "compute_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_target_https_proxy",
+          "slug": "compute_target_https_proxy",
           "subcategory": "Compute Engine"
         },
         {
@@ -55773,6 +56033,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_goldengate_deployment_versions",
+          "slug": "oracle_database_goldengate_deployment_versions",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -56193,6 +56458,16 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_intelligence_finding",
+          "slug": "storage_control_project_intelligence_finding",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_findings",
+          "slug": "storage_control_project_intelligence_findings",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_insights_dataset_config",
           "slug": "storage_insights_dataset_config",
           "subcategory": "Cloud Storage Insights"
@@ -56541,9 +56816,19 @@
       ],
       "list-resources": [
         {
+          "title": "google_bigquery_dataset_access",
+          "slug": "google_bigquery_dataset_access",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "google_cloud_run_service",
           "slug": "google_cloud_run_service",
           "subcategory": "Cloud Run"
+        },
+        {
+          "title": "google_cloud_scheduler_job",
+          "slug": "google_cloud_scheduler_job",
+          "subcategory": "Cloud Scheduler"
         },
         {
           "title": "google_compute_disk",
@@ -56574,6 +56859,21 @@
           "title": "google_compute_subnetwork",
           "slug": "google_compute_subnetwork",
           "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_dns_record_set",
+          "slug": "google_dns_record_set",
+          "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "google_monitoring_alert_policy",
+          "slug": "google_monitoring_alert_policy",
+          "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_pubsub_subscription",
+          "slug": "google_pubsub_subscription",
+          "subcategory": "Cloud Pub/Sub"
         },
         {
           "title": "google_service_account",
@@ -56837,6 +57137,11 @@
         {
           "title": "apigee_environment_api_revision_deployment",
           "slug": "apigee_environment_api_revision_deployment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "apigee_environment_debugmask",
+          "slug": "apigee_environment_debugmask",
           "subcategory": "Apigee"
         },
         {
@@ -57535,6 +57840,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_parser",
+          "slug": "chronicle_parser",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_reference_list",
           "slug": "chronicle_reference_list",
           "subcategory": "Chronicle"
@@ -57552,6 +57862,11 @@
         {
           "title": "chronicle_rule_deployment",
           "slug": "chronicle_rule_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_soar_network",
+          "slug": "chronicle_soar_network",
           "subcategory": "Chronicle"
         },
         {
@@ -60520,6 +60835,11 @@
           "subcategory": "Migration Center"
         },
         {
+          "title": "migration_center_import_data_file",
+          "slug": "migration_center_import_data_file",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "migration_center_import_job",
           "slug": "migration_center_import_job",
           "subcategory": "Migration Center"
@@ -62035,6 +62355,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_tensorboard_experiment",
+          "slug": "vertex_ai_tensorboard_experiment",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_cluster",
           "slug": "vmwareengine_cluster",
           "subcategory": "Cloud VMware Engine"
@@ -62131,7 +62456,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:23:28.645168"
+    "docs_refreshed_at": "2026-06-18T11:49:15.154016"
   },
   "4ek0/neko": {
     "docs": {

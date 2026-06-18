@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T11:24:22.876596",
+  "generated_at": "2026-06-18T11:50:08.229416",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "73f98d62ab8983c854cf4775cc8e02fe4a930a82"
+    "commit": "9b078d00276d35d63d4604b22cd34cfcd0cee862"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 146
+    "list_resources": 149
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3098,
+    "stdout_line_count": 3100,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 8,
-        "implemented": 144,
-        "total": 1655
+        "implemented": 147,
+        "total": 1657
       },
       "service_count": 239,
       "services": [
@@ -42,8 +42,8 @@
         },
         {
           "service": "acm",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 50,
+          "implemented": 1,
           "total": 2
         },
         {
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 29,
-          "implemented": 5,
-          "total": 17
+          "percent": 33,
+          "implemented": 6,
+          "total": 18
         },
         {
           "service": "billing",
@@ -1212,9 +1212,9 @@
         },
         {
           "service": "sagemaker",
-          "percent": 8,
-          "implemented": 3,
-          "total": 37
+          "percent": 10,
+          "implemented": 4,
+          "total": 38
         },
         {
           "service": "savingsplans",
@@ -1484,7 +1484,9 @@
             "acm/certificate.go",
             "acm/certificate_validation.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "acm/certificate.go"
+          ]
         },
         "acmpca": {
           "all_resources": [
@@ -1816,6 +1818,7 @@
             "bedrockagentcore/api_key_credential_provider.go",
             "bedrockagentcore/browser.go",
             "bedrockagentcore/code_interpreter.go",
+            "bedrockagentcore/evaluator.go",
             "bedrockagentcore/gateway.go",
             "bedrockagentcore/gateway_target.go",
             "bedrockagentcore/harness.go",
@@ -1830,6 +1833,7 @@
             "bedrockagentcore/workload_identity.go"
           ],
           "list_resources": [
+            "bedrockagentcore/evaluator.go",
             "bedrockagentcore/harness.go",
             "bedrockagentcore/online_evaluation_config.go",
             "bedrockagentcore/policy.go",
@@ -3971,6 +3975,7 @@
             "sagemaker/feature_group.go",
             "sagemaker/flow_definition.go",
             "sagemaker/hub.go",
+            "sagemaker/hub_content_reference.go",
             "sagemaker/human_task_ui.go",
             "sagemaker/hyper_parameter_tuning_job.go",
             "sagemaker/image.go",
@@ -3998,6 +4003,7 @@
           ],
           "list_resources": [
             "sagemaker/algorithm.go",
+            "sagemaker/hub_content_reference.go",
             "sagemaker/hyper_parameter_tuning_job.go",
             "sagemaker/training_job.go"
           ]
@@ -4504,11 +4510,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-06-11 11:24:22 UTC"
+      "last_updated": "2026-06-18 11:50:08 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 45,
+    "services_with_list": 46,
     "top_services": [
       {
         "service": "ec2",
@@ -4527,6 +4533,12 @@
         "percent": 22,
         "implemented": 8,
         "total": 35
+      },
+      {
+        "service": "bedrockagentcore",
+        "percent": 33,
+        "implemented": 6,
+        "total": 18
       },
       {
         "service": "apigateway",
@@ -4551,12 +4563,6 @@
         "percent": 35,
         "implemented": 5,
         "total": 14
-      },
-      {
-        "service": "bedrockagentcore",
-        "percent": 29,
-        "implemented": 5,
-        "total": 17
       },
       {
         "service": "workmail",
@@ -4595,10 +4601,10 @@
         "total": 19
       },
       {
-        "service": "cleanrooms",
-        "percent": 100,
-        "implemented": 3,
-        "total": 3
+        "service": "sagemaker",
+        "percent": 10,
+        "implemented": 4,
+        "total": 38
       }
     ],
     "service_resources": {
@@ -4622,7 +4628,9 @@
           "acm/certificate.go",
           "acm/certificate_validation.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "acm/certificate.go"
+        ]
       },
       "acmpca": {
         "all_resources": [
@@ -4954,6 +4962,7 @@
           "bedrockagentcore/api_key_credential_provider.go",
           "bedrockagentcore/browser.go",
           "bedrockagentcore/code_interpreter.go",
+          "bedrockagentcore/evaluator.go",
           "bedrockagentcore/gateway.go",
           "bedrockagentcore/gateway_target.go",
           "bedrockagentcore/harness.go",
@@ -4968,6 +4977,7 @@
           "bedrockagentcore/workload_identity.go"
         ],
         "list_resources": [
+          "bedrockagentcore/evaluator.go",
           "bedrockagentcore/harness.go",
           "bedrockagentcore/online_evaluation_config.go",
           "bedrockagentcore/policy.go",
@@ -7109,6 +7119,7 @@
           "sagemaker/feature_group.go",
           "sagemaker/flow_definition.go",
           "sagemaker/hub.go",
+          "sagemaker/hub_content_reference.go",
           "sagemaker/human_task_ui.go",
           "sagemaker/hyper_parameter_tuning_job.go",
           "sagemaker/image.go",
@@ -7136,6 +7147,7 @@
         ],
         "list_resources": [
           "sagemaker/algorithm.go",
+          "sagemaker/hub_content_reference.go",
           "sagemaker/hyper_parameter_tuning_job.go",
           "sagemaker/training_job.go"
         ]
@@ -7645,9 +7657,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 146,
-    "script_implemented_list": 144,
-    "script_total_resources": 1655,
+    "dashboard_list_resources": 149,
+    "script_implemented_list": 147,
+    "script_total_resources": 1657,
     "script_percent": 8
   }
 }

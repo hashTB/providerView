@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-11T11:24:28.269093",
+  "generated_at": "2026-06-18T11:50:13.648557",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "6e24a372beaa24a5c7bb1728b8eed38591ed98ed"
+    "commit": "e08e5f19d87ce19e8f364ef33d8907f77024c930"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 15,
+    "file_count": 27,
     "files": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset_access.go",
@@ -21,6 +21,16 @@
       },
       {
         "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_address.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_cross_site_network.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -40,7 +50,42 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_https_health_check.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_image.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_node_template.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_packet_mirroring.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_autoscaler.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_composite_health_check.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_health_aggregation_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_health_source.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -55,6 +100,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/dns/list_google_dns_record_set.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
         "type": "MMv1",
         "registrations": 1
@@ -65,8 +115,18 @@
         "registrations": 1
       },
       {
+        "file": "google/services/pubsub/list_pubsub_topic.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/secretmanager/list_secret_manager_secret.go",
+        "type": "MMv1",
         "registrations": 1
       },
       {
@@ -85,12 +145,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "27d9065f5883e6995def425a7f63bc6dc9f6e53cb040a274316c728a49e81dbf",
+    "sha256": "8481d11832942ced962d174415ec4fd97e31bdedf7b78c2a4979a0062d32efa7",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 11
+    "list_resources": 16
   },
   "registrations": {
     "generated": [
@@ -116,6 +176,20 @@
         "line": 40
       },
       {
+        "name": "google_compute_address",
+        "package": "Compute",
+        "constructor": "NewComputeAddressListResource",
+        "file": "google/services/compute/list_compute_address.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_cross_site_network",
+        "package": "Compute",
+        "constructor": "NewComputeCrossSiteNetworkListResource",
+        "file": "google/services/compute/list_compute_cross_site_network.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_disk",
         "package": "Compute",
         "constructor": "NewComputeDiskListResource",
@@ -137,10 +211,59 @@
         "line": 40
       },
       {
+        "name": "google_compute_https_health_check",
+        "package": "Compute",
+        "constructor": "NewComputeHttpsHealthCheckListResource",
+        "file": "google/services/compute/list_compute_https_health_check.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_image",
         "package": "Compute",
         "constructor": "NewComputeImageListResource",
         "file": "google/services/compute/list_compute_image.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_node_template",
+        "package": "Compute",
+        "constructor": "NewComputeNodeTemplateListResource",
+        "file": "google/services/compute/list_compute_node_template.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_packet_mirroring",
+        "package": "Compute",
+        "constructor": "NewComputePacketMirroringListResource",
+        "file": "google/services/compute/list_compute_packet_mirroring.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_autoscaler",
+        "package": "Compute",
+        "constructor": "NewComputeRegionAutoscalerListResource",
+        "file": "google/services/compute/list_compute_region_autoscaler.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_composite_health_check",
+        "package": "Compute",
+        "constructor": "NewComputeRegionCompositeHealthCheckListResource",
+        "file": "google/services/compute/list_compute_region_composite_health_check.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_health_aggregation_policy",
+        "package": "Compute",
+        "constructor": "NewComputeRegionHealthAggregationPolicyListResource",
+        "file": "google/services/compute/list_compute_region_health_aggregation_policy.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_health_source",
+        "package": "Compute",
+        "constructor": "NewComputeRegionHealthSourceListResource",
+        "file": "google/services/compute/list_compute_region_health_source.go",
         "line": 40
       },
       {
@@ -172,6 +295,20 @@
         "line": 40
       },
       {
+        "name": "google_pubsub_topic",
+        "package": "Pubsub",
+        "constructor": "NewPubsubTopicListResource",
+        "file": "google/services/pubsub/list_pubsub_topic.go",
+        "line": 40
+      },
+      {
+        "name": "google_secret_manager_secret",
+        "package": "SecretManager",
+        "constructor": "NewSecretManagerSecretListResource",
+        "file": "google/services/secretmanager/list_secret_manager_secret.go",
+        "line": 40
+      },
+      {
         "name": "google_sql_database",
         "package": "SQL",
         "constructor": "NewSQLDatabaseListResource",
@@ -187,6 +324,13 @@
       }
     ],
     "handwritten": [
+      {
+        "name": "google_dns_record_set",
+        "package": "dns",
+        "constructor": "NewGoogleDnsRecordSetListResource",
+        "file": "google/services/dns/list_google_dns_record_set.go",
+        "line": 38
+      },
       {
         "name": "google_service_account",
         "package": "resourcemanager",
@@ -227,6 +371,16 @@
     ],
     "compute": [
       {
+        "file": "google/services/compute/list_compute_address.go",
+        "type_name": "google_compute_address",
+        "constructor": "NewComputeAddressListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_cross_site_network.go",
+        "type_name": "google_compute_cross_site_network",
+        "constructor": "NewComputeCrossSiteNetworkListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_disk.go",
         "type_name": "google_compute_disk",
         "constructor": "NewComputeDiskListResource"
@@ -242,9 +396,44 @@
         "constructor": "NewComputeGlobalAddressListResource"
       },
       {
+        "file": "google/services/compute/list_compute_https_health_check.go",
+        "type_name": "google_compute_https_health_check",
+        "constructor": "NewComputeHttpsHealthCheckListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_image.go",
         "type_name": "google_compute_image",
         "constructor": "NewComputeImageListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_node_template.go",
+        "type_name": "google_compute_node_template",
+        "constructor": "NewComputeNodeTemplateListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_packet_mirroring.go",
+        "type_name": "google_compute_packet_mirroring",
+        "constructor": "NewComputePacketMirroringListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_autoscaler.go",
+        "type_name": "google_compute_region_autoscaler",
+        "constructor": "NewComputeRegionAutoscalerListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_composite_health_check.go",
+        "type_name": "google_compute_region_composite_health_check",
+        "constructor": "NewComputeRegionCompositeHealthCheckListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_health_aggregation_policy.go",
+        "type_name": "google_compute_region_health_aggregation_policy",
+        "constructor": "NewComputeRegionHealthAggregationPolicyListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_health_source.go",
+        "type_name": "google_compute_region_health_source",
+        "constructor": "NewComputeRegionHealthSourceListResource"
       },
       {
         "file": "google/services/compute/list_compute_snapshot.go",
@@ -255,6 +444,13 @@
         "file": "google/services/compute/list_compute_subnetwork.go",
         "type_name": "google_compute_subnetwork",
         "constructor": "NewComputeSubnetworkListResource"
+      }
+    ],
+    "dns": [
+      {
+        "file": "google/services/dns/list_google_dns_record_set.go",
+        "type_name": "google_dns_record_set",
+        "constructor": "NewGoogleDnsRecordSetListResource"
       }
     ],
     "monitoring": [
@@ -269,6 +465,11 @@
         "file": "google/services/pubsub/list_pubsub_subscription.go",
         "type_name": "google_pubsub_subscription",
         "constructor": "NewPubsubSubscriptionListResource"
+      },
+      {
+        "file": "google/services/pubsub/list_pubsub_topic.go",
+        "type_name": "google_pubsub_topic",
+        "constructor": "NewPubsubTopicListResource"
       }
     ],
     "resourcemanager": [
@@ -276,6 +477,13 @@
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type_name": "google_service_account",
         "constructor": "NewGoogleServiceAccountListResource"
+      }
+    ],
+    "secretmanager": [
+      {
+        "file": "google/services/secretmanager/list_secret_manager_secret.go",
+        "type_name": "google_secret_manager_secret",
+        "constructor": "NewSecretManagerSecretListResource"
       }
     ],
     "sql": [
@@ -303,48 +511,84 @@
       "NewBigQueryDatasetAccessListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
+      "NewComputeAddressListResource",
+      "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeHttpsHealthCheckListResource",
       "NewComputeImageListResource",
+      "NewComputeNodeTemplateListResource",
+      "NewComputePacketMirroringListResource",
+      "NewComputeRegionAutoscalerListResource",
+      "NewComputeRegionCompositeHealthCheckListResource",
+      "NewComputeRegionHealthAggregationPolicyListResource",
+      "NewComputeRegionHealthSourceListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
+      "NewGoogleDnsRecordSetListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewMonitoringAlertPolicyListResource",
       "NewPubsubSubscriptionListResource",
+      "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
+      "NewSecretManagerSecretListResource",
       "NewStorageHmacKeyListResource"
     ],
     "file_constructors": [
       "NewBigQueryDatasetAccessListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
+      "NewComputeAddressListResource",
+      "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeHttpsHealthCheckListResource",
       "NewComputeImageListResource",
+      "NewComputeNodeTemplateListResource",
+      "NewComputePacketMirroringListResource",
+      "NewComputeRegionAutoscalerListResource",
+      "NewComputeRegionCompositeHealthCheckListResource",
+      "NewComputeRegionHealthAggregationPolicyListResource",
+      "NewComputeRegionHealthSourceListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
+      "NewGoogleDnsRecordSetListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewMonitoringAlertPolicyListResource",
       "NewPubsubSubscriptionListResource",
+      "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
+      "NewSecretManagerSecretListResource",
       "NewStorageHmacKeyListResource"
     ],
     "file_type_names": [
       "google_bigquery_dataset_access",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
+      "google_compute_address",
+      "google_compute_cross_site_network",
       "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_node_template",
+      "google_compute_packet_mirroring",
+      "google_compute_region_autoscaler",
+      "google_compute_region_composite_health_check",
+      "google_compute_region_health_aggregation_policy",
+      "google_compute_region_health_source",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_dns_record_set",
       "google_monitoring_alert_policy",
       "google_pubsub_subscription",
+      "google_pubsub_topic",
+      "google_secret_manager_secret",
       "google_service_account",
       "google_sql_database",
       "google_storage_bucket",
@@ -352,16 +596,20 @@
     ],
     "missing_files_for_registration": [],
     "orphan_files_without_registration": [],
-    "registration_count": 15,
-    "file_type_name_count": 15,
+    "registration_count": 27,
+    "file_type_name_count": 27,
     "signals_agree": true
   },
   "service_coverage": {
-    "services_with_list": 9,
+    "services_with_list": 11,
     "rows": [
       {
         "service": "compute",
-        "list_resources": 6
+        "list_resources": 15
+      },
+      {
+        "service": "pubsub",
+        "list_resources": 2
       },
       {
         "service": "storage",
@@ -380,15 +628,19 @@
         "list_resources": 1
       },
       {
+        "service": "dns",
+        "list_resources": 1
+      },
+      {
         "service": "monitoring",
         "list_resources": 1
       },
       {
-        "service": "pubsub",
+        "service": "resourcemanager",
         "list_resources": 1
       },
       {
-        "service": "resourcemanager",
+        "service": "secretmanager",
         "list_resources": 1
       },
       {
@@ -414,12 +666,26 @@
       },
       "compute": {
         "list_resources": [
+          "google_compute_address",
+          "google_compute_cross_site_network",
           "google_compute_disk",
           "google_compute_firewall",
           "google_compute_global_address",
+          "google_compute_https_health_check",
           "google_compute_image",
+          "google_compute_node_template",
+          "google_compute_packet_mirroring",
+          "google_compute_region_autoscaler",
+          "google_compute_region_composite_health_check",
+          "google_compute_region_health_aggregation_policy",
+          "google_compute_region_health_source",
           "google_compute_snapshot",
           "google_compute_subnetwork"
+        ]
+      },
+      "dns": {
+        "list_resources": [
+          "google_dns_record_set"
         ]
       },
       "monitoring": {
@@ -429,12 +695,18 @@
       },
       "pubsub": {
         "list_resources": [
-          "google_pubsub_subscription"
+          "google_pubsub_subscription",
+          "google_pubsub_topic"
         ]
       },
       "resourcemanager": {
         "list_resources": [
           "google_service_account"
+        ]
+      },
+      "secretmanager": {
+        "list_resources": [
+          "google_secret_manager_secret"
         ]
       },
       "sql": {
@@ -452,18 +724,23 @@
   },
   "validation": {
     "matches": true,
-    "dashboard_list_resources": 11,
-    "code_list_resources": 15,
-    "registered_count": 15,
+    "dashboard_list_resources": 16,
+    "code_list_resources": 27,
+    "registered_count": 27,
     "signals_agree": true,
     "dashboard_list_resource_names": [
+      "google_bigquery_dataset_access",
       "google_cloud_run_service",
+      "google_cloud_scheduler_job",
       "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
       "google_compute_image",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_dns_record_set",
+      "google_monitoring_alert_policy",
+      "google_pubsub_subscription",
       "google_service_account",
       "google_sql_database",
       "google_storage_bucket",
@@ -473,14 +750,26 @@
       "google_bigquery_dataset_access",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
+      "google_compute_address",
+      "google_compute_cross_site_network",
       "google_compute_disk",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_node_template",
+      "google_compute_packet_mirroring",
+      "google_compute_region_autoscaler",
+      "google_compute_region_composite_health_check",
+      "google_compute_region_health_aggregation_policy",
+      "google_compute_region_health_source",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_dns_record_set",
       "google_monitoring_alert_policy",
       "google_pubsub_subscription",
+      "google_pubsub_topic",
+      "google_secret_manager_secret",
       "google_service_account",
       "google_sql_database",
       "google_storage_bucket",
@@ -488,10 +777,17 @@
     ],
     "only_in_registry": [],
     "only_in_source": [
-      "google_bigquery_dataset_access",
-      "google_cloud_scheduler_job",
-      "google_monitoring_alert_policy",
-      "google_pubsub_subscription"
+      "google_compute_address",
+      "google_compute_cross_site_network",
+      "google_compute_https_health_check",
+      "google_compute_node_template",
+      "google_compute_packet_mirroring",
+      "google_compute_region_autoscaler",
+      "google_compute_region_composite_health_check",
+      "google_compute_region_health_aggregation_policy",
+      "google_compute_region_health_source",
+      "google_pubsub_topic",
+      "google_secret_manager_secret"
     ],
     "registry_is_subset": true
   }
