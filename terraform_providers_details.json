@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:37.081883"
+    "docs_refreshed_at": "2026-06-25T10:31:44.230404"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -62818,7 +62818,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:27.507089"
+    "docs_refreshed_at": "2026-06-25T10:31:32.544672"
   },
   "Azure/azapi": {
     "docs": {
@@ -66429,7 +66429,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:28.668732"
+    "docs_refreshed_at": "2026-06-25T10:31:33.473292"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -67794,7 +67794,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:29.067591"
+    "docs_refreshed_at": "2026-06-25T10:31:33.930687"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -68319,7 +68319,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:29.449155"
+    "docs_refreshed_at": "2026-06-25T10:31:34.370374"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -68587,7 +68587,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:29.857835"
+    "docs_refreshed_at": "2026-06-25T10:31:34.808956"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -68606,7 +68606,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:30.239635"
+    "docs_refreshed_at": "2026-06-25T10:31:35.293961"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -68653,7 +68653,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:30.611165"
+    "docs_refreshed_at": "2026-06-25T10:31:35.725466"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -68676,6 +68676,106 @@
         {
           "title": "device_unmanage",
           "slug": "device_unmanage",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_clear_passcode",
+          "slug": "pro_clear_passcode",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_clear_restrictions_password",
+          "slug": "pro_clear_restrictions_password",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_delete_user",
+          "slug": "pro_delete_user",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_device_lock",
+          "slug": "pro_device_lock",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_disable_lost_mode",
+          "slug": "pro_disable_lost_mode",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_disable_remote_desktop",
+          "slug": "pro_disable_remote_desktop",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_enable_lost_mode",
+          "slug": "pro_enable_lost_mode",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_enable_remote_desktop",
+          "slug": "pro_enable_remote_desktop",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_flush_mdm_commands",
+          "slug": "pro_flush_mdm_commands",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_flush_policy_logs",
+          "slug": "pro_flush_policy_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_log_out_user",
+          "slug": "pro_log_out_user",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_managed_software_update_abandon",
+          "slug": "pro_managed_software_update_abandon",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_managed_software_update_plan",
+          "slug": "pro_managed_software_update_plan",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_play_lost_mode_sound",
+          "slug": "pro_play_lost_mode_sound",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_redeploy_management_framework",
+          "slug": "pro_redeploy_management_framework",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_renew_mdm_profile",
+          "slug": "pro_renew_mdm_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_retry_patch_policy_logs",
+          "slug": "pro_retry_patch_policy_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_send_blank_push",
+          "slug": "pro_send_blank_push",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_set_auto_admin_password",
+          "slug": "pro_set_auto_admin_password",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_unlock_user_account",
+          "slug": "pro_unlock_user_account",
           "subcategory": ""
         }
       ],
@@ -68739,6 +68839,566 @@
           "title": "devices",
           "slug": "devices",
           "subcategory": ""
+        },
+        {
+          "title": "pro_access_management_settings",
+          "slug": "pro_access_management_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account",
+          "slug": "pro_account",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account_group",
+          "slug": "pro_account_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account_privileges",
+          "slug": "pro_account_privileges",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_activation_code",
+          "slug": "pro_activation_code",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_computer_search",
+          "slug": "pro_advanced_computer_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_mobile_device_search",
+          "slug": "pro_advanced_mobile_device_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_user_search",
+          "slug": "pro_advanced_user_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_volume_purchasing_content_search",
+          "slug": "pro_advanced_volume_purchasing_content_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_allowed_file_extension",
+          "slug": "pro_allowed_file_extension",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_client",
+          "slug": "pro_api_client",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_clients",
+          "slug": "pro_api_clients",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_role",
+          "slug": "pro_api_role",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_role_privileges",
+          "slug": "pro_api_role_privileges",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_roles",
+          "slug": "pro_api_roles",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer",
+          "slug": "pro_app_installer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installers",
+          "slug": "pro_app_installers",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer_settings",
+          "slug": "pro_app_installer_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer_title",
+          "slug": "pro_app_installer_title",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer_titles",
+          "slug": "pro_app_installer_titles",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_request_form_field",
+          "slug": "pro_app_request_form_field",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_store_country_codes",
+          "slug": "pro_app_store_country_codes",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_automated_device_enrollment",
+          "slug": "pro_automated_device_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_automated_device_enrollment_public_key",
+          "slug": "pro_automated_device_enrollment_public_key",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_building",
+          "slug": "pro_building",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_buildings",
+          "slug": "pro_buildings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_categories",
+          "slug": "pro_categories",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_category",
+          "slug": "pro_category",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_class",
+          "slug": "pro_class",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_distribution_point",
+          "slug": "pro_cloud_distribution_point",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_identity_provider",
+          "slug": "pro_cloud_identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_identity_providers",
+          "slug": "pro_cloud_identity_providers",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_check_in_settings",
+          "slug": "pro_computer_check_in_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_extension_attribute",
+          "slug": "pro_computer_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_inventory_collection_settings",
+          "slug": "pro_computer_inventory_collection_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_invitation",
+          "slug": "pro_computer_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_prestage_enrollment",
+          "slug": "pro_computer_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_department",
+          "slug": "pro_department",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_departments",
+          "slug": "pro_departments",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_directory_binding",
+          "slug": "pro_directory_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_disk_encryption_configuration",
+          "slug": "pro_disk_encryption_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_dock_item",
+          "slug": "pro_dock_item",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ebook",
+          "slug": "pro_ebook",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_enrollment_customization",
+          "slug": "pro_enrollment_customization",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_file_share_distribution_point",
+          "slug": "pro_file_share_distribution_point",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_gsx_connection_settings",
+          "slug": "pro_gsx_connection_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ibeacon",
+          "slug": "pro_ibeacon",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_impact_alert_notification_settings",
+          "slug": "pro_impact_alert_notification_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_inventory_preload_record",
+          "slug": "pro_inventory_preload_record",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_connect",
+          "slug": "pro_jamf_connect",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_pro_server_url",
+          "slug": "pro_jamf_pro_server_url",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_protect_plans",
+          "slug": "pro_jamf_protect_plans",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ldap_server",
+          "slug": "pro_ldap_server",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_licensed_software",
+          "slug": "pro_licensed_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_local_admin_password_settings",
+          "slug": "pro_local_admin_password_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_login_page_settings",
+          "slug": "pro_login_page_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mac_app_store_app",
+          "slug": "pro_mac_app_store_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_configuration_profile",
+          "slug": "pro_macos_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_onboarding",
+          "slug": "pro_macos_onboarding",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_onboarding_eligible_items",
+          "slug": "pro_macos_onboarding_eligible_items",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mdm_profile_settings",
+          "slug": "pro_mdm_profile_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_app",
+          "slug": "pro_mobile_device_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_configuration_profile",
+          "slug": "pro_mobile_device_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_enrollment_profile",
+          "slug": "pro_mobile_device_enrollment_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_extension_attribute",
+          "slug": "pro_mobile_device_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_invitation",
+          "slug": "pro_mobile_device_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_prestage_enrollment",
+          "slug": "pro_mobile_device_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_provisioning_profile",
+          "slug": "pro_mobile_device_provisioning_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_network_segment",
+          "slug": "pro_network_segment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_network_segments",
+          "slug": "pro_network_segments",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_package",
+          "slug": "pro_package",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_external_source",
+          "slug": "pro_patch_external_source",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_internal_source",
+          "slug": "pro_patch_internal_source",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_policy",
+          "slug": "pro_patch_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_software_title",
+          "slug": "pro_patch_software_title",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_adcs",
+          "slug": "pro_pki_adcs",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_certificate_authority",
+          "slug": "pro_pki_certificate_authority",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_digicert",
+          "slug": "pro_pki_digicert",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_json_web_token_configuration",
+          "slug": "pro_pki_json_web_token_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_venafi",
+          "slug": "pro_pki_venafi",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_policy",
+          "slug": "pro_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_printer",
+          "slug": "pro_printer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_re_enrollment_settings",
+          "slug": "pro_re_enrollment_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_removable_mac_address",
+          "slug": "pro_removable_mac_address",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_restricted_software",
+          "slug": "pro_restricted_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_return_to_service",
+          "slug": "pro_return_to_service",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_script",
+          "slug": "pro_script",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_scripts",
+          "slug": "pro_scripts",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_branding_ios",
+          "slug": "pro_self_service_branding_ios",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_branding_macos",
+          "slug": "pro_self_service_branding_macos",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_macos_settings",
+          "slug": "pro_self_service_macos_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_plus_settings",
+          "slug": "pro_self_service_plus_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_service_discovery_enrollment",
+          "slug": "pro_service_discovery_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_site",
+          "slug": "pro_site",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sites",
+          "slug": "pro_sites",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_smtp_server",
+          "slug": "pro_smtp_server",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_dependencies",
+          "slug": "pro_sso_dependencies",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_failover_url",
+          "slug": "pro_sso_failover_url",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_settings",
+          "slug": "pro_sso_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_sp_metadata",
+          "slug": "pro_sso_sp_metadata",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_supervision_identity",
+          "slug": "pro_supervision_identity",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user",
+          "slug": "pro_user",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_extension_attribute",
+          "slug": "pro_user_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_group",
+          "slug": "pro_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_groups",
+          "slug": "pro_user_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_initiated_enrollment_settings",
+          "slug": "pro_user_initiated_enrollment_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_users",
+          "slug": "pro_users",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_location",
+          "slug": "pro_volume_purchasing_location",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_notification",
+          "slug": "pro_volume_purchasing_notification",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_assignment",
+          "slug": "pro_vpp_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_invitation",
+          "slug": "pro_vpp_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_webhook",
+          "slug": "pro_webhook",
+          "subcategory": ""
         }
       ],
       "list-resources": [
@@ -68755,6 +69415,306 @@
         {
           "title": "device_group",
           "slug": "device_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account",
+          "slug": "pro_account",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account_group",
+          "slug": "pro_account_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_computer_search",
+          "slug": "pro_advanced_computer_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_mobile_device_search",
+          "slug": "pro_advanced_mobile_device_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_user_search",
+          "slug": "pro_advanced_user_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_volume_purchasing_content_search",
+          "slug": "pro_advanced_volume_purchasing_content_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_allowed_file_extension",
+          "slug": "pro_allowed_file_extension",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_client",
+          "slug": "pro_api_client",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_role",
+          "slug": "pro_api_role",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer",
+          "slug": "pro_app_installer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_request_form_field",
+          "slug": "pro_app_request_form_field",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_automated_device_enrollment",
+          "slug": "pro_automated_device_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_building",
+          "slug": "pro_building",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_category",
+          "slug": "pro_category",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_class",
+          "slug": "pro_class",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_identity_provider",
+          "slug": "pro_cloud_identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_extension_attribute",
+          "slug": "pro_computer_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_invitation",
+          "slug": "pro_computer_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_prestage_enrollment",
+          "slug": "pro_computer_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_department",
+          "slug": "pro_department",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_directory_binding",
+          "slug": "pro_directory_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_disk_encryption_configuration",
+          "slug": "pro_disk_encryption_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_dock_item",
+          "slug": "pro_dock_item",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ebook",
+          "slug": "pro_ebook",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_enrollment_customization",
+          "slug": "pro_enrollment_customization",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_file_share_distribution_point",
+          "slug": "pro_file_share_distribution_point",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ibeacon",
+          "slug": "pro_ibeacon",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_inventory_preload_record",
+          "slug": "pro_inventory_preload_record",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ldap_server",
+          "slug": "pro_ldap_server",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_licensed_software",
+          "slug": "pro_licensed_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mac_app_store_app",
+          "slug": "pro_mac_app_store_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_configuration_profile",
+          "slug": "pro_macos_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_app",
+          "slug": "pro_mobile_device_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_configuration_profile",
+          "slug": "pro_mobile_device_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_enrollment_profile",
+          "slug": "pro_mobile_device_enrollment_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_extension_attribute",
+          "slug": "pro_mobile_device_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_invitation",
+          "slug": "pro_mobile_device_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_prestage_enrollment",
+          "slug": "pro_mobile_device_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_provisioning_profile",
+          "slug": "pro_mobile_device_provisioning_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_network_segment",
+          "slug": "pro_network_segment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_package",
+          "slug": "pro_package",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_external_source",
+          "slug": "pro_patch_external_source",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_policy",
+          "slug": "pro_patch_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_software_title",
+          "slug": "pro_patch_software_title",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_json_web_token_configuration",
+          "slug": "pro_pki_json_web_token_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_policy",
+          "slug": "pro_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_printer",
+          "slug": "pro_printer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_removable_mac_address",
+          "slug": "pro_removable_mac_address",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_restricted_software",
+          "slug": "pro_restricted_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_return_to_service",
+          "slug": "pro_return_to_service",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_script",
+          "slug": "pro_script",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_site",
+          "slug": "pro_site",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_supervision_identity",
+          "slug": "pro_supervision_identity",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_extension_attribute",
+          "slug": "pro_user_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_group",
+          "slug": "pro_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_location",
+          "slug": "pro_volume_purchasing_location",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_notification",
+          "slug": "pro_volume_purchasing_notification",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_assignment",
+          "slug": "pro_vpp_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_invitation",
+          "slug": "pro_vpp_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_webhook",
+          "slug": "pro_webhook",
           "subcategory": ""
         }
       ],
@@ -68780,10 +69740,475 @@
           "title": "device_group",
           "slug": "device_group",
           "subcategory": ""
+        },
+        {
+          "title": "pro_access_management_settings",
+          "slug": "pro_access_management_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account",
+          "slug": "pro_account",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_account_group",
+          "slug": "pro_account_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_activation_code",
+          "slug": "pro_activation_code",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_computer_search",
+          "slug": "pro_advanced_computer_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_mobile_device_search",
+          "slug": "pro_advanced_mobile_device_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_user_search",
+          "slug": "pro_advanced_user_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_advanced_volume_purchasing_content_search",
+          "slug": "pro_advanced_volume_purchasing_content_search",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_allowed_file_extension",
+          "slug": "pro_allowed_file_extension",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_client",
+          "slug": "pro_api_client",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_api_role",
+          "slug": "pro_api_role",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer",
+          "slug": "pro_app_installer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_installer_settings",
+          "slug": "pro_app_installer_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_request_form_field",
+          "slug": "pro_app_request_form_field",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_app_request_settings",
+          "slug": "pro_app_request_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_automated_device_enrollment",
+          "slug": "pro_automated_device_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_building",
+          "slug": "pro_building",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_category",
+          "slug": "pro_category",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_class",
+          "slug": "pro_class",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_distribution_point",
+          "slug": "pro_cloud_distribution_point",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_cloud_identity_provider",
+          "slug": "pro_cloud_identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_check_in_settings",
+          "slug": "pro_computer_check_in_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_extension_attribute",
+          "slug": "pro_computer_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_inventory_collection_settings",
+          "slug": "pro_computer_inventory_collection_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_invitation",
+          "slug": "pro_computer_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_computer_prestage_enrollment",
+          "slug": "pro_computer_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_department",
+          "slug": "pro_department",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_directory_binding",
+          "slug": "pro_directory_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_disk_encryption_configuration",
+          "slug": "pro_disk_encryption_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_dock_item",
+          "slug": "pro_dock_item",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ebook",
+          "slug": "pro_ebook",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_enrollment_customization",
+          "slug": "pro_enrollment_customization",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_file_share_distribution_point",
+          "slug": "pro_file_share_distribution_point",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_gsx_connection_settings",
+          "slug": "pro_gsx_connection_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ibeacon",
+          "slug": "pro_ibeacon",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_icon",
+          "slug": "pro_icon",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_impact_alert_notification_settings",
+          "slug": "pro_impact_alert_notification_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_inventory_preload_record",
+          "slug": "pro_inventory_preload_record",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_connect",
+          "slug": "pro_jamf_connect",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_parent_settings",
+          "slug": "pro_jamf_parent_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_protect",
+          "slug": "pro_jamf_protect",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_teacher_settings",
+          "slug": "pro_jamf_teacher_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_ldap_server",
+          "slug": "pro_ldap_server",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_licensed_software",
+          "slug": "pro_licensed_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_local_admin_password_settings",
+          "slug": "pro_local_admin_password_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_login_page_settings",
+          "slug": "pro_login_page_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mac_app_store_app",
+          "slug": "pro_mac_app_store_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_configuration_profile",
+          "slug": "pro_macos_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_macos_onboarding",
+          "slug": "pro_macos_onboarding",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_managed_software_update",
+          "slug": "pro_managed_software_update",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mdm_profile_settings",
+          "slug": "pro_mdm_profile_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_app",
+          "slug": "pro_mobile_device_app",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_configuration_profile",
+          "slug": "pro_mobile_device_configuration_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_enrollment_profile",
+          "slug": "pro_mobile_device_enrollment_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_extension_attribute",
+          "slug": "pro_mobile_device_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_invitation",
+          "slug": "pro_mobile_device_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_prestage_enrollment",
+          "slug": "pro_mobile_device_prestage_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_mobile_device_provisioning_profile",
+          "slug": "pro_mobile_device_provisioning_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_network_segment",
+          "slug": "pro_network_segment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_package",
+          "slug": "pro_package",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_external_source",
+          "slug": "pro_patch_external_source",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_policy",
+          "slug": "pro_patch_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_patch_software_title",
+          "slug": "pro_patch_software_title",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_adcs",
+          "slug": "pro_pki_adcs",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_digicert",
+          "slug": "pro_pki_digicert",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_json_web_token_configuration",
+          "slug": "pro_pki_json_web_token_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_pki_venafi",
+          "slug": "pro_pki_venafi",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_policy",
+          "slug": "pro_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_printer",
+          "slug": "pro_printer",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_re_enrollment_settings",
+          "slug": "pro_re_enrollment_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_removable_mac_address",
+          "slug": "pro_removable_mac_address",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_restricted_software",
+          "slug": "pro_restricted_software",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_return_to_service",
+          "slug": "pro_return_to_service",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_script",
+          "slug": "pro_script",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_branding_image",
+          "slug": "pro_self_service_branding_image",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_branding_ios",
+          "slug": "pro_self_service_branding_ios",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_branding_macos",
+          "slug": "pro_self_service_branding_macos",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_macos_settings",
+          "slug": "pro_self_service_macos_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_self_service_plus_settings",
+          "slug": "pro_self_service_plus_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_service_discovery_enrollment",
+          "slug": "pro_service_discovery_enrollment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_site",
+          "slug": "pro_site",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_smtp_server",
+          "slug": "pro_smtp_server",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_failover_url",
+          "slug": "pro_sso_failover_url",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_sso_settings",
+          "slug": "pro_sso_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_supervision_identity",
+          "slug": "pro_supervision_identity",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_extension_attribute",
+          "slug": "pro_user_extension_attribute",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_group",
+          "slug": "pro_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_user_initiated_enrollment_settings",
+          "slug": "pro_user_initiated_enrollment_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_location",
+          "slug": "pro_volume_purchasing_location",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_volume_purchasing_notification",
+          "slug": "pro_volume_purchasing_notification",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_assignment",
+          "slug": "pro_vpp_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_vpp_invitation",
+          "slug": "pro_vpp_invitation",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_webhook",
+          "slug": "pro_webhook",
+          "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:31.374491"
+    "docs_refreshed_at": "2026-06-25T10:31:36.714330"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -69327,7 +70752,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:32.901765"
+    "docs_refreshed_at": "2026-06-25T10:31:38.451444"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -72512,7 +73937,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:33.297186"
+    "docs_refreshed_at": "2026-06-25T10:31:38.926498"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -73861,7 +75286,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:33.681877"
+    "docs_refreshed_at": "2026-06-25T10:31:39.387129"
   },
   "SAP/btp": {
     "docs": {
@@ -74588,7 +76013,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:34.056532"
+    "docs_refreshed_at": "2026-06-25T10:31:40.294685"
   },
   "SAP/scc": {
     "docs": {
@@ -74793,7 +76218,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:34.429473"
+    "docs_refreshed_at": "2026-06-25T10:31:41.168173"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -74840,7 +76265,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:34.804332"
+    "docs_refreshed_at": "2026-06-25T10:31:41.592405"
   },
   "Sokren/aap": {
     "docs": {
@@ -74923,7 +76348,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:35.182976"
+    "docs_refreshed_at": "2026-06-25T10:31:42.031785"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -74973,7 +76398,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:35.579845"
+    "docs_refreshed_at": "2026-06-25T10:31:42.466309"
   },
   "adampie/ctf": {
     "docs": {
@@ -75020,7 +76445,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:36.702107"
+    "docs_refreshed_at": "2026-06-25T10:31:43.787923"
   },
   "ansible/ansible": {
     "docs": {
@@ -75068,7 +76493,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:37.467193"
+    "docs_refreshed_at": "2026-06-25T10:31:44.665118"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -75116,7 +76541,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:37.837627"
+    "docs_refreshed_at": "2026-06-25T10:31:45.095147"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -75142,7 +76567,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:38.211992"
+    "docs_refreshed_at": "2026-06-25T10:31:45.526563"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -75199,7 +76624,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:38.589324"
+    "docs_refreshed_at": "2026-06-25T10:31:45.957865"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -75225,7 +76650,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:39.333839"
+    "docs_refreshed_at": "2026-06-25T10:31:46.819554"
   },
   "cysp/braze": {
     "docs": {
@@ -75281,7 +76706,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:40.831673"
+    "docs_refreshed_at": "2026-06-25T10:31:48.546138"
   },
   "cysp/contentful": {
     "docs": {
@@ -75424,7 +76849,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:41.208214"
+    "docs_refreshed_at": "2026-06-25T10:31:48.985229"
   },
   "dbanck/concept": {
     "docs": {
@@ -75460,7 +76885,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:42.350169"
+    "docs_refreshed_at": "2026-06-25T10:31:50.288428"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -76814,7 +78239,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:42.745499"
+    "docs_refreshed_at": "2026-06-25T10:31:50.764036"
   },
   "drewmullen/aap": {
     "docs": {
@@ -76922,7 +78347,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:43.497858"
+    "docs_refreshed_at": "2026-06-25T10:31:51.627299"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -76987,7 +78412,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:45.008909"
+    "docs_refreshed_at": "2026-06-25T10:31:53.393745"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -77090,7 +78515,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:45.764926"
+    "docs_refreshed_at": "2026-06-25T10:31:54.691671"
   },
   "hashicorp/local": {
     "docs": {
@@ -77152,7 +78577,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:46.525629"
+    "docs_refreshed_at": "2026-06-25T10:31:55.564524"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -84823,7 +86248,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:48.507932"
+    "docs_refreshed_at": "2026-06-25T10:31:57.906663"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -85636,7 +87061,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:48.932368"
+    "docs_refreshed_at": "2026-06-25T10:31:58.350248"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -85774,7 +87199,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:50.435884"
+    "docs_refreshed_at": "2026-06-25T10:32:00.141998"
   },
   "magodo/restful": {
     "docs": {
@@ -85833,7 +87258,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:51.563739"
+    "docs_refreshed_at": "2026-06-25T10:32:01.444988"
   },
   "marshallford/ansible": {
     "docs": {
@@ -85885,7 +87310,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:51.939826"
+    "docs_refreshed_at": "2026-06-25T10:32:01.970704"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -86027,7 +87452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:52.696609"
+    "docs_refreshed_at": "2026-06-25T10:32:02.988697"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -86190,7 +87615,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:53.073943"
+    "docs_refreshed_at": "2026-06-25T10:32:03.428221"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -86237,7 +87662,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:53.822222"
+    "docs_refreshed_at": "2026-06-25T10:32:04.353432"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -86256,6 +87681,11 @@
           "title": "block_export_snapshot",
           "slug": "block_export_snapshot",
           "subcategory": "Block"
+        },
+        {
+          "title": "cockpit_grafana_sync_data_sources",
+          "slug": "cockpit_grafana_sync_data_sources",
+          "subcategory": "Cockpit"
         },
         {
           "title": "cockpit_trigger_test_alert",
@@ -86325,7 +87755,7 @@
         {
           "title": "rdb_instance_restart",
           "slug": "rdb_instance_restart",
-          "subcategory": ""
+          "subcategory": "Databases"
         },
         {
           "title": "rdb_instance_snapshot",
@@ -86425,6 +87855,11 @@
           "subcategory": "Elastic Metal"
         },
         {
+          "title": "billing_budget",
+          "slug": "billing_budget",
+          "subcategory": "Billing"
+        },
+        {
           "title": "billing_consumptions",
           "slug": "billing_consumptions",
           "subcategory": "Billing"
@@ -86472,7 +87907,7 @@
         {
           "title": "cockpit_products",
           "slug": "cockpit_products",
-          "subcategory": ""
+          "subcategory": "Cockpit"
         },
         {
           "title": "cockpit_source",
@@ -86498,6 +87933,16 @@
           "title": "container_namespace",
           "slug": "container_namespace",
           "subcategory": "Containers"
+        },
+        {
+          "title": "datalab",
+          "slug": "datalab",
+          "subcategory": "Datalab"
+        },
+        {
+          "title": "datalabs",
+          "slug": "datalabs",
+          "subcategory": "Datalab"
         },
         {
           "title": "domain_record",
@@ -86602,6 +88047,11 @@
         {
           "title": "iam_scim",
           "slug": "iam_scim",
+          "subcategory": "IAM"
+        },
+        {
+          "title": "iam_scim_token",
+          "slug": "iam_scim_token",
           "subcategory": "IAM"
         },
         {
@@ -86742,7 +88192,7 @@
         {
           "title": "kafka_cluster",
           "slug": "kafka_cluster",
-          "subcategory": ""
+          "subcategory": "Kafka"
         },
         {
           "title": "key_manager_key",
@@ -86970,6 +88420,11 @@
           "subcategory": "VPC"
         },
         {
+          "title": "vpc_ingress_rule",
+          "slug": "vpc_ingress_rule",
+          "subcategory": "VPC"
+        },
+        {
           "title": "vpc_private_network",
           "slug": "vpc_private_network",
           "subcategory": "VPC"
@@ -87138,9 +88593,24 @@
       ],
       "list-resources": [
         {
+          "title": "account_project",
+          "slug": "account_project",
+          "subcategory": "Account"
+        },
+        {
+          "title": "domain_record",
+          "slug": "domain_record",
+          "subcategory": "Domains and DNS"
+        },
+        {
           "title": "domain_zone",
           "slug": "domain_zone",
           "subcategory": "Domains and DNS"
+        },
+        {
+          "title": "iam_api_key",
+          "slug": "iam_api_key",
+          "subcategory": "IAM"
         },
         {
           "title": "iam_application",
@@ -87150,6 +88620,11 @@
         {
           "title": "iam_group",
           "slug": "iam_group",
+          "subcategory": "IAM"
+        },
+        {
+          "title": "iam_policy",
+          "slug": "iam_policy",
           "subcategory": "IAM"
         },
         {
@@ -87168,6 +88643,11 @@
           "subcategory": "IPAM"
         },
         {
+          "title": "key_manager_key",
+          "slug": "key_manager_key",
+          "subcategory": "Key Manager"
+        },
+        {
           "title": "lb",
           "slug": "lb",
           "subcategory": "Load Balancers"
@@ -87175,12 +88655,12 @@
         {
           "title": "lb_backend",
           "slug": "lb_backend",
-          "subcategory": "Load Balancer"
+          "subcategory": "Load Balancers"
         },
         {
           "title": "lb_frontend",
           "slug": "lb_frontend",
-          "subcategory": "Load Balancer"
+          "subcategory": "Load Balancers"
         },
         {
           "title": "mongodb_instance",
@@ -87220,7 +88700,12 @@
         {
           "title": "secret",
           "slug": "secret",
-          "subcategory": "Secret"
+          "subcategory": "Secrets"
+        },
+        {
+          "title": "secret_version",
+          "slug": "secret_version",
+          "subcategory": "Secrets"
         },
         {
           "title": "vpc",
@@ -87302,6 +88787,11 @@
           "subcategory": "Elastic Metal"
         },
         {
+          "title": "billing_budget",
+          "slug": "billing_budget",
+          "subcategory": "Billing"
+        },
+        {
           "title": "block_snapshot",
           "slug": "block_snapshot",
           "subcategory": "Block"
@@ -87370,6 +88860,11 @@
           "title": "container_trigger",
           "slug": "container_trigger",
           "subcategory": "Containers"
+        },
+        {
+          "title": "datalab",
+          "slug": "datalab",
+          "subcategory": "Datalab"
         },
         {
           "title": "datawarehouse_database",
@@ -87529,6 +89024,11 @@
         {
           "title": "iam_scim",
           "slug": "iam_scim",
+          "subcategory": "IAM"
+        },
+        {
+          "title": "iam_scim_token",
+          "slug": "iam_scim_token",
           "subcategory": "IAM"
         },
         {
@@ -87942,6 +89442,11 @@
           "subcategory": "VPC"
         },
         {
+          "title": "vpc_ingress_rule",
+          "slug": "vpc_ingress_rule",
+          "subcategory": "VPC"
+        },
+        {
           "title": "vpc_private_network",
           "slug": "vpc_private_network",
           "subcategory": "VPC"
@@ -87988,7 +89493,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:56.557446"
+    "docs_refreshed_at": "2026-06-25T10:32:08.132347"
   },
   "soffensive/soff": {
     "docs": {
@@ -88035,7 +89540,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:57.308846"
+    "docs_refreshed_at": "2026-06-25T10:32:08.999724"
   },
   "thrashr888/registry": {
     "docs": {
@@ -88123,7 +89628,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:58.060140"
+    "docs_refreshed_at": "2026-06-25T10:32:09.874076"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -88523,7 +90028,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:58.808879"
+    "docs_refreshed_at": "2026-06-25T10:32:10.792823"
   },
   "waldur/waldur": {
     "docs": {
@@ -88908,7 +90413,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:59.558780"
+    "docs_refreshed_at": "2026-06-25T10:32:11.664016"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -89171,7 +90676,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:31.768664"
+    "docs_refreshed_at": "2026-06-25T10:31:37.148888"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -89226,7 +90731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:46.156960"
+    "docs_refreshed_at": "2026-06-25T10:31:55.126886"
   },
   "timofurrer/desec": {
     "docs": {
@@ -89385,7 +90890,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:58.433727"
+    "docs_refreshed_at": "2026-06-25T10:32:10.307591"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -89468,7 +90973,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:59.185214"
+    "docs_refreshed_at": "2026-06-25T10:32:11.226285"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -92658,7 +94163,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:31.000786"
+    "docs_refreshed_at": "2026-06-25T10:31:36.252126"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -92953,7 +94458,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:50.062157"
+    "docs_refreshed_at": "2026-06-25T10:31:59.700579"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -93071,7 +94576,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:52.320709"
+    "docs_refreshed_at": "2026-06-25T10:32:02.552751"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -93241,7 +94746,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:32.143460"
+    "docs_refreshed_at": "2026-06-25T10:31:37.583040"
   },
   "branchgrove/debian": {
     "docs": {
@@ -93356,7 +94861,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:38.962622"
+    "docs_refreshed_at": "2026-06-25T10:31:46.388681"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -93801,7 +95306,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:44.637556"
+    "docs_refreshed_at": "2026-06-25T10:31:52.955428"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -94416,7 +95921,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:46.916244"
+    "docs_refreshed_at": "2026-06-25T10:31:56.043184"
   },
   "juju/juju": {
     "docs": {
@@ -94469,8 +95974,18 @@
           "subcategory": ""
         },
         {
+          "title": "space",
+          "slug": "space",
+          "subcategory": ""
+        },
+        {
           "title": "storage_pool",
           "slug": "storage_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "subnets",
+          "slug": "subnets",
           "subcategory": ""
         }
       ],
@@ -94635,6 +96150,11 @@
           "subcategory": ""
         },
         {
+          "title": "space",
+          "slug": "space",
+          "subcategory": ""
+        },
+        {
           "title": "ssh_key",
           "slug": "ssh_key",
           "subcategory": ""
@@ -94645,13 +96165,18 @@
           "subcategory": ""
         },
         {
+          "title": "subnet",
+          "slug": "subnet",
+          "subcategory": ""
+        },
+        {
           "title": "user",
           "slug": "user",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:49.308229"
+    "docs_refreshed_at": "2026-06-25T10:31:58.781186"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -94752,7 +96277,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:32.524174"
+    "docs_refreshed_at": "2026-06-25T10:31:38.018764"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -95190,7 +96715,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:40.084374"
+    "docs_refreshed_at": "2026-06-25T10:31:47.683323"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -95338,7 +96863,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:50.809035"
+    "docs_refreshed_at": "2026-06-25T10:32:00.581275"
   },
   "radeksimko/test": {
     "docs": {
@@ -95385,7 +96910,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-11T11:26:00.552534"
+    "docs_refreshed_at": "2026-06-25T10:32:06.368789"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -95778,7 +97303,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:56.932221"
+    "docs_refreshed_at": "2026-06-25T10:32:08.565967"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -96003,7 +97528,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:57.690102"
+    "docs_refreshed_at": "2026-06-25T10:32:09.431794"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -96015,6 +97540,11 @@
         }
       ],
       "data-sources": [
+        {
+          "title": "aws_dynamo_db_tables",
+          "slug": "aws_dynamo_db_tables",
+          "subcategory": "Veeam Backup for AWS"
+        },
         {
           "title": "aws_ec2_instances",
           "slug": "aws_ec2_instances",
@@ -96068,6 +97598,11 @@
         {
           "title": "azure_service_accounts",
           "slug": "azure_service_accounts",
+          "subcategory": "Veeam Backup for Azure"
+        },
+        {
+          "title": "azure_sql_backup_policy_cost_estimation",
+          "slug": "azure_sql_backup_policy_cost_estimation",
           "subcategory": "Veeam Backup for Azure"
         },
         {
@@ -96140,6 +97675,11 @@
       ],
       "resources": [
         {
+          "title": "aws_dynamo_db_backup_policy",
+          "slug": "aws_dynamo_db_backup_policy",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
           "title": "aws_ec2_backup_policy",
           "slug": "aws_ec2_backup_policy",
           "subcategory": "Veeam Backup for AWS"
@@ -96152,6 +97692,11 @@
         {
           "title": "aws_rds_backup_policy",
           "slug": "aws_rds_backup_policy",
+          "subcategory": "Veeam Backup for AWS"
+        },
+        {
+          "title": "aws_repository",
+          "slug": "aws_repository",
           "subcategory": "Veeam Backup for AWS"
         },
         {
@@ -96216,7 +97761,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:51.188690"
+    "docs_refreshed_at": "2026-06-25T10:32:01.012896"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -96633,7 +98178,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:47.297154"
+    "docs_refreshed_at": "2026-06-25T10:31:56.482246"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -97102,7 +98647,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:48.049273"
+    "docs_refreshed_at": "2026-06-25T10:31:57.374387"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -109068,7 +110613,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:54.650872"
+    "docs_refreshed_at": "2026-06-25T10:32:05.373256"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -109321,6 +110866,11 @@
           "subcategory": ""
         },
         {
+          "title": "Upgrade Guide: v1.8.1",
+          "slug": "upgrade_guide_v1.8.1",
+          "subcategory": ""
+        },
+        {
           "title": "Users and Roles",
           "slug": "users_and_roles",
           "subcategory": ""
@@ -109543,7 +111093,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:55.474551"
+    "docs_refreshed_at": "2026-06-25T10:32:06.805248"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -109728,6 +111278,11 @@
         {
           "title": "Upgrade Guide: v1.8.0",
           "slug": "upgrade_guide_v1.8.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.8.1",
+          "slug": "upgrade_guide_v1.8.1",
           "subcategory": ""
         }
       ],
@@ -109968,7 +111523,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:56.177501"
+    "docs_refreshed_at": "2026-06-25T10:32:07.241292"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -110031,7 +111586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:43.121023"
+    "docs_refreshed_at": "2026-06-25T10:31:51.195423"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -110114,7 +111669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:35.952152"
+    "docs_refreshed_at": "2026-06-25T10:31:42.895028"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -110145,7 +111700,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:40.454730"
+    "docs_refreshed_at": "2026-06-25T10:31:48.116543"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -110176,7 +111731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:41.581835"
+    "docs_refreshed_at": "2026-06-25T10:31:49.418101"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -110207,7 +111762,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:41.975297"
+    "docs_refreshed_at": "2026-06-25T10:31:49.851626"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -110248,7 +111803,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:44.259648"
+    "docs_refreshed_at": "2026-06-25T10:31:52.519033"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -110488,7 +112043,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:53.447348"
+    "docs_refreshed_at": "2026-06-25T10:32:03.920329"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -111621,6 +113176,16 @@
           "subcategory": ""
         },
         {
+          "title": "snippet_category",
+          "slug": "snippet_category",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_category_list",
+          "slug": "snippet_category_list",
+          "subcategory": ""
+        },
+        {
           "title": "snippet_list",
           "slug": "snippet_list",
           "subcategory": ""
@@ -111693,6 +113258,11 @@
         {
           "title": "traffic_steering_rule_list",
           "slug": "traffic_steering_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "trusted_tenant_overview",
+          "slug": "trusted_tenant_overview",
           "subcategory": ""
         },
         {
@@ -111823,6 +113393,136 @@
         {
           "title": "zone_protection_profile_list",
           "slug": "zone_protection_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_application_filters",
+          "slug": "ztna_application_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector",
+          "slug": "ztna_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_filters",
+          "slug": "ztna_connector_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group",
+          "slug": "ztna_connector_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_connectors",
+          "slug": "ztna_connector_group_connectors",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_filters",
+          "slug": "ztna_connector_group_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_fqdn_rules",
+          "slug": "ztna_connector_group_fqdn_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_list",
+          "slug": "ztna_connector_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_scheduled_upgrade",
+          "slug": "ztna_connector_group_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_subnet_rules",
+          "slug": "ztna_connector_group_subnet_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_upgrade_status",
+          "slug": "ztna_connector_group_upgrade_status",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_wildcards",
+          "slug": "ztna_connector_group_wildcards",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_images",
+          "slug": "ztna_connector_images",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_list",
+          "slug": "ztna_connector_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_quiesce",
+          "slug": "ztna_connector_quiesce",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_scheduled_upgrade",
+          "slug": "ztna_connector_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_upgrade_status",
+          "slug": "ztna_connector_upgrade_status",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_discovered_application_filters",
+          "slug": "ztna_discovered_application_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application",
+          "slug": "ztna_fqdn_application",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application_list",
+          "slug": "ztna_fqdn_application_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet",
+          "slug": "ztna_subnet",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet_filters",
+          "slug": "ztna_subnet_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet_list",
+          "slug": "ztna_subnet_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard",
+          "slug": "ztna_wildcard",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard_filters",
+          "slug": "ztna_wildcard_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard_list",
+          "slug": "ztna_wildcard_list",
           "subcategory": ""
         }
       ],
@@ -112478,10 +114178,45 @@
           "title": "zone_protection_profile",
           "slug": "zone_protection_profile",
           "subcategory": ""
+        },
+        {
+          "title": "ztna_connector",
+          "slug": "ztna_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group",
+          "slug": "ztna_connector_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_scheduled_upgrade",
+          "slug": "ztna_connector_group_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_scheduled_upgrade",
+          "slug": "ztna_connector_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application",
+          "slug": "ztna_fqdn_application",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet",
+          "slug": "ztna_subnet",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard",
+          "slug": "ztna_wildcard",
+          "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-05-28T11:42:05.482609"
+    "docs_refreshed_at": "2026-06-25T10:31:39.853524"
   },
   "gringolito/ansible": {
     "docs": {
@@ -112551,7 +114286,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:45.385471"
+    "docs_refreshed_at": "2026-06-25T10:31:53.825183"
   },
   "pexip/infinity": {
     "docs": {
@@ -113001,7 +114736,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:54.198611"
+    "docs_refreshed_at": "2026-06-25T10:32:04.794813"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -113099,7 +114834,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:59.938498"
+    "docs_refreshed_at": "2026-06-25T10:32:12.101231"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -113836,7 +115571,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:43.882253"
+    "docs_refreshed_at": "2026-06-25T10:31:52.088321"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -113865,7 +115600,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:36.321719"
+    "docs_refreshed_at": "2026-06-25T10:31:43.327318"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -121869,7 +123604,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:55.097635"
+    "docs_refreshed_at": "2026-06-25T10:32:05.939232"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -122072,7 +123807,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:28.267362"
+    "docs_refreshed_at": "2026-06-25T10:31:32.980900"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -122125,7 +123860,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:39.708738"
+    "docs_refreshed_at": "2026-06-25T10:31:47.253873"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -122963,7 +124698,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:47.674792"
+    "docs_refreshed_at": "2026-06-25T10:31:56.939179"
   },
   "536tech/daytona": {
     "docs": {
@@ -124179,6 +125914,537 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:51:49.686513"
+    "docs_refreshed_at": "2026-06-25T10:31:59.269575"
+  },
+  "SAP/btp-services": {
+    "docs": {
+      "actions": [
+        {
+          "title": "cicd_abort_build",
+          "slug": "cicd_abort_build",
+          "subcategory": ""
+        },
+        {
+          "title": "cicd_delete_build",
+          "slug": "cicd_delete_build",
+          "subcategory": ""
+        },
+        {
+          "title": "cicd_run_build",
+          "slug": "cicd_run_build",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "cicd_allowed_spaces",
+          "slug": "cicd_allowed_spaces",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_builds",
+          "slug": "cicd_builds",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential",
+          "slug": "cicd_credential",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credentials",
+          "slug": "cicd_credentials",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_usage",
+          "slug": "cicd_credential_usage",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_job",
+          "slug": "cicd_job",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_job_credentials",
+          "slug": "cicd_job_credentials",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_jobs",
+          "slug": "cicd_jobs",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repositories",
+          "slug": "cicd_repositories",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository",
+          "slug": "cicd_repository",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository_event_receiver",
+          "slug": "cicd_repository_event_receiver",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository_jobs",
+          "slug": "cicd_repository_jobs",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository_webhook_config",
+          "slug": "cicd_repository_webhook_config",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_trigger",
+          "slug": "cicd_trigger",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_triggers",
+          "slug": "cicd_triggers",
+          "subcategory": "SAP CICD service"
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "cicd_job",
+          "slug": "cicd_job",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository",
+          "slug": "cicd_repository",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_trigger",
+          "slug": "cicd_trigger",
+          "subcategory": "SAP CICD service"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "cicd_allowed_spaces",
+          "slug": "cicd_allowed_spaces",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_basic_auth",
+          "slug": "cicd_credential_basic_auth",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_basic_auth_custom_idp",
+          "slug": "cicd_credential_basic_auth_custom_idp",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_cert_based_auth_custom_idp",
+          "slug": "cicd_credential_cert_based_auth_custom_idp",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_cloud_connector",
+          "slug": "cicd_credential_cloud_connector",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_container_registry",
+          "slug": "cicd_credential_container_registry",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_kubernetes_config",
+          "slug": "cicd_credential_kubernetes_config",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_secret_text",
+          "slug": "cicd_credential_secret_text",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_service_key",
+          "slug": "cicd_credential_service_key",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_credential_webhook_secret",
+          "slug": "cicd_credential_webhook_secret",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_job",
+          "slug": "cicd_job",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_repository",
+          "slug": "cicd_repository",
+          "subcategory": "SAP CICD service"
+        },
+        {
+          "title": "cicd_trigger",
+          "slug": "cicd_trigger",
+          "subcategory": "SAP CICD service"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-25T10:31:40.732136"
+  },
+  "gringolito/zabbix": {
+    "docs": {
+      "actions": [
+        {
+          "title": "template_import",
+          "slug": "template_import",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "action_trigger",
+          "slug": "action_trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication",
+          "slug": "authentication",
+          "subcategory": ""
+        },
+        {
+          "title": "host",
+          "slug": "host",
+          "subcategory": ""
+        },
+        {
+          "title": "host_group",
+          "slug": "host_group",
+          "subcategory": ""
+        },
+        {
+          "title": "host_interface",
+          "slug": "host_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "item",
+          "slug": "item",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_email",
+          "slug": "media_type_email",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_script",
+          "slug": "media_type_script",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_sms",
+          "slug": "media_type_sms",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_webhook",
+          "slug": "media_type_webhook",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "template",
+          "slug": "template",
+          "subcategory": ""
+        },
+        {
+          "title": "template_group",
+          "slug": "template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "trigger",
+          "slug": "trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        },
+        {
+          "title": "user_directory_ldap",
+          "slug": "user_directory_ldap",
+          "subcategory": ""
+        },
+        {
+          "title": "user_directory_saml",
+          "slug": "user_directory_saml",
+          "subcategory": ""
+        },
+        {
+          "title": "user_group",
+          "slug": "user_group",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "action_trigger",
+          "slug": "action_trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication",
+          "slug": "authentication",
+          "subcategory": ""
+        },
+        {
+          "title": "host",
+          "slug": "host",
+          "subcategory": ""
+        },
+        {
+          "title": "host_group",
+          "slug": "host_group",
+          "subcategory": ""
+        },
+        {
+          "title": "host_interface",
+          "slug": "host_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "host_template_link",
+          "slug": "host_template_link",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_email",
+          "slug": "media_type_email",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_script",
+          "slug": "media_type_script",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_sms",
+          "slug": "media_type_sms",
+          "subcategory": ""
+        },
+        {
+          "title": "media_type_webhook",
+          "slug": "media_type_webhook",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "template",
+          "slug": "template",
+          "subcategory": ""
+        },
+        {
+          "title": "template_group",
+          "slug": "template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "template_link",
+          "slug": "template_link",
+          "subcategory": ""
+        },
+        {
+          "title": "trigger",
+          "slug": "trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "user_directory_ldap",
+          "slug": "user_directory_ldap",
+          "subcategory": ""
+        },
+        {
+          "title": "user_directory_saml",
+          "slug": "user_directory_saml",
+          "subcategory": ""
+        },
+        {
+          "title": "user_group",
+          "slug": "user_group",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-25T10:31:54.257899"
+  },
+  "samiracho/glitchtip": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "monitors",
+          "slug": "monitors",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_members",
+          "slug": "organization_members",
+          "subcategory": ""
+        },
+        {
+          "title": "organizations",
+          "slug": "organizations",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_keys",
+          "slug": "project_keys",
+          "subcategory": ""
+        },
+        {
+          "title": "projects",
+          "slug": "projects",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "teams",
+          "slug": "teams",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "monitor",
+          "slug": "monitor",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_member",
+          "slug": "organization_member",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_alert",
+          "slug": "project_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "project_key",
+          "slug": "project_key",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "monitor",
+          "slug": "monitor",
+          "subcategory": ""
+        },
+        {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_member",
+          "slug": "organization_member",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_alert",
+          "slug": "project_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "project_key",
+          "slug": "project_key",
+          "subcategory": ""
+        },
+        {
+          "title": "project_team",
+          "slug": "project_team",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-06-25T10:32:07.672843"
   }
 }
