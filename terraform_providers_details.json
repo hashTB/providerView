@@ -2887,6 +2887,11 @@
           "subcategory": "S3 (Simple Storage)"
         },
         {
+          "title": "s3_bucket_notification",
+          "slug": "s3_bucket_notification",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
           "title": "s3_bucket_object",
           "slug": "s3_bucket_object",
           "subcategory": "S3 (Simple Storage)"
@@ -3760,6 +3765,11 @@
           "subcategory": "Application Auto Scaling"
         },
         {
+          "title": "appautoscaling_target",
+          "slug": "appautoscaling_target",
+          "subcategory": "Application Auto Scaling"
+        },
+        {
           "title": "appflow_connector_profile",
           "slug": "appflow_connector_profile",
           "subcategory": "AppFlow"
@@ -3807,6 +3817,11 @@
         {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_registry",
+          "slug": "bedrockagentcore_registry",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -3907,6 +3922,11 @@
         {
           "title": "dynamodb_table",
           "slug": "dynamodb_table",
+          "subcategory": "DynamoDB"
+        },
+        {
+          "title": "dynamodb_table_item",
+          "slug": "dynamodb_table_item",
           "subcategory": "DynamoDB"
         },
         {
@@ -5366,6 +5386,11 @@
         {
           "title": "bedrockagentcore_policy_engine",
           "slug": "bedrockagentcore_policy_engine",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_registry",
+          "slug": "bedrockagentcore_registry",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -12805,7 +12830,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:12.712818"
+    "docs_refreshed_at": "2026-06-25T10:29:15.357721"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -16039,6 +16064,11 @@
         {
           "title": "devopsagent_private_connections",
           "slug": "devopsagent_private_connections",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_service",
+          "slug": "devopsagent_service",
           "subcategory": ""
         },
         {
@@ -19844,6 +19874,26 @@
         {
           "title": "lambda_layer_versions",
           "slug": "lambda_layer_versions",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_microvm_image",
+          "slug": "lambda_microvm_image",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_microvm_images",
+          "slug": "lambda_microvm_images",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_network_connector",
+          "slug": "lambda_network_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_network_connectors",
+          "slug": "lambda_network_connectors",
           "subcategory": ""
         },
         {
@@ -27941,6 +27991,16 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_microvm_image",
+          "slug": "lambda_microvm_image",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_network_connector",
+          "slug": "lambda_network_connector",
+          "subcategory": ""
+        },
+        {
           "title": "launchwizard_deployment",
           "slug": "launchwizard_deployment",
           "subcategory": ""
@@ -32085,6 +32145,11 @@
           "subcategory": ""
         },
         {
+          "title": "devopsagent_service",
+          "slug": "devopsagent_service",
+          "subcategory": ""
+        },
+        {
           "title": "devopsguru_log_anomaly_detection_integration",
           "slug": "devopsguru_log_anomaly_detection_integration",
           "subcategory": ""
@@ -34117,6 +34182,16 @@
         {
           "title": "lambda_layer_version_permission",
           "slug": "lambda_layer_version_permission",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_microvm_image",
+          "slug": "lambda_microvm_image",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_network_connector",
+          "slug": "lambda_network_connector",
           "subcategory": ""
         },
         {
@@ -37006,7 +37081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:13.162658"
+    "docs_refreshed_at": "2026-06-25T10:29:15.820991"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37440,7 +37515,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:13.514179"
+    "docs_refreshed_at": "2026-06-25T10:29:16.169050"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -39742,6 +39817,11 @@
           "subcategory": "Messaging"
         },
         {
+          "title": "signalr_service_custom_domain",
+          "slug": "signalr_service_custom_domain",
+          "subcategory": "Messaging"
+        },
+        {
           "title": "storage_account",
           "slug": "storage_account",
           "subcategory": "Storage"
@@ -39779,6 +39859,11 @@
         {
           "title": "storage_sync",
           "slug": "storage_sync",
+          "subcategory": "Storage"
+        },
+        {
+          "title": "storage_sync_server_endpoint",
+          "slug": "storage_sync_server_endpoint",
           "subcategory": "Storage"
         },
         {
@@ -45482,7 +45567,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:13.917344"
+    "docs_refreshed_at": "2026-06-25T10:29:16.587089"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45831,7 +45916,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:14.272648"
+    "docs_refreshed_at": "2026-06-25T10:29:16.953657"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46379,6 +46464,11 @@
           "subcategory": "BeyondCorp"
         },
         {
+          "title": "biglake_hive_catalog_iam_policy",
+          "slug": "biglake_hive_catalog_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog_iam_policy",
           "slug": "biglake_iceberg_catalog_iam_policy",
           "subcategory": "Biglake"
@@ -48284,6 +48374,16 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_intelligence_finding_revision",
+          "slug": "storage_control_project_intelligence_finding_revision",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_finding_revisions",
+          "slug": "storage_control_project_intelligence_finding_revisions",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_project_intelligence_findings",
           "slug": "storage_control_project_intelligence_findings",
           "subcategory": "Cloud Storage Control"
@@ -48652,6 +48752,16 @@
           "subcategory": "Cloud Scheduler"
         },
         {
+          "title": "google_compute_address",
+          "slug": "google_compute_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_cross_site_network",
+          "slug": "google_compute_cross_site_network",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_disk",
           "slug": "google_compute_disk",
           "subcategory": "Compute Engine"
@@ -48667,8 +48777,48 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_https_health_check",
+          "slug": "google_compute_https_health_check",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_image",
           "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_machine_image",
+          "slug": "google_compute_machine_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_node_template",
+          "slug": "google_compute_node_template",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_packet_mirroring",
+          "slug": "google_compute_packet_mirroring",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_autoscaler",
+          "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_composite_health_check",
+          "slug": "google_compute_region_composite_health_check",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_health_aggregation_policy",
+          "slug": "google_compute_region_health_aggregation_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_health_source",
+          "slug": "google_compute_region_health_source",
           "subcategory": "Compute Engine"
         },
         {
@@ -48692,9 +48842,24 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "google_project_iam_member",
+          "slug": "google_project_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_pubsub_subscription",
           "slug": "google_pubsub_subscription",
           "subcategory": "Cloud Pub/Sub"
+        },
+        {
+          "title": "google_pubsub_topic",
+          "slug": "google_pubsub_topic",
+          "subcategory": "Cloud Pub/Sub"
+        },
+        {
+          "title": "google_secret_manager_secret",
+          "slug": "google_secret_manager_secret",
+          "subcategory": "Secret Manager"
         },
         {
           "title": "google_service_account",
@@ -49271,6 +49436,16 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_hive_catalog",
+          "slug": "biglake_hive_catalog",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_catalog_iam",
+          "slug": "biglake_hive_catalog_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog",
           "slug": "biglake_iceberg_catalog",
           "subcategory": "Biglake"
@@ -49656,6 +49831,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_findings_refinement_deployment",
+          "slug": "chronicle_findings_refinement_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_native_dashboard",
           "slug": "chronicle_native_dashboard",
           "subcategory": "Chronicle"
@@ -49663,6 +49843,11 @@
         {
           "title": "chronicle_parser",
           "slug": "chronicle_parser",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_parser_extension",
+          "slug": "chronicle_parser_extension",
           "subcategory": "Chronicle"
         },
         {
@@ -51068,6 +51253,11 @@
         {
           "title": "dataplex_lake_iam",
           "slug": "dataplex_lake_iam",
+          "subcategory": "Dataplex"
+        },
+        {
+          "title": "dataplex_metadata_feed",
+          "slug": "dataplex_metadata_feed",
           "subcategory": "Dataplex"
         },
         {
@@ -54171,6 +54361,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_schedule",
+          "slug": "vertex_ai_schedule",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -54178,6 +54373,11 @@
         {
           "title": "vertex_ai_tensorboard_experiment",
           "slug": "vertex_ai_tensorboard_experiment",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_tensorboard_run",
+          "slug": "vertex_ai_tensorboard_run",
           "subcategory": "Vertex AI"
         },
         {
@@ -54277,7 +54477,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:14.708596"
+    "docs_refreshed_at": "2026-06-25T10:29:17.393377"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54558,6 +54758,11 @@
           "subcategory": "BeyondCorp"
         },
         {
+          "title": "biglake_hive_catalog_iam_policy",
+          "slug": "biglake_hive_catalog_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog_iam_policy",
           "slug": "biglake_iceberg_catalog_iam_policy",
           "subcategory": "Biglake"
@@ -56463,6 +56668,16 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_intelligence_finding_revision",
+          "slug": "storage_control_project_intelligence_finding_revision",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_finding_revisions",
+          "slug": "storage_control_project_intelligence_finding_revisions",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_project_intelligence_findings",
           "slug": "storage_control_project_intelligence_findings",
           "subcategory": "Cloud Storage Control"
@@ -56831,6 +57046,16 @@
           "subcategory": "Cloud Scheduler"
         },
         {
+          "title": "google_compute_address",
+          "slug": "google_compute_address",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_cross_site_network",
+          "slug": "google_compute_cross_site_network",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_disk",
           "slug": "google_compute_disk",
           "subcategory": "Compute Engine"
@@ -56846,8 +57071,48 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_https_health_check",
+          "slug": "google_compute_https_health_check",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_image",
           "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_machine_image",
+          "slug": "google_compute_machine_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_node_template",
+          "slug": "google_compute_node_template",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_packet_mirroring",
+          "slug": "google_compute_packet_mirroring",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_autoscaler",
+          "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_composite_health_check",
+          "slug": "google_compute_region_composite_health_check",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_health_aggregation_policy",
+          "slug": "google_compute_region_health_aggregation_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_health_source",
+          "slug": "google_compute_region_health_source",
           "subcategory": "Compute Engine"
         },
         {
@@ -56871,9 +57136,24 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "google_project_iam_member",
+          "slug": "google_project_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_pubsub_subscription",
           "slug": "google_pubsub_subscription",
           "subcategory": "Cloud Pub/Sub"
+        },
+        {
+          "title": "google_pubsub_topic",
+          "slug": "google_pubsub_topic",
+          "subcategory": "Cloud Pub/Sub"
+        },
+        {
+          "title": "google_secret_manager_secret",
+          "slug": "google_secret_manager_secret",
+          "subcategory": "Secret Manager"
         },
         {
           "title": "google_service_account",
@@ -57450,6 +57730,16 @@
           "subcategory": "Biglake"
         },
         {
+          "title": "biglake_hive_catalog",
+          "slug": "biglake_hive_catalog",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_catalog_iam",
+          "slug": "biglake_hive_catalog_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog",
           "slug": "biglake_iceberg_catalog",
           "subcategory": "Biglake"
@@ -57835,6 +58125,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_findings_refinement_deployment",
+          "slug": "chronicle_findings_refinement_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_native_dashboard",
           "slug": "chronicle_native_dashboard",
           "subcategory": "Chronicle"
@@ -57842,6 +58137,11 @@
         {
           "title": "chronicle_parser",
           "slug": "chronicle_parser",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_parser_extension",
+          "slug": "chronicle_parser_extension",
           "subcategory": "Chronicle"
         },
         {
@@ -59247,6 +59547,11 @@
         {
           "title": "dataplex_lake_iam",
           "slug": "dataplex_lake_iam",
+          "subcategory": "Dataplex"
+        },
+        {
+          "title": "dataplex_metadata_feed",
+          "slug": "dataplex_metadata_feed",
           "subcategory": "Dataplex"
         },
         {
@@ -62350,6 +62655,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_schedule",
+          "slug": "vertex_ai_schedule",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -62357,6 +62667,11 @@
         {
           "title": "vertex_ai_tensorboard_experiment",
           "slug": "vertex_ai_tensorboard_experiment",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_tensorboard_run",
+          "slug": "vertex_ai_tensorboard_run",
           "subcategory": "Vertex AI"
         },
         {
@@ -62456,7 +62771,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-18T11:49:15.154016"
+    "docs_refreshed_at": "2026-06-25T10:29:17.815903"
   },
   "4ek0/neko": {
     "docs": {

@@ -1,14 +1,19 @@
 {
-  "generated_at": "2026-06-18T11:50:13.648557",
+  "generated_at": "2026-06-25T10:30:19.199402",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "e08e5f19d87ce19e8f364ef33d8907f77024c930"
+    "commit": "ff8eed449fe9103c62e43878e106b3ab2235b7d0"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 27,
+    "file_count": 42,
     "files": [
+      {
+        "file": "google/services/bigquery/list_bigquery_dataset.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
       {
         "file": "google/services/bigquery/list_bigquery_dataset_access.go",
         "type": "MMv1",
@@ -40,12 +45,27 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_external_vpn_gateway.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_firewall.go",
         "type": "MMv1",
         "registrations": 1
       },
       {
         "file": "google/services/compute/list_compute_global_address.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_global_network_endpoint_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_ha_vpn_gateway.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -60,6 +80,16 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_interconnect_attachment_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_interconnect_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_node_template.go",
         "type": "MMv1",
         "registrations": 1
@@ -70,7 +100,17 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_public_delegated_prefix.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_region_autoscaler.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_commitment.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -90,6 +130,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_snapshot.go",
         "type": "MMv1",
         "registrations": 1
@@ -100,8 +145,23 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_vpn_gateway.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_wire_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/dns/list_google_dns_record_set.go",
         "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/kms/list_kms_crypto_key_version.go",
+        "type": "MMv1",
         "registrations": 1
       },
       {
@@ -117,6 +177,21 @@
       {
         "file": "google/services/pubsub/list_pubsub_topic.go",
         "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/resourcemanager/iam_folder.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/resourcemanager/iam_project.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/resourcemanager/list_google_project_service.go",
+        "type": "Handwritten",
         "registrations": 1
       },
       {
@@ -145,15 +220,22 @@
         "registrations": 1
       }
     ],
-    "sha256": "8481d11832942ced962d174415ec4fd97e31bdedf7b78c2a4979a0062d32efa7",
+    "sha256": "c0cf649dcd4f77d0b927a4116c41104b962d6940f6fcc0fdea65587c96cf2602",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 16
+    "list_resources": 29
   },
   "registrations": {
     "generated": [
+      {
+        "name": "google_bigquery_dataset",
+        "package": "BigQuery",
+        "constructor": "NewBigQueryDatasetListResource",
+        "file": "google/services/bigquery/list_bigquery_dataset.go",
+        "line": 40
+      },
       {
         "name": "google_bigquery_dataset_access",
         "package": "BigQuery",
@@ -197,6 +279,13 @@
         "line": 40
       },
       {
+        "name": "google_compute_external_vpn_gateway",
+        "package": "Compute",
+        "constructor": "NewComputeExternalVpnGatewayListResource",
+        "file": "google/services/compute/list_compute_external_vpn_gateway.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_firewall",
         "package": "Compute",
         "constructor": "NewComputeFirewallListResource",
@@ -208,6 +297,20 @@
         "package": "Compute",
         "constructor": "NewComputeGlobalAddressListResource",
         "file": "google/services/compute/list_compute_global_address.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_global_network_endpoint_group",
+        "package": "Compute",
+        "constructor": "NewComputeGlobalNetworkEndpointGroupListResource",
+        "file": "google/services/compute/list_compute_global_network_endpoint_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_ha_vpn_gateway",
+        "package": "Compute",
+        "constructor": "NewComputeHaVpnGatewayListResource",
+        "file": "google/services/compute/list_compute_ha_vpn_gateway.go",
         "line": 40
       },
       {
@@ -225,6 +328,20 @@
         "line": 40
       },
       {
+        "name": "google_compute_interconnect_attachment_group",
+        "package": "Compute",
+        "constructor": "NewComputeInterconnectAttachmentGroupListResource",
+        "file": "google/services/compute/list_compute_interconnect_attachment_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_interconnect_group",
+        "package": "Compute",
+        "constructor": "NewComputeInterconnectGroupListResource",
+        "file": "google/services/compute/list_compute_interconnect_group.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_node_template",
         "package": "Compute",
         "constructor": "NewComputeNodeTemplateListResource",
@@ -239,10 +356,24 @@
         "line": 40
       },
       {
+        "name": "google_compute_public_delegated_prefix",
+        "package": "Compute",
+        "constructor": "NewComputePublicDelegatedPrefixListResource",
+        "file": "google/services/compute/list_compute_public_delegated_prefix.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_region_autoscaler",
         "package": "Compute",
         "constructor": "NewComputeRegionAutoscalerListResource",
         "file": "google/services/compute/list_compute_region_autoscaler.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_commitment",
+        "package": "Compute",
+        "constructor": "NewComputeRegionCommitmentListResource",
+        "file": "google/services/compute/list_compute_region_commitment.go",
         "line": 40
       },
       {
@@ -267,6 +398,13 @@
         "line": 40
       },
       {
+        "name": "google_compute_region_network_endpoint_group",
+        "package": "Compute",
+        "constructor": "NewComputeRegionNetworkEndpointGroupListResource",
+        "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_snapshot",
         "package": "Compute",
         "constructor": "NewComputeSnapshotListResource",
@@ -278,6 +416,27 @@
         "package": "Compute",
         "constructor": "NewComputeSubnetworkListResource",
         "file": "google/services/compute/list_compute_subnetwork.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_vpn_gateway",
+        "package": "Compute",
+        "constructor": "NewComputeVpnGatewayListResource",
+        "file": "google/services/compute/list_compute_vpn_gateway.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_wire_group",
+        "package": "Compute",
+        "constructor": "NewComputeWireGroupListResource",
+        "file": "google/services/compute/list_compute_wire_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_kms_crypto_key_version",
+        "package": "KMS",
+        "constructor": "NewKMSCryptoKeyVersionListResource",
+        "file": "google/services/kms/list_kms_crypto_key_version.go",
         "line": 40
       },
       {
@@ -332,6 +491,27 @@
         "line": 38
       },
       {
+        "name": "google_folder_iam_member",
+        "package": "resourcemanager",
+        "constructor": "NewFolderIamMemberListResource",
+        "file": "google/services/resourcemanager/iam_folder.go",
+        "line": 215
+      },
+      {
+        "name": "google_project_iam_member",
+        "package": "resourcemanager",
+        "constructor": "NewProjectIamMemberListResource",
+        "file": "google/services/resourcemanager/iam_project.go",
+        "line": 178
+      },
+      {
+        "name": "google_project_service",
+        "package": "resourcemanager",
+        "constructor": "NewGoogleProjectServiceListResource",
+        "file": "google/services/resourcemanager/list_google_project_service.go",
+        "line": 37
+      },
+      {
         "name": "google_service_account",
         "package": "resourcemanager",
         "constructor": "NewGoogleServiceAccountListResource",
@@ -349,6 +529,11 @@
   },
   "by_service": {
     "bigquery": [
+      {
+        "file": "google/services/bigquery/list_bigquery_dataset.go",
+        "type_name": "google_bigquery_dataset",
+        "constructor": "NewBigQueryDatasetListResource"
+      },
       {
         "file": "google/services/bigquery/list_bigquery_dataset_access.go",
         "type_name": "google_bigquery_dataset_access",
@@ -386,6 +571,11 @@
         "constructor": "NewComputeDiskListResource"
       },
       {
+        "file": "google/services/compute/list_compute_external_vpn_gateway.go",
+        "type_name": "google_compute_external_vpn_gateway",
+        "constructor": "NewComputeExternalVpnGatewayListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_firewall.go",
         "type_name": "google_compute_firewall",
         "constructor": "NewComputeFirewallListResource"
@@ -394,6 +584,16 @@
         "file": "google/services/compute/list_compute_global_address.go",
         "type_name": "google_compute_global_address",
         "constructor": "NewComputeGlobalAddressListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_global_network_endpoint_group.go",
+        "type_name": "google_compute_global_network_endpoint_group",
+        "constructor": "NewComputeGlobalNetworkEndpointGroupListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_ha_vpn_gateway.go",
+        "type_name": "google_compute_ha_vpn_gateway",
+        "constructor": "NewComputeHaVpnGatewayListResource"
       },
       {
         "file": "google/services/compute/list_compute_https_health_check.go",
@@ -406,6 +606,16 @@
         "constructor": "NewComputeImageListResource"
       },
       {
+        "file": "google/services/compute/list_compute_interconnect_attachment_group.go",
+        "type_name": "google_compute_interconnect_attachment_group",
+        "constructor": "NewComputeInterconnectAttachmentGroupListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_interconnect_group.go",
+        "type_name": "google_compute_interconnect_group",
+        "constructor": "NewComputeInterconnectGroupListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_node_template.go",
         "type_name": "google_compute_node_template",
         "constructor": "NewComputeNodeTemplateListResource"
@@ -416,9 +626,19 @@
         "constructor": "NewComputePacketMirroringListResource"
       },
       {
+        "file": "google/services/compute/list_compute_public_delegated_prefix.go",
+        "type_name": "google_compute_public_delegated_prefix",
+        "constructor": "NewComputePublicDelegatedPrefixListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_region_autoscaler.go",
         "type_name": "google_compute_region_autoscaler",
         "constructor": "NewComputeRegionAutoscalerListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_commitment.go",
+        "type_name": "google_compute_region_commitment",
+        "constructor": "NewComputeRegionCommitmentListResource"
       },
       {
         "file": "google/services/compute/list_compute_region_composite_health_check.go",
@@ -436,6 +656,11 @@
         "constructor": "NewComputeRegionHealthSourceListResource"
       },
       {
+        "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
+        "type_name": "google_compute_region_network_endpoint_group",
+        "constructor": "NewComputeRegionNetworkEndpointGroupListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_snapshot.go",
         "type_name": "google_compute_snapshot",
         "constructor": "NewComputeSnapshotListResource"
@@ -444,6 +669,16 @@
         "file": "google/services/compute/list_compute_subnetwork.go",
         "type_name": "google_compute_subnetwork",
         "constructor": "NewComputeSubnetworkListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_vpn_gateway.go",
+        "type_name": "google_compute_vpn_gateway",
+        "constructor": "NewComputeVpnGatewayListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_wire_group.go",
+        "type_name": "google_compute_wire_group",
+        "constructor": "NewComputeWireGroupListResource"
       }
     ],
     "dns": [
@@ -451,6 +686,13 @@
         "file": "google/services/dns/list_google_dns_record_set.go",
         "type_name": "google_dns_record_set",
         "constructor": "NewGoogleDnsRecordSetListResource"
+      }
+    ],
+    "kms": [
+      {
+        "file": "google/services/kms/list_kms_crypto_key_version.go",
+        "type_name": "google_kms_crypto_key_version",
+        "constructor": "NewKMSCryptoKeyVersionListResource"
       }
     ],
     "monitoring": [
@@ -473,6 +715,11 @@
       }
     ],
     "resourcemanager": [
+      {
+        "file": "google/services/resourcemanager/list_google_project_service.go",
+        "type_name": "google_project_service",
+        "constructor": "NewGoogleProjectServiceListResource"
+      },
       {
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type_name": "google_service_account",
@@ -509,27 +756,42 @@
   "cross_check": {
     "registered_constructors": [
       "NewBigQueryDatasetAccessListResource",
+      "NewBigQueryDatasetListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
       "NewComputeAddressListResource",
       "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
+      "NewComputeExternalVpnGatewayListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeGlobalNetworkEndpointGroupListResource",
+      "NewComputeHaVpnGatewayListResource",
       "NewComputeHttpsHealthCheckListResource",
       "NewComputeImageListResource",
+      "NewComputeInterconnectAttachmentGroupListResource",
+      "NewComputeInterconnectGroupListResource",
       "NewComputeNodeTemplateListResource",
       "NewComputePacketMirroringListResource",
+      "NewComputePublicDelegatedPrefixListResource",
       "NewComputeRegionAutoscalerListResource",
+      "NewComputeRegionCommitmentListResource",
       "NewComputeRegionCompositeHealthCheckListResource",
       "NewComputeRegionHealthAggregationPolicyListResource",
       "NewComputeRegionHealthSourceListResource",
+      "NewComputeRegionNetworkEndpointGroupListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
+      "NewComputeVpnGatewayListResource",
+      "NewComputeWireGroupListResource",
+      "NewFolderIamMemberListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewKMSCryptoKeyVersionListResource",
       "NewMonitoringAlertPolicyListResource",
+      "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionListResource",
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
@@ -538,26 +800,39 @@
     ],
     "file_constructors": [
       "NewBigQueryDatasetAccessListResource",
+      "NewBigQueryDatasetListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
       "NewComputeAddressListResource",
       "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
+      "NewComputeExternalVpnGatewayListResource",
       "NewComputeFirewallListResource",
       "NewComputeGlobalAddressListResource",
+      "NewComputeGlobalNetworkEndpointGroupListResource",
+      "NewComputeHaVpnGatewayListResource",
       "NewComputeHttpsHealthCheckListResource",
       "NewComputeImageListResource",
+      "NewComputeInterconnectAttachmentGroupListResource",
+      "NewComputeInterconnectGroupListResource",
       "NewComputeNodeTemplateListResource",
       "NewComputePacketMirroringListResource",
+      "NewComputePublicDelegatedPrefixListResource",
       "NewComputeRegionAutoscalerListResource",
+      "NewComputeRegionCommitmentListResource",
       "NewComputeRegionCompositeHealthCheckListResource",
       "NewComputeRegionHealthAggregationPolicyListResource",
       "NewComputeRegionHealthSourceListResource",
+      "NewComputeRegionNetworkEndpointGroupListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
+      "NewComputeVpnGatewayListResource",
+      "NewComputeWireGroupListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewKMSCryptoKeyVersionListResource",
       "NewMonitoringAlertPolicyListResource",
       "NewPubsubSubscriptionListResource",
       "NewPubsubTopicListResource",
@@ -566,26 +841,39 @@
       "NewStorageHmacKeyListResource"
     ],
     "file_type_names": [
+      "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
       "google_compute_cross_site_network",
       "google_compute_disk",
+      "google_compute_external_vpn_gateway",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_global_network_endpoint_group",
+      "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_interconnect_attachment_group",
+      "google_compute_interconnect_group",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
+      "google_compute_region_commitment",
       "google_compute_region_composite_health_check",
       "google_compute_region_health_aggregation_policy",
       "google_compute_region_health_source",
+      "google_compute_region_network_endpoint_group",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_compute_vpn_gateway",
+      "google_compute_wire_group",
       "google_dns_record_set",
+      "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
+      "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
       "google_secret_manager_secret",
@@ -594,30 +882,37 @@
       "google_storage_bucket",
       "google_storage_hmac_key"
     ],
-    "missing_files_for_registration": [],
+    "missing_files_for_registration": [
+      "NewFolderIamMemberListResource",
+      "NewProjectIamMemberListResource"
+    ],
     "orphan_files_without_registration": [],
-    "registration_count": 27,
-    "file_type_name_count": 27,
-    "signals_agree": true
+    "registration_count": 42,
+    "file_type_name_count": 40,
+    "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 11,
+    "services_with_list": 12,
     "rows": [
       {
         "service": "compute",
-        "list_resources": 15
+        "list_resources": 25
+      },
+      {
+        "service": "bigquery",
+        "list_resources": 2
       },
       {
         "service": "pubsub",
         "list_resources": 2
       },
       {
-        "service": "storage",
+        "service": "resourcemanager",
         "list_resources": 2
       },
       {
-        "service": "bigquery",
-        "list_resources": 1
+        "service": "storage",
+        "list_resources": 2
       },
       {
         "service": "cloudrun",
@@ -632,11 +927,11 @@
         "list_resources": 1
       },
       {
-        "service": "monitoring",
+        "service": "kms",
         "list_resources": 1
       },
       {
-        "service": "resourcemanager",
+        "service": "monitoring",
         "list_resources": 1
       },
       {
@@ -651,6 +946,7 @@
     "service_resources": {
       "bigquery": {
         "list_resources": [
+          "google_bigquery_dataset",
           "google_bigquery_dataset_access"
         ]
       },
@@ -669,23 +965,38 @@
           "google_compute_address",
           "google_compute_cross_site_network",
           "google_compute_disk",
+          "google_compute_external_vpn_gateway",
           "google_compute_firewall",
           "google_compute_global_address",
+          "google_compute_global_network_endpoint_group",
+          "google_compute_ha_vpn_gateway",
           "google_compute_https_health_check",
           "google_compute_image",
+          "google_compute_interconnect_attachment_group",
+          "google_compute_interconnect_group",
           "google_compute_node_template",
           "google_compute_packet_mirroring",
+          "google_compute_public_delegated_prefix",
           "google_compute_region_autoscaler",
+          "google_compute_region_commitment",
           "google_compute_region_composite_health_check",
           "google_compute_region_health_aggregation_policy",
           "google_compute_region_health_source",
+          "google_compute_region_network_endpoint_group",
           "google_compute_snapshot",
-          "google_compute_subnetwork"
+          "google_compute_subnetwork",
+          "google_compute_vpn_gateway",
+          "google_compute_wire_group"
         ]
       },
       "dns": {
         "list_resources": [
           "google_dns_record_set"
+        ]
+      },
+      "kms": {
+        "list_resources": [
+          "google_kms_crypto_key_version"
         ]
       },
       "monitoring": {
@@ -701,6 +1012,7 @@
       },
       "resourcemanager": {
         "list_resources": [
+          "google_project_service",
           "google_service_account"
         ]
       },
@@ -723,30 +1035,12 @@
     }
   },
   "validation": {
-    "matches": true,
-    "dashboard_list_resources": 16,
-    "code_list_resources": 27,
-    "registered_count": 27,
-    "signals_agree": true,
+    "matches": false,
+    "dashboard_list_resources": 29,
+    "code_list_resources": 40,
+    "registered_count": 42,
+    "signals_agree": false,
     "dashboard_list_resource_names": [
-      "google_bigquery_dataset_access",
-      "google_cloud_run_service",
-      "google_cloud_scheduler_job",
-      "google_compute_disk",
-      "google_compute_firewall",
-      "google_compute_global_address",
-      "google_compute_image",
-      "google_compute_snapshot",
-      "google_compute_subnetwork",
-      "google_dns_record_set",
-      "google_monitoring_alert_policy",
-      "google_pubsub_subscription",
-      "google_service_account",
-      "google_sql_database",
-      "google_storage_bucket",
-      "google_storage_hmac_key"
-    ],
-    "code_list_resource_names": [
       "google_bigquery_dataset_access",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
@@ -757,6 +1051,7 @@
       "google_compute_global_address",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_machine_image",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
       "google_compute_region_autoscaler",
@@ -767,6 +1062,7 @@
       "google_compute_subnetwork",
       "google_dns_record_set",
       "google_monitoring_alert_policy",
+      "google_project_iam_member",
       "google_pubsub_subscription",
       "google_pubsub_topic",
       "google_secret_manager_secret",
@@ -775,20 +1071,67 @@
       "google_storage_bucket",
       "google_storage_hmac_key"
     ],
-    "only_in_registry": [],
-    "only_in_source": [
+    "code_list_resource_names": [
+      "google_bigquery_dataset",
+      "google_bigquery_dataset_access",
+      "google_cloud_run_service",
+      "google_cloud_scheduler_job",
       "google_compute_address",
       "google_compute_cross_site_network",
+      "google_compute_disk",
+      "google_compute_external_vpn_gateway",
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_global_network_endpoint_group",
+      "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
+      "google_compute_image",
+      "google_compute_interconnect_attachment_group",
+      "google_compute_interconnect_group",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
+      "google_compute_region_commitment",
       "google_compute_region_composite_health_check",
       "google_compute_region_health_aggregation_policy",
       "google_compute_region_health_source",
+      "google_compute_region_network_endpoint_group",
+      "google_compute_snapshot",
+      "google_compute_subnetwork",
+      "google_compute_vpn_gateway",
+      "google_compute_wire_group",
+      "google_dns_record_set",
+      "google_kms_crypto_key_version",
+      "google_monitoring_alert_policy",
+      "google_project_service",
+      "google_pubsub_subscription",
       "google_pubsub_topic",
-      "google_secret_manager_secret"
+      "google_secret_manager_secret",
+      "google_service_account",
+      "google_sql_database",
+      "google_storage_bucket",
+      "google_storage_hmac_key"
     ],
-    "registry_is_subset": true
+    "only_in_registry": [
+      "google_compute_machine_image",
+      "google_project_iam_member"
+    ],
+    "only_in_source": [
+      "google_bigquery_dataset",
+      "google_compute_external_vpn_gateway",
+      "google_compute_global_network_endpoint_group",
+      "google_compute_ha_vpn_gateway",
+      "google_compute_interconnect_attachment_group",
+      "google_compute_interconnect_group",
+      "google_compute_public_delegated_prefix",
+      "google_compute_region_commitment",
+      "google_compute_region_network_endpoint_group",
+      "google_compute_vpn_gateway",
+      "google_compute_wire_group",
+      "google_kms_crypto_key_version",
+      "google_project_service"
+    ],
+    "registry_is_subset": false
   }
 }

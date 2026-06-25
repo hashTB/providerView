@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T11:50:08.229416",
+  "generated_at": "2026-06-25T10:30:13.818959",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "9b078d00276d35d63d4604b22cd34cfcd0cee862"
+    "commit": "259919d54b344e0888ffd292c99530895584e70a"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 149
+    "list_resources": 152
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3100,
+    "stdout_line_count": 3101,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 8,
-        "implemented": 147,
-        "total": 1657
+        "percent": 9,
+        "implemented": 150,
+        "total": 1658
       },
       "service_count": 239,
       "services": [
@@ -78,8 +78,8 @@
         },
         {
           "service": "appautoscaling",
-          "percent": 33,
-          "implemented": 1,
+          "percent": 66,
+          "implemented": 2,
           "total": 3
         },
         {
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 33,
-          "implemented": 6,
-          "total": 18
+          "percent": 36,
+          "implemented": 7,
+          "total": 19
         },
         {
           "service": "billing",
@@ -534,8 +534,8 @@
         },
         {
           "service": "dynamodb",
-          "percent": 22,
-          "implemented": 2,
+          "percent": 33,
+          "implemented": 3,
           "total": 9
         },
         {
@@ -1586,7 +1586,8 @@
             "appautoscaling/target.go"
           ],
           "list_resources": [
-            "appautoscaling/policy.go"
+            "appautoscaling/policy.go",
+            "appautoscaling/target.go"
           ]
         },
         "appconfig": {
@@ -1828,6 +1829,7 @@
             "bedrockagentcore/online_evaluation_config.go",
             "bedrockagentcore/policy.go",
             "bedrockagentcore/policy_engine.go",
+            "bedrockagentcore/registry.go",
             "bedrockagentcore/resource_policy.go",
             "bedrockagentcore/token_vault_cmk.go",
             "bedrockagentcore/workload_identity.go"
@@ -1838,6 +1840,7 @@
             "bedrockagentcore/online_evaluation_config.go",
             "bedrockagentcore/policy.go",
             "bedrockagentcore/policy_engine.go",
+            "bedrockagentcore/registry.go",
             "bedrockagentcore/resource_policy.go"
           ]
         },
@@ -2392,7 +2395,8 @@
           ],
           "list_resources": [
             "dynamodb/global_secondary_index.go",
-            "dynamodb/table.go"
+            "dynamodb/table.go",
+            "dynamodb/table_item.go"
           ]
         },
         "ec2": {
@@ -4510,7 +4514,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-06-18 11:50:08 UTC"
+      "last_updated": "2026-06-25 10:30:13 UTC"
     }
   },
   "service_coverage": {
@@ -4536,9 +4540,9 @@
       },
       {
         "service": "bedrockagentcore",
-        "percent": 33,
-        "implemented": 6,
-        "total": 18
+        "percent": 36,
+        "implemented": 7,
+        "total": 19
       },
       {
         "service": "apigateway",
@@ -4730,7 +4734,8 @@
           "appautoscaling/target.go"
         ],
         "list_resources": [
-          "appautoscaling/policy.go"
+          "appautoscaling/policy.go",
+          "appautoscaling/target.go"
         ]
       },
       "appconfig": {
@@ -4972,6 +4977,7 @@
           "bedrockagentcore/online_evaluation_config.go",
           "bedrockagentcore/policy.go",
           "bedrockagentcore/policy_engine.go",
+          "bedrockagentcore/registry.go",
           "bedrockagentcore/resource_policy.go",
           "bedrockagentcore/token_vault_cmk.go",
           "bedrockagentcore/workload_identity.go"
@@ -4982,6 +4988,7 @@
           "bedrockagentcore/online_evaluation_config.go",
           "bedrockagentcore/policy.go",
           "bedrockagentcore/policy_engine.go",
+          "bedrockagentcore/registry.go",
           "bedrockagentcore/resource_policy.go"
         ]
       },
@@ -5536,7 +5543,8 @@
         ],
         "list_resources": [
           "dynamodb/global_secondary_index.go",
-          "dynamodb/table.go"
+          "dynamodb/table.go",
+          "dynamodb/table_item.go"
         ]
       },
       "ec2": {
@@ -7657,9 +7665,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 149,
-    "script_implemented_list": 147,
-    "script_total_resources": 1657,
-    "script_percent": 8
+    "dashboard_list_resources": 152,
+    "script_implemented_list": 150,
+    "script_total_resources": 1658,
+    "script_percent": 9
   }
 }
