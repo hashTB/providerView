@@ -12830,7 +12830,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:15.357721"
+    "docs_refreshed_at": "2026-07-01T11:40:00.361425"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -37081,7 +37081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:15.820991"
+    "docs_refreshed_at": "2026-07-01T11:40:00.854923"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37515,7 +37515,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:16.169050"
+    "docs_refreshed_at": "2026-07-01T11:40:01.275122"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -37545,6 +37545,11 @@
           "title": "mssql_execute_job",
           "slug": "mssql_execute_job",
           "subcategory": "Database"
+        },
+        {
+          "title": "netapp_volume_bucket_credentials",
+          "slug": "netapp_volume_bucket_credentials",
+          "subcategory": "NetApp"
         },
         {
           "title": "virtual_machine_power",
@@ -38734,6 +38739,16 @@
           "subcategory": "NetApp"
         },
         {
+          "title": "netapp_volume_bucket",
+          "slug": "netapp_volume_bucket",
+          "subcategory": "NetApp"
+        },
+        {
+          "title": "netapp_volume_bucket_with_server",
+          "slug": "netapp_volume_bucket_with_server",
+          "subcategory": "NetApp"
+        },
+        {
           "title": "netapp_volume_group_oracle",
           "slug": "netapp_volume_group_oracle",
           "subcategory": "NetApp"
@@ -39722,6 +39737,11 @@
           "subcategory": "Network"
         },
         {
+          "title": "netapp_volume_bucket",
+          "slug": "netapp_volume_bucket",
+          "subcategory": "NetApp"
+        },
+        {
           "title": "network_ddos_protection_plan",
           "slug": "network_ddos_protection_plan",
           "subcategory": "Network"
@@ -39814,6 +39834,11 @@
         {
           "title": "signalr_service",
           "slug": "signalr_service",
+          "subcategory": "Messaging"
+        },
+        {
+          "title": "signalr_service_custom_certificate",
+          "slug": "signalr_service_custom_certificate",
           "subcategory": "Messaging"
         },
         {
@@ -43291,6 +43316,16 @@
           "subcategory": "NetApp"
         },
         {
+          "title": "netapp_volume_bucket",
+          "slug": "netapp_volume_bucket",
+          "subcategory": "NetApp"
+        },
+        {
+          "title": "netapp_volume_bucket_with_server",
+          "slug": "netapp_volume_bucket_with_server",
+          "subcategory": "NetApp"
+        },
+        {
           "title": "netapp_volume_group_oracle",
           "slug": "netapp_volume_group_oracle",
           "subcategory": "NetApp"
@@ -45567,7 +45602,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:16.587089"
+    "docs_refreshed_at": "2026-07-01T11:40:02.094481"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45916,7 +45951,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:16.953657"
+    "docs_refreshed_at": "2026-07-01T11:40:02.557140"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -46229,6 +46264,21 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "agent_registry_agent",
+          "slug": "agent_registry_agent",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_endpoint",
+          "slug": "agent_registry_endpoint",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_mcp_server",
+          "slug": "agent_registry_mcp_server",
+          "subcategory": "Agent Registry"
+        },
+        {
           "title": "alloydb_cluster",
           "slug": "alloydb_cluster",
           "subcategory": "AlloyDB"
@@ -46466,6 +46516,11 @@
         {
           "title": "biglake_hive_catalog_iam_policy",
           "slug": "biglake_hive_catalog_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database_iam_policy",
+          "slug": "biglake_hive_database_iam_policy",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -46814,6 +46869,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_firewall_policy_iam_policy",
+          "slug": "compute_firewall_policy_iam_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_forwarding_rule",
           "slug": "compute_forwarding_rule",
           "subcategory": "Compute Engine"
@@ -46871,6 +46931,11 @@
         {
           "title": "compute_instance_group_manager",
           "slug": "compute_instance_group_manager",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_instance_groups",
+          "slug": "compute_instance_groups",
           "subcategory": "Compute Engine"
         },
         {
@@ -46949,6 +47014,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_firewall_policy_iam_policy",
+          "slug": "compute_network_firewall_policy_iam_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_peering",
           "slug": "compute_network_peering",
           "subcategory": "Compute Engine"
@@ -47011,6 +47081,11 @@
         {
           "title": "compute_region_network_endpoint_group",
           "slug": "compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_firewall_policy_iam_policy",
+          "slug": "compute_region_network_firewall_policy_iam_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -48359,8 +48434,18 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_folder_intelligence_findings_summary",
+          "slug": "storage_control_folder_intelligence_findings_summary",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_organization_intelligence_config",
           "slug": "storage_control_organization_intelligence_config",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_organization_intelligence_findings_summary",
+          "slug": "storage_control_organization_intelligence_findings_summary",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -48386,6 +48471,11 @@
         {
           "title": "storage_control_project_intelligence_findings",
           "slug": "storage_control_project_intelligence_findings",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_findings_summary",
+          "slug": "storage_control_project_intelligence_findings_summary",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -48737,6 +48827,11 @@
       ],
       "list-resources": [
         {
+          "title": "google_bigquery_dataset",
+          "slug": "google_bigquery_dataset",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "google_bigquery_dataset_access",
           "slug": "google_bigquery_dataset_access",
           "subcategory": "BigQuery"
@@ -48767,6 +48862,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_external_vpn_gateway",
+          "slug": "google_compute_external_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_firewall",
           "slug": "google_compute_firewall",
           "subcategory": "Compute Engine"
@@ -48777,6 +48877,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_global_network_endpoint_group",
+          "slug": "google_compute_global_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_ha_vpn_gateway",
+          "slug": "google_compute_ha_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_https_health_check",
           "slug": "google_compute_https_health_check",
           "subcategory": "Compute Engine"
@@ -48784,6 +48894,16 @@
         {
           "title": "google_compute_image",
           "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_interconnect_attachment_group",
+          "slug": "google_compute_interconnect_attachment_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_interconnect_group",
+          "slug": "google_compute_interconnect_group",
           "subcategory": "Compute Engine"
         },
         {
@@ -48802,8 +48922,18 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_public_delegated_prefix",
+          "slug": "google_compute_public_delegated_prefix",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_region_autoscaler",
           "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_commitment",
+          "slug": "google_compute_region_commitment",
           "subcategory": "Compute Engine"
         },
         {
@@ -48822,6 +48952,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_region_network_endpoint_group",
+          "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_snapshot",
           "slug": "google_compute_snapshot",
           "subcategory": "Compute Engine"
@@ -48832,9 +48967,29 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_vpn_gateway",
+          "slug": "google_compute_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_wire_group",
+          "slug": "google_compute_wire_group",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_dns_record_set",
           "slug": "google_dns_record_set",
           "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "google_folder_iam_member",
+          "slug": "google_folder_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_kms_crypto_key_version",
+          "slug": "google_kms_crypto_key_version",
+          "subcategory": "Cloud Key Management Service"
         },
         {
           "title": "google_monitoring_alert_policy",
@@ -48842,8 +48997,18 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "google_project",
+          "slug": "google_project",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_project_iam_member",
           "slug": "google_project_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_project_service",
+          "slug": "google_project_service",
           "subcategory": "Cloud Platform"
         },
         {
@@ -48989,6 +49154,16 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agent_registry_binding",
+          "slug": "agent_registry_binding",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_service",
+          "slug": "agent_registry_service",
+          "subcategory": "Agent Registry"
         },
         {
           "title": "alloydb_backup",
@@ -49336,6 +49511,11 @@
           "subcategory": "App Hub"
         },
         {
+          "title": "artifact_registry_project_config",
+          "slug": "artifact_registry_project_config",
+          "subcategory": "Artifact Registry"
+        },
+        {
           "title": "artifact_registry_repository",
           "slug": "artifact_registry_repository",
           "subcategory": "Artifact Registry"
@@ -49443,6 +49623,16 @@
         {
           "title": "biglake_hive_catalog_iam",
           "slug": "biglake_hive_catalog_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database",
+          "slug": "biglake_hive_database",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database_iam",
+          "slug": "biglake_hive_database_iam",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -50181,6 +50371,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_bulk_per_instance_config",
+          "slug": "compute_bulk_per_instance_config",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_cross_site_network",
           "slug": "compute_cross_site_network",
           "subcategory": "Compute Engine"
@@ -50223,6 +50418,11 @@
         {
           "title": "compute_firewall_policy_association",
           "slug": "compute_firewall_policy_association",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_firewall_policy_iam",
+          "slug": "compute_firewall_policy_iam",
           "subcategory": "Compute Engine"
         },
         {
@@ -50436,6 +50636,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_firewall_policy_iam",
+          "slug": "compute_network_firewall_policy_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_firewall_policy_packet_mirroring_rule",
           "slug": "compute_network_firewall_policy_packet_mirroring_rule",
           "subcategory": "Compute Engine"
@@ -50636,6 +50841,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_network_firewall_policy_iam",
+          "slug": "compute_region_network_firewall_policy_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_region_network_firewall_policy_rule",
           "slug": "compute_region_network_firewall_policy_rule",
           "subcategory": "Compute Engine"
@@ -50643,6 +50853,11 @@
         {
           "title": "compute_region_network_firewall_policy_with_rules",
           "slug": "compute_region_network_firewall_policy_with_rules",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_policy",
+          "slug": "compute_region_network_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -50883,6 +51098,11 @@
         {
           "title": "compute_wire_group",
           "slug": "compute_wire_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_zone_vm_extension_policy",
+          "slug": "compute_zone_vm_extension_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -53416,6 +53636,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_cloud_exadata_infrastructure_exascale_config",
+          "slug": "oracle_database_cloud_exadata_infrastructure_exascale_config",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_cloud_vm_cluster",
           "slug": "oracle_database_cloud_vm_cluster",
           "subcategory": "Oracle Database"
@@ -54346,6 +54571,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_model_garden_enable_model",
+          "slug": "vertex_ai_model_garden_enable_model",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_rag_engine_config",
           "slug": "vertex_ai_rag_engine_config",
           "subcategory": "Vertex AI"
@@ -54477,7 +54707,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:17.393377"
+    "docs_refreshed_at": "2026-07-01T11:40:03.040307"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -54523,6 +54753,21 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "agent_registry_agent",
+          "slug": "agent_registry_agent",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_endpoint",
+          "slug": "agent_registry_endpoint",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_mcp_server",
+          "slug": "agent_registry_mcp_server",
+          "subcategory": "Agent Registry"
+        },
+        {
           "title": "alloydb_cluster",
           "slug": "alloydb_cluster",
           "subcategory": "AlloyDB"
@@ -54760,6 +55005,11 @@
         {
           "title": "biglake_hive_catalog_iam_policy",
           "slug": "biglake_hive_catalog_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database_iam_policy",
+          "slug": "biglake_hive_database_iam_policy",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -55108,6 +55358,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_firewall_policy_iam_policy",
+          "slug": "compute_firewall_policy_iam_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_forwarding_rule",
           "slug": "compute_forwarding_rule",
           "subcategory": "Compute Engine"
@@ -55165,6 +55420,11 @@
         {
           "title": "compute_instance_group_manager",
           "slug": "compute_instance_group_manager",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_instance_groups",
+          "slug": "compute_instance_groups",
           "subcategory": "Compute Engine"
         },
         {
@@ -55243,6 +55503,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_firewall_policy_iam_policy",
+          "slug": "compute_network_firewall_policy_iam_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_peering",
           "slug": "compute_network_peering",
           "subcategory": "Compute Engine"
@@ -55305,6 +55570,11 @@
         {
           "title": "compute_region_network_endpoint_group",
           "slug": "compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_firewall_policy_iam_policy",
+          "slug": "compute_region_network_firewall_policy_iam_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -56653,8 +56923,18 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_folder_intelligence_findings_summary",
+          "slug": "storage_control_folder_intelligence_findings_summary",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_organization_intelligence_config",
           "slug": "storage_control_organization_intelligence_config",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_organization_intelligence_findings_summary",
+          "slug": "storage_control_organization_intelligence_findings_summary",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -56680,6 +56960,11 @@
         {
           "title": "storage_control_project_intelligence_findings",
           "slug": "storage_control_project_intelligence_findings",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_intelligence_findings_summary",
+          "slug": "storage_control_project_intelligence_findings_summary",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -57031,6 +57316,11 @@
       ],
       "list-resources": [
         {
+          "title": "google_bigquery_dataset",
+          "slug": "google_bigquery_dataset",
+          "subcategory": "BigQuery"
+        },
+        {
           "title": "google_bigquery_dataset_access",
           "slug": "google_bigquery_dataset_access",
           "subcategory": "BigQuery"
@@ -57061,6 +57351,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_external_vpn_gateway",
+          "slug": "google_compute_external_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_firewall",
           "slug": "google_compute_firewall",
           "subcategory": "Compute Engine"
@@ -57071,6 +57366,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_global_network_endpoint_group",
+          "slug": "google_compute_global_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_ha_vpn_gateway",
+          "slug": "google_compute_ha_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_https_health_check",
           "slug": "google_compute_https_health_check",
           "subcategory": "Compute Engine"
@@ -57078,6 +57383,16 @@
         {
           "title": "google_compute_image",
           "slug": "google_compute_image",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_interconnect_attachment_group",
+          "slug": "google_compute_interconnect_attachment_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_interconnect_group",
+          "slug": "google_compute_interconnect_group",
           "subcategory": "Compute Engine"
         },
         {
@@ -57096,8 +57411,18 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_public_delegated_prefix",
+          "slug": "google_compute_public_delegated_prefix",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_region_autoscaler",
           "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_commitment",
+          "slug": "google_compute_region_commitment",
           "subcategory": "Compute Engine"
         },
         {
@@ -57116,6 +57441,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_region_network_endpoint_group",
+          "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_snapshot",
           "slug": "google_compute_snapshot",
           "subcategory": "Compute Engine"
@@ -57126,9 +57456,29 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_vpn_gateway",
+          "slug": "google_compute_vpn_gateway",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_wire_group",
+          "slug": "google_compute_wire_group",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_dns_record_set",
           "slug": "google_dns_record_set",
           "subcategory": "Cloud DNS"
+        },
+        {
+          "title": "google_folder_iam_member",
+          "slug": "google_folder_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_kms_crypto_key_version",
+          "slug": "google_kms_crypto_key_version",
+          "subcategory": "Cloud Key Management Service"
         },
         {
           "title": "google_monitoring_alert_policy",
@@ -57136,8 +57486,18 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "google_project",
+          "slug": "google_project",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_project_iam_member",
           "slug": "google_project_iam_member",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_project_service",
+          "slug": "google_project_service",
           "subcategory": "Cloud Platform"
         },
         {
@@ -57283,6 +57643,16 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agent_registry_binding",
+          "slug": "agent_registry_binding",
+          "subcategory": "Agent Registry"
+        },
+        {
+          "title": "agent_registry_service",
+          "slug": "agent_registry_service",
+          "subcategory": "Agent Registry"
         },
         {
           "title": "alloydb_backup",
@@ -57630,6 +58000,11 @@
           "subcategory": "App Hub"
         },
         {
+          "title": "artifact_registry_project_config",
+          "slug": "artifact_registry_project_config",
+          "subcategory": "Artifact Registry"
+        },
+        {
           "title": "artifact_registry_repository",
           "slug": "artifact_registry_repository",
           "subcategory": "Artifact Registry"
@@ -57737,6 +58112,16 @@
         {
           "title": "biglake_hive_catalog_iam",
           "slug": "biglake_hive_catalog_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database",
+          "slug": "biglake_hive_database",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_database_iam",
+          "slug": "biglake_hive_database_iam",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -58475,6 +58860,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_bulk_per_instance_config",
+          "slug": "compute_bulk_per_instance_config",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_cross_site_network",
           "slug": "compute_cross_site_network",
           "subcategory": "Compute Engine"
@@ -58517,6 +58907,11 @@
         {
           "title": "compute_firewall_policy_association",
           "slug": "compute_firewall_policy_association",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_firewall_policy_iam",
+          "slug": "compute_firewall_policy_iam",
           "subcategory": "Compute Engine"
         },
         {
@@ -58730,6 +59125,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_network_firewall_policy_iam",
+          "slug": "compute_network_firewall_policy_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_network_firewall_policy_packet_mirroring_rule",
           "slug": "compute_network_firewall_policy_packet_mirroring_rule",
           "subcategory": "Compute Engine"
@@ -58930,6 +59330,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "compute_region_network_firewall_policy_iam",
+          "slug": "compute_region_network_firewall_policy_iam",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "compute_region_network_firewall_policy_rule",
           "slug": "compute_region_network_firewall_policy_rule",
           "subcategory": "Compute Engine"
@@ -58937,6 +59342,11 @@
         {
           "title": "compute_region_network_firewall_policy_with_rules",
           "slug": "compute_region_network_firewall_policy_with_rules",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_policy",
+          "slug": "compute_region_network_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -59177,6 +59587,11 @@
         {
           "title": "compute_wire_group",
           "slug": "compute_wire_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_zone_vm_extension_policy",
+          "slug": "compute_zone_vm_extension_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -61710,6 +62125,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_cloud_exadata_infrastructure_exascale_config",
+          "slug": "oracle_database_cloud_exadata_infrastructure_exascale_config",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_cloud_vm_cluster",
           "slug": "oracle_database_cloud_vm_cluster",
           "subcategory": "Oracle Database"
@@ -62640,6 +63060,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_model_garden_enable_model",
+          "slug": "vertex_ai_model_garden_enable_model",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_rag_engine_config",
           "slug": "vertex_ai_rag_engine_config",
           "subcategory": "Vertex AI"
@@ -62771,7 +63196,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-06-25T10:29:17.815903"
+    "docs_refreshed_at": "2026-07-01T11:40:03.690480"
   },
   "4ek0/neko": {
     "docs": {

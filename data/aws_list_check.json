@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T10:30:13.818959",
+  "generated_at": "2026-07-01T11:40:58.960956",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "259919d54b344e0888ffd292c99530895584e70a"
+    "commit": "ca6b70c6201ce8c9c3302b514807d99583fff910"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -18,13 +18,13 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3101,
+    "stdout_line_count": 3104,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 9,
-        "implemented": 150,
-        "total": 1658
+        "implemented": 153,
+        "total": 1661
       },
       "service_count": 239,
       "services": [
@@ -42,8 +42,8 @@
         },
         {
           "service": "acm",
-          "percent": 50,
-          "implemented": 1,
+          "percent": 100,
+          "implemented": 2,
           "total": 2
         },
         {
@@ -194,7 +194,7 @@
           "service": "bedrock",
           "percent": 0,
           "implemented": 0,
-          "total": 6
+          "total": 8
         },
         {
           "service": "bedrockagent",
@@ -708,8 +708,8 @@
         },
         {
           "service": "iam",
-          "percent": 22,
-          "implemented": 8,
+          "percent": 25,
+          "implemented": 9,
           "total": 35
         },
         {
@@ -1038,9 +1038,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 33,
-          "implemented": 1,
-          "total": 3
+          "percent": 50,
+          "implemented": 2,
+          "total": 4
         },
         {
           "service": "pipes",
@@ -1485,7 +1485,8 @@
             "acm/certificate_validation.go"
           ],
           "list_resources": [
-            "acm/certificate.go"
+            "acm/certificate.go",
+            "acm/certificate_validation.go"
           ]
         },
         "acmpca": {
@@ -1790,11 +1791,13 @@
         "bedrock": {
           "all_resources": [
             "bedrock/custom_model.go",
+            "bedrock/foundation_model_agreement.go",
             "bedrock/guardrail.go",
             "bedrock/guardrail_version.go",
             "bedrock/inference_profile.go",
             "bedrock/model_invocation_logging_configuration.go",
-            "bedrock/provisioned_model_throughput.go"
+            "bedrock/provisioned_model_throughput.go",
+            "bedrock/use_case_for_model_access.go"
           ],
           "list_resources": []
         },
@@ -2963,6 +2966,7 @@
             "iam/access_key.go",
             "iam/group_policy_attachment.go",
             "iam/policy.go",
+            "iam/policy_attachment.go",
             "iam/role.go",
             "iam/role_policy.go",
             "iam/role_policy_attachment.go",
@@ -3578,10 +3582,12 @@
           "all_resources": [
             "pinpointsmsvoicev2/configuration_set.go",
             "pinpointsmsvoicev2/event_destination.go",
-            "pinpointsmsvoicev2/phone_number.go"
+            "pinpointsmsvoicev2/phone_number.go",
+            "pinpointsmsvoicev2/pool.go"
           ],
           "list_resources": [
-            "pinpointsmsvoicev2/event_destination.go"
+            "pinpointsmsvoicev2/event_destination.go",
+            "pinpointsmsvoicev2/pool.go"
           ]
         },
         "pipes": {
@@ -4514,7 +4520,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-06-25 10:30:13 UTC"
+      "last_updated": "2026-07-01 11:40:58 UTC"
     }
   },
   "service_coverage": {
@@ -4534,8 +4540,8 @@
       },
       {
         "service": "iam",
-        "percent": 22,
-        "implemented": 8,
+        "percent": 25,
+        "implemented": 9,
         "total": 35
       },
       {
@@ -4633,7 +4639,8 @@
           "acm/certificate_validation.go"
         ],
         "list_resources": [
-          "acm/certificate.go"
+          "acm/certificate.go",
+          "acm/certificate_validation.go"
         ]
       },
       "acmpca": {
@@ -4938,11 +4945,13 @@
       "bedrock": {
         "all_resources": [
           "bedrock/custom_model.go",
+          "bedrock/foundation_model_agreement.go",
           "bedrock/guardrail.go",
           "bedrock/guardrail_version.go",
           "bedrock/inference_profile.go",
           "bedrock/model_invocation_logging_configuration.go",
-          "bedrock/provisioned_model_throughput.go"
+          "bedrock/provisioned_model_throughput.go",
+          "bedrock/use_case_for_model_access.go"
         ],
         "list_resources": []
       },
@@ -6111,6 +6120,7 @@
           "iam/access_key.go",
           "iam/group_policy_attachment.go",
           "iam/policy.go",
+          "iam/policy_attachment.go",
           "iam/role.go",
           "iam/role_policy.go",
           "iam/role_policy_attachment.go",
@@ -6726,10 +6736,12 @@
         "all_resources": [
           "pinpointsmsvoicev2/configuration_set.go",
           "pinpointsmsvoicev2/event_destination.go",
-          "pinpointsmsvoicev2/phone_number.go"
+          "pinpointsmsvoicev2/phone_number.go",
+          "pinpointsmsvoicev2/pool.go"
         ],
         "list_resources": [
-          "pinpointsmsvoicev2/event_destination.go"
+          "pinpointsmsvoicev2/event_destination.go",
+          "pinpointsmsvoicev2/pool.go"
         ]
       },
       "pipes": {
@@ -7666,8 +7678,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 152,
-    "script_implemented_list": 150,
-    "script_total_resources": 1658,
+    "script_implemented_list": 153,
+    "script_total_resources": 1661,
     "script_percent": 9
   }
 }

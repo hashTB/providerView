@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-25T10:30:19.199402",
+  "generated_at": "2026-07-01T11:41:04.877823",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "ff8eed449fe9103c62e43878e106b3ab2235b7d0"
+    "commit": "684233cab0a889a650bee7a5804f240519168b23"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 42,
+    "file_count": 43,
     "files": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
@@ -190,6 +190,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/resourcemanager/list_google_project.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
         "file": "google/services/resourcemanager/list_google_project_service.go",
         "type": "Handwritten",
         "registrations": 1
@@ -220,12 +225,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "c0cf649dcd4f77d0b927a4116c41104b962d6940f6fcc0fdea65587c96cf2602",
+    "sha256": "66c0e25209bf3da00d753ce45ca7bf908b9b8773a83036c28b2972a1ad1ad136",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 29
+    "list_resources": 44
   },
   "registrations": {
     "generated": [
@@ -505,6 +510,13 @@
         "line": 178
       },
       {
+        "name": "google_project",
+        "package": "resourcemanager",
+        "constructor": "NewGoogleProjectListResource",
+        "file": "google/services/resourcemanager/list_google_project.go",
+        "line": 41
+      },
+      {
         "name": "google_project_service",
         "package": "resourcemanager",
         "constructor": "NewGoogleProjectServiceListResource",
@@ -716,6 +728,11 @@
     ],
     "resourcemanager": [
       {
+        "file": "google/services/resourcemanager/list_google_project.go",
+        "type_name": "google_project",
+        "constructor": "NewGoogleProjectListResource"
+      },
+      {
         "file": "google/services/resourcemanager/list_google_project_service.go",
         "type_name": "google_project_service",
         "constructor": "NewGoogleProjectServiceListResource"
@@ -786,6 +803,7 @@
       "NewComputeWireGroupListResource",
       "NewFolderIamMemberListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -829,6 +847,7 @@
       "NewComputeVpnGatewayListResource",
       "NewComputeWireGroupListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -873,6 +892,7 @@
       "google_dns_record_set",
       "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
+      "google_project",
       "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
@@ -887,8 +907,8 @@
       "NewProjectIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 42,
-    "file_type_name_count": 40,
+    "registration_count": 43,
+    "file_type_name_count": 41,
     "signals_agree": false
   },
   "service_coverage": {
@@ -899,15 +919,15 @@
         "list_resources": 25
       },
       {
+        "service": "resourcemanager",
+        "list_resources": 3
+      },
+      {
         "service": "bigquery",
         "list_resources": 2
       },
       {
         "service": "pubsub",
-        "list_resources": 2
-      },
-      {
-        "service": "resourcemanager",
         "list_resources": 2
       },
       {
@@ -1012,6 +1032,7 @@
       },
       "resourcemanager": {
         "list_resources": [
+          "google_project",
           "google_project_service",
           "google_service_account"
         ]
@@ -1036,33 +1057,48 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 29,
-    "code_list_resources": 40,
-    "registered_count": 42,
+    "dashboard_list_resources": 44,
+    "code_list_resources": 41,
+    "registered_count": 43,
     "signals_agree": false,
     "dashboard_list_resource_names": [
+      "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
       "google_compute_cross_site_network",
       "google_compute_disk",
+      "google_compute_external_vpn_gateway",
       "google_compute_firewall",
       "google_compute_global_address",
+      "google_compute_global_network_endpoint_group",
+      "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_interconnect_attachment_group",
+      "google_compute_interconnect_group",
       "google_compute_machine_image",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
+      "google_compute_region_commitment",
       "google_compute_region_composite_health_check",
       "google_compute_region_health_aggregation_policy",
       "google_compute_region_health_source",
+      "google_compute_region_network_endpoint_group",
       "google_compute_snapshot",
       "google_compute_subnetwork",
+      "google_compute_vpn_gateway",
+      "google_compute_wire_group",
       "google_dns_record_set",
+      "google_folder_iam_member",
+      "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
+      "google_project",
       "google_project_iam_member",
+      "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
       "google_secret_manager_secret",
@@ -1104,6 +1140,7 @@
       "google_dns_record_set",
       "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
+      "google_project",
       "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
@@ -1115,23 +1152,10 @@
     ],
     "only_in_registry": [
       "google_compute_machine_image",
+      "google_folder_iam_member",
       "google_project_iam_member"
     ],
-    "only_in_source": [
-      "google_bigquery_dataset",
-      "google_compute_external_vpn_gateway",
-      "google_compute_global_network_endpoint_group",
-      "google_compute_ha_vpn_gateway",
-      "google_compute_interconnect_attachment_group",
-      "google_compute_interconnect_group",
-      "google_compute_public_delegated_prefix",
-      "google_compute_region_commitment",
-      "google_compute_region_network_endpoint_group",
-      "google_compute_vpn_gateway",
-      "google_compute_wire_group",
-      "google_kms_crypto_key_version",
-      "google_project_service"
-    ],
+    "only_in_source": [],
     "registry_is_subset": false
   }
 }
