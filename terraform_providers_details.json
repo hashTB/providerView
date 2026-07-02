@@ -567,6 +567,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_foundation_model_agreement_offers",
+          "slug": "bedrock_foundation_model_agreement_offers",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_foundation_models",
           "slug": "bedrock_foundation_models",
           "subcategory": "Bedrock"
@@ -579,6 +584,11 @@
         {
           "title": "bedrock_inference_profiles",
           "slug": "bedrock_inference_profiles",
+          "subcategory": "Bedrock"
+        },
+        {
+          "title": "bedrock_use_case_for_model_access",
+          "slug": "bedrock_use_case_for_model_access",
           "subcategory": "Bedrock"
         },
         {
@@ -1119,6 +1129,11 @@
         {
           "title": "ec2_capacity_block_offering",
           "slug": "ec2_capacity_block_offering",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "ec2_capacity_block_reservation",
+          "slug": "ec2_capacity_block_reservation",
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
@@ -4175,6 +4190,11 @@
           "subcategory": "End User Messaging SMS"
         },
         {
+          "title": "pinpointsmsvoicev2_pool",
+          "slug": "pinpointsmsvoicev2_pool",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
           "title": "route",
           "slug": "route",
           "subcategory": "VPC (Virtual Private Cloud)"
@@ -5434,6 +5454,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_foundation_model_agreement",
+          "slug": "bedrock_foundation_model_agreement",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_guardrail",
           "slug": "bedrock_guardrail",
           "subcategory": "Bedrock"
@@ -5456,6 +5481,11 @@
         {
           "title": "bedrock_provisioned_model_throughput",
           "slug": "bedrock_provisioned_model_throughput",
+          "subcategory": "Bedrock"
+        },
+        {
+          "title": "bedrock_use_case_for_model_access",
+          "slug": "bedrock_use_case_for_model_access",
           "subcategory": "Bedrock"
         },
         {
@@ -9944,6 +9974,11 @@
           "subcategory": "End User Messaging SMS"
         },
         {
+          "title": "pinpointsmsvoicev2_pool",
+          "slug": "pinpointsmsvoicev2_pool",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
           "title": "pipes_pipe",
           "slug": "pipes_pipe",
           "subcategory": "EventBridge Pipes"
@@ -12830,7 +12865,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:00.361425"
+    "docs_refreshed_at": "2026-07-02T10:41:50.724591"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14467,6 +14502,31 @@
           "subcategory": ""
         },
         {
+          "title": "certificatemanager_acme_domain_validation",
+          "slug": "certificatemanager_acme_domain_validation",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_endpoint",
+          "slug": "certificatemanager_acme_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_endpoints",
+          "slug": "certificatemanager_acme_endpoints",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_external_account_binding",
+          "slug": "certificatemanager_acme_external_account_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_external_account_bindings",
+          "slug": "certificatemanager_acme_external_account_bindings",
+          "subcategory": ""
+        },
+        {
           "title": "chatbot_custom_action",
           "slug": "chatbot_custom_action",
           "subcategory": ""
@@ -15334,6 +15394,16 @@
         {
           "title": "config_organization_conformance_packs",
           "slug": "config_organization_conformance_packs",
+          "subcategory": ""
+        },
+        {
+          "title": "config_remediation_configuration",
+          "slug": "config_remediation_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "config_remediation_configurations",
+          "slug": "config_remediation_configurations",
           "subcategory": ""
         },
         {
@@ -18317,6 +18387,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_data_catalog_encryption_settings",
+          "slug": "glue_data_catalog_encryption_settings",
+          "subcategory": ""
+        },
+        {
           "title": "glue_identity_center_configuration",
           "slug": "glue_identity_center_configuration",
           "subcategory": ""
@@ -20627,6 +20702,11 @@
           "subcategory": ""
         },
         {
+          "title": "medialive_node",
+          "slug": "medialive_node",
+          "subcategory": ""
+        },
+        {
           "title": "medialive_sdi_source",
           "slug": "medialive_sdi_source",
           "subcategory": ""
@@ -21617,6 +21697,16 @@
           "subcategory": ""
         },
         {
+          "title": "outposts_site",
+          "slug": "outposts_site",
+          "subcategory": ""
+        },
+        {
+          "title": "outposts_sites",
+          "slug": "outposts_sites",
+          "subcategory": ""
+        },
+        {
           "title": "panorama_application_instance",
           "slug": "panorama_application_instance",
           "subcategory": ""
@@ -21934,6 +22024,16 @@
         {
           "title": "quicksight_folders",
           "slug": "quicksight_folders",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_o_auth_client_application",
+          "slug": "quicksight_o_auth_client_application",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_o_auth_client_applications",
+          "slug": "quicksight_o_auth_client_applications",
           "subcategory": ""
         },
         {
@@ -23102,6 +23202,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_algorithm",
+          "slug": "sagemaker_algorithm",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_algorithms",
+          "slug": "sagemaker_algorithms",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_app",
           "slug": "sagemaker_app",
           "subcategory": ""
@@ -23179,6 +23289,16 @@
         {
           "title": "sagemaker_feature_groups",
           "slug": "sagemaker_feature_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_hub",
+          "slug": "sagemaker_hub",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_hubs",
+          "slug": "sagemaker_hubs",
           "subcategory": ""
         },
         {
@@ -23459,6 +23579,16 @@
         {
           "title": "securityagent_pentest",
           "slug": "securityagent_pentest",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_security_requirement_pack",
+          "slug": "securityagent_security_requirement_pack",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_security_requirement_packs",
+          "slug": "securityagent_security_requirement_packs",
           "subcategory": ""
         },
         {
@@ -25641,6 +25771,16 @@
           "subcategory": ""
         },
         {
+          "title": "certificatemanager_acme_endpoint",
+          "slug": "certificatemanager_acme_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_external_account_binding",
+          "slug": "certificatemanager_acme_external_account_binding",
+          "subcategory": ""
+        },
+        {
           "title": "chatbot_custom_action",
           "slug": "chatbot_custom_action",
           "subcategory": ""
@@ -26008,6 +26148,11 @@
         {
           "title": "config_organization_conformance_pack",
           "slug": "config_organization_conformance_pack",
+          "subcategory": ""
+        },
+        {
+          "title": "config_remediation_configuration",
+          "slug": "config_remediation_configuration",
           "subcategory": ""
         },
         {
@@ -28746,6 +28891,11 @@
           "subcategory": ""
         },
         {
+          "title": "outposts_site",
+          "slug": "outposts_site",
+          "subcategory": ""
+        },
+        {
           "title": "panorama_application_instance",
           "slug": "panorama_application_instance",
           "subcategory": ""
@@ -28868,6 +29018,11 @@
         {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_o_auth_client_application",
+          "slug": "quicksight_o_auth_client_application",
           "subcategory": ""
         },
         {
@@ -29371,6 +29526,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_algorithm",
+          "slug": "sagemaker_algorithm",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_app",
           "slug": "sagemaker_app",
           "subcategory": ""
@@ -29403,6 +29563,11 @@
         {
           "title": "sagemaker_feature_group",
           "slug": "sagemaker_feature_group",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_hub",
+          "slug": "sagemaker_hub",
           "subcategory": ""
         },
         {
@@ -29538,6 +29703,11 @@
         {
           "title": "securityagent_application",
           "slug": "securityagent_application",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_security_requirement_pack",
+          "slug": "securityagent_security_requirement_pack",
           "subcategory": ""
         },
         {
@@ -31150,6 +31320,21 @@
           "subcategory": ""
         },
         {
+          "title": "certificatemanager_acme_domain_validation",
+          "slug": "certificatemanager_acme_domain_validation",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_endpoint",
+          "slug": "certificatemanager_acme_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_acme_external_account_binding",
+          "slug": "certificatemanager_acme_external_account_binding",
+          "subcategory": ""
+        },
+        {
           "title": "chatbot_custom_action",
           "slug": "chatbot_custom_action",
           "subcategory": ""
@@ -31637,6 +31822,11 @@
         {
           "title": "config_organization_conformance_pack",
           "slug": "config_organization_conformance_pack",
+          "subcategory": ""
+        },
+        {
+          "title": "config_remediation_configuration",
+          "slug": "config_remediation_configuration",
           "subcategory": ""
         },
         {
@@ -33345,6 +33535,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_data_catalog_encryption_settings",
+          "slug": "glue_data_catalog_encryption_settings",
+          "subcategory": ""
+        },
+        {
           "title": "glue_identity_center_configuration",
           "slug": "glue_identity_center_configuration",
           "subcategory": ""
@@ -34590,6 +34785,11 @@
           "subcategory": ""
         },
         {
+          "title": "medialive_node",
+          "slug": "medialive_node",
+          "subcategory": ""
+        },
+        {
           "title": "medialive_sdi_source",
           "slug": "medialive_sdi_source",
           "subcategory": ""
@@ -35155,6 +35355,11 @@
           "subcategory": ""
         },
         {
+          "title": "outposts_site",
+          "slug": "outposts_site",
+          "subcategory": ""
+        },
+        {
           "title": "panorama_application_instance",
           "slug": "panorama_application_instance",
           "subcategory": ""
@@ -35347,6 +35552,11 @@
         {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_o_auth_client_application",
+          "slug": "quicksight_o_auth_client_application",
           "subcategory": ""
         },
         {
@@ -36015,6 +36225,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_algorithm",
+          "slug": "sagemaker_algorithm",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_app",
           "slug": "sagemaker_app",
           "subcategory": ""
@@ -36057,6 +36272,11 @@
         {
           "title": "sagemaker_feature_group",
           "slug": "sagemaker_feature_group",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_hub",
+          "slug": "sagemaker_hub",
           "subcategory": ""
         },
         {
@@ -36202,6 +36422,11 @@
         {
           "title": "securityagent_pentest",
           "slug": "securityagent_pentest",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_security_requirement_pack",
+          "slug": "securityagent_security_requirement_pack",
           "subcategory": ""
         },
         {
@@ -37081,7 +37306,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:00.854923"
+    "docs_refreshed_at": "2026-07-02T10:41:51.261213"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37515,7 +37740,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:01.275122"
+    "docs_refreshed_at": "2026-07-02T10:41:51.683164"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45602,7 +45827,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:02.094481"
+    "docs_refreshed_at": "2026-07-02T10:41:52.179752"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -45951,7 +46176,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:02.557140"
+    "docs_refreshed_at": "2026-07-02T10:41:52.596594"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -54707,7 +54932,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:03.040307"
+    "docs_refreshed_at": "2026-07-02T10:41:53.087661"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -63196,7 +63421,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-01T11:40:03.690480"
+    "docs_refreshed_at": "2026-07-02T10:41:53.569564"
   },
   "4ek0/neko": {
     "docs": {
