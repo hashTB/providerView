@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:25.364154"
+    "docs_refreshed_at": "2026-07-09T11:25:38.942412"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -63623,7 +63623,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:14.235236"
+    "docs_refreshed_at": "2026-07-09T11:25:27.502577"
   },
   "Azure/azapi": {
     "docs": {
@@ -67234,7 +67234,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:15.034158"
+    "docs_refreshed_at": "2026-07-09T11:25:28.357366"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -68599,7 +68599,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:15.428121"
+    "docs_refreshed_at": "2026-07-09T11:25:28.766062"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -69124,7 +69124,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:15.824240"
+    "docs_refreshed_at": "2026-07-09T11:25:29.156915"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -69392,7 +69392,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:16.205040"
+    "docs_refreshed_at": "2026-07-09T11:25:29.561895"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -69411,7 +69411,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:16.594441"
+    "docs_refreshed_at": "2026-07-09T11:25:29.946939"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -69458,7 +69458,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:17.373880"
+    "docs_refreshed_at": "2026-07-09T11:25:30.766151"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -69531,6 +69531,16 @@
         {
           "title": "pro_flush_policy_logs",
           "slug": "pro_flush_policy_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_protect_deployment_retry",
+          "slug": "pro_jamf_protect_deployment_retry",
+          "subcategory": ""
+        },
+        {
+          "title": "pro_jamf_protect_plans_sync",
+          "slug": "pro_jamf_protect_plans_sync",
           "subcategory": ""
         },
         {
@@ -70203,6 +70213,18 @@
         {
           "title": "pro_webhook",
           "slug": "pro_webhook",
+          "subcategory": ""
+        }
+      ],
+      "functions": [
+        {
+          "title": "mcx_forced_payload",
+          "slug": "mcx_forced_payload",
+          "subcategory": ""
+        },
+        {
+          "title": "mobileconfig",
+          "slug": "mobileconfig",
           "subcategory": ""
         }
       ],
@@ -71013,7 +71035,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:18.610266"
+    "docs_refreshed_at": "2026-07-09T11:25:32.100826"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -71557,7 +71579,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:20.179429"
+    "docs_refreshed_at": "2026-07-09T11:25:33.689818"
   },
   "NicolasMassipFP/fhost": {
     "docs": {
@@ -74742,7 +74764,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:20.581699"
+    "docs_refreshed_at": "2026-07-09T11:25:34.138998"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -76091,7 +76113,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:20.985504"
+    "docs_refreshed_at": "2026-07-09T11:25:34.553024"
   },
   "SAP/btp": {
     "docs": {
@@ -76818,7 +76840,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:21.775814"
+    "docs_refreshed_at": "2026-07-09T11:25:35.402079"
   },
   "SAP/scc": {
     "docs": {
@@ -77023,7 +77045,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:22.614337"
+    "docs_refreshed_at": "2026-07-09T11:25:36.192288"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -77070,7 +77092,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:23.002253"
+    "docs_refreshed_at": "2026-07-09T11:25:36.582796"
   },
   "Sokren/aap": {
     "docs": {
@@ -77153,7 +77175,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:23.392103"
+    "docs_refreshed_at": "2026-07-09T11:25:36.985262"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -77203,7 +77225,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:23.797665"
+    "docs_refreshed_at": "2026-07-09T11:25:37.373478"
   },
   "adampie/ctf": {
     "docs": {
@@ -77250,7 +77272,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:24.976042"
+    "docs_refreshed_at": "2026-07-09T11:25:38.554275"
   },
   "ansible/ansible": {
     "docs": {
@@ -77320,7 +77342,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:25.753978"
+    "docs_refreshed_at": "2026-07-09T11:25:39.332018"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -77368,7 +77390,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:26.146190"
+    "docs_refreshed_at": "2026-07-09T11:25:39.733350"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -77379,22 +77401,22 @@
           "subcategory": ""
         }
       ],
-      "list-resources": [
-        {
-          "title": "bufo",
-          "slug": "bufo",
-          "subcategory": ""
-        }
-      ],
       "overview": [
         {
           "title": "overview",
           "slug": "index",
           "subcategory": ""
         }
+      ],
+      "resources": [
+        {
+          "title": "bufo",
+          "slug": "bufo",
+          "subcategory": ""
+        }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:26.537943"
+    "docs_refreshed_at": "2026-07-09T11:25:40.124147"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -77451,7 +77473,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:26.929257"
+    "docs_refreshed_at": "2026-07-09T11:25:40.510310"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -77477,7 +77499,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:28.029877"
+    "docs_refreshed_at": "2026-07-09T11:25:41.291181"
   },
   "cysp/braze": {
     "docs": {
@@ -77533,7 +77555,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:29.592021"
+    "docs_refreshed_at": "2026-07-09T11:25:42.897025"
   },
   "cysp/contentful": {
     "docs": {
@@ -77676,7 +77698,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:29.980118"
+    "docs_refreshed_at": "2026-07-09T11:25:43.282070"
   },
   "dbanck/concept": {
     "docs": {
@@ -77712,7 +77734,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:31.156529"
+    "docs_refreshed_at": "2026-07-09T11:25:44.885198"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -78425,6 +78447,16 @@
           "subcategory": "Applications"
         },
         {
+          "title": "graph_beta_applications_on_premises_connector_group",
+          "slug": "graph_beta_applications_on_premises_connector_group",
+          "subcategory": "Applications"
+        },
+        {
+          "title": "graph_beta_applications_on_premises_connector_group_assignment",
+          "slug": "graph_beta_applications_on_premises_connector_group_assignment",
+          "subcategory": "Applications"
+        },
+        {
           "title": "graph_beta_applications_on_premises_ip_application_segment",
           "slug": "graph_beta_applications_on_premises_ip_application_segment",
           "subcategory": "Applications"
@@ -78443,6 +78475,16 @@
           "title": "graph_beta_applications_service_principal_owner",
           "slug": "graph_beta_applications_service_principal_owner",
           "subcategory": "Applications"
+        },
+        {
+          "title": "graph_beta_applications_service_principal_token_lifetime_policy_assignment",
+          "slug": "graph_beta_applications_service_principal_token_lifetime_policy_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "graph_beta_applications_token_lifetime_policy",
+          "slug": "graph_beta_applications_token_lifetime_policy",
+          "subcategory": ""
         },
         {
           "title": "graph_beta_change_notifications_subscription",
@@ -78630,6 +78672,11 @@
           "subcategory": "Device Management"
         },
         {
+          "title": "graph_beta_device_management_ios_ipados_device_enrollment_policy",
+          "slug": "graph_beta_device_management_ios_ipados_device_enrollment_policy",
+          "subcategory": "Device Management"
+        },
+        {
           "title": "graph_beta_device_management_linux_device_compliance_policy",
           "slug": "graph_beta_device_management_linux_device_compliance_policy",
           "subcategory": "Device Management"
@@ -78650,6 +78697,11 @@
           "subcategory": "Device Management"
         },
         {
+          "title": "graph_beta_device_management_macos_dep_enrollment_profile",
+          "slug": "graph_beta_device_management_macos_dep_enrollment_profile",
+          "subcategory": "Device Management"
+        },
+        {
           "title": "graph_beta_device_management_macos_device_compliance_policy",
           "slug": "graph_beta_device_management_macos_device_compliance_policy",
           "subcategory": "Device Management"
@@ -78657,6 +78709,11 @@
         {
           "title": "graph_beta_device_management_macos_device_configuration_templates",
           "slug": "graph_beta_device_management_macos_device_configuration_templates",
+          "subcategory": "Device Management"
+        },
+        {
+          "title": "graph_beta_device_management_macos_device_enrollment_policy",
+          "slug": "graph_beta_device_management_macos_device_enrollment_policy",
           "subcategory": "Device Management"
         },
         {
@@ -78720,6 +78777,11 @@
           "subcategory": "Device Management"
         },
         {
+          "title": "graph_beta_device_management_settings_catalog_inventory_policy",
+          "slug": "graph_beta_device_management_settings_catalog_inventory_policy",
+          "subcategory": "Device Management"
+        },
+        {
           "title": "graph_beta_device_management_settings_catalog_template_json",
           "slug": "graph_beta_device_management_settings_catalog_template_json",
           "subcategory": "Device Management"
@@ -78727,6 +78789,11 @@
         {
           "title": "graph_beta_device_management_terms_and_conditions",
           "slug": "graph_beta_device_management_terms_and_conditions",
+          "subcategory": "Device Management"
+        },
+        {
+          "title": "graph_beta_device_management_visionos_device_enrollment_policy",
+          "slug": "graph_beta_device_management_visionos_device_enrollment_policy",
           "subcategory": "Device Management"
         },
         {
@@ -78880,6 +78947,11 @@
           "subcategory": "Identity and Access"
         },
         {
+          "title": "graph_beta_identity_and_access_cross_tenant_access_partner_group_sync_settings",
+          "slug": "graph_beta_identity_and_access_cross_tenant_access_partner_group_sync_settings",
+          "subcategory": "Identity and Access"
+        },
+        {
           "title": "graph_beta_identity_and_access_cross_tenant_access_partner_settings",
           "slug": "graph_beta_identity_and_access_cross_tenant_access_partner_settings",
           "subcategory": "Identity and Access"
@@ -78912,6 +78984,21 @@
         {
           "title": "graph_beta_identity_and_access_network_filtering_policy",
           "slug": "graph_beta_identity_and_access_network_filtering_policy",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_network_filtering_profile",
+          "slug": "graph_beta_identity_and_access_network_filtering_profile",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_network_web_filtering_policy",
+          "slug": "graph_beta_identity_and_access_network_web_filtering_policy",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "graph_beta_identity_and_access_network_web_filtering_policy_rule",
+          "slug": "graph_beta_identity_and_access_network_web_filtering_policy_rule",
           "subcategory": "Identity and Access"
         },
         {
@@ -79066,7 +79153,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:31.569955"
+    "docs_refreshed_at": "2026-07-09T11:25:45.339819"
   },
   "drewmullen/aap": {
     "docs": {
@@ -79174,7 +79261,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:32.346270"
+    "docs_refreshed_at": "2026-07-09T11:25:46.119197"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -79239,7 +79326,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:33.913987"
+    "docs_refreshed_at": "2026-07-09T11:25:47.757403"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -79342,7 +79429,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:35.084194"
+    "docs_refreshed_at": "2026-07-09T11:25:48.920712"
   },
   "hashicorp/local": {
     "docs": {
@@ -79404,7 +79491,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:35.862272"
+    "docs_refreshed_at": "2026-07-09T11:25:49.693205"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -87075,7 +87162,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:37.893103"
+    "docs_refreshed_at": "2026-07-09T11:25:51.816023"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -87888,7 +87975,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:38.688218"
+    "docs_refreshed_at": "2026-07-09T11:25:53.031451"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -88026,7 +88113,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:40.663541"
+    "docs_refreshed_at": "2026-07-09T11:25:54.622683"
   },
   "magodo/restful": {
     "docs": {
@@ -88085,7 +88172,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:41.831773"
+    "docs_refreshed_at": "2026-07-09T11:25:55.795240"
   },
   "marshallford/ansible": {
     "docs": {
@@ -88137,7 +88224,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:42.221022"
+    "docs_refreshed_at": "2026-07-09T11:25:56.193849"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -88294,7 +88381,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:42.996675"
+    "docs_refreshed_at": "2026-07-09T11:25:56.973180"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -88457,7 +88544,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:43.386105"
+    "docs_refreshed_at": "2026-07-09T11:25:57.363096"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -88504,7 +88591,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:44.168947"
+    "docs_refreshed_at": "2026-07-09T11:25:58.556071"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -88577,6 +88664,11 @@
         {
           "title": "rdb_database_restore_backup",
           "slug": "rdb_database_restore_backup",
+          "subcategory": "Databases"
+        },
+        {
+          "title": "rdb_instance_apply_maintenance",
+          "slug": "rdb_instance_apply_maintenance",
           "subcategory": "Databases"
         },
         {
@@ -88699,6 +88791,16 @@
         {
           "title": "billing_budget",
           "slug": "billing_budget",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "billing_budget_alert",
+          "slug": "billing_budget_alert",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "billing_budget_alert_notification",
+          "slug": "billing_budget_alert_notification",
           "subcategory": "Billing"
         },
         {
@@ -89440,6 +89542,11 @@
           "subcategory": "Account"
         },
         {
+          "title": "block_snapshot",
+          "slug": "block_snapshot",
+          "subcategory": "Block"
+        },
+        {
           "title": "domain_record",
           "slug": "domain_record",
           "subcategory": "Domains and DNS"
@@ -89631,6 +89738,16 @@
         {
           "title": "billing_budget",
           "slug": "billing_budget",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "billing_budget_alert",
+          "slug": "billing_budget_alert",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "billing_budget_alert_notification",
+          "slug": "billing_budget_alert_notification",
           "subcategory": "Billing"
         },
         {
@@ -90335,7 +90452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:47.483290"
+    "docs_refreshed_at": "2026-07-09T11:26:02.008205"
   },
   "soffensive/soff": {
     "docs": {
@@ -90382,7 +90499,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:48.250493"
+    "docs_refreshed_at": "2026-07-09T11:26:03.269769"
   },
   "thrashr888/registry": {
     "docs": {
@@ -90470,7 +90587,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:49.020666"
+    "docs_refreshed_at": "2026-07-09T11:26:04.090951"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -90870,7 +90987,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:49.797920"
+    "docs_refreshed_at": "2026-07-09T11:26:04.871708"
   },
   "waldur/waldur": {
     "docs": {
@@ -91095,6 +91212,11 @@
       ],
       "list-resources": [
         {
+          "title": "core_ssh_public_key",
+          "slug": "core_ssh_public_key",
+          "subcategory": ""
+        },
+        {
           "title": "marketplace_order",
           "slug": "marketplace_order",
           "subcategory": ""
@@ -91179,6 +91301,21 @@
       ],
       "resources": [
         {
+          "title": "core_ssh_public_key",
+          "slug": "core_ssh_public_key",
+          "subcategory": ""
+        },
+        {
+          "title": "customer_permission",
+          "slug": "customer_permission",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_bridge_link",
+          "slug": "identity_bridge_link",
+          "subcategory": ""
+        },
+        {
           "title": "marketplace_order",
           "slug": "marketplace_order",
           "subcategory": ""
@@ -91244,6 +91381,11 @@
           "subcategory": ""
         },
         {
+          "title": "project_permission",
+          "slug": "project_permission",
+          "subcategory": ""
+        },
+        {
           "title": "structure_customer",
           "slug": "structure_customer",
           "subcategory": ""
@@ -91255,7 +91397,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:50.571546"
+    "docs_refreshed_at": "2026-07-09T11:26:05.677781"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -91518,7 +91660,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:19.016294"
+    "docs_refreshed_at": "2026-07-09T11:25:32.503340"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -91573,7 +91715,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:35.470766"
+    "docs_refreshed_at": "2026-07-09T11:25:49.307121"
   },
   "timofurrer/desec": {
     "docs": {
@@ -91732,7 +91874,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:49.415840"
+    "docs_refreshed_at": "2026-07-09T11:26:04.481283"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -91815,7 +91957,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:50.189579"
+    "docs_refreshed_at": "2026-07-09T11:26:05.275799"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -95015,7 +95157,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:17.786520"
+    "docs_refreshed_at": "2026-07-09T11:25:31.198116"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -95310,7 +95452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:40.269915"
+    "docs_refreshed_at": "2026-07-09T11:25:54.235064"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -95428,7 +95570,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:42.613428"
+    "docs_refreshed_at": "2026-07-09T11:25:56.582857"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -95598,7 +95740,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:19.406514"
+    "docs_refreshed_at": "2026-07-09T11:25:32.896917"
   },
   "branchgrove/debian": {
     "docs": {
@@ -95713,7 +95855,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:27.640947"
+    "docs_refreshed_at": "2026-07-09T11:25:40.903125"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -96158,7 +96300,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:33.527449"
+    "docs_refreshed_at": "2026-07-09T11:25:47.372134"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -96773,7 +96915,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:36.270588"
+    "docs_refreshed_at": "2026-07-09T11:25:50.131650"
   },
   "juju/juju": {
     "docs": {
@@ -97033,7 +97175,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:39.087948"
+    "docs_refreshed_at": "2026-07-09T11:25:53.435676"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -97134,7 +97276,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:19.784745"
+    "docs_refreshed_at": "2026-07-09T11:25:33.287197"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -97572,7 +97714,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:28.808382"
+    "docs_refreshed_at": "2026-07-09T11:25:42.093185"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -97720,7 +97862,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:41.053162"
+    "docs_refreshed_at": "2026-07-09T11:25:55.013806"
   },
   "radeksimko/test": {
     "docs": {
@@ -97767,7 +97909,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:45.918235"
+    "docs_refreshed_at": "2026-07-09T11:26:00.338398"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -98160,7 +98302,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:47.876031"
+    "docs_refreshed_at": "2026-07-09T11:26:02.418556"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -98385,7 +98527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:48.639297"
+    "docs_refreshed_at": "2026-07-09T11:26:03.659086"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -98618,7 +98760,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:41.444745"
+    "docs_refreshed_at": "2026-07-09T11:25:55.408029"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -99035,7 +99177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:36.666750"
+    "docs_refreshed_at": "2026-07-09T11:25:50.521377"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -99504,7 +99646,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:37.448544"
+    "docs_refreshed_at": "2026-07-09T11:25:51.324264"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -111470,7 +111612,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:45.004502"
+    "docs_refreshed_at": "2026-07-09T11:25:59.450737"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -111955,7 +112097,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:46.312636"
+    "docs_refreshed_at": "2026-07-09T11:26:00.730517"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -112390,7 +112532,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:46.704888"
+    "docs_refreshed_at": "2026-07-09T11:26:01.122595"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -112453,7 +112595,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:31.958815"
+    "docs_refreshed_at": "2026-07-09T11:25:45.730422"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -112536,7 +112678,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:24.192404"
+    "docs_refreshed_at": "2026-07-09T11:25:37.780649"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -112567,7 +112709,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:29.198887"
+    "docs_refreshed_at": "2026-07-09T11:25:42.505381"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -112598,7 +112740,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:30.370462"
+    "docs_refreshed_at": "2026-07-09T11:25:44.092515"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -112629,7 +112771,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:30.759786"
+    "docs_refreshed_at": "2026-07-09T11:25:44.493839"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -112670,7 +112812,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:33.136444"
+    "docs_refreshed_at": "2026-07-09T11:25:46.974559"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -112910,7 +113052,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:43.778923"
+    "docs_refreshed_at": "2026-07-09T11:25:58.167516"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -115083,7 +115225,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:21.383267"
+    "docs_refreshed_at": "2026-07-09T11:25:34.979533"
   },
   "gringolito/ansible": {
     "docs": {
@@ -115153,7 +115295,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:34.306646"
+    "docs_refreshed_at": "2026-07-09T11:25:48.144216"
   },
   "pexip/infinity": {
     "docs": {
@@ -115553,7 +115695,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:44.547383"
+    "docs_refreshed_at": "2026-07-09T11:25:58.944408"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -115651,7 +115793,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:50.960546"
+    "docs_refreshed_at": "2026-07-09T11:26:06.067150"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -116448,7 +116590,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:32.741310"
+    "docs_refreshed_at": "2026-07-09T11:25:46.520648"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -116477,7 +116619,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:24.585073"
+    "docs_refreshed_at": "2026-07-09T11:25:38.166243"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -124481,7 +124623,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:45.527819"
+    "docs_refreshed_at": "2026-07-09T11:25:59.954854"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -124684,7 +124826,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:14.625219"
+    "docs_refreshed_at": "2026-07-09T11:25:27.892826"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -124737,7 +124879,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:28.418550"
+    "docs_refreshed_at": "2026-07-09T11:25:41.702133"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -125622,7 +125764,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:37.060500"
+    "docs_refreshed_at": "2026-07-09T11:25:50.920350"
   },
   "536tech/daytona": {
     "docs": {
@@ -127028,7 +127170,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:22.162183"
+    "docs_refreshed_at": "2026-07-09T11:25:35.799213"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -127231,7 +127373,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:34.688968"
+    "docs_refreshed_at": "2026-07-09T11:25:48.531911"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -127369,10 +127511,32 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:47.092540"
+    "docs_refreshed_at": "2026-07-09T11:26:01.523278"
   },
   "DrFaust92/airflow": {
     "docs": {
+      "data-sources": [
+        {
+          "title": "connection",
+          "slug": "connection",
+          "subcategory": ""
+        },
+        {
+          "title": "dag",
+          "slug": "dag",
+          "subcategory": ""
+        },
+        {
+          "title": "pool",
+          "slug": "pool",
+          "subcategory": ""
+        },
+        {
+          "title": "variable",
+          "slug": "variable",
+          "subcategory": ""
+        }
+      ],
       "list-resources": [
         {
           "title": "connection",
@@ -127440,7 +127604,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:16.984580"
+    "docs_refreshed_at": "2026-07-09T11:25:30.337722"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -127863,7 +128027,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:38.274556"
+    "docs_refreshed_at": "2026-07-09T11:25:52.634460"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -128481,7 +128645,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:39.878842"
+    "docs_refreshed_at": "2026-07-09T11:25:53.832308"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -135636,6 +135800,3275 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:44:18.208476"
+    "docs_refreshed_at": "2026-07-09T11:25:31.689682"
+  },
+  "damhau/scm": {
+    "docs": {
+      "actions": [
+        {
+          "title": "auto_vpn_push",
+          "slug": "auto_vpn_push",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate_export",
+          "slug": "certificate_export",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate_import",
+          "slug": "certificate_import",
+          "subcategory": ""
+        },
+        {
+          "title": "config_load",
+          "slug": "config_load",
+          "subcategory": ""
+        },
+        {
+          "title": "config_push",
+          "slug": "config_push",
+          "subcategory": ""
+        },
+        {
+          "title": "shared_snippets_load",
+          "slug": "shared_snippets_load",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_compare",
+          "slug": "snippet_snapshot_compare",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_convert",
+          "slug": "snippet_snapshot_convert",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_diff",
+          "slug": "snippet_snapshot_diff",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_load",
+          "slug": "snippet_snapshot_load",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_publish",
+          "slug": "snippet_snapshot_publish",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_save",
+          "slug": "snippet_snapshot_save",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_snapshot_updates",
+          "slug": "snippet_snapshot_updates",
+          "subcategory": ""
+        },
+        {
+          "title": "trust_validation",
+          "slug": "trust_validation",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "address",
+          "slug": "address",
+          "subcategory": ""
+        },
+        {
+          "title": "address_group",
+          "slug": "address_group",
+          "subcategory": ""
+        },
+        {
+          "title": "address_group_list",
+          "slug": "address_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "address_list",
+          "slug": "address_list",
+          "subcategory": ""
+        },
+        {
+          "title": "aggregate_interface",
+          "slug": "aggregate_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "aggregate_interface_list",
+          "slug": "aggregate_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_profile",
+          "slug": "anti_spyware_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_profile_list",
+          "slug": "anti_spyware_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_signature",
+          "slug": "anti_spyware_signature",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_signature_list",
+          "slug": "anti_spyware_signature_list",
+          "subcategory": ""
+        },
+        {
+          "title": "application",
+          "slug": "application",
+          "subcategory": ""
+        },
+        {
+          "title": "application_filter",
+          "slug": "application_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "application_filter_list",
+          "slug": "application_filter_list",
+          "subcategory": ""
+        },
+        {
+          "title": "application_group",
+          "slug": "application_group",
+          "subcategory": ""
+        },
+        {
+          "title": "application_group_list",
+          "slug": "application_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "application_list",
+          "slug": "application_list",
+          "subcategory": ""
+        },
+        {
+          "title": "app_override_rule",
+          "slug": "app_override_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "app_override_rule_list",
+          "slug": "app_override_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_profile",
+          "slug": "authentication_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_profile_list",
+          "slug": "authentication_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_rule",
+          "slug": "authentication_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_rule_list",
+          "slug": "authentication_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_sequence",
+          "slug": "authentication_sequence",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_sequence_list",
+          "slug": "authentication_sequence_list",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_setting",
+          "slug": "authentication_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_setting_list",
+          "slug": "authentication_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "auto_vpn_cluster",
+          "slug": "auto_vpn_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "auto_vpn_cluster_list",
+          "slug": "auto_vpn_cluster_list",
+          "subcategory": ""
+        },
+        {
+          "title": "auto_vpn_setting",
+          "slug": "auto_vpn_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "bandwidth_allocation",
+          "slug": "bandwidth_allocation",
+          "subcategory": ""
+        },
+        {
+          "title": "bandwidth_allocation_list",
+          "slug": "bandwidth_allocation_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_address_family_profile",
+          "slug": "bgp_address_family_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_address_family_profile_list",
+          "slug": "bgp_address_family_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_auth_profile",
+          "slug": "bgp_auth_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_auth_profile_list",
+          "slug": "bgp_auth_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_filtering_profile",
+          "slug": "bgp_filtering_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_filtering_profile_list",
+          "slug": "bgp_filtering_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_redistribution_profile",
+          "slug": "bgp_redistribution_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_redistribution_profile_list",
+          "slug": "bgp_redistribution_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map",
+          "slug": "bgp_route_map",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map_list",
+          "slug": "bgp_route_map_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map_redistribution",
+          "slug": "bgp_route_map_redistribution",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map_redistribution_list",
+          "slug": "bgp_route_map_redistribution_list",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_routing",
+          "slug": "bgp_routing",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate_profile",
+          "slug": "certificate_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate_profile_list",
+          "slug": "certificate_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "config_match_list",
+          "slug": "config_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "config_match_list_list",
+          "slug": "config_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "content_id_setting",
+          "slug": "content_id_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "content_id_setting_list",
+          "slug": "content_id_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "data_filtering_profile",
+          "slug": "data_filtering_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "data_filtering_profile_list",
+          "slug": "data_filtering_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "data_object",
+          "slug": "data_object",
+          "subcategory": ""
+        },
+        {
+          "title": "data_object_list",
+          "slug": "data_object_list",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_exclusion",
+          "slug": "decryption_exclusion",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_exclusion_list",
+          "slug": "decryption_exclusion_list",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_profile",
+          "slug": "decryption_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_profile_list",
+          "slug": "decryption_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_rule",
+          "slug": "decryption_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_rule_list",
+          "slug": "decryption_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "device_list",
+          "slug": "device_list",
+          "subcategory": ""
+        },
+        {
+          "title": "device_redistribution_collector",
+          "slug": "device_redistribution_collector",
+          "subcategory": ""
+        },
+        {
+          "title": "device_redistribution_collector_list",
+          "slug": "device_redistribution_collector_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dhcp_interface",
+          "slug": "dhcp_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "dhcp_interface_list",
+          "slug": "dhcp_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_proxy",
+          "slug": "dns_proxy",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_proxy_list",
+          "slug": "dns_proxy_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_security_profile",
+          "slug": "dns_security_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_security_profile_list",
+          "slug": "dns_security_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_profile",
+          "slug": "dos_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_profile_list",
+          "slug": "dos_protection_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_rule",
+          "slug": "dos_protection_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_rule_list",
+          "slug": "dos_protection_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamic_user_group",
+          "slug": "dynamic_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamic_user_group_list",
+          "slug": "dynamic_user_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ethernet_interface",
+          "slug": "ethernet_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "ethernet_interface_list",
+          "slug": "ethernet_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "external_dynamic_list",
+          "slug": "external_dynamic_list",
+          "subcategory": ""
+        },
+        {
+          "title": "external_dynamic_list_list",
+          "slug": "external_dynamic_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "file_blocking_profile",
+          "slug": "file_blocking_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "file_blocking_profile_list",
+          "slug": "file_blocking_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "folder",
+          "slug": "folder",
+          "subcategory": ""
+        },
+        {
+          "title": "folder_list",
+          "slug": "folder_list",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile",
+          "slug": "forwarding_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_destination",
+          "slug": "forwarding_profile_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_destination_list",
+          "slug": "forwarding_profile_destination_list",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_list",
+          "slug": "forwarding_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_regional_and_custom_proxy",
+          "slug": "forwarding_profile_regional_and_custom_proxy",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_regional_and_custom_proxy_list",
+          "slug": "forwarding_profile_regional_and_custom_proxy_list",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_source_application",
+          "slug": "forwarding_profile_source_application",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_source_application_list",
+          "slug": "forwarding_profile_source_application_list",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_user_location",
+          "slug": "forwarding_profile_user_location",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_user_location_list",
+          "slug": "forwarding_profile_user_location_list",
+          "subcategory": ""
+        },
+        {
+          "title": "general_setting",
+          "slug": "general_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "general_setting_list",
+          "slug": "general_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "globalprotect_match_list",
+          "slug": "globalprotect_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "globalprotect_match_list_list",
+          "slug": "globalprotect_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hipmatch_match_list",
+          "slug": "hipmatch_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hipmatch_match_list_list",
+          "slug": "hipmatch_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_object",
+          "slug": "hip_object",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_object_list",
+          "slug": "hip_object_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_profile",
+          "slug": "hip_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_profile_list",
+          "slug": "hip_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "http_header_profile",
+          "slug": "http_header_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "http_header_profile_list",
+          "slug": "http_header_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "http_server_profile",
+          "slug": "http_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "http_server_profile_list",
+          "slug": "http_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_crypto_profile",
+          "slug": "ike_crypto_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_crypto_profile_list",
+          "slug": "ike_crypto_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_gateway",
+          "slug": "ike_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_gateway_list",
+          "slug": "ike_gateway_list",
+          "subcategory": ""
+        },
+        {
+          "title": "interface_management_profile",
+          "slug": "interface_management_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "interface_management_profile_list",
+          "slug": "interface_management_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_crypto_profile",
+          "slug": "ipsec_crypto_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_crypto_profile_list",
+          "slug": "ipsec_crypto_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_tunnel",
+          "slug": "ipsec_tunnel",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_tunnel_list",
+          "slug": "ipsec_tunnel_list",
+          "subcategory": ""
+        },
+        {
+          "title": "iptag_match_list",
+          "slug": "iptag_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "iptag_match_list_list",
+          "slug": "iptag_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "kerberos_server_profile",
+          "slug": "kerberos_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "kerberos_server_profile_list",
+          "slug": "kerberos_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "label",
+          "slug": "label",
+          "subcategory": ""
+        },
+        {
+          "title": "label_list",
+          "slug": "label_list",
+          "subcategory": ""
+        },
+        {
+          "title": "layer2_subinterface",
+          "slug": "layer2_subinterface",
+          "subcategory": ""
+        },
+        {
+          "title": "layer2_subinterface_list",
+          "slug": "layer2_subinterface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "layer3_subinterface",
+          "slug": "layer3_subinterface",
+          "subcategory": ""
+        },
+        {
+          "title": "layer3_subinterface_list",
+          "slug": "layer3_subinterface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ldap_server_profile",
+          "slug": "ldap_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ldap_server_profile_list",
+          "slug": "ldap_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "link_tag",
+          "slug": "link_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "link_tag_list",
+          "slug": "link_tag_list",
+          "subcategory": ""
+        },
+        {
+          "title": "lldp_profile",
+          "slug": "lldp_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "lldp_profile_list",
+          "slug": "lldp_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user",
+          "slug": "local_user",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user_group",
+          "slug": "local_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user_group_list",
+          "slug": "local_user_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user_list",
+          "slug": "local_user_list",
+          "subcategory": ""
+        },
+        {
+          "title": "log_forwarding_profile",
+          "slug": "log_forwarding_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "log_forwarding_profile_list",
+          "slug": "log_forwarding_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "logical_router",
+          "slug": "logical_router",
+          "subcategory": ""
+        },
+        {
+          "title": "logical_router_list",
+          "slug": "logical_router_list",
+          "subcategory": ""
+        },
+        {
+          "title": "loopback_interface",
+          "slug": "loopback_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "loopback_interface_list",
+          "slug": "loopback_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "management_interface",
+          "slug": "management_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "management_interface_list",
+          "slug": "management_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "motd_banner_setting",
+          "slug": "motd_banner_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "motd_banner_setting_list",
+          "slug": "motd_banner_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "nat_rule",
+          "slug": "nat_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "nat_rule_list",
+          "slug": "nat_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ospf_auth_profile",
+          "slug": "ospf_auth_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ospf_auth_profile_list",
+          "slug": "ospf_auth_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "pbf_rule",
+          "slug": "pbf_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "pbf_rule_list",
+          "slug": "pbf_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "profile_group",
+          "slug": "profile_group",
+          "subcategory": ""
+        },
+        {
+          "title": "profile_group_list",
+          "slug": "profile_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_policy_rule",
+          "slug": "qos_policy_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_policy_rule_list",
+          "slug": "qos_policy_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_profile",
+          "slug": "qos_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_profile_list",
+          "slug": "qos_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_server_profile",
+          "slug": "radius_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_server_profile_list",
+          "slug": "radius_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "region",
+          "slug": "region",
+          "subcategory": ""
+        },
+        {
+          "title": "region_list",
+          "slug": "region_list",
+          "subcategory": ""
+        },
+        {
+          "title": "remote_network",
+          "slug": "remote_network",
+          "subcategory": ""
+        },
+        {
+          "title": "remote_network_list",
+          "slug": "remote_network_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_access_list",
+          "slug": "route_access_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_access_list_list",
+          "slug": "route_access_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_community_list",
+          "slug": "route_community_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_community_list_list",
+          "slug": "route_community_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_path_access_list",
+          "slug": "route_path_access_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_path_access_list_list",
+          "slug": "route_path_access_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_prefix_list",
+          "slug": "route_prefix_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_prefix_list_list",
+          "slug": "route_prefix_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "saml_server_profile",
+          "slug": "saml_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "saml_server_profile_list",
+          "slug": "saml_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "scep_profile",
+          "slug": "scep_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "scep_profile_list",
+          "slug": "scep_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "schedule",
+          "slug": "schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "schedule_list",
+          "slug": "schedule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_error_correction_profile",
+          "slug": "sdwan_error_correction_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_error_correction_profile_list",
+          "slug": "sdwan_error_correction_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_path_quality_profile",
+          "slug": "sdwan_path_quality_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_path_quality_profile_list",
+          "slug": "sdwan_path_quality_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_rule",
+          "slug": "sdwan_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_rule_list",
+          "slug": "sdwan_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_saas_quality_profile",
+          "slug": "sdwan_saas_quality_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_saas_quality_profile_list",
+          "slug": "sdwan_saas_quality_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_traffic_distribution_profile",
+          "slug": "sdwan_traffic_distribution_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_traffic_distribution_profile_list",
+          "slug": "sdwan_traffic_distribution_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "security_rule",
+          "slug": "security_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "security_rule_list",
+          "slug": "security_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service",
+          "slug": "service",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection",
+          "slug": "service_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection_group",
+          "slug": "service_connection_group",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection_group_list",
+          "slug": "service_connection_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection_list",
+          "slug": "service_connection_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service_group",
+          "slug": "service_group",
+          "subcategory": ""
+        },
+        {
+          "title": "service_group_list",
+          "slug": "service_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service_list",
+          "slug": "service_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service_route",
+          "slug": "service_route",
+          "subcategory": ""
+        },
+        {
+          "title": "service_route_list",
+          "slug": "service_route_list",
+          "subcategory": ""
+        },
+        {
+          "title": "service_setting",
+          "slug": "service_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "service_setting_list",
+          "slug": "service_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "session_setting",
+          "slug": "session_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "session_setting_list",
+          "slug": "session_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "session_timeout",
+          "slug": "session_timeout",
+          "subcategory": ""
+        },
+        {
+          "title": "session_timeout_list",
+          "slug": "session_timeout_list",
+          "subcategory": ""
+        },
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "site_list",
+          "slug": "site_list",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet",
+          "slug": "snippet",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_category",
+          "slug": "snippet_category",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_category_list",
+          "slug": "snippet_category_list",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet_list",
+          "slug": "snippet_list",
+          "subcategory": ""
+        },
+        {
+          "title": "syslog_server_profile",
+          "slug": "syslog_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "syslog_server_profile_list",
+          "slug": "syslog_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "system_match_list",
+          "slug": "system_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "system_match_list_list",
+          "slug": "system_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "tacacs_server_profile",
+          "slug": "tacacs_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "tacacs_server_profile_list",
+          "slug": "tacacs_server_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        },
+        {
+          "title": "tag_list",
+          "slug": "tag_list",
+          "subcategory": ""
+        },
+        {
+          "title": "tcp_setting",
+          "slug": "tcp_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "tcp_setting_list",
+          "slug": "tcp_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "tls_service_profile",
+          "slug": "tls_service_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "tls_service_profile_list",
+          "slug": "tls_service_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_steering_rule",
+          "slug": "traffic_steering_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_steering_rule_list",
+          "slug": "traffic_steering_rule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "trusted_tenant_overview",
+          "slug": "trusted_tenant_overview",
+          "subcategory": ""
+        },
+        {
+          "title": "tunnel_interface",
+          "slug": "tunnel_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "tunnel_interface_list",
+          "slug": "tunnel_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "update_schedule",
+          "slug": "update_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "update_schedule_list",
+          "slug": "update_schedule_list",
+          "subcategory": ""
+        },
+        {
+          "title": "url_access_profile",
+          "slug": "url_access_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "url_access_profile_list",
+          "slug": "url_access_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "url_category",
+          "slug": "url_category",
+          "subcategory": ""
+        },
+        {
+          "title": "url_category_list",
+          "slug": "url_category_list",
+          "subcategory": ""
+        },
+        {
+          "title": "userid_match_list",
+          "slug": "userid_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "userid_match_list_list",
+          "slug": "userid_match_list_list",
+          "subcategory": ""
+        },
+        {
+          "title": "variable",
+          "slug": "variable",
+          "subcategory": ""
+        },
+        {
+          "title": "variable_list",
+          "slug": "variable_list",
+          "subcategory": ""
+        },
+        {
+          "title": "vlan_interface",
+          "slug": "vlan_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "vlan_interface_list",
+          "slug": "vlan_interface_list",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_setting",
+          "slug": "vpn_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_setting_list",
+          "slug": "vpn_setting_list",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_profile",
+          "slug": "vulnerability_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_profile_list",
+          "slug": "vulnerability_protection_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_signature",
+          "slug": "vulnerability_protection_signature",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_signature_list",
+          "slug": "vulnerability_protection_signature_list",
+          "subcategory": ""
+        },
+        {
+          "title": "wildfire_anti_virus_profile",
+          "slug": "wildfire_anti_virus_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wildfire_anti_virus_profile_list",
+          "slug": "wildfire_anti_virus_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_list",
+          "slug": "zone_list",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_protection_profile",
+          "slug": "zone_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_protection_profile_list",
+          "slug": "zone_protection_profile_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_application_filters",
+          "slug": "ztna_application_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector",
+          "slug": "ztna_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_filters",
+          "slug": "ztna_connector_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group",
+          "slug": "ztna_connector_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_connectors",
+          "slug": "ztna_connector_group_connectors",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_filters",
+          "slug": "ztna_connector_group_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_fqdn_rules",
+          "slug": "ztna_connector_group_fqdn_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_list",
+          "slug": "ztna_connector_group_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_scheduled_upgrade",
+          "slug": "ztna_connector_group_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_subnet_rules",
+          "slug": "ztna_connector_group_subnet_rules",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_upgrade_status",
+          "slug": "ztna_connector_group_upgrade_status",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_wildcards",
+          "slug": "ztna_connector_group_wildcards",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_images",
+          "slug": "ztna_connector_images",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_list",
+          "slug": "ztna_connector_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_quiesce",
+          "slug": "ztna_connector_quiesce",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_scheduled_upgrade",
+          "slug": "ztna_connector_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_upgrade_status",
+          "slug": "ztna_connector_upgrade_status",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_discovered_application_filters",
+          "slug": "ztna_discovered_application_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application",
+          "slug": "ztna_fqdn_application",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application_list",
+          "slug": "ztna_fqdn_application_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet",
+          "slug": "ztna_subnet",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet_filters",
+          "slug": "ztna_subnet_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet_list",
+          "slug": "ztna_subnet_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard",
+          "slug": "ztna_wildcard",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard_filters",
+          "slug": "ztna_wildcard_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard_list",
+          "slug": "ztna_wildcard_list",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "address",
+          "slug": "address",
+          "subcategory": ""
+        },
+        {
+          "title": "address_group",
+          "slug": "address_group",
+          "subcategory": ""
+        },
+        {
+          "title": "aggregate_interface",
+          "slug": "aggregate_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_profile",
+          "slug": "anti_spyware_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "anti_spyware_signature",
+          "slug": "anti_spyware_signature",
+          "subcategory": ""
+        },
+        {
+          "title": "application",
+          "slug": "application",
+          "subcategory": ""
+        },
+        {
+          "title": "application_filter",
+          "slug": "application_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "application_group",
+          "slug": "application_group",
+          "subcategory": ""
+        },
+        {
+          "title": "app_override_rule",
+          "slug": "app_override_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_portal",
+          "slug": "authentication_portal",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_profile",
+          "slug": "authentication_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_rule",
+          "slug": "authentication_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_sequence",
+          "slug": "authentication_sequence",
+          "subcategory": ""
+        },
+        {
+          "title": "authentication_setting",
+          "slug": "authentication_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "auto_vpn_cluster",
+          "slug": "auto_vpn_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "auto_vpn_setting",
+          "slug": "auto_vpn_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "bandwidth_allocation",
+          "slug": "bandwidth_allocation",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_address_family_profile",
+          "slug": "bgp_address_family_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_auth_profile",
+          "slug": "bgp_auth_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_filtering_profile",
+          "slug": "bgp_filtering_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_redistribution_profile",
+          "slug": "bgp_redistribution_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map",
+          "slug": "bgp_route_map",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_route_map_redistribution",
+          "slug": "bgp_route_map_redistribution",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp_routing",
+          "slug": "bgp_routing",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate_profile",
+          "slug": "certificate_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "config_match_list",
+          "slug": "config_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "content_id_setting",
+          "slug": "content_id_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "data_filtering_profile",
+          "slug": "data_filtering_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "data_object",
+          "slug": "data_object",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_exclusion",
+          "slug": "decryption_exclusion",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_profile",
+          "slug": "decryption_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "decryption_rule",
+          "slug": "decryption_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "device_redistribution_collector",
+          "slug": "device_redistribution_collector",
+          "subcategory": ""
+        },
+        {
+          "title": "dhcp_interface",
+          "slug": "dhcp_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_proxy",
+          "slug": "dns_proxy",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_security_profile",
+          "slug": "dns_security_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_profile",
+          "slug": "dos_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dos_protection_rule",
+          "slug": "dos_protection_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamic_user_group",
+          "slug": "dynamic_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ethernet_interface",
+          "slug": "ethernet_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "external_dynamic_list",
+          "slug": "external_dynamic_list",
+          "subcategory": ""
+        },
+        {
+          "title": "file_blocking_profile",
+          "slug": "file_blocking_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "folder",
+          "slug": "folder",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile",
+          "slug": "forwarding_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_destination",
+          "slug": "forwarding_profile_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_regional_and_custom_proxy",
+          "slug": "forwarding_profile_regional_and_custom_proxy",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_source_application",
+          "slug": "forwarding_profile_source_application",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_profile_user_location",
+          "slug": "forwarding_profile_user_location",
+          "subcategory": ""
+        },
+        {
+          "title": "general_setting",
+          "slug": "general_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "globalprotect_match_list",
+          "slug": "globalprotect_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hipmatch_match_list",
+          "slug": "hipmatch_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_object",
+          "slug": "hip_object",
+          "subcategory": ""
+        },
+        {
+          "title": "hip_profile",
+          "slug": "hip_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "http_header_profile",
+          "slug": "http_header_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "http_server_profile",
+          "slug": "http_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_crypto_profile",
+          "slug": "ike_crypto_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ike_gateway",
+          "slug": "ike_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "interface_management_profile",
+          "slug": "interface_management_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "internal_dns_server",
+          "slug": "internal_dns_server",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_crypto_profile",
+          "slug": "ipsec_crypto_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ipsec_tunnel",
+          "slug": "ipsec_tunnel",
+          "subcategory": ""
+        },
+        {
+          "title": "iptag_match_list",
+          "slug": "iptag_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "kerberos_server_profile",
+          "slug": "kerberos_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "label",
+          "slug": "label",
+          "subcategory": ""
+        },
+        {
+          "title": "layer2_subinterface",
+          "slug": "layer2_subinterface",
+          "subcategory": ""
+        },
+        {
+          "title": "layer3_subinterface",
+          "slug": "layer3_subinterface",
+          "subcategory": ""
+        },
+        {
+          "title": "ldap_server_profile",
+          "slug": "ldap_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "link_tag",
+          "slug": "link_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "lldp_profile",
+          "slug": "lldp_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user",
+          "slug": "local_user",
+          "subcategory": ""
+        },
+        {
+          "title": "local_user_group",
+          "slug": "local_user_group",
+          "subcategory": ""
+        },
+        {
+          "title": "log_forwarding_profile",
+          "slug": "log_forwarding_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "logical_router",
+          "slug": "logical_router",
+          "subcategory": ""
+        },
+        {
+          "title": "loopback_interface",
+          "slug": "loopback_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "management_interface",
+          "slug": "management_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "mfa_server",
+          "slug": "mfa_server",
+          "subcategory": ""
+        },
+        {
+          "title": "motd_banner_setting",
+          "slug": "motd_banner_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "nat_rule",
+          "slug": "nat_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "ospf_auth_profile",
+          "slug": "ospf_auth_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "pbf_rule",
+          "slug": "pbf_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "profile_group",
+          "slug": "profile_group",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_policy_rule",
+          "slug": "qos_policy_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "qos_profile",
+          "slug": "qos_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_server_profile",
+          "slug": "radius_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "region",
+          "slug": "region",
+          "subcategory": ""
+        },
+        {
+          "title": "remote_network",
+          "slug": "remote_network",
+          "subcategory": ""
+        },
+        {
+          "title": "route_access_list",
+          "slug": "route_access_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_community_list",
+          "slug": "route_community_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_path_access_list",
+          "slug": "route_path_access_list",
+          "subcategory": ""
+        },
+        {
+          "title": "route_prefix_list",
+          "slug": "route_prefix_list",
+          "subcategory": ""
+        },
+        {
+          "title": "saml_server_profile",
+          "slug": "saml_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "scep_profile",
+          "slug": "scep_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "schedule",
+          "slug": "schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_error_correction_profile",
+          "slug": "sdwan_error_correction_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_path_quality_profile",
+          "slug": "sdwan_path_quality_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_rule",
+          "slug": "sdwan_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_saas_quality_profile",
+          "slug": "sdwan_saas_quality_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "sdwan_traffic_distribution_profile",
+          "slug": "sdwan_traffic_distribution_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "security_rule",
+          "slug": "security_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "service",
+          "slug": "service",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection",
+          "slug": "service_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "service_connection_group",
+          "slug": "service_connection_group",
+          "subcategory": ""
+        },
+        {
+          "title": "service_group",
+          "slug": "service_group",
+          "subcategory": ""
+        },
+        {
+          "title": "service_route",
+          "slug": "service_route",
+          "subcategory": ""
+        },
+        {
+          "title": "service_setting",
+          "slug": "service_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "session_setting",
+          "slug": "session_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "session_timeout",
+          "slug": "session_timeout",
+          "subcategory": ""
+        },
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "snippet",
+          "slug": "snippet",
+          "subcategory": ""
+        },
+        {
+          "title": "syslog_server_profile",
+          "slug": "syslog_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "system_match_list",
+          "slug": "system_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "tacacs_server_profile",
+          "slug": "tacacs_server_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        },
+        {
+          "title": "tcp_setting",
+          "slug": "tcp_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "tls_service_profile",
+          "slug": "tls_service_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_steering_rule",
+          "slug": "traffic_steering_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "tunnel_interface",
+          "slug": "tunnel_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "update_schedule",
+          "slug": "update_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "url_access_profile",
+          "slug": "url_access_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "url_category",
+          "slug": "url_category",
+          "subcategory": ""
+        },
+        {
+          "title": "userid_match_list",
+          "slug": "userid_match_list",
+          "subcategory": ""
+        },
+        {
+          "title": "variable",
+          "slug": "variable",
+          "subcategory": ""
+        },
+        {
+          "title": "vlan_interface",
+          "slug": "vlan_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_setting",
+          "slug": "vpn_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_profile",
+          "slug": "vulnerability_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "vulnerability_protection_signature",
+          "slug": "vulnerability_protection_signature",
+          "subcategory": ""
+        },
+        {
+          "title": "wildfire_anti_virus_profile",
+          "slug": "wildfire_anti_virus_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_protection_profile",
+          "slug": "zone_protection_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector",
+          "slug": "ztna_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group",
+          "slug": "ztna_connector_group",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_group_scheduled_upgrade",
+          "slug": "ztna_connector_group_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_connector_scheduled_upgrade",
+          "slug": "ztna_connector_scheduled_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_fqdn_application",
+          "slug": "ztna_fqdn_application",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_subnet",
+          "slug": "ztna_subnet",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_wildcard",
+          "slug": "ztna_wildcard",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-09T11:25:43.700064"
+  },
+  "jamesbraid/unifi": {
+    "docs": {
+      "actions": [
+        {
+          "title": "port",
+          "slug": "port",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "account",
+          "slug": "account",
+          "subcategory": ""
+        },
+        {
+          "title": "ap_group",
+          "slug": "ap_group",
+          "subcategory": ""
+        },
+        {
+          "title": "client",
+          "slug": "client",
+          "subcategory": ""
+        },
+        {
+          "title": "client_info",
+          "slug": "client_info",
+          "subcategory": ""
+        },
+        {
+          "title": "client_info_list",
+          "slug": "client_info_list",
+          "subcategory": ""
+        },
+        {
+          "title": "client_list",
+          "slug": "client_list",
+          "subcategory": ""
+        },
+        {
+          "title": "client_qos_rate",
+          "slug": "client_qos_rate",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_record",
+          "slug": "dns_record",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_zone",
+          "slug": "firewall_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "port_profile",
+          "slug": "port_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_profile",
+          "slug": "radius_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_user",
+          "slug": "radius_user",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "ap_group",
+          "slug": "ap_group",
+          "subcategory": ""
+        },
+        {
+          "title": "client",
+          "slug": "client",
+          "subcategory": ""
+        },
+        {
+          "title": "client_qos_rate",
+          "slug": "client_qos_rate",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_record",
+          "slug": "dns_record",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamic_dns",
+          "slug": "dynamic_dns",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_group",
+          "slug": "firewall_group",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_policy",
+          "slug": "firewall_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_rule",
+          "slug": "firewall_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_zone",
+          "slug": "firewall_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "port_forward",
+          "slug": "port_forward",
+          "subcategory": ""
+        },
+        {
+          "title": "port_profile",
+          "slug": "port_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "power_supervisor",
+          "slug": "power_supervisor",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_profile",
+          "slug": "radius_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_user",
+          "slug": "radius_user",
+          "subcategory": ""
+        },
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "site_to_site_vpn",
+          "slug": "site_to_site_vpn",
+          "subcategory": ""
+        },
+        {
+          "title": "static_route",
+          "slug": "static_route",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_route",
+          "slug": "traffic_route",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_client",
+          "slug": "vpn_client",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_server",
+          "slug": "vpn_server",
+          "subcategory": ""
+        },
+        {
+          "title": "wan",
+          "slug": "wan",
+          "subcategory": ""
+        },
+        {
+          "title": "wireguard_peer",
+          "slug": "wireguard_peer",
+          "subcategory": ""
+        },
+        {
+          "title": "wlan",
+          "slug": "wlan",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "account",
+          "slug": "account",
+          "subcategory": ""
+        },
+        {
+          "title": "ap_group",
+          "slug": "ap_group",
+          "subcategory": ""
+        },
+        {
+          "title": "bgp",
+          "slug": "bgp",
+          "subcategory": ""
+        },
+        {
+          "title": "client",
+          "slug": "client",
+          "subcategory": ""
+        },
+        {
+          "title": "client_qos_rate",
+          "slug": "client_qos_rate",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "dns_record",
+          "slug": "dns_record",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamic_dns",
+          "slug": "dynamic_dns",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_group",
+          "slug": "firewall_group",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_policy",
+          "slug": "firewall_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_rule",
+          "slug": "firewall_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_zone",
+          "slug": "firewall_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "port_forward",
+          "slug": "port_forward",
+          "subcategory": ""
+        },
+        {
+          "title": "port_profile",
+          "slug": "port_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "power_supervisor",
+          "slug": "power_supervisor",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_profile",
+          "slug": "radius_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "radius_user",
+          "slug": "radius_user",
+          "subcategory": ""
+        },
+        {
+          "title": "setting",
+          "slug": "setting",
+          "subcategory": ""
+        },
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "site_to_site_vpn",
+          "slug": "site_to_site_vpn",
+          "subcategory": ""
+        },
+        {
+          "title": "static_route",
+          "slug": "static_route",
+          "subcategory": ""
+        },
+        {
+          "title": "traffic_route",
+          "slug": "traffic_route",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_client",
+          "slug": "vpn_client",
+          "subcategory": ""
+        },
+        {
+          "title": "vpn_server",
+          "slug": "vpn_server",
+          "subcategory": ""
+        },
+        {
+          "title": "wan",
+          "slug": "wan",
+          "subcategory": ""
+        },
+        {
+          "title": "wireguard_peer",
+          "slug": "wireguard_peer",
+          "subcategory": ""
+        },
+        {
+          "title": "wlan",
+          "slug": "wlan",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-09T11:25:52.218459"
+  },
+  "nicole-ashley/matomo": {
+    "docs": {
+      "actions": [
+        {
+          "title": "tagmanager_create_container_version",
+          "slug": "tagmanager_create_container_version",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_disable_preview_mode",
+          "slug": "tagmanager_disable_preview_mode",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_enable_preview_mode",
+          "slug": "tagmanager_enable_preview_mode",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_publish_container_version",
+          "slug": "tagmanager_publish_container_version",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_builtin_variable",
+          "slug": "tagmanager_builtin_variable",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_contexts",
+          "slug": "tagmanager_contexts",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_environments",
+          "slug": "tagmanager_environments",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_types",
+          "slug": "tagmanager_tag_types",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_types",
+          "slug": "tagmanager_trigger_types",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_types",
+          "slug": "tagmanager_variable_types",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "custom_dimension",
+          "slug": "custom_dimension",
+          "subcategory": ""
+        },
+        {
+          "title": "site",
+          "slug": "site",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_container",
+          "slug": "tagmanager_container",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag",
+          "slug": "tagmanager_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_addthis",
+          "slug": "tagmanager_tag_addthis",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_axeptio",
+          "slug": "tagmanager_tag_axeptio",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_binguet",
+          "slug": "tagmanager_tag_binguet",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_bugsnag",
+          "slug": "tagmanager_tag_bugsnag",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_cookiebot",
+          "slug": "tagmanager_tag_cookiebot",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_cookieyes",
+          "slug": "tagmanager_tag_cookieyes",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_customhtml",
+          "slug": "tagmanager_tag_customhtml",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_customimage",
+          "slug": "tagmanager_tag_customimage",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_drift",
+          "slug": "tagmanager_tag_drift",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_emarsys",
+          "slug": "tagmanager_tag_emarsys",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_etracker",
+          "slug": "tagmanager_tag_etracker",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_facebookpixel",
+          "slug": "tagmanager_tag_facebookpixel",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_googleadsconversion",
+          "slug": "tagmanager_tag_googleadsconversion",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_googleanalytics4",
+          "slug": "tagmanager_tag_googleanalytics4",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_googleanalytics4event",
+          "slug": "tagmanager_tag_googleanalytics4event",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_googleconsentmodev2",
+          "slug": "tagmanager_tag_googleconsentmodev2",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_googletag",
+          "slug": "tagmanager_tag_googletag",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_honeybadger",
+          "slug": "tagmanager_tag_honeybadger",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_hotjar",
+          "slug": "tagmanager_tag_hotjar",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_linkedininsight",
+          "slug": "tagmanager_tag_linkedininsight",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_livezilladynamic",
+          "slug": "tagmanager_tag_livezilladynamic",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_matomo",
+          "slug": "tagmanager_tag_matomo",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_onetrust",
+          "slug": "tagmanager_tag_onetrust",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_pingdomrum",
+          "slug": "tagmanager_tag_pingdomrum",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_raygun",
+          "slug": "tagmanager_tag_raygun",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_sentryraven",
+          "slug": "tagmanager_tag_sentryraven",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_shareaholic",
+          "slug": "tagmanager_tag_shareaholic",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_tawkto",
+          "slug": "tagmanager_tag_tawkto",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_themecolor",
+          "slug": "tagmanager_tag_themecolor",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_visualwebsiteoptimizer",
+          "slug": "tagmanager_tag_visualwebsiteoptimizer",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_tag_zendeskchat",
+          "slug": "tagmanager_tag_zendeskchat",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger",
+          "slug": "tagmanager_trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_alldownloadsclick",
+          "slug": "tagmanager_trigger_alldownloadsclick",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_allelementsclick",
+          "slug": "tagmanager_trigger_allelementsclick",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_alllinksclick",
+          "slug": "tagmanager_trigger_alllinksclick",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_customevent",
+          "slug": "tagmanager_trigger_customevent",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_domready",
+          "slug": "tagmanager_trigger_domready",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_elementvisibility",
+          "slug": "tagmanager_trigger_elementvisibility",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_formsubmit",
+          "slug": "tagmanager_trigger_formsubmit",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_fullscreen",
+          "slug": "tagmanager_trigger_fullscreen",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_historychange",
+          "slug": "tagmanager_trigger_historychange",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_javascripterror",
+          "slug": "tagmanager_trigger_javascripterror",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_pageview",
+          "slug": "tagmanager_trigger_pageview",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_scrollreach",
+          "slug": "tagmanager_trigger_scrollreach",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_timer",
+          "slug": "tagmanager_trigger_timer",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_userinteraction",
+          "slug": "tagmanager_trigger_userinteraction",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_windowleave",
+          "slug": "tagmanager_trigger_windowleave",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_windowloaded",
+          "slug": "tagmanager_trigger_windowloaded",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_trigger_windowunload",
+          "slug": "tagmanager_trigger_windowunload",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable",
+          "slug": "tagmanager_variable",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_clickdataattribute",
+          "slug": "tagmanager_variable_clickdataattribute",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_clickhtmlattribute",
+          "slug": "tagmanager_variable_clickhtmlattribute",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_constant",
+          "slug": "tagmanager_variable_constant",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_cookie",
+          "slug": "tagmanager_variable_cookie",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_customjsfunction",
+          "slug": "tagmanager_variable_customjsfunction",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_customrequestprocessing",
+          "slug": "tagmanager_variable_customrequestprocessing",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_datalayer",
+          "slug": "tagmanager_variable_datalayer",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_domelement",
+          "slug": "tagmanager_variable_domelement",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_etrackerconfiguration",
+          "slug": "tagmanager_variable_etrackerconfiguration",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_javascript",
+          "slug": "tagmanager_variable_javascript",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_matomoconfiguration",
+          "slug": "tagmanager_variable_matomoconfiguration",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_metacontent",
+          "slug": "tagmanager_variable_metacontent",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_referrerurl",
+          "slug": "tagmanager_variable_referrerurl",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_timesinceload",
+          "slug": "tagmanager_variable_timesinceload",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_url",
+          "slug": "tagmanager_variable_url",
+          "subcategory": ""
+        },
+        {
+          "title": "tagmanager_variable_urlparameter",
+          "slug": "tagmanager_variable_urlparameter",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-09T11:25:57.748254"
+  },
+  "sky-cloak/skycloak": {
+    "docs": {
+      "actions": [
+        {
+          "title": "cancel_cluster_upgrade",
+          "slug": "cancel_cluster_upgrade",
+          "subcategory": ""
+        },
+        {
+          "title": "test_identity_provider",
+          "slug": "test_identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "test_siem_destination",
+          "slug": "test_siem_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "test_smtp",
+          "slug": "test_smtp",
+          "subcategory": ""
+        },
+        {
+          "title": "test_webhook_subscription",
+          "slug": "test_webhook_subscription",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "application_roles",
+          "slug": "application_roles",
+          "subcategory": ""
+        },
+        {
+          "title": "application_sessions",
+          "slug": "application_sessions",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster",
+          "slug": "cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_credentials",
+          "slug": "cluster_credentials",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_events",
+          "slug": "cluster_events",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_events_export",
+          "slug": "cluster_events_export",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_features",
+          "slug": "cluster_features",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_insights",
+          "slug": "cluster_insights",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_locations",
+          "slug": "cluster_locations",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_logs",
+          "slug": "cluster_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_security_logs",
+          "slug": "cluster_security_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_types",
+          "slug": "cluster_types",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_upgrade_path",
+          "slug": "cluster_upgrade_path",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_upgrades",
+          "slug": "cluster_upgrades",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_versions",
+          "slug": "cluster_versions",
+          "subcategory": ""
+        },
+        {
+          "title": "domain_routes",
+          "slug": "domain_routes",
+          "subcategory": ""
+        },
+        {
+          "title": "extensions",
+          "slug": "extensions",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_provider_templates",
+          "slug": "identity_provider_templates",
+          "subcategory": ""
+        },
+        {
+          "title": "oidc_discovery",
+          "slug": "oidc_discovery",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_group_members",
+          "slug": "realm_group_members",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_groups",
+          "slug": "realm_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_roles",
+          "slug": "realm_roles",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_users",
+          "slug": "realm_users",
+          "subcategory": ""
+        },
+        {
+          "title": "siem_destination",
+          "slug": "siem_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "siem_destinations",
+          "slug": "siem_destinations",
+          "subcategory": ""
+        },
+        {
+          "title": "themes",
+          "slug": "themes",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook_event_types",
+          "slug": "webhook_event_types",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook_subscriptions",
+          "slug": "webhook_subscriptions",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "application",
+          "slug": "application",
+          "subcategory": ""
+        },
+        {
+          "title": "application_role_assignment",
+          "slug": "application_role_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "application_secret",
+          "slug": "application_secret",
+          "subcategory": ""
+        },
+        {
+          "title": "captcha_domain",
+          "slug": "captcha_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "client_theme_assignment",
+          "slug": "client_theme_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster",
+          "slug": "cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_extension",
+          "slug": "cluster_extension",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_maintenance_window",
+          "slug": "cluster_maintenance_window",
+          "subcategory": ""
+        },
+        {
+          "title": "cluster_security",
+          "slug": "cluster_security",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_extension",
+          "slug": "custom_extension",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_theme",
+          "slug": "custom_theme",
+          "subcategory": ""
+        },
+        {
+          "title": "domain",
+          "slug": "domain",
+          "subcategory": ""
+        },
+        {
+          "title": "domain_route",
+          "slug": "domain_route",
+          "subcategory": ""
+        },
+        {
+          "title": "email_branding",
+          "slug": "email_branding",
+          "subcategory": ""
+        },
+        {
+          "title": "export",
+          "slug": "export",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_provider",
+          "slug": "identity_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "login_branding",
+          "slug": "login_branding",
+          "subcategory": ""
+        },
+        {
+          "title": "realm",
+          "slug": "realm",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_group",
+          "slug": "realm_group",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_group_membership",
+          "slug": "realm_group_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_role",
+          "slug": "realm_role",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_user",
+          "slug": "realm_user",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_user_role_assignment",
+          "slug": "realm_user_role_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "siem_destination",
+          "slug": "siem_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "smtp",
+          "slug": "smtp",
+          "subcategory": ""
+        },
+        {
+          "title": "theme_assignment",
+          "slug": "theme_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook_subscription",
+          "slug": "webhook_subscription",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-09T11:26:02.876629"
   }
 }
