@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T10:42:52.422319",
+  "generated_at": "2026-07-09T11:14:02.174540",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "abf19328c38821e204e95f0bc6763d47e7088ade"
+    "commit": "cd12cad7e2a679d17d92a306f30efa8033cf7265"
   },
   "registration_sources": {
     "scan_root": "google",

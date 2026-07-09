@@ -2807,6 +2807,11 @@
           "subcategory": "Route 53"
         },
         {
+          "title": "route53profiles_profile",
+          "slug": "route53profiles_profile",
+          "subcategory": "Route 53 Profiles"
+        },
+        {
           "title": "route53profiles_profiles",
           "slug": "route53profiles_profiles",
           "subcategory": "Route 53 Profiles"
@@ -3810,6 +3815,11 @@
           "subcategory": "Batch"
         },
         {
+          "title": "bedrockagentcore_browser_profile",
+          "slug": "bedrockagentcore_browser_profile",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
           "title": "bedrockagentcore_evaluator",
           "slug": "bedrockagentcore_evaluator",
           "subcategory": "Bedrock AgentCore"
@@ -3913,6 +3923,11 @@
           "title": "codebuild_project",
           "slug": "codebuild_project",
           "subcategory": "CodeBuild"
+        },
+        {
+          "title": "codepipeline",
+          "slug": "codepipeline",
+          "subcategory": "CodePipeline"
         },
         {
           "title": "config_config_rule",
@@ -4097,6 +4112,11 @@
         {
           "title": "lambda_function",
           "slug": "lambda_function",
+          "subcategory": "Lambda"
+        },
+        {
+          "title": "lambda_function_scaling_config",
+          "slug": "lambda_function_scaling_config",
           "subcategory": "Lambda"
         },
         {
@@ -4350,6 +4370,11 @@
           "subcategory": "SageMaker AI"
         },
         {
+          "title": "scheduler_schedule",
+          "slug": "scheduler_schedule",
+          "subcategory": "EventBridge Scheduler"
+        },
+        {
           "title": "secretsmanager_secret",
           "slug": "secretsmanager_secret",
           "subcategory": "Secrets Manager"
@@ -4435,6 +4460,11 @@
           "subcategory": "SSO Admin"
         },
         {
+          "title": "ssoadmin_region",
+          "slug": "ssoadmin_region",
+          "subcategory": "SSO Admin"
+        },
+        {
           "title": "subnet",
           "slug": "subnet",
           "subcategory": "VPC (Virtual Private Cloud)"
@@ -4493,6 +4523,11 @@
           "title": "workmail_user",
           "slug": "workmail_user",
           "subcategory": "WorkMail"
+        },
+        {
+          "title": "workspaces_pool",
+          "slug": "workspaces_pool",
+          "subcategory": "WorkSpaces"
         }
       ],
       "overview": [
@@ -5351,6 +5386,11 @@
         {
           "title": "bedrockagentcore_browser",
           "slug": "bedrockagentcore_browser",
+          "subcategory": "Bedrock AgentCore"
+        },
+        {
+          "title": "bedrockagentcore_browser_profile",
+          "slug": "bedrockagentcore_browser_profile",
           "subcategory": "Bedrock AgentCore"
         },
         {
@@ -8809,6 +8849,11 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambda_function_scaling_config",
+          "slug": "lambda_function_scaling_config",
+          "subcategory": "Lambda"
+        },
+        {
           "title": "lambda_function_url",
           "slug": "lambda_function_url",
           "subcategory": "Lambda"
@@ -11964,6 +12009,11 @@
           "subcategory": "SSO Admin"
         },
         {
+          "title": "ssoadmin_region",
+          "slug": "ssoadmin_region",
+          "subcategory": "SSO Admin"
+        },
+        {
           "title": "ssoadmin_trusted_token_issuer",
           "slug": "ssoadmin_trusted_token_issuer",
           "subcategory": "SSO Admin"
@@ -12739,6 +12789,11 @@
           "subcategory": "WorkSpaces"
         },
         {
+          "title": "workspaces_pool",
+          "slug": "workspaces_pool",
+          "subcategory": "WorkSpaces"
+        },
+        {
           "title": "workspacesweb_browser_settings",
           "slug": "workspacesweb_browser_settings",
           "subcategory": "WorkSpaces Web"
@@ -12865,7 +12920,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:50.724591"
+    "docs_refreshed_at": "2026-07-09T11:12:54.265002"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -15047,6 +15102,16 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_insight_rule",
+          "slug": "cloudwatch_insight_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_insight_rules",
+          "slug": "cloudwatch_insight_rules",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_log_alarm",
           "slug": "cloudwatch_log_alarm",
           "subcategory": ""
@@ -15292,6 +15357,16 @@
           "subcategory": ""
         },
         {
+          "title": "cognito_user_pool_regional_configuration_attachment",
+          "slug": "cognito_user_pool_regional_configuration_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "cognito_user_pool_replica",
+          "slug": "cognito_user_pool_replica",
+          "subcategory": ""
+        },
+        {
           "title": "cognito_user_pool_resource_server",
           "slug": "cognito_user_pool_resource_server",
           "subcategory": ""
@@ -15384,6 +15459,16 @@
         {
           "title": "config_conformance_packs",
           "slug": "config_conformance_packs",
+          "subcategory": ""
+        },
+        {
+          "title": "config_connector",
+          "slug": "config_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "config_connectors",
+          "slug": "config_connectors",
           "subcategory": ""
         },
         {
@@ -15582,6 +15667,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_test_case",
+          "slug": "connect_test_case",
+          "subcategory": ""
+        },
+        {
           "title": "connect_traffic_distribution_group",
           "slug": "connect_traffic_distribution_group",
           "subcategory": ""
@@ -15659,6 +15749,11 @@
         {
           "title": "customerprofiles_domain",
           "slug": "customerprofiles_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "customerprofiles_domain_object_type",
+          "slug": "customerprofiles_domain_object_type",
           "subcategory": ""
         },
         {
@@ -23772,6 +23867,16 @@
           "subcategory": ""
         },
         {
+          "title": "servicecatalog_accepted_portfolio_share",
+          "slug": "servicecatalog_accepted_portfolio_share",
+          "subcategory": ""
+        },
+        {
+          "title": "servicecatalog_accepted_portfolio_shares",
+          "slug": "servicecatalog_accepted_portfolio_shares",
+          "subcategory": ""
+        },
+        {
           "title": "servicecatalogappregistry_application",
           "slug": "servicecatalogappregistry_application",
           "subcategory": ""
@@ -26016,6 +26121,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_insight_rule",
+          "slug": "cloudwatch_insight_rule",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_log_alarm",
           "slug": "cloudwatch_log_alarm",
           "subcategory": ""
@@ -26143,6 +26253,11 @@
         {
           "title": "config_conformance_pack",
           "slug": "config_conformance_pack",
+          "subcategory": ""
+        },
+        {
+          "title": "config_connector",
+          "slug": "config_connector",
           "subcategory": ""
         },
         {
@@ -29801,6 +29916,11 @@
           "subcategory": ""
         },
         {
+          "title": "servicecatalog_accepted_portfolio_share",
+          "slug": "servicecatalog_accepted_portfolio_share",
+          "subcategory": ""
+        },
+        {
           "title": "servicecatalogappregistry_application",
           "slug": "servicecatalogappregistry_application",
           "subcategory": ""
@@ -31610,6 +31730,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_insight_rule",
+          "slug": "cloudwatch_insight_rule",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_log_alarm",
           "slug": "cloudwatch_log_alarm",
           "subcategory": ""
@@ -31760,6 +31885,16 @@
           "subcategory": ""
         },
         {
+          "title": "cognito_user_pool_regional_configuration_attachment",
+          "slug": "cognito_user_pool_regional_configuration_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "cognito_user_pool_replica",
+          "slug": "cognito_user_pool_replica",
+          "subcategory": ""
+        },
+        {
           "title": "cognito_user_pool_resource_server",
           "slug": "cognito_user_pool_resource_server",
           "subcategory": ""
@@ -31817,6 +31952,11 @@
         {
           "title": "config_conformance_pack",
           "slug": "config_conformance_pack",
+          "subcategory": ""
+        },
+        {
+          "title": "config_connector",
+          "slug": "config_connector",
           "subcategory": ""
         },
         {
@@ -31970,6 +32110,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_test_case",
+          "slug": "connect_test_case",
+          "subcategory": ""
+        },
+        {
           "title": "connect_traffic_distribution_group",
           "slug": "connect_traffic_distribution_group",
           "subcategory": ""
@@ -32027,6 +32172,11 @@
         {
           "title": "customerprofiles_domain",
           "slug": "customerprofiles_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "customerprofiles_domain_object_type",
+          "slug": "customerprofiles_domain_object_type",
           "subcategory": ""
         },
         {
@@ -36520,6 +36670,11 @@
           "subcategory": ""
         },
         {
+          "title": "servicecatalog_accepted_portfolio_share",
+          "slug": "servicecatalog_accepted_portfolio_share",
+          "subcategory": ""
+        },
+        {
           "title": "servicecatalogappregistry_application",
           "slug": "servicecatalogappregistry_application",
           "subcategory": ""
@@ -37306,7 +37461,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:51.261213"
+    "docs_refreshed_at": "2026-07-09T11:12:54.821202"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37740,7 +37895,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:51.683164"
+    "docs_refreshed_at": "2026-07-09T11:12:55.346762"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45827,7 +45982,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:52.179752"
+    "docs_refreshed_at": "2026-07-09T11:12:55.797576"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -46176,7 +46331,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:52.596594"
+    "docs_refreshed_at": "2026-07-09T11:12:56.201697"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -54932,7 +55087,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:53.087661"
+    "docs_refreshed_at": "2026-07-09T11:12:56.726118"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -63421,7 +63576,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-02T10:41:53.569564"
+    "docs_refreshed_at": "2026-07-09T11:12:57.214508"
   },
   "4ek0/neko": {
     "docs": {

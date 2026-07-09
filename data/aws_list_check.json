@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T10:42:46.916507",
+  "generated_at": "2026-07-09T11:13:56.460566",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "8de5717fc6cd21d068fe8a7dd42f1fe1219cee54"
+    "commit": "fc99d80be2e63913524e1915019e55a1d4936903"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 153
+    "list_resources": 159
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3104,
+    "stdout_line_count": 3108,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 9,
-        "implemented": 153,
-        "total": 1661
+        "implemented": 160,
+        "total": 1665
       },
       "service_count": 239,
       "services": [
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 36,
-          "implemented": 7,
-          "total": 19
+          "percent": 40,
+          "implemented": 8,
+          "total": 20
         },
         {
           "service": "billing",
@@ -354,8 +354,8 @@
         },
         {
           "service": "codepipeline",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 33,
+          "implemented": 1,
           "total": 3
         },
         {
@@ -822,15 +822,15 @@
         },
         {
           "service": "lakeformation",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 10,
+          "implemented": 1,
           "total": 10
         },
         {
           "service": "lambda",
-          "percent": 35,
-          "implemented": 5,
-          "total": 14
+          "percent": 40,
+          "implemented": 6,
+          "total": 15
         },
         {
           "service": "lexmodels",
@@ -1224,8 +1224,8 @@
         },
         {
           "service": "scheduler",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 50,
+          "implemented": 1,
           "total": 2
         },
         {
@@ -1350,9 +1350,9 @@
         },
         {
           "service": "ssoadmin",
-          "percent": 7,
-          "implemented": 1,
-          "total": 14
+          "percent": 13,
+          "implemented": 2,
+          "total": 15
         },
         {
           "service": "storagegateway",
@@ -1446,9 +1446,9 @@
         },
         {
           "service": "workspaces",
-          "percent": 0,
-          "implemented": 0,
-          "total": 4
+          "percent": 20,
+          "implemented": 1,
+          "total": 5
         },
         {
           "service": "workspacesweb",
@@ -1821,6 +1821,7 @@
             "bedrockagentcore/agent_runtime_endpoint.go",
             "bedrockagentcore/api_key_credential_provider.go",
             "bedrockagentcore/browser.go",
+            "bedrockagentcore/browser_profile.go",
             "bedrockagentcore/code_interpreter.go",
             "bedrockagentcore/evaluator.go",
             "bedrockagentcore/gateway.go",
@@ -1838,6 +1839,7 @@
             "bedrockagentcore/workload_identity.go"
           ],
           "list_resources": [
+            "bedrockagentcore/browser_profile.go",
             "bedrockagentcore/evaluator.go",
             "bedrockagentcore/harness.go",
             "bedrockagentcore/online_evaluation_config.go",
@@ -2076,7 +2078,9 @@
             "codepipeline/custom_action_type.go",
             "codepipeline/webhook.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "codepipeline/codepipeline.go"
+          ]
         },
         "codestarconnections": {
           "all_resources": [
@@ -3166,7 +3170,9 @@
             "lakeformation/resource_lf_tag.go",
             "lakeformation/resource_lf_tags.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "lakeformation/permissions.go"
+          ]
         },
         "lambda": {
           "all_resources": [
@@ -3177,6 +3183,7 @@
             "lambda/function.go",
             "lambda/function_event_invoke_config.go",
             "lambda/function_recursion_config.go",
+            "lambda/function_scaling_config.go",
             "lambda/function_url.go",
             "lambda/invocation.go",
             "lambda/layer_version.go",
@@ -3189,6 +3196,7 @@
             "lambda/capacity_provider.go",
             "lambda/event_source_mapping.go",
             "lambda/function.go",
+            "lambda/function_scaling_config.go",
             "lambda/layer_version.go",
             "lambda/permission.go"
           ]
@@ -4029,7 +4037,9 @@
             "scheduler/schedule.go",
             "scheduler/schedule_group.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "scheduler/schedule.go"
+          ]
         },
         "schemas": {
           "all_resources": [
@@ -4293,10 +4303,12 @@
             "ssoadmin/permission_set.go",
             "ssoadmin/permission_set_inline_policy.go",
             "ssoadmin/permissions_boundary_attachment.go",
+            "ssoadmin/region.go",
             "ssoadmin/trusted_token_issuer.go"
           ],
           "list_resources": [
-            "ssoadmin/account_assignment.go"
+            "ssoadmin/account_assignment.go",
+            "ssoadmin/region.go"
           ]
         },
         "storagegateway": {
@@ -4481,9 +4493,12 @@
             "workspaces/connection_alias.go",
             "workspaces/directory.go",
             "workspaces/ip_group.go",
+            "workspaces/pool.go",
             "workspaces/workspace.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "workspaces/pool.go"
+          ]
         },
         "workspacesweb": {
           "all_resources": [
@@ -4520,11 +4535,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-07-02 10:42:46 UTC"
+      "last_updated": "2026-07-09 11:13:56 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 46,
+    "services_with_list": 50,
     "top_services": [
       {
         "service": "ec2",
@@ -4546,9 +4561,15 @@
       },
       {
         "service": "bedrockagentcore",
-        "percent": 36,
-        "implemented": 7,
-        "total": 19
+        "percent": 40,
+        "implemented": 8,
+        "total": 20
+      },
+      {
+        "service": "lambda",
+        "percent": 40,
+        "implemented": 6,
+        "total": 15
       },
       {
         "service": "apigateway",
@@ -4567,12 +4588,6 @@
         "percent": 62,
         "implemented": 5,
         "total": 8
-      },
-      {
-        "service": "lambda",
-        "percent": 35,
-        "implemented": 5,
-        "total": 14
       },
       {
         "service": "workmail",
@@ -4975,6 +4990,7 @@
           "bedrockagentcore/agent_runtime_endpoint.go",
           "bedrockagentcore/api_key_credential_provider.go",
           "bedrockagentcore/browser.go",
+          "bedrockagentcore/browser_profile.go",
           "bedrockagentcore/code_interpreter.go",
           "bedrockagentcore/evaluator.go",
           "bedrockagentcore/gateway.go",
@@ -4992,6 +5008,7 @@
           "bedrockagentcore/workload_identity.go"
         ],
         "list_resources": [
+          "bedrockagentcore/browser_profile.go",
           "bedrockagentcore/evaluator.go",
           "bedrockagentcore/harness.go",
           "bedrockagentcore/online_evaluation_config.go",
@@ -5230,7 +5247,9 @@
           "codepipeline/custom_action_type.go",
           "codepipeline/webhook.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "codepipeline/codepipeline.go"
+        ]
       },
       "codestarconnections": {
         "all_resources": [
@@ -6320,7 +6339,9 @@
           "lakeformation/resource_lf_tag.go",
           "lakeformation/resource_lf_tags.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "lakeformation/permissions.go"
+        ]
       },
       "lambda": {
         "all_resources": [
@@ -6331,6 +6352,7 @@
           "lambda/function.go",
           "lambda/function_event_invoke_config.go",
           "lambda/function_recursion_config.go",
+          "lambda/function_scaling_config.go",
           "lambda/function_url.go",
           "lambda/invocation.go",
           "lambda/layer_version.go",
@@ -6343,6 +6365,7 @@
           "lambda/capacity_provider.go",
           "lambda/event_source_mapping.go",
           "lambda/function.go",
+          "lambda/function_scaling_config.go",
           "lambda/layer_version.go",
           "lambda/permission.go"
         ]
@@ -7183,7 +7206,9 @@
           "scheduler/schedule.go",
           "scheduler/schedule_group.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "scheduler/schedule.go"
+        ]
       },
       "schemas": {
         "all_resources": [
@@ -7447,10 +7472,12 @@
           "ssoadmin/permission_set.go",
           "ssoadmin/permission_set_inline_policy.go",
           "ssoadmin/permissions_boundary_attachment.go",
+          "ssoadmin/region.go",
           "ssoadmin/trusted_token_issuer.go"
         ],
         "list_resources": [
-          "ssoadmin/account_assignment.go"
+          "ssoadmin/account_assignment.go",
+          "ssoadmin/region.go"
         ]
       },
       "storagegateway": {
@@ -7635,9 +7662,12 @@
           "workspaces/connection_alias.go",
           "workspaces/directory.go",
           "workspaces/ip_group.go",
+          "workspaces/pool.go",
           "workspaces/workspace.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "workspaces/pool.go"
+        ]
       },
       "workspacesweb": {
         "all_resources": [
@@ -7676,10 +7706,10 @@
     }
   },
   "validation": {
-    "matches": true,
-    "dashboard_list_resources": 153,
-    "script_implemented_list": 153,
-    "script_total_resources": 1661,
+    "matches": false,
+    "dashboard_list_resources": 159,
+    "script_implemented_list": 160,
+    "script_total_resources": 1665,
     "script_percent": 9
   }
 }
