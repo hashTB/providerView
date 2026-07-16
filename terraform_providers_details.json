@@ -1527,6 +1527,11 @@
           "subcategory": "ElastiCache"
         },
         {
+          "title": "elasticache_service_updates",
+          "slug": "elasticache_service_updates",
+          "subcategory": "ElastiCache"
+        },
+        {
           "title": "elasticache_subnet_group",
           "slug": "elasticache_subnet_group",
           "subcategory": "ElastiCache"
@@ -3805,6 +3810,11 @@
           "subcategory": "ARC (Application Recovery Controller) Zonal Shift"
         },
         {
+          "title": "autoscaling_group",
+          "slug": "autoscaling_group",
+          "subcategory": "Auto Scaling"
+        },
+        {
           "title": "batch_job_definition",
           "slug": "batch_job_definition",
           "subcategory": "Batch"
@@ -3907,6 +3917,11 @@
         {
           "title": "cloudwatch_log_s3_table_integration_source",
           "slug": "cloudwatch_log_s3_table_integration_source",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
+          "title": "cloudwatch_log_stream",
+          "slug": "cloudwatch_log_stream",
           "subcategory": "CloudWatch Logs"
         },
         {
@@ -4090,6 +4105,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "kinesis_firehose_delivery_stream",
+          "slug": "kinesis_firehose_delivery_stream",
+          "subcategory": "Kinesis Firehose"
+        },
+        {
           "title": "kms_alias",
           "slug": "kms_alias",
           "subcategory": "KMS (Key Management)"
@@ -4180,6 +4200,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "network_interface",
+          "slug": "network_interface",
+          "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
           "title": "observabilityadmin_telemetry_rule",
           "slug": "observabilityadmin_telemetry_rule",
           "subcategory": "CloudWatch Observability Admin"
@@ -4213,6 +4238,11 @@
           "title": "pinpointsmsvoicev2_pool",
           "slug": "pinpointsmsvoicev2_pool",
           "subcategory": "End User Messaging SMS"
+        },
+        {
+          "title": "rds_cluster",
+          "slug": "rds_cluster",
+          "subcategory": "RDS (Relational Database)"
         },
         {
           "title": "route",
@@ -4408,6 +4438,11 @@
           "title": "securityhub_standards_control",
           "slug": "securityhub_standards_control",
           "subcategory": "Security Hub"
+        },
+        {
+          "title": "sfn_state_machine",
+          "slug": "sfn_state_machine",
+          "subcategory": "SFN (Step Functions)"
         },
         {
           "title": "sns_topic",
@@ -12920,7 +12955,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:54.265002"
+    "docs_refreshed_at": "2026-07-16T09:15:46.172923"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14667,6 +14702,11 @@
           "subcategory": ""
         },
         {
+          "title": "cleanrooms_intermediate_table",
+          "slug": "cleanrooms_intermediate_table",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_membership",
           "slug": "cleanrooms_membership",
           "subcategory": ""
@@ -15559,6 +15599,11 @@
         {
           "title": "connect_contact_flow_version",
           "slug": "connect_contact_flow_version",
+          "subcategory": ""
+        },
+        {
+          "title": "connect_data_lake_association",
+          "slug": "connect_data_lake_association",
           "subcategory": ""
         },
         {
@@ -17199,6 +17244,16 @@
         {
           "title": "ec2_transit_gateway_peering_attachments",
           "slug": "ec2_transit_gateway_peering_attachments",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table",
+          "slug": "ec2_transit_gateway_policy_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_tables",
+          "slug": "ec2_transit_gateway_policy_tables",
           "subcategory": ""
         },
         {
@@ -23727,6 +23782,16 @@
           "subcategory": ""
         },
         {
+          "title": "securityhub_connector",
+          "slug": "securityhub_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "securityhub_connectors",
+          "slug": "securityhub_connectors",
+          "subcategory": ""
+        },
+        {
           "title": "securityhub_connector_v2",
           "slug": "securityhub_connector_v2",
           "subcategory": ""
@@ -26961,6 +27026,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_transit_gateway_policy_table",
+          "slug": "ec2_transit_gateway_policy_table",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_transit_gateway_route_table",
           "slug": "ec2_transit_gateway_route_table",
           "subcategory": ""
@@ -29846,6 +29916,11 @@
           "subcategory": ""
         },
         {
+          "title": "securityhub_connector",
+          "slug": "securityhub_connector",
+          "subcategory": ""
+        },
+        {
           "title": "securityhub_connector_v2",
           "slug": "securityhub_connector_v2",
           "subcategory": ""
@@ -31505,6 +31580,11 @@
           "subcategory": ""
         },
         {
+          "title": "cleanrooms_intermediate_table",
+          "slug": "cleanrooms_intermediate_table",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_membership",
           "slug": "cleanrooms_membership",
           "subcategory": ""
@@ -32017,6 +32097,11 @@
         {
           "title": "connect_contact_flow_version",
           "slug": "connect_contact_flow_version",
+          "subcategory": ""
+        },
+        {
+          "title": "connect_data_lake_association",
+          "slug": "connect_data_lake_association",
           "subcategory": ""
         },
         {
@@ -32987,6 +33072,11 @@
         {
           "title": "ec2_transit_gateway_peering_attachment",
           "slug": "ec2_transit_gateway_peering_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table",
+          "slug": "ec2_transit_gateway_policy_table",
           "subcategory": ""
         },
         {
@@ -36600,6 +36690,11 @@
           "subcategory": ""
         },
         {
+          "title": "securityhub_connector",
+          "slug": "securityhub_connector",
+          "subcategory": ""
+        },
+        {
           "title": "securityhub_connector_v2",
           "slug": "securityhub_connector_v2",
           "subcategory": ""
@@ -37461,7 +37556,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:54.821202"
+    "docs_refreshed_at": "2026-07-16T09:15:46.687408"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37895,7 +37990,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:55.346762"
+    "docs_refreshed_at": "2026-07-16T09:15:47.103410"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -38182,6 +38277,11 @@
           "title": "blueprint_published_version",
           "slug": "blueprint_published_version",
           "subcategory": "Blueprints"
+        },
+        {
+          "title": "cdn_frontdoor_batch_rule_set",
+          "slug": "cdn_frontdoor_batch_rule_set",
+          "subcategory": "CDN"
         },
         {
           "title": "cdn_frontdoor_custom_domain",
@@ -40000,6 +40100,11 @@
           "subcategory": ""
         },
         {
+          "title": "Azure Provider: Preflight Validation",
+          "slug": "preflight_validation",
+          "subcategory": ""
+        },
+        {
           "title": "Azure Provider: Authenticating via a Service Principal and a Client Certificate",
           "slug": "service_principal_client_certificate",
           "subcategory": ""
@@ -40037,9 +40142,49 @@
           "subcategory": "Automation"
         },
         {
+          "title": "backup_policy_vm",
+          "slug": "backup_policy_vm",
+          "subcategory": "Recovery Services"
+        },
+        {
+          "title": "cdn_frontdoor_batch_rule_set",
+          "slug": "cdn_frontdoor_batch_rule_set",
+          "subcategory": "CDN"
+        },
+        {
           "title": "cognitive_account",
           "slug": "cognitive_account",
           "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_account_key",
+          "slug": "cognitive_account_connection_account_key",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_account_managed_identity",
+          "slug": "cognitive_account_connection_account_managed_identity",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_api_key",
+          "slug": "cognitive_account_connection_api_key",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_custom_keys",
+          "slug": "cognitive_account_connection_custom_keys",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_entra_id",
+          "slug": "cognitive_account_connection_entra_id",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "federated_identity_credential",
+          "slug": "federated_identity_credential",
+          "subcategory": "Authorization"
         },
         {
           "title": "firewall",
@@ -40065,6 +40210,31 @@
           "title": "key_vault",
           "slug": "key_vault",
           "subcategory": "Key Vault"
+        },
+        {
+          "title": "kubernetes_automatic_cluster",
+          "slug": "kubernetes_automatic_cluster",
+          "subcategory": "Container"
+        },
+        {
+          "title": "monitor_activity_log_alert",
+          "slug": "monitor_activity_log_alert",
+          "subcategory": "Monitor"
+        },
+        {
+          "title": "monitor_metric_alert",
+          "slug": "monitor_metric_alert",
+          "subcategory": "Monitor"
+        },
+        {
+          "title": "monitor_scheduled_query_rules_alert",
+          "slug": "monitor_scheduled_query_rules_alert",
+          "subcategory": "Monitor"
+        },
+        {
+          "title": "monitor_scheduled_query_rules_alert_v2",
+          "slug": "monitor_scheduled_query_rules_alert_v2",
+          "subcategory": "Monitor"
         },
         {
           "title": "mssql_database",
@@ -40207,6 +40377,11 @@
           "subcategory": "Messaging"
         },
         {
+          "title": "servicebus_namespace_customer_managed_key",
+          "slug": "servicebus_namespace_customer_managed_key",
+          "subcategory": "Messaging"
+        },
+        {
           "title": "service_plan",
           "slug": "service_plan",
           "subcategory": "App Service (Web Apps)"
@@ -40277,6 +40452,31 @@
           "subcategory": "Network"
         },
         {
+          "title": "system_center_virtual_machine_manager_availability_set",
+          "slug": "system_center_virtual_machine_manager_availability_set",
+          "subcategory": "System Center Virtual Machine Manager"
+        },
+        {
+          "title": "system_center_virtual_machine_manager_cloud",
+          "slug": "system_center_virtual_machine_manager_cloud",
+          "subcategory": "System Center Virtual Machine Manager"
+        },
+        {
+          "title": "system_center_virtual_machine_manager_server",
+          "slug": "system_center_virtual_machine_manager_server",
+          "subcategory": "System Center Virtual Machine Manager"
+        },
+        {
+          "title": "system_center_virtual_machine_manager_virtual_machine_template",
+          "slug": "system_center_virtual_machine_manager_virtual_machine_template",
+          "subcategory": "System Center Virtual Machine Manager"
+        },
+        {
+          "title": "system_center_virtual_machine_manager_virtual_network",
+          "slug": "system_center_virtual_machine_manager_virtual_network",
+          "subcategory": "System Center Virtual Machine Manager"
+        },
+        {
           "title": "traffic_manager_profile",
           "slug": "traffic_manager_profile",
           "subcategory": "Network"
@@ -40304,6 +40504,11 @@
         {
           "title": "web_pubsub",
           "slug": "web_pubsub",
+          "subcategory": "Messaging"
+        },
+        {
+          "title": "web_pubsub_custom_certificate",
+          "slug": "web_pubsub_custom_certificate",
           "subcategory": "Messaging"
         },
         {
@@ -41211,6 +41416,11 @@
           "subcategory": "CDN"
         },
         {
+          "title": "cdn_frontdoor_batch_rule_set",
+          "slug": "cdn_frontdoor_batch_rule_set",
+          "subcategory": "CDN"
+        },
+        {
           "title": "cdn_frontdoor_custom_domain",
           "slug": "cdn_frontdoor_custom_domain",
           "subcategory": "CDN"
@@ -41293,6 +41503,31 @@
         {
           "title": "cognitive_account",
           "slug": "cognitive_account",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_account_key",
+          "slug": "cognitive_account_connection_account_key",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_account_managed_identity",
+          "slug": "cognitive_account_connection_account_managed_identity",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_api_key",
+          "slug": "cognitive_account_connection_api_key",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_custom_keys",
+          "slug": "cognitive_account_connection_custom_keys",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_connection_entra_id",
+          "slug": "cognitive_account_connection_entra_id",
           "subcategory": "Cognitive Services"
         },
         {
@@ -42806,6 +43041,11 @@
           "subcategory": "Key Vault"
         },
         {
+          "title": "kubernetes_automatic_cluster",
+          "slug": "kubernetes_automatic_cluster",
+          "subcategory": "Container"
+        },
+        {
           "title": "kubernetes_cluster",
           "slug": "kubernetes_cluster",
           "subcategory": "Container"
@@ -43078,6 +43318,11 @@
         {
           "title": "log_analytics_workspace_table_custom_log",
           "slug": "log_analytics_workspace_table_custom_log",
+          "subcategory": "Log Analytics"
+        },
+        {
+          "title": "log_analytics_workspace_table_microsoft",
+          "slug": "log_analytics_workspace_table_microsoft",
           "subcategory": "Log Analytics"
         },
         {
@@ -45166,6 +45411,11 @@
           "subcategory": "Storage"
         },
         {
+          "title": "storage_account_table_properties",
+          "slug": "storage_account_table_properties",
+          "subcategory": "Storage"
+        },
+        {
           "title": "storage_blob",
           "slug": "storage_blob",
           "subcategory": "Storage"
@@ -45982,7 +46232,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:55.797576"
+    "docs_refreshed_at": "2026-07-16T09:15:47.577588"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -46331,7 +46581,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:56.201697"
+    "docs_refreshed_at": "2026-07-16T09:15:47.990339"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -47679,6 +47929,11 @@
           "subcategory": "Data Catalog"
         },
         {
+          "title": "data_catalog_taxonomy",
+          "slug": "data_catalog_taxonomy",
+          "subcategory": "Data Catalog"
+        },
+        {
           "title": "data_catalog_taxonomy_iam_policy",
           "slug": "data_catalog_taxonomy_iam_policy",
           "subcategory": "Data Catalog"
@@ -48049,8 +48304,23 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_agent_iam_policy",
+          "slug": "iap_agent_registry_agent_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_endpoint_iam_policy",
+          "slug": "iap_agent_registry_endpoint_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_agent_registry_iam_policy",
           "slug": "iap_agent_registry_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_mcp_server_iam_policy",
+          "slug": "iap_agent_registry_mcp_server_iam_policy",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -48381,6 +48651,16 @@
         {
           "title": "oracle_database_db_servers",
           "slug": "oracle_database_db_servers",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_exascale_db_storage_vault",
+          "slug": "oracle_database_exascale_db_storage_vault",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_exascale_db_storage_vaults",
+          "slug": "oracle_database_exascale_db_storage_vaults",
           "subcategory": "Oracle Database"
         },
         {
@@ -49203,6 +49483,11 @@
           "title": "Terraform provider for Google Cloud 7.0.0 Upgrade Guide",
           "slug": "version_7_upgrade",
           "subcategory": ""
+        },
+        {
+          "title": "Terraform provider for Google Cloud 8.0.0 Upgrade Guide",
+          "slug": "version_8_upgrade",
+          "subcategory": ""
         }
       ],
       "list-resources": [
@@ -49277,6 +49562,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_instant_snapshot",
+          "slug": "google_compute_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_interconnect_attachment_group",
           "slug": "google_compute_interconnect_attachment_group",
           "subcategory": "Compute Engine"
@@ -49332,8 +49622,33 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_region_instant_snapshot",
+          "slug": "google_compute_region_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_region_network_endpoint_group",
           "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_target_http_proxy",
+          "slug": "google_compute_region_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_target_tcp_proxy",
+          "slug": "google_compute_region_target_tcp_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_url_map",
+          "slug": "google_compute_region_url_map",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_rollout_plan",
+          "slug": "google_compute_rollout_plan",
           "subcategory": "Compute Engine"
         },
         {
@@ -49347,6 +49662,26 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_target_grpc_proxy",
+          "slug": "google_compute_target_grpc_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_http_proxy",
+          "slug": "google_compute_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_ssl_proxy",
+          "slug": "google_compute_target_ssl_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_tcp_proxy",
+          "slug": "google_compute_target_tcp_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_vpn_gateway",
           "slug": "google_compute_vpn_gateway",
           "subcategory": "Compute Engine"
@@ -49355,6 +49690,11 @@
           "title": "google_compute_wire_group",
           "slug": "google_compute_wire_group",
           "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_dns_managed_zone",
+          "slug": "google_dns_managed_zone",
+          "subcategory": "Cloud DNS"
         },
         {
           "title": "google_dns_record_set",
@@ -50081,6 +50421,11 @@
           "subcategory": "BigQuery Analytics Hub"
         },
         {
+          "title": "bigquery_analytics_hub_query_template",
+          "slug": "bigquery_analytics_hub_query_template",
+          "subcategory": "BigQuery Analytics Hub"
+        },
+        {
           "title": "bigquery_bi_reservation",
           "slug": "bigquery_bi_reservation",
           "subcategory": "BigQuery Reservation"
@@ -50376,6 +50721,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_data_export",
+          "slug": "chronicle_data_export",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_data_table",
           "slug": "chronicle_data_table",
           "subcategory": "Chronicle"
@@ -50388,6 +50738,11 @@
         {
           "title": "chronicle_environment",
           "slug": "chronicle_environment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_environment_group",
+          "slug": "chronicle_environment_group",
           "subcategory": "Chronicle"
         },
         {
@@ -50438,6 +50793,11 @@
         {
           "title": "chronicle_rule_deployment",
           "slug": "chronicle_rule_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_soar_domain",
+          "slug": "chronicle_soar_domain",
           "subcategory": "Chronicle"
         },
         {
@@ -53051,8 +53411,23 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_agent_iam",
+          "slug": "iap_agent_registry_agent_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_endpoint_iam",
+          "slug": "iap_agent_registry_endpoint_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_agent_registry_iam",
           "slug": "iap_agent_registry_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_mcp_server_iam",
+          "slug": "iap_agent_registry_mcp_server_iam",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -54841,6 +55216,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vector_search_index",
+          "slug": "vector_search_index",
+          "subcategory": "Vector Search"
+        },
+        {
           "title": "vertex_ai_cache_config",
           "slug": "vertex_ai_cache_config",
           "subcategory": "Vertex AI"
@@ -54976,6 +55356,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_semantic_governance_policy_engine",
+          "slug": "vertex_ai_semantic_governance_policy_engine",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -55087,7 +55472,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:56.726118"
+    "docs_refreshed_at": "2026-07-16T09:15:48.474100"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -56168,6 +56553,11 @@
           "subcategory": "Data Catalog"
         },
         {
+          "title": "data_catalog_taxonomy",
+          "slug": "data_catalog_taxonomy",
+          "subcategory": "Data Catalog"
+        },
+        {
           "title": "data_catalog_taxonomy_iam_policy",
           "slug": "data_catalog_taxonomy_iam_policy",
           "subcategory": "Data Catalog"
@@ -56538,8 +56928,23 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_agent_iam_policy",
+          "slug": "iap_agent_registry_agent_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_endpoint_iam_policy",
+          "slug": "iap_agent_registry_endpoint_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_agent_registry_iam_policy",
           "slug": "iap_agent_registry_iam_policy",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_mcp_server_iam_policy",
+          "slug": "iap_agent_registry_mcp_server_iam_policy",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -56870,6 +57275,16 @@
         {
           "title": "oracle_database_db_servers",
           "slug": "oracle_database_db_servers",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_exascale_db_storage_vault",
+          "slug": "oracle_database_exascale_db_storage_vault",
+          "subcategory": "Oracle Database"
+        },
+        {
+          "title": "oracle_database_exascale_db_storage_vaults",
+          "slug": "oracle_database_exascale_db_storage_vaults",
           "subcategory": "Oracle Database"
         },
         {
@@ -57692,6 +58107,11 @@
           "title": "Terraform provider for Google Cloud 7.0.0 Upgrade Guide",
           "slug": "version_7_upgrade",
           "subcategory": ""
+        },
+        {
+          "title": "Terraform provider for Google Cloud 8.0.0 Upgrade Guide",
+          "slug": "version_8_upgrade",
+          "subcategory": ""
         }
       ],
       "list-resources": [
@@ -57766,6 +58186,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_instant_snapshot",
+          "slug": "google_compute_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_interconnect_attachment_group",
           "slug": "google_compute_interconnect_attachment_group",
           "subcategory": "Compute Engine"
@@ -57821,8 +58246,33 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_region_instant_snapshot",
+          "slug": "google_compute_region_instant_snapshot",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_region_network_endpoint_group",
           "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_target_http_proxy",
+          "slug": "google_compute_region_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_target_tcp_proxy",
+          "slug": "google_compute_region_target_tcp_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_url_map",
+          "slug": "google_compute_region_url_map",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_rollout_plan",
+          "slug": "google_compute_rollout_plan",
           "subcategory": "Compute Engine"
         },
         {
@@ -57836,6 +58286,26 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_target_grpc_proxy",
+          "slug": "google_compute_target_grpc_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_http_proxy",
+          "slug": "google_compute_target_http_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_ssl_proxy",
+          "slug": "google_compute_target_ssl_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_target_tcp_proxy",
+          "slug": "google_compute_target_tcp_proxy",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_vpn_gateway",
           "slug": "google_compute_vpn_gateway",
           "subcategory": "Compute Engine"
@@ -57844,6 +58314,11 @@
           "title": "google_compute_wire_group",
           "slug": "google_compute_wire_group",
           "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_dns_managed_zone",
+          "slug": "google_dns_managed_zone",
+          "subcategory": "Cloud DNS"
         },
         {
           "title": "google_dns_record_set",
@@ -58570,6 +59045,11 @@
           "subcategory": "BigQuery Analytics Hub"
         },
         {
+          "title": "bigquery_analytics_hub_query_template",
+          "slug": "bigquery_analytics_hub_query_template",
+          "subcategory": "BigQuery Analytics Hub"
+        },
+        {
           "title": "bigquery_bi_reservation",
           "slug": "bigquery_bi_reservation",
           "subcategory": "BigQuery Reservation"
@@ -58865,6 +59345,11 @@
           "subcategory": "Chronicle"
         },
         {
+          "title": "chronicle_data_export",
+          "slug": "chronicle_data_export",
+          "subcategory": "Chronicle"
+        },
+        {
           "title": "chronicle_data_table",
           "slug": "chronicle_data_table",
           "subcategory": "Chronicle"
@@ -58877,6 +59362,11 @@
         {
           "title": "chronicle_environment",
           "slug": "chronicle_environment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_environment_group",
+          "slug": "chronicle_environment_group",
           "subcategory": "Chronicle"
         },
         {
@@ -58927,6 +59417,11 @@
         {
           "title": "chronicle_rule_deployment",
           "slug": "chronicle_rule_deployment",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_soar_domain",
+          "slug": "chronicle_soar_domain",
           "subcategory": "Chronicle"
         },
         {
@@ -61540,8 +62035,23 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iap_agent_registry_agent_iam",
+          "slug": "iap_agent_registry_agent_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_endpoint_iam",
+          "slug": "iap_agent_registry_endpoint_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
           "title": "iap_agent_registry_iam",
           "slug": "iap_agent_registry_iam",
+          "subcategory": "Identity-Aware Proxy"
+        },
+        {
+          "title": "iap_agent_registry_mcp_server_iam",
+          "slug": "iap_agent_registry_mcp_server_iam",
           "subcategory": "Identity-Aware Proxy"
         },
         {
@@ -63330,6 +63840,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vector_search_index",
+          "slug": "vector_search_index",
+          "subcategory": "Vector Search"
+        },
+        {
           "title": "vertex_ai_cache_config",
           "slug": "vertex_ai_cache_config",
           "subcategory": "Vertex AI"
@@ -63465,6 +63980,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_semantic_governance_policy_engine",
+          "slug": "vertex_ai_semantic_governance_policy_engine",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_tensorboard",
           "slug": "vertex_ai_tensorboard",
           "subcategory": "Vertex AI"
@@ -63576,7 +64096,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:12:57.214508"
+    "docs_refreshed_at": "2026-07-16T09:15:48.969257"
   },
   "4ek0/neko": {
     "docs": {

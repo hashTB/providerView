@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T11:13:56.460566",
+  "generated_at": "2026-07-16T09:16:44.174824",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,11 +10,11 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "fc99d80be2e63913524e1915019e55a1d4936903"
+    "commit": "2b74f867f3d2557d559f7d473f9ce9cb95972e3e"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 159
+    "list_resources": 165
   },
   "script_results": {
     "returncode": 0,
@@ -23,7 +23,7 @@
     "parsed": {
       "overall": {
         "percent": 9,
-        "implemented": 160,
+        "implemented": 166,
         "total": 1665
       },
       "service_count": 239,
@@ -162,8 +162,8 @@
         },
         {
           "service": "autoscaling",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 11,
+          "implemented": 1,
           "total": 9
         },
         {
@@ -540,8 +540,8 @@
         },
         {
           "service": "ec2",
-          "percent": 11,
-          "implemented": 19,
+          "percent": 12,
+          "implemented": 20,
           "total": 159
         },
         {
@@ -648,8 +648,8 @@
         },
         {
           "service": "firehose",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 100,
+          "implemented": 1,
           "total": 1
         },
         {
@@ -864,8 +864,8 @@
         },
         {
           "service": "logs",
-          "percent": 22,
-          "implemented": 4,
+          "percent": 27,
+          "implemented": 5,
           "total": 18
         },
         {
@@ -1080,8 +1080,8 @@
         },
         {
           "service": "rds",
-          "percent": 3,
-          "implemented": 1,
+          "percent": 6,
+          "implemented": 2,
           "total": 29
         },
         {
@@ -1296,8 +1296,8 @@
         },
         {
           "service": "sfn",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 33,
+          "implemented": 1,
           "total": 3
         },
         {
@@ -1744,7 +1744,9 @@
             "autoscaling/schedule.go",
             "autoscaling/traffic_source_attachment.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "autoscaling/group.go"
+          ]
         },
         "autoscalingplans": {
           "all_resources": [
@@ -2581,6 +2583,7 @@
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
             "ec2/vpc_network_insights_access_scope.go",
+            "ec2/vpc_network_interface.go",
             "ec2/vpc_route.go",
             "ec2/vpc_route_table.go",
             "ec2/vpc_route_table_association.go",
@@ -2805,7 +2808,9 @@
           "all_resources": [
             "firehose/delivery_stream.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "firehose/delivery_stream.go"
+          ]
         },
         "fis": {
           "all_resources": [
@@ -3294,6 +3299,7 @@
             "logs/group.go",
             "logs/metric_filter.go",
             "logs/s3_table_integration_source.go",
+            "logs/stream.go",
             "logs/subscription_filter.go"
           ]
         },
@@ -3698,6 +3704,7 @@
             "rds/subnet_group.go"
           ],
           "list_resources": [
+            "rds/cluster.go",
             "rds/subnet_group.go"
           ]
         },
@@ -4194,7 +4201,9 @@
             "sfn/alias.go",
             "sfn/state_machine.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "sfn/state_machine.go"
+          ]
         },
         "shield": {
           "all_resources": [
@@ -4535,16 +4544,16 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-07-09 11:13:56 UTC"
+      "last_updated": "2026-07-16 09:16:44 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 50,
+    "services_with_list": 53,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 11,
-        "implemented": 19,
+        "percent": 12,
+        "implemented": 20,
         "total": 159
       },
       {
@@ -4590,6 +4599,12 @@
         "total": 8
       },
       {
+        "service": "logs",
+        "percent": 27,
+        "implemented": 5,
+        "total": 18
+      },
+      {
         "service": "workmail",
         "percent": 80,
         "implemented": 4,
@@ -4612,12 +4627,6 @@
         "percent": 28,
         "implemented": 4,
         "total": 14
-      },
-      {
-        "service": "logs",
-        "percent": 22,
-        "implemented": 4,
-        "total": 18
       },
       {
         "service": "securityhub",
@@ -4913,7 +4922,9 @@
           "autoscaling/schedule.go",
           "autoscaling/traffic_source_attachment.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "autoscaling/group.go"
+        ]
       },
       "autoscalingplans": {
         "all_resources": [
@@ -5750,6 +5761,7 @@
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
           "ec2/vpc_network_insights_access_scope.go",
+          "ec2/vpc_network_interface.go",
           "ec2/vpc_route.go",
           "ec2/vpc_route_table.go",
           "ec2/vpc_route_table_association.go",
@@ -5974,7 +5986,9 @@
         "all_resources": [
           "firehose/delivery_stream.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "firehose/delivery_stream.go"
+        ]
       },
       "fis": {
         "all_resources": [
@@ -6463,6 +6477,7 @@
           "logs/group.go",
           "logs/metric_filter.go",
           "logs/s3_table_integration_source.go",
+          "logs/stream.go",
           "logs/subscription_filter.go"
         ]
       },
@@ -6867,6 +6882,7 @@
           "rds/subnet_group.go"
         ],
         "list_resources": [
+          "rds/cluster.go",
           "rds/subnet_group.go"
         ]
       },
@@ -7363,7 +7379,9 @@
           "sfn/alias.go",
           "sfn/state_machine.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "sfn/state_machine.go"
+        ]
       },
       "shield": {
         "all_resources": [
@@ -7707,8 +7725,8 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 159,
-    "script_implemented_list": 160,
+    "dashboard_list_resources": 165,
+    "script_implemented_list": 166,
     "script_total_resources": 1665,
     "script_percent": 9
   }
