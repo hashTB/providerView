@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:31.292735"
+    "docs_refreshed_at": "2026-07-23T08:37:03.452442"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -64703,7 +64703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:19.354863"
+    "docs_refreshed_at": "2026-07-23T08:36:49.009914"
   },
   "Azure/azapi": {
     "docs": {
@@ -68319,7 +68319,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:20.185544"
+    "docs_refreshed_at": "2026-07-23T08:36:49.877902"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -68359,6 +68359,11 @@
         {
           "title": "access_list_extended",
           "slug": "access_list_extended",
+          "subcategory": "System"
+        },
+        {
+          "title": "access_list_ipv6",
+          "slug": "access_list_ipv6",
           "subcategory": "System"
         },
         {
@@ -68582,18 +68587,8 @@
           "subcategory": "System"
         },
         {
-          "title": "device_tracking_policy",
-          "slug": "device_tracking_policy",
-          "subcategory": "System"
-        },
-        {
           "title": "dhcp",
           "slug": "dhcp",
-          "subcategory": "System"
-        },
-        {
-          "title": "dhcp_pool",
-          "slug": "dhcp_pool",
           "subcategory": "System"
         },
         {
@@ -68605,6 +68600,16 @@
           "title": "eem",
           "slug": "eem",
           "subcategory": "System"
+        },
+        {
+          "title": "eigrp",
+          "slug": "eigrp",
+          "subcategory": "EIGRP"
+        },
+        {
+          "title": "eigrp_vrf",
+          "slug": "eigrp_vrf",
+          "subcategory": "EIGRP"
         },
         {
           "title": "errdisable",
@@ -68624,11 +68629,6 @@
         {
           "title": "evpn_instance",
           "slug": "evpn_instance",
-          "subcategory": "EVPN"
-        },
-        {
-          "title": "evpn_profile",
-          "slug": "evpn_profile",
           "subcategory": "EVPN"
         },
         {
@@ -68707,6 +68707,11 @@
           "subcategory": "Interface"
         },
         {
+          "title": "interface_stackwise_virtual",
+          "slug": "interface_stackwise_virtual",
+          "subcategory": "Interface"
+        },
+        {
           "title": "interface_switchport",
           "slug": "interface_switchport",
           "subcategory": "Switching"
@@ -68722,9 +68727,9 @@
           "subcategory": "Interface"
         },
         {
-          "title": "ipv6_dhcp_pool",
-          "slug": "ipv6_dhcp_pool",
-          "subcategory": "System"
+          "title": "interface_vrrp_v2",
+          "slug": "interface_vrrp_v2",
+          "subcategory": "Interface"
         },
         {
           "title": "ipv6_local_pool",
@@ -68752,6 +68757,11 @@
           "subcategory": "L2VPN"
         },
         {
+          "title": "large_community_list_expanded",
+          "slug": "large_community_list_expanded",
+          "subcategory": "BGP"
+        },
+        {
           "title": "license",
           "slug": "license",
           "subcategory": "System"
@@ -68775,6 +68785,11 @@
           "title": "mdt_subscription",
           "slug": "mdt_subscription",
           "subcategory": "MDT"
+        },
+        {
+          "title": "monitor_session",
+          "slug": "monitor_session",
+          "subcategory": "System"
         },
         {
           "title": "mpls",
@@ -68809,6 +68824,21 @@
         {
           "title": "ospf",
           "slug": "ospf",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3",
+          "slug": "ospfv3",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3_address_family_ipv4_vrf",
+          "slug": "ospfv3_address_family_ipv4_vrf",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3_address_family_ipv6_vrf",
+          "slug": "ospfv3_address_family_ipv6_vrf",
           "subcategory": "OSPF"
         },
         {
@@ -68852,6 +68882,11 @@
           "subcategory": "System"
         },
         {
+          "title": "qos",
+          "slug": "qos",
+          "subcategory": "QoS"
+        },
+        {
           "title": "radius",
           "slug": "radius",
           "subcategory": "AAA"
@@ -68892,6 +68927,11 @@
           "subcategory": "Switching"
         },
         {
+          "title": "stackwise_virtual",
+          "slug": "stackwise_virtual",
+          "subcategory": "System"
+        },
+        {
           "title": "static_route",
           "slug": "static_route",
           "subcategory": "Routing"
@@ -68900,6 +68940,11 @@
           "title": "static_routes_vrf",
           "slug": "static_routes_vrf",
           "subcategory": "Routing"
+        },
+        {
+          "title": "switch",
+          "slug": "switch",
+          "subcategory": "System"
         },
         {
           "title": "system",
@@ -68994,6 +69039,11 @@
           "subcategory": "Guides"
         },
         {
+          "title": "Getting Started",
+          "slug": "getting_started",
+          "subcategory": "Guides"
+        },
+        {
           "title": "Importing Resources",
           "slug": "importing_resources",
           "subcategory": "Guides"
@@ -69045,6 +69095,11 @@
         {
           "title": "access_list_extended",
           "slug": "access_list_extended",
+          "subcategory": "System"
+        },
+        {
+          "title": "access_list_ipv6",
+          "slug": "access_list_ipv6",
           "subcategory": "System"
         },
         {
@@ -69278,18 +69333,8 @@
           "subcategory": "System"
         },
         {
-          "title": "device_tracking_policy",
-          "slug": "device_tracking_policy",
-          "subcategory": "System"
-        },
-        {
           "title": "dhcp",
           "slug": "dhcp",
-          "subcategory": "System"
-        },
-        {
-          "title": "dhcp_pool",
-          "slug": "dhcp_pool",
           "subcategory": "System"
         },
         {
@@ -69301,6 +69346,16 @@
           "title": "eem",
           "slug": "eem",
           "subcategory": "System"
+        },
+        {
+          "title": "eigrp",
+          "slug": "eigrp",
+          "subcategory": "EIGRP"
+        },
+        {
+          "title": "eigrp_vrf",
+          "slug": "eigrp_vrf",
+          "subcategory": "EIGRP"
         },
         {
           "title": "errdisable",
@@ -69320,11 +69375,6 @@
         {
           "title": "evpn_instance",
           "slug": "evpn_instance",
-          "subcategory": "EVPN"
-        },
-        {
-          "title": "evpn_profile",
-          "slug": "evpn_profile",
           "subcategory": "EVPN"
         },
         {
@@ -69403,6 +69453,11 @@
           "subcategory": "Interface"
         },
         {
+          "title": "interface_stackwise_virtual",
+          "slug": "interface_stackwise_virtual",
+          "subcategory": "Interface"
+        },
+        {
           "title": "interface_switchport",
           "slug": "interface_switchport",
           "subcategory": "Switching"
@@ -69418,9 +69473,9 @@
           "subcategory": "Interface"
         },
         {
-          "title": "ipv6_dhcp_pool",
-          "slug": "ipv6_dhcp_pool",
-          "subcategory": "System"
+          "title": "interface_vrrp_v2",
+          "slug": "interface_vrrp_v2",
+          "subcategory": "Interface"
         },
         {
           "title": "ipv6_local_pool",
@@ -69448,6 +69503,11 @@
           "subcategory": "L2VPN"
         },
         {
+          "title": "large_community_list_expanded",
+          "slug": "large_community_list_expanded",
+          "subcategory": "BGP"
+        },
+        {
           "title": "license",
           "slug": "license",
           "subcategory": "System"
@@ -69471,6 +69531,11 @@
           "title": "mdt_subscription",
           "slug": "mdt_subscription",
           "subcategory": "MDT"
+        },
+        {
+          "title": "monitor_session",
+          "slug": "monitor_session",
+          "subcategory": "System"
         },
         {
           "title": "mpls",
@@ -69505,6 +69570,21 @@
         {
           "title": "ospf",
           "slug": "ospf",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3",
+          "slug": "ospfv3",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3_address_family_ipv4_vrf",
+          "slug": "ospfv3_address_family_ipv4_vrf",
+          "subcategory": "OSPF"
+        },
+        {
+          "title": "ospfv3_address_family_ipv6_vrf",
+          "slug": "ospfv3_address_family_ipv6_vrf",
           "subcategory": "OSPF"
         },
         {
@@ -69546,6 +69626,11 @@
           "title": "prefix_list",
           "slug": "prefix_list",
           "subcategory": "System"
+        },
+        {
+          "title": "qos",
+          "slug": "qos",
+          "subcategory": "QoS"
         },
         {
           "title": "radius",
@@ -69593,6 +69678,11 @@
           "subcategory": "Switching"
         },
         {
+          "title": "stackwise_virtual",
+          "slug": "stackwise_virtual",
+          "subcategory": "System"
+        },
+        {
           "title": "static_route",
           "slug": "static_route",
           "subcategory": "Routing"
@@ -69601,6 +69691,11 @@
           "title": "static_routes_vrf",
           "slug": "static_routes_vrf",
           "subcategory": "Routing"
+        },
+        {
+          "title": "switch",
+          "slug": "switch",
+          "subcategory": "System"
         },
         {
           "title": "system",
@@ -69684,7 +69779,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:20.596081"
+    "docs_refreshed_at": "2026-07-23T08:36:50.297113"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -70209,7 +70304,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:21.009780"
+    "docs_refreshed_at": "2026-07-23T08:36:50.719203"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -70477,7 +70572,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:21.418442"
+    "docs_refreshed_at": "2026-07-23T08:36:51.139254"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -70496,7 +70591,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:21.820834"
+    "docs_refreshed_at": "2026-07-23T08:36:51.555224"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -70543,7 +70638,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:23.028896"
+    "docs_refreshed_at": "2026-07-23T08:36:52.808999"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -72120,7 +72215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:24.316368"
+    "docs_refreshed_at": "2026-07-23T08:36:54.123864"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -75849,7 +75944,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:26.358135"
+    "docs_refreshed_at": "2026-07-23T08:36:58.275601"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -77198,7 +77293,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:26.776308"
+    "docs_refreshed_at": "2026-07-23T08:36:58.699847"
   },
   "SAP/btp": {
     "docs": {
@@ -77925,7 +78020,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:27.629515"
+    "docs_refreshed_at": "2026-07-23T08:36:59.557673"
   },
   "SAP/scc": {
     "docs": {
@@ -78160,7 +78255,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:28.441767"
+    "docs_refreshed_at": "2026-07-23T08:37:00.396141"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -78207,7 +78302,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:28.851372"
+    "docs_refreshed_at": "2026-07-23T08:37:00.816197"
   },
   "Sokren/aap": {
     "docs": {
@@ -78290,7 +78385,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:29.259339"
+    "docs_refreshed_at": "2026-07-23T08:37:01.242893"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -78340,7 +78435,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:29.663975"
+    "docs_refreshed_at": "2026-07-23T08:37:01.675856"
   },
   "adampie/ctf": {
     "docs": {
@@ -78387,7 +78482,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:30.883815"
+    "docs_refreshed_at": "2026-07-23T08:37:03.028173"
   },
   "ansible/ansible": {
     "docs": {
@@ -78457,7 +78552,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:31.723471"
+    "docs_refreshed_at": "2026-07-23T08:37:03.882496"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -78505,7 +78600,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:32.131265"
+    "docs_refreshed_at": "2026-07-23T08:37:04.301411"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -78531,7 +78626,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:32.535423"
+    "docs_refreshed_at": "2026-07-23T08:37:04.720770"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -78588,7 +78683,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:32.940678"
+    "docs_refreshed_at": "2026-07-23T08:37:05.136171"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -78614,7 +78709,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:33.743397"
+    "docs_refreshed_at": "2026-07-23T08:37:05.976300"
   },
   "cysp/braze": {
     "docs": {
@@ -78670,7 +78765,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:35.363736"
+    "docs_refreshed_at": "2026-07-23T08:37:07.653449"
   },
   "cysp/contentful": {
     "docs": {
@@ -78693,6 +78788,11 @@
         {
           "title": "preview_api_key",
           "slug": "preview_api_key",
+          "subcategory": ""
+        },
+        {
+          "title": "teams",
+          "slug": "teams",
           "subcategory": ""
         }
       ],
@@ -78724,6 +78824,11 @@
         {
           "title": "app_installation",
           "slug": "app_installation",
+          "subcategory": ""
+        },
+        {
+          "title": "app_key",
+          "slug": "app_key",
           "subcategory": ""
         },
         {
@@ -78823,7 +78928,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:35.775410"
+    "docs_refreshed_at": "2026-07-23T08:37:08.091882"
   },
   "dbanck/concept": {
     "docs": {
@@ -78859,7 +78964,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:37.426419"
+    "docs_refreshed_at": "2026-07-23T08:37:09.773184"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -80328,7 +80433,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:37.866722"
+    "docs_refreshed_at": "2026-07-23T08:37:10.209731"
   },
   "drewmullen/aap": {
     "docs": {
@@ -80436,7 +80541,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:38.669525"
+    "docs_refreshed_at": "2026-07-23T08:37:11.050783"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -80501,7 +80606,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:40.310886"
+    "docs_refreshed_at": "2026-07-23T08:37:12.826051"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -80604,7 +80709,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:41.529770"
+    "docs_refreshed_at": "2026-07-23T08:37:14.086138"
   },
   "hashicorp/local": {
     "docs": {
@@ -80666,7 +80771,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:42.354755"
+    "docs_refreshed_at": "2026-07-23T08:37:14.921414"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -88337,7 +88442,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:44.459461"
+    "docs_refreshed_at": "2026-07-23T08:37:17.088454"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -89150,7 +89255,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:45.688098"
+    "docs_refreshed_at": "2026-07-23T08:37:18.355161"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -89288,7 +89393,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:48.120934"
+    "docs_refreshed_at": "2026-07-23T08:37:20.871940"
   },
   "magodo/restful": {
     "docs": {
@@ -89347,7 +89452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:49.354228"
+    "docs_refreshed_at": "2026-07-23T08:37:22.133947"
   },
   "marshallford/ansible": {
     "docs": {
@@ -89399,7 +89504,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:49.760794"
+    "docs_refreshed_at": "2026-07-23T08:37:22.555483"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -89556,7 +89661,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:50.564438"
+    "docs_refreshed_at": "2026-07-23T08:37:23.403027"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -89619,6 +89724,16 @@
         {
           "title": "device_management_service_serial_numbers",
           "slug": "device_management_service_serial_numbers",
+          "subcategory": ""
+        },
+        {
+          "title": "organizational_unit",
+          "slug": "organizational_unit",
+          "subcategory": ""
+        },
+        {
+          "title": "organizational_units",
+          "slug": "organizational_units",
           "subcategory": ""
         },
         {
@@ -89719,7 +89834,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:50.969841"
+    "docs_refreshed_at": "2026-07-23T08:37:23.818057"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -89766,7 +89881,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:52.211266"
+    "docs_refreshed_at": "2026-07-23T08:37:25.070185"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -91637,7 +91752,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:55.610756"
+    "docs_refreshed_at": "2026-07-23T08:37:28.562114"
   },
   "soffensive/soff": {
     "docs": {
@@ -91684,7 +91799,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:56.826221"
+    "docs_refreshed_at": "2026-07-23T08:37:29.820495"
   },
   "thrashr888/registry": {
     "docs": {
@@ -91772,7 +91887,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:57.633312"
+    "docs_refreshed_at": "2026-07-23T08:37:30.656899"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -92582,7 +92697,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:58.896414"
+    "docs_refreshed_at": "2026-07-23T08:37:31.931424"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -92845,7 +92960,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:24.722850"
+    "docs_refreshed_at": "2026-07-23T08:36:54.543525"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -92900,7 +93015,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:41.941248"
+    "docs_refreshed_at": "2026-07-23T08:37:14.504664"
   },
   "timofurrer/desec": {
     "docs": {
@@ -93059,7 +93174,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:58.038701"
+    "docs_refreshed_at": "2026-07-23T08:37:31.094425"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -93142,7 +93257,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:58.443826"
+    "docs_refreshed_at": "2026-07-23T08:37:31.513999"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -96342,7 +96457,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:23.439159"
+    "docs_refreshed_at": "2026-07-23T08:36:53.238262"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -96637,7 +96752,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:46.905055"
+    "docs_refreshed_at": "2026-07-23T08:37:19.615944"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -96755,7 +96870,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:50.164097"
+    "docs_refreshed_at": "2026-07-23T08:37:22.984103"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -96925,7 +97040,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:25.136590"
+    "docs_refreshed_at": "2026-07-23T08:36:54.960746"
   },
   "branchgrove/debian": {
     "docs": {
@@ -97040,7 +97155,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:33.344645"
+    "docs_refreshed_at": "2026-07-23T08:37:05.558717"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -97485,7 +97600,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:39.905036"
+    "docs_refreshed_at": "2026-07-23T08:37:12.408063"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -98100,7 +98215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:42.775950"
+    "docs_refreshed_at": "2026-07-23T08:37:15.355333"
   },
   "juju/juju": {
     "docs": {
@@ -98112,6 +98227,11 @@
         }
       ],
       "data-sources": [
+        {
+          "title": "action",
+          "slug": "action",
+          "subcategory": ""
+        },
         {
           "title": "application",
           "slug": "application",
@@ -98239,6 +98359,11 @@
           "subcategory": ""
         },
         {
+          "title": "action",
+          "slug": "action",
+          "subcategory": ""
+        },
+        {
           "title": "application",
           "slug": "application",
           "subcategory": ""
@@ -98334,6 +98459,11 @@
           "subcategory": ""
         },
         {
+          "title": "secret_backend",
+          "slug": "secret_backend",
+          "subcategory": ""
+        },
+        {
           "title": "space",
           "slug": "space",
           "subcategory": ""
@@ -98360,7 +98490,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:46.092727"
+    "docs_refreshed_at": "2026-07-23T08:37:18.771981"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -98461,7 +98591,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:25.541424"
+    "docs_refreshed_at": "2026-07-23T08:36:55.377677"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -98899,7 +99029,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:34.553357"
+    "docs_refreshed_at": "2026-07-23T08:37:06.816385"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -99047,7 +99177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:48.539194"
+    "docs_refreshed_at": "2026-07-23T08:37:21.291204"
   },
   "radeksimko/test": {
     "docs": {
@@ -99094,7 +99224,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:53.974554"
+    "docs_refreshed_at": "2026-07-23T08:37:26.871176"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -99487,7 +99617,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:56.018849"
+    "docs_refreshed_at": "2026-07-23T08:37:28.979033"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -99712,7 +99842,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:57.230228"
+    "docs_refreshed_at": "2026-07-23T08:37:30.239229"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -99945,7 +100075,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:48.949289"
+    "docs_refreshed_at": "2026-07-23T08:37:21.710651"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -100362,7 +100492,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:43.194952"
+    "docs_refreshed_at": "2026-07-23T08:37:15.780738"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -100831,7 +100961,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:44.016225"
+    "docs_refreshed_at": "2026-07-23T08:37:16.624155"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -112797,7 +112927,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:53.088124"
+    "docs_refreshed_at": "2026-07-23T08:37:25.963443"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -112910,6 +113040,11 @@
         {
           "title": "object",
           "slug": "object",
+          "subcategory": ""
+        },
+        {
+          "title": "objects",
+          "slug": "objects",
           "subcategory": ""
         },
         {
@@ -113060,6 +113195,11 @@
           "subcategory": ""
         },
         {
+          "title": "Upgrade Guide: v1.9.0",
+          "slug": "upgrade_guide_v1.9.0",
+          "subcategory": ""
+        },
+        {
           "title": "Users and Roles",
           "slug": "users_and_roles",
           "subcategory": ""
@@ -113093,6 +113233,16 @@
         {
           "title": "aws_account",
           "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account_managed",
+          "slug": "aws_account_managed",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account_managed_stack",
+          "slug": "aws_account_managed_stack",
           "subcategory": ""
         },
         {
@@ -113282,7 +113432,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:54.387446"
+    "docs_refreshed_at": "2026-07-23T08:37:27.296603"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -113403,6 +113553,11 @@
           "subcategory": ""
         },
         {
+          "title": "objects",
+          "slug": "objects",
+          "subcategory": ""
+        },
+        {
           "title": "role",
           "slug": "role",
           "subcategory": ""
@@ -113478,6 +113633,11 @@
           "title": "Upgrade Guide: v1.8.2",
           "slug": "upgrade_guide_v1.8.2",
           "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.9.0",
+          "slug": "upgrade_guide_v1.9.0",
+          "subcategory": ""
         }
       ],
       "list-resources": [
@@ -113523,6 +113683,16 @@
         {
           "title": "aws_account",
           "slug": "aws_account",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account_managed",
+          "slug": "aws_account_managed",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_account_managed_stack",
+          "slug": "aws_account_managed_stack",
           "subcategory": ""
         },
         {
@@ -113717,7 +113887,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:54.795233"
+    "docs_refreshed_at": "2026-07-23T08:37:27.715123"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -113780,7 +113950,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:38.267116"
+    "docs_refreshed_at": "2026-07-23T08:37:10.635399"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -113863,7 +114033,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:30.071905"
+    "docs_refreshed_at": "2026-07-23T08:37:02.102145"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -113894,7 +114064,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:34.957980"
+    "docs_refreshed_at": "2026-07-23T08:37:07.234912"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -113925,7 +114095,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:36.610642"
+    "docs_refreshed_at": "2026-07-23T08:37:08.938611"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -113956,7 +114126,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:37.016443"
+    "docs_refreshed_at": "2026-07-23T08:37:09.354468"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -113997,7 +114167,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:39.492278"
+    "docs_refreshed_at": "2026-07-23T08:37:11.972371"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -114237,7 +114407,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:51.803686"
+    "docs_refreshed_at": "2026-07-23T08:37:24.654130"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -116410,7 +116580,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:27.210066"
+    "docs_refreshed_at": "2026-07-23T08:36:59.136087"
   },
   "gringolito/ansible": {
     "docs": {
@@ -116480,7 +116650,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:40.719799"
+    "docs_refreshed_at": "2026-07-23T08:37:13.245691"
   },
   "pexip/infinity": {
     "docs": {
@@ -116880,7 +117050,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:52.620535"
+    "docs_refreshed_at": "2026-07-23T08:37:25.489091"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -116978,7 +117148,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:59.311072"
+    "docs_refreshed_at": "2026-07-23T08:37:32.348999"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -117303,6 +117473,16 @@
         {
           "title": "kibana_export_saved_objects",
           "slug": "kibana_export_saved_objects",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_osquery_pack",
+          "slug": "kibana_osquery_pack",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_osquery_saved_query",
+          "slug": "kibana_osquery_saved_query",
           "subcategory": "Kibana"
         },
         {
@@ -117689,6 +117869,16 @@
           "subcategory": "Kibana"
         },
         {
+          "title": "kibana_osquery_pack",
+          "slug": "kibana_osquery_pack",
+          "subcategory": "Kibana"
+        },
+        {
+          "title": "kibana_osquery_saved_query",
+          "slug": "kibana_osquery_saved_query",
+          "subcategory": "Kibana"
+        },
+        {
           "title": "kibana_security_detection_rule",
           "slug": "kibana_security_detection_rule",
           "subcategory": "Kibana"
@@ -117775,7 +117965,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:39.083544"
+    "docs_refreshed_at": "2026-07-23T08:37:11.551678"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -117804,7 +117994,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:30.481099"
+    "docs_refreshed_at": "2026-07-23T08:37:02.527558"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -125808,7 +125998,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:53.565999"
+    "docs_refreshed_at": "2026-07-23T08:37:26.453529"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -126011,7 +126201,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:19.761130"
+    "docs_refreshed_at": "2026-07-23T08:36:49.433646"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -126064,7 +126254,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:34.149902"
+    "docs_refreshed_at": "2026-07-23T08:37:06.395892"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -126949,7 +127139,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:43.607568"
+    "docs_refreshed_at": "2026-07-23T08:37:16.205349"
   },
   "536tech/daytona": {
     "docs": {
@@ -128355,7 +128545,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:28.036978"
+    "docs_refreshed_at": "2026-07-23T08:36:59.976319"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -128558,7 +128748,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:41.125050"
+    "docs_refreshed_at": "2026-07-23T08:37:13.665980"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -128696,7 +128886,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:55.195924"
+    "docs_refreshed_at": "2026-07-23T08:37:28.133668"
   },
   "DrFaust92/airflow": {
     "docs": {
@@ -128789,7 +128979,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:22.223533"
+    "docs_refreshed_at": "2026-07-23T08:36:51.974414"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -129212,7 +129402,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:45.277044"
+    "docs_refreshed_at": "2026-07-23T08:37:17.931063"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -129830,7 +130020,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:46.502971"
+    "docs_refreshed_at": "2026-07-23T08:37:19.196214"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -136985,7 +137175,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:23.897354"
+    "docs_refreshed_at": "2026-07-23T08:36:53.698755"
   },
   "damhau/scm": {
     "docs": {
@@ -139158,7 +139348,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:36.207207"
+    "docs_refreshed_at": "2026-07-23T08:37:08.521958"
   },
   "jamesbraid/unifi": {
     "docs": {
@@ -139513,7 +139703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:44.867917"
+    "docs_refreshed_at": "2026-07-23T08:37:17.509335"
   },
   "nicole-ashley/matomo": {
     "docs": {
@@ -139936,7 +140126,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:51.371970"
+    "docs_refreshed_at": "2026-07-23T08:37:24.236694"
   },
   "sky-cloak/skycloak": {
     "docs": {
@@ -140254,7 +140444,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:56.428324"
+    "docs_refreshed_at": "2026-07-23T08:37:29.400735"
   },
   "FelGel/mongodb": {
     "docs": {
@@ -140310,7 +140500,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:22.626398"
+    "docs_refreshed_at": "2026-07-23T08:36:52.393373"
   },
   "kmaris/nerdctl": {
     "docs": {
@@ -140435,7 +140625,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:47.310711"
+    "docs_refreshed_at": "2026-07-23T08:37:20.035980"
   },
   "kosli-dev/kosli": {
     "docs": {
@@ -140553,6 +140743,6 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:18:47.718683"
+    "docs_refreshed_at": "2026-07-23T08:37:20.452169"
   }
 }
