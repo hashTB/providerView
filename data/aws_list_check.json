@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T09:16:44.174824",
+  "generated_at": "2026-07-23T08:35:29.425195",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,11 +10,11 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "2b74f867f3d2557d559f7d473f9ce9cb95972e3e"
+    "commit": "00b3504c5bb8f9777a46c42340a51a5a588c0add"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 165
+    "list_resources": 168
   },
   "script_results": {
     "returncode": 0,
@@ -22,8 +22,8 @@
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 9,
-        "implemented": 166,
+        "percent": 10,
+        "implemented": 169,
         "total": 1665
       },
       "service_count": 239,
@@ -570,8 +570,8 @@
         },
         {
           "service": "eks",
-          "percent": 11,
-          "implemented": 1,
+          "percent": 22,
+          "implemented": 2,
           "total": 9
         },
         {
@@ -1176,8 +1176,8 @@
         },
         {
           "service": "s3",
-          "percent": 42,
-          "implemented": 11,
+          "percent": 46,
+          "implemented": 12,
           "total": 26
         },
         {
@@ -1236,8 +1236,8 @@
         },
         {
           "service": "secretsmanager",
-          "percent": 50,
-          "implemented": 2,
+          "percent": 75,
+          "implemented": 3,
           "total": 4
         },
         {
@@ -2662,6 +2662,7 @@
             "eks/pod_identity_association.go"
           ],
           "list_resources": [
+            "eks/addon.go",
             "eks/cluster.go"
           ]
         },
@@ -3909,6 +3910,7 @@
             "s3/bucket_acl.go",
             "s3/bucket_lifecycle_configuration.go",
             "s3/bucket_logging.go",
+            "s3/bucket_notification.go",
             "s3/bucket_ownership_controls.go",
             "s3/bucket_policy.go",
             "s3/bucket_public_access_block.go",
@@ -4066,6 +4068,7 @@
           ],
           "list_resources": [
             "secretsmanager/secret.go",
+            "secretsmanager/secret_policy.go",
             "secretsmanager/secret_version.go"
           ]
         },
@@ -4544,7 +4547,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-07-16 09:16:44 UTC"
+      "last_updated": "2026-07-23 08:35:29 UTC"
     }
   },
   "service_coverage": {
@@ -4558,8 +4561,8 @@
       },
       {
         "service": "s3",
-        "percent": 42,
-        "implemented": 11,
+        "percent": 46,
+        "implemented": 12,
         "total": 26
       },
       {
@@ -5840,6 +5843,7 @@
           "eks/pod_identity_association.go"
         ],
         "list_resources": [
+          "eks/addon.go",
           "eks/cluster.go"
         ]
       },
@@ -7087,6 +7091,7 @@
           "s3/bucket_acl.go",
           "s3/bucket_lifecycle_configuration.go",
           "s3/bucket_logging.go",
+          "s3/bucket_notification.go",
           "s3/bucket_ownership_controls.go",
           "s3/bucket_policy.go",
           "s3/bucket_public_access_block.go",
@@ -7244,6 +7249,7 @@
         ],
         "list_resources": [
           "secretsmanager/secret.go",
+          "secretsmanager/secret_policy.go",
           "secretsmanager/secret_version.go"
         ]
       },
@@ -7725,9 +7731,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 165,
-    "script_implemented_list": 166,
+    "dashboard_list_resources": 168,
+    "script_implemented_list": 169,
     "script_total_resources": 1665,
-    "script_percent": 9
+    "script_percent": 10
   }
 }

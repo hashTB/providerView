@@ -240,6 +240,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "elasticache_apply_service_update",
+          "slug": "elasticache_apply_service_update",
+          "subcategory": "ElastiCache"
+        },
+        {
           "title": "events_put_events",
           "slug": "events_put_events",
           "subcategory": "EventBridge"
@@ -1524,6 +1529,11 @@
         {
           "title": "elasticache_serverless_cache",
           "slug": "elasticache_serverless_cache",
+          "subcategory": "ElastiCache"
+        },
+        {
+          "title": "elasticache_service_update_actions",
+          "slug": "elasticache_service_update_actions",
           "subcategory": "ElastiCache"
         },
         {
@@ -2942,6 +2952,11 @@
           "subcategory": "S3 (Simple Storage)"
         },
         {
+          "title": "s3_buckets",
+          "slug": "s3_buckets",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
           "title": "s3control_access_points",
           "slug": "s3control_access_points",
           "subcategory": "S3 Control"
@@ -4035,6 +4050,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "eks_addon",
+          "slug": "eks_addon",
+          "subcategory": "EKS (Elastic Kubernetes)"
+        },
+        {
           "title": "eks_cluster",
           "slug": "eks_cluster",
           "subcategory": "EKS (Elastic Kubernetes)"
@@ -4310,6 +4330,11 @@
           "subcategory": "S3 (Simple Storage)"
         },
         {
+          "title": "s3_bucket_notification",
+          "slug": "s3_bucket_notification",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
           "title": "s3_bucket_ownership_controls",
           "slug": "s3_bucket_ownership_controls",
           "subcategory": "S3 (Simple Storage)"
@@ -4407,6 +4432,11 @@
         {
           "title": "secretsmanager_secret",
           "slug": "secretsmanager_secret",
+          "subcategory": "Secrets Manager"
+        },
+        {
+          "title": "secretsmanager_secret_policy",
+          "slug": "secretsmanager_secret_policy",
           "subcategory": "Secrets Manager"
         },
         {
@@ -12955,7 +12985,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:46.172923"
+    "docs_refreshed_at": "2026-07-23T08:34:31.789716"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13782,6 +13812,16 @@
           "subcategory": ""
         },
         {
+          "title": "auditmanager_assessment_framework",
+          "slug": "auditmanager_assessment_framework",
+          "subcategory": ""
+        },
+        {
+          "title": "auditmanager_assessment_frameworks",
+          "slug": "auditmanager_assessment_frameworks",
+          "subcategory": ""
+        },
+        {
           "title": "auditmanager_assessments",
           "slug": "auditmanager_assessments",
           "subcategory": ""
@@ -14392,6 +14432,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrock_knowledge_base_policy",
+          "slug": "bedrock_knowledge_base_policy",
+          "subcategory": ""
+        },
+        {
           "title": "bedrock_knowledge_bases",
           "slug": "bedrock_knowledge_bases",
           "subcategory": ""
@@ -14749,6 +14794,16 @@
         {
           "title": "cleanrooms_privacy_budget_template",
           "slug": "cleanrooms_privacy_budget_template",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_generated_template",
+          "slug": "cloudformation_generated_template",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_generated_templates",
+          "slug": "cloudformation_generated_templates",
           "subcategory": ""
         },
         {
@@ -16387,6 +16442,16 @@
           "subcategory": ""
         },
         {
+          "title": "dms_certificate",
+          "slug": "dms_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_certificates",
+          "slug": "dms_certificates",
+          "subcategory": ""
+        },
+        {
           "title": "dms_data_migration",
           "slug": "dms_data_migration",
           "subcategory": ""
@@ -16444,6 +16509,16 @@
         {
           "title": "docdbelastic_clusters",
           "slug": "docdbelastic_clusters",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_event_subscription",
+          "slug": "docdb_event_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_event_subscriptions",
+          "slug": "docdb_event_subscriptions",
           "subcategory": ""
         },
         {
@@ -17249,6 +17324,11 @@
         {
           "title": "ec2_transit_gateway_policy_table",
           "slug": "ec2_transit_gateway_policy_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table_association",
+          "slug": "ec2_transit_gateway_policy_table_association",
           "subcategory": ""
         },
         {
@@ -18507,6 +18587,16 @@
           "subcategory": ""
         },
         {
+          "title": "glue_blueprint",
+          "slug": "glue_blueprint",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_blueprints",
+          "slug": "glue_blueprints",
+          "subcategory": ""
+        },
+        {
           "title": "glue_catalog",
           "slug": "glue_catalog",
           "subcategory": ""
@@ -18614,6 +18704,11 @@
         {
           "title": "glue_triggers",
           "slug": "glue_triggers",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_user_defined_function",
+          "slug": "glue_user_defined_function",
           "subcategory": ""
         },
         {
@@ -18789,6 +18884,11 @@
         {
           "title": "healthimaging_datastores",
           "slug": "healthimaging_datastores",
+          "subcategory": ""
+        },
+        {
+          "title": "healthlake_data_transformation_profile",
+          "slug": "healthlake_data_transformation_profile",
           "subcategory": ""
         },
         {
@@ -22177,6 +22277,16 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_knowledge_base",
+          "slug": "quicksight_knowledge_base",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_knowledge_bases",
+          "slug": "quicksight_knowledge_bases",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_o_auth_client_application",
           "slug": "quicksight_o_auth_client_application",
           "subcategory": ""
@@ -23352,6 +23462,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_action",
+          "slug": "sagemaker_action",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_actions",
+          "slug": "sagemaker_actions",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_algorithm",
           "slug": "sagemaker_algorithm",
           "subcategory": ""
@@ -23392,6 +23512,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_context",
+          "slug": "sagemaker_context",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_contexts",
+          "slug": "sagemaker_contexts",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_data_quality_job_definition",
           "slug": "sagemaker_data_quality_job_definition",
           "subcategory": ""
@@ -23429,6 +23559,26 @@
         {
           "title": "sagemaker_endpoints",
           "slug": "sagemaker_endpoints",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment",
+          "slug": "sagemaker_experiment",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiments",
+          "slug": "sagemaker_experiments",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment_trial_component",
+          "slug": "sagemaker_experiment_trial_component",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment_trial_components",
+          "slug": "sagemaker_experiment_trial_components",
           "subcategory": ""
         },
         {
@@ -23634,6 +23784,16 @@
         {
           "title": "sagemaker_studio_lifecycle_configs",
           "slug": "sagemaker_studio_lifecycle_configs",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_trial_component",
+          "slug": "sagemaker_trial_component",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_trial_components",
+          "slug": "sagemaker_trial_components",
           "subcategory": ""
         },
         {
@@ -24362,6 +24522,16 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_registration",
+          "slug": "smsvoice_registration",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_registrations",
+          "slug": "smsvoice_registrations",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_resource_policies",
           "slug": "smsvoice_resource_policies",
           "subcategory": ""
@@ -24662,6 +24832,16 @@
           "subcategory": ""
         },
         {
+          "title": "storagegateway_tape_pool",
+          "slug": "storagegateway_tape_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "storagegateway_tape_pools",
+          "slug": "storagegateway_tape_pools",
+          "subcategory": ""
+        },
+        {
           "title": "supportapp_account_alias",
           "slug": "supportapp_account_alias",
           "subcategory": ""
@@ -24769,6 +24949,16 @@
         {
           "title": "timestream_tables",
           "slug": "timestream_tables",
+          "subcategory": ""
+        },
+        {
+          "title": "transcribe_vocabulary_filter",
+          "slug": "transcribe_vocabulary_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "transcribe_vocabulary_filters",
+          "slug": "transcribe_vocabulary_filters",
           "subcategory": ""
         },
         {
@@ -25012,6 +25202,36 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_lens",
+          "slug": "wellarchitected_lens",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_lenses",
+          "slug": "wellarchitected_lenses",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_profile",
+          "slug": "wellarchitected_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_profiles",
+          "slug": "wellarchitected_profiles",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_review_template",
+          "slug": "wellarchitected_review_template",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_review_templates",
+          "slug": "wellarchitected_review_templates",
+          "subcategory": ""
+        },
+        {
           "title": "wisdom_ai_agent",
           "slug": "wisdom_ai_agent",
           "subcategory": ""
@@ -25224,6 +25444,16 @@
         {
           "title": "workspacesweb_user_settings_plural",
           "slug": "workspacesweb_user_settings_plural",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_workspace_ip_group",
+          "slug": "workspaces_workspace_ip_group",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_workspace_ip_groups",
+          "slug": "workspaces_workspace_ip_groups",
           "subcategory": ""
         },
         {
@@ -25578,6 +25808,11 @@
         {
           "title": "auditmanager_assessment",
           "slug": "auditmanager_assessment",
+          "subcategory": ""
+        },
+        {
+          "title": "auditmanager_assessment_framework",
+          "slug": "auditmanager_assessment_framework",
           "subcategory": ""
         },
         {
@@ -26003,6 +26238,11 @@
         {
           "title": "cleanroomsml_training_dataset",
           "slug": "cleanroomsml_training_dataset",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_generated_template",
+          "slug": "cloudformation_generated_template",
           "subcategory": ""
         },
         {
@@ -26606,6 +26846,11 @@
           "subcategory": ""
         },
         {
+          "title": "dms_certificate",
+          "slug": "dms_certificate",
+          "subcategory": ""
+        },
+        {
           "title": "dms_data_migration",
           "slug": "dms_data_migration",
           "subcategory": ""
@@ -26633,6 +26878,11 @@
         {
           "title": "docdbelastic_cluster",
           "slug": "docdbelastic_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_event_subscription",
+          "slug": "docdb_event_subscription",
           "subcategory": ""
         },
         {
@@ -27583,6 +27833,11 @@
         {
           "title": "globalaccelerator_listener",
           "slug": "globalaccelerator_listener",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_blueprint",
+          "slug": "glue_blueprint",
           "subcategory": ""
         },
         {
@@ -29206,6 +29461,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_knowledge_base",
+          "slug": "quicksight_knowledge_base",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_o_auth_client_application",
           "slug": "quicksight_o_auth_client_application",
           "subcategory": ""
@@ -29711,6 +29971,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_action",
+          "slug": "sagemaker_action",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_algorithm",
           "slug": "sagemaker_algorithm",
           "subcategory": ""
@@ -29731,6 +29996,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_context",
+          "slug": "sagemaker_context",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_data_quality_job_definition",
           "slug": "sagemaker_data_quality_job_definition",
           "subcategory": ""
@@ -29743,6 +30013,16 @@
         {
           "title": "sagemaker_endpoint",
           "slug": "sagemaker_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment",
+          "slug": "sagemaker_experiment",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment_trial_component",
+          "slug": "sagemaker_experiment_trial_component",
           "subcategory": ""
         },
         {
@@ -29843,6 +30123,11 @@
         {
           "title": "sagemaker_studio_lifecycle_config",
           "slug": "sagemaker_studio_lifecycle_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_trial_component",
+          "slug": "sagemaker_trial_component",
           "subcategory": ""
         },
         {
@@ -30171,6 +30456,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_registration",
+          "slug": "smsvoice_registration",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_resource_policy",
           "slug": "smsvoice_resource_policy",
           "subcategory": ""
@@ -30296,6 +30586,11 @@
           "subcategory": ""
         },
         {
+          "title": "storagegateway_tape_pool",
+          "slug": "storagegateway_tape_pool",
+          "subcategory": ""
+        },
+        {
           "title": "supportapp_account_alias",
           "slug": "supportapp_account_alias",
           "subcategory": ""
@@ -30348,6 +30643,11 @@
         {
           "title": "timestream_table",
           "slug": "timestream_table",
+          "subcategory": ""
+        },
+        {
+          "title": "transcribe_vocabulary_filter",
+          "slug": "transcribe_vocabulary_filter",
           "subcategory": ""
         },
         {
@@ -30436,6 +30736,21 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_lens",
+          "slug": "wellarchitected_lens",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_profile",
+          "slug": "wellarchitected_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_review_template",
+          "slug": "wellarchitected_review_template",
+          "subcategory": ""
+        },
+        {
           "title": "wisdom_assistant",
           "slug": "wisdom_assistant",
           "subcategory": ""
@@ -30513,6 +30828,11 @@
         {
           "title": "workspacesweb_user_settings",
           "slug": "workspacesweb_user_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_workspace_ip_group",
+          "slug": "workspaces_workspace_ip_group",
           "subcategory": ""
         },
         {
@@ -31070,6 +31390,11 @@
           "subcategory": ""
         },
         {
+          "title": "auditmanager_assessment_framework",
+          "slug": "auditmanager_assessment_framework",
+          "subcategory": ""
+        },
+        {
           "title": "autoscaling_auto_scaling_group",
           "slug": "autoscaling_auto_scaling_group",
           "subcategory": ""
@@ -31400,6 +31725,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrock_knowledge_base_policy",
+          "slug": "bedrock_knowledge_base_policy",
+          "subcategory": ""
+        },
+        {
           "title": "bedrockmantle_project",
           "slug": "bedrockmantle_project",
           "subcategory": ""
@@ -31607,6 +31937,11 @@
         {
           "title": "cleanrooms_privacy_budget_template",
           "slug": "cleanrooms_privacy_budget_template",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_generated_template",
+          "slug": "cloudformation_generated_template",
           "subcategory": ""
         },
         {
@@ -32630,6 +32965,11 @@
           "subcategory": ""
         },
         {
+          "title": "dms_certificate",
+          "slug": "dms_certificate",
+          "subcategory": ""
+        },
+        {
           "title": "dms_data_migration",
           "slug": "dms_data_migration",
           "subcategory": ""
@@ -32657,6 +32997,11 @@
         {
           "title": "docdbelastic_cluster",
           "slug": "docdbelastic_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_event_subscription",
+          "slug": "docdb_event_subscription",
           "subcategory": ""
         },
         {
@@ -33077,6 +33422,11 @@
         {
           "title": "ec2_transit_gateway_policy_table",
           "slug": "ec2_transit_gateway_policy_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table_association",
+          "slug": "ec2_transit_gateway_policy_table_association",
           "subcategory": ""
         },
         {
@@ -33760,6 +34110,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_blueprint",
+          "slug": "glue_blueprint",
+          "subcategory": ""
+        },
+        {
           "title": "glue_catalog",
           "slug": "glue_catalog",
           "subcategory": ""
@@ -33822,6 +34177,11 @@
         {
           "title": "glue_trigger",
           "slug": "glue_trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_user_defined_function",
+          "slug": "glue_user_defined_function",
           "subcategory": ""
         },
         {
@@ -33912,6 +34272,11 @@
         {
           "title": "healthimaging_datastore",
           "slug": "healthimaging_datastore",
+          "subcategory": ""
+        },
+        {
+          "title": "healthlake_data_transformation_profile",
+          "slug": "healthlake_data_transformation_profile",
           "subcategory": ""
         },
         {
@@ -35795,6 +36160,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_knowledge_base",
+          "slug": "quicksight_knowledge_base",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_o_auth_client_application",
           "slug": "quicksight_o_auth_client_application",
           "subcategory": ""
@@ -36465,6 +36835,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_action",
+          "slug": "sagemaker_action",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_algorithm",
           "slug": "sagemaker_algorithm",
           "subcategory": ""
@@ -36482,6 +36857,11 @@
         {
           "title": "sagemaker_cluster",
           "slug": "sagemaker_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_context",
+          "slug": "sagemaker_context",
           "subcategory": ""
         },
         {
@@ -36507,6 +36887,16 @@
         {
           "title": "sagemaker_endpoint",
           "slug": "sagemaker_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment",
+          "slug": "sagemaker_experiment",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_experiment_trial_component",
+          "slug": "sagemaker_experiment_trial_component",
           "subcategory": ""
         },
         {
@@ -36612,6 +37002,11 @@
         {
           "title": "sagemaker_studio_lifecycle_config",
           "slug": "sagemaker_studio_lifecycle_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_trial_component",
+          "slug": "sagemaker_trial_component",
           "subcategory": ""
         },
         {
@@ -37015,6 +37410,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_registration",
+          "slug": "smsvoice_registration",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_resource_policy",
           "slug": "smsvoice_resource_policy",
           "subcategory": ""
@@ -37190,6 +37590,11 @@
           "subcategory": ""
         },
         {
+          "title": "storagegateway_tape_pool",
+          "slug": "storagegateway_tape_pool",
+          "subcategory": ""
+        },
+        {
           "title": "supportapp_account_alias",
           "slug": "supportapp_account_alias",
           "subcategory": ""
@@ -37242,6 +37647,11 @@
         {
           "title": "timestream_table",
           "slug": "timestream_table",
+          "subcategory": ""
+        },
+        {
+          "title": "transcribe_vocabulary_filter",
+          "slug": "transcribe_vocabulary_filter",
           "subcategory": ""
         },
         {
@@ -37395,6 +37805,21 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_lens",
+          "slug": "wellarchitected_lens",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_profile",
+          "slug": "wellarchitected_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_review_template",
+          "slug": "wellarchitected_review_template",
+          "subcategory": ""
+        },
+        {
           "title": "wisdom_ai_agent",
           "slug": "wisdom_ai_agent",
           "subcategory": ""
@@ -37530,6 +37955,11 @@
           "subcategory": ""
         },
         {
+          "title": "workspaces_workspace_ip_group",
+          "slug": "workspaces_workspace_ip_group",
+          "subcategory": ""
+        },
+        {
           "title": "workspaces_workspaces_pool",
           "slug": "workspaces_workspaces_pool",
           "subcategory": ""
@@ -37556,7 +37986,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:46.687408"
+    "docs_refreshed_at": "2026-07-23T08:34:32.287470"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -37990,7 +38420,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:47.103410"
+    "docs_refreshed_at": "2026-07-23T08:34:32.645372"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -46232,7 +46662,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:47.577588"
+    "docs_refreshed_at": "2026-07-23T08:34:33.063637"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -46581,7 +47011,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:47.990339"
+    "docs_refreshed_at": "2026-07-23T08:34:33.423667"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -47154,6 +47584,11 @@
           "subcategory": "BigLake Hive Metastore"
         },
         {
+          "title": "biglake_hive_table_iam_policy",
+          "slug": "biglake_hive_table_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog_iam_policy",
           "slug": "biglake_iceberg_catalog_iam_policy",
           "subcategory": "Biglake"
@@ -49517,6 +49952,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_backend_bucket_signed_url_key",
+          "slug": "google_compute_backend_bucket_signed_url_key",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_backend_service_signed_url_key",
+          "slug": "google_compute_backend_service_signed_url_key",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_cross_site_network",
           "slug": "google_compute_cross_site_network",
           "subcategory": "Compute Engine"
@@ -49582,6 +50027,21 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_network_firewall_policy",
+          "slug": "google_compute_network_firewall_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_network_firewall_policy_association",
+          "slug": "google_compute_network_firewall_policy_association",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_network_firewall_policy_packet_mirroring_rule",
+          "slug": "google_compute_network_firewall_policy_packet_mirroring_rule",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_node_template",
           "slug": "google_compute_node_template",
           "subcategory": "Compute Engine"
@@ -49592,6 +50052,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_preview_feature",
+          "slug": "google_compute_preview_feature",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_public_advertised_prefix",
+          "slug": "google_compute_public_advertised_prefix",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_public_delegated_prefix",
           "slug": "google_compute_public_delegated_prefix",
           "subcategory": "Compute Engine"
@@ -49599,6 +50069,11 @@
         {
           "title": "google_compute_region_autoscaler",
           "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_backend_bucket",
+          "slug": "google_compute_region_backend_bucket",
           "subcategory": "Compute Engine"
         },
         {
@@ -49629,6 +50104,11 @@
         {
           "title": "google_compute_region_network_endpoint_group",
           "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_network_firewall_policy",
+          "slug": "google_compute_region_network_firewall_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -50353,6 +50833,16 @@
         {
           "title": "biglake_hive_database_iam",
           "slug": "biglake_hive_database_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_table",
+          "slug": "biglake_hive_table",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_table_iam",
+          "slug": "biglake_hive_table_iam",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -51203,6 +51693,11 @@
         {
           "title": "compute_global_network_endpoint_group",
           "slug": "compute_global_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_global_vm_extension_policy",
+          "slug": "compute_global_vm_extension_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -55472,7 +55967,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:48.474100"
+    "docs_refreshed_at": "2026-07-23T08:34:33.989191"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -55778,6 +56273,11 @@
           "subcategory": "BigLake Hive Metastore"
         },
         {
+          "title": "biglake_hive_table_iam_policy",
+          "slug": "biglake_hive_table_iam_policy",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
           "title": "biglake_iceberg_catalog_iam_policy",
           "slug": "biglake_iceberg_catalog_iam_policy",
           "subcategory": "Biglake"
@@ -58141,6 +58641,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_backend_bucket_signed_url_key",
+          "slug": "google_compute_backend_bucket_signed_url_key",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_backend_service_signed_url_key",
+          "slug": "google_compute_backend_service_signed_url_key",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_cross_site_network",
           "slug": "google_compute_cross_site_network",
           "subcategory": "Compute Engine"
@@ -58206,6 +58716,21 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_network_firewall_policy",
+          "slug": "google_compute_network_firewall_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_network_firewall_policy_association",
+          "slug": "google_compute_network_firewall_policy_association",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_network_firewall_policy_packet_mirroring_rule",
+          "slug": "google_compute_network_firewall_policy_packet_mirroring_rule",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_node_template",
           "slug": "google_compute_node_template",
           "subcategory": "Compute Engine"
@@ -58216,6 +58741,16 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_preview_feature",
+          "slug": "google_compute_preview_feature",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_public_advertised_prefix",
+          "slug": "google_compute_public_advertised_prefix",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_public_delegated_prefix",
           "slug": "google_compute_public_delegated_prefix",
           "subcategory": "Compute Engine"
@@ -58223,6 +58758,11 @@
         {
           "title": "google_compute_region_autoscaler",
           "slug": "google_compute_region_autoscaler",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_backend_bucket",
+          "slug": "google_compute_region_backend_bucket",
           "subcategory": "Compute Engine"
         },
         {
@@ -58253,6 +58793,11 @@
         {
           "title": "google_compute_region_network_endpoint_group",
           "slug": "google_compute_region_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "google_compute_region_network_firewall_policy",
+          "slug": "google_compute_region_network_firewall_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -58977,6 +59522,16 @@
         {
           "title": "biglake_hive_database_iam",
           "slug": "biglake_hive_database_iam",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_table",
+          "slug": "biglake_hive_table",
+          "subcategory": "BigLake Hive Metastore"
+        },
+        {
+          "title": "biglake_hive_table_iam",
+          "slug": "biglake_hive_table_iam",
           "subcategory": "BigLake Hive Metastore"
         },
         {
@@ -59827,6 +60382,11 @@
         {
           "title": "compute_global_network_endpoint_group",
           "slug": "compute_global_network_endpoint_group",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_global_vm_extension_policy",
+          "slug": "compute_global_vm_extension_policy",
           "subcategory": "Compute Engine"
         },
         {
@@ -64096,7 +64656,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-16T09:15:48.969257"
+    "docs_refreshed_at": "2026-07-23T08:34:34.493961"
   },
   "4ek0/neko": {
     "docs": {

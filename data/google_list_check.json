@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T09:16:49.668734",
+  "generated_at": "2026-07-23T08:35:34.671721",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "65a7a522d8f7242a69c413d3089116cd099bbdf1"
+    "commit": "3267418c93c7a341e7c778a45fcabb030c77aa19"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 53,
+    "file_count": 61,
     "files": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
@@ -31,6 +31,16 @@
       },
       {
         "file": "google/services/compute/list_compute_address.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_backend_bucket_signed_url_key.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_backend_service_signed_url_key.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -95,12 +105,32 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_network_firewall_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_network_firewall_policy_association.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_node_template.go",
         "type": "MMv1",
         "registrations": 1
       },
       {
         "file": "google/services/compute/list_compute_packet_mirroring.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_preview_feature.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_public_advertised_prefix.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -141,6 +171,11 @@
       },
       {
         "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/compute/list_compute_region_network_firewall_policy.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -255,6 +290,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/resourcemanager/list_google_service_account_key.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
         "file": "google/services/secretmanager/list_secret_manager_secret.go",
         "type": "MMv1",
         "registrations": 1
@@ -275,12 +315,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "5db967ebdf71a63057e8d45e9ae45982a4919acc2f9ccf53e2e3f58acd58fda8",
+    "sha256": "972c04c4c700a94d64bb31a61df039448e2e10838500c263d158aabb47c40de7",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 55
+    "list_resources": 64
   },
   "registrations": {
     "generated": [
@@ -317,6 +357,20 @@
         "package": "Compute",
         "constructor": "NewComputeAddressListResource",
         "file": "google/services/compute/list_compute_address.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_backend_bucket_signed_url_key",
+        "package": "Compute",
+        "constructor": "NewComputeBackendBucketSignedUrlKeyListResource",
+        "file": "google/services/compute/list_compute_backend_bucket_signed_url_key.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_backend_service_signed_url_key",
+        "package": "Compute",
+        "constructor": "NewComputeBackendServiceSignedUrlKeyListResource",
+        "file": "google/services/compute/list_compute_backend_service_signed_url_key.go",
         "line": 40
       },
       {
@@ -404,6 +458,20 @@
         "line": 40
       },
       {
+        "name": "google_compute_network_firewall_policy",
+        "package": "Compute",
+        "constructor": "NewComputeNetworkFirewallPolicyListResource",
+        "file": "google/services/compute/list_compute_network_firewall_policy.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_network_firewall_policy_association",
+        "package": "Compute",
+        "constructor": "NewComputeNetworkFirewallPolicyAssociationListResource",
+        "file": "google/services/compute/list_compute_network_firewall_policy_association.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_node_template",
         "package": "Compute",
         "constructor": "NewComputeNodeTemplateListResource",
@@ -415,6 +483,20 @@
         "package": "Compute",
         "constructor": "NewComputePacketMirroringListResource",
         "file": "google/services/compute/list_compute_packet_mirroring.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_preview_feature",
+        "package": "Compute",
+        "constructor": "NewComputePreviewFeatureListResource",
+        "file": "google/services/compute/list_compute_preview_feature.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_public_advertised_prefix",
+        "package": "Compute",
+        "constructor": "NewComputePublicAdvertisedPrefixListResource",
+        "file": "google/services/compute/list_compute_public_advertised_prefix.go",
         "line": 40
       },
       {
@@ -471,6 +553,13 @@
         "package": "Compute",
         "constructor": "NewComputeRegionNetworkEndpointGroupListResource",
         "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_compute_region_network_firewall_policy",
+        "package": "Compute",
+        "constructor": "NewComputeRegionNetworkFirewallPolicyListResource",
+        "file": "google/services/compute/list_compute_region_network_firewall_policy.go",
         "line": 40
       },
       {
@@ -651,6 +740,13 @@
         "line": 42
       },
       {
+        "name": "google_service_account_key",
+        "package": "resourcemanager",
+        "constructor": "NewGoogleServiceAccountKeyListResource",
+        "file": "google/services/resourcemanager/list_google_service_account_key.go",
+        "line": 42
+      },
+      {
         "name": "google_storage_bucket",
         "package": "storage",
         "constructor": "NewGoogleStorageBucketListResource",
@@ -691,6 +787,16 @@
         "file": "google/services/compute/list_compute_address.go",
         "type_name": "google_compute_address",
         "constructor": "NewComputeAddressListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_backend_bucket_signed_url_key.go",
+        "type_name": "google_compute_backend_bucket_signed_url_key",
+        "constructor": "NewComputeBackendBucketSignedUrlKeyListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_backend_service_signed_url_key.go",
+        "type_name": "google_compute_backend_service_signed_url_key",
+        "constructor": "NewComputeBackendServiceSignedUrlKeyListResource"
       },
       {
         "file": "google/services/compute/list_compute_cross_site_network.go",
@@ -753,6 +859,16 @@
         "constructor": "NewComputeInterconnectGroupListResource"
       },
       {
+        "file": "google/services/compute/list_compute_network_firewall_policy.go",
+        "type_name": "google_compute_network_firewall_policy",
+        "constructor": "NewComputeNetworkFirewallPolicyListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_network_firewall_policy_association.go",
+        "type_name": "google_compute_network_firewall_policy_association",
+        "constructor": "NewComputeNetworkFirewallPolicyAssociationListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_node_template.go",
         "type_name": "google_compute_node_template",
         "constructor": "NewComputeNodeTemplateListResource"
@@ -761,6 +877,16 @@
         "file": "google/services/compute/list_compute_packet_mirroring.go",
         "type_name": "google_compute_packet_mirroring",
         "constructor": "NewComputePacketMirroringListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_preview_feature.go",
+        "type_name": "google_compute_preview_feature",
+        "constructor": "NewComputePreviewFeatureListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_public_advertised_prefix.go",
+        "type_name": "google_compute_public_advertised_prefix",
+        "constructor": "NewComputePublicAdvertisedPrefixListResource"
       },
       {
         "file": "google/services/compute/list_compute_public_delegated_prefix.go",
@@ -801,6 +927,11 @@
         "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
         "type_name": "google_compute_region_network_endpoint_group",
         "constructor": "NewComputeRegionNetworkEndpointGroupListResource"
+      },
+      {
+        "file": "google/services/compute/list_compute_region_network_firewall_policy.go",
+        "type_name": "google_compute_region_network_firewall_policy",
+        "constructor": "NewComputeRegionNetworkFirewallPolicyListResource"
       },
       {
         "file": "google/services/compute/list_compute_region_target_http_proxy.go",
@@ -911,6 +1042,11 @@
         "file": "google/services/resourcemanager/list_google_service_account.go",
         "type_name": "google_service_account",
         "constructor": "NewGoogleServiceAccountListResource"
+      },
+      {
+        "file": "google/services/resourcemanager/list_google_service_account_key.go",
+        "type_name": "google_service_account_key",
+        "constructor": "NewGoogleServiceAccountKeyListResource"
       }
     ],
     "secretmanager": [
@@ -947,6 +1083,8 @@
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
       "NewComputeAddressListResource",
+      "NewComputeBackendBucketSignedUrlKeyListResource",
+      "NewComputeBackendServiceSignedUrlKeyListResource",
       "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
       "NewComputeExternalVpnGatewayListResource",
@@ -959,8 +1097,12 @@
       "NewComputeInstantSnapshotListResource",
       "NewComputeInterconnectAttachmentGroupListResource",
       "NewComputeInterconnectGroupListResource",
+      "NewComputeNetworkFirewallPolicyAssociationListResource",
+      "NewComputeNetworkFirewallPolicyListResource",
       "NewComputeNodeTemplateListResource",
       "NewComputePacketMirroringListResource",
+      "NewComputePreviewFeatureListResource",
+      "NewComputePublicAdvertisedPrefixListResource",
       "NewComputePublicDelegatedPrefixListResource",
       "NewComputeRegionAutoscalerListResource",
       "NewComputeRegionCommitmentListResource",
@@ -969,6 +1111,7 @@
       "NewComputeRegionHealthSourceListResource",
       "NewComputeRegionInstantSnapshotListResource",
       "NewComputeRegionNetworkEndpointGroupListResource",
+      "NewComputeRegionNetworkFirewallPolicyListResource",
       "NewComputeRegionTargetHttpProxyListResource",
       "NewComputeRegionTargetTcpProxyListResource",
       "NewComputeRegionUrlMapListResource",
@@ -985,6 +1128,7 @@
       "NewGoogleDnsRecordSetListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
+      "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewKMSCryptoKeyVersionListResource",
@@ -1002,6 +1146,8 @@
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
       "NewComputeAddressListResource",
+      "NewComputeBackendBucketSignedUrlKeyListResource",
+      "NewComputeBackendServiceSignedUrlKeyListResource",
       "NewComputeCrossSiteNetworkListResource",
       "NewComputeDiskListResource",
       "NewComputeExternalVpnGatewayListResource",
@@ -1014,8 +1160,12 @@
       "NewComputeInstantSnapshotListResource",
       "NewComputeInterconnectAttachmentGroupListResource",
       "NewComputeInterconnectGroupListResource",
+      "NewComputeNetworkFirewallPolicyAssociationListResource",
+      "NewComputeNetworkFirewallPolicyListResource",
       "NewComputeNodeTemplateListResource",
       "NewComputePacketMirroringListResource",
+      "NewComputePreviewFeatureListResource",
+      "NewComputePublicAdvertisedPrefixListResource",
       "NewComputePublicDelegatedPrefixListResource",
       "NewComputeRegionAutoscalerListResource",
       "NewComputeRegionCommitmentListResource",
@@ -1024,6 +1174,7 @@
       "NewComputeRegionHealthSourceListResource",
       "NewComputeRegionInstantSnapshotListResource",
       "NewComputeRegionNetworkEndpointGroupListResource",
+      "NewComputeRegionNetworkFirewallPolicyListResource",
       "NewComputeRegionTargetHttpProxyListResource",
       "NewComputeRegionTargetTcpProxyListResource",
       "NewComputeRegionUrlMapListResource",
@@ -1039,6 +1190,7 @@
       "NewGoogleDnsRecordSetListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
+      "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewKMSCryptoKeyVersionListResource",
@@ -1055,6 +1207,8 @@
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
+      "google_compute_backend_bucket_signed_url_key",
+      "google_compute_backend_service_signed_url_key",
       "google_compute_cross_site_network",
       "google_compute_disk",
       "google_compute_external_vpn_gateway",
@@ -1067,8 +1221,12 @@
       "google_compute_instant_snapshot",
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
+      "google_compute_network_firewall_policy",
+      "google_compute_network_firewall_policy_association",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_preview_feature",
+      "google_compute_public_advertised_prefix",
       "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
       "google_compute_region_commitment",
@@ -1077,6 +1235,7 @@
       "google_compute_region_health_source",
       "google_compute_region_instant_snapshot",
       "google_compute_region_network_endpoint_group",
+      "google_compute_region_network_firewall_policy",
       "google_compute_region_target_http_proxy",
       "google_compute_region_target_tcp_proxy",
       "google_compute_region_url_map",
@@ -1098,6 +1257,7 @@
       "google_pubsub_topic",
       "google_secret_manager_secret",
       "google_service_account",
+      "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
       "google_storage_hmac_key"
@@ -1107,8 +1267,8 @@
       "NewProjectIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 53,
-    "file_type_name_count": 51,
+    "registration_count": 61,
+    "file_type_name_count": 59,
     "signals_agree": false
   },
   "service_coverage": {
@@ -1116,11 +1276,11 @@
     "rows": [
       {
         "service": "compute",
-        "list_resources": 34
+        "list_resources": 41
       },
       {
         "service": "resourcemanager",
-        "list_resources": 3
+        "list_resources": 4
       },
       {
         "service": "bigquery",
@@ -1183,6 +1343,8 @@
       "compute": {
         "list_resources": [
           "google_compute_address",
+          "google_compute_backend_bucket_signed_url_key",
+          "google_compute_backend_service_signed_url_key",
           "google_compute_cross_site_network",
           "google_compute_disk",
           "google_compute_external_vpn_gateway",
@@ -1195,8 +1357,12 @@
           "google_compute_instant_snapshot",
           "google_compute_interconnect_attachment_group",
           "google_compute_interconnect_group",
+          "google_compute_network_firewall_policy",
+          "google_compute_network_firewall_policy_association",
           "google_compute_node_template",
           "google_compute_packet_mirroring",
+          "google_compute_preview_feature",
+          "google_compute_public_advertised_prefix",
           "google_compute_public_delegated_prefix",
           "google_compute_region_autoscaler",
           "google_compute_region_commitment",
@@ -1205,6 +1371,7 @@
           "google_compute_region_health_source",
           "google_compute_region_instant_snapshot",
           "google_compute_region_network_endpoint_group",
+          "google_compute_region_network_firewall_policy",
           "google_compute_region_target_http_proxy",
           "google_compute_region_target_tcp_proxy",
           "google_compute_region_url_map",
@@ -1244,7 +1411,8 @@
         "list_resources": [
           "google_project",
           "google_project_service",
-          "google_service_account"
+          "google_service_account",
+          "google_service_account_key"
         ]
       },
       "secretmanager": {
@@ -1267,9 +1435,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 55,
-    "code_list_resources": 51,
-    "registered_count": 53,
+    "dashboard_list_resources": 64,
+    "code_list_resources": 59,
+    "registered_count": 61,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -1277,6 +1445,8 @@
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
+      "google_compute_backend_bucket_signed_url_key",
+      "google_compute_backend_service_signed_url_key",
       "google_compute_cross_site_network",
       "google_compute_disk",
       "google_compute_external_vpn_gateway",
@@ -1290,16 +1460,23 @@
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
       "google_compute_machine_image",
+      "google_compute_network_firewall_policy",
+      "google_compute_network_firewall_policy_association",
+      "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_preview_feature",
+      "google_compute_public_advertised_prefix",
       "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
+      "google_compute_region_backend_bucket",
       "google_compute_region_commitment",
       "google_compute_region_composite_health_check",
       "google_compute_region_health_aggregation_policy",
       "google_compute_region_health_source",
       "google_compute_region_instant_snapshot",
       "google_compute_region_network_endpoint_group",
+      "google_compute_region_network_firewall_policy",
       "google_compute_region_target_http_proxy",
       "google_compute_region_target_tcp_proxy",
       "google_compute_region_url_map",
@@ -1334,6 +1511,8 @@
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
+      "google_compute_backend_bucket_signed_url_key",
+      "google_compute_backend_service_signed_url_key",
       "google_compute_cross_site_network",
       "google_compute_disk",
       "google_compute_external_vpn_gateway",
@@ -1346,8 +1525,12 @@
       "google_compute_instant_snapshot",
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
+      "google_compute_network_firewall_policy",
+      "google_compute_network_firewall_policy_association",
       "google_compute_node_template",
       "google_compute_packet_mirroring",
+      "google_compute_preview_feature",
+      "google_compute_public_advertised_prefix",
       "google_compute_public_delegated_prefix",
       "google_compute_region_autoscaler",
       "google_compute_region_commitment",
@@ -1356,6 +1539,7 @@
       "google_compute_region_health_source",
       "google_compute_region_instant_snapshot",
       "google_compute_region_network_endpoint_group",
+      "google_compute_region_network_firewall_policy",
       "google_compute_region_target_http_proxy",
       "google_compute_region_target_tcp_proxy",
       "google_compute_region_url_map",
@@ -1377,17 +1561,22 @@
       "google_pubsub_topic",
       "google_secret_manager_secret",
       "google_service_account",
+      "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
       "google_storage_hmac_key"
     ],
     "only_in_registry": [
       "google_compute_machine_image",
+      "google_compute_network_firewall_policy_packet_mirroring_rule",
+      "google_compute_region_backend_bucket",
       "google_compute_rollout_plan",
       "google_folder_iam_member",
       "google_project_iam_member"
     ],
-    "only_in_source": [],
+    "only_in_source": [
+      "google_service_account_key"
+    ],
     "registry_is_subset": false
   }
 }
