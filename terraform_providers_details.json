@@ -1472,6 +1472,11 @@
           "subcategory": "EKS (Elastic Kubernetes)"
         },
         {
+          "title": "eks_access_policies",
+          "slug": "eks_access_policies",
+          "subcategory": "EKS (Elastic Kubernetes)"
+        },
+        {
           "title": "eks_addon",
           "slug": "eks_addon",
           "subcategory": "EKS (Elastic Kubernetes)"
@@ -3880,6 +3885,11 @@
           "subcategory": "Bedrock AgentCore"
         },
         {
+          "title": "bedrock_evaluation_job",
+          "slug": "bedrock_evaluation_job",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "cleanrooms_collaboration",
           "slug": "cleanrooms_collaboration",
           "subcategory": "Clean Rooms"
@@ -4050,6 +4060,16 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "eks_access_entry",
+          "slug": "eks_access_entry",
+          "subcategory": "EKS (Elastic Kubernetes)"
+        },
+        {
+          "title": "eks_access_policy_association",
+          "slug": "eks_access_policy_association",
+          "subcategory": "EKS (Elastic Kubernetes)"
+        },
+        {
           "title": "eks_addon",
           "slug": "eks_addon",
           "subcategory": "EKS (Elastic Kubernetes)"
@@ -4060,9 +4080,19 @@
           "subcategory": "EKS (Elastic Kubernetes)"
         },
         {
+          "title": "eks_node_group",
+          "slug": "eks_node_group",
+          "subcategory": "EKS (Elastic Kubernetes)"
+        },
+        {
           "title": "elb",
           "slug": "elb",
           "subcategory": "ELB Classic"
+        },
+        {
+          "title": "flow_log",
+          "slug": "flow_log",
+          "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
           "title": "glue_catalog",
@@ -4200,6 +4230,11 @@
           "subcategory": "ELB (Elastic Load Balancing)"
         },
         {
+          "title": "mailmanager_traffic_policy",
+          "slug": "mailmanager_traffic_policy",
+          "subcategory": "SES Mail Manager"
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": "Managed Streaming for Kafka"
@@ -4250,6 +4285,21 @@
           "subcategory": "Organizations"
         },
         {
+          "title": "osis_pipeline",
+          "slug": "osis_pipeline",
+          "subcategory": "OpenSearch Ingestion (OSIS)"
+        },
+        {
+          "title": "osis_pipeline_endpoint",
+          "slug": "osis_pipeline_endpoint",
+          "subcategory": "OpenSearch Ingestion (OSIS)"
+        },
+        {
+          "title": "osis_resource_policy",
+          "slug": "osis_resource_policy",
+          "subcategory": "OpenSearch Ingestion (OSIS)"
+        },
+        {
           "title": "pinpointsmsvoicev2_event_destination",
           "slug": "pinpointsmsvoicev2_event_destination",
           "subcategory": "End User Messaging SMS"
@@ -4263,6 +4313,11 @@
           "title": "rds_cluster",
           "slug": "rds_cluster",
           "subcategory": "RDS (Relational Database)"
+        },
+        {
+          "title": "rekognition_collection",
+          "slug": "rekognition_collection",
+          "subcategory": "Rekognition"
         },
         {
           "title": "route",
@@ -5559,6 +5614,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_evaluation_job",
+          "slug": "bedrock_evaluation_job",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_foundation_model_agreement",
           "slug": "bedrock_foundation_model_agreement",
           "subcategory": "Bedrock"
@@ -6046,6 +6106,11 @@
         {
           "title": "cloudwatch_log_s3_table_integration_source",
           "slug": "cloudwatch_log_s3_table_integration_source",
+          "subcategory": "CloudWatch Logs"
+        },
+        {
+          "title": "cloudwatch_log_storage_tier_policy",
+          "slug": "cloudwatch_log_storage_tier_policy",
           "subcategory": "CloudWatch Logs"
         },
         {
@@ -9304,6 +9369,11 @@
           "subcategory": "Macie"
         },
         {
+          "title": "mailmanager_traffic_policy",
+          "slug": "mailmanager_traffic_policy",
+          "subcategory": "SES Mail Manager"
+        },
+        {
           "title": "main_route_table_association",
           "slug": "main_route_table_association",
           "subcategory": "VPC (Virtual Private Cloud)"
@@ -9986,7 +10056,17 @@
         {
           "title": "osis_pipeline",
           "slug": "osis_pipeline",
-          "subcategory": "OpenSearch Ingestion"
+          "subcategory": "OpenSearch Ingestion (OSIS)"
+        },
+        {
+          "title": "osis_pipeline_endpoint",
+          "slug": "osis_pipeline_endpoint",
+          "subcategory": "OpenSearch Ingestion (OSIS)"
+        },
+        {
+          "title": "osis_resource_policy",
+          "slug": "osis_resource_policy",
+          "subcategory": "OpenSearch Ingestion (OSIS)"
         },
         {
           "title": "outposts_capacity_task",
@@ -12985,7 +13065,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:31.789716"
+    "docs_refreshed_at": "2026-07-30T09:59:03.853552"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -37986,7 +38066,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:32.287470"
+    "docs_refreshed_at": "2026-07-30T09:59:04.577991"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -38420,7 +38500,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:32.645372"
+    "docs_refreshed_at": "2026-07-30T09:59:05.052306"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -38460,6 +38540,11 @@
           "title": "virtual_machine_power",
           "slug": "virtual_machine_power",
           "subcategory": "Compute"
+        },
+        {
+          "title": "web_app_set_slot_distribution",
+          "slug": "web_app_set_slot_distribution",
+          "subcategory": "App Service (Web Apps)"
         }
       ],
       "data-sources": [
@@ -38564,11 +38649,6 @@
           "subcategory": "Network"
         },
         {
-          "title": "app_service",
-          "slug": "app_service",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "app_service_certificate",
           "slug": "app_service_certificate",
           "subcategory": "App Service (Web Apps)"
@@ -38581,11 +38661,6 @@
         {
           "title": "app_service_environment_v3",
           "slug": "app_service_environment_v3",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "app_service_plan",
-          "slug": "app_service_plan",
           "subcategory": "App Service (Web Apps)"
         },
         {
@@ -38671,11 +38746,6 @@
         {
           "title": "batch_application",
           "slug": "batch_application",
-          "subcategory": "Batch"
-        },
-        {
-          "title": "batch_certificate",
-          "slug": "batch_certificate",
           "subcategory": "Batch"
         },
         {
@@ -39214,11 +39284,6 @@
           "subcategory": "Network"
         },
         {
-          "title": "function_app",
-          "slug": "function_app",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "function_app_host_keys",
           "slug": "function_app_host_keys",
           "subcategory": "App Service (Web Apps)"
@@ -39362,6 +39427,11 @@
           "title": "key_vault_secrets",
           "slug": "key_vault_secrets",
           "subcategory": "Key Vault"
+        },
+        {
+          "title": "kubernetes_automatic_cluster",
+          "slug": "kubernetes_automatic_cluster",
+          "subcategory": "Container"
         },
         {
           "title": "kubernetes_cluster",
@@ -39889,11 +39959,6 @@
           "subcategory": "Database"
         },
         {
-          "title": "postgresql_server",
-          "slug": "postgresql_server",
-          "subcategory": "Database"
-        },
-        {
           "title": "private_dns_aaaa_record",
           "slug": "private_dns_aaaa_record",
           "subcategory": "Private DNS"
@@ -40022,11 +40087,6 @@
           "title": "redis_cache",
           "slug": "redis_cache",
           "subcategory": "Redis"
-        },
-        {
-          "title": "redis_enterprise_database",
-          "slug": "redis_enterprise_database",
-          "subcategory": "Redis Enterprise"
         },
         {
           "title": "resource_group",
@@ -40505,6 +40565,11 @@
           "subcategory": ""
         },
         {
+          "title": "Azure Resource Manager: 5.0 Upgrade Guide",
+          "slug": "5.0-upgrade-guide",
+          "subcategory": ""
+        },
+        {
           "title": "Azure Provider: Authenticating via AKS Workload Identity",
           "slug": "aks_workload_identity",
           "subcategory": ""
@@ -40867,6 +40932,11 @@
           "subcategory": "Storage Mover"
         },
         {
+          "title": "storage_mover_target_endpoint",
+          "slug": "storage_mover_target_endpoint",
+          "subcategory": "Storage Mover"
+        },
+        {
           "title": "storage_sync",
           "slug": "storage_sync",
           "subcategory": "Storage"
@@ -41014,11 +41084,6 @@
           "title": "ai_foundry_project",
           "slug": "ai_foundry_project",
           "subcategory": "Machine Learning"
-        },
-        {
-          "title": "ai_services",
-          "slug": "ai_services",
-          "subcategory": "Cognitive Services"
         },
         {
           "title": "analysis_services_server",
@@ -41386,16 +41451,6 @@
           "subcategory": "Network"
         },
         {
-          "title": "app_service",
-          "slug": "app_service",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "app_service_active_slot",
-          "slug": "app_service_active_slot",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "app_service_certificate",
           "slug": "app_service_certificate",
           "subcategory": "App Service (Web Apps)"
@@ -41426,28 +41481,13 @@
           "subcategory": "App Service (Web Apps)"
         },
         {
-          "title": "app_service_hybrid_connection",
-          "slug": "app_service_hybrid_connection",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "app_service_managed_certificate",
           "slug": "app_service_managed_certificate",
           "subcategory": "App Service (Web Apps)"
         },
         {
-          "title": "app_service_plan",
-          "slug": "app_service_plan",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "app_service_public_certificate",
           "slug": "app_service_public_certificate",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "app_service_slot",
-          "slug": "app_service_slot",
           "subcategory": "App Service (Web Apps)"
         },
         {
@@ -41468,11 +41508,6 @@
         {
           "title": "app_service_source_control_slot",
           "slug": "app_service_source_control_slot",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "app_service_source_control_token",
-          "slug": "app_service_source_control_token",
           "subcategory": "App Service (Web Apps)"
         },
         {
@@ -41636,11 +41671,6 @@
           "subcategory": "Automation"
         },
         {
-          "title": "automation_software_update_configuration",
-          "slug": "automation_software_update_configuration",
-          "subcategory": "Automation"
-        },
-        {
           "title": "automation_source_control",
           "slug": "automation_source_control",
           "subcategory": "Automation"
@@ -41728,11 +41758,6 @@
         {
           "title": "batch_application",
           "slug": "batch_application",
-          "subcategory": "Batch"
-        },
-        {
-          "title": "batch_certificate",
-          "slug": "batch_certificate",
           "subcategory": "Batch"
         },
         {
@@ -42606,11 +42631,6 @@
           "subcategory": "DataProtection"
         },
         {
-          "title": "data_protection_backup_instance_postgresql",
-          "slug": "data_protection_backup_instance_postgresql",
-          "subcategory": "DataProtection"
-        },
-        {
           "title": "data_protection_backup_instance_postgresql_flexible_server",
           "slug": "data_protection_backup_instance_postgresql_flexible_server",
           "subcategory": "DataProtection"
@@ -42638,11 +42658,6 @@
         {
           "title": "data_protection_backup_policy_mysql_flexible_server",
           "slug": "data_protection_backup_policy_mysql_flexible_server",
-          "subcategory": "DataProtection"
-        },
-        {
-          "title": "data_protection_backup_policy_postgresql",
-          "slug": "data_protection_backup_policy_postgresql",
           "subcategory": "DataProtection"
         },
         {
@@ -43136,11 +43151,6 @@
           "subcategory": "Network"
         },
         {
-          "title": "function_app",
-          "slug": "function_app",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
           "title": "function_app_active_slot",
           "slug": "function_app_active_slot",
           "subcategory": "App Service (Web Apps)"
@@ -43163,11 +43173,6 @@
         {
           "title": "function_app_hybrid_connection",
           "slug": "function_app_hybrid_connection",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "function_app_slot",
-          "slug": "function_app_slot",
           "subcategory": "App Service (Web Apps)"
         },
         {
@@ -43244,31 +43249,6 @@
           "title": "healthcare_workspace",
           "slug": "healthcare_workspace",
           "subcategory": "Healthcare"
-        },
-        {
-          "title": "hpc_cache",
-          "slug": "hpc_cache",
-          "subcategory": "Storage"
-        },
-        {
-          "title": "hpc_cache_access_policy",
-          "slug": "hpc_cache_access_policy",
-          "subcategory": "Storage"
-        },
-        {
-          "title": "hpc_cache_blob_nfs_target",
-          "slug": "hpc_cache_blob_nfs_target",
-          "subcategory": "Storage"
-        },
-        {
-          "title": "hpc_cache_blob_target",
-          "slug": "hpc_cache_blob_target",
-          "subcategory": "Storage"
-        },
-        {
-          "title": "hpc_cache_nfs_target",
-          "slug": "hpc_cache_nfs_target",
-          "subcategory": "Storage"
         },
         {
           "title": "image",
@@ -44006,11 +43986,6 @@
           "subcategory": "Maps"
         },
         {
-          "title": "maps_creator",
-          "slug": "maps_creator",
-          "subcategory": "Maps"
-        },
-        {
           "title": "marketplace_agreement",
           "slug": "marketplace_agreement",
           "subcategory": "Compute"
@@ -44666,21 +44641,6 @@
           "subcategory": "Oracle"
         },
         {
-          "title": "orbital_contact",
-          "slug": "orbital_contact",
-          "subcategory": "Orbital"
-        },
-        {
-          "title": "orbital_contact_profile",
-          "slug": "orbital_contact_profile",
-          "subcategory": "Orbital"
-        },
-        {
-          "title": "orbital_spacecraft",
-          "slug": "orbital_spacecraft",
-          "subcategory": "Orbital"
-        },
-        {
           "title": "orchestrated_virtual_machine_scale_set",
           "slug": "orchestrated_virtual_machine_scale_set",
           "subcategory": "Compute"
@@ -44796,26 +44756,6 @@
           "subcategory": "Portal"
         },
         {
-          "title": "postgresql_active_directory_administrator",
-          "slug": "postgresql_active_directory_administrator",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_configuration",
-          "slug": "postgresql_configuration",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_database",
-          "slug": "postgresql_database",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_firewall_rule",
-          "slug": "postgresql_firewall_rule",
-          "subcategory": "Database"
-        },
-        {
           "title": "postgresql_flexible_server",
           "slug": "postgresql_flexible_server",
           "subcategory": "Database"
@@ -44848,21 +44788,6 @@
         {
           "title": "postgresql_flexible_server_virtual_endpoint",
           "slug": "postgresql_flexible_server_virtual_endpoint",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_server",
-          "slug": "postgresql_server",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_server_key",
-          "slug": "postgresql_server_key",
-          "subcategory": "Database"
-        },
-        {
-          "title": "postgresql_virtual_network_rule",
-          "slug": "postgresql_virtual_network_rule",
           "subcategory": "Database"
         },
         {
@@ -45014,16 +44939,6 @@
           "title": "redis_cache_access_policy_assignment",
           "slug": "redis_cache_access_policy_assignment",
           "subcategory": "Redis"
-        },
-        {
-          "title": "redis_enterprise_cluster",
-          "slug": "redis_enterprise_cluster",
-          "subcategory": "Redis Enterprise"
-        },
-        {
-          "title": "redis_enterprise_database",
-          "slug": "redis_enterprise_database",
-          "subcategory": "Redis Enterprise"
         },
         {
           "title": "redis_firewall_rule",
@@ -45203,11 +45118,6 @@
         {
           "title": "security_center_automation",
           "slug": "security_center_automation",
-          "subcategory": "Security Center"
-        },
-        {
-          "title": "security_center_auto_provisioning",
-          "slug": "security_center_auto_provisioning",
           "subcategory": "Security Center"
         },
         {
@@ -45784,16 +45694,6 @@
           "title": "stack_hci_virtual_hard_disk",
           "slug": "stack_hci_virtual_hard_disk",
           "subcategory": "Azure Stack HCI"
-        },
-        {
-          "title": "static_site",
-          "slug": "static_site",
-          "subcategory": "App Service (Web Apps)"
-        },
-        {
-          "title": "static_site_custom_domain",
-          "slug": "static_site_custom_domain",
-          "subcategory": "App Service (Web Apps)"
         },
         {
           "title": "static_web_app",
@@ -46662,7 +46562,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:33.063637"
+    "docs_refreshed_at": "2026-07-30T09:59:05.717767"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -47011,7 +46911,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:33.423667"
+    "docs_refreshed_at": "2026-07-30T09:59:06.193305"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -50232,6 +50132,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_service_account_key",
+          "slug": "google_service_account_key",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_sql_database",
           "slug": "google_sql_database",
           "subcategory": "Cloud SQL"
@@ -50354,6 +50259,11 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agent_identity_auth_provider",
+          "slug": "agent_identity_auth_provider",
+          "subcategory": "Agent Identity"
         },
         {
           "title": "agent_registry_binding",
@@ -50638,6 +50548,11 @@
         {
           "title": "apihub_plugin_instance",
           "slug": "apihub_plugin_instance",
+          "subcategory": "API Hub"
+        },
+        {
+          "title": "apihub_runtime_project_attachment",
+          "slug": "apihub_runtime_project_attachment",
           "subcategory": "API Hub"
         },
         {
@@ -51189,6 +51104,11 @@
           "title": "ces_toolset",
           "slug": "ces_toolset",
           "subcategory": "Customer Engagement Suite"
+        },
+        {
+          "title": "chronicle_big_query_export",
+          "slug": "chronicle_big_query_export",
+          "subcategory": "Chronicle"
         },
         {
           "title": "chronicle_custom_list",
@@ -55711,6 +55631,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vector_search_data_object",
+          "slug": "vector_search_data_object",
+          "subcategory": "Vector Search"
+        },
+        {
           "title": "vector_search_index",
           "slug": "vector_search_index",
           "subcategory": "Vector Search"
@@ -55828,6 +55753,11 @@
         {
           "title": "vertex_ai_model_garden_enable_model",
           "slug": "vertex_ai_model_garden_enable_model",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_persistent_resource",
+          "slug": "vertex_ai_persistent_resource",
           "subcategory": "Vertex AI"
         },
         {
@@ -55967,7 +55897,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:33.989191"
+    "docs_refreshed_at": "2026-07-30T09:59:06.845338"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -58921,6 +58851,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_service_account_key",
+          "slug": "google_service_account_key",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_sql_database",
           "slug": "google_sql_database",
           "subcategory": "Cloud SQL"
@@ -59043,6 +58978,11 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agent_identity_auth_provider",
+          "slug": "agent_identity_auth_provider",
+          "subcategory": "Agent Identity"
         },
         {
           "title": "agent_registry_binding",
@@ -59327,6 +59267,11 @@
         {
           "title": "apihub_plugin_instance",
           "slug": "apihub_plugin_instance",
+          "subcategory": "API Hub"
+        },
+        {
+          "title": "apihub_runtime_project_attachment",
+          "slug": "apihub_runtime_project_attachment",
           "subcategory": "API Hub"
         },
         {
@@ -59878,6 +59823,11 @@
           "title": "ces_toolset",
           "slug": "ces_toolset",
           "subcategory": "Customer Engagement Suite"
+        },
+        {
+          "title": "chronicle_big_query_export",
+          "slug": "chronicle_big_query_export",
+          "subcategory": "Chronicle"
         },
         {
           "title": "chronicle_custom_list",
@@ -64400,6 +64350,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vector_search_data_object",
+          "slug": "vector_search_data_object",
+          "subcategory": "Vector Search"
+        },
+        {
           "title": "vector_search_index",
           "slug": "vector_search_index",
           "subcategory": "Vector Search"
@@ -64517,6 +64472,11 @@
         {
           "title": "vertex_ai_model_garden_enable_model",
           "slug": "vertex_ai_model_garden_enable_model",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_persistent_resource",
+          "slug": "vertex_ai_persistent_resource",
           "subcategory": "Vertex AI"
         },
         {
@@ -64656,7 +64616,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:34:34.493961"
+    "docs_refreshed_at": "2026-07-30T09:59:07.478547"
   },
   "4ek0/neko": {
     "docs": {

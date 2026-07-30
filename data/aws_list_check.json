@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T08:35:29.425195",
+  "generated_at": "2026-07-30T10:00:01.066977",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "00b3504c5bb8f9777a46c42340a51a5a588c0add"
+    "commit": "9af801dbddb6b8b098eb06fbc6c01067d9282ee1"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 168
+    "list_resources": 178
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3108,
+    "stdout_line_count": 3119,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 10,
-        "implemented": 169,
-        "total": 1665
+        "implemented": 179,
+        "total": 1670
       },
-      "service_count": 239,
+      "service_count": 240,
       "services": [
         {
           "service": "accessanalyzer",
@@ -192,9 +192,9 @@
         },
         {
           "service": "bedrock",
-          "percent": 0,
-          "implemented": 0,
-          "total": 8
+          "percent": 11,
+          "implemented": 1,
+          "total": 9
         },
         {
           "service": "bedrockagent",
@@ -540,8 +540,8 @@
         },
         {
           "service": "ec2",
-          "percent": 12,
-          "implemented": 20,
+          "percent": 13,
+          "implemented": 21,
           "total": 159
         },
         {
@@ -570,8 +570,8 @@
         },
         {
           "service": "eks",
-          "percent": 22,
-          "implemented": 2,
+          "percent": 55,
+          "implemented": 5,
           "total": 9
         },
         {
@@ -864,9 +864,9 @@
         },
         {
           "service": "logs",
-          "percent": 27,
+          "percent": 26,
           "implemented": 5,
-          "total": 18
+          "total": 19
         },
         {
           "service": "m2",
@@ -879,6 +879,12 @@
           "percent": 0,
           "implemented": 0,
           "total": 9
+        },
+        {
+          "service": "mailmanager",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
         },
         {
           "service": "mediaconvert",
@@ -1014,9 +1020,9 @@
         },
         {
           "service": "osis",
-          "percent": 0,
-          "implemented": 0,
-          "total": 1
+          "percent": 100,
+          "implemented": 3,
+          "total": 3
         },
         {
           "service": "outposts",
@@ -1104,8 +1110,8 @@
         },
         {
           "service": "rekognition",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 33,
+          "implemented": 1,
           "total": 3
         },
         {
@@ -1793,6 +1799,7 @@
         "bedrock": {
           "all_resources": [
             "bedrock/custom_model.go",
+            "bedrock/evaluation_job.go",
             "bedrock/foundation_model_agreement.go",
             "bedrock/guardrail.go",
             "bedrock/guardrail_version.go",
@@ -1801,7 +1808,9 @@
             "bedrock/provisioned_model_throughput.go",
             "bedrock/use_case_for_model_access.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "bedrock/evaluation_job.go"
+          ]
         },
         "bedrockagent": {
           "all_resources": [
@@ -2580,6 +2589,7 @@
             "ec2/transitgateway_metering_policy.go",
             "ec2/vpc_endpoint.go",
             "ec2/vpc_endpoint_route_table_association.go",
+            "ec2/vpc_flow_log.go",
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
             "ec2/vpc_network_insights_access_scope.go",
@@ -2662,8 +2672,11 @@
             "eks/pod_identity_association.go"
           ],
           "list_resources": [
+            "eks/access_entry.go",
+            "eks/access_policy_association.go",
             "eks/addon.go",
-            "eks/cluster.go"
+            "eks/cluster.go",
+            "eks/node_group.go"
           ]
         },
         "elasticache": {
@@ -3292,6 +3305,7 @@
             "logs/query_definition.go",
             "logs/resource_policy.go",
             "logs/s3_table_integration_source.go",
+            "logs/storage_tier_policy.go",
             "logs/stream.go",
             "logs/subscription_filter.go",
             "logs/transformer.go"
@@ -3325,6 +3339,14 @@
             "macie2/organization_configuration.go"
           ],
           "list_resources": []
+        },
+        "mailmanager": {
+          "all_resources": [
+            "mailmanager/traffic_policy.go"
+          ],
+          "list_resources": [
+            "mailmanager/traffic_policy.go"
+          ]
         },
         "mediaconvert": {
           "all_resources": [
@@ -3559,9 +3581,15 @@
         },
         "osis": {
           "all_resources": [
-            "osis/pipeline.go"
+            "osis/pipeline.go",
+            "osis/pipeline_endpoint.go",
+            "osis/resource_policy.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "osis/pipeline.go",
+            "osis/pipeline_endpoint.go",
+            "osis/resource_policy.go"
+          ]
         },
         "outposts": {
           "all_resources": [
@@ -3763,7 +3791,9 @@
             "rekognition/project.go",
             "rekognition/stream_processor.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "rekognition/collection.go"
+          ]
         },
         "resiliencehub": {
           "all_resources": [
@@ -4547,16 +4577,16 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-07-23 08:35:29 UTC"
+      "last_updated": "2026-07-30 10:00:01 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 53,
+    "services_with_list": 57,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 12,
-        "implemented": 20,
+        "percent": 13,
+        "implemented": 21,
         "total": 159
       },
       {
@@ -4602,10 +4632,16 @@
         "total": 8
       },
       {
-        "service": "logs",
-        "percent": 27,
+        "service": "eks",
+        "percent": 55,
         "implemented": 5,
-        "total": 18
+        "total": 9
+      },
+      {
+        "service": "logs",
+        "percent": 26,
+        "implemented": 5,
+        "total": 19
       },
       {
         "service": "workmail",
@@ -4636,12 +4672,6 @@
         "percent": 21,
         "implemented": 4,
         "total": 19
-      },
-      {
-        "service": "sagemaker",
-        "percent": 10,
-        "implemented": 4,
-        "total": 38
       }
     ],
     "service_resources": {
@@ -4974,6 +5004,7 @@
       "bedrock": {
         "all_resources": [
           "bedrock/custom_model.go",
+          "bedrock/evaluation_job.go",
           "bedrock/foundation_model_agreement.go",
           "bedrock/guardrail.go",
           "bedrock/guardrail_version.go",
@@ -4982,7 +5013,9 @@
           "bedrock/provisioned_model_throughput.go",
           "bedrock/use_case_for_model_access.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "bedrock/evaluation_job.go"
+        ]
       },
       "bedrockagent": {
         "all_resources": [
@@ -5761,6 +5794,7 @@
           "ec2/transitgateway_metering_policy.go",
           "ec2/vpc_endpoint.go",
           "ec2/vpc_endpoint_route_table_association.go",
+          "ec2/vpc_flow_log.go",
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
           "ec2/vpc_network_insights_access_scope.go",
@@ -5843,8 +5877,11 @@
           "eks/pod_identity_association.go"
         ],
         "list_resources": [
+          "eks/access_entry.go",
+          "eks/access_policy_association.go",
           "eks/addon.go",
-          "eks/cluster.go"
+          "eks/cluster.go",
+          "eks/node_group.go"
         ]
       },
       "elasticache": {
@@ -6473,6 +6510,7 @@
           "logs/query_definition.go",
           "logs/resource_policy.go",
           "logs/s3_table_integration_source.go",
+          "logs/storage_tier_policy.go",
           "logs/stream.go",
           "logs/subscription_filter.go",
           "logs/transformer.go"
@@ -6506,6 +6544,14 @@
           "macie2/organization_configuration.go"
         ],
         "list_resources": []
+      },
+      "mailmanager": {
+        "all_resources": [
+          "mailmanager/traffic_policy.go"
+        ],
+        "list_resources": [
+          "mailmanager/traffic_policy.go"
+        ]
       },
       "mediaconvert": {
         "all_resources": [
@@ -6740,9 +6786,15 @@
       },
       "osis": {
         "all_resources": [
-          "osis/pipeline.go"
+          "osis/pipeline.go",
+          "osis/pipeline_endpoint.go",
+          "osis/resource_policy.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "osis/pipeline.go",
+          "osis/pipeline_endpoint.go",
+          "osis/resource_policy.go"
+        ]
       },
       "outposts": {
         "all_resources": [
@@ -6944,7 +6996,9 @@
           "rekognition/project.go",
           "rekognition/stream_processor.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "rekognition/collection.go"
+        ]
       },
       "resiliencehub": {
         "all_resources": [
@@ -7731,9 +7785,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 168,
-    "script_implemented_list": 169,
-    "script_total_resources": 1665,
+    "dashboard_list_resources": 178,
+    "script_implemented_list": 179,
+    "script_total_resources": 1670,
     "script_percent": 10
   }
 }

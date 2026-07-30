@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-23T08:35:34.671721",
+  "generated_at": "2026-07-30T10:00:05.852159",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "3267418c93c7a341e7c778a45fcabb030c77aa19"
+    "commit": "38498c8eebaf8424788199db23e96ec910515584"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 61,
+    "file_count": 79,
     "files": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
@@ -195,6 +195,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_compute_rollout_plan.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/compute/list_compute_snapshot.go",
         "type": "MMv1",
         "registrations": 1
@@ -235,6 +240,76 @@
         "registrations": 1
       },
       {
+        "file": "google/services/compute/list_google_compute_instance.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_chat_engine.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_cmek_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_control.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_data_store.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_license_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_recommendation_engine.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_schema.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_search_engine.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_serving_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_sitemap.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_target_site.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_user_store.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/dns/list_google_dns_managed_zone.go",
         "type": "Handwritten",
         "registrations": 1
@@ -252,6 +327,11 @@
       {
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
         "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/pubsub/iam_pubsub_subscription.go",
+        "type": "Handwritten",
         "registrations": 1
       },
       {
@@ -275,7 +355,17 @@
         "registrations": 1
       },
       {
+        "file": "google/services/resourcemanager/iam_service_account.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
         "file": "google/services/resourcemanager/list_google_project.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/resourcemanager/list_google_project_iam_custom_role.go",
         "type": "Handwritten",
         "registrations": 1
       },
@@ -315,12 +405,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "972c04c4c700a94d64bb31a61df039448e2e10838500c263d158aabb47c40de7",
+    "sha256": "f3d3c3614bea24f0cc01db56a376abb07f5fcde381fcaba33b145975a2c66470",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 64
+    "list_resources": 65
   },
   "registrations": {
     "generated": [
@@ -584,6 +674,13 @@
         "line": 40
       },
       {
+        "name": "google_compute_rollout_plan",
+        "package": "Compute",
+        "constructor": "NewComputeRolloutPlanListResource",
+        "file": "google/services/compute/list_compute_rollout_plan.go",
+        "line": 40
+      },
+      {
         "name": "google_compute_snapshot",
         "package": "Compute",
         "constructor": "NewComputeSnapshotListResource",
@@ -640,6 +737,97 @@
         "line": 40
       },
       {
+        "name": "google_discovery_engine_assistant",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineAssistantListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_chat_engine",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineChatEngineListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_chat_engine.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_cmek_config",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineCmekConfigListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_cmek_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_control",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineControlListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_control.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_data_store",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineDataStoreListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_data_store.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_license_config",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineLicenseConfigListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_license_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_recommendation_engine",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineRecommendationEngineListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_recommendation_engine.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_schema",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineSchemaListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_schema.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_search_engine",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineSearchEngineListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_search_engine.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_serving_config",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineServingConfigListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_serving_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_sitemap",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineSitemapListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_sitemap.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_target_site",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineTargetSiteListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_target_site.go",
+        "line": 40
+      },
+      {
+        "name": "google_discovery_engine_user_store",
+        "package": "DiscoveryEngine",
+        "constructor": "NewDiscoveryEngineUserStoreListResource",
+        "file": "google/services/discoveryengine/list_discovery_engine_user_store.go",
+        "line": 40
+      },
+      {
         "name": "google_kms_crypto_key_version",
         "package": "KMS",
         "constructor": "NewKMSCryptoKeyVersionListResource",
@@ -691,6 +879,13 @@
     ],
     "handwritten": [
       {
+        "name": "google_compute_instance",
+        "package": "compute",
+        "constructor": "NewGoogleComputeInstanceListResource",
+        "file": "google/services/compute/list_google_compute_instance.go",
+        "line": 38
+      },
+      {
         "name": "google_dns_managed_zone",
         "package": "dns",
         "constructor": "NewGoogleDnsManagedZoneListResource",
@@ -703,6 +898,13 @@
         "constructor": "NewGoogleDnsRecordSetListResource",
         "file": "google/services/dns/list_google_dns_record_set.go",
         "line": 38
+      },
+      {
+        "name": "google_pubsub_subscription_iam_member",
+        "package": "pubsub",
+        "constructor": "NewPubsubSubscriptionIamMemberListResource",
+        "file": "google/services/pubsub/iam_pubsub_subscription.go",
+        "line": 189
       },
       {
         "name": "google_folder_iam_member",
@@ -719,10 +921,24 @@
         "line": 178
       },
       {
+        "name": "google_service_account_iam_member",
+        "package": "resourcemanager",
+        "constructor": "NewServiceAccountIamMemberListResource",
+        "file": "google/services/resourcemanager/iam_service_account.go",
+        "line": 181
+      },
+      {
         "name": "google_project",
         "package": "resourcemanager",
         "constructor": "NewGoogleProjectListResource",
         "file": "google/services/resourcemanager/list_google_project.go",
+        "line": 41
+      },
+      {
+        "name": "google_project_iam_custom_role",
+        "package": "resourcemanager",
+        "constructor": "NewGoogleProjectIamCustomRoleListResource",
+        "file": "google/services/resourcemanager/list_google_project_iam_custom_role.go",
         "line": 41
       },
       {
@@ -949,6 +1165,11 @@
         "constructor": "NewComputeRegionUrlMapListResource"
       },
       {
+        "file": "google/services/compute/list_compute_rollout_plan.go",
+        "type_name": "google_compute_rollout_plan",
+        "constructor": "NewComputeRolloutPlanListResource"
+      },
+      {
         "file": "google/services/compute/list_compute_snapshot.go",
         "type_name": "google_compute_snapshot",
         "constructor": "NewComputeSnapshotListResource"
@@ -987,6 +1208,78 @@
         "file": "google/services/compute/list_compute_wire_group.go",
         "type_name": "google_compute_wire_group",
         "constructor": "NewComputeWireGroupListResource"
+      },
+      {
+        "file": "google/services/compute/list_google_compute_instance.go",
+        "type_name": "google_compute_instance",
+        "constructor": "NewGoogleComputeInstanceListResource"
+      }
+    ],
+    "discoveryengine": [
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
+        "type_name": "google_discovery_engine_assistant",
+        "constructor": "NewDiscoveryEngineAssistantListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_chat_engine.go",
+        "type_name": "google_discovery_engine_chat_engine",
+        "constructor": "NewDiscoveryEngineChatEngineListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_cmek_config.go",
+        "type_name": "google_discovery_engine_cmek_config",
+        "constructor": "NewDiscoveryEngineCmekConfigListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_control.go",
+        "type_name": "google_discovery_engine_control",
+        "constructor": "NewDiscoveryEngineControlListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_data_store.go",
+        "type_name": "google_discovery_engine_data_store",
+        "constructor": "NewDiscoveryEngineDataStoreListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_license_config.go",
+        "type_name": "google_discovery_engine_license_config",
+        "constructor": "NewDiscoveryEngineLicenseConfigListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_recommendation_engine.go",
+        "type_name": "google_discovery_engine_recommendation_engine",
+        "constructor": "NewDiscoveryEngineRecommendationEngineListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_schema.go",
+        "type_name": "google_discovery_engine_schema",
+        "constructor": "NewDiscoveryEngineSchemaListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_search_engine.go",
+        "type_name": "google_discovery_engine_search_engine",
+        "constructor": "NewDiscoveryEngineSearchEngineListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_serving_config.go",
+        "type_name": "google_discovery_engine_serving_config",
+        "constructor": "NewDiscoveryEngineServingConfigListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_sitemap.go",
+        "type_name": "google_discovery_engine_sitemap",
+        "constructor": "NewDiscoveryEngineSitemapListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_target_site.go",
+        "type_name": "google_discovery_engine_target_site",
+        "constructor": "NewDiscoveryEngineTargetSiteListResource"
+      },
+      {
+        "file": "google/services/discoveryengine/list_discovery_engine_user_store.go",
+        "type_name": "google_discovery_engine_user_store",
+        "constructor": "NewDiscoveryEngineUserStoreListResource"
       }
     ],
     "dns": [
@@ -1032,6 +1325,11 @@
         "file": "google/services/resourcemanager/list_google_project.go",
         "type_name": "google_project",
         "constructor": "NewGoogleProjectListResource"
+      },
+      {
+        "file": "google/services/resourcemanager/list_google_project_iam_custom_role.go",
+        "type_name": "google_project_iam_custom_role",
+        "constructor": "NewGoogleProjectIamCustomRoleListResource"
       },
       {
         "file": "google/services/resourcemanager/list_google_project_service.go",
@@ -1115,6 +1413,7 @@
       "NewComputeRegionTargetHttpProxyListResource",
       "NewComputeRegionTargetTcpProxyListResource",
       "NewComputeRegionUrlMapListResource",
+      "NewComputeRolloutPlanListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
       "NewComputeTargetGrpcProxyListResource",
@@ -1123,9 +1422,24 @@
       "NewComputeTargetTcpProxyListResource",
       "NewComputeVpnGatewayListResource",
       "NewComputeWireGroupListResource",
+      "NewDiscoveryEngineAssistantListResource",
+      "NewDiscoveryEngineChatEngineListResource",
+      "NewDiscoveryEngineCmekConfigListResource",
+      "NewDiscoveryEngineControlListResource",
+      "NewDiscoveryEngineDataStoreListResource",
+      "NewDiscoveryEngineLicenseConfigListResource",
+      "NewDiscoveryEngineRecommendationEngineListResource",
+      "NewDiscoveryEngineSchemaListResource",
+      "NewDiscoveryEngineSearchEngineListResource",
+      "NewDiscoveryEngineServingConfigListResource",
+      "NewDiscoveryEngineSitemapListResource",
+      "NewDiscoveryEngineTargetSiteListResource",
+      "NewDiscoveryEngineUserStoreListResource",
       "NewFolderIamMemberListResource",
+      "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectIamCustomRoleListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountKeyListResource",
@@ -1134,10 +1448,12 @@
       "NewKMSCryptoKeyVersionListResource",
       "NewMonitoringAlertPolicyListResource",
       "NewProjectIamMemberListResource",
+      "NewPubsubSubscriptionIamMemberListResource",
       "NewPubsubSubscriptionListResource",
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
       "NewSecretManagerSecretListResource",
+      "NewServiceAccountIamMemberListResource",
       "NewStorageHmacKeyListResource"
     ],
     "file_constructors": [
@@ -1178,6 +1494,7 @@
       "NewComputeRegionTargetHttpProxyListResource",
       "NewComputeRegionTargetTcpProxyListResource",
       "NewComputeRegionUrlMapListResource",
+      "NewComputeRolloutPlanListResource",
       "NewComputeSnapshotListResource",
       "NewComputeSubnetworkListResource",
       "NewComputeTargetGrpcProxyListResource",
@@ -1186,8 +1503,23 @@
       "NewComputeTargetTcpProxyListResource",
       "NewComputeVpnGatewayListResource",
       "NewComputeWireGroupListResource",
+      "NewDiscoveryEngineAssistantListResource",
+      "NewDiscoveryEngineChatEngineListResource",
+      "NewDiscoveryEngineCmekConfigListResource",
+      "NewDiscoveryEngineControlListResource",
+      "NewDiscoveryEngineDataStoreListResource",
+      "NewDiscoveryEngineLicenseConfigListResource",
+      "NewDiscoveryEngineRecommendationEngineListResource",
+      "NewDiscoveryEngineSchemaListResource",
+      "NewDiscoveryEngineSearchEngineListResource",
+      "NewDiscoveryEngineServingConfigListResource",
+      "NewDiscoveryEngineSitemapListResource",
+      "NewDiscoveryEngineTargetSiteListResource",
+      "NewDiscoveryEngineUserStoreListResource",
+      "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
       "NewGoogleDnsRecordSetListResource",
+      "NewGoogleProjectIamCustomRoleListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
       "NewGoogleServiceAccountKeyListResource",
@@ -1218,6 +1550,7 @@
       "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_instance",
       "google_compute_instant_snapshot",
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
@@ -1239,6 +1572,7 @@
       "google_compute_region_target_http_proxy",
       "google_compute_region_target_tcp_proxy",
       "google_compute_region_url_map",
+      "google_compute_rollout_plan",
       "google_compute_snapshot",
       "google_compute_subnetwork",
       "google_compute_target_grpc_proxy",
@@ -1247,11 +1581,25 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_discovery_engine_assistant",
+      "google_discovery_engine_chat_engine",
+      "google_discovery_engine_cmek_config",
+      "google_discovery_engine_control",
+      "google_discovery_engine_data_store",
+      "google_discovery_engine_license_config",
+      "google_discovery_engine_recommendation_engine",
+      "google_discovery_engine_schema",
+      "google_discovery_engine_search_engine",
+      "google_discovery_engine_serving_config",
+      "google_discovery_engine_sitemap",
+      "google_discovery_engine_target_site",
+      "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
       "google_project",
+      "google_project_iam_custom_role",
       "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
@@ -1264,23 +1612,29 @@
     ],
     "missing_files_for_registration": [
       "NewFolderIamMemberListResource",
-      "NewProjectIamMemberListResource"
+      "NewProjectIamMemberListResource",
+      "NewPubsubSubscriptionIamMemberListResource",
+      "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 61,
-    "file_type_name_count": 59,
+    "registration_count": 79,
+    "file_type_name_count": 75,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 12,
+    "services_with_list": 13,
     "rows": [
       {
         "service": "compute",
-        "list_resources": 41
+        "list_resources": 43
+      },
+      {
+        "service": "discoveryengine",
+        "list_resources": 13
       },
       {
         "service": "resourcemanager",
-        "list_resources": 4
+        "list_resources": 5
       },
       {
         "service": "bigquery",
@@ -1354,6 +1708,7 @@
           "google_compute_ha_vpn_gateway",
           "google_compute_https_health_check",
           "google_compute_image",
+          "google_compute_instance",
           "google_compute_instant_snapshot",
           "google_compute_interconnect_attachment_group",
           "google_compute_interconnect_group",
@@ -1375,6 +1730,7 @@
           "google_compute_region_target_http_proxy",
           "google_compute_region_target_tcp_proxy",
           "google_compute_region_url_map",
+          "google_compute_rollout_plan",
           "google_compute_snapshot",
           "google_compute_subnetwork",
           "google_compute_target_grpc_proxy",
@@ -1383,6 +1739,23 @@
           "google_compute_target_tcp_proxy",
           "google_compute_vpn_gateway",
           "google_compute_wire_group"
+        ]
+      },
+      "discoveryengine": {
+        "list_resources": [
+          "google_discovery_engine_assistant",
+          "google_discovery_engine_chat_engine",
+          "google_discovery_engine_cmek_config",
+          "google_discovery_engine_control",
+          "google_discovery_engine_data_store",
+          "google_discovery_engine_license_config",
+          "google_discovery_engine_recommendation_engine",
+          "google_discovery_engine_schema",
+          "google_discovery_engine_search_engine",
+          "google_discovery_engine_serving_config",
+          "google_discovery_engine_sitemap",
+          "google_discovery_engine_target_site",
+          "google_discovery_engine_user_store"
         ]
       },
       "dns": {
@@ -1410,6 +1783,7 @@
       "resourcemanager": {
         "list_resources": [
           "google_project",
+          "google_project_iam_custom_role",
           "google_project_service",
           "google_service_account",
           "google_service_account_key"
@@ -1435,9 +1809,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 64,
-    "code_list_resources": 59,
-    "registered_count": 61,
+    "dashboard_list_resources": 65,
+    "code_list_resources": 75,
+    "registered_count": 79,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -1501,6 +1875,7 @@
       "google_pubsub_topic",
       "google_secret_manager_secret",
       "google_service_account",
+      "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
       "google_storage_hmac_key"
@@ -1522,6 +1897,7 @@
       "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_instance",
       "google_compute_instant_snapshot",
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
@@ -1543,6 +1919,7 @@
       "google_compute_region_target_http_proxy",
       "google_compute_region_target_tcp_proxy",
       "google_compute_region_url_map",
+      "google_compute_rollout_plan",
       "google_compute_snapshot",
       "google_compute_subnetwork",
       "google_compute_target_grpc_proxy",
@@ -1551,11 +1928,25 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_discovery_engine_assistant",
+      "google_discovery_engine_chat_engine",
+      "google_discovery_engine_cmek_config",
+      "google_discovery_engine_control",
+      "google_discovery_engine_data_store",
+      "google_discovery_engine_license_config",
+      "google_discovery_engine_recommendation_engine",
+      "google_discovery_engine_schema",
+      "google_discovery_engine_search_engine",
+      "google_discovery_engine_serving_config",
+      "google_discovery_engine_sitemap",
+      "google_discovery_engine_target_site",
+      "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
       "google_project",
+      "google_project_iam_custom_role",
       "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_topic",
@@ -1570,12 +1961,25 @@
       "google_compute_machine_image",
       "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_region_backend_bucket",
-      "google_compute_rollout_plan",
       "google_folder_iam_member",
       "google_project_iam_member"
     ],
     "only_in_source": [
-      "google_service_account_key"
+      "google_compute_instance",
+      "google_discovery_engine_assistant",
+      "google_discovery_engine_chat_engine",
+      "google_discovery_engine_cmek_config",
+      "google_discovery_engine_control",
+      "google_discovery_engine_data_store",
+      "google_discovery_engine_license_config",
+      "google_discovery_engine_recommendation_engine",
+      "google_discovery_engine_schema",
+      "google_discovery_engine_search_engine",
+      "google_discovery_engine_serving_config",
+      "google_discovery_engine_sitemap",
+      "google_discovery_engine_target_site",
+      "google_discovery_engine_user_store",
+      "google_project_iam_custom_role"
     ],
     "registry_is_subset": false
   }
