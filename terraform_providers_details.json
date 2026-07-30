@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:03.452442"
+    "docs_refreshed_at": "2026-07-30T10:01:49.664857"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -64663,7 +64663,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:49.009914"
+    "docs_refreshed_at": "2026-07-30T10:01:37.521286"
   },
   "Azure/azapi": {
     "docs": {
@@ -68279,7 +68279,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:49.877902"
+    "docs_refreshed_at": "2026-07-30T10:01:38.354206"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -69739,7 +69739,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:50.297113"
+    "docs_refreshed_at": "2026-07-30T10:01:38.762394"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -70264,7 +70264,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:50.719203"
+    "docs_refreshed_at": "2026-07-30T10:01:39.176612"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -70532,7 +70532,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:51.139254"
+    "docs_refreshed_at": "2026-07-30T10:01:39.586217"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -70551,7 +70551,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:51.555224"
+    "docs_refreshed_at": "2026-07-30T10:01:39.999137"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -70598,7 +70598,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:52.808999"
+    "docs_refreshed_at": "2026-07-30T10:01:41.623381"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -72175,7 +72175,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:54.123864"
+    "docs_refreshed_at": "2026-07-30T10:01:42.914447"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -75904,7 +75904,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:58.275601"
+    "docs_refreshed_at": "2026-07-30T10:01:44.580495"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -77253,7 +77253,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:58.699847"
+    "docs_refreshed_at": "2026-07-30T10:01:44.990367"
   },
   "SAP/btp": {
     "docs": {
@@ -77980,7 +77980,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:59.557673"
+    "docs_refreshed_at": "2026-07-30T10:01:45.997479"
   },
   "SAP/scc": {
     "docs": {
@@ -78215,7 +78215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:00.396141"
+    "docs_refreshed_at": "2026-07-30T10:01:46.816579"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -78262,7 +78262,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:00.816197"
+    "docs_refreshed_at": "2026-07-30T10:01:47.221411"
   },
   "Sokren/aap": {
     "docs": {
@@ -78345,7 +78345,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:01.242893"
+    "docs_refreshed_at": "2026-07-30T10:01:47.628852"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -78395,7 +78395,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:01.675856"
+    "docs_refreshed_at": "2026-07-30T10:01:48.039287"
   },
   "adampie/ctf": {
     "docs": {
@@ -78442,7 +78442,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:03.028173"
+    "docs_refreshed_at": "2026-07-30T10:01:49.257475"
   },
   "ansible/ansible": {
     "docs": {
@@ -78560,7 +78560,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:04.301411"
+    "docs_refreshed_at": "2026-07-30T10:01:50.360560"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -78586,7 +78586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:04.720770"
+    "docs_refreshed_at": "2026-07-30T10:01:50.770046"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -78643,7 +78643,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:05.136171"
+    "docs_refreshed_at": "2026-07-30T10:01:51.179939"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -78669,7 +78669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:05.976300"
+    "docs_refreshed_at": "2026-07-30T10:01:51.991701"
   },
   "cysp/braze": {
     "docs": {
@@ -78725,7 +78725,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:07.653449"
+    "docs_refreshed_at": "2026-07-30T10:01:53.630705"
   },
   "cysp/contentful": {
     "docs": {
@@ -78888,7 +78888,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:08.091882"
+    "docs_refreshed_at": "2026-07-30T10:01:54.043393"
   },
   "dbanck/concept": {
     "docs": {
@@ -78924,7 +78924,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:09.773184"
+    "docs_refreshed_at": "2026-07-30T10:01:55.688675"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -80393,7 +80393,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:10.209731"
+    "docs_refreshed_at": "2026-07-30T10:01:56.116172"
   },
   "drewmullen/aap": {
     "docs": {
@@ -80501,7 +80501,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:11.050783"
+    "docs_refreshed_at": "2026-07-30T10:01:57.330627"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -80566,7 +80566,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:12.826051"
+    "docs_refreshed_at": "2026-07-30T10:01:58.993368"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -80669,7 +80669,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:14.086138"
+    "docs_refreshed_at": "2026-07-30T10:02:00.618404"
   },
   "hashicorp/local": {
     "docs": {
@@ -80731,7 +80731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:14.921414"
+    "docs_refreshed_at": "2026-07-30T10:02:01.461982"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -88402,7 +88402,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:17.088454"
+    "docs_refreshed_at": "2026-07-30T10:02:04.001906"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -89215,7 +89215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:18.355161"
+    "docs_refreshed_at": "2026-07-30T10:02:05.224185"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -89353,7 +89353,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:20.871940"
+    "docs_refreshed_at": "2026-07-30T10:02:07.715076"
   },
   "magodo/restful": {
     "docs": {
@@ -89412,7 +89412,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:22.133947"
+    "docs_refreshed_at": "2026-07-30T10:02:08.943742"
   },
   "marshallford/ansible": {
     "docs": {
@@ -89464,7 +89464,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:22.555483"
+    "docs_refreshed_at": "2026-07-30T10:02:09.354585"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -89621,7 +89621,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:23.403027"
+    "docs_refreshed_at": "2026-07-30T10:02:10.174159"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -89794,7 +89794,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:23.818057"
+    "docs_refreshed_at": "2026-07-30T10:02:10.583730"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -89841,7 +89841,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:25.070185"
+    "docs_refreshed_at": "2026-07-30T10:02:11.853527"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -91712,7 +91712,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:28.562114"
+    "docs_refreshed_at": "2026-07-30T10:02:15.275674"
   },
   "soffensive/soff": {
     "docs": {
@@ -91759,7 +91759,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:29.820495"
+    "docs_refreshed_at": "2026-07-30T10:02:16.510800"
   },
   "thrashr888/registry": {
     "docs": {
@@ -91847,7 +91847,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:30.656899"
+    "docs_refreshed_at": "2026-07-30T10:02:18.139587"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -91982,6 +91982,11 @@
       ],
       "list-resources": [
         {
+          "title": "ap_group",
+          "slug": "ap_group",
+          "subcategory": ""
+        },
+        {
           "title": "client",
           "slug": "client",
           "subcategory": ""
@@ -92116,6 +92121,11 @@
           "subcategory": ""
         },
         {
+          "title": "ap_group",
+          "slug": "ap_group",
+          "subcategory": ""
+        },
+        {
           "title": "bgp",
           "slug": "bgp",
           "subcategory": ""
@@ -92247,7 +92257,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-09T11:26:04.871708"
+    "docs_refreshed_at": "2026-07-30T10:02:18.956267"
   },
   "waldur/waldur": {
     "docs": {
@@ -92657,10 +92667,22 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:31.931424"
+    "docs_refreshed_at": "2026-07-30T10:02:19.769958"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
+      "actions": [
+        {
+          "title": "delete_computer",
+          "slug": "delete_computer",
+          "subcategory": ""
+        },
+        {
+          "title": "set_computer_plan",
+          "slug": "set_computer_plan",
+          "subcategory": ""
+        }
+      ],
       "data-sources": [
         {
           "title": "action_configurations",
@@ -92920,7 +92942,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:54.543525"
+    "docs_refreshed_at": "2026-07-30T10:01:43.328766"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -92975,7 +92997,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:14.504664"
+    "docs_refreshed_at": "2026-07-30T10:02:01.030076"
   },
   "timofurrer/desec": {
     "docs": {
@@ -93134,7 +93156,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:31.094425"
+    "docs_refreshed_at": "2026-07-30T10:02:18.550672"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -93217,7 +93239,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:31.513999"
+    "docs_refreshed_at": "2026-07-30T10:02:19.360796"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -96417,7 +96439,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:53.238262"
+    "docs_refreshed_at": "2026-07-30T10:01:42.035149"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -96712,7 +96734,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:19.615944"
+    "docs_refreshed_at": "2026-07-30T10:02:06.486162"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -96830,7 +96852,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:22.984103"
+    "docs_refreshed_at": "2026-07-30T10:02:09.766384"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -97000,7 +97022,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:54.960746"
+    "docs_refreshed_at": "2026-07-30T10:01:43.739207"
   },
   "branchgrove/debian": {
     "docs": {
@@ -97115,7 +97137,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:05.558717"
+    "docs_refreshed_at": "2026-07-30T10:01:51.589023"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -97560,7 +97582,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:12.408063"
+    "docs_refreshed_at": "2026-07-30T10:01:58.591073"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -98175,7 +98197,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:15.355333"
+    "docs_refreshed_at": "2026-07-30T10:02:01.912862"
   },
   "juju/juju": {
     "docs": {
@@ -98450,7 +98472,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:18.771981"
+    "docs_refreshed_at": "2026-07-30T10:02:05.651063"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -98551,7 +98573,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:55.377677"
+    "docs_refreshed_at": "2026-07-30T10:01:44.158865"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -98989,7 +99011,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:06.816385"
+    "docs_refreshed_at": "2026-07-30T10:01:52.817351"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -99137,7 +99159,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:21.291204"
+    "docs_refreshed_at": "2026-07-30T10:02:08.125413"
   },
   "radeksimko/test": {
     "docs": {
@@ -99184,7 +99206,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:26.871176"
+    "docs_refreshed_at": "2026-07-30T10:02:13.636586"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -99577,7 +99599,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:28.979033"
+    "docs_refreshed_at": "2026-07-30T10:02:15.686990"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -99802,7 +99824,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:30.239229"
+    "docs_refreshed_at": "2026-07-30T10:02:17.330021"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -100035,7 +100057,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:21.710651"
+    "docs_refreshed_at": "2026-07-30T10:02:08.532508"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -100452,7 +100474,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:15.780738"
+    "docs_refreshed_at": "2026-07-30T10:02:02.324231"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -100921,7 +100943,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:16.624155"
+    "docs_refreshed_at": "2026-07-30T10:02:03.558020"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -112887,7 +112909,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:25.963443"
+    "docs_refreshed_at": "2026-07-30T10:02:12.734751"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -113392,7 +113414,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:27.296603"
+    "docs_refreshed_at": "2026-07-30T10:02:14.043188"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -113847,7 +113869,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:27.715123"
+    "docs_refreshed_at": "2026-07-30T10:02:14.451365"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -113910,7 +113932,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:10.635399"
+    "docs_refreshed_at": "2026-07-30T10:01:56.923935"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -113993,7 +114015,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:02.102145"
+    "docs_refreshed_at": "2026-07-30T10:01:48.444256"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -114024,7 +114046,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:07.234912"
+    "docs_refreshed_at": "2026-07-30T10:01:53.222275"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -114055,7 +114077,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:08.938611"
+    "docs_refreshed_at": "2026-07-30T10:01:54.868294"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -114086,7 +114108,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:09.354468"
+    "docs_refreshed_at": "2026-07-30T10:01:55.274908"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -114127,7 +114149,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:11.972371"
+    "docs_refreshed_at": "2026-07-30T10:01:58.175283"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -114367,7 +114389,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:24.654130"
+    "docs_refreshed_at": "2026-07-30T10:02:11.449688"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -116540,7 +116562,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:59.136087"
+    "docs_refreshed_at": "2026-07-30T10:01:45.409877"
   },
   "gringolito/ansible": {
     "docs": {
@@ -116610,7 +116632,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:13.245691"
+    "docs_refreshed_at": "2026-07-30T10:01:59.808606"
   },
   "pexip/infinity": {
     "docs": {
@@ -117010,7 +117032,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:25.489091"
+    "docs_refreshed_at": "2026-07-30T10:02:12.264740"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -117108,7 +117130,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:32.348999"
+    "docs_refreshed_at": "2026-07-30T10:02:20.171408"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -117925,7 +117947,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:11.551678"
+    "docs_refreshed_at": "2026-07-30T10:01:57.765548"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -117954,7 +117976,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:02.527558"
+    "docs_refreshed_at": "2026-07-30T10:01:48.853489"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -125958,7 +125980,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:26.453529"
+    "docs_refreshed_at": "2026-07-30T10:02:13.226876"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -126161,7 +126183,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:49.433646"
+    "docs_refreshed_at": "2026-07-30T10:01:37.931643"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -126214,7 +126236,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:06.395892"
+    "docs_refreshed_at": "2026-07-30T10:01:52.409686"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -127099,7 +127121,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:16.205349"
+    "docs_refreshed_at": "2026-07-30T10:02:02.735931"
   },
   "536tech/daytona": {
     "docs": {
@@ -128505,7 +128527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:59.976319"
+    "docs_refreshed_at": "2026-07-30T10:01:46.407885"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -128708,7 +128730,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:13.665980"
+    "docs_refreshed_at": "2026-07-30T10:02:00.213181"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -128846,7 +128868,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:28.133668"
+    "docs_refreshed_at": "2026-07-30T10:02:14.857286"
   },
   "DrFaust92/airflow": {
     "docs": {
@@ -128939,7 +128961,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:51.974414"
+    "docs_refreshed_at": "2026-07-30T10:01:40.411687"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -129362,7 +129384,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:17.931063"
+    "docs_refreshed_at": "2026-07-30T10:02:04.812117"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -129980,7 +130002,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:19.196214"
+    "docs_refreshed_at": "2026-07-30T10:02:06.084116"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -130236,6 +130258,16 @@
           "title": "backup_recovery_agent_upgrade_tasks",
           "slug": "backup_recovery_agent_upgrade_tasks",
           "subcategory": "IBM Backup Recovery"
+        },
+        {
+          "title": "backup_recovery_connector_agent_config",
+          "slug": "backup_recovery_connector_agent_config",
+          "subcategory": "IBM Backup Recovery API"
+        },
+        {
+          "title": "backup_recovery_connector_agents",
+          "slug": "backup_recovery_connector_agents",
+          "subcategory": "IBM Backup Recovery API"
         },
         {
           "title": "backup_recovery_connector_get_users",
@@ -131758,6 +131790,31 @@
           "subcategory": "IAM Identity Services"
         },
         {
+          "title": "iam_identity_preference",
+          "slug": "iam_identity_preference",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_identity_preferences",
+          "slug": "iam_identity_preferences",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_idp",
+          "slug": "iam_idp",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_idp_account_settings",
+          "slug": "iam_idp_account_settings",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_idps",
+          "slug": "iam_idps",
+          "subcategory": "IAM Identity Services"
+        },
+        {
           "title": "iam_policy_assignment",
           "slug": "iam_policy_assignment",
           "subcategory": "Identity & Access Management (IAM)"
@@ -132261,6 +132318,16 @@
           "title": "is_instances",
           "slug": "is_instances",
           "subcategory": "VPC infrastructure"
+        },
+        {
+          "title": "is_instance_software_attachment",
+          "slug": "is_instance_software_attachment",
+          "subcategory": "Virtual Private Cloud API"
+        },
+        {
+          "title": "is_instance_software_attachments",
+          "slug": "is_instance_software_attachments",
+          "subcategory": "Virtual Private Cloud API"
         },
         {
           "title": "is_instance_template",
@@ -134289,6 +134356,11 @@
           "subcategory": "IBM Backup Recovery API"
         },
         {
+          "title": "backup_recovery_connector_agent_registration",
+          "slug": "backup_recovery_connector_agent_registration",
+          "subcategory": "IBM Backup Recovery API"
+        },
+        {
           "title": "backup_recovery_connector_registration",
           "slug": "backup_recovery_connector_registration",
           "subcategory": "IBM Backup Recovery API"
@@ -135649,6 +135721,21 @@
           "subcategory": "Identity & Access Management (IAM)"
         },
         {
+          "title": "iam_identity_preference",
+          "slug": "iam_identity_preference",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_idp",
+          "slug": "iam_idp",
+          "subcategory": "IAM Identity Services"
+        },
+        {
+          "title": "iam_idp_account_setting",
+          "slug": "iam_idp_account_setting",
+          "subcategory": "IAM Identity Services"
+        },
+        {
           "title": "iam_policy_assignment",
           "slug": "iam_policy_assignment",
           "subcategory": "Identity & Access Management (IAM)"
@@ -135927,6 +136014,11 @@
           "title": "is_instance_network_interface_floating_ip",
           "slug": "is_instance_network_interface_floating_ip",
           "subcategory": "VPC infrastructure"
+        },
+        {
+          "title": "is_instance_software_attachment",
+          "slug": "is_instance_software_attachment",
+          "subcategory": "Virtual Private Cloud API"
         },
         {
           "title": "is_instance_template",
@@ -137135,7 +137227,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:53.698755"
+    "docs_refreshed_at": "2026-07-30T10:01:42.490387"
   },
   "damhau/scm": {
     "docs": {
@@ -139308,7 +139400,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:08.521958"
+    "docs_refreshed_at": "2026-07-30T10:01:54.462027"
   },
   "jamesbraid/unifi": {
     "docs": {
@@ -139663,7 +139755,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:17.509335"
+    "docs_refreshed_at": "2026-07-30T10:02:04.405078"
   },
   "nicole-ashley/matomo": {
     "docs": {
@@ -140086,7 +140178,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:24.236694"
+    "docs_refreshed_at": "2026-07-30T10:02:10.988021"
   },
   "sky-cloak/skycloak": {
     "docs": {
@@ -140358,6 +140450,11 @@
           "subcategory": ""
         },
         {
+          "title": "realm_export",
+          "slug": "realm_export",
+          "subcategory": ""
+        },
+        {
           "title": "realm_group",
           "slug": "realm_group",
           "subcategory": ""
@@ -140365,6 +140462,11 @@
         {
           "title": "realm_group_membership",
           "slug": "realm_group_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "realm_import",
+          "slug": "realm_import",
           "subcategory": ""
         },
         {
@@ -140404,7 +140506,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:29.400735"
+    "docs_refreshed_at": "2026-07-30T10:02:16.094525"
   },
   "FelGel/mongodb": {
     "docs": {
@@ -140460,7 +140562,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:36:52.393373"
+    "docs_refreshed_at": "2026-07-30T10:01:41.221462"
   },
   "kmaris/nerdctl": {
     "docs": {
@@ -140585,7 +140687,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:20.035980"
+    "docs_refreshed_at": "2026-07-30T10:02:06.894798"
   },
   "kosli-dev/kosli": {
     "docs": {
@@ -140703,6 +140805,976 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-23T08:37:20.452169"
+    "docs_refreshed_at": "2026-07-30T10:02:07.308676"
+  },
+  "DrFaust92/mapbox": {
+    "docs": {
+      "list-resources": [
+        {
+          "title": "token",
+          "slug": "token",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "token",
+          "slug": "token",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:01:40.813261"
+  },
+  "devops-rob/terracurl": {
+    "docs": {
+      "actions": [
+        {
+          "title": "request",
+          "slug": "request",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "request",
+          "slug": "request",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "request",
+          "slug": "request",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Default Headers for Auth Tokens",
+          "slug": "default_headers",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Destroy Response Templating",
+          "slug": "destroy_templating",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "HTTP Digest Authentication",
+          "slug": "digest_auth",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "File and Multipart Request Bodies",
+          "slug": "file_and_multipart_bodies",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "HTTP Proxy Support",
+          "slug": "proxy",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Write-Only Headers and Request Bodies",
+          "slug": "write_only",
+          "subcategory": "Guides"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "request",
+          "slug": "request",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:01:56.518241"
+  },
+  "gitpod-io/ona": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "automations",
+          "slug": "automations",
+          "subcategory": "Integrations and Automation"
+        },
+        {
+          "title": "integration_definitions",
+          "slug": "integration_definitions",
+          "subcategory": "Integrations and Automation"
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": "Projects"
+        },
+        {
+          "title": "runner",
+          "slug": "runner",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "runners",
+          "slug": "runners",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "security_policies",
+          "slug": "security_policies",
+          "subcategory": "Security and Secrets"
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "users",
+          "slug": "users",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "warm_pool",
+          "slug": "warm_pool",
+          "subcategory": "Projects"
+        },
+        {
+          "title": "warm_pools",
+          "slug": "warm_pools",
+          "subcategory": "Projects"
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "runner_token",
+          "slug": "runner_token",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "service_account_token",
+          "slug": "service_account_token",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "webhook_secret",
+          "slug": "webhook_secret",
+          "subcategory": "Integrations and Automation"
+        }
+      ],
+      "guides": [
+        {
+          "title": "Authentication and Permissions - Ona Provider",
+          "slug": "authentication-and-permissions",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "State, Secrets, and Safe Deletion - Ona Provider",
+          "slug": "state-secrets-and-safe-deletion",
+          "subcategory": "Security and Secrets"
+        },
+        {
+          "title": "Troubleshooting and Support - Ona Provider",
+          "slug": "troubleshooting-and-support",
+          "subcategory": "Integrations and Automation"
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "environment_class",
+          "slug": "environment_class",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "runner",
+          "slug": "runner",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "scm_integration",
+          "slug": "scm_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "secret",
+          "slug": "secret",
+          "subcategory": ""
+        },
+        {
+          "title": "warm_pool",
+          "slug": "warm_pool",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "announcement_banner",
+          "slug": "announcement_banner",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "automation",
+          "slug": "automation",
+          "subcategory": "Integrations and Automation"
+        },
+        {
+          "title": "custom_domain",
+          "slug": "custom_domain",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "environment_class",
+          "slug": "environment_class",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "group",
+          "slug": "group",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "group_membership",
+          "slug": "group_membership",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "integration",
+          "slug": "integration",
+          "subcategory": "Integrations and Automation"
+        },
+        {
+          "title": "oidc_config",
+          "slug": "oidc_config",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "organization_ai_budget",
+          "slug": "organization_ai_budget",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "organization_policies",
+          "slug": "organization_policies",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "organization_role_assignment",
+          "slug": "organization_role_assignment",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": "Projects"
+        },
+        {
+          "title": "runner",
+          "slug": "runner",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "runner_llm_integration",
+          "slug": "runner_llm_integration",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "runner_policy",
+          "slug": "runner_policy",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "scim_configuration",
+          "slug": "scim_configuration",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "scm_integration",
+          "slug": "scm_integration",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "secret",
+          "slug": "secret",
+          "subcategory": "Security and Secrets"
+        },
+        {
+          "title": "security_policy",
+          "slug": "security_policy",
+          "subcategory": "Security and Secrets"
+        },
+        {
+          "title": "service_account",
+          "slug": "service_account",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "sso_configuration",
+          "slug": "sso_configuration",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "team_ai_budget",
+          "slug": "team_ai_budget",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "terms_of_service",
+          "slug": "terms_of_service",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "user_ai_budget",
+          "slug": "user_ai_budget",
+          "subcategory": "Billing"
+        },
+        {
+          "title": "warm_pool",
+          "slug": "warm_pool",
+          "subcategory": "Projects"
+        },
+        {
+          "title": "webhook",
+          "slug": "webhook",
+          "subcategory": "Integrations and Automation"
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:01:59.400624"
+  },
+  "ioplane/powerdns": {
+    "docs": {
+      "actions": [
+        {
+          "title": "axfr_retrieve",
+          "slug": "axfr_retrieve",
+          "subcategory": ""
+        },
+        {
+          "title": "flush_cache",
+          "slug": "flush_cache",
+          "subcategory": ""
+        },
+        {
+          "title": "notify_zone",
+          "slug": "notify_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "rectify_zone",
+          "slug": "rectify_zone",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "dnsdist_server",
+          "slug": "dnsdist_server",
+          "subcategory": ""
+        },
+        {
+          "title": "record",
+          "slug": "record",
+          "subcategory": ""
+        },
+        {
+          "title": "recursor_zone",
+          "slug": "recursor_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_export",
+          "slug": "zone_export",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_metadata",
+          "slug": "zone_metadata",
+          "subcategory": ""
+        },
+        {
+          "title": "zones",
+          "slug": "zones",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "cryptokey_material",
+          "slug": "cryptokey_material",
+          "subcategory": ""
+        },
+        {
+          "title": "tsigkey_secret",
+          "slug": "tsigkey_secret",
+          "subcategory": ""
+        }
+      ],
+      "functions": [
+        {
+          "title": "fqdn",
+          "slug": "fqdn",
+          "subcategory": ""
+        },
+        {
+          "title": "is_fqdn",
+          "slug": "is_fqdn",
+          "subcategory": ""
+        },
+        {
+          "title": "ptr_name",
+          "slug": "ptr_name",
+          "subcategory": ""
+        },
+        {
+          "title": "reverse_zone_name",
+          "slug": "reverse_zone_name",
+          "subcategory": ""
+        },
+        {
+          "title": "soa_serial",
+          "slug": "soa_serial",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "autoprimary",
+          "slug": "autoprimary",
+          "subcategory": ""
+        },
+        {
+          "title": "dnsdist_acl",
+          "slug": "dnsdist_acl",
+          "subcategory": ""
+        },
+        {
+          "title": "network",
+          "slug": "network",
+          "subcategory": ""
+        },
+        {
+          "title": "record",
+          "slug": "record",
+          "subcategory": ""
+        },
+        {
+          "title": "recursor_acl",
+          "slug": "recursor_acl",
+          "subcategory": ""
+        },
+        {
+          "title": "recursor_zone",
+          "slug": "recursor_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "tsigkey",
+          "slug": "tsigkey",
+          "subcategory": ""
+        },
+        {
+          "title": "view_zone",
+          "slug": "view_zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone",
+          "slug": "zone",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_cryptokey",
+          "slug": "zone_cryptokey",
+          "subcategory": ""
+        },
+        {
+          "title": "zone_metadata",
+          "slug": "zone_metadata",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:02:03.150420"
+  },
+  "stripe/stripe": {
+    "docs": {
+      "actions": [
+        {
+          "title": "fee_refund",
+          "slug": "fee_refund",
+          "subcategory": ""
+        },
+        {
+          "title": "forwarding_request",
+          "slug": "forwarding_request",
+          "subcategory": ""
+        },
+        {
+          "title": "payout",
+          "slug": "payout",
+          "subcategory": ""
+        },
+        {
+          "title": "refund",
+          "slug": "refund",
+          "subcategory": ""
+        },
+        {
+          "title": "topup",
+          "slug": "topup",
+          "subcategory": ""
+        },
+        {
+          "title": "transfer",
+          "slug": "transfer",
+          "subcategory": ""
+        },
+        {
+          "title": "transfer_reversal",
+          "slug": "transfer_reversal",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_credit_reversal",
+          "slug": "treasury_credit_reversal",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_debit_reversal",
+          "slug": "treasury_debit_reversal",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_inbound_transfer",
+          "slug": "treasury_inbound_transfer",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_outbound_payment",
+          "slug": "treasury_outbound_payment",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_outbound_transfer",
+          "slug": "treasury_outbound_transfer",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "checkout_session",
+          "slug": "checkout_session",
+          "subcategory": ""
+        },
+        {
+          "title": "financial_connections_session",
+          "slug": "financial_connections_session",
+          "subcategory": ""
+        },
+        {
+          "title": "identity_verification_session",
+          "slug": "identity_verification_session",
+          "subcategory": ""
+        },
+        {
+          "title": "reporting_report_run",
+          "slug": "reporting_report_run",
+          "subcategory": ""
+        },
+        {
+          "title": "tax_calculation",
+          "slug": "tax_calculation",
+          "subcategory": ""
+        },
+        {
+          "title": "token",
+          "slug": "token",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "apple_pay_domain",
+          "slug": "apple_pay_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "billing_alert",
+          "slug": "billing_alert",
+          "subcategory": ""
+        },
+        {
+          "title": "billing_credit_grant",
+          "slug": "billing_credit_grant",
+          "subcategory": ""
+        },
+        {
+          "title": "billing_meter",
+          "slug": "billing_meter",
+          "subcategory": ""
+        },
+        {
+          "title": "billing_portal_configuration",
+          "slug": "billing_portal_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "charge",
+          "slug": "charge",
+          "subcategory": ""
+        },
+        {
+          "title": "climate_order",
+          "slug": "climate_order",
+          "subcategory": ""
+        },
+        {
+          "title": "coupon",
+          "slug": "coupon",
+          "subcategory": ""
+        },
+        {
+          "title": "credit_note",
+          "slug": "credit_note",
+          "subcategory": ""
+        },
+        {
+          "title": "customer",
+          "slug": "customer",
+          "subcategory": ""
+        },
+        {
+          "title": "customer_balance_transaction",
+          "slug": "customer_balance_transaction",
+          "subcategory": ""
+        },
+        {
+          "title": "entitlements_feature",
+          "slug": "entitlements_feature",
+          "subcategory": ""
+        },
+        {
+          "title": "file",
+          "slug": "file",
+          "subcategory": ""
+        },
+        {
+          "title": "file_link",
+          "slug": "file_link",
+          "subcategory": ""
+        },
+        {
+          "title": "invoice",
+          "slug": "invoice",
+          "subcategory": ""
+        },
+        {
+          "title": "invoice_item",
+          "slug": "invoice_item",
+          "subcategory": ""
+        },
+        {
+          "title": "issuing_card",
+          "slug": "issuing_card",
+          "subcategory": ""
+        },
+        {
+          "title": "issuing_cardholder",
+          "slug": "issuing_cardholder",
+          "subcategory": ""
+        },
+        {
+          "title": "issuing_dispute",
+          "slug": "issuing_dispute",
+          "subcategory": ""
+        },
+        {
+          "title": "issuing_personalization_design",
+          "slug": "issuing_personalization_design",
+          "subcategory": ""
+        },
+        {
+          "title": "payment_intent",
+          "slug": "payment_intent",
+          "subcategory": ""
+        },
+        {
+          "title": "payment_link",
+          "slug": "payment_link",
+          "subcategory": ""
+        },
+        {
+          "title": "payment_method",
+          "slug": "payment_method",
+          "subcategory": ""
+        },
+        {
+          "title": "payment_method_configuration",
+          "slug": "payment_method_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "payment_method_domain",
+          "slug": "payment_method_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "person",
+          "slug": "person",
+          "subcategory": ""
+        },
+        {
+          "title": "plan",
+          "slug": "plan",
+          "subcategory": ""
+        },
+        {
+          "title": "price",
+          "slug": "price",
+          "subcategory": ""
+        },
+        {
+          "title": "product",
+          "slug": "product",
+          "subcategory": ""
+        },
+        {
+          "title": "product_feature",
+          "slug": "product_feature",
+          "subcategory": ""
+        },
+        {
+          "title": "promotion_code",
+          "slug": "promotion_code",
+          "subcategory": ""
+        },
+        {
+          "title": "quote",
+          "slug": "quote",
+          "subcategory": ""
+        },
+        {
+          "title": "radar_value_list",
+          "slug": "radar_value_list",
+          "subcategory": ""
+        },
+        {
+          "title": "radar_value_list_item",
+          "slug": "radar_value_list_item",
+          "subcategory": ""
+        },
+        {
+          "title": "setup_intent",
+          "slug": "setup_intent",
+          "subcategory": ""
+        },
+        {
+          "title": "shipping_rate",
+          "slug": "shipping_rate",
+          "subcategory": ""
+        },
+        {
+          "title": "source",
+          "slug": "source",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription",
+          "slug": "subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_item",
+          "slug": "subscription_item",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_schedule",
+          "slug": "subscription_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "tax_id",
+          "slug": "tax_id",
+          "subcategory": ""
+        },
+        {
+          "title": "tax_rate",
+          "slug": "tax_rate",
+          "subcategory": ""
+        },
+        {
+          "title": "tax_registration",
+          "slug": "tax_registration",
+          "subcategory": ""
+        },
+        {
+          "title": "terminal_configuration",
+          "slug": "terminal_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "terminal_location",
+          "slug": "terminal_location",
+          "subcategory": ""
+        },
+        {
+          "title": "terminal_reader",
+          "slug": "terminal_reader",
+          "subcategory": ""
+        },
+        {
+          "title": "treasury_financial_account",
+          "slug": "treasury_financial_account",
+          "subcategory": ""
+        },
+        {
+          "title": "v2_core_event_destination",
+          "slug": "v2_core_event_destination",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook_endpoint",
+          "slug": "webhook_endpoint",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:02:16.922499"
+  },
+  "terraform-ibm/powerhmc": {
+    "docs": {
+      "actions": [
+        {
+          "title": "lpar_netboot",
+          "slug": "lpar_netboot",
+          "subcategory": ""
+        },
+        {
+          "title": "partition_power_on_off",
+          "slug": "partition_power_on_off",
+          "subcategory": ""
+        },
+        {
+          "title": "sys_on_off",
+          "slug": "sys_on_off",
+          "subcategory": ""
+        },
+        {
+          "title": "vios_install",
+          "slug": "vios_install",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "lpar",
+          "slug": "lpar",
+          "subcategory": ""
+        },
+        {
+          "title": "sys_config",
+          "slug": "sys_config",
+          "subcategory": ""
+        },
+        {
+          "title": "vios",
+          "slug": "vios",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Actions: Power Control, Network Boot, and VIOS Install",
+          "slug": "actions",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Authentication",
+          "slug": "authentication",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Getting Started with the IBM Power Systems HMC Provider",
+          "slug": "getting-started",
+          "subcategory": "Guides"
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "lpar",
+          "slug": "lpar",
+          "subcategory": ""
+        },
+        {
+          "title": "sys_config",
+          "slug": "sys_config",
+          "subcategory": ""
+        },
+        {
+          "title": "vios",
+          "slug": "vios",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-07-30T10:02:17.730159"
   }
 }
