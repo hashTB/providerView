@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T10:00:01.066977",
+  "generated_at": "2026-08-01T10:08:19.614087",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "9af801dbddb6b8b098eb06fbc6c01067d9282ee1"
+    "commit": "ff8dfd1b0745d9408c61ce9612f30967c305149a"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -18,13 +18,13 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3119,
+    "stdout_line_count": 3120,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 10,
-        "implemented": 179,
-        "total": 1670
+        "implemented": 180,
+        "total": 1671
       },
       "service_count": 240,
       "services": [
@@ -54,9 +54,9 @@
         },
         {
           "service": "amp",
-          "percent": 0,
-          "implemented": 0,
-          "total": 7
+          "percent": 12,
+          "implemented": 1,
+          "total": 8
         },
         {
           "service": "amplify",
@@ -1508,6 +1508,7 @@
         "amp": {
           "all_resources": [
             "amp/alert_manager_definition.go",
+            "amp/anomaly_detector.go",
             "amp/query_logging_configuration.go",
             "amp/resource_policy.go",
             "amp/rule_group_namespace.go",
@@ -1515,7 +1516,9 @@
             "amp/workspace.go",
             "amp/workspace_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "amp/anomaly_detector.go"
+          ]
         },
         "amplify": {
           "all_resources": [
@@ -4577,11 +4580,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-07-30 10:00:01 UTC"
+      "last_updated": "2026-08-01 10:08:19 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 57,
+    "services_with_list": 58,
     "top_services": [
       {
         "service": "ec2",
@@ -4713,6 +4716,7 @@
       "amp": {
         "all_resources": [
           "amp/alert_manager_definition.go",
+          "amp/anomaly_detector.go",
           "amp/query_logging_configuration.go",
           "amp/resource_policy.go",
           "amp/rule_group_namespace.go",
@@ -4720,7 +4724,9 @@
           "amp/workspace.go",
           "amp/workspace_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "amp/anomaly_detector.go"
+        ]
       },
       "amplify": {
         "all_resources": [
@@ -7786,8 +7792,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 178,
-    "script_implemented_list": 179,
-    "script_total_resources": 1670,
+    "script_implemented_list": 180,
+    "script_total_resources": 1671,
     "script_percent": 10
   }
 }

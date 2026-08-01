@@ -1,14 +1,19 @@
 {
-  "generated_at": "2026-07-30T10:00:05.852159",
+  "generated_at": "2026-08-01T10:08:24.471228",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "38498c8eebaf8424788199db23e96ec910515584"
+    "commit": "9f6f6efa1b60262c4cedff194f80994396f60c7e"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 79,
+    "file_count": 81,
     "files": [
+      {
+        "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
         "type": "MMv1",
@@ -17,6 +22,11 @@
       {
         "file": "google/services/bigquery/list_bigquery_dataset_access.go",
         "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/bigquery/list_google_bigquery_table.go",
+        "type": "Handwritten",
         "registrations": 1
       },
       {
@@ -405,7 +415,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "f3d3c3614bea24f0cc01db56a376abb07f5fcde381fcaba33b145975a2c66470",
+    "sha256": "651c0516222b58737441ea2ae00c56e2ef50f2992330bd5178ba8324e1807a61",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -879,6 +889,20 @@
     ],
     "handwritten": [
       {
+        "name": "google_bigquery_dataset_iam_member",
+        "package": "bigquery",
+        "constructor": "NewBigqueryDatasetIamMemberListResource",
+        "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
+        "line": 412
+      },
+      {
+        "name": "google_bigquery_table",
+        "package": "bigquery",
+        "constructor": "NewGoogleBigQueryTableListResource",
+        "file": "google/services/bigquery/list_google_bigquery_table.go",
+        "line": 39
+      },
+      {
         "name": "google_compute_instance",
         "package": "compute",
         "constructor": "NewGoogleComputeInstanceListResource",
@@ -982,6 +1006,11 @@
         "file": "google/services/bigquery/list_bigquery_dataset_access.go",
         "type_name": "google_bigquery_dataset_access",
         "constructor": "NewBigQueryDatasetAccessListResource"
+      },
+      {
+        "file": "google/services/bigquery/list_google_bigquery_table.go",
+        "type_name": "google_bigquery_table",
+        "constructor": "NewGoogleBigQueryTableListResource"
       }
     ],
     "cloudrun": [
@@ -1378,6 +1407,7 @@
     "registered_constructors": [
       "NewBigQueryDatasetAccessListResource",
       "NewBigQueryDatasetListResource",
+      "NewBigqueryDatasetIamMemberListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
       "NewComputeAddressListResource",
@@ -1436,6 +1466,7 @@
       "NewDiscoveryEngineTargetSiteListResource",
       "NewDiscoveryEngineUserStoreListResource",
       "NewFolderIamMemberListResource",
+      "NewGoogleBigQueryTableListResource",
       "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
       "NewGoogleDnsRecordSetListResource",
@@ -1516,6 +1547,7 @@
       "NewDiscoveryEngineSitemapListResource",
       "NewDiscoveryEngineTargetSiteListResource",
       "NewDiscoveryEngineUserStoreListResource",
+      "NewGoogleBigQueryTableListResource",
       "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
       "NewGoogleDnsRecordSetListResource",
@@ -1536,6 +1568,7 @@
     "file_type_names": [
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
+      "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
@@ -1611,14 +1644,15 @@
       "google_storage_hmac_key"
     ],
     "missing_files_for_registration": [
+      "NewBigqueryDatasetIamMemberListResource",
       "NewFolderIamMemberListResource",
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 79,
-    "file_type_name_count": 75,
+    "registration_count": 81,
+    "file_type_name_count": 76,
     "signals_agree": false
   },
   "service_coverage": {
@@ -1638,7 +1672,7 @@
       },
       {
         "service": "bigquery",
-        "list_resources": 2
+        "list_resources": 3
       },
       {
         "service": "dns",
@@ -1681,7 +1715,8 @@
       "bigquery": {
         "list_resources": [
           "google_bigquery_dataset",
-          "google_bigquery_dataset_access"
+          "google_bigquery_dataset_access",
+          "google_bigquery_table"
         ]
       },
       "cloudrun": {
@@ -1810,8 +1845,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 65,
-    "code_list_resources": 75,
-    "registered_count": 79,
+    "code_list_resources": 76,
+    "registered_count": 81,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -1883,6 +1918,7 @@
     "code_list_resource_names": [
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
+      "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
@@ -1965,6 +2001,7 @@
       "google_project_iam_member"
     ],
     "only_in_source": [
+      "google_bigquery_table",
       "google_compute_instance",
       "google_discovery_engine_assistant",
       "google_discovery_engine_chat_engine",

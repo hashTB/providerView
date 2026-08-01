@@ -13065,7 +13065,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:03.853552"
+    "docs_refreshed_at": "2026-08-01T10:07:28.916476"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14062,6 +14062,16 @@
           "subcategory": ""
         },
         {
+          "title": "backup_legal_hold",
+          "slug": "backup_legal_hold",
+          "subcategory": ""
+        },
+        {
+          "title": "backup_legal_holds",
+          "slug": "backup_legal_holds",
+          "subcategory": ""
+        },
+        {
           "title": "backup_logically_air_gapped_backup_vault",
           "slug": "backup_logically_air_gapped_backup_vault",
           "subcategory": ""
@@ -14739,6 +14749,16 @@
         {
           "title": "certificatemanager_acme_external_account_bindings",
           "slug": "certificatemanager_acme_external_account_bindings",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_certificate",
+          "slug": "certificatemanager_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_certificates",
+          "slug": "certificatemanager_certificates",
           "subcategory": ""
         },
         {
@@ -17409,6 +17429,11 @@
         {
           "title": "ec2_transit_gateway_policy_table_association",
           "slug": "ec2_transit_gateway_policy_table_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table_entry",
+          "slug": "ec2_transit_gateway_policy_table_entry",
           "subcategory": ""
         },
         {
@@ -21237,6 +21262,16 @@
           "subcategory": ""
         },
         {
+          "title": "msk_channel",
+          "slug": "msk_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "msk_channels",
+          "slug": "msk_channels",
+          "subcategory": ""
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": ""
@@ -21479,6 +21514,16 @@
         {
           "title": "networkfirewall_vpc_endpoint_associations",
           "slug": "networkfirewall_vpc_endpoint_associations",
+          "subcategory": ""
+        },
+        {
+          "title": "networkflowmonitor_monitor",
+          "slug": "networkflowmonitor_monitor",
+          "subcategory": ""
+        },
+        {
+          "title": "networkflowmonitor_monitors",
+          "slug": "networkflowmonitor_monitors",
           "subcategory": ""
         },
         {
@@ -22302,6 +22347,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_agent",
+          "slug": "quicksight_agent",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_analyses",
           "slug": "quicksight_analyses",
           "subcategory": ""
@@ -22384,6 +22434,11 @@
         {
           "title": "quicksight_refresh_schedules",
           "slug": "quicksight_refresh_schedules",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_space",
+          "slug": "quicksight_space",
           "subcategory": ""
         },
         {
@@ -23907,6 +23962,16 @@
           "subcategory": ""
         },
         {
+          "title": "scn_dataset",
+          "slug": "scn_dataset",
+          "subcategory": ""
+        },
+        {
+          "title": "scn_namespace",
+          "slug": "scn_namespace",
+          "subcategory": ""
+        },
+        {
           "title": "secretsmanager_resource_policies",
           "slug": "secretsmanager_resource_policies",
           "subcategory": ""
@@ -24309,6 +24374,16 @@
         {
           "title": "servicecatalog_tag_options",
           "slug": "servicecatalog_tag_options",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_service",
+          "slug": "servicediscovery_service",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_services",
+          "slug": "servicediscovery_services",
           "subcategory": ""
         },
         {
@@ -24769,6 +24844,16 @@
         {
           "title": "ssm_maintenance_window_task",
           "slug": "ssm_maintenance_window_task",
+          "subcategory": ""
+        },
+        {
+          "title": "ssm_ops_item",
+          "slug": "ssm_ops_item",
+          "subcategory": ""
+        },
+        {
+          "title": "ssm_ops_items",
+          "slug": "ssm_ops_items",
           "subcategory": ""
         },
         {
@@ -25971,6 +26056,11 @@
           "subcategory": ""
         },
         {
+          "title": "backup_legal_hold",
+          "slug": "backup_legal_hold",
+          "subcategory": ""
+        },
+        {
           "title": "backup_logically_air_gapped_backup_vault",
           "slug": "backup_logically_air_gapped_backup_vault",
           "subcategory": ""
@@ -26263,6 +26353,11 @@
         {
           "title": "certificatemanager_acme_external_account_binding",
           "slug": "certificatemanager_acme_external_account_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_certificate",
+          "slug": "certificatemanager_certificate",
           "subcategory": ""
         },
         {
@@ -29076,6 +29171,11 @@
           "subcategory": ""
         },
         {
+          "title": "msk_channel",
+          "slug": "msk_channel",
+          "subcategory": ""
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": ""
@@ -29193,6 +29293,11 @@
         {
           "title": "networkfirewall_vpc_endpoint_association",
           "slug": "networkfirewall_vpc_endpoint_association",
+          "subcategory": ""
+        },
+        {
+          "title": "networkflowmonitor_monitor",
+          "slug": "networkflowmonitor_monitor",
           "subcategory": ""
         },
         {
@@ -30396,6 +30501,11 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_service",
+          "slug": "servicediscovery_service",
+          "subcategory": ""
+        },
+        {
           "title": "ses_configuration_set",
           "slug": "ses_configuration_set",
           "subcategory": ""
@@ -30603,6 +30713,11 @@
         {
           "title": "ssm_maintenance_window",
           "slug": "ssm_maintenance_window",
+          "subcategory": ""
+        },
+        {
+          "title": "ssm_ops_item",
+          "slug": "ssm_ops_item",
           "subcategory": ""
         },
         {
@@ -31555,6 +31670,11 @@
           "subcategory": ""
         },
         {
+          "title": "backup_legal_hold",
+          "slug": "backup_legal_hold",
+          "subcategory": ""
+        },
+        {
           "title": "backup_logically_air_gapped_backup_vault",
           "slug": "backup_logically_air_gapped_backup_vault",
           "subcategory": ""
@@ -31937,6 +32057,11 @@
         {
           "title": "certificatemanager_acme_external_account_binding",
           "slug": "certificatemanager_acme_external_account_binding",
+          "subcategory": ""
+        },
+        {
+          "title": "certificatemanager_certificate",
+          "slug": "certificatemanager_certificate",
           "subcategory": ""
         },
         {
@@ -33507,6 +33632,11 @@
         {
           "title": "ec2_transit_gateway_policy_table_association",
           "slug": "ec2_transit_gateway_policy_table_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_policy_table_entry",
+          "slug": "ec2_transit_gateway_policy_table_entry",
           "subcategory": ""
         },
         {
@@ -35590,6 +35720,11 @@
           "subcategory": ""
         },
         {
+          "title": "msk_channel",
+          "slug": "msk_channel",
+          "subcategory": ""
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": ""
@@ -35712,6 +35847,11 @@
         {
           "title": "networkfirewall_vpc_endpoint_association",
           "slug": "networkfirewall_vpc_endpoint_association",
+          "subcategory": ""
+        },
+        {
+          "title": "networkflowmonitor_monitor",
+          "slug": "networkflowmonitor_monitor",
           "subcategory": ""
         },
         {
@@ -36210,6 +36350,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_agent",
+          "slug": "quicksight_agent",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_analysis",
           "slug": "quicksight_analysis",
           "subcategory": ""
@@ -36252,6 +36397,11 @@
         {
           "title": "quicksight_refresh_schedule",
           "slug": "quicksight_refresh_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_space",
+          "slug": "quicksight_space",
           "subcategory": ""
         },
         {
@@ -37105,6 +37255,16 @@
           "subcategory": ""
         },
         {
+          "title": "scn_dataset",
+          "slug": "scn_dataset",
+          "subcategory": ""
+        },
+        {
+          "title": "scn_namespace",
+          "slug": "scn_namespace",
+          "subcategory": ""
+        },
+        {
           "title": "secretsmanager_resource_policy",
           "slug": "secretsmanager_resource_policy",
           "subcategory": ""
@@ -37337,6 +37497,11 @@
         {
           "title": "servicecatalog_tag_option_association",
           "slug": "servicecatalog_tag_option_association",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_service",
+          "slug": "servicediscovery_service",
           "subcategory": ""
         },
         {
@@ -37587,6 +37752,11 @@
         {
           "title": "ssm_maintenance_window_task",
           "slug": "ssm_maintenance_window_task",
+          "subcategory": ""
+        },
+        {
+          "title": "ssm_ops_item",
+          "slug": "ssm_ops_item",
           "subcategory": ""
         },
         {
@@ -38066,7 +38236,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:04.577991"
+    "docs_refreshed_at": "2026-08-01T10:07:29.450971"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -38500,7 +38670,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:05.052306"
+    "docs_refreshed_at": "2026-08-01T10:07:29.884413"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -46562,7 +46732,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:05.717767"
+    "docs_refreshed_at": "2026-08-01T10:07:30.361176"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -46911,7 +47081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:06.193305"
+    "docs_refreshed_at": "2026-08-01T10:07:30.784835"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -55897,7 +56067,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:06.845338"
+    "docs_refreshed_at": "2026-08-01T10:07:31.402079"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -64616,7 +64786,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-07-30T09:59:07.478547"
+    "docs_refreshed_at": "2026-08-01T10:07:31.952279"
   },
   "4ek0/neko": {
     "docs": {
