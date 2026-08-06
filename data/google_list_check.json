@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T10:08:24.471228",
+  "generated_at": "2026-08-06T09:18:40.247515",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "9f6f6efa1b60262c4cedff194f80994396f60c7e"
+    "commit": "97d6358b86cb34c604b7fff6123004829a7e893b"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -420,7 +420,7 @@
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 65
+    "list_resources": 82
   },
   "registrations": {
     "generated": [
@@ -893,7 +893,7 @@
         "package": "bigquery",
         "constructor": "NewBigqueryDatasetIamMemberListResource",
         "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
-        "line": 412
+        "line": 425
       },
       {
         "name": "google_bigquery_table",
@@ -1844,7 +1844,7 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 65,
+    "dashboard_list_resources": 82,
     "code_list_resources": 76,
     "registered_count": 81,
     "signals_agree": false,
@@ -1865,6 +1865,7 @@
       "google_compute_ha_vpn_gateway",
       "google_compute_https_health_check",
       "google_compute_image",
+      "google_compute_instance",
       "google_compute_instant_snapshot",
       "google_compute_interconnect_attachment_group",
       "google_compute_interconnect_group",
@@ -1898,18 +1899,34 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_discovery_engine_assistant",
+      "google_discovery_engine_chat_engine",
+      "google_discovery_engine_cmek_config",
+      "google_discovery_engine_control",
+      "google_discovery_engine_data_store",
+      "google_discovery_engine_license_config",
+      "google_discovery_engine_recommendation_engine",
+      "google_discovery_engine_schema",
+      "google_discovery_engine_search_engine",
+      "google_discovery_engine_serving_config",
+      "google_discovery_engine_sitemap",
+      "google_discovery_engine_target_site",
+      "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_folder_iam_member",
       "google_kms_crypto_key_version",
       "google_monitoring_alert_policy",
       "google_project",
+      "google_project_iam_custom_role",
       "google_project_iam_member",
       "google_project_service",
       "google_pubsub_subscription",
+      "google_pubsub_subscription_iam_member",
       "google_pubsub_topic",
       "google_secret_manager_secret",
       "google_service_account",
+      "google_service_account_iam_member",
       "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
@@ -1998,25 +2015,12 @@
       "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_region_backend_bucket",
       "google_folder_iam_member",
-      "google_project_iam_member"
+      "google_project_iam_member",
+      "google_pubsub_subscription_iam_member",
+      "google_service_account_iam_member"
     ],
     "only_in_source": [
-      "google_bigquery_table",
-      "google_compute_instance",
-      "google_discovery_engine_assistant",
-      "google_discovery_engine_chat_engine",
-      "google_discovery_engine_cmek_config",
-      "google_discovery_engine_control",
-      "google_discovery_engine_data_store",
-      "google_discovery_engine_license_config",
-      "google_discovery_engine_recommendation_engine",
-      "google_discovery_engine_schema",
-      "google_discovery_engine_search_engine",
-      "google_discovery_engine_serving_config",
-      "google_discovery_engine_sitemap",
-      "google_discovery_engine_target_site",
-      "google_discovery_engine_user_store",
-      "google_project_iam_custom_role"
+      "google_bigquery_table"
     ],
     "registry_is_subset": false
   }

@@ -4230,6 +4230,11 @@
           "subcategory": "ELB (Elastic Load Balancing)"
         },
         {
+          "title": "mailmanager_rule_set",
+          "slug": "mailmanager_rule_set",
+          "subcategory": "SES Mail Manager"
+        },
+        {
           "title": "mailmanager_traffic_policy",
           "slug": "mailmanager_traffic_policy",
           "subcategory": "SES Mail Manager"
@@ -4310,6 +4315,21 @@
           "subcategory": "End User Messaging SMS"
         },
         {
+          "title": "prometheus_anomaly_detector",
+          "slug": "prometheus_anomaly_detector",
+          "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
+          "title": "prometheus_scraper",
+          "slug": "prometheus_scraper",
+          "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
+          "title": "prometheus_scraper_logging_configuration",
+          "slug": "prometheus_scraper_logging_configuration",
+          "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
           "title": "rds_cluster",
           "slug": "rds_cluster",
           "subcategory": "RDS (Relational Database)"
@@ -4318,6 +4338,11 @@
           "title": "rekognition_collection",
           "slug": "rekognition_collection",
           "subcategory": "Rekognition"
+        },
+        {
+          "title": "resiliencehubv2_policy",
+          "slug": "resiliencehubv2_policy",
+          "subcategory": "Resilience Hub V2"
         },
         {
           "title": "route",
@@ -9369,6 +9394,11 @@
           "subcategory": "Macie"
         },
         {
+          "title": "mailmanager_rule_set",
+          "slug": "mailmanager_rule_set",
+          "subcategory": "SES Mail Manager"
+        },
+        {
           "title": "mailmanager_traffic_policy",
           "slug": "mailmanager_traffic_policy",
           "subcategory": "SES Mail Manager"
@@ -10184,6 +10214,11 @@
           "subcategory": "AMP (Managed Prometheus)"
         },
         {
+          "title": "prometheus_anomaly_detector",
+          "slug": "prometheus_anomaly_detector",
+          "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
           "title": "prometheus_query_logging_configuration",
           "slug": "prometheus_query_logging_configuration",
           "subcategory": "AMP (Managed Prometheus)"
@@ -10201,6 +10236,11 @@
         {
           "title": "prometheus_scraper",
           "slug": "prometheus_scraper",
+          "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
+          "title": "prometheus_scraper_logging_configuration",
+          "slug": "prometheus_scraper_logging_configuration",
           "subcategory": "AMP (Managed Prometheus)"
         },
         {
@@ -10657,6 +10697,11 @@
           "title": "resiliencehub_resiliency_policy",
           "slug": "resiliencehub_resiliency_policy",
           "subcategory": "Resilience Hub"
+        },
+        {
+          "title": "resiliencehubv2_policy",
+          "slug": "resiliencehubv2_policy",
+          "subcategory": "Resilience Hub V2"
         },
         {
           "title": "resourceexplorer2_index",
@@ -13065,7 +13110,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:28.916476"
+    "docs_refreshed_at": "2026-08-06T09:17:36.211671"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -38236,7 +38281,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:29.450971"
+    "docs_refreshed_at": "2026-08-06T09:17:36.708693"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -38670,7 +38715,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:29.884413"
+    "docs_refreshed_at": "2026-08-06T09:17:37.073076"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -46732,7 +46777,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:30.361176"
+    "docs_refreshed_at": "2026-08-06T09:17:37.486313"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -47081,7 +47126,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:30.784835"
+    "docs_refreshed_at": "2026-08-06T09:17:37.852554"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -50077,6 +50122,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_instance",
+          "slug": "google_compute_instance",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_instant_snapshot",
           "slug": "google_compute_instant_snapshot",
           "subcategory": "Compute Engine"
@@ -50242,6 +50292,71 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_discovery_engine_assistant",
+          "slug": "google_discovery_engine_assistant",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_chat_engine",
+          "slug": "google_discovery_engine_chat_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_cmek_config",
+          "slug": "google_discovery_engine_cmek_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_control",
+          "slug": "google_discovery_engine_control",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_data_store",
+          "slug": "google_discovery_engine_data_store",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_license_config",
+          "slug": "google_discovery_engine_license_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_recommendation_engine",
+          "slug": "google_discovery_engine_recommendation_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_schema",
+          "slug": "google_discovery_engine_schema",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_search_engine",
+          "slug": "google_discovery_engine_search_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_serving_config",
+          "slug": "google_discovery_engine_serving_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_sitemap",
+          "slug": "google_discovery_engine_sitemap",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_target_site",
+          "slug": "google_discovery_engine_target_site",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_user_store",
+          "slug": "google_discovery_engine_user_store",
+          "subcategory": "Discovery Engine"
+        },
+        {
           "title": "google_dns_managed_zone",
           "slug": "google_dns_managed_zone",
           "subcategory": "Cloud DNS"
@@ -50272,6 +50387,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_project_iam_custom_role",
+          "slug": "google_project_iam_custom_role",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_project_iam_member",
           "slug": "google_project_iam_member",
           "subcategory": "Cloud Platform"
@@ -50287,6 +50407,11 @@
           "subcategory": "Cloud Pub/Sub"
         },
         {
+          "title": "google_pubsub_subscription_iam_member",
+          "slug": "google_pubsub_subscription_iam_member",
+          "subcategory": "Cloud Pub/Sun"
+        },
+        {
           "title": "google_pubsub_topic",
           "slug": "google_pubsub_topic",
           "subcategory": "Cloud Pub/Sub"
@@ -50299,6 +50424,11 @@
         {
           "title": "google_service_account",
           "slug": "google_service_account",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_service_account_iam_member",
+          "slug": "google_service_account_iam_member",
           "subcategory": "Cloud Platform"
         },
         {
@@ -51596,6 +51726,11 @@
           "subcategory": "Cloud Security Compliance"
         },
         {
+          "title": "cloud_support_support_event_subscription",
+          "slug": "cloud_support_support_event_subscription",
+          "subcategory": "Cloud Support"
+        },
+        {
           "title": "cloud_tasks_queue",
           "slug": "cloud_tasks_queue",
           "subcategory": "Cloud Tasks"
@@ -52183,6 +52318,11 @@
         {
           "title": "compute_region_network_policy",
           "slug": "compute_region_network_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_policy_traffic_classification_rule",
+          "slug": "compute_region_network_policy_traffic_classification_rule",
           "subcategory": "Compute Engine"
         },
         {
@@ -56067,7 +56207,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:31.402079"
+    "docs_refreshed_at": "2026-08-06T09:17:38.310486"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -58796,6 +58936,11 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_compute_instance",
+          "slug": "google_compute_instance",
+          "subcategory": "Compute Engine"
+        },
+        {
           "title": "google_compute_instant_snapshot",
           "slug": "google_compute_instant_snapshot",
           "subcategory": "Compute Engine"
@@ -58961,6 +59106,71 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_discovery_engine_assistant",
+          "slug": "google_discovery_engine_assistant",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_chat_engine",
+          "slug": "google_discovery_engine_chat_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_cmek_config",
+          "slug": "google_discovery_engine_cmek_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_control",
+          "slug": "google_discovery_engine_control",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_data_store",
+          "slug": "google_discovery_engine_data_store",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_license_config",
+          "slug": "google_discovery_engine_license_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_recommendation_engine",
+          "slug": "google_discovery_engine_recommendation_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_schema",
+          "slug": "google_discovery_engine_schema",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_search_engine",
+          "slug": "google_discovery_engine_search_engine",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_serving_config",
+          "slug": "google_discovery_engine_serving_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_sitemap",
+          "slug": "google_discovery_engine_sitemap",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_target_site",
+          "slug": "google_discovery_engine_target_site",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "google_discovery_engine_user_store",
+          "slug": "google_discovery_engine_user_store",
+          "subcategory": "Discovery Engine"
+        },
+        {
           "title": "google_dns_managed_zone",
           "slug": "google_dns_managed_zone",
           "subcategory": "Cloud DNS"
@@ -58991,6 +59201,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_project_iam_custom_role",
+          "slug": "google_project_iam_custom_role",
+          "subcategory": "Cloud Platform"
+        },
+        {
           "title": "google_project_iam_member",
           "slug": "google_project_iam_member",
           "subcategory": "Cloud Platform"
@@ -59006,6 +59221,11 @@
           "subcategory": "Cloud Pub/Sub"
         },
         {
+          "title": "google_pubsub_subscription_iam_member",
+          "slug": "google_pubsub_subscription_iam_member",
+          "subcategory": "Cloud Pub/Sun"
+        },
+        {
           "title": "google_pubsub_topic",
           "slug": "google_pubsub_topic",
           "subcategory": "Cloud Pub/Sub"
@@ -59018,6 +59238,11 @@
         {
           "title": "google_service_account",
           "slug": "google_service_account",
+          "subcategory": "Cloud Platform"
+        },
+        {
+          "title": "google_service_account_iam_member",
+          "slug": "google_service_account_iam_member",
           "subcategory": "Cloud Platform"
         },
         {
@@ -60315,6 +60540,11 @@
           "subcategory": "Cloud Security Compliance"
         },
         {
+          "title": "cloud_support_support_event_subscription",
+          "slug": "cloud_support_support_event_subscription",
+          "subcategory": "Cloud Support"
+        },
+        {
           "title": "cloud_tasks_queue",
           "slug": "cloud_tasks_queue",
           "subcategory": "Cloud Tasks"
@@ -60902,6 +61132,11 @@
         {
           "title": "compute_region_network_policy",
           "slug": "compute_region_network_policy",
+          "subcategory": "Compute Engine"
+        },
+        {
+          "title": "compute_region_network_policy_traffic_classification_rule",
+          "slug": "compute_region_network_policy_traffic_classification_rule",
           "subcategory": "Compute Engine"
         },
         {
@@ -64786,7 +65021,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-01T10:07:31.952279"
+    "docs_refreshed_at": "2026-08-06T09:17:38.758651"
   },
   "4ek0/neko": {
     "docs": {

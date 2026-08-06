@@ -131,10 +131,10 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-08-01T10:08:24.471228.</p>
+    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-08-06T09:18:40.247515.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">65</div><div class="label">Registry-Reflected List Resources</div></div>
+        <div class="card"><div class="value">82</div><div class="label">Registry-Reflected List Resources</div></div>
         <div class="card"><div class="value">76</div><div class="label">Source TypeNames</div></div>
         <div class="card"><div class="value">81</div><div class="label">Registered Constructors</div></div>
         <div class="card"><div class="value">⚠️</div><div class="label">Validation: out of sync</div></div>
@@ -143,7 +143,7 @@
 
     <div class="note">
         <strong>⚠️ Validation:</strong> Registry reflects
-        <strong>65</strong>;
+        <strong>82</strong>;
         source inspection finds <strong>76</strong>
         TypeName(s) across <strong>81</strong> registered constructor(s).
         Unlike AWS/Azure (which have established lists of expected resources to track gaps), GCP is
@@ -152,7 +152,7 @@
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>9f6f6efa1b60262c4cedff194f80994396f60c7e</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>97d6358b86cb34c604b7fff6123004829a7e893b</code></span></div>
                 <div class="meta-row"><span>Registration sources</span><span>81 file(s) under <code>google/</code></span></div>
                 <div class="meta-row"><span>Registrations SHA-256</span><span><code>651c0516222b5873...</code></span></div>
             </div>
@@ -161,7 +161,7 @@
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_bigquery_table</code> <code>google_compute_instance</code> <code>google_discovery_engine_assistant</code> <code>google_discovery_engine_chat_engine</code> <code>google_discovery_engine_cmek_config</code> <code>google_discovery_engine_control</code> <code>google_discovery_engine_data_store</code> <code>google_discovery_engine_license_config</code> <code>google_discovery_engine_recommendation_engine</code> <code>google_discovery_engine_schema</code> <code>google_discovery_engine_search_engine</code> <code>google_discovery_engine_serving_config</code> <code>google_discovery_engine_sitemap</code> <code>google_discovery_engine_target_site</code> <code>google_discovery_engine_user_store</code> <code>google_project_iam_custom_role</code></span></div><div class="meta-row"><span>Registry only (possible regression)</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_folder_iam_member</code> <code>google_project_iam_member</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Source only (pending Registry publish)</span><span><code>google_bigquery_table</code></span></div><div class="meta-row"><span>Registry only (possible regression)</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_folder_iam_member</code> <code>google_project_iam_member</code> <code>google_pubsub_subscription_iam_member</code> <code>google_service_account_iam_member</code></span></div></div></div>
     </div>
 
     <div class="section">
@@ -200,7 +200,7 @@
     <div class="section">
         <h2>Source Registrations</h2>
         <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>81</strong> source file(s) under <code>google/</code>.</p>
-        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (15)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_iam_member</code> &mdash; <code>NewBigqueryDatasetIamMemberListResource</code> <span class="muted">google/services/bigquery/iam_bigquery_member_dataset.go:412</span></li>
+        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (15)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_iam_member</code> &mdash; <code>NewBigqueryDatasetIamMemberListResource</code> <span class="muted">google/services/bigquery/iam_bigquery_member_dataset.go:425</span></li>
 <li><code>google_bigquery_table</code> &mdash; <code>NewGoogleBigQueryTableListResource</code> <span class="muted">google/services/bigquery/list_google_bigquery_table.go:39</span></li>
 <li><code>google_compute_instance</code> &mdash; <code>NewGoogleComputeInstanceListResource</code> <span class="muted">google/services/compute/list_google_compute_instance.go:38</span></li>
 <li><code>google_dns_managed_zone</code> &mdash; <code>NewGoogleDnsManagedZoneListResource</code> <span class="muted">google/services/dns/list_google_dns_managed_zone.go:38</span></li>

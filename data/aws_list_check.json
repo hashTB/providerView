@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:08:19.614087",
+  "generated_at": "2026-08-06T09:18:35.269695",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "ff8dfd1b0745d9408c61ce9612f30967c305149a"
+    "commit": "ac09519649f1439a61b779745d0a35ae3026688e"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 178
+    "list_resources": 183
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3120,
+    "stdout_line_count": 3130,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 10,
-        "implemented": 180,
-        "total": 1671
+        "percent": 11,
+        "implemented": 186,
+        "total": 1675
       },
-      "service_count": 240,
+      "service_count": 241,
       "services": [
         {
           "service": "accessanalyzer",
@@ -54,9 +54,9 @@
         },
         {
           "service": "amp",
-          "percent": 12,
-          "implemented": 1,
-          "total": 8
+          "percent": 33,
+          "implemented": 3,
+          "total": 9
         },
         {
           "service": "amplify",
@@ -174,8 +174,8 @@
         },
         {
           "service": "backup",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 7,
+          "implemented": 1,
           "total": 13
         },
         {
@@ -883,8 +883,8 @@
         {
           "service": "mailmanager",
           "percent": 100,
-          "implemented": 1,
-          "total": 1
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "mediaconvert",
@@ -1119,6 +1119,12 @@
           "percent": 0,
           "implemented": 0,
           "total": 1
+        },
+        {
+          "service": "resiliencehubv2",
+          "percent": 100,
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "resourceexplorer2",
@@ -1513,11 +1519,14 @@
             "amp/resource_policy.go",
             "amp/rule_group_namespace.go",
             "amp/scraper.go",
+            "amp/scraper_logging_configuration.go",
             "amp/workspace.go",
             "amp/workspace_configuration.go"
           ],
           "list_resources": [
-            "amp/anomaly_detector.go"
+            "amp/anomaly_detector.go",
+            "amp/scraper.go",
+            "amp/scraper_logging_configuration.go"
           ]
         },
         "amplify": {
@@ -1779,7 +1788,9 @@
             "backup/vault_notifications.go",
             "backup/vault_policy.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "backup/selection.go"
+          ]
         },
         "batch": {
           "all_resources": [
@@ -3345,9 +3356,11 @@
         },
         "mailmanager": {
           "all_resources": [
+            "mailmanager/rule_set.go",
             "mailmanager/traffic_policy.go"
           ],
           "list_resources": [
+            "mailmanager/rule_set.go",
             "mailmanager/traffic_policy.go"
           ]
         },
@@ -3803,6 +3816,16 @@
             "resiliencehub/resiliency_policy.go"
           ],
           "list_resources": []
+        },
+        "resiliencehubv2": {
+          "all_resources": [
+            "resiliencehubv2/policy.go",
+            "resiliencehubv2/system.go"
+          ],
+          "list_resources": [
+            "resiliencehubv2/policy.go",
+            "resiliencehubv2/system.go"
+          ]
         },
         "resourceexplorer2": {
           "all_resources": [
@@ -4580,11 +4603,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-08-01 10:08:19 UTC"
+      "last_updated": "2026-08-06 09:18:35 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 58,
+    "services_with_list": 60,
     "top_services": [
       {
         "service": "ec2",
@@ -4721,11 +4744,14 @@
           "amp/resource_policy.go",
           "amp/rule_group_namespace.go",
           "amp/scraper.go",
+          "amp/scraper_logging_configuration.go",
           "amp/workspace.go",
           "amp/workspace_configuration.go"
         ],
         "list_resources": [
-          "amp/anomaly_detector.go"
+          "amp/anomaly_detector.go",
+          "amp/scraper.go",
+          "amp/scraper_logging_configuration.go"
         ]
       },
       "amplify": {
@@ -4987,7 +5013,9 @@
           "backup/vault_notifications.go",
           "backup/vault_policy.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "backup/selection.go"
+        ]
       },
       "batch": {
         "all_resources": [
@@ -6553,9 +6581,11 @@
       },
       "mailmanager": {
         "all_resources": [
+          "mailmanager/rule_set.go",
           "mailmanager/traffic_policy.go"
         ],
         "list_resources": [
+          "mailmanager/rule_set.go",
           "mailmanager/traffic_policy.go"
         ]
       },
@@ -7011,6 +7041,16 @@
           "resiliencehub/resiliency_policy.go"
         ],
         "list_resources": []
+      },
+      "resiliencehubv2": {
+        "all_resources": [
+          "resiliencehubv2/policy.go",
+          "resiliencehubv2/system.go"
+        ],
+        "list_resources": [
+          "resiliencehubv2/policy.go",
+          "resiliencehubv2/system.go"
+        ]
       },
       "resourceexplorer2": {
         "all_resources": [
@@ -7791,9 +7831,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 178,
-    "script_implemented_list": 180,
-    "script_total_resources": 1671,
-    "script_percent": 10
+    "dashboard_list_resources": 183,
+    "script_implemented_list": 186,
+    "script_total_resources": 1675,
+    "script_percent": 11
   }
 }
