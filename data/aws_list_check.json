@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:18:35.269695",
+  "generated_at": "2026-08-13T08:28:06.149488",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "ac09519649f1439a61b779745d0a35ae3026688e"
+    "commit": "a2873d94487b4555b9a7e32f7b46e1cedd0b0928"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 183
+    "list_resources": 195
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3130,
+    "stdout_line_count": 3138,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 11,
-        "implemented": 186,
-        "total": 1675
+        "implemented": 198,
+        "total": 1683
       },
       "service_count": 241,
       "services": [
@@ -174,8 +174,8 @@
         },
         {
           "service": "backup",
-          "percent": 7,
-          "implemented": 1,
+          "percent": 23,
+          "implemented": 3,
           "total": 13
         },
         {
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrockagentcore",
-          "percent": 40,
-          "implemented": 8,
-          "total": 20
+          "percent": 42,
+          "implemented": 9,
+          "total": 21
         },
         {
           "service": "billing",
@@ -883,8 +883,8 @@
         {
           "service": "mailmanager",
           "percent": 100,
-          "implemented": 2,
-          "total": 2
+          "implemented": 3,
+          "total": 3
         },
         {
           "service": "mediaconvert",
@@ -942,15 +942,15 @@
         },
         {
           "service": "neptunegraph",
-          "percent": 0,
-          "implemented": 0,
-          "total": 1
+          "percent": 50,
+          "implemented": 1,
+          "total": 2
         },
         {
           "service": "networkfirewall",
-          "percent": 0,
-          "implemented": 0,
-          "total": 8
+          "percent": 11,
+          "implemented": 1,
+          "total": 9
         },
         {
           "service": "networkflowmonitor",
@@ -1044,9 +1044,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 50,
-          "implemented": 2,
-          "total": 4
+          "percent": 66,
+          "implemented": 4,
+          "total": 6
         },
         {
           "service": "pipes",
@@ -1086,8 +1086,8 @@
         },
         {
           "service": "rds",
-          "percent": 6,
-          "implemented": 2,
+          "percent": 10,
+          "implemented": 3,
           "total": 29
         },
         {
@@ -1123,8 +1123,8 @@
         {
           "service": "resiliencehubv2",
           "percent": 100,
-          "implemented": 2,
-          "total": 2
+          "implemented": 4,
+          "total": 4
         },
         {
           "service": "resourceexplorer2",
@@ -1338,8 +1338,8 @@
         },
         {
           "service": "ssm",
-          "percent": 33,
-          "implemented": 4,
+          "percent": 41,
+          "implemented": 5,
           "total": 12
         },
         {
@@ -1789,7 +1789,9 @@
             "backup/vault_policy.go"
           ],
           "list_resources": [
-            "backup/selection.go"
+            "backup/plan.go",
+            "backup/selection.go",
+            "backup/vault.go"
           ]
         },
         "batch": {
@@ -1850,6 +1852,7 @@
             "bedrockagentcore/code_interpreter.go",
             "bedrockagentcore/evaluator.go",
             "bedrockagentcore/gateway.go",
+            "bedrockagentcore/gateway_rule.go",
             "bedrockagentcore/gateway_target.go",
             "bedrockagentcore/harness.go",
             "bedrockagentcore/memory.go",
@@ -1866,6 +1869,7 @@
           "list_resources": [
             "bedrockagentcore/browser_profile.go",
             "bedrockagentcore/evaluator.go",
+            "bedrockagentcore/gateway_rule.go",
             "bedrockagentcore/harness.go",
             "bedrockagentcore/online_evaluation_config.go",
             "bedrockagentcore/policy.go",
@@ -3356,10 +3360,12 @@
         },
         "mailmanager": {
           "all_resources": [
+            "mailmanager/ingress_point.go",
             "mailmanager/rule_set.go",
             "mailmanager/traffic_policy.go"
           ],
           "list_resources": [
+            "mailmanager/ingress_point.go",
             "mailmanager/rule_set.go",
             "mailmanager/traffic_policy.go"
           ]
@@ -3440,12 +3446,16 @@
         },
         "neptunegraph": {
           "all_resources": [
-            "neptunegraph/graph.go"
+            "neptunegraph/graph.go",
+            "neptunegraph/private_graph_endpoint.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "neptunegraph/private_graph_endpoint.go"
+          ]
         },
         "networkfirewall": {
           "all_resources": [
+            "networkfirewall/container_association.go",
             "networkfirewall/firewall.go",
             "networkfirewall/firewall_policy.go",
             "networkfirewall/firewall_transit_gateway_attachment_accepter.go",
@@ -3455,7 +3465,9 @@
             "networkfirewall/tls_inspection_configuration.go",
             "networkfirewall/vpc_endpoint_association.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "networkfirewall/container_association.go"
+          ]
         },
         "networkflowmonitor": {
           "all_resources": [
@@ -3642,11 +3654,15 @@
             "pinpointsmsvoicev2/configuration_set.go",
             "pinpointsmsvoicev2/event_destination.go",
             "pinpointsmsvoicev2/phone_number.go",
-            "pinpointsmsvoicev2/pool.go"
+            "pinpointsmsvoicev2/pool.go",
+            "pinpointsmsvoicev2/resource_policy.go",
+            "pinpointsmsvoicev2/sender_id.go"
           ],
           "list_resources": [
             "pinpointsmsvoicev2/event_destination.go",
-            "pinpointsmsvoicev2/pool.go"
+            "pinpointsmsvoicev2/pool.go",
+            "pinpointsmsvoicev2/resource_policy.go",
+            "pinpointsmsvoicev2/sender_id.go"
           ]
         },
         "pipes": {
@@ -3750,6 +3766,7 @@
           ],
           "list_resources": [
             "rds/cluster.go",
+            "rds/parameter_group.go",
             "rds/subnet_group.go"
           ]
         },
@@ -3819,11 +3836,15 @@
         },
         "resiliencehubv2": {
           "all_resources": [
+            "resiliencehubv2/input_source.go",
             "resiliencehubv2/policy.go",
+            "resiliencehubv2/service.go",
             "resiliencehubv2/system.go"
           ],
           "list_resources": [
+            "resiliencehubv2/input_source.go",
             "resiliencehubv2/policy.go",
+            "resiliencehubv2/service.go",
             "resiliencehubv2/system.go"
           ]
         },
@@ -4331,6 +4352,7 @@
             "ssm/association.go",
             "ssm/document.go",
             "ssm/parameter.go",
+            "ssm/patch_baseline.go",
             "ssm/patch_group.go"
           ]
         },
@@ -4603,11 +4625,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-08-06 09:18:35 UTC"
+      "last_updated": "2026-08-13 08:28:06 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 60,
+    "services_with_list": 62,
     "top_services": [
       {
         "service": "ec2",
@@ -4622,16 +4644,16 @@
         "total": 26
       },
       {
+        "service": "bedrockagentcore",
+        "percent": 42,
+        "implemented": 9,
+        "total": 21
+      },
+      {
         "service": "iam",
         "percent": 25,
         "implemented": 9,
         "total": 35
-      },
-      {
-        "service": "bedrockagentcore",
-        "percent": 40,
-        "implemented": 8,
-        "total": 20
       },
       {
         "service": "lambda",
@@ -4664,10 +4686,22 @@
         "total": 9
       },
       {
+        "service": "ssm",
+        "percent": 41,
+        "implemented": 5,
+        "total": 12
+      },
+      {
         "service": "logs",
         "percent": 26,
         "implemented": 5,
         "total": 19
+      },
+      {
+        "service": "resiliencehubv2",
+        "percent": 100,
+        "implemented": 4,
+        "total": 4
       },
       {
         "service": "workmail",
@@ -4676,28 +4710,16 @@
         "total": 5
       },
       {
+        "service": "pinpointsmsvoicev2",
+        "percent": 66,
+        "implemented": 4,
+        "total": 6
+      },
+      {
         "service": "ecs",
         "percent": 40,
         "implemented": 4,
         "total": 10
-      },
-      {
-        "service": "ssm",
-        "percent": 33,
-        "implemented": 4,
-        "total": 12
-      },
-      {
-        "service": "route53",
-        "percent": 28,
-        "implemented": 4,
-        "total": 14
-      },
-      {
-        "service": "securityhub",
-        "percent": 21,
-        "implemented": 4,
-        "total": 19
       }
     ],
     "service_resources": {
@@ -5014,7 +5036,9 @@
           "backup/vault_policy.go"
         ],
         "list_resources": [
-          "backup/selection.go"
+          "backup/plan.go",
+          "backup/selection.go",
+          "backup/vault.go"
         ]
       },
       "batch": {
@@ -5075,6 +5099,7 @@
           "bedrockagentcore/code_interpreter.go",
           "bedrockagentcore/evaluator.go",
           "bedrockagentcore/gateway.go",
+          "bedrockagentcore/gateway_rule.go",
           "bedrockagentcore/gateway_target.go",
           "bedrockagentcore/harness.go",
           "bedrockagentcore/memory.go",
@@ -5091,6 +5116,7 @@
         "list_resources": [
           "bedrockagentcore/browser_profile.go",
           "bedrockagentcore/evaluator.go",
+          "bedrockagentcore/gateway_rule.go",
           "bedrockagentcore/harness.go",
           "bedrockagentcore/online_evaluation_config.go",
           "bedrockagentcore/policy.go",
@@ -6581,10 +6607,12 @@
       },
       "mailmanager": {
         "all_resources": [
+          "mailmanager/ingress_point.go",
           "mailmanager/rule_set.go",
           "mailmanager/traffic_policy.go"
         ],
         "list_resources": [
+          "mailmanager/ingress_point.go",
           "mailmanager/rule_set.go",
           "mailmanager/traffic_policy.go"
         ]
@@ -6665,12 +6693,16 @@
       },
       "neptunegraph": {
         "all_resources": [
-          "neptunegraph/graph.go"
+          "neptunegraph/graph.go",
+          "neptunegraph/private_graph_endpoint.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "neptunegraph/private_graph_endpoint.go"
+        ]
       },
       "networkfirewall": {
         "all_resources": [
+          "networkfirewall/container_association.go",
           "networkfirewall/firewall.go",
           "networkfirewall/firewall_policy.go",
           "networkfirewall/firewall_transit_gateway_attachment_accepter.go",
@@ -6680,7 +6712,9 @@
           "networkfirewall/tls_inspection_configuration.go",
           "networkfirewall/vpc_endpoint_association.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "networkfirewall/container_association.go"
+        ]
       },
       "networkflowmonitor": {
         "all_resources": [
@@ -6867,11 +6901,15 @@
           "pinpointsmsvoicev2/configuration_set.go",
           "pinpointsmsvoicev2/event_destination.go",
           "pinpointsmsvoicev2/phone_number.go",
-          "pinpointsmsvoicev2/pool.go"
+          "pinpointsmsvoicev2/pool.go",
+          "pinpointsmsvoicev2/resource_policy.go",
+          "pinpointsmsvoicev2/sender_id.go"
         ],
         "list_resources": [
           "pinpointsmsvoicev2/event_destination.go",
-          "pinpointsmsvoicev2/pool.go"
+          "pinpointsmsvoicev2/pool.go",
+          "pinpointsmsvoicev2/resource_policy.go",
+          "pinpointsmsvoicev2/sender_id.go"
         ]
       },
       "pipes": {
@@ -6975,6 +7013,7 @@
         ],
         "list_resources": [
           "rds/cluster.go",
+          "rds/parameter_group.go",
           "rds/subnet_group.go"
         ]
       },
@@ -7044,11 +7083,15 @@
       },
       "resiliencehubv2": {
         "all_resources": [
+          "resiliencehubv2/input_source.go",
           "resiliencehubv2/policy.go",
+          "resiliencehubv2/service.go",
           "resiliencehubv2/system.go"
         ],
         "list_resources": [
+          "resiliencehubv2/input_source.go",
           "resiliencehubv2/policy.go",
+          "resiliencehubv2/service.go",
           "resiliencehubv2/system.go"
         ]
       },
@@ -7556,6 +7599,7 @@
           "ssm/association.go",
           "ssm/document.go",
           "ssm/parameter.go",
+          "ssm/patch_baseline.go",
           "ssm/patch_group.go"
         ]
       },
@@ -7831,9 +7875,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 183,
-    "script_implemented_list": 186,
-    "script_total_resources": 1675,
+    "dashboard_list_resources": 195,
+    "script_implemented_list": 198,
+    "script_total_resources": 1683,
     "script_percent": 11
   }
 }

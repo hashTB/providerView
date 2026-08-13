@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-06T09:18:40.247515",
+  "generated_at": "2026-08-13T08:28:11.476654",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "97d6358b86cb34c604b7fff6123004829a7e893b"
+    "commit": "232b9227bff87b6cee8facb993b69656a9eb26e7"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -420,7 +420,7 @@
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 82
+    "list_resources": 84
   },
   "registrations": {
     "generated": [
@@ -1844,13 +1844,15 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 82,
+    "dashboard_list_resources": 84,
     "code_list_resources": 76,
     "registered_count": 81,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
+      "google_bigquery_dataset_iam_member",
+      "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
       "google_compute_address",
@@ -2011,6 +2013,7 @@
       "google_storage_hmac_key"
     ],
     "only_in_registry": [
+      "google_bigquery_dataset_iam_member",
       "google_compute_machine_image",
       "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_region_backend_bucket",
@@ -2019,9 +2022,7 @@
       "google_pubsub_subscription_iam_member",
       "google_service_account_iam_member"
     ],
-    "only_in_source": [
-      "google_bigquery_table"
-    ],
+    "only_in_source": [],
     "registry_is_subset": false
   }
 }
