@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:00.256378"
+    "docs_refreshed_at": "2026-08-13T08:29:52.086379"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -65833,7 +65833,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:49.628767"
+    "docs_refreshed_at": "2026-08-13T08:29:39.191645"
   },
   "Azure/azapi": {
     "docs": {
@@ -69449,7 +69449,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:50.353763"
+    "docs_refreshed_at": "2026-08-13T08:29:40.079716"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -70909,7 +70909,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:50.703439"
+    "docs_refreshed_at": "2026-08-13T08:29:40.520578"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -71444,7 +71444,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:51.054853"
+    "docs_refreshed_at": "2026-08-13T08:29:40.951414"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -71712,7 +71712,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:51.402253"
+    "docs_refreshed_at": "2026-08-13T08:29:41.377519"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -71731,7 +71731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:51.746041"
+    "docs_refreshed_at": "2026-08-13T08:29:41.798465"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -71778,7 +71778,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:53.132488"
+    "docs_refreshed_at": "2026-08-13T08:29:43.494996"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -72555,6 +72555,13 @@
         {
           "title": "mobileconfig",
           "slug": "mobileconfig",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Impact alerts",
+          "slug": "impact-alerts",
           "subcategory": ""
         }
       ],
@@ -73365,7 +73372,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:54.251725"
+    "docs_refreshed_at": "2026-08-13T08:29:44.833423"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -77094,7 +77101,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:55.698425"
+    "docs_refreshed_at": "2026-08-13T08:29:46.556442"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -78443,7 +78450,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:56.053464"
+    "docs_refreshed_at": "2026-08-13T08:29:46.988052"
   },
   "SAP/btp": {
     "docs": {
@@ -79170,7 +79177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:56.758301"
+    "docs_refreshed_at": "2026-08-13T08:29:47.854849"
   },
   "SAP/scc": {
     "docs": {
@@ -79405,7 +79412,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:57.454874"
+    "docs_refreshed_at": "2026-08-13T08:29:48.705738"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -79452,7 +79459,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:57.798085"
+    "docs_refreshed_at": "2026-08-13T08:29:49.124917"
   },
   "Sokren/aap": {
     "docs": {
@@ -79535,7 +79542,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:58.145577"
+    "docs_refreshed_at": "2026-08-13T08:29:49.547761"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -79585,7 +79592,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:58.488108"
+    "docs_refreshed_at": "2026-08-13T08:29:49.976216"
   },
   "adampie/ctf": {
     "docs": {
@@ -79632,7 +79639,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:59.523585"
+    "docs_refreshed_at": "2026-08-13T08:29:51.243339"
   },
   "ansible/ansible": {
     "docs": {
@@ -79702,7 +79709,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:00.619358"
+    "docs_refreshed_at": "2026-08-13T08:29:52.514830"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -79750,7 +79757,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:00.967243"
+    "docs_refreshed_at": "2026-08-13T08:29:52.937753"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -79776,7 +79783,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:01.325157"
+    "docs_refreshed_at": "2026-08-13T08:29:53.364273"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -79833,7 +79840,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:01.676627"
+    "docs_refreshed_at": "2026-08-13T08:29:53.787735"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -79859,7 +79866,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:02.399888"
+    "docs_refreshed_at": "2026-08-13T08:29:54.634036"
   },
   "cysp/braze": {
     "docs": {
@@ -79915,7 +79922,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:03.794635"
+    "docs_refreshed_at": "2026-08-13T08:29:56.765281"
   },
   "cysp/contentful": {
     "docs": {
@@ -80078,7 +80085,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:04.143364"
+    "docs_refreshed_at": "2026-08-13T08:29:57.190905"
   },
   "dbanck/concept": {
     "docs": {
@@ -80114,7 +80121,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:05.596471"
+    "docs_refreshed_at": "2026-08-13T08:29:58.909278"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -81583,7 +81590,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:05.960127"
+    "docs_refreshed_at": "2026-08-13T08:29:59.355198"
   },
   "drewmullen/aap": {
     "docs": {
@@ -81691,7 +81698,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:07.013553"
+    "docs_refreshed_at": "2026-08-13T08:30:00.789266"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -81756,7 +81763,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:08.420222"
+    "docs_refreshed_at": "2026-08-13T08:30:03.425245"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -81859,7 +81866,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:09.820866"
+    "docs_refreshed_at": "2026-08-13T08:30:05.217289"
   },
   "hashicorp/local": {
     "docs": {
@@ -81921,7 +81928,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:10.515715"
+    "docs_refreshed_at": "2026-08-13T08:30:06.105834"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -89592,7 +89599,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:12.722223"
+    "docs_refreshed_at": "2026-08-13T08:30:08.735899"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -90405,7 +90412,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:13.770620"
+    "docs_refreshed_at": "2026-08-13T08:30:10.046168"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -90543,7 +90550,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:15.865655"
+    "docs_refreshed_at": "2026-08-13T08:30:12.628869"
   },
   "magodo/restful": {
     "docs": {
@@ -90602,7 +90609,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:16.909852"
+    "docs_refreshed_at": "2026-08-13T08:30:14.338573"
   },
   "marshallford/ansible": {
     "docs": {
@@ -90654,7 +90661,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:17.262988"
+    "docs_refreshed_at": "2026-08-13T08:30:14.764929"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -90811,7 +90818,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:17.957503"
+    "docs_refreshed_at": "2026-08-13T08:30:15.610969"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -90984,7 +90991,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:18.305041"
+    "docs_refreshed_at": "2026-08-13T08:30:16.032099"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -91031,7 +91038,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:19.344030"
+    "docs_refreshed_at": "2026-08-13T08:30:17.311654"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -92937,7 +92944,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:22.333255"
+    "docs_refreshed_at": "2026-08-13T08:30:20.862366"
   },
   "soffensive/soff": {
     "docs": {
@@ -92984,7 +92991,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:23.366828"
+    "docs_refreshed_at": "2026-08-13T08:30:22.126918"
   },
   "thrashr888/registry": {
     "docs": {
@@ -93072,7 +93079,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:24.797706"
+    "docs_refreshed_at": "2026-08-13T08:30:24.070479"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -93482,7 +93489,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:25.489640"
+    "docs_refreshed_at": "2026-08-13T08:30:24.923997"
   },
   "waldur/waldur": {
     "docs": {
@@ -93892,7 +93899,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:26.187164"
+    "docs_refreshed_at": "2026-08-13T08:30:26.633472"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -93995,6 +94002,11 @@
           "subcategory": ""
         },
         {
+          "title": "unified_logging_filter_sets",
+          "slug": "unified_logging_filter_sets",
+          "subcategory": ""
+        },
+        {
           "title": "users",
           "slug": "users",
           "subcategory": ""
@@ -94064,6 +94076,11 @@
         {
           "title": "unified_logging_filter",
           "slug": "unified_logging_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "unified_logging_filter_set",
+          "slug": "unified_logging_filter_set",
           "subcategory": ""
         },
         {
@@ -94161,13 +94178,18 @@
           "subcategory": ""
         },
         {
+          "title": "unified_logging_filter_set",
+          "slug": "unified_logging_filter_set",
+          "subcategory": ""
+        },
+        {
           "title": "user",
           "slug": "user",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:54.601454"
+    "docs_refreshed_at": "2026-08-13T08:29:45.263224"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -94222,7 +94244,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:10.168563"
+    "docs_refreshed_at": "2026-08-13T08:30:05.657124"
   },
   "timofurrer/desec": {
     "docs": {
@@ -94381,7 +94403,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:25.139431"
+    "docs_refreshed_at": "2026-08-13T08:30:24.497838"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -94464,7 +94486,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:25.836616"
+    "docs_refreshed_at": "2026-08-13T08:30:25.778043"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -97664,7 +97686,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:53.493911"
+    "docs_refreshed_at": "2026-08-13T08:29:43.924902"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -97959,7 +97981,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:14.813592"
+    "docs_refreshed_at": "2026-08-13T08:30:11.351528"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -98077,7 +98099,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:17.607717"
+    "docs_refreshed_at": "2026-08-13T08:30:15.185344"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -98247,7 +98269,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:54.985687"
+    "docs_refreshed_at": "2026-08-13T08:29:45.689973"
   },
   "branchgrove/debian": {
     "docs": {
@@ -98362,7 +98384,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:02.048136"
+    "docs_refreshed_at": "2026-08-13T08:29:54.214627"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -98817,7 +98839,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:08.077065"
+    "docs_refreshed_at": "2026-08-13T08:30:02.661977"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -99432,7 +99454,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:10.880030"
+    "docs_refreshed_at": "2026-08-13T08:30:06.560665"
   },
   "juju/juju": {
     "docs": {
@@ -99707,7 +99729,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:14.118939"
+    "docs_refreshed_at": "2026-08-13T08:30:10.471091"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -99808,7 +99830,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:55.341705"
+    "docs_refreshed_at": "2026-08-13T08:29:46.115468"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -100246,7 +100268,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:03.098079"
+    "docs_refreshed_at": "2026-08-13T08:29:55.482638"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -100394,7 +100416,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:16.211891"
+    "docs_refreshed_at": "2026-08-13T08:30:13.051881"
   },
   "radeksimko/test": {
     "docs": {
@@ -100441,7 +100463,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:20.874059"
+    "docs_refreshed_at": "2026-08-13T08:30:19.131131"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -100834,7 +100856,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:22.679731"
+    "docs_refreshed_at": "2026-08-13T08:30:21.283044"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -101059,7 +101081,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:24.104403"
+    "docs_refreshed_at": "2026-08-13T08:30:23.217433"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -101292,7 +101314,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:16.561148"
+    "docs_refreshed_at": "2026-08-13T08:30:13.909788"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -101709,7 +101731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:11.226099"
+    "docs_refreshed_at": "2026-08-13T08:30:06.987842"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -102178,7 +102200,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:12.275085"
+    "docs_refreshed_at": "2026-08-13T08:30:08.266830"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -114144,7 +114166,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:20.107594"
+    "docs_refreshed_at": "2026-08-13T08:30:18.216827"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -114709,7 +114731,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:21.226667"
+    "docs_refreshed_at": "2026-08-13T08:30:19.559540"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -115224,7 +115246,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:21.576990"
+    "docs_refreshed_at": "2026-08-13T08:30:19.999678"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -115287,7 +115309,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:06.664202"
+    "docs_refreshed_at": "2026-08-13T08:30:00.361812"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -115370,7 +115392,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:58.834097"
+    "docs_refreshed_at": "2026-08-13T08:29:50.396335"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -115401,7 +115423,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:03.446569"
+    "docs_refreshed_at": "2026-08-13T08:29:55.905117"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -115432,7 +115454,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:04.888827"
+    "docs_refreshed_at": "2026-08-13T08:29:58.061761"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -115463,7 +115485,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:05.235201"
+    "docs_refreshed_at": "2026-08-13T08:29:58.480473"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -115483,8 +115505,28 @@
       ],
       "resources": [
         {
+          "title": "collection",
+          "slug": "collection",
+          "subcategory": ""
+        },
+        {
           "title": "control",
           "slug": "control",
+          "subcategory": ""
+        },
+        {
+          "title": "entity_pod",
+          "slug": "entity_pod",
+          "subcategory": ""
+        },
+        {
+          "title": "environment",
+          "slug": "environment",
+          "subcategory": ""
+        },
+        {
+          "title": "form",
+          "slug": "form",
           "subcategory": ""
         },
         {
@@ -115498,13 +115540,48 @@
           "subcategory": ""
         },
         {
+          "title": "instance",
+          "slug": "instance",
+          "subcategory": ""
+        },
+        {
+          "title": "notification",
+          "slug": "notification",
+          "subcategory": ""
+        },
+        {
+          "title": "platform",
+          "slug": "platform",
+          "subcategory": ""
+        },
+        {
           "title": "policy",
           "slug": "policy",
+          "subcategory": ""
+        },
+        {
+          "title": "policy_exception",
+          "slug": "policy_exception",
+          "subcategory": ""
+        },
+        {
+          "title": "report_template",
+          "slug": "report_template",
+          "subcategory": ""
+        },
+        {
+          "title": "target",
+          "slug": "target",
+          "subcategory": ""
+        },
+        {
+          "title": "tool",
+          "slug": "tool",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:07.723239"
+    "docs_refreshed_at": "2026-08-13T08:30:01.935381"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -115744,7 +115821,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:18.994513"
+    "docs_refreshed_at": "2026-08-13T08:30:16.887890"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -115822,6 +115899,16 @@
         {
           "title": "trust_validation",
           "slug": "trust_validation",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_tenant_start_offboarding",
+          "slug": "ztna_tenant_start_offboarding",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_tenant_start_onboarding",
+          "slug": "ztna_tenant_start_onboarding",
           "subcategory": ""
         }
       ],
@@ -117167,8 +117254,8 @@
           "subcategory": ""
         },
         {
-          "title": "ztna_connector_images",
-          "slug": "ztna_connector_images",
+          "title": "ztna_connector_image_list",
+          "slug": "ztna_connector_image_list",
           "subcategory": ""
         },
         {
@@ -117197,6 +117284,11 @@
           "subcategory": ""
         },
         {
+          "title": "ztna_discovered_application_list",
+          "slug": "ztna_discovered_application_list",
+          "subcategory": ""
+        },
+        {
           "title": "ztna_fqdn_application",
           "slug": "ztna_fqdn_application",
           "subcategory": ""
@@ -117204,6 +117296,11 @@
         {
           "title": "ztna_fqdn_application_list",
           "slug": "ztna_fqdn_application_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_license",
+          "slug": "ztna_license",
           "subcategory": ""
         },
         {
@@ -117219,6 +117316,11 @@
         {
           "title": "ztna_subnet_list",
           "slug": "ztna_subnet_list",
+          "subcategory": ""
+        },
+        {
+          "title": "ztna_tenant_status",
+          "slug": "ztna_tenant_status",
           "subcategory": ""
         },
         {
@@ -117906,6 +118008,11 @@
           "subcategory": ""
         },
         {
+          "title": "ztna_connector_quiesce",
+          "slug": "ztna_connector_quiesce",
+          "subcategory": ""
+        },
+        {
           "title": "ztna_connector_scheduled_upgrade",
           "slug": "ztna_connector_scheduled_upgrade",
           "subcategory": ""
@@ -117927,7 +118034,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:56.410319"
+    "docs_refreshed_at": "2026-08-13T08:29:47.420877"
   },
   "gringolito/ansible": {
     "docs": {
@@ -117997,7 +118104,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:09.123562"
+    "docs_refreshed_at": "2026-08-13T08:30:04.332802"
   },
   "pexip/infinity": {
     "docs": {
@@ -118397,7 +118504,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:19.692884"
+    "docs_refreshed_at": "2026-08-13T08:30:17.736523"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -118495,7 +118602,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:26.534617"
+    "docs_refreshed_at": "2026-08-13T08:30:27.056511"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -119312,7 +119419,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:07.375732"
+    "docs_refreshed_at": "2026-08-13T08:30:01.288382"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -119341,7 +119448,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:59.178597"
+    "docs_refreshed_at": "2026-08-13T08:29:50.821063"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -127345,7 +127452,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:20.530411"
+    "docs_refreshed_at": "2026-08-13T08:30:18.710903"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -127548,7 +127655,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:49.979136"
+    "docs_refreshed_at": "2026-08-13T08:29:39.631486"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -127601,7 +127708,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:02.751380"
+    "docs_refreshed_at": "2026-08-13T08:29:55.056987"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -128526,7 +128633,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:11.580931"
+    "docs_refreshed_at": "2026-08-13T08:30:07.416684"
   },
   "536tech/daytona": {
     "docs": {
@@ -129932,7 +130039,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:57.106989"
+    "docs_refreshed_at": "2026-08-13T08:29:48.278655"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -130135,7 +130242,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:09.471609"
+    "docs_refreshed_at": "2026-08-13T08:30:04.794368"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -130273,7 +130380,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:21.972800"
+    "docs_refreshed_at": "2026-08-13T08:30:20.420999"
   },
   "DrFaust92/airflow": {
     "docs": {
@@ -130366,7 +130473,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:52.092732"
+    "docs_refreshed_at": "2026-08-13T08:29:42.221264"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -130789,7 +130896,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:13.422200"
+    "docs_refreshed_at": "2026-08-13T08:30:09.613003"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -131407,7 +131514,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:14.465575"
+    "docs_refreshed_at": "2026-08-13T08:30:10.908981"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -138632,7 +138739,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:53.895585"
+    "docs_refreshed_at": "2026-08-13T08:29:44.395224"
   },
   "damhau/scm": {
     "docs": {
@@ -140805,7 +140912,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:04.543757"
+    "docs_refreshed_at": "2026-08-13T08:29:57.633796"
   },
   "jamesbraid/unifi": {
     "docs": {
@@ -141160,7 +141267,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:13.072369"
+    "docs_refreshed_at": "2026-08-13T08:30:09.164067"
   },
   "nicole-ashley/matomo": {
     "docs": {
@@ -141583,7 +141690,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:18.649019"
+    "docs_refreshed_at": "2026-08-13T08:30:16.458081"
   },
   "sky-cloak/skycloak": {
     "docs": {
@@ -141911,7 +142018,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:23.022804"
+    "docs_refreshed_at": "2026-08-13T08:30:21.705274"
   },
   "FelGel/mongodb": {
     "docs": {
@@ -141967,7 +142074,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:52.789516"
+    "docs_refreshed_at": "2026-08-13T08:29:43.068410"
   },
   "kmaris/nerdctl": {
     "docs": {
@@ -142112,7 +142219,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:15.160762"
+    "docs_refreshed_at": "2026-08-13T08:30:11.779615"
   },
   "kosli-dev/kosli": {
     "docs": {
@@ -142230,7 +142337,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:15.510217"
+    "docs_refreshed_at": "2026-08-13T08:30:12.207770"
   },
   "DrFaust92/mapbox": {
     "docs": {
@@ -142256,7 +142363,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:52.440478"
+    "docs_refreshed_at": "2026-08-13T08:29:42.641763"
   },
   "devops-rob/terracurl": {
     "docs": {
@@ -142328,7 +142435,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:06.312233"
+    "docs_refreshed_at": "2026-08-13T08:29:59.781279"
   },
   "gitpod-io/ona": {
     "docs": {
@@ -142364,6 +142471,11 @@
           "subcategory": "Security and Secrets"
         },
         {
+          "title": "skill",
+          "slug": "skill",
+          "subcategory": ""
+        },
+        {
           "title": "user",
           "slug": "user",
           "subcategory": "Identity and Access"
@@ -142385,11 +142497,6 @@
         }
       ],
       "ephemeral-resources": [
-        {
-          "title": "runner_token",
-          "slug": "runner_token",
-          "subcategory": "Runners"
-        },
         {
           "title": "service_account_token",
           "slug": "service_account_token",
@@ -142420,6 +142527,16 @@
       ],
       "list-resources": [
         {
+          "title": "announcement_banner",
+          "slug": "announcement_banner",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "automation",
+          "slug": "automation",
+          "subcategory": "Integrations and Automation"
+        },
+        {
           "title": "custom_domain",
           "slug": "custom_domain",
           "subcategory": "Organization"
@@ -142430,9 +142547,29 @@
           "subcategory": "Runners"
         },
         {
+          "title": "group",
+          "slug": "group",
+          "subcategory": "Identity and Access"
+        },
+        {
+          "title": "group_membership",
+          "slug": "group_membership",
+          "subcategory": "Identity and Access"
+        },
+        {
           "title": "oidc_config",
           "slug": "oidc_config",
           "subcategory": "Organization"
+        },
+        {
+          "title": "organization_policies",
+          "slug": "organization_policies",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "organization_role_assignment",
+          "slug": "organization_role_assignment",
+          "subcategory": "Identity and Access"
         },
         {
           "title": "project",
@@ -142440,8 +142577,18 @@
           "subcategory": "Projects"
         },
         {
+          "title": "project_insights",
+          "slug": "project_insights",
+          "subcategory": "Projects"
+        },
+        {
           "title": "runner",
           "slug": "runner",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "runner_policy",
+          "slug": "runner_policy",
           "subcategory": "Runners"
         },
         {
@@ -142460,14 +142607,29 @@
           "subcategory": "Security and Secrets"
         },
         {
+          "title": "security_policy",
+          "slug": "security_policy",
+          "subcategory": "Security and Secrets"
+        },
+        {
           "title": "service_account",
           "slug": "service_account",
           "subcategory": "Identity and Access"
         },
         {
+          "title": "skill",
+          "slug": "skill",
+          "subcategory": ""
+        },
+        {
           "title": "sso_configuration",
           "slug": "sso_configuration",
           "subcategory": "Identity and Access"
+        },
+        {
+          "title": "terms_of_service",
+          "slug": "terms_of_service",
+          "subcategory": "Organization"
         },
         {
           "title": "warm_pool",
@@ -142492,6 +142654,11 @@
           "title": "automation",
           "slug": "automation",
           "subcategory": "Integrations and Automation"
+        },
+        {
+          "title": "automation_role_assignment",
+          "slug": "automation_role_assignment",
+          "subcategory": "Identity and Access"
         },
         {
           "title": "custom_domain",
@@ -142544,6 +142711,11 @@
           "subcategory": "Projects"
         },
         {
+          "title": "project_insights",
+          "slug": "project_insights",
+          "subcategory": "Projects"
+        },
+        {
           "title": "runner",
           "slug": "runner",
           "subcategory": "Runners"
@@ -142556,6 +142728,11 @@
         {
           "title": "runner_policy",
           "slug": "runner_policy",
+          "subcategory": "Runners"
+        },
+        {
+          "title": "runner_token",
+          "slug": "runner_token",
           "subcategory": "Runners"
         },
         {
@@ -142582,6 +142759,11 @@
           "title": "service_account",
           "slug": "service_account",
           "subcategory": "Identity and Access"
+        },
+        {
+          "title": "skill",
+          "slug": "skill",
+          "subcategory": ""
         },
         {
           "title": "sso_configuration",
@@ -142620,7 +142802,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:08.772029"
+    "docs_refreshed_at": "2026-08-13T08:30:03.906384"
   },
   "ioplane/powerdns": {
     "docs": {
@@ -142787,7 +142969,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:11.926263"
+    "docs_refreshed_at": "2026-08-13T08:30:07.841069"
   },
   "stripe/stripe": {
     "docs": {
@@ -143140,7 +143322,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:23.763684"
+    "docs_refreshed_at": "2026-08-13T08:30:22.781503"
   },
   "terraform-ibm/powerhmc": {
     "docs": {
@@ -143225,7 +143407,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:20:24.451336"
+    "docs_refreshed_at": "2026-08-13T08:30:23.646547"
   },
   "andrefaria24/sailpoint-isc": {
     "docs": {
@@ -143438,6 +143620,889 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-06T09:19:59.868958"
+    "docs_refreshed_at": "2026-08-13T08:29:51.664702"
+  },
+  "comradesharf/hostinger": {
+    "docs": {
+      "actions": [
+        {
+          "title": "vps_firewall_activate",
+          "slug": "vps_firewall_activate",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewall_deactivate",
+          "slug": "vps_firewall_deactivate",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewall_sync",
+          "slug": "vps_firewall_sync",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_public_keys_attach",
+          "slug": "vps_public_keys_attach",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_recreate",
+          "slug": "vps_virtual_machine_recreate",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_restart",
+          "slug": "vps_virtual_machine_restart",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_start",
+          "slug": "vps_virtual_machine_start",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_stop",
+          "slug": "vps_virtual_machine_stop",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "agency_hosting_domains",
+          "slug": "agency_hosting_domains",
+          "subcategory": ""
+        },
+        {
+          "title": "agency_hosting_website",
+          "slug": "agency_hosting_website",
+          "subcategory": ""
+        },
+        {
+          "title": "billing_catalogs",
+          "slug": "billing_catalogs",
+          "subcategory": ""
+        },
+        {
+          "title": "reach_contacts",
+          "slug": "reach_contacts",
+          "subcategory": ""
+        },
+        {
+          "title": "reach_segments",
+          "slug": "reach_segments",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_data_centers",
+          "slug": "vps_data_centers",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewall",
+          "slug": "vps_firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewalls",
+          "slug": "vps_firewalls",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_post_install_script",
+          "slug": "vps_post_install_script",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_post_install_scripts",
+          "slug": "vps_post_install_scripts",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_public_keys",
+          "slug": "vps_public_keys",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_template",
+          "slug": "vps_template",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_templates",
+          "slug": "vps_templates",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine",
+          "slug": "vps_virtual_machine",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machines",
+          "slug": "vps_virtual_machines",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "vps_firewall",
+          "slug": "vps_firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewall_rule",
+          "slug": "vps_firewall_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_post_install_script",
+          "slug": "vps_post_install_script",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_public_key",
+          "slug": "vps_public_key",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "vps_firewall",
+          "slug": "vps_firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_firewall_rule",
+          "slug": "vps_firewall_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_monarx",
+          "slug": "vps_monarx",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_post_install_script",
+          "slug": "vps_post_install_script",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_public_key",
+          "slug": "vps_public_key",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_hostname",
+          "slug": "vps_virtual_machine_hostname",
+          "subcategory": ""
+        },
+        {
+          "title": "vps_virtual_machine_nameservers",
+          "slug": "vps_virtual_machine_nameservers",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-08-13T08:29:56.339026"
+  },
+  "latitudesh/latitudesh": {
+    "docs": {
+      "actions": [
+        {
+          "title": "server_reinstall",
+          "slug": "server_reinstall",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "plan",
+          "slug": "plan",
+          "subcategory": ""
+        },
+        {
+          "title": "region",
+          "slug": "region",
+          "subcategory": ""
+        },
+        {
+          "title": "role",
+          "slug": "role",
+          "subcategory": ""
+        },
+        {
+          "title": "ssh_key",
+          "slug": "ssh_key",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Using Latitude.sh Object Storage as a Terraform Remote State Backend",
+          "slug": "object-storage-backend",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "elastic_ip",
+          "slug": "elastic_ip",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall",
+          "slug": "firewall",
+          "subcategory": ""
+        },
+        {
+          "title": "firewall_assignment",
+          "slug": "firewall_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "member",
+          "slug": "member",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "server",
+          "slug": "server",
+          "subcategory": ""
+        },
+        {
+          "title": "ssh_key",
+          "slug": "ssh_key",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        },
+        {
+          "title": "user_data",
+          "slug": "user_data",
+          "subcategory": ""
+        },
+        {
+          "title": "virtual_machine",
+          "slug": "virtual_machine",
+          "subcategory": ""
+        },
+        {
+          "title": "virtual_network",
+          "slug": "virtual_network",
+          "subcategory": ""
+        },
+        {
+          "title": "vlan_assignment",
+          "slug": "vlan_assignment",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-08-13T08:30:13.483888"
+  },
+  "vhco-pro/stackweaver": {
+    "docs": {
+      "actions": [
+        {
+          "title": "query_run",
+          "slug": "query_run",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "agent_pool",
+          "slug": "agent_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "ansible_adhoc_modules",
+          "slug": "ansible_adhoc_modules",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_collections",
+          "slug": "ansible_collections",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_inventory_syncs",
+          "slug": "ansible_inventory_syncs",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_vcs_playbook_files",
+          "slug": "ansible_vcs_playbook_files",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "current_user",
+          "slug": "current_user",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_members",
+          "slug": "organization_members",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_membership",
+          "slug": "organization_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_run_task",
+          "slug": "organization_run_task",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_run_task_global_settings",
+          "slug": "organization_run_task_global_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "outputs",
+          "slug": "outputs",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "projects",
+          "slug": "projects",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_gpg_key",
+          "slug": "registry_gpg_key",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_gpg_keys",
+          "slug": "registry_gpg_keys",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_provider",
+          "slug": "registry_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_providers",
+          "slug": "registry_providers",
+          "subcategory": ""
+        },
+        {
+          "title": "runners",
+          "slug": "runners",
+          "subcategory": "VCS"
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "team_access",
+          "slug": "team_access",
+          "subcategory": ""
+        },
+        {
+          "title": "team_project_access",
+          "slug": "team_project_access",
+          "subcategory": ""
+        },
+        {
+          "title": "teams",
+          "slug": "teams",
+          "subcategory": ""
+        },
+        {
+          "title": "variables",
+          "slug": "variables",
+          "subcategory": ""
+        },
+        {
+          "title": "variable_set",
+          "slug": "variable_set",
+          "subcategory": ""
+        },
+        {
+          "title": "vcs_repositories",
+          "slug": "vcs_repositories",
+          "subcategory": "VCS"
+        },
+        {
+          "title": "vcs_repository_branches",
+          "slug": "vcs_repository_branches",
+          "subcategory": "VCS"
+        },
+        {
+          "title": "vcs_yaml_files",
+          "slug": "vcs_yaml_files",
+          "subcategory": "VCS"
+        },
+        {
+          "title": "webhook_events",
+          "slug": "webhook_events",
+          "subcategory": "VCS"
+        },
+        {
+          "title": "workspace",
+          "slug": "workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_ids",
+          "slug": "workspace_ids",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_run_task",
+          "slug": "workspace_run_task",
+          "subcategory": ""
+        }
+      ],
+      "ephemeral-resources": [
+        {
+          "title": "outputs",
+          "slug": "outputs",
+          "subcategory": ""
+        },
+        {
+          "title": "team_token",
+          "slug": "team_token",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "agent_pool",
+          "slug": "agent_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "agent_pool_allowed_projects",
+          "slug": "agent_pool_allowed_projects",
+          "subcategory": ""
+        },
+        {
+          "title": "agent_pool_allowed_workspaces",
+          "slug": "agent_pool_allowed_workspaces",
+          "subcategory": ""
+        },
+        {
+          "title": "agent_pool_excluded_workspaces",
+          "slug": "agent_pool_excluded_workspaces",
+          "subcategory": ""
+        },
+        {
+          "title": "agent_token",
+          "slug": "agent_token",
+          "subcategory": ""
+        },
+        {
+          "title": "ansible_config",
+          "slug": "ansible_config",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_credential",
+          "slug": "ansible_credential",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_group",
+          "slug": "ansible_group",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_host",
+          "slug": "ansible_host",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_inventory",
+          "slug": "ansible_inventory",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_inventory_source",
+          "slug": "ansible_inventory_source",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_job",
+          "slug": "ansible_job",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_job_template",
+          "slug": "ansible_job_template",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_job_template_credential",
+          "slug": "ansible_job_template_credential",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_job_template_variable",
+          "slug": "ansible_job_template_variable",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_notification_attachment",
+          "slug": "ansible_notification_attachment",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_notification_template",
+          "slug": "ansible_notification_template",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_playbook",
+          "slug": "ansible_playbook",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "ansible_schedule",
+          "slug": "ansible_schedule",
+          "subcategory": "Ansible"
+        },
+        {
+          "title": "audit_trail_token",
+          "slug": "audit_trail_token",
+          "subcategory": ""
+        },
+        {
+          "title": "aws_oidc_configuration",
+          "slug": "aws_oidc_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "azure_oidc_configuration",
+          "slug": "azure_oidc_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "gcp_oidc_configuration",
+          "slug": "gcp_oidc_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "notification_configuration",
+          "slug": "notification_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_default_settings",
+          "slug": "organization_default_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_membership",
+          "slug": "organization_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_run_task",
+          "slug": "organization_run_task",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_run_task_global_settings",
+          "slug": "organization_run_task_global_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_token",
+          "slug": "organization_token",
+          "subcategory": ""
+        },
+        {
+          "title": "project",
+          "slug": "project",
+          "subcategory": ""
+        },
+        {
+          "title": "project_notification_configuration",
+          "slug": "project_notification_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "project_settings",
+          "slug": "project_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "project_variable_set",
+          "slug": "project_variable_set",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_gpg_key",
+          "slug": "registry_gpg_key",
+          "subcategory": ""
+        },
+        {
+          "title": "registry_provider",
+          "slug": "registry_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "run_trigger",
+          "slug": "run_trigger",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "team_access",
+          "slug": "team_access",
+          "subcategory": ""
+        },
+        {
+          "title": "team_members",
+          "slug": "team_members",
+          "subcategory": ""
+        },
+        {
+          "title": "team_notification_configuration",
+          "slug": "team_notification_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "team_organization_member",
+          "slug": "team_organization_member",
+          "subcategory": ""
+        },
+        {
+          "title": "team_organization_members",
+          "slug": "team_organization_members",
+          "subcategory": ""
+        },
+        {
+          "title": "team_project_access",
+          "slug": "team_project_access",
+          "subcategory": ""
+        },
+        {
+          "title": "team_token",
+          "slug": "team_token",
+          "subcategory": ""
+        },
+        {
+          "title": "terraform_version",
+          "slug": "terraform_version",
+          "subcategory": ""
+        },
+        {
+          "title": "variable",
+          "slug": "variable",
+          "subcategory": ""
+        },
+        {
+          "title": "variable_set",
+          "slug": "variable_set",
+          "subcategory": ""
+        },
+        {
+          "title": "vault_oidc_configuration",
+          "slug": "vault_oidc_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace",
+          "slug": "workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_run",
+          "slug": "workspace_run",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_run_task",
+          "slug": "workspace_run_task",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_settings",
+          "slug": "workspace_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_variable_set",
+          "slug": "workspace_variable_set",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-08-13T08:30:25.356259"
+  },
+  "vivantel/paddle": {
+    "docs": {
+      "actions": [
+        {
+          "title": "adjustment",
+          "slug": "adjustment",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_cancel",
+          "slug": "subscription_cancel",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_charge",
+          "slug": "subscription_charge",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_pause",
+          "slug": "subscription_pause",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_resume",
+          "slug": "subscription_resume",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "checkout_domain",
+          "slug": "checkout_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "customer",
+          "slug": "customer",
+          "subcategory": ""
+        },
+        {
+          "title": "discount",
+          "slug": "discount",
+          "subcategory": ""
+        },
+        {
+          "title": "discount_group",
+          "slug": "discount_group",
+          "subcategory": ""
+        },
+        {
+          "title": "events",
+          "slug": "events",
+          "subcategory": ""
+        },
+        {
+          "title": "notification",
+          "slug": "notification",
+          "subcategory": ""
+        },
+        {
+          "title": "notification_setting",
+          "slug": "notification_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "price",
+          "slug": "price",
+          "subcategory": ""
+        },
+        {
+          "title": "product",
+          "slug": "product",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription",
+          "slug": "subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "transaction",
+          "slug": "transaction",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "discount",
+          "slug": "discount",
+          "subcategory": ""
+        },
+        {
+          "title": "discount_group",
+          "slug": "discount_group",
+          "subcategory": ""
+        },
+        {
+          "title": "notification_setting",
+          "slug": "notification_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "price",
+          "slug": "price",
+          "subcategory": ""
+        },
+        {
+          "title": "product",
+          "slug": "product",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-08-13T08:30:26.205700"
   }
 }
