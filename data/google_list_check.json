@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-13T08:28:11.476654",
+  "generated_at": "2026-08-20T07:45:36.337661",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "232b9227bff87b6cee8facb993b69656a9eb26e7"
+    "commit": "04a16a708c2a4e2d363002104e387ac7b2ab86dd"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 81,
+    "file_count": 98,
     "files": [
       {
         "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
@@ -335,7 +335,92 @@
         "registrations": 1
       },
       {
+        "file": "google/services/migrationcenter/list_migration_center_assets_export_job.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_discovery_client.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_import_job.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_preference_set.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_report_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_source.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_authz_extension.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_consumer_association.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain_activation.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_consumer_activation.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_producer_activation.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_range.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_range_activation.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_producer_association.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -415,7 +500,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "651c0516222b58737441ea2ae00c56e2ef50f2992330bd5178ba8324e1807a61",
+    "sha256": "32c88a99ca6ce21f4355cc1a00cc6f780d0dd54d3de7372266e20c71b75c9ccb",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -845,10 +930,129 @@
         "line": 40
       },
       {
+        "name": "google_migration_center_assets_export_job",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterAssetsExportJobListResource",
+        "file": "google/services/migrationcenter/list_migration_center_assets_export_job.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_discovery_client",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterDiscoveryClientListResource",
+        "file": "google/services/migrationcenter/list_migration_center_discovery_client.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_group",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterGroupListResource",
+        "file": "google/services/migrationcenter/list_migration_center_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_import_job",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterImportJobListResource",
+        "file": "google/services/migrationcenter/list_migration_center_import_job.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_preference_set",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterPreferenceSetListResource",
+        "file": "google/services/migrationcenter/list_migration_center_preference_set.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_report_config",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterReportConfigListResource",
+        "file": "google/services/migrationcenter/list_migration_center_report_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_migration_center_source",
+        "package": "MigrationCenter",
+        "constructor": "NewMigrationCenterSourceListResource",
+        "file": "google/services/migrationcenter/list_migration_center_source.go",
+        "line": 40
+      },
+      {
         "name": "google_monitoring_alert_policy",
         "package": "Monitoring",
         "constructor": "NewMonitoringAlertPolicyListResource",
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_authz_extension",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesAuthzExtensionListResource",
+        "file": "google/services/networkservices/list_network_services_authz_extension.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_consumer_association",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastConsumerAssociationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_consumer_association.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_domain",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastDomainListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_domain.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_domain_activation",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastDomainActivationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_domain_activation.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_domain_group",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastDomainGroupListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_domain_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_group_consumer_activation",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastGroupConsumerActivationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_group_consumer_activation.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_group_producer_activation",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastGroupProducerActivationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_group_producer_activation.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_group_range",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastGroupRangeListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_group_range.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_group_range_activation",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastGroupRangeActivationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_group_range_activation.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_services_multicast_producer_association",
+        "package": "NetworkServices",
+        "constructor": "NewNetworkServicesMulticastProducerAssociationListResource",
+        "file": "google/services/networkservices/list_network_services_multicast_producer_association.go",
         "line": 40
       },
       {
@@ -1330,11 +1534,100 @@
         "constructor": "NewKMSCryptoKeyVersionListResource"
       }
     ],
+    "migrationcenter": [
+      {
+        "file": "google/services/migrationcenter/list_migration_center_assets_export_job.go",
+        "type_name": "google_migration_center_assets_export_job",
+        "constructor": "NewMigrationCenterAssetsExportJobListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_discovery_client.go",
+        "type_name": "google_migration_center_discovery_client",
+        "constructor": "NewMigrationCenterDiscoveryClientListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_group.go",
+        "type_name": "google_migration_center_group",
+        "constructor": "NewMigrationCenterGroupListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_import_job.go",
+        "type_name": "google_migration_center_import_job",
+        "constructor": "NewMigrationCenterImportJobListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_preference_set.go",
+        "type_name": "google_migration_center_preference_set",
+        "constructor": "NewMigrationCenterPreferenceSetListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_report_config.go",
+        "type_name": "google_migration_center_report_config",
+        "constructor": "NewMigrationCenterReportConfigListResource"
+      },
+      {
+        "file": "google/services/migrationcenter/list_migration_center_source.go",
+        "type_name": "google_migration_center_source",
+        "constructor": "NewMigrationCenterSourceListResource"
+      }
+    ],
     "monitoring": [
       {
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
         "type_name": "google_monitoring_alert_policy",
         "constructor": "NewMonitoringAlertPolicyListResource"
+      }
+    ],
+    "networkservices": [
+      {
+        "file": "google/services/networkservices/list_network_services_authz_extension.go",
+        "type_name": "google_network_services_authz_extension",
+        "constructor": "NewNetworkServicesAuthzExtensionListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_consumer_association.go",
+        "type_name": "google_network_services_multicast_consumer_association",
+        "constructor": "NewNetworkServicesMulticastConsumerAssociationListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain.go",
+        "type_name": "google_network_services_multicast_domain",
+        "constructor": "NewNetworkServicesMulticastDomainListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain_activation.go",
+        "type_name": "google_network_services_multicast_domain_activation",
+        "constructor": "NewNetworkServicesMulticastDomainActivationListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_domain_group.go",
+        "type_name": "google_network_services_multicast_domain_group",
+        "constructor": "NewNetworkServicesMulticastDomainGroupListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_consumer_activation.go",
+        "type_name": "google_network_services_multicast_group_consumer_activation",
+        "constructor": "NewNetworkServicesMulticastGroupConsumerActivationListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_producer_activation.go",
+        "type_name": "google_network_services_multicast_group_producer_activation",
+        "constructor": "NewNetworkServicesMulticastGroupProducerActivationListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_range.go",
+        "type_name": "google_network_services_multicast_group_range",
+        "constructor": "NewNetworkServicesMulticastGroupRangeListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_group_range_activation.go",
+        "type_name": "google_network_services_multicast_group_range_activation",
+        "constructor": "NewNetworkServicesMulticastGroupRangeActivationListResource"
+      },
+      {
+        "file": "google/services/networkservices/list_network_services_multicast_producer_association.go",
+        "type_name": "google_network_services_multicast_producer_association",
+        "constructor": "NewNetworkServicesMulticastProducerAssociationListResource"
       }
     ],
     "pubsub": [
@@ -1477,7 +1770,24 @@
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewKMSCryptoKeyVersionListResource",
+      "NewMigrationCenterAssetsExportJobListResource",
+      "NewMigrationCenterDiscoveryClientListResource",
+      "NewMigrationCenterGroupListResource",
+      "NewMigrationCenterImportJobListResource",
+      "NewMigrationCenterPreferenceSetListResource",
+      "NewMigrationCenterReportConfigListResource",
+      "NewMigrationCenterSourceListResource",
       "NewMonitoringAlertPolicyListResource",
+      "NewNetworkServicesAuthzExtensionListResource",
+      "NewNetworkServicesMulticastConsumerAssociationListResource",
+      "NewNetworkServicesMulticastDomainActivationListResource",
+      "NewNetworkServicesMulticastDomainGroupListResource",
+      "NewNetworkServicesMulticastDomainListResource",
+      "NewNetworkServicesMulticastGroupConsumerActivationListResource",
+      "NewNetworkServicesMulticastGroupProducerActivationListResource",
+      "NewNetworkServicesMulticastGroupRangeActivationListResource",
+      "NewNetworkServicesMulticastGroupRangeListResource",
+      "NewNetworkServicesMulticastProducerAssociationListResource",
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
       "NewPubsubSubscriptionListResource",
@@ -1558,7 +1868,24 @@
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
       "NewKMSCryptoKeyVersionListResource",
+      "NewMigrationCenterAssetsExportJobListResource",
+      "NewMigrationCenterDiscoveryClientListResource",
+      "NewMigrationCenterGroupListResource",
+      "NewMigrationCenterImportJobListResource",
+      "NewMigrationCenterPreferenceSetListResource",
+      "NewMigrationCenterReportConfigListResource",
+      "NewMigrationCenterSourceListResource",
       "NewMonitoringAlertPolicyListResource",
+      "NewNetworkServicesAuthzExtensionListResource",
+      "NewNetworkServicesMulticastConsumerAssociationListResource",
+      "NewNetworkServicesMulticastDomainActivationListResource",
+      "NewNetworkServicesMulticastDomainGroupListResource",
+      "NewNetworkServicesMulticastDomainListResource",
+      "NewNetworkServicesMulticastGroupConsumerActivationListResource",
+      "NewNetworkServicesMulticastGroupProducerActivationListResource",
+      "NewNetworkServicesMulticastGroupRangeActivationListResource",
+      "NewNetworkServicesMulticastGroupRangeListResource",
+      "NewNetworkServicesMulticastProducerAssociationListResource",
       "NewPubsubSubscriptionListResource",
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
@@ -1630,7 +1957,24 @@
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_kms_crypto_key_version",
+      "google_migration_center_assets_export_job",
+      "google_migration_center_discovery_client",
+      "google_migration_center_group",
+      "google_migration_center_import_job",
+      "google_migration_center_preference_set",
+      "google_migration_center_report_config",
+      "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_services_authz_extension",
+      "google_network_services_multicast_consumer_association",
+      "google_network_services_multicast_domain",
+      "google_network_services_multicast_domain_activation",
+      "google_network_services_multicast_domain_group",
+      "google_network_services_multicast_group_consumer_activation",
+      "google_network_services_multicast_group_producer_activation",
+      "google_network_services_multicast_group_range",
+      "google_network_services_multicast_group_range_activation",
+      "google_network_services_multicast_producer_association",
       "google_project",
       "google_project_iam_custom_role",
       "google_project_service",
@@ -1651,12 +1995,12 @@
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 81,
-    "file_type_name_count": 76,
+    "registration_count": 98,
+    "file_type_name_count": 93,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 13,
+    "services_with_list": 15,
     "rows": [
       {
         "service": "compute",
@@ -1665,6 +2009,14 @@
       {
         "service": "discoveryengine",
         "list_resources": 13
+      },
+      {
+        "service": "networkservices",
+        "list_resources": 10
+      },
+      {
+        "service": "migrationcenter",
+        "list_resources": 7
       },
       {
         "service": "resourcemanager",
@@ -1804,9 +2156,34 @@
           "google_kms_crypto_key_version"
         ]
       },
+      "migrationcenter": {
+        "list_resources": [
+          "google_migration_center_assets_export_job",
+          "google_migration_center_discovery_client",
+          "google_migration_center_group",
+          "google_migration_center_import_job",
+          "google_migration_center_preference_set",
+          "google_migration_center_report_config",
+          "google_migration_center_source"
+        ]
+      },
       "monitoring": {
         "list_resources": [
           "google_monitoring_alert_policy"
+        ]
+      },
+      "networkservices": {
+        "list_resources": [
+          "google_network_services_authz_extension",
+          "google_network_services_multicast_consumer_association",
+          "google_network_services_multicast_domain",
+          "google_network_services_multicast_domain_activation",
+          "google_network_services_multicast_domain_group",
+          "google_network_services_multicast_group_consumer_activation",
+          "google_network_services_multicast_group_producer_activation",
+          "google_network_services_multicast_group_range",
+          "google_network_services_multicast_group_range_activation",
+          "google_network_services_multicast_producer_association"
         ]
       },
       "pubsub": {
@@ -1845,8 +2222,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 84,
-    "code_list_resources": 76,
-    "registered_count": 81,
+    "code_list_resources": 93,
+    "registered_count": 98,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -1999,7 +2376,24 @@
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_kms_crypto_key_version",
+      "google_migration_center_assets_export_job",
+      "google_migration_center_discovery_client",
+      "google_migration_center_group",
+      "google_migration_center_import_job",
+      "google_migration_center_preference_set",
+      "google_migration_center_report_config",
+      "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_services_authz_extension",
+      "google_network_services_multicast_consumer_association",
+      "google_network_services_multicast_domain",
+      "google_network_services_multicast_domain_activation",
+      "google_network_services_multicast_domain_group",
+      "google_network_services_multicast_group_consumer_activation",
+      "google_network_services_multicast_group_producer_activation",
+      "google_network_services_multicast_group_range",
+      "google_network_services_multicast_group_range_activation",
+      "google_network_services_multicast_producer_association",
       "google_project",
       "google_project_iam_custom_role",
       "google_project_service",
@@ -2022,7 +2416,25 @@
       "google_pubsub_subscription_iam_member",
       "google_service_account_iam_member"
     ],
-    "only_in_source": [],
+    "only_in_source": [
+      "google_migration_center_assets_export_job",
+      "google_migration_center_discovery_client",
+      "google_migration_center_group",
+      "google_migration_center_import_job",
+      "google_migration_center_preference_set",
+      "google_migration_center_report_config",
+      "google_migration_center_source",
+      "google_network_services_authz_extension",
+      "google_network_services_multicast_consumer_association",
+      "google_network_services_multicast_domain",
+      "google_network_services_multicast_domain_activation",
+      "google_network_services_multicast_domain_group",
+      "google_network_services_multicast_group_consumer_activation",
+      "google_network_services_multicast_group_producer_activation",
+      "google_network_services_multicast_group_range",
+      "google_network_services_multicast_group_range_activation",
+      "google_network_services_multicast_producer_association"
+    ],
     "registry_is_subset": false
   }
 }

@@ -2462,6 +2462,11 @@
           "subcategory": "Oracle Database@AWS"
         },
         {
+          "title": "odb_iam_role_association",
+          "slug": "odb_iam_role_association",
+          "subcategory": "Oracle Database@AWS"
+        },
+        {
           "title": "odb_network",
           "slug": "odb_network",
           "subcategory": "Oracle Database@AWS"
@@ -4025,6 +4030,11 @@
           "subcategory": "Config"
         },
         {
+          "title": "db_parameter_group",
+          "slug": "db_parameter_group",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
           "title": "db_subnet_group",
           "slug": "db_subnet_group",
           "subcategory": "RDS (Relational Database)"
@@ -4045,8 +4055,13 @@
           "subcategory": "DynamoDB"
         },
         {
-          "title": "ec2_ebs_volume",
-          "slug": "ec2_ebs_volume",
+          "title": "ebs_volume",
+          "slug": "ebs_volume",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "ec2_ami_launch_permission",
+          "slug": "ec2_ami_launch_permission",
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
@@ -4160,6 +4175,11 @@
           "subcategory": "IAM (Identity & Access Management)"
         },
         {
+          "title": "iam_instance_profile",
+          "slug": "iam_instance_profile",
+          "subcategory": "IAM (Identity & Access Management)"
+        },
+        {
           "title": "iam_policy",
           "slug": "iam_policy",
           "subcategory": "IAM (Identity & Access Management)"
@@ -4220,6 +4240,11 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambdacore_network_connector",
+          "slug": "lambdacore_network_connector",
+          "subcategory": "Lambda Core"
+        },
+        {
           "title": "lambda_event_source_mapping",
           "slug": "lambda_event_source_mapping",
           "subcategory": "Lambda"
@@ -4277,6 +4302,11 @@
         {
           "title": "mailmanager_ingress_point",
           "slug": "mailmanager_ingress_point",
+          "subcategory": "SES Mail Manager"
+        },
+        {
+          "title": "mailmanager_relay",
+          "slug": "mailmanager_relay",
           "subcategory": "SES Mail Manager"
         },
         {
@@ -4410,6 +4440,16 @@
           "subcategory": "Rekognition"
         },
         {
+          "title": "resiliencehubv2_assertion",
+          "slug": "resiliencehubv2_assertion",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
+          "title": "resiliencehubv2_input_source",
+          "slug": "resiliencehubv2_input_source",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
           "title": "resiliencehubv2_policy",
           "slug": "resiliencehubv2_policy",
           "subcategory": "Resilience Hub V2"
@@ -4420,8 +4460,18 @@
           "subcategory": "Resilience Hub V2"
         },
         {
+          "title": "resiliencehubv2_service_function",
+          "slug": "resiliencehubv2_service_function",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
           "title": "resiliencehubv2_system",
           "slug": "resiliencehubv2_system",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
+          "title": "resiliencehubv2_user_journey",
+          "slug": "resiliencehubv2_user_journey",
           "subcategory": "Resilience Hub V2"
         },
         {
@@ -7184,6 +7234,11 @@
           "subcategory": "DSQL"
         },
         {
+          "title": "dsql_cluster_policy",
+          "slug": "dsql_cluster_policy",
+          "subcategory": "DSQL"
+        },
+        {
           "title": "dx_bgp_peer",
           "slug": "dx_bgp_peer",
           "subcategory": "Direct Connect"
@@ -9074,6 +9129,11 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambdacore_network_connector",
+          "slug": "lambdacore_network_connector",
+          "subcategory": "Lambda Core"
+        },
+        {
           "title": "lambda_event_source_mapping",
           "slug": "lambda_event_source_mapping",
           "subcategory": "Lambda"
@@ -9117,6 +9177,11 @@
           "title": "lambda_layer_version_permission",
           "slug": "lambda_layer_version_permission",
           "subcategory": "Lambda"
+        },
+        {
+          "title": "lambdamicrovms_image",
+          "slug": "lambdamicrovms_image",
+          "subcategory": "Lambda MicroVMs"
         },
         {
           "title": "lambda_permission",
@@ -9486,6 +9551,11 @@
         {
           "title": "mailmanager_ingress_point",
           "slug": "mailmanager_ingress_point",
+          "subcategory": "SES Mail Manager"
+        },
+        {
+          "title": "mailmanager_relay",
+          "slug": "mailmanager_relay",
           "subcategory": "SES Mail Manager"
         },
         {
@@ -10046,6 +10116,11 @@
         {
           "title": "odb_cloud_vm_cluster",
           "slug": "odb_cloud_vm_cluster",
+          "subcategory": "Oracle Database@AWS"
+        },
+        {
+          "title": "odb_iam_role_association",
+          "slug": "odb_iam_role_association",
           "subcategory": "Oracle Database@AWS"
         },
         {
@@ -10814,6 +10889,16 @@
           "subcategory": "Resilience Hub"
         },
         {
+          "title": "resiliencehubv2_assertion",
+          "slug": "resiliencehubv2_assertion",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
+          "title": "resiliencehubv2_input_source",
+          "slug": "resiliencehubv2_input_source",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
           "title": "resiliencehubv2_policy",
           "slug": "resiliencehubv2_policy",
           "subcategory": "Resilience Hub V2"
@@ -10824,8 +10909,18 @@
           "subcategory": "Resilience Hub V2"
         },
         {
+          "title": "resiliencehubv2_service_function",
+          "slug": "resiliencehubv2_service_function",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
           "title": "resiliencehubv2_system",
           "slug": "resiliencehubv2_system",
+          "subcategory": "Resilience Hub V2"
+        },
+        {
+          "title": "resiliencehubv2_user_journey",
+          "slug": "resiliencehubv2_user_journey",
           "subcategory": "Resilience Hub V2"
         },
         {
@@ -11681,6 +11776,11 @@
         {
           "title": "securityhub_connector_v2",
           "slug": "securityhub_connector_v2",
+          "subcategory": "Security Hub"
+        },
+        {
+          "title": "securityhub_feature_v2",
+          "slug": "securityhub_feature_v2",
           "subcategory": "Security Hub"
         },
         {
@@ -13235,7 +13335,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:08.209854"
+    "docs_refreshed_at": "2026-08-20T07:44:27.217862"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13262,6 +13362,21 @@
           "subcategory": ""
         },
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": ""
+        },
+        {
+          "title": "accountaccess_applications",
+          "slug": "accountaccess_applications",
+          "subcategory": ""
+        },
+        {
+          "title": "accountaccess_entitlement",
+          "slug": "accountaccess_entitlement",
+          "subcategory": ""
+        },
+        {
           "title": "acmpca_certificate",
           "slug": "acmpca_certificate",
           "subcategory": ""
@@ -13284,6 +13399,21 @@
         {
           "title": "acmpca_permission",
           "slug": "acmpca_permission",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registries",
+          "slug": "agentregistry_registries",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registry_record",
+          "slug": "agentregistry_registry_record",
           "subcategory": ""
         },
         {
@@ -13479,6 +13609,11 @@
         {
           "title": "apigatewayv2_api",
           "slug": "apigatewayv2_api",
+          "subcategory": ""
+        },
+        {
+          "title": "apigatewayv2_api_gateway_managed_overrides",
+          "slug": "apigatewayv2_api_gateway_managed_overrides",
           "subcategory": ""
         },
         {
@@ -15027,6 +15162,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_channel_flow",
+          "slug": "chime_channel_flow",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -16037,6 +16177,16 @@
           "subcategory": ""
         },
         {
+          "title": "connect_metric",
+          "slug": "connect_metric",
+          "subcategory": ""
+        },
+        {
+          "title": "connect_metrics",
+          "slug": "connect_metrics",
+          "subcategory": ""
+        },
+        {
           "title": "connect_notification",
           "slug": "connect_notification",
           "subcategory": ""
@@ -16652,6 +16802,11 @@
           "subcategory": ""
         },
         {
+          "title": "devopsagent_asset",
+          "slug": "devopsagent_asset",
+          "subcategory": ""
+        },
+        {
           "title": "devopsagent_association",
           "slug": "devopsagent_association",
           "subcategory": ""
@@ -16669,6 +16824,11 @@
         {
           "title": "devopsagent_service",
           "slug": "devopsagent_service",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_trigger",
+          "slug": "devopsagent_trigger",
           "subcategory": ""
         },
         {
@@ -16857,6 +17017,26 @@
           "subcategory": ""
         },
         {
+          "title": "dms_replication_subnet_group",
+          "slug": "dms_replication_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_replication_subnet_groups",
+          "slug": "dms_replication_subnet_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_db_subnet_group",
+          "slug": "docdb_db_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_db_subnet_groups",
+          "slug": "docdb_db_subnet_groups",
+          "subcategory": ""
+        },
+        {
           "title": "docdbelastic_cluster",
           "slug": "docdbelastic_cluster",
           "subcategory": ""
@@ -16887,6 +17067,16 @@
           "subcategory": ""
         },
         {
+          "title": "drs_source_network",
+          "slug": "drs_source_network",
+          "subcategory": ""
+        },
+        {
+          "title": "drs_source_networks",
+          "slug": "drs_source_networks",
+          "subcategory": ""
+        },
+        {
           "title": "dsql_cluster",
           "slug": "dsql_cluster",
           "subcategory": ""
@@ -16894,6 +17084,16 @@
         {
           "title": "dsql_clusters",
           "slug": "dsql_clusters",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamodb_backup",
+          "slug": "dynamodb_backup",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamodb_backups",
+          "slug": "dynamodb_backups",
           "subcategory": ""
         },
         {
@@ -18152,6 +18352,11 @@
           "subcategory": ""
         },
         {
+          "title": "eks_certificate_authority",
+          "slug": "eks_certificate_authority",
+          "subcategory": ""
+        },
+        {
           "title": "eks_cluster",
           "slug": "eks_cluster",
           "subcategory": ""
@@ -19067,6 +19272,16 @@
           "subcategory": ""
         },
         {
+          "title": "glue_ml_transform",
+          "slug": "glue_ml_transform",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_ml_transforms",
+          "slug": "glue_ml_transforms",
+          "subcategory": ""
+        },
+        {
           "title": "glue_registries",
           "slug": "glue_registries",
           "subcategory": ""
@@ -19574,6 +19789,16 @@
         {
           "title": "inspectorv2_code_security_scan_configurations",
           "slug": "inspectorv2_code_security_scan_configurations",
+          "subcategory": ""
+        },
+        {
+          "title": "inspectorv2_connector",
+          "slug": "inspectorv2_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "inspectorv2_connectors",
+          "slug": "inspectorv2_connectors",
           "subcategory": ""
         },
         {
@@ -21089,6 +21314,16 @@
         {
           "title": "logs_scheduled_query",
           "slug": "logs_scheduled_query",
+          "subcategory": ""
+        },
+        {
+          "title": "logs_storage_tier_policies",
+          "slug": "logs_storage_tier_policies",
+          "subcategory": ""
+        },
+        {
+          "title": "logs_storage_tier_policy",
+          "slug": "logs_storage_tier_policy",
           "subcategory": ""
         },
         {
@@ -22772,6 +23007,16 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_dlp_setting",
+          "slug": "quicksight_dlp_setting",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_dlp_settings",
+          "slug": "quicksight_dlp_settings",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -22789,6 +23034,16 @@
         {
           "title": "quicksight_knowledge_bases",
           "slug": "quicksight_knowledge_bases",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_limits_profile",
+          "slug": "quicksight_limits_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_limits_profiles",
+          "slug": "quicksight_limits_profiles",
           "subcategory": ""
         },
         {
@@ -24822,6 +25077,26 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_private_dns_namespace",
+          "slug": "servicediscovery_private_dns_namespace",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_private_dns_namespaces",
+          "slug": "servicediscovery_private_dns_namespaces",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_public_dns_namespace",
+          "slug": "servicediscovery_public_dns_namespace",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_public_dns_namespaces",
+          "slug": "servicediscovery_public_dns_namespaces",
+          "subcategory": ""
+        },
+        {
           "title": "servicediscovery_service",
           "slug": "servicediscovery_service",
           "subcategory": ""
@@ -24974,6 +25249,26 @@
         {
           "title": "ses_multi_region_endpoints",
           "slug": "ses_multi_region_endpoints",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_filter",
+          "slug": "ses_receipt_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_filters",
+          "slug": "ses_receipt_filters",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_rule_set",
+          "slug": "ses_receipt_rule_set",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_rule_sets",
+          "slug": "ses_receipt_rule_sets",
           "subcategory": ""
         },
         {
@@ -25862,6 +26157,16 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_workload",
+          "slug": "wellarchitected_workload",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_workloads",
+          "slug": "wellarchitected_workloads",
+          "subcategory": ""
+        },
+        {
           "title": "wickr_network",
           "slug": "wickr_network",
           "subcategory": ""
@@ -26161,8 +26466,18 @@
           "subcategory": ""
         },
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": ""
+        },
+        {
           "title": "acmpca_certificate_authority",
           "slug": "acmpca_certificate_authority",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
           "subcategory": ""
         },
         {
@@ -27271,6 +27586,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_metric",
+          "slug": "connect_metric",
+          "subcategory": ""
+        },
+        {
           "title": "connect_security_key",
           "slug": "connect_security_key",
           "subcategory": ""
@@ -27556,6 +27876,16 @@
           "subcategory": ""
         },
         {
+          "title": "dms_replication_subnet_group",
+          "slug": "dms_replication_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_db_subnet_group",
+          "slug": "docdb_db_subnet_group",
+          "subcategory": ""
+        },
+        {
           "title": "docdbelastic_cluster",
           "slug": "docdbelastic_cluster",
           "subcategory": ""
@@ -27571,8 +27901,18 @@
           "subcategory": ""
         },
         {
+          "title": "drs_source_network",
+          "slug": "drs_source_network",
+          "subcategory": ""
+        },
+        {
           "title": "dsql_cluster",
           "slug": "dsql_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamodb_backup",
+          "slug": "dynamodb_backup",
           "subcategory": ""
         },
         {
@@ -28571,6 +28911,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_ml_transform",
+          "slug": "glue_ml_transform",
+          "subcategory": ""
+        },
+        {
           "title": "glue_registry",
           "slug": "glue_registry",
           "subcategory": ""
@@ -28783,6 +29128,11 @@
         {
           "title": "inspectorv2_code_security_scan_configuration",
           "slug": "inspectorv2_code_security_scan_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "inspectorv2_connector",
+          "slug": "inspectorv2_connector",
           "subcategory": ""
         },
         {
@@ -29506,6 +29856,11 @@
           "subcategory": ""
         },
         {
+          "title": "logs_storage_tier_policy",
+          "slug": "logs_storage_tier_policy",
+          "subcategory": ""
+        },
+        {
           "title": "lookoutequipment_inference_scheduler",
           "slug": "lookoutequipment_inference_scheduler",
           "subcategory": ""
@@ -30201,6 +30556,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_dlp_setting",
+          "slug": "quicksight_dlp_setting",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -30208,6 +30568,11 @@
         {
           "title": "quicksight_knowledge_base",
           "slug": "quicksight_knowledge_base",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_limits_profile",
+          "slug": "quicksight_limits_profile",
           "subcategory": ""
         },
         {
@@ -31091,6 +31456,16 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_private_dns_namespace",
+          "slug": "servicediscovery_private_dns_namespace",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_public_dns_namespace",
+          "slug": "servicediscovery_public_dns_namespace",
+          "subcategory": ""
+        },
+        {
           "title": "servicediscovery_service",
           "slug": "servicediscovery_service",
           "subcategory": ""
@@ -31163,6 +31538,16 @@
         {
           "title": "ses_multi_region_endpoint",
           "slug": "ses_multi_region_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_filter",
+          "slug": "ses_receipt_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_rule_set",
+          "slug": "ses_receipt_rule_set",
           "subcategory": ""
         },
         {
@@ -31541,6 +31926,11 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_workload",
+          "slug": "wellarchitected_workload",
+          "subcategory": ""
+        },
+        {
           "title": "wickr_network",
           "slug": "wickr_network",
           "subcategory": ""
@@ -31675,6 +32065,16 @@
           "subcategory": ""
         },
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": ""
+        },
+        {
+          "title": "accountaccess_entitlement",
+          "slug": "accountaccess_entitlement",
+          "subcategory": ""
+        },
+        {
           "title": "acmpca_certificate",
           "slug": "acmpca_certificate",
           "subcategory": ""
@@ -31692,6 +32092,16 @@
         {
           "title": "acmpca_permission",
           "slug": "acmpca_permission",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
+          "subcategory": ""
+        },
+        {
+          "title": "agentregistry_registry_record",
+          "slug": "agentregistry_registry_record",
           "subcategory": ""
         },
         {
@@ -31827,6 +32237,11 @@
         {
           "title": "apigatewayv2_api",
           "slug": "apigatewayv2_api",
+          "subcategory": ""
+        },
+        {
+          "title": "apigatewayv2_api_gateway_managed_overrides",
+          "slug": "apigatewayv2_api_gateway_managed_overrides",
           "subcategory": ""
         },
         {
@@ -32725,6 +33140,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_channel_flow",
+          "slug": "chime_channel_flow",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -33325,6 +33745,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_metric",
+          "slug": "connect_metric",
+          "subcategory": ""
+        },
+        {
           "title": "connect_notification",
           "slug": "connect_notification",
           "subcategory": ""
@@ -33745,6 +34170,11 @@
           "subcategory": ""
         },
         {
+          "title": "devopsagent_asset",
+          "slug": "devopsagent_asset",
+          "subcategory": ""
+        },
+        {
           "title": "devopsagent_association",
           "slug": "devopsagent_association",
           "subcategory": ""
@@ -33757,6 +34187,11 @@
         {
           "title": "devopsagent_service",
           "slug": "devopsagent_service",
+          "subcategory": ""
+        },
+        {
+          "title": "devopsagent_trigger",
+          "slug": "devopsagent_trigger",
           "subcategory": ""
         },
         {
@@ -33855,6 +34290,16 @@
           "subcategory": ""
         },
         {
+          "title": "dms_replication_subnet_group",
+          "slug": "dms_replication_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_db_subnet_group",
+          "slug": "docdb_db_subnet_group",
+          "subcategory": ""
+        },
+        {
           "title": "docdbelastic_cluster",
           "slug": "docdbelastic_cluster",
           "subcategory": ""
@@ -33870,8 +34315,18 @@
           "subcategory": ""
         },
         {
+          "title": "drs_source_network",
+          "slug": "drs_source_network",
+          "subcategory": ""
+        },
+        {
           "title": "dsql_cluster",
           "slug": "dsql_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "dynamodb_backup",
+          "slug": "dynamodb_backup",
           "subcategory": ""
         },
         {
@@ -34550,6 +35005,11 @@
           "subcategory": ""
         },
         {
+          "title": "eks_certificate_authority",
+          "slug": "eks_certificate_authority",
+          "subcategory": ""
+        },
+        {
           "title": "eks_cluster",
           "slug": "eks_cluster",
           "subcategory": ""
@@ -35040,6 +35500,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_ml_transform",
+          "slug": "glue_ml_transform",
+          "subcategory": ""
+        },
+        {
           "title": "glue_registry",
           "slug": "glue_registry",
           "subcategory": ""
@@ -35332,6 +35797,11 @@
         {
           "title": "inspectorv2_code_security_scan_configuration",
           "slug": "inspectorv2_code_security_scan_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "inspectorv2_connector",
+          "slug": "inspectorv2_connector",
           "subcategory": ""
         },
         {
@@ -36127,6 +36597,11 @@
         {
           "title": "logs_scheduled_query",
           "slug": "logs_scheduled_query",
+          "subcategory": ""
+        },
+        {
+          "title": "logs_storage_tier_policy",
+          "slug": "logs_storage_tier_policy",
           "subcategory": ""
         },
         {
@@ -37100,6 +37575,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_dlp_setting",
+          "slug": "quicksight_dlp_setting",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -37107,6 +37587,11 @@
         {
           "title": "quicksight_knowledge_base",
           "slug": "quicksight_knowledge_base",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_limits_profile",
+          "slug": "quicksight_limits_profile",
           "subcategory": ""
         },
         {
@@ -38260,6 +38745,16 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_private_dns_namespace",
+          "slug": "servicediscovery_private_dns_namespace",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_public_dns_namespace",
+          "slug": "servicediscovery_public_dns_namespace",
+          "subcategory": ""
+        },
+        {
           "title": "servicediscovery_service",
           "slug": "servicediscovery_service",
           "subcategory": ""
@@ -38337,6 +38832,16 @@
         {
           "title": "ses_multi_region_endpoint",
           "slug": "ses_multi_region_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_filter",
+          "slug": "ses_receipt_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "ses_receipt_rule_set",
+          "slug": "ses_receipt_rule_set",
           "subcategory": ""
         },
         {
@@ -38845,6 +39350,11 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_workload",
+          "slug": "wellarchitected_workload",
+          "subcategory": ""
+        },
+        {
           "title": "wickr_network",
           "slug": "wickr_network",
           "subcategory": ""
@@ -39016,7 +39526,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:08.710877"
+    "docs_refreshed_at": "2026-08-20T07:44:27.726396"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -39450,7 +39960,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:09.127961"
+    "docs_refreshed_at": "2026-08-20T07:44:28.157250"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -47512,7 +48022,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:09.693713"
+    "docs_refreshed_at": "2026-08-20T07:44:28.621262"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -47861,7 +48371,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:10.102855"
+    "docs_refreshed_at": "2026-08-20T07:44:29.043568"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -49584,6 +50094,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_workload_identity_pool_openid_config",
+          "slug": "iam_workload_identity_pool_openid_config",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_workload_identity_pool_provider",
           "slug": "iam_workload_identity_pool_provider",
           "subcategory": "Cloud IAM"
@@ -51154,7 +51669,7 @@
         {
           "title": "google_pubsub_subscription_iam_member",
           "slug": "google_pubsub_subscription_iam_member",
-          "subcategory": "Cloud Pub/Sun"
+          "subcategory": "Cloud Pub/Sub"
         },
         {
           "title": "google_pubsub_topic",
@@ -51304,6 +51819,11 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agentic_applications_analyst_agent_persona",
+          "slug": "agentic_applications_analyst_agent_persona",
+          "subcategory": "Agentic Applications"
         },
         {
           "title": "agent_identity_auth_provider",
@@ -54376,6 +54896,11 @@
           "subcategory": "Firestore"
         },
         {
+          "title": "firestore_change_stream",
+          "slug": "firestore_change_stream",
+          "subcategory": "Firestore"
+        },
+        {
           "title": "firestore_database",
           "slug": "firestore_database",
           "subcategory": "Firestore"
@@ -56957,7 +57482,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:10.664787"
+    "docs_refreshed_at": "2026-08-20T07:44:29.570458"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -58413,6 +58938,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_workload_identity_pool_openid_config",
+          "slug": "iam_workload_identity_pool_openid_config",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_workload_identity_pool_provider",
           "slug": "iam_workload_identity_pool_provider",
           "subcategory": "Cloud IAM"
@@ -59983,7 +60513,7 @@
         {
           "title": "google_pubsub_subscription_iam_member",
           "slug": "google_pubsub_subscription_iam_member",
-          "subcategory": "Cloud Pub/Sun"
+          "subcategory": "Cloud Pub/Sub"
         },
         {
           "title": "google_pubsub_topic",
@@ -60133,6 +60663,11 @@
           "title": "active_directory_peering",
           "slug": "active_directory_peering",
           "subcategory": "Managed Microsoft Active Directory"
+        },
+        {
+          "title": "agentic_applications_analyst_agent_persona",
+          "slug": "agentic_applications_analyst_agent_persona",
+          "subcategory": "Agentic Applications"
         },
         {
           "title": "agent_identity_auth_provider",
@@ -63205,6 +63740,11 @@
           "subcategory": "Firestore"
         },
         {
+          "title": "firestore_change_stream",
+          "slug": "firestore_change_stream",
+          "subcategory": "Firestore"
+        },
+        {
           "title": "firestore_database",
           "slug": "firestore_database",
           "subcategory": "Firestore"
@@ -65786,7 +66326,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-13T08:27:11.522763"
+    "docs_refreshed_at": "2026-08-20T07:44:30.073913"
   },
   "4ek0/neko": {
     "docs": {
