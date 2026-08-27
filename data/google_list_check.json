@@ -1,14 +1,59 @@
 {
-  "generated_at": "2026-08-20T07:45:36.337661",
+  "generated_at": "2026-08-27T18:52:30.152186",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "04a16a708c2a4e2d363002104e387ac7b2ab86dd"
+    "commit": "3ede352a2267761c038ee278181223b48b5eeb1d"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 98,
+    "file_count": 111,
     "files": [
+      {
+        "file": "google/services/apigee/list_apigee_addons_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_api_product.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_data_collector.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_datastore.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_endpoint_attachment.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_envgroup.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_environment_keyvaluemaps.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_organization.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/apigee/list_apigee_target_server.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
       {
         "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
         "type": "Handwritten",
@@ -36,6 +81,26 @@
       },
       {
         "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/colab/list_colab_notebook_execution.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/colab/list_colab_runtime.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/colab/list_colab_runtime_template.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/colab/list_colab_schedule.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -500,15 +565,78 @@
         "registrations": 1
       }
     ],
-    "sha256": "32c88a99ca6ce21f4355cc1a00cc6f780d0dd54d3de7372266e20c71b75c9ccb",
+    "sha256": "40bc1c986690b7cc6e95feaeed56ad0b0bcf4c5d9678a95535c5ced76ce5d0ec",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 84
+    "list_resources": 101
   },
   "registrations": {
     "generated": [
+      {
+        "name": "google_apigee_addons_config",
+        "package": "Apigee",
+        "constructor": "NewApigeeAddonsConfigListResource",
+        "file": "google/services/apigee/list_apigee_addons_config.go",
+        "line": 39
+      },
+      {
+        "name": "google_apigee_api_product",
+        "package": "Apigee",
+        "constructor": "NewApigeeApiProductListResource",
+        "file": "google/services/apigee/list_apigee_api_product.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_data_collector",
+        "package": "Apigee",
+        "constructor": "NewApigeeDataCollectorListResource",
+        "file": "google/services/apigee/list_apigee_data_collector.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_datastore",
+        "package": "Apigee",
+        "constructor": "NewApigeeDatastoreListResource",
+        "file": "google/services/apigee/list_apigee_datastore.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_endpoint_attachment",
+        "package": "Apigee",
+        "constructor": "NewApigeeEndpointAttachmentListResource",
+        "file": "google/services/apigee/list_apigee_endpoint_attachment.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_envgroup",
+        "package": "Apigee",
+        "constructor": "NewApigeeEnvgroupListResource",
+        "file": "google/services/apigee/list_apigee_envgroup.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_environment_keyvaluemaps",
+        "package": "Apigee",
+        "constructor": "NewApigeeEnvironmentKeyvaluemapsListResource",
+        "file": "google/services/apigee/list_apigee_environment_keyvaluemaps.go",
+        "line": 40
+      },
+      {
+        "name": "google_apigee_organization",
+        "package": "Apigee",
+        "constructor": "NewApigeeOrganizationListResource",
+        "file": "google/services/apigee/list_apigee_organization.go",
+        "line": 39
+      },
+      {
+        "name": "google_apigee_target_server",
+        "package": "Apigee",
+        "constructor": "NewApigeeTargetServerListResource",
+        "file": "google/services/apigee/list_apigee_target_server.go",
+        "line": 40
+      },
       {
         "name": "google_bigquery_dataset",
         "package": "BigQuery",
@@ -535,6 +663,34 @@
         "package": "CloudScheduler",
         "constructor": "NewCloudSchedulerJobListResource",
         "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
+        "line": 40
+      },
+      {
+        "name": "google_colab_notebook_execution",
+        "package": "Colab",
+        "constructor": "NewColabNotebookExecutionListResource",
+        "file": "google/services/colab/list_colab_notebook_execution.go",
+        "line": 40
+      },
+      {
+        "name": "google_colab_runtime",
+        "package": "Colab",
+        "constructor": "NewColabRuntimeListResource",
+        "file": "google/services/colab/list_colab_runtime.go",
+        "line": 40
+      },
+      {
+        "name": "google_colab_runtime_template",
+        "package": "Colab",
+        "constructor": "NewColabRuntimeTemplateListResource",
+        "file": "google/services/colab/list_colab_runtime_template.go",
+        "line": 40
+      },
+      {
+        "name": "google_colab_schedule",
+        "package": "Colab",
+        "constructor": "NewColabScheduleListResource",
+        "file": "google/services/colab/list_colab_schedule.go",
         "line": 40
       },
       {
@@ -1200,6 +1356,53 @@
     ]
   },
   "by_service": {
+    "apigee": [
+      {
+        "file": "google/services/apigee/list_apigee_addons_config.go",
+        "type_name": "google_apigee_addons_config",
+        "constructor": "NewApigeeAddonsConfigListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_api_product.go",
+        "type_name": "google_apigee_api_product",
+        "constructor": "NewApigeeApiProductListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_data_collector.go",
+        "type_name": "google_apigee_data_collector",
+        "constructor": "NewApigeeDataCollectorListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_datastore.go",
+        "type_name": "google_apigee_datastore",
+        "constructor": "NewApigeeDatastoreListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_endpoint_attachment.go",
+        "type_name": "google_apigee_endpoint_attachment",
+        "constructor": "NewApigeeEndpointAttachmentListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_envgroup.go",
+        "type_name": "google_apigee_envgroup",
+        "constructor": "NewApigeeEnvgroupListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_environment_keyvaluemaps.go",
+        "type_name": "google_apigee_environment_keyvaluemaps",
+        "constructor": "NewApigeeEnvironmentKeyvaluemapsListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_organization.go",
+        "type_name": "google_apigee_organization",
+        "constructor": "NewApigeeOrganizationListResource"
+      },
+      {
+        "file": "google/services/apigee/list_apigee_target_server.go",
+        "type_name": "google_apigee_target_server",
+        "constructor": "NewApigeeTargetServerListResource"
+      }
+    ],
     "bigquery": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
@@ -1229,6 +1432,28 @@
         "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
         "type_name": "google_cloud_scheduler_job",
         "constructor": "NewCloudSchedulerJobListResource"
+      }
+    ],
+    "colab": [
+      {
+        "file": "google/services/colab/list_colab_notebook_execution.go",
+        "type_name": "google_colab_notebook_execution",
+        "constructor": "NewColabNotebookExecutionListResource"
+      },
+      {
+        "file": "google/services/colab/list_colab_runtime.go",
+        "type_name": "google_colab_runtime",
+        "constructor": "NewColabRuntimeListResource"
+      },
+      {
+        "file": "google/services/colab/list_colab_runtime_template.go",
+        "type_name": "google_colab_runtime_template",
+        "constructor": "NewColabRuntimeTemplateListResource"
+      },
+      {
+        "file": "google/services/colab/list_colab_schedule.go",
+        "type_name": "google_colab_schedule",
+        "constructor": "NewColabScheduleListResource"
       }
     ],
     "compute": [
@@ -1698,11 +1923,24 @@
   },
   "cross_check": {
     "registered_constructors": [
+      "NewApigeeAddonsConfigListResource",
+      "NewApigeeApiProductListResource",
+      "NewApigeeDataCollectorListResource",
+      "NewApigeeDatastoreListResource",
+      "NewApigeeEndpointAttachmentListResource",
+      "NewApigeeEnvgroupListResource",
+      "NewApigeeEnvironmentKeyvaluemapsListResource",
+      "NewApigeeOrganizationListResource",
+      "NewApigeeTargetServerListResource",
       "NewBigQueryDatasetAccessListResource",
       "NewBigQueryDatasetListResource",
       "NewBigqueryDatasetIamMemberListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
+      "NewColabNotebookExecutionListResource",
+      "NewColabRuntimeListResource",
+      "NewColabRuntimeTemplateListResource",
+      "NewColabScheduleListResource",
       "NewComputeAddressListResource",
       "NewComputeBackendBucketSignedUrlKeyListResource",
       "NewComputeBackendServiceSignedUrlKeyListResource",
@@ -1798,10 +2036,23 @@
       "NewStorageHmacKeyListResource"
     ],
     "file_constructors": [
+      "NewApigeeAddonsConfigListResource",
+      "NewApigeeApiProductListResource",
+      "NewApigeeDataCollectorListResource",
+      "NewApigeeDatastoreListResource",
+      "NewApigeeEndpointAttachmentListResource",
+      "NewApigeeEnvgroupListResource",
+      "NewApigeeEnvironmentKeyvaluemapsListResource",
+      "NewApigeeOrganizationListResource",
+      "NewApigeeTargetServerListResource",
       "NewBigQueryDatasetAccessListResource",
       "NewBigQueryDatasetListResource",
       "NewCloudRunServiceListResource",
       "NewCloudSchedulerJobListResource",
+      "NewColabNotebookExecutionListResource",
+      "NewColabRuntimeListResource",
+      "NewColabRuntimeTemplateListResource",
+      "NewColabScheduleListResource",
       "NewComputeAddressListResource",
       "NewComputeBackendBucketSignedUrlKeyListResource",
       "NewComputeBackendServiceSignedUrlKeyListResource",
@@ -1893,11 +2144,24 @@
       "NewStorageHmacKeyListResource"
     ],
     "file_type_names": [
+      "google_apigee_addons_config",
+      "google_apigee_api_product",
+      "google_apigee_data_collector",
+      "google_apigee_datastore",
+      "google_apigee_endpoint_attachment",
+      "google_apigee_envgroup",
+      "google_apigee_environment_keyvaluemaps",
+      "google_apigee_organization",
+      "google_apigee_target_server",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
+      "google_colab_notebook_execution",
+      "google_colab_runtime",
+      "google_colab_runtime_template",
+      "google_colab_schedule",
       "google_compute_address",
       "google_compute_backend_bucket_signed_url_key",
       "google_compute_backend_service_signed_url_key",
@@ -1995,12 +2259,12 @@
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 98,
-    "file_type_name_count": 93,
+    "registration_count": 111,
+    "file_type_name_count": 106,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 15,
+    "services_with_list": 17,
     "rows": [
       {
         "service": "compute",
@@ -2015,12 +2279,20 @@
         "list_resources": 10
       },
       {
+        "service": "apigee",
+        "list_resources": 9
+      },
+      {
         "service": "migrationcenter",
         "list_resources": 7
       },
       {
         "service": "resourcemanager",
         "list_resources": 5
+      },
+      {
+        "service": "colab",
+        "list_resources": 4
       },
       {
         "service": "bigquery",
@@ -2064,6 +2336,19 @@
       }
     ],
     "service_resources": {
+      "apigee": {
+        "list_resources": [
+          "google_apigee_addons_config",
+          "google_apigee_api_product",
+          "google_apigee_data_collector",
+          "google_apigee_datastore",
+          "google_apigee_endpoint_attachment",
+          "google_apigee_envgroup",
+          "google_apigee_environment_keyvaluemaps",
+          "google_apigee_organization",
+          "google_apigee_target_server"
+        ]
+      },
       "bigquery": {
         "list_resources": [
           "google_bigquery_dataset",
@@ -2079,6 +2364,14 @@
       "cloudscheduler": {
         "list_resources": [
           "google_cloud_scheduler_job"
+        ]
+      },
+      "colab": {
+        "list_resources": [
+          "google_colab_notebook_execution",
+          "google_colab_runtime",
+          "google_colab_runtime_template",
+          "google_colab_schedule"
         ]
       },
       "compute": {
@@ -2221,9 +2514,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 84,
-    "code_list_resources": 93,
-    "registered_count": 98,
+    "dashboard_list_resources": 101,
+    "code_list_resources": 106,
+    "registered_count": 111,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -2295,7 +2588,24 @@
       "google_dns_record_set",
       "google_folder_iam_member",
       "google_kms_crypto_key_version",
+      "google_migration_center_assets_export_job",
+      "google_migration_center_discovery_client",
+      "google_migration_center_group",
+      "google_migration_center_import_job",
+      "google_migration_center_preference_set",
+      "google_migration_center_report_config",
+      "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_services_authz_extension",
+      "google_network_services_multicast_consumer_association",
+      "google_network_services_multicast_domain",
+      "google_network_services_multicast_domain_activation",
+      "google_network_services_multicast_domain_group",
+      "google_network_services_multicast_group_consumer_activation",
+      "google_network_services_multicast_group_producer_activation",
+      "google_network_services_multicast_group_range",
+      "google_network_services_multicast_group_range_activation",
+      "google_network_services_multicast_producer_association",
       "google_project",
       "google_project_iam_custom_role",
       "google_project_iam_member",
@@ -2312,11 +2622,24 @@
       "google_storage_hmac_key"
     ],
     "code_list_resource_names": [
+      "google_apigee_addons_config",
+      "google_apigee_api_product",
+      "google_apigee_data_collector",
+      "google_apigee_datastore",
+      "google_apigee_endpoint_attachment",
+      "google_apigee_envgroup",
+      "google_apigee_environment_keyvaluemaps",
+      "google_apigee_organization",
+      "google_apigee_target_server",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
+      "google_colab_notebook_execution",
+      "google_colab_runtime",
+      "google_colab_runtime_template",
+      "google_colab_schedule",
       "google_compute_address",
       "google_compute_backend_bucket_signed_url_key",
       "google_compute_backend_service_signed_url_key",
@@ -2417,23 +2740,19 @@
       "google_service_account_iam_member"
     ],
     "only_in_source": [
-      "google_migration_center_assets_export_job",
-      "google_migration_center_discovery_client",
-      "google_migration_center_group",
-      "google_migration_center_import_job",
-      "google_migration_center_preference_set",
-      "google_migration_center_report_config",
-      "google_migration_center_source",
-      "google_network_services_authz_extension",
-      "google_network_services_multicast_consumer_association",
-      "google_network_services_multicast_domain",
-      "google_network_services_multicast_domain_activation",
-      "google_network_services_multicast_domain_group",
-      "google_network_services_multicast_group_consumer_activation",
-      "google_network_services_multicast_group_producer_activation",
-      "google_network_services_multicast_group_range",
-      "google_network_services_multicast_group_range_activation",
-      "google_network_services_multicast_producer_association"
+      "google_apigee_addons_config",
+      "google_apigee_api_product",
+      "google_apigee_data_collector",
+      "google_apigee_datastore",
+      "google_apigee_endpoint_attachment",
+      "google_apigee_envgroup",
+      "google_apigee_environment_keyvaluemaps",
+      "google_apigee_organization",
+      "google_apigee_target_server",
+      "google_colab_notebook_execution",
+      "google_colab_runtime",
+      "google_colab_runtime_template",
+      "google_colab_schedule"
     ],
     "registry_is_subset": false
   }

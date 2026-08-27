@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T07:45:30.680150",
+  "generated_at": "2026-08-27T18:52:22.674625",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "56ffe549a1876122638715b55fcbd41de0575549"
+    "commit": "411274a0ea4143f52f3edb5df2cb5bc2dd9e46b8"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 204
+    "list_resources": 210
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3159,
+    "stdout_line_count": 3163,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 12,
-        "implemented": 205,
-        "total": 1692
+        "implemented": 213,
+        "total": 1696
       },
       "service_count": 243,
       "services": [
@@ -528,8 +528,8 @@
         },
         {
           "service": "dsql",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 66,
+          "implemented": 2,
           "total": 3
         },
         {
@@ -546,8 +546,8 @@
         },
         {
           "service": "ecr",
-          "percent": 20,
-          "implemented": 2,
+          "percent": 30,
+          "implemented": 3,
           "total": 10
         },
         {
@@ -558,8 +558,8 @@
         },
         {
           "service": "ecs",
-          "percent": 40,
-          "implemented": 4,
+          "percent": 50,
+          "implemented": 5,
           "total": 10
         },
         {
@@ -840,9 +840,9 @@
         },
         {
           "service": "lambdamicrovms",
-          "percent": 0,
-          "implemented": 0,
-          "total": 1
+          "percent": 50,
+          "implemented": 1,
+          "total": 2
         },
         {
           "service": "lexmodels",
@@ -895,8 +895,8 @@
         {
           "service": "mailmanager",
           "percent": 100,
-          "implemented": 4,
-          "total": 4
+          "implemented": 5,
+          "total": 5
         },
         {
           "service": "mediaconvert",
@@ -1056,9 +1056,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 66,
-          "implemented": 4,
-          "total": 6
+          "percent": 71,
+          "implemented": 5,
+          "total": 7
         },
         {
           "service": "pipes",
@@ -1098,8 +1098,8 @@
         },
         {
           "service": "rds",
-          "percent": 10,
-          "implemented": 3,
+          "percent": 13,
+          "implemented": 4,
           "total": 29
         },
         {
@@ -1316,7 +1316,7 @@
           "service": "sesv2",
           "percent": 0,
           "implemented": 0,
-          "total": 12
+          "total": 13
         },
         {
           "service": "sfn",
@@ -2428,7 +2428,10 @@
             "dsql/cluster_peering.go",
             "dsql/cluster_policy.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "dsql/cluster.go",
+            "dsql/cluster_policy.go"
+          ]
         },
         "dynamodb": {
           "all_resources": [
@@ -2649,6 +2652,7 @@
             "ecr/repository_policy.go"
           ],
           "list_resources": [
+            "ecr/lifecycle_policy.go",
             "ecr/repository.go",
             "ecr/repository_policy.go"
           ]
@@ -2674,6 +2678,7 @@
             "ecs/task_set.go"
           ],
           "list_resources": [
+            "ecs/cluster.go",
             "ecs/daemon.go",
             "ecs/daemon_task_definition.go",
             "ecs/service.go",
@@ -3263,9 +3268,12 @@
         },
         "lambdamicrovms": {
           "all_resources": [
-            "lambdamicrovms/image.go"
+            "lambdamicrovms/image.go",
+            "lambdamicrovms/microvm.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "lambdamicrovms/microvm.go"
+          ]
         },
         "lexmodels": {
           "all_resources": [
@@ -3389,12 +3397,14 @@
         },
         "mailmanager": {
           "all_resources": [
+            "mailmanager/archive.go",
             "mailmanager/ingress_point.go",
             "mailmanager/relay.go",
             "mailmanager/rule_set.go",
             "mailmanager/traffic_policy.go"
           ],
           "list_resources": [
+            "mailmanager/archive.go",
             "mailmanager/ingress_point.go",
             "mailmanager/relay.go",
             "mailmanager/rule_set.go",
@@ -3685,6 +3695,7 @@
           "all_resources": [
             "pinpointsmsvoicev2/configuration_set.go",
             "pinpointsmsvoicev2/event_destination.go",
+            "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/phone_number.go",
             "pinpointsmsvoicev2/pool.go",
             "pinpointsmsvoicev2/resource_policy.go",
@@ -3692,6 +3703,7 @@
           ],
           "list_resources": [
             "pinpointsmsvoicev2/event_destination.go",
+            "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/pool.go",
             "pinpointsmsvoicev2/resource_policy.go",
             "pinpointsmsvoicev2/sender_id.go"
@@ -3798,6 +3810,7 @@
           ],
           "list_resources": [
             "rds/cluster.go",
+            "rds/instance.go",
             "rds/parameter_group.go",
             "rds/subnet_group.go"
           ]
@@ -4309,6 +4322,7 @@
             "sesv2/email_identity_feedback_attributes.go",
             "sesv2/email_identity_mail_from_attributes.go",
             "sesv2/email_identity_policy.go",
+            "sesv2/multi_region_endpoint.go",
             "sesv2/tenant.go",
             "sesv2/tenant_resource_association.go"
           ],
@@ -4664,11 +4678,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-08-20 07:45:30 UTC"
+      "last_updated": "2026-08-27 18:52:22 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 63,
+    "services_with_list": 65,
     "top_services": [
       {
         "service": "ec2",
@@ -4713,10 +4727,22 @@
         "total": 26
       },
       {
+        "service": "mailmanager",
+        "percent": 100,
+        "implemented": 5,
+        "total": 5
+      },
+      {
         "service": "s3files",
         "percent": 100,
         "implemented": 5,
         "total": 5
+      },
+      {
+        "service": "pinpointsmsvoicev2",
+        "percent": 71,
+        "implemented": 5,
+        "total": 7
       },
       {
         "service": "elbv2",
@@ -4731,6 +4757,12 @@
         "total": 9
       },
       {
+        "service": "ecs",
+        "percent": 50,
+        "implemented": 5,
+        "total": 10
+      },
+      {
         "service": "ssm",
         "percent": 41,
         "implemented": 5,
@@ -4741,24 +4773,6 @@
         "percent": 26,
         "implemented": 5,
         "total": 19
-      },
-      {
-        "service": "mailmanager",
-        "percent": 100,
-        "implemented": 4,
-        "total": 4
-      },
-      {
-        "service": "workmail",
-        "percent": 80,
-        "implemented": 4,
-        "total": 5
-      },
-      {
-        "service": "pinpointsmsvoicev2",
-        "percent": 66,
-        "implemented": 4,
-        "total": 6
       }
     ],
     "service_resources": {
@@ -5702,7 +5716,10 @@
           "dsql/cluster_peering.go",
           "dsql/cluster_policy.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "dsql/cluster.go",
+          "dsql/cluster_policy.go"
+        ]
       },
       "dynamodb": {
         "all_resources": [
@@ -5923,6 +5940,7 @@
           "ecr/repository_policy.go"
         ],
         "list_resources": [
+          "ecr/lifecycle_policy.go",
           "ecr/repository.go",
           "ecr/repository_policy.go"
         ]
@@ -5948,6 +5966,7 @@
           "ecs/task_set.go"
         ],
         "list_resources": [
+          "ecs/cluster.go",
           "ecs/daemon.go",
           "ecs/daemon_task_definition.go",
           "ecs/service.go",
@@ -6537,9 +6556,12 @@
       },
       "lambdamicrovms": {
         "all_resources": [
-          "lambdamicrovms/image.go"
+          "lambdamicrovms/image.go",
+          "lambdamicrovms/microvm.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "lambdamicrovms/microvm.go"
+        ]
       },
       "lexmodels": {
         "all_resources": [
@@ -6663,12 +6685,14 @@
       },
       "mailmanager": {
         "all_resources": [
+          "mailmanager/archive.go",
           "mailmanager/ingress_point.go",
           "mailmanager/relay.go",
           "mailmanager/rule_set.go",
           "mailmanager/traffic_policy.go"
         ],
         "list_resources": [
+          "mailmanager/archive.go",
           "mailmanager/ingress_point.go",
           "mailmanager/relay.go",
           "mailmanager/rule_set.go",
@@ -6959,6 +6983,7 @@
         "all_resources": [
           "pinpointsmsvoicev2/configuration_set.go",
           "pinpointsmsvoicev2/event_destination.go",
+          "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/phone_number.go",
           "pinpointsmsvoicev2/pool.go",
           "pinpointsmsvoicev2/resource_policy.go",
@@ -6966,6 +6991,7 @@
         ],
         "list_resources": [
           "pinpointsmsvoicev2/event_destination.go",
+          "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/pool.go",
           "pinpointsmsvoicev2/resource_policy.go",
           "pinpointsmsvoicev2/sender_id.go"
@@ -7072,6 +7098,7 @@
         ],
         "list_resources": [
           "rds/cluster.go",
+          "rds/instance.go",
           "rds/parameter_group.go",
           "rds/subnet_group.go"
         ]
@@ -7583,6 +7610,7 @@
           "sesv2/email_identity_feedback_attributes.go",
           "sesv2/email_identity_mail_from_attributes.go",
           "sesv2/email_identity_policy.go",
+          "sesv2/multi_region_endpoint.go",
           "sesv2/tenant.go",
           "sesv2/tenant_resource_association.go"
         ],
@@ -7941,9 +7969,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 204,
-    "script_implemented_list": 205,
-    "script_total_resources": 1692,
+    "dashboard_list_resources": 210,
+    "script_implemented_list": 213,
+    "script_total_resources": 1696,
     "script_percent": 12
   }
 }

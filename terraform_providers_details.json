@@ -4030,6 +4030,11 @@
           "subcategory": "Config"
         },
         {
+          "title": "db_instance",
+          "slug": "db_instance",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
           "title": "db_parameter_group",
           "slug": "db_parameter_group",
           "subcategory": "RDS (Relational Database)"
@@ -4038,6 +4043,16 @@
           "title": "db_subnet_group",
           "slug": "db_subnet_group",
           "subcategory": "RDS (Relational Database)"
+        },
+        {
+          "title": "dsql_cluster",
+          "slug": "dsql_cluster",
+          "subcategory": "DSQL"
+        },
+        {
+          "title": "dsql_cluster_policy",
+          "slug": "dsql_cluster_policy",
+          "subcategory": "DSQL"
         },
         {
           "title": "dynamodb_global_secondary_index",
@@ -4085,6 +4100,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "ecr_lifecycle_policy",
+          "slug": "ecr_lifecycle_policy",
+          "subcategory": "ECR (Elastic Container Registry)"
+        },
+        {
           "title": "ecr_repository",
           "slug": "ecr_repository",
           "subcategory": "ECR (Elastic Container Registry)"
@@ -4093,6 +4113,11 @@
           "title": "ecr_repository_policy",
           "slug": "ecr_repository_policy",
           "subcategory": "ECR (Elastic Container Registry)"
+        },
+        {
+          "title": "ecs_cluster",
+          "slug": "ecs_cluster",
+          "subcategory": "ECS (Elastic Container)"
         },
         {
           "title": "ecs_daemon",
@@ -4397,6 +4422,11 @@
         {
           "title": "pinpointsmsvoicev2_event_destination",
           "slug": "pinpointsmsvoicev2_event_destination",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
+          "title": "pinpointsmsvoicev2_keyword",
+          "slug": "pinpointsmsvoicev2_keyword",
           "subcategory": "End User Messaging SMS"
         },
         {
@@ -10364,6 +10394,11 @@
           "subcategory": "End User Messaging SMS"
         },
         {
+          "title": "pinpointsmsvoicev2_keyword",
+          "slug": "pinpointsmsvoicev2_keyword",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
           "title": "pinpointsmsvoicev2_opt_out_list",
           "slug": "pinpointsmsvoicev2_opt_out_list",
           "subcategory": "End User Messaging SMS"
@@ -12114,6 +12149,11 @@
           "subcategory": "SESv2 (Simple Email V2)"
         },
         {
+          "title": "sesv2_multi_region_endpoint",
+          "slug": "sesv2_multi_region_endpoint",
+          "subcategory": "SESv2 (Simple Email V2)"
+        },
+        {
           "title": "sesv2_tenant",
           "slug": "sesv2_tenant",
           "subcategory": "SESv2 (Simple Email V2)"
@@ -13335,7 +13375,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:27.217862"
+    "docs_refreshed_at": "2026-08-27T18:51:16.359117"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -39526,7 +39566,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:27.726396"
+    "docs_refreshed_at": "2026-08-27T18:51:16.946493"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -39960,7 +40000,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:28.157250"
+    "docs_refreshed_at": "2026-08-27T18:51:17.410747"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -42302,6 +42342,11 @@
           "subcategory": "Network"
         },
         {
+          "title": "redhat_openshift_cluster",
+          "slug": "redhat_openshift_cluster",
+          "subcategory": "Red Hat OpenShift"
+        },
+        {
           "title": "redis_cache",
           "slug": "redis_cache",
           "subcategory": "Redis"
@@ -42440,6 +42485,11 @@
           "title": "traffic_manager_profile",
           "slug": "traffic_manager_profile",
           "subcategory": "Network"
+        },
+        {
+          "title": "user_assigned_identity",
+          "slug": "user_assigned_identity",
+          "subcategory": "Authorization"
         },
         {
           "title": "video_indexer_account",
@@ -48022,7 +48072,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:28.621262"
+    "docs_refreshed_at": "2026-08-27T18:51:17.942199"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -48371,7 +48421,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:29.043568"
+    "docs_refreshed_at": "2026-08-27T18:51:18.384766"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -48904,21 +48954,6 @@
           "subcategory": "Backup and DR Service"
         },
         {
-          "title": "beyondcorp_app_connection",
-          "slug": "beyondcorp_app_connection",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_connector",
-          "slug": "beyondcorp_app_connector",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_gateway",
-          "slug": "beyondcorp_app_gateway",
-          "subcategory": "BeyondCorp"
-        },
-        {
           "title": "beyondcorp_security_gateway",
           "slug": "beyondcorp_security_gateway",
           "subcategory": "BeyondCorp"
@@ -50134,11 +50169,6 @@
           "subcategory": "Identity-Aware Proxy"
         },
         {
-          "title": "iap_client",
-          "slug": "iap_client",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
           "title": "iap_location_web_iam_policy",
           "slug": "iap_location_web_iam_policy",
           "subcategory": "Identity-Aware Proxy"
@@ -50324,6 +50354,11 @@
           "subcategory": "Memcache"
         },
         {
+          "title": "memorystore_acl_policy",
+          "slug": "memorystore_acl_policy",
+          "subcategory": "Memorystore"
+        },
+        {
           "title": "memorystore_instance",
           "slug": "memorystore_instance",
           "subcategory": "Memorystore"
@@ -50387,16 +50422,6 @@
           "title": "network_security_address_groups",
           "slug": "network_security_address_groups",
           "subcategory": "Network Security"
-        },
-        {
-          "title": "notebooks_instance_iam_policy",
-          "slug": "notebooks_instance_iam_policy",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime_iam_policy",
-          "slug": "notebooks_runtime_iam_policy",
-          "subcategory": "Cloud AI Notebooks"
         },
         {
           "title": "observability_folder_settings",
@@ -50642,6 +50667,11 @@
           "title": "redis_cluster",
           "slug": "redis_cluster",
           "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "redis_cluster_acl_policy",
+          "slug": "redis_cluster_acl_policy",
+          "subcategory": "Memorystore for Redis"
         },
         {
           "title": "redis_instance",
@@ -51637,9 +51667,94 @@
           "subcategory": "Cloud Key Management Service"
         },
         {
+          "title": "google_migration_center_assets_export_job",
+          "slug": "google_migration_center_assets_export_job",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_discovery_client",
+          "slug": "google_migration_center_discovery_client",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_group",
+          "slug": "google_migration_center_group",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_import_job",
+          "slug": "google_migration_center_import_job",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_preference_set",
+          "slug": "google_migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_report_config",
+          "slug": "google_migration_center_report_config",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_source",
+          "slug": "google_migration_center_source",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "google_monitoring_alert_policy",
           "slug": "google_monitoring_alert_policy",
           "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_network_services_authz_extension",
+          "slug": "google_network_services_authz_extension",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_consumer_association",
+          "slug": "google_network_services_multicast_consumer_association",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain",
+          "slug": "google_network_services_multicast_domain",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain_activation",
+          "slug": "google_network_services_multicast_domain_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain_group",
+          "slug": "google_network_services_multicast_domain_group",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_consumer_activation",
+          "slug": "google_network_services_multicast_group_consumer_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_producer_activation",
+          "slug": "google_network_services_multicast_group_producer_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_range",
+          "slug": "google_network_services_multicast_group_range",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_range_activation",
+          "slug": "google_network_services_multicast_group_range_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_producer_association",
+          "slug": "google_network_services_multicast_producer_association",
+          "subcategory": "Network Services"
         },
         {
           "title": "google_project",
@@ -52249,21 +52364,6 @@
           "title": "backup_dr_service_config",
           "slug": "backup_dr_service_config",
           "subcategory": "Backup and DR Service"
-        },
-        {
-          "title": "beyondcorp_app_connection",
-          "slug": "beyondcorp_app_connection",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_connector",
-          "slug": "beyondcorp_app_connector",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_gateway",
-          "slug": "beyondcorp_app_gateway",
-          "subcategory": "BeyondCorp"
         },
         {
           "title": "beyondcorp_security_gateway",
@@ -55436,16 +55536,6 @@
           "subcategory": "Identity-Aware Proxy"
         },
         {
-          "title": "iap_brand",
-          "slug": "iap_brand",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
-          "title": "iap_client",
-          "slug": "iap_client",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
           "title": "iap_location_web_iam",
           "slug": "iap_location_web_iam",
           "subcategory": "Identity-Aware Proxy"
@@ -55791,6 +55881,11 @@
           "subcategory": "Memcache"
         },
         {
+          "title": "memorystore_acl_policy",
+          "slug": "memorystore_acl_policy",
+          "subcategory": "Memorystore"
+        },
+        {
           "title": "memorystore_instance",
           "slug": "memorystore_instance",
           "subcategory": "Memorystore"
@@ -55849,11 +55944,6 @@
           "title": "migration_center_source",
           "slug": "migration_center_source",
           "subcategory": "Migration Center"
-        },
-        {
-          "title": "ml_engine_model",
-          "slug": "ml_engine_model",
-          "subcategory": "ML Engine"
         },
         {
           "title": "model_armor_floorsetting",
@@ -56331,31 +56421,6 @@
           "subcategory": "Network Services"
         },
         {
-          "title": "notebooks_environment",
-          "slug": "notebooks_environment",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_instance",
-          "slug": "notebooks_instance",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_instance_iam",
-          "slug": "notebooks_instance_iam",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime",
-          "slug": "notebooks_runtime",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime_iam",
-          "slug": "notebooks_runtime_iam",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
           "title": "observability_folder_settings",
           "slug": "observability_folder_settings",
           "subcategory": "Observability"
@@ -56628,6 +56693,11 @@
         {
           "title": "redis_cluster",
           "slug": "redis_cluster",
+          "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "redis_cluster_acl_policy",
+          "slug": "redis_cluster_acl_policy",
           "subcategory": "Memorystore (Redis)"
         },
         {
@@ -57221,6 +57291,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vertex_ai_agent_anomaly_detection_scope",
+          "slug": "vertex_ai_agent_anomaly_detection_scope",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_cache_config",
           "slug": "vertex_ai_cache_config",
           "subcategory": "Vertex AI"
@@ -57361,11 +57436,6 @@
           "subcategory": "Vertex AI"
         },
         {
-          "title": "vertex_ai_schedule",
-          "slug": "vertex_ai_schedule",
-          "subcategory": "Vertex AI"
-        },
-        {
           "title": "vertex_ai_semantic_governance_policy_engine",
           "slug": "vertex_ai_semantic_governance_policy_engine",
           "subcategory": "Vertex AI"
@@ -57482,7 +57552,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:29.570458"
+    "docs_refreshed_at": "2026-08-27T18:51:18.925586"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -57748,21 +57818,6 @@
           "subcategory": "Backup and DR Service"
         },
         {
-          "title": "beyondcorp_app_connection",
-          "slug": "beyondcorp_app_connection",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_connector",
-          "slug": "beyondcorp_app_connector",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_gateway",
-          "slug": "beyondcorp_app_gateway",
-          "subcategory": "BeyondCorp"
-        },
-        {
           "title": "beyondcorp_security_gateway",
           "slug": "beyondcorp_security_gateway",
           "subcategory": "BeyondCorp"
@@ -58978,11 +59033,6 @@
           "subcategory": "Identity-Aware Proxy"
         },
         {
-          "title": "iap_client",
-          "slug": "iap_client",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
           "title": "iap_location_web_iam_policy",
           "slug": "iap_location_web_iam_policy",
           "subcategory": "Identity-Aware Proxy"
@@ -59168,6 +59218,11 @@
           "subcategory": "Memcache"
         },
         {
+          "title": "memorystore_acl_policy",
+          "slug": "memorystore_acl_policy",
+          "subcategory": "Memorystore"
+        },
+        {
           "title": "memorystore_instance",
           "slug": "memorystore_instance",
           "subcategory": "Memorystore"
@@ -59231,16 +59286,6 @@
           "title": "network_security_address_groups",
           "slug": "network_security_address_groups",
           "subcategory": "Network Security"
-        },
-        {
-          "title": "notebooks_instance_iam_policy",
-          "slug": "notebooks_instance_iam_policy",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime_iam_policy",
-          "slug": "notebooks_runtime_iam_policy",
-          "subcategory": "Cloud AI Notebooks"
         },
         {
           "title": "observability_folder_settings",
@@ -59486,6 +59531,11 @@
           "title": "redis_cluster",
           "slug": "redis_cluster",
           "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "redis_cluster_acl_policy",
+          "slug": "redis_cluster_acl_policy",
+          "subcategory": "Memorystore for Redis"
         },
         {
           "title": "redis_instance",
@@ -60481,9 +60531,94 @@
           "subcategory": "Cloud Key Management Service"
         },
         {
+          "title": "google_migration_center_assets_export_job",
+          "slug": "google_migration_center_assets_export_job",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_discovery_client",
+          "slug": "google_migration_center_discovery_client",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_group",
+          "slug": "google_migration_center_group",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_import_job",
+          "slug": "google_migration_center_import_job",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_preference_set",
+          "slug": "google_migration_center_preference_set",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_report_config",
+          "slug": "google_migration_center_report_config",
+          "subcategory": "Migration Center"
+        },
+        {
+          "title": "google_migration_center_source",
+          "slug": "google_migration_center_source",
+          "subcategory": "Migration Center"
+        },
+        {
           "title": "google_monitoring_alert_policy",
           "slug": "google_monitoring_alert_policy",
           "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_network_services_authz_extension",
+          "slug": "google_network_services_authz_extension",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_consumer_association",
+          "slug": "google_network_services_multicast_consumer_association",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain",
+          "slug": "google_network_services_multicast_domain",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain_activation",
+          "slug": "google_network_services_multicast_domain_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_domain_group",
+          "slug": "google_network_services_multicast_domain_group",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_consumer_activation",
+          "slug": "google_network_services_multicast_group_consumer_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_producer_activation",
+          "slug": "google_network_services_multicast_group_producer_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_range",
+          "slug": "google_network_services_multicast_group_range",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_group_range_activation",
+          "slug": "google_network_services_multicast_group_range_activation",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "google_network_services_multicast_producer_association",
+          "slug": "google_network_services_multicast_producer_association",
+          "subcategory": "Network Services"
         },
         {
           "title": "google_project",
@@ -61093,21 +61228,6 @@
           "title": "backup_dr_service_config",
           "slug": "backup_dr_service_config",
           "subcategory": "Backup and DR Service"
-        },
-        {
-          "title": "beyondcorp_app_connection",
-          "slug": "beyondcorp_app_connection",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_connector",
-          "slug": "beyondcorp_app_connector",
-          "subcategory": "BeyondCorp"
-        },
-        {
-          "title": "beyondcorp_app_gateway",
-          "slug": "beyondcorp_app_gateway",
-          "subcategory": "BeyondCorp"
         },
         {
           "title": "beyondcorp_security_gateway",
@@ -64280,16 +64400,6 @@
           "subcategory": "Identity-Aware Proxy"
         },
         {
-          "title": "iap_brand",
-          "slug": "iap_brand",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
-          "title": "iap_client",
-          "slug": "iap_client",
-          "subcategory": "Identity-Aware Proxy"
-        },
-        {
           "title": "iap_location_web_iam",
           "slug": "iap_location_web_iam",
           "subcategory": "Identity-Aware Proxy"
@@ -64635,6 +64745,11 @@
           "subcategory": "Memcache"
         },
         {
+          "title": "memorystore_acl_policy",
+          "slug": "memorystore_acl_policy",
+          "subcategory": "Memorystore"
+        },
+        {
           "title": "memorystore_instance",
           "slug": "memorystore_instance",
           "subcategory": "Memorystore"
@@ -64693,11 +64808,6 @@
           "title": "migration_center_source",
           "slug": "migration_center_source",
           "subcategory": "Migration Center"
-        },
-        {
-          "title": "ml_engine_model",
-          "slug": "ml_engine_model",
-          "subcategory": "ML Engine"
         },
         {
           "title": "model_armor_floorsetting",
@@ -65175,31 +65285,6 @@
           "subcategory": "Network Services"
         },
         {
-          "title": "notebooks_environment",
-          "slug": "notebooks_environment",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_instance",
-          "slug": "notebooks_instance",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_instance_iam",
-          "slug": "notebooks_instance_iam",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime",
-          "slug": "notebooks_runtime",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
-          "title": "notebooks_runtime_iam",
-          "slug": "notebooks_runtime_iam",
-          "subcategory": "Cloud AI Notebooks"
-        },
-        {
           "title": "observability_folder_settings",
           "slug": "observability_folder_settings",
           "subcategory": "Observability"
@@ -65472,6 +65557,11 @@
         {
           "title": "redis_cluster",
           "slug": "redis_cluster",
+          "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "redis_cluster_acl_policy",
+          "slug": "redis_cluster_acl_policy",
           "subcategory": "Memorystore (Redis)"
         },
         {
@@ -66065,6 +66155,11 @@
           "subcategory": "Vector Search"
         },
         {
+          "title": "vertex_ai_agent_anomaly_detection_scope",
+          "slug": "vertex_ai_agent_anomaly_detection_scope",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_cache_config",
           "slug": "vertex_ai_cache_config",
           "subcategory": "Vertex AI"
@@ -66205,11 +66300,6 @@
           "subcategory": "Vertex AI"
         },
         {
-          "title": "vertex_ai_schedule",
-          "slug": "vertex_ai_schedule",
-          "subcategory": "Vertex AI"
-        },
-        {
           "title": "vertex_ai_semantic_governance_policy_engine",
           "slug": "vertex_ai_semantic_governance_policy_engine",
           "subcategory": "Vertex AI"
@@ -66326,7 +66416,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-20T07:44:30.073913"
+    "docs_refreshed_at": "2026-08-27T18:51:19.464370"
   },
   "4ek0/neko": {
     "docs": {
