@@ -13375,7 +13375,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:16.359117"
+    "docs_refreshed_at": "2026-09-01T13:02:41.044843"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13504,6 +13504,11 @@
         {
           "title": "amplify_domains",
           "slug": "amplify_domains",
+          "subcategory": ""
+        },
+        {
+          "title": "amplify_webhook",
+          "slug": "amplify_webhook",
           "subcategory": ""
         },
         {
@@ -14077,6 +14082,16 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_user",
+          "slug": "appstream_user",
+          "subcategory": ""
+        },
+        {
+          "title": "appstream_users",
+          "slug": "appstream_users",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_api",
           "slug": "appsync_api",
           "subcategory": ""
@@ -14134,6 +14149,11 @@
         {
           "title": "appsync_source_api_association",
           "slug": "appsync_source_api_association",
+          "subcategory": ""
+        },
+        {
+          "title": "appsync_type",
+          "slug": "appsync_type",
           "subcategory": ""
         },
         {
@@ -14952,6 +14972,16 @@
           "subcategory": ""
         },
         {
+          "title": "bedrock_session",
+          "slug": "bedrock_session",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrock_sessions",
+          "slug": "bedrock_sessions",
+          "subcategory": ""
+        },
+        {
           "title": "billing_billing_view",
           "slug": "billing_billing_view",
           "subcategory": ""
@@ -15019,6 +15049,11 @@
         {
           "title": "budgets_budgets_actions",
           "slug": "budgets_budgets_actions",
+          "subcategory": ""
+        },
+        {
+          "title": "cases_case",
+          "slug": "cases_case",
           "subcategory": ""
         },
         {
@@ -15202,6 +15237,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_app_instance_user",
+          "slug": "chime_app_instance_user",
+          "subcategory": ""
+        },
+        {
           "title": "chime_channel_flow",
           "slug": "chime_channel_flow",
           "subcategory": ""
@@ -15289,6 +15329,11 @@
         {
           "title": "cleanrooms_privacy_budget_template",
           "slug": "cleanrooms_privacy_budget_template",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_change_set",
+          "slug": "cloudformation_change_set",
           "subcategory": ""
         },
         {
@@ -15777,6 +15822,26 @@
           "subcategory": ""
         },
         {
+          "title": "codebuild_source_credential",
+          "slug": "codebuild_source_credential",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_source_credentials",
+          "slug": "codebuild_source_credentials",
+          "subcategory": ""
+        },
+        {
+          "title": "codecommit_repositories",
+          "slug": "codecommit_repositories",
+          "subcategory": ""
+        },
+        {
+          "title": "codecommit_repository",
+          "slug": "codecommit_repository",
+          "subcategory": ""
+        },
+        {
           "title": "codeconnections_connection",
           "slug": "codeconnections_connection",
           "subcategory": ""
@@ -15784,6 +15849,16 @@
         {
           "title": "codeconnections_connections",
           "slug": "codeconnections_connections",
+          "subcategory": ""
+        },
+        {
+          "title": "codeconnections_host",
+          "slug": "codeconnections_host",
+          "subcategory": ""
+        },
+        {
+          "title": "codeconnections_hosts",
+          "slug": "codeconnections_hosts",
           "subcategory": ""
         },
         {
@@ -16472,6 +16547,16 @@
           "subcategory": ""
         },
         {
+          "title": "dataexchange_event_action",
+          "slug": "dataexchange_event_action",
+          "subcategory": ""
+        },
+        {
+          "title": "dataexchange_event_actions",
+          "slug": "dataexchange_event_actions",
+          "subcategory": ""
+        },
+        {
           "title": "datapipeline_pipeline",
           "slug": "datapipeline_pipeline",
           "subcategory": ""
@@ -16722,6 +16807,16 @@
           "subcategory": ""
         },
         {
+          "title": "dax_parameter_group",
+          "slug": "dax_parameter_group",
+          "subcategory": ""
+        },
+        {
+          "title": "dax_parameter_groups",
+          "slug": "dax_parameter_groups",
+          "subcategory": ""
+        },
+        {
           "title": "dax_subnet_group",
           "slug": "dax_subnet_group",
           "subcategory": ""
@@ -16729,6 +16824,11 @@
         {
           "title": "dax_subnet_groups",
           "slug": "dax_subnet_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "deadline_budget",
+          "slug": "deadline_budget",
           "subcategory": ""
         },
         {
@@ -16799,6 +16899,11 @@
         {
           "title": "deadline_storage_profile",
           "slug": "deadline_storage_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "deadline_worker",
+          "slug": "deadline_worker",
           "subcategory": ""
         },
         {
@@ -17067,6 +17172,16 @@
           "subcategory": ""
         },
         {
+          "title": "docdb_db_cluster_parameter_group",
+          "slug": "docdb_db_cluster_parameter_group",
+          "subcategory": ""
+        },
+        {
+          "title": "docdb_db_cluster_parameter_groups",
+          "slug": "docdb_db_cluster_parameter_groups",
+          "subcategory": ""
+        },
+        {
           "title": "docdb_db_subnet_group",
           "slug": "docdb_db_subnet_group",
           "subcategory": ""
@@ -17274,6 +17389,16 @@
         {
           "title": "ec2_flow_logs",
           "slug": "ec2_flow_logs",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_fpga_image",
+          "slug": "ec2_fpga_image",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_fpga_images",
+          "slug": "ec2_fpga_images",
           "subcategory": ""
         },
         {
@@ -18317,6 +18442,16 @@
           "subcategory": ""
         },
         {
+          "title": "ecs_daemon_task_definition",
+          "slug": "ecs_daemon_task_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_daemon_task_definitions",
+          "slug": "ecs_daemon_task_definitions",
+          "subcategory": ""
+        },
+        {
           "title": "ecs_express_gateway_service",
           "slug": "ecs_express_gateway_service",
           "subcategory": ""
@@ -19232,6 +19367,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_connection",
+          "slug": "glue_connection",
+          "subcategory": ""
+        },
+        {
           "title": "glue_crawler",
           "slug": "glue_crawler",
           "subcategory": ""
@@ -19362,6 +19502,16 @@
           "subcategory": ""
         },
         {
+          "title": "glue_session",
+          "slug": "glue_session",
+          "subcategory": ""
+        },
+        {
+          "title": "glue_sessions",
+          "slug": "glue_sessions",
+          "subcategory": ""
+        },
+        {
           "title": "glue_table_optimizer",
           "slug": "glue_table_optimizer",
           "subcategory": ""
@@ -19454,6 +19604,16 @@
         {
           "title": "groundstation_mission_profiles",
           "slug": "groundstation_mission_profiles",
+          "subcategory": ""
+        },
+        {
+          "title": "guardduty_custom_detection_rule_association",
+          "slug": "guardduty_custom_detection_rule_association",
+          "subcategory": ""
+        },
+        {
+          "title": "guardduty_custom_detection_rule_associations",
+          "slug": "guardduty_custom_detection_rule_associations",
           "subcategory": ""
         },
         {
@@ -19699,6 +19859,11 @@
         {
           "title": "identitystore_group_membership",
           "slug": "identitystore_group_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "identitystore_user",
+          "slug": "identitystore_user",
           "subcategory": ""
         },
         {
@@ -20242,6 +20407,16 @@
           "subcategory": ""
         },
         {
+          "title": "iotsecuretunneling_tunnel",
+          "slug": "iotsecuretunneling_tunnel",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsecuretunneling_tunnels",
+          "slug": "iotsecuretunneling_tunnels",
+          "subcategory": ""
+        },
+        {
           "title": "iot_security_profile",
           "slug": "iot_security_profile",
           "subcategory": ""
@@ -20349,6 +20524,16 @@
         {
           "title": "iot_software_package_versions",
           "slug": "iot_software_package_versions",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_stream",
+          "slug": "iot_stream",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_streams",
+          "slug": "iot_streams",
           "subcategory": ""
         },
         {
@@ -20707,6 +20892,11 @@
           "subcategory": ""
         },
         {
+          "title": "kendra_query_suggestions_block_list",
+          "slug": "kendra_query_suggestions_block_list",
+          "subcategory": ""
+        },
+        {
           "title": "kendraranking_execution_plan",
           "slug": "kendraranking_execution_plan",
           "subcategory": ""
@@ -20714,6 +20904,11 @@
         {
           "title": "kendraranking_execution_plans",
           "slug": "kendraranking_execution_plans",
+          "subcategory": ""
+        },
+        {
+          "title": "kendra_thesaurus",
+          "slug": "kendra_thesaurus",
           "subcategory": ""
         },
         {
@@ -20927,6 +21122,11 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_resource_policy",
+          "slug": "lambda_resource_policy",
+          "subcategory": ""
+        },
+        {
           "title": "lambda_url",
           "slug": "lambda_url",
           "subcategory": ""
@@ -21044,6 +21244,16 @@
         {
           "title": "lightsail_certificates",
           "slug": "lightsail_certificates",
+          "subcategory": ""
+        },
+        {
+          "title": "lightsail_contact_method",
+          "slug": "lightsail_contact_method",
+          "subcategory": ""
+        },
+        {
+          "title": "lightsail_contact_methods",
+          "slug": "lightsail_contact_methods",
           "subcategory": ""
         },
         {
@@ -21807,6 +22017,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediatailor_prefetch_schedule",
+          "slug": "mediatailor_prefetch_schedule",
+          "subcategory": ""
+        },
+        {
           "title": "mediatailor_source_location",
           "slug": "mediatailor_source_location",
           "subcategory": ""
@@ -21879,6 +22094,16 @@
         {
           "title": "memorydb_users",
           "slug": "memorydb_users",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_network_migration_definition",
+          "slug": "mgn_network_migration_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_network_migration_definitions",
+          "slug": "mgn_network_migration_definitions",
           "subcategory": ""
         },
         {
@@ -22527,6 +22752,16 @@
           "subcategory": ""
         },
         {
+          "title": "omics_run_cache",
+          "slug": "omics_run_cache",
+          "subcategory": ""
+        },
+        {
+          "title": "omics_run_caches",
+          "slug": "omics_run_caches",
+          "subcategory": ""
+        },
+        {
           "title": "omics_run_group",
           "slug": "omics_run_group",
           "subcategory": ""
@@ -22867,6 +23102,16 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_metric_attribution",
+          "slug": "personalize_metric_attribution",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_metric_attributions",
+          "slug": "personalize_metric_attributions",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_schema",
           "slug": "personalize_schema",
           "subcategory": ""
@@ -23057,6 +23302,16 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_flow",
+          "slug": "quicksight_flow",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_flows",
+          "slug": "quicksight_flows",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -23177,6 +23432,16 @@
           "subcategory": ""
         },
         {
+          "title": "rds_cluster_snapshot",
+          "slug": "rds_cluster_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_cluster_snapshots",
+          "slug": "rds_cluster_snapshots",
+          "subcategory": ""
+        },
+        {
           "title": "rds_custom_db_engine_version",
           "slug": "rds_custom_db_engine_version",
           "subcategory": ""
@@ -23264,6 +23529,16 @@
         {
           "title": "rds_db_shard_groups",
           "slug": "rds_db_shard_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_snapshot",
+          "slug": "rds_db_snapshot",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_snapshots",
+          "slug": "rds_db_snapshots",
           "subcategory": ""
         },
         {
@@ -24697,6 +24972,16 @@
           "subcategory": ""
         },
         {
+          "title": "sdb_domain",
+          "slug": "sdb_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "sdb_domains",
+          "slug": "sdb_domains",
+          "subcategory": ""
+        },
+        {
           "title": "secretsmanager_resource_policies",
           "slug": "secretsmanager_resource_policies",
           "subcategory": ""
@@ -25832,6 +26117,16 @@
           "subcategory": ""
         },
         {
+          "title": "supportauthz_support_permit",
+          "slug": "supportauthz_support_permit",
+          "subcategory": ""
+        },
+        {
+          "title": "supportauthz_support_permits",
+          "slug": "supportauthz_support_permits",
+          "subcategory": ""
+        },
+        {
           "title": "synthetics_canaries",
           "slug": "synthetics_canaries",
           "subcategory": ""
@@ -25859,6 +26154,16 @@
         {
           "title": "systemsmanagersap_applications",
           "slug": "systemsmanagersap_applications",
+          "subcategory": ""
+        },
+        {
+          "title": "textract_adapter",
+          "slug": "textract_adapter",
+          "subcategory": ""
+        },
+        {
+          "title": "textract_adapters",
+          "slug": "textract_adapters",
           "subcategory": ""
         },
         {
@@ -25989,6 +26294,16 @@
         {
           "title": "transfer_workflows",
           "slug": "transfer_workflows",
+          "subcategory": ""
+        },
+        {
+          "title": "translate_parallel_data",
+          "slug": "translate_parallel_data",
+          "subcategory": ""
+        },
+        {
+          "title": "translate_parallel_data_plural",
+          "slug": "translate_parallel_data_plural",
           "subcategory": ""
         },
         {
@@ -26741,6 +27056,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_user",
+          "slug": "appstream_user",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_api",
           "slug": "appsync_api",
           "subcategory": ""
@@ -27116,6 +27436,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrock_session",
+          "slug": "bedrock_session",
+          "subcategory": ""
+        },
+        {
           "title": "billing_billing_view",
           "slug": "billing_billing_view",
           "subcategory": ""
@@ -27481,8 +27806,23 @@
           "subcategory": ""
         },
         {
+          "title": "codebuild_source_credential",
+          "slug": "codebuild_source_credential",
+          "subcategory": ""
+        },
+        {
+          "title": "codecommit_repository",
+          "slug": "codecommit_repository",
+          "subcategory": ""
+        },
+        {
           "title": "codeconnections_connection",
           "slug": "codeconnections_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "codeconnections_host",
+          "slug": "codeconnections_host",
           "subcategory": ""
         },
         {
@@ -27691,6 +28031,11 @@
           "subcategory": ""
         },
         {
+          "title": "dataexchange_event_action",
+          "slug": "dataexchange_event_action",
+          "subcategory": ""
+        },
+        {
           "title": "datapipeline_pipeline",
           "slug": "datapipeline_pipeline",
           "subcategory": ""
@@ -27778,6 +28123,11 @@
         {
           "title": "datazone_project_profile",
           "slug": "datazone_project_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "dax_parameter_group",
+          "slug": "dax_parameter_group",
           "subcategory": ""
         },
         {
@@ -27921,6 +28271,11 @@
           "subcategory": ""
         },
         {
+          "title": "docdb_db_cluster_parameter_group",
+          "slug": "docdb_db_cluster_parameter_group",
+          "subcategory": ""
+        },
+        {
           "title": "docdb_db_subnet_group",
           "slug": "docdb_db_subnet_group",
           "subcategory": ""
@@ -28023,6 +28378,11 @@
         {
           "title": "ec2_flow_log",
           "slug": "ec2_flow_log",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_fpga_image",
+          "slug": "ec2_fpga_image",
           "subcategory": ""
         },
         {
@@ -28516,6 +28876,11 @@
           "subcategory": ""
         },
         {
+          "title": "ecs_daemon_task_definition",
+          "slug": "ecs_daemon_task_definition",
+          "subcategory": ""
+        },
+        {
           "title": "ecs_service",
           "slug": "ecs_service",
           "subcategory": ""
@@ -28971,6 +29336,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_session",
+          "slug": "glue_session",
+          "subcategory": ""
+        },
+        {
           "title": "glue_trigger",
           "slug": "glue_trigger",
           "subcategory": ""
@@ -29008,6 +29378,11 @@
         {
           "title": "groundstation_mission_profile",
           "slug": "groundstation_mission_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "guardduty_custom_detection_rule_association",
+          "slug": "guardduty_custom_detection_rule_association",
           "subcategory": ""
         },
         {
@@ -29376,6 +29751,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsecuretunneling_tunnel",
+          "slug": "iotsecuretunneling_tunnel",
+          "subcategory": ""
+        },
+        {
           "title": "iot_security_profile",
           "slug": "iot_security_profile",
           "subcategory": ""
@@ -29428,6 +29808,11 @@
         {
           "title": "iot_software_package_version",
           "slug": "iot_software_package_version",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_stream",
+          "slug": "iot_stream",
           "subcategory": ""
         },
         {
@@ -29743,6 +30128,11 @@
         {
           "title": "lightsail_certificate",
           "slug": "lightsail_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "lightsail_contact_method",
+          "slug": "lightsail_contact_method",
           "subcategory": ""
         },
         {
@@ -30116,6 +30506,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_network_migration_definition",
+          "slug": "mgn_network_migration_definition",
+          "subcategory": ""
+        },
+        {
           "title": "mpa_identity_source",
           "slug": "mpa_identity_source",
           "subcategory": ""
@@ -30396,6 +30791,11 @@
           "subcategory": ""
         },
         {
+          "title": "omics_run_cache",
+          "slug": "omics_run_cache",
+          "subcategory": ""
+        },
+        {
           "title": "omics_run_group",
           "slug": "omics_run_group",
           "subcategory": ""
@@ -30526,6 +30926,11 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_metric_attribution",
+          "slug": "personalize_metric_attribution",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_schema",
           "slug": "personalize_schema",
           "subcategory": ""
@@ -30601,6 +31006,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_flow",
+          "slug": "quicksight_flow",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -30651,6 +31061,11 @@
           "subcategory": ""
         },
         {
+          "title": "rds_cluster_snapshot",
+          "slug": "rds_cluster_snapshot",
+          "subcategory": ""
+        },
+        {
           "title": "rds_custom_db_engine_version",
           "slug": "rds_custom_db_engine_version",
           "subcategory": ""
@@ -30693,6 +31108,11 @@
         {
           "title": "rds_db_shard_group",
           "slug": "rds_db_shard_group",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_snapshot",
+          "slug": "rds_db_snapshot",
           "subcategory": ""
         },
         {
@@ -31321,6 +31741,11 @@
           "subcategory": ""
         },
         {
+          "title": "sdb_domain",
+          "slug": "sdb_domain",
+          "subcategory": ""
+        },
+        {
           "title": "secretsmanager_resource_policy",
           "slug": "secretsmanager_resource_policy",
           "subcategory": ""
@@ -31821,6 +32246,11 @@
           "subcategory": ""
         },
         {
+          "title": "supportauthz_support_permit",
+          "slug": "supportauthz_support_permit",
+          "subcategory": ""
+        },
+        {
           "title": "synthetics_canary",
           "slug": "synthetics_canary",
           "subcategory": ""
@@ -31833,6 +32263,11 @@
         {
           "title": "systemsmanagersap_application",
           "slug": "systemsmanagersap_application",
+          "subcategory": ""
+        },
+        {
+          "title": "textract_adapter",
+          "slug": "textract_adapter",
           "subcategory": ""
         },
         {
@@ -31893,6 +32328,11 @@
         {
           "title": "transfer_workflow",
           "slug": "transfer_workflow",
+          "subcategory": ""
+        },
+        {
+          "title": "translate_parallel_data",
+          "slug": "translate_parallel_data",
           "subcategory": ""
         },
         {
@@ -32167,6 +32607,11 @@
         {
           "title": "amplify_domain",
           "slug": "amplify_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "amplify_webhook",
+          "slug": "amplify_webhook",
           "subcategory": ""
         },
         {
@@ -32540,6 +32985,11 @@
           "subcategory": ""
         },
         {
+          "title": "appstream_user",
+          "slug": "appstream_user",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_api",
           "slug": "appsync_api",
           "subcategory": ""
@@ -32582,6 +33032,11 @@
         {
           "title": "appsync_source_api_association",
           "slug": "appsync_source_api_association",
+          "subcategory": ""
+        },
+        {
+          "title": "appsync_type",
+          "slug": "appsync_type",
           "subcategory": ""
         },
         {
@@ -33040,6 +33495,11 @@
           "subcategory": ""
         },
         {
+          "title": "bedrock_session",
+          "slug": "bedrock_session",
+          "subcategory": ""
+        },
+        {
           "title": "billing_billing_view",
           "slug": "billing_billing_view",
           "subcategory": ""
@@ -33072,6 +33532,11 @@
         {
           "title": "budgets_budgets_action",
           "slug": "budgets_budgets_action",
+          "subcategory": ""
+        },
+        {
+          "title": "cases_case",
+          "slug": "cases_case",
           "subcategory": ""
         },
         {
@@ -33180,6 +33645,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_app_instance_user",
+          "slug": "chime_app_instance_user",
+          "subcategory": ""
+        },
+        {
           "title": "chime_channel_flow",
           "slug": "chime_channel_flow",
           "subcategory": ""
@@ -33237,6 +33707,11 @@
         {
           "title": "cleanrooms_privacy_budget_template",
           "slug": "cleanrooms_privacy_budget_template",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudformation_change_set",
+          "slug": "cloudformation_change_set",
           "subcategory": ""
         },
         {
@@ -33490,8 +33965,23 @@
           "subcategory": ""
         },
         {
+          "title": "codebuild_source_credential",
+          "slug": "codebuild_source_credential",
+          "subcategory": ""
+        },
+        {
+          "title": "codecommit_repository",
+          "slug": "codecommit_repository",
+          "subcategory": ""
+        },
+        {
           "title": "codeconnections_connection",
           "slug": "codeconnections_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "codeconnections_host",
+          "slug": "codeconnections_host",
           "subcategory": ""
         },
         {
@@ -33970,6 +34460,11 @@
           "subcategory": ""
         },
         {
+          "title": "dataexchange_event_action",
+          "slug": "dataexchange_event_action",
+          "subcategory": ""
+        },
+        {
           "title": "datapipeline_pipeline",
           "slug": "datapipeline_pipeline",
           "subcategory": ""
@@ -34130,8 +34625,18 @@
           "subcategory": ""
         },
         {
+          "title": "dax_parameter_group",
+          "slug": "dax_parameter_group",
+          "subcategory": ""
+        },
+        {
           "title": "dax_subnet_group",
           "slug": "dax_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "deadline_budget",
+          "slug": "deadline_budget",
           "subcategory": ""
         },
         {
@@ -34187,6 +34692,11 @@
         {
           "title": "deadline_storage_profile",
           "slug": "deadline_storage_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "deadline_worker",
+          "slug": "deadline_worker",
           "subcategory": ""
         },
         {
@@ -34335,6 +34845,11 @@
           "subcategory": ""
         },
         {
+          "title": "docdb_db_cluster_parameter_group",
+          "slug": "docdb_db_cluster_parameter_group",
+          "subcategory": ""
+        },
+        {
           "title": "docdb_db_subnet_group",
           "slug": "docdb_db_subnet_group",
           "subcategory": ""
@@ -34437,6 +34952,11 @@
         {
           "title": "ec2_flow_log",
           "slug": "ec2_flow_log",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_fpga_image",
+          "slug": "ec2_fpga_image",
           "subcategory": ""
         },
         {
@@ -34990,6 +35510,11 @@
           "subcategory": ""
         },
         {
+          "title": "ecs_daemon_task_definition",
+          "slug": "ecs_daemon_task_definition",
+          "subcategory": ""
+        },
+        {
           "title": "ecs_express_gateway_service",
           "slug": "ecs_express_gateway_service",
           "subcategory": ""
@@ -35495,6 +36020,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_connection",
+          "slug": "glue_connection",
+          "subcategory": ""
+        },
+        {
           "title": "glue_crawler",
           "slug": "glue_crawler",
           "subcategory": ""
@@ -35570,6 +36100,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_session",
+          "slug": "glue_session",
+          "subcategory": ""
+        },
+        {
           "title": "glue_table_optimizer",
           "slug": "glue_table_optimizer",
           "subcategory": ""
@@ -35622,6 +36157,11 @@
         {
           "title": "groundstation_mission_profile",
           "slug": "groundstation_mission_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "guardduty_custom_detection_rule_association",
+          "slug": "guardduty_custom_detection_rule_association",
           "subcategory": ""
         },
         {
@@ -35762,6 +36302,11 @@
         {
           "title": "identitystore_group_membership",
           "slug": "identitystore_group_membership",
+          "subcategory": ""
+        },
+        {
+          "title": "identitystore_user",
+          "slug": "identitystore_user",
           "subcategory": ""
         },
         {
@@ -36045,6 +36590,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsecuretunneling_tunnel",
+          "slug": "iotsecuretunneling_tunnel",
+          "subcategory": ""
+        },
+        {
           "title": "iot_security_profile",
           "slug": "iot_security_profile",
           "subcategory": ""
@@ -36097,6 +36647,11 @@
         {
           "title": "iot_software_package_version",
           "slug": "iot_software_package_version",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_stream",
+          "slug": "iot_stream",
           "subcategory": ""
         },
         {
@@ -36285,8 +36840,18 @@
           "subcategory": ""
         },
         {
+          "title": "kendra_query_suggestions_block_list",
+          "slug": "kendra_query_suggestions_block_list",
+          "subcategory": ""
+        },
+        {
           "title": "kendraranking_execution_plan",
           "slug": "kendraranking_execution_plan",
+          "subcategory": ""
+        },
+        {
+          "title": "kendra_thesaurus",
+          "slug": "kendra_thesaurus",
           "subcategory": ""
         },
         {
@@ -36415,6 +36980,11 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_resource_policy",
+          "slug": "lambda_resource_policy",
+          "subcategory": ""
+        },
+        {
           "title": "lambda_url",
           "slug": "lambda_url",
           "subcategory": ""
@@ -36477,6 +37047,11 @@
         {
           "title": "lightsail_certificate",
           "slug": "lightsail_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "lightsail_contact_method",
+          "slug": "lightsail_contact_method",
           "subcategory": ""
         },
         {
@@ -36895,6 +37470,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediatailor_prefetch_schedule",
+          "slug": "mediatailor_prefetch_schedule",
+          "subcategory": ""
+        },
+        {
           "title": "mediatailor_source_location",
           "slug": "mediatailor_source_location",
           "subcategory": ""
@@ -36932,6 +37512,11 @@
         {
           "title": "memorydb_user",
           "slug": "memorydb_user",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_network_migration_definition",
+          "slug": "mgn_network_migration_definition",
           "subcategory": ""
         },
         {
@@ -37295,6 +37880,11 @@
           "subcategory": ""
         },
         {
+          "title": "omics_run_cache",
+          "slug": "omics_run_cache",
+          "subcategory": ""
+        },
+        {
           "title": "omics_run_group",
           "slug": "omics_run_group",
           "subcategory": ""
@@ -37505,6 +38095,11 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_metric_attribution",
+          "slug": "personalize_metric_attribution",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_schema",
           "slug": "personalize_schema",
           "subcategory": ""
@@ -37620,6 +38215,11 @@
           "subcategory": ""
         },
         {
+          "title": "quicksight_flow",
+          "slug": "quicksight_flow",
+          "subcategory": ""
+        },
+        {
           "title": "quicksight_folder",
           "slug": "quicksight_folder",
           "subcategory": ""
@@ -37690,6 +38290,11 @@
           "subcategory": ""
         },
         {
+          "title": "rds_cluster_snapshot",
+          "slug": "rds_cluster_snapshot",
+          "subcategory": ""
+        },
+        {
           "title": "rds_custom_db_engine_version",
           "slug": "rds_custom_db_engine_version",
           "subcategory": ""
@@ -37732,6 +38337,11 @@
         {
           "title": "rds_db_shard_group",
           "slug": "rds_db_shard_group",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_snapshot",
+          "slug": "rds_db_snapshot",
           "subcategory": ""
         },
         {
@@ -38540,6 +39150,11 @@
           "subcategory": ""
         },
         {
+          "title": "sdb_domain",
+          "slug": "sdb_domain",
+          "subcategory": ""
+        },
+        {
           "title": "secretsmanager_resource_policy",
           "slug": "secretsmanager_resource_policy",
           "subcategory": ""
@@ -39175,6 +39790,11 @@
           "subcategory": ""
         },
         {
+          "title": "supportauthz_support_permit",
+          "slug": "supportauthz_support_permit",
+          "subcategory": ""
+        },
+        {
           "title": "synthetics_canary",
           "slug": "synthetics_canary",
           "subcategory": ""
@@ -39187,6 +39807,11 @@
         {
           "title": "systemsmanagersap_application",
           "slug": "systemsmanagersap_application",
+          "subcategory": ""
+        },
+        {
+          "title": "textract_adapter",
+          "slug": "textract_adapter",
           "subcategory": ""
         },
         {
@@ -39257,6 +39882,11 @@
         {
           "title": "transfer_workflow",
           "slug": "transfer_workflow",
+          "subcategory": ""
+        },
+        {
+          "title": "translate_parallel_data",
+          "slug": "translate_parallel_data",
           "subcategory": ""
         },
         {
@@ -39566,7 +40196,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:16.946493"
+    "docs_refreshed_at": "2026-09-01T13:02:41.511758"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -40000,7 +40630,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:17.410747"
+    "docs_refreshed_at": "2026-09-01T13:02:41.862477"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -41424,6 +42054,11 @@
           "subcategory": "Compute"
         },
         {
+          "title": "playwright_workspace",
+          "slug": "playwright_workspace",
+          "subcategory": "Load Test"
+        },
+        {
           "title": "policy_assignment",
           "slug": "policy_assignment",
           "subcategory": "Policy"
@@ -42177,6 +42812,11 @@
           "subcategory": "Cognitive Services"
         },
         {
+          "title": "cognitive_deployment",
+          "slug": "cognitive_deployment",
+          "subcategory": "Cognitive Services"
+        },
+        {
           "title": "federated_identity_credential",
           "slug": "federated_identity_credential",
           "subcategory": "Authorization"
@@ -42310,6 +42950,11 @@
           "title": "network_security_rule",
           "slug": "network_security_rule",
           "subcategory": "Network"
+        },
+        {
+          "title": "playwright_workspace",
+          "slug": "playwright_workspace",
+          "subcategory": "Load Test"
         },
         {
           "title": "private_dns_a_record",
@@ -46236,6 +46881,11 @@
           "subcategory": "Authorization"
         },
         {
+          "title": "playwright_workspace",
+          "slug": "playwright_workspace",
+          "subcategory": "Load Test"
+        },
+        {
           "title": "point_to_site_vpn_gateway",
           "slug": "point_to_site_vpn_gateway",
           "subcategory": "Network"
@@ -48072,7 +48722,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:17.942199"
+    "docs_refreshed_at": "2026-09-01T13:02:42.253858"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -48421,7 +49071,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:18.384766"
+    "docs_refreshed_at": "2026-09-01T13:02:42.610754"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -57552,7 +58202,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:18.925586"
+    "docs_refreshed_at": "2026-09-01T13:02:43.042136"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -66416,7 +67066,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-08-27T18:51:19.464370"
+    "docs_refreshed_at": "2026-09-01T13:02:43.471729"
   },
   "4ek0/neko": {
     "docs": {

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-27T18:52:30.152186",
+  "generated_at": "2026-09-01T13:03:53.870003",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "3ede352a2267761c038ee278181223b48b5eeb1d"
+    "commit": "b4a931302ddb5ab8457c869fac5a4ceb21a5ff5f"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 111,
+    "file_count": 136,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -320,6 +320,31 @@
         "registrations": 1
       },
       {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_analysis_rule.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_assessment_rule.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_auto_labeling_rule.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_qa_scorecard.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_view.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
         "type": "MMv1",
         "registrations": 1
@@ -436,6 +461,56 @@
       },
       {
         "file": "google/services/monitoring/list_monitoring_alert_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_authz_policy.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group_association.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group_association.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -563,9 +638,59 @@
         "file": "google/services/storage/list_storage_hmac_key.go",
         "type": "MMv1",
         "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_dataset.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_deployment_resource_pool.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_evaluation_metric.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_feature_group.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_feature_online_store.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_featurestore.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_index.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_tensorboard.go",
+        "type": "MMv1",
+        "registrations": 1
       }
     ],
-    "sha256": "40bc1c986690b7cc6e95feaeed56ad0b0bcf4c5d9678a95535c5ced76ce5d0ec",
+    "sha256": "25fbcbe2dcb683dc98514f56d46c4fac4ed46ceae9ce57e5f81457055c2d9edb",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -988,6 +1113,41 @@
         "line": 40
       },
       {
+        "name": "google_contact_center_insights_analysis_rule",
+        "package": "ContactCenterInsights",
+        "constructor": "NewContactCenterInsightsAnalysisRuleListResource",
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_analysis_rule.go",
+        "line": 40
+      },
+      {
+        "name": "google_contact_center_insights_assessment_rule",
+        "package": "ContactCenterInsights",
+        "constructor": "NewContactCenterInsightsAssessmentRuleListResource",
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_assessment_rule.go",
+        "line": 40
+      },
+      {
+        "name": "google_contact_center_insights_auto_labeling_rule",
+        "package": "ContactCenterInsights",
+        "constructor": "NewContactCenterInsightsAutoLabelingRuleListResource",
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_auto_labeling_rule.go",
+        "line": 40
+      },
+      {
+        "name": "google_contact_center_insights_qa_scorecard",
+        "package": "ContactCenterInsights",
+        "constructor": "NewContactCenterInsightsQaScorecardListResource",
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_qa_scorecard.go",
+        "line": 40
+      },
+      {
+        "name": "google_contact_center_insights_view",
+        "package": "ContactCenterInsights",
+        "constructor": "NewContactCenterInsightsViewListResource",
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_view.go",
+        "line": 40
+      },
+      {
         "name": "google_discovery_engine_assistant",
         "package": "DiscoveryEngine",
         "constructor": "NewDiscoveryEngineAssistantListResource",
@@ -1142,6 +1302,76 @@
         "line": 40
       },
       {
+        "name": "google_network_security_authz_policy",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityAuthzPolicyListResource",
+        "file": "google/services/networksecurity/list_network_security_authz_policy.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_intercept_deployment",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityInterceptDeploymentListResource",
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_intercept_deployment_group",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityInterceptDeploymentGroupListResource",
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_intercept_endpoint_group",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityInterceptEndpointGroupListResource",
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_intercept_endpoint_group_association",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityInterceptEndpointGroupAssociationListResource",
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group_association.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_mirroring_deployment",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityMirroringDeploymentListResource",
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_mirroring_deployment_group",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityMirroringDeploymentGroupListResource",
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_mirroring_endpoint",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityMirroringEndpointListResource",
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_mirroring_endpoint_group",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityMirroringEndpointGroupListResource",
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_network_security_mirroring_endpoint_group_association",
+        "package": "NetworkSecurity",
+        "constructor": "NewNetworkSecurityMirroringEndpointGroupAssociationListResource",
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group_association.go",
+        "line": 40
+      },
+      {
         "name": "google_network_services_authz_extension",
         "package": "NetworkServices",
         "constructor": "NewNetworkServicesAuthzExtensionListResource",
@@ -1245,6 +1475,76 @@
         "constructor": "NewStorageHmacKeyListResource",
         "file": "google/services/storage/list_storage_hmac_key.go",
         "line": 40
+      },
+      {
+        "name": "google_vertex_ai_dataset",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIDatasetListResource",
+        "file": "google/services/vertexai/list_vertex_ai_dataset.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_deployment_resource_pool",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIDeploymentResourcePoolListResource",
+        "file": "google/services/vertexai/list_vertex_ai_deployment_resource_pool.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_evaluation_metric",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIEvaluationMetricListResource",
+        "file": "google/services/vertexai/list_vertex_ai_evaluation_metric.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_feature_group",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIFeatureGroupListResource",
+        "file": "google/services/vertexai/list_vertex_ai_feature_group.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_feature_online_store",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIFeatureOnlineStoreListResource",
+        "file": "google/services/vertexai/list_vertex_ai_feature_online_store.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_featurestore",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIFeaturestoreListResource",
+        "file": "google/services/vertexai/list_vertex_ai_featurestore.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_index",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIIndexListResource",
+        "file": "google/services/vertexai/list_vertex_ai_index.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_persistent_resource",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIPersistentResourceListResource",
+        "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_reasoning_engine",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIReasoningEngineListResource",
+        "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_tensorboard",
+        "package": "VertexAI",
+        "constructor": "NewVertexAITensorboardListResource",
+        "file": "google/services/vertexai/list_vertex_ai_tensorboard.go",
+        "line": 40
       }
     ],
     "handwritten": [
@@ -1267,7 +1567,7 @@
         "package": "compute",
         "constructor": "NewGoogleComputeInstanceListResource",
         "file": "google/services/compute/list_google_compute_instance.go",
-        "line": 38
+        "line": 36
       },
       {
         "name": "google_dns_managed_zone",
@@ -1673,6 +1973,33 @@
         "constructor": "NewGoogleComputeInstanceListResource"
       }
     ],
+    "contactcenterinsights": [
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_analysis_rule.go",
+        "type_name": "google_contact_center_insights_analysis_rule",
+        "constructor": "NewContactCenterInsightsAnalysisRuleListResource"
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_assessment_rule.go",
+        "type_name": "google_contact_center_insights_assessment_rule",
+        "constructor": "NewContactCenterInsightsAssessmentRuleListResource"
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_auto_labeling_rule.go",
+        "type_name": "google_contact_center_insights_auto_labeling_rule",
+        "constructor": "NewContactCenterInsightsAutoLabelingRuleListResource"
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_qa_scorecard.go",
+        "type_name": "google_contact_center_insights_qa_scorecard",
+        "constructor": "NewContactCenterInsightsQaScorecardListResource"
+      },
+      {
+        "file": "google/services/contactcenterinsights/list_contact_center_insights_view.go",
+        "type_name": "google_contact_center_insights_view",
+        "constructor": "NewContactCenterInsightsViewListResource"
+      }
+    ],
     "discoveryengine": [
       {
         "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
@@ -1803,6 +2130,58 @@
         "constructor": "NewMonitoringAlertPolicyListResource"
       }
     ],
+    "networksecurity": [
+      {
+        "file": "google/services/networksecurity/list_network_security_authz_policy.go",
+        "type_name": "google_network_security_authz_policy",
+        "constructor": "NewNetworkSecurityAuthzPolicyListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment.go",
+        "type_name": "google_network_security_intercept_deployment",
+        "constructor": "NewNetworkSecurityInterceptDeploymentListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_deployment_group.go",
+        "type_name": "google_network_security_intercept_deployment_group",
+        "constructor": "NewNetworkSecurityInterceptDeploymentGroupListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group.go",
+        "type_name": "google_network_security_intercept_endpoint_group",
+        "constructor": "NewNetworkSecurityInterceptEndpointGroupListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group_association.go",
+        "type_name": "google_network_security_intercept_endpoint_group_association",
+        "constructor": "NewNetworkSecurityInterceptEndpointGroupAssociationListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment.go",
+        "type_name": "google_network_security_mirroring_deployment",
+        "constructor": "NewNetworkSecurityMirroringDeploymentListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_deployment_group.go",
+        "type_name": "google_network_security_mirroring_deployment_group",
+        "constructor": "NewNetworkSecurityMirroringDeploymentGroupListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint.go",
+        "type_name": "google_network_security_mirroring_endpoint",
+        "constructor": "NewNetworkSecurityMirroringEndpointListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group.go",
+        "type_name": "google_network_security_mirroring_endpoint_group",
+        "constructor": "NewNetworkSecurityMirroringEndpointGroupListResource"
+      },
+      {
+        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group_association.go",
+        "type_name": "google_network_security_mirroring_endpoint_group_association",
+        "constructor": "NewNetworkSecurityMirroringEndpointGroupAssociationListResource"
+      }
+    ],
     "networkservices": [
       {
         "file": "google/services/networkservices/list_network_services_authz_extension.go",
@@ -1919,6 +2298,58 @@
         "type_name": "google_storage_hmac_key",
         "constructor": "NewStorageHmacKeyListResource"
       }
+    ],
+    "vertexai": [
+      {
+        "file": "google/services/vertexai/list_vertex_ai_dataset.go",
+        "type_name": "google_vertex_ai_dataset",
+        "constructor": "NewVertexAIDatasetListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_deployment_resource_pool.go",
+        "type_name": "google_vertex_ai_deployment_resource_pool",
+        "constructor": "NewVertexAIDeploymentResourcePoolListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_evaluation_metric.go",
+        "type_name": "google_vertex_ai_evaluation_metric",
+        "constructor": "NewVertexAIEvaluationMetricListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_feature_group.go",
+        "type_name": "google_vertex_ai_feature_group",
+        "constructor": "NewVertexAIFeatureGroupListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_feature_online_store.go",
+        "type_name": "google_vertex_ai_feature_online_store",
+        "constructor": "NewVertexAIFeatureOnlineStoreListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_featurestore.go",
+        "type_name": "google_vertex_ai_featurestore",
+        "constructor": "NewVertexAIFeaturestoreListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_index.go",
+        "type_name": "google_vertex_ai_index",
+        "constructor": "NewVertexAIIndexListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
+        "type_name": "google_vertex_ai_persistent_resource",
+        "constructor": "NewVertexAIPersistentResourceListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
+        "type_name": "google_vertex_ai_reasoning_engine",
+        "constructor": "NewVertexAIReasoningEngineListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_tensorboard.go",
+        "type_name": "google_vertex_ai_tensorboard",
+        "constructor": "NewVertexAITensorboardListResource"
+      }
     ]
   },
   "cross_check": {
@@ -1983,6 +2414,11 @@
       "NewComputeTargetTcpProxyListResource",
       "NewComputeVpnGatewayListResource",
       "NewComputeWireGroupListResource",
+      "NewContactCenterInsightsAnalysisRuleListResource",
+      "NewContactCenterInsightsAssessmentRuleListResource",
+      "NewContactCenterInsightsAutoLabelingRuleListResource",
+      "NewContactCenterInsightsQaScorecardListResource",
+      "NewContactCenterInsightsViewListResource",
       "NewDiscoveryEngineAssistantListResource",
       "NewDiscoveryEngineChatEngineListResource",
       "NewDiscoveryEngineCmekConfigListResource",
@@ -2016,6 +2452,16 @@
       "NewMigrationCenterReportConfigListResource",
       "NewMigrationCenterSourceListResource",
       "NewMonitoringAlertPolicyListResource",
+      "NewNetworkSecurityAuthzPolicyListResource",
+      "NewNetworkSecurityInterceptDeploymentGroupListResource",
+      "NewNetworkSecurityInterceptDeploymentListResource",
+      "NewNetworkSecurityInterceptEndpointGroupAssociationListResource",
+      "NewNetworkSecurityInterceptEndpointGroupListResource",
+      "NewNetworkSecurityMirroringDeploymentGroupListResource",
+      "NewNetworkSecurityMirroringDeploymentListResource",
+      "NewNetworkSecurityMirroringEndpointGroupAssociationListResource",
+      "NewNetworkSecurityMirroringEndpointGroupListResource",
+      "NewNetworkSecurityMirroringEndpointListResource",
       "NewNetworkServicesAuthzExtensionListResource",
       "NewNetworkServicesMulticastConsumerAssociationListResource",
       "NewNetworkServicesMulticastDomainActivationListResource",
@@ -2033,7 +2479,17 @@
       "NewSQLDatabaseListResource",
       "NewSecretManagerSecretListResource",
       "NewServiceAccountIamMemberListResource",
-      "NewStorageHmacKeyListResource"
+      "NewStorageHmacKeyListResource",
+      "NewVertexAIDatasetListResource",
+      "NewVertexAIDeploymentResourcePoolListResource",
+      "NewVertexAIEvaluationMetricListResource",
+      "NewVertexAIFeatureGroupListResource",
+      "NewVertexAIFeatureOnlineStoreListResource",
+      "NewVertexAIFeaturestoreListResource",
+      "NewVertexAIIndexListResource",
+      "NewVertexAIPersistentResourceListResource",
+      "NewVertexAIReasoningEngineListResource",
+      "NewVertexAITensorboardListResource"
     ],
     "file_constructors": [
       "NewApigeeAddonsConfigListResource",
@@ -2095,6 +2551,11 @@
       "NewComputeTargetTcpProxyListResource",
       "NewComputeVpnGatewayListResource",
       "NewComputeWireGroupListResource",
+      "NewContactCenterInsightsAnalysisRuleListResource",
+      "NewContactCenterInsightsAssessmentRuleListResource",
+      "NewContactCenterInsightsAutoLabelingRuleListResource",
+      "NewContactCenterInsightsQaScorecardListResource",
+      "NewContactCenterInsightsViewListResource",
       "NewDiscoveryEngineAssistantListResource",
       "NewDiscoveryEngineChatEngineListResource",
       "NewDiscoveryEngineCmekConfigListResource",
@@ -2127,6 +2588,16 @@
       "NewMigrationCenterReportConfigListResource",
       "NewMigrationCenterSourceListResource",
       "NewMonitoringAlertPolicyListResource",
+      "NewNetworkSecurityAuthzPolicyListResource",
+      "NewNetworkSecurityInterceptDeploymentGroupListResource",
+      "NewNetworkSecurityInterceptDeploymentListResource",
+      "NewNetworkSecurityInterceptEndpointGroupAssociationListResource",
+      "NewNetworkSecurityInterceptEndpointGroupListResource",
+      "NewNetworkSecurityMirroringDeploymentGroupListResource",
+      "NewNetworkSecurityMirroringDeploymentListResource",
+      "NewNetworkSecurityMirroringEndpointGroupAssociationListResource",
+      "NewNetworkSecurityMirroringEndpointGroupListResource",
+      "NewNetworkSecurityMirroringEndpointListResource",
       "NewNetworkServicesAuthzExtensionListResource",
       "NewNetworkServicesMulticastConsumerAssociationListResource",
       "NewNetworkServicesMulticastDomainActivationListResource",
@@ -2141,7 +2612,17 @@
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
       "NewSecretManagerSecretListResource",
-      "NewStorageHmacKeyListResource"
+      "NewStorageHmacKeyListResource",
+      "NewVertexAIDatasetListResource",
+      "NewVertexAIDeploymentResourcePoolListResource",
+      "NewVertexAIEvaluationMetricListResource",
+      "NewVertexAIFeatureGroupListResource",
+      "NewVertexAIFeatureOnlineStoreListResource",
+      "NewVertexAIFeaturestoreListResource",
+      "NewVertexAIIndexListResource",
+      "NewVertexAIPersistentResourceListResource",
+      "NewVertexAIReasoningEngineListResource",
+      "NewVertexAITensorboardListResource"
     ],
     "file_type_names": [
       "google_apigee_addons_config",
@@ -2205,6 +2686,11 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_contact_center_insights_analysis_rule",
+      "google_contact_center_insights_assessment_rule",
+      "google_contact_center_insights_auto_labeling_rule",
+      "google_contact_center_insights_qa_scorecard",
+      "google_contact_center_insights_view",
       "google_discovery_engine_assistant",
       "google_discovery_engine_chat_engine",
       "google_discovery_engine_cmek_config",
@@ -2229,6 +2715,16 @@
       "google_migration_center_report_config",
       "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_security_authz_policy",
+      "google_network_security_intercept_deployment",
+      "google_network_security_intercept_deployment_group",
+      "google_network_security_intercept_endpoint_group",
+      "google_network_security_intercept_endpoint_group_association",
+      "google_network_security_mirroring_deployment",
+      "google_network_security_mirroring_deployment_group",
+      "google_network_security_mirroring_endpoint",
+      "google_network_security_mirroring_endpoint_group",
+      "google_network_security_mirroring_endpoint_group_association",
       "google_network_services_authz_extension",
       "google_network_services_multicast_consumer_association",
       "google_network_services_multicast_domain",
@@ -2249,7 +2745,17 @@
       "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
-      "google_storage_hmac_key"
+      "google_storage_hmac_key",
+      "google_vertex_ai_dataset",
+      "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_metric",
+      "google_vertex_ai_feature_group",
+      "google_vertex_ai_feature_online_store",
+      "google_vertex_ai_featurestore",
+      "google_vertex_ai_index",
+      "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_reasoning_engine",
+      "google_vertex_ai_tensorboard"
     ],
     "missing_files_for_registration": [
       "NewBigqueryDatasetIamMemberListResource",
@@ -2259,12 +2765,12 @@
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 111,
-    "file_type_name_count": 106,
+    "registration_count": 136,
+    "file_type_name_count": 131,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 17,
+    "services_with_list": 20,
     "rows": [
       {
         "service": "compute",
@@ -2275,7 +2781,15 @@
         "list_resources": 13
       },
       {
+        "service": "networksecurity",
+        "list_resources": 10
+      },
+      {
         "service": "networkservices",
+        "list_resources": 10
+      },
+      {
+        "service": "vertexai",
         "list_resources": 10
       },
       {
@@ -2285,6 +2799,10 @@
       {
         "service": "migrationcenter",
         "list_resources": 7
+      },
+      {
+        "service": "contactcenterinsights",
+        "list_resources": 5
       },
       {
         "service": "resourcemanager",
@@ -2421,6 +2939,15 @@
           "google_compute_wire_group"
         ]
       },
+      "contactcenterinsights": {
+        "list_resources": [
+          "google_contact_center_insights_analysis_rule",
+          "google_contact_center_insights_assessment_rule",
+          "google_contact_center_insights_auto_labeling_rule",
+          "google_contact_center_insights_qa_scorecard",
+          "google_contact_center_insights_view"
+        ]
+      },
       "discoveryengine": {
         "list_resources": [
           "google_discovery_engine_assistant",
@@ -2463,6 +2990,20 @@
       "monitoring": {
         "list_resources": [
           "google_monitoring_alert_policy"
+        ]
+      },
+      "networksecurity": {
+        "list_resources": [
+          "google_network_security_authz_policy",
+          "google_network_security_intercept_deployment",
+          "google_network_security_intercept_deployment_group",
+          "google_network_security_intercept_endpoint_group",
+          "google_network_security_intercept_endpoint_group_association",
+          "google_network_security_mirroring_deployment",
+          "google_network_security_mirroring_deployment_group",
+          "google_network_security_mirroring_endpoint",
+          "google_network_security_mirroring_endpoint_group",
+          "google_network_security_mirroring_endpoint_group_association"
         ]
       },
       "networkservices": {
@@ -2509,14 +3050,28 @@
           "google_storage_bucket",
           "google_storage_hmac_key"
         ]
+      },
+      "vertexai": {
+        "list_resources": [
+          "google_vertex_ai_dataset",
+          "google_vertex_ai_deployment_resource_pool",
+          "google_vertex_ai_evaluation_metric",
+          "google_vertex_ai_feature_group",
+          "google_vertex_ai_feature_online_store",
+          "google_vertex_ai_featurestore",
+          "google_vertex_ai_index",
+          "google_vertex_ai_persistent_resource",
+          "google_vertex_ai_reasoning_engine",
+          "google_vertex_ai_tensorboard"
+        ]
       }
     }
   },
   "validation": {
     "matches": false,
     "dashboard_list_resources": 101,
-    "code_list_resources": 106,
-    "registered_count": 111,
+    "code_list_resources": 131,
+    "registered_count": 136,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_bigquery_dataset",
@@ -2683,6 +3238,11 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_contact_center_insights_analysis_rule",
+      "google_contact_center_insights_assessment_rule",
+      "google_contact_center_insights_auto_labeling_rule",
+      "google_contact_center_insights_qa_scorecard",
+      "google_contact_center_insights_view",
       "google_discovery_engine_assistant",
       "google_discovery_engine_chat_engine",
       "google_discovery_engine_cmek_config",
@@ -2707,6 +3267,16 @@
       "google_migration_center_report_config",
       "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_security_authz_policy",
+      "google_network_security_intercept_deployment",
+      "google_network_security_intercept_deployment_group",
+      "google_network_security_intercept_endpoint_group",
+      "google_network_security_intercept_endpoint_group_association",
+      "google_network_security_mirroring_deployment",
+      "google_network_security_mirroring_deployment_group",
+      "google_network_security_mirroring_endpoint",
+      "google_network_security_mirroring_endpoint_group",
+      "google_network_security_mirroring_endpoint_group_association",
       "google_network_services_authz_extension",
       "google_network_services_multicast_consumer_association",
       "google_network_services_multicast_domain",
@@ -2727,7 +3297,17 @@
       "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
-      "google_storage_hmac_key"
+      "google_storage_hmac_key",
+      "google_vertex_ai_dataset",
+      "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_metric",
+      "google_vertex_ai_feature_group",
+      "google_vertex_ai_feature_online_store",
+      "google_vertex_ai_featurestore",
+      "google_vertex_ai_index",
+      "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_reasoning_engine",
+      "google_vertex_ai_tensorboard"
     ],
     "only_in_registry": [
       "google_bigquery_dataset_iam_member",
@@ -2752,7 +3332,32 @@
       "google_colab_notebook_execution",
       "google_colab_runtime",
       "google_colab_runtime_template",
-      "google_colab_schedule"
+      "google_colab_schedule",
+      "google_contact_center_insights_analysis_rule",
+      "google_contact_center_insights_assessment_rule",
+      "google_contact_center_insights_auto_labeling_rule",
+      "google_contact_center_insights_qa_scorecard",
+      "google_contact_center_insights_view",
+      "google_network_security_authz_policy",
+      "google_network_security_intercept_deployment",
+      "google_network_security_intercept_deployment_group",
+      "google_network_security_intercept_endpoint_group",
+      "google_network_security_intercept_endpoint_group_association",
+      "google_network_security_mirroring_deployment",
+      "google_network_security_mirroring_deployment_group",
+      "google_network_security_mirroring_endpoint",
+      "google_network_security_mirroring_endpoint_group",
+      "google_network_security_mirroring_endpoint_group_association",
+      "google_vertex_ai_dataset",
+      "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_metric",
+      "google_vertex_ai_feature_group",
+      "google_vertex_ai_feature_online_store",
+      "google_vertex_ai_featurestore",
+      "google_vertex_ai_index",
+      "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_reasoning_engine",
+      "google_vertex_ai_tensorboard"
     ],
     "registry_is_subset": false
   }

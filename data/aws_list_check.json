@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T18:52:22.674625",
+  "generated_at": "2026-09-01T13:03:48.319089",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "411274a0ea4143f52f3edb5df2cb5bc2dd9e46b8"
+    "commit": "aecae47912b314dc7a68f5f026254aa40047b846"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -23,7 +23,7 @@
     "parsed": {
       "overall": {
         "percent": 12,
-        "implemented": 213,
+        "implemented": 217,
         "total": 1696
       },
       "service_count": 243,
@@ -540,8 +540,8 @@
         },
         {
           "service": "ec2",
-          "percent": 13,
-          "implemented": 22,
+          "percent": 14,
+          "implemented": 23,
           "total": 159
         },
         {
@@ -840,8 +840,8 @@
         },
         {
           "service": "lambdamicrovms",
-          "percent": 50,
-          "implemented": 1,
+          "percent": 100,
+          "implemented": 2,
           "total": 2
         },
         {
@@ -1020,8 +1020,8 @@
         },
         {
           "service": "opensearchserverless",
-          "percent": 28,
-          "implemented": 2,
+          "percent": 57,
+          "implemented": 4,
           "total": 7
         },
         {
@@ -2618,6 +2618,7 @@
             "ec2/ebs_volume_attachment.go",
             "ec2/ec2_ami_launch_permission.go",
             "ec2/ec2_instance.go",
+            "ec2/ec2_key_pair.go",
             "ec2/ec2_launch_template.go",
             "ec2/ec2_secondary_network.go",
             "ec2/ec2_secondary_subnet.go",
@@ -3272,6 +3273,7 @@
             "lambdamicrovms/microvm.go"
           ],
           "list_resources": [
+            "lambdamicrovms/image.go",
             "lambdamicrovms/microvm.go"
           ]
         },
@@ -3630,8 +3632,10 @@
             "opensearchserverless/vpc_endpoint.go"
           ],
           "list_resources": [
+            "opensearchserverless/access_policy.go",
             "opensearchserverless/collection.go",
-            "opensearchserverless/collection_group.go"
+            "opensearchserverless/collection_group.go",
+            "opensearchserverless/lifecycle_policy.go"
           ]
         },
         "organizations": {
@@ -4678,7 +4682,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-08-27 18:52:22 UTC"
+      "last_updated": "2026-09-01 13:03:48 UTC"
     }
   },
   "service_coverage": {
@@ -4686,8 +4690,8 @@
     "top_services": [
       {
         "service": "ec2",
-        "percent": 13,
-        "implemented": 22,
+        "percent": 14,
+        "implemented": 23,
         "total": 159
       },
       {
@@ -5906,6 +5910,7 @@
           "ec2/ebs_volume_attachment.go",
           "ec2/ec2_ami_launch_permission.go",
           "ec2/ec2_instance.go",
+          "ec2/ec2_key_pair.go",
           "ec2/ec2_launch_template.go",
           "ec2/ec2_secondary_network.go",
           "ec2/ec2_secondary_subnet.go",
@@ -6560,6 +6565,7 @@
           "lambdamicrovms/microvm.go"
         ],
         "list_resources": [
+          "lambdamicrovms/image.go",
           "lambdamicrovms/microvm.go"
         ]
       },
@@ -6918,8 +6924,10 @@
           "opensearchserverless/vpc_endpoint.go"
         ],
         "list_resources": [
+          "opensearchserverless/access_policy.go",
           "opensearchserverless/collection.go",
-          "opensearchserverless/collection_group.go"
+          "opensearchserverless/collection_group.go",
+          "opensearchserverless/lifecycle_policy.go"
         ]
       },
       "organizations": {
@@ -7970,7 +7978,7 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 210,
-    "script_implemented_list": 213,
+    "script_implemented_list": 217,
     "script_total_resources": 1696,
     "script_percent": 12
   }
