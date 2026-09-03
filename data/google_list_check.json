@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-01T13:03:53.870003",
+  "generated_at": "2026-09-03T12:08:48.074227",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "b4a931302ddb5ab8457c869fac5a4ceb21a5ff5f"
+    "commit": "76e4f5e8a902fd6927591a1295f688b24691024f"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 136,
+    "file_count": 142,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -51,6 +51,21 @@
       },
       {
         "file": "google/services/apigee/list_apigee_target_server.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/appengine/list_app_engine_domain_mapping.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/appengine/list_app_engine_service_network_settings.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/appengine/list_app_engine_service_split_traffic.go",
         "type": "MMv1",
         "registrations": 1
       },
@@ -420,6 +435,21 @@
         "registrations": 1
       },
       {
+        "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/identityplatform/list_identity_platform_oauth_idp_config.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/identityplatform/list_identity_platform_tenant.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/kms/list_kms_crypto_key_version.go",
         "type": "MMv1",
         "registrations": 1
@@ -690,12 +720,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "25fbcbe2dcb683dc98514f56d46c4fac4ed46ceae9ce57e5f81457055c2d9edb",
+    "sha256": "6adf13d0e63d72dd4ceedf11590cd7f40f9a7c686c73e491846a2de576141ed3",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 101
+    "list_resources": 114
   },
   "registrations": {
     "generated": [
@@ -760,6 +790,27 @@
         "package": "Apigee",
         "constructor": "NewApigeeTargetServerListResource",
         "file": "google/services/apigee/list_apigee_target_server.go",
+        "line": 40
+      },
+      {
+        "name": "google_app_engine_domain_mapping",
+        "package": "AppEngine",
+        "constructor": "NewAppEngineDomainMappingListResource",
+        "file": "google/services/appengine/list_app_engine_domain_mapping.go",
+        "line": 40
+      },
+      {
+        "name": "google_app_engine_service_network_settings",
+        "package": "AppEngine",
+        "constructor": "NewAppEngineServiceNetworkSettingsListResource",
+        "file": "google/services/appengine/list_app_engine_service_network_settings.go",
+        "line": 40
+      },
+      {
+        "name": "google_app_engine_service_split_traffic",
+        "package": "AppEngine",
+        "constructor": "NewAppEngineServiceSplitTrafficListResource",
+        "file": "google/services/appengine/list_app_engine_service_split_traffic.go",
         "line": 40
       },
       {
@@ -1239,6 +1290,27 @@
         "line": 40
       },
       {
+        "name": "google_identity_platform_inbound_saml_config",
+        "package": "IdentityPlatform",
+        "constructor": "NewIdentityPlatformInboundSamlConfigListResource",
+        "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_identity_platform_oauth_idp_config",
+        "package": "IdentityPlatform",
+        "constructor": "NewIdentityPlatformOauthIdpConfigListResource",
+        "file": "google/services/identityplatform/list_identity_platform_oauth_idp_config.go",
+        "line": 40
+      },
+      {
+        "name": "google_identity_platform_tenant",
+        "package": "IdentityPlatform",
+        "constructor": "NewIdentityPlatformTenantListResource",
+        "file": "google/services/identityplatform/list_identity_platform_tenant.go",
+        "line": 40
+      },
+      {
         "name": "google_kms_crypto_key_version",
         "package": "KMS",
         "constructor": "NewKMSCryptoKeyVersionListResource",
@@ -1703,6 +1775,23 @@
         "constructor": "NewApigeeTargetServerListResource"
       }
     ],
+    "appengine": [
+      {
+        "file": "google/services/appengine/list_app_engine_domain_mapping.go",
+        "type_name": "google_app_engine_domain_mapping",
+        "constructor": "NewAppEngineDomainMappingListResource"
+      },
+      {
+        "file": "google/services/appengine/list_app_engine_service_network_settings.go",
+        "type_name": "google_app_engine_service_network_settings",
+        "constructor": "NewAppEngineServiceNetworkSettingsListResource"
+      },
+      {
+        "file": "google/services/appengine/list_app_engine_service_split_traffic.go",
+        "type_name": "google_app_engine_service_split_traffic",
+        "constructor": "NewAppEngineServiceSplitTrafficListResource"
+      }
+    ],
     "bigquery": [
       {
         "file": "google/services/bigquery/list_bigquery_dataset.go",
@@ -2079,6 +2168,23 @@
         "constructor": "NewGoogleDnsRecordSetListResource"
       }
     ],
+    "identityplatform": [
+      {
+        "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
+        "type_name": "google_identity_platform_inbound_saml_config",
+        "constructor": "NewIdentityPlatformInboundSamlConfigListResource"
+      },
+      {
+        "file": "google/services/identityplatform/list_identity_platform_oauth_idp_config.go",
+        "type_name": "google_identity_platform_oauth_idp_config",
+        "constructor": "NewIdentityPlatformOauthIdpConfigListResource"
+      },
+      {
+        "file": "google/services/identityplatform/list_identity_platform_tenant.go",
+        "type_name": "google_identity_platform_tenant",
+        "constructor": "NewIdentityPlatformTenantListResource"
+      }
+    ],
     "kms": [
       {
         "file": "google/services/kms/list_kms_crypto_key_version.go",
@@ -2363,6 +2469,9 @@
       "NewApigeeEnvironmentKeyvaluemapsListResource",
       "NewApigeeOrganizationListResource",
       "NewApigeeTargetServerListResource",
+      "NewAppEngineDomainMappingListResource",
+      "NewAppEngineServiceNetworkSettingsListResource",
+      "NewAppEngineServiceSplitTrafficListResource",
       "NewBigQueryDatasetAccessListResource",
       "NewBigQueryDatasetListResource",
       "NewBigqueryDatasetIamMemberListResource",
@@ -2443,6 +2552,9 @@
       "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewIdentityPlatformInboundSamlConfigListResource",
+      "NewIdentityPlatformOauthIdpConfigListResource",
+      "NewIdentityPlatformTenantListResource",
       "NewKMSCryptoKeyVersionListResource",
       "NewMigrationCenterAssetsExportJobListResource",
       "NewMigrationCenterDiscoveryClientListResource",
@@ -2501,6 +2613,9 @@
       "NewApigeeEnvironmentKeyvaluemapsListResource",
       "NewApigeeOrganizationListResource",
       "NewApigeeTargetServerListResource",
+      "NewAppEngineDomainMappingListResource",
+      "NewAppEngineServiceNetworkSettingsListResource",
+      "NewAppEngineServiceSplitTrafficListResource",
       "NewBigQueryDatasetAccessListResource",
       "NewBigQueryDatasetListResource",
       "NewCloudRunServiceListResource",
@@ -2579,6 +2694,9 @@
       "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
+      "NewIdentityPlatformInboundSamlConfigListResource",
+      "NewIdentityPlatformOauthIdpConfigListResource",
+      "NewIdentityPlatformTenantListResource",
       "NewKMSCryptoKeyVersionListResource",
       "NewMigrationCenterAssetsExportJobListResource",
       "NewMigrationCenterDiscoveryClientListResource",
@@ -2634,6 +2752,9 @@
       "google_apigee_environment_keyvaluemaps",
       "google_apigee_organization",
       "google_apigee_target_server",
+      "google_app_engine_domain_mapping",
+      "google_app_engine_service_network_settings",
+      "google_app_engine_service_split_traffic",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_table",
@@ -2706,6 +2827,9 @@
       "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
+      "google_identity_platform_inbound_saml_config",
+      "google_identity_platform_oauth_idp_config",
+      "google_identity_platform_tenant",
       "google_kms_crypto_key_version",
       "google_migration_center_assets_export_job",
       "google_migration_center_discovery_client",
@@ -2765,12 +2889,12 @@
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 136,
-    "file_type_name_count": 131,
+    "registration_count": 142,
+    "file_type_name_count": 137,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 20,
+    "services_with_list": 22,
     "rows": [
       {
         "service": "compute",
@@ -2813,7 +2937,15 @@
         "list_resources": 4
       },
       {
+        "service": "appengine",
+        "list_resources": 3
+      },
+      {
         "service": "bigquery",
+        "list_resources": 3
+      },
+      {
+        "service": "identityplatform",
         "list_resources": 3
       },
       {
@@ -2865,6 +2997,13 @@
           "google_apigee_environment_keyvaluemaps",
           "google_apigee_organization",
           "google_apigee_target_server"
+        ]
+      },
+      "appengine": {
+        "list_resources": [
+          "google_app_engine_domain_mapping",
+          "google_app_engine_service_network_settings",
+          "google_app_engine_service_split_traffic"
         ]
       },
       "bigquery": {
@@ -2971,6 +3110,13 @@
           "google_dns_record_set"
         ]
       },
+      "identityplatform": {
+        "list_resources": [
+          "google_identity_platform_inbound_saml_config",
+          "google_identity_platform_oauth_idp_config",
+          "google_identity_platform_tenant"
+        ]
+      },
       "kms": {
         "list_resources": [
           "google_kms_crypto_key_version"
@@ -3069,17 +3215,30 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 101,
-    "code_list_resources": 131,
-    "registered_count": 136,
+    "dashboard_list_resources": 114,
+    "code_list_resources": 137,
+    "registered_count": 142,
     "signals_agree": false,
     "dashboard_list_resource_names": [
+      "google_apigee_addons_config",
+      "google_apigee_api_product",
+      "google_apigee_data_collector",
+      "google_apigee_datastore",
+      "google_apigee_endpoint_attachment",
+      "google_apigee_envgroup",
+      "google_apigee_environment_keyvaluemaps",
+      "google_apigee_organization",
+      "google_apigee_target_server",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_dataset_iam_member",
       "google_bigquery_table",
       "google_cloud_run_service",
       "google_cloud_scheduler_job",
+      "google_colab_notebook_execution",
+      "google_colab_runtime",
+      "google_colab_runtime_template",
+      "google_colab_schedule",
       "google_compute_address",
       "google_compute_backend_bucket_signed_url_key",
       "google_compute_backend_service_signed_url_key",
@@ -3186,6 +3345,9 @@
       "google_apigee_environment_keyvaluemaps",
       "google_apigee_organization",
       "google_apigee_target_server",
+      "google_app_engine_domain_mapping",
+      "google_app_engine_service_network_settings",
+      "google_app_engine_service_split_traffic",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_table",
@@ -3258,6 +3420,9 @@
       "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
+      "google_identity_platform_inbound_saml_config",
+      "google_identity_platform_oauth_idp_config",
+      "google_identity_platform_tenant",
       "google_kms_crypto_key_version",
       "google_migration_center_assets_export_job",
       "google_migration_center_discovery_client",
@@ -3320,24 +3485,17 @@
       "google_service_account_iam_member"
     ],
     "only_in_source": [
-      "google_apigee_addons_config",
-      "google_apigee_api_product",
-      "google_apigee_data_collector",
-      "google_apigee_datastore",
-      "google_apigee_endpoint_attachment",
-      "google_apigee_envgroup",
-      "google_apigee_environment_keyvaluemaps",
-      "google_apigee_organization",
-      "google_apigee_target_server",
-      "google_colab_notebook_execution",
-      "google_colab_runtime",
-      "google_colab_runtime_template",
-      "google_colab_schedule",
+      "google_app_engine_domain_mapping",
+      "google_app_engine_service_network_settings",
+      "google_app_engine_service_split_traffic",
       "google_contact_center_insights_analysis_rule",
       "google_contact_center_insights_assessment_rule",
       "google_contact_center_insights_auto_labeling_rule",
       "google_contact_center_insights_qa_scorecard",
       "google_contact_center_insights_view",
+      "google_identity_platform_inbound_saml_config",
+      "google_identity_platform_oauth_idp_config",
+      "google_identity_platform_tenant",
       "google_network_security_authz_policy",
       "google_network_security_intercept_deployment",
       "google_network_security_intercept_deployment_group",

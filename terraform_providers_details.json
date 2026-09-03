@@ -13375,7 +13375,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:41.044843"
+    "docs_refreshed_at": "2026-09-03T12:07:41.400847"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -13814,6 +13814,11 @@
         {
           "title": "appconfig_experiment_definition",
           "slug": "appconfig_experiment_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "appconfig_experiment_run",
+          "slug": "appconfig_experiment_run",
           "subcategory": ""
         },
         {
@@ -15247,6 +15252,16 @@
           "subcategory": ""
         },
         {
+          "title": "chime_media_pipeline_kinesis_video_stream_pool",
+          "slug": "chime_media_pipeline_kinesis_video_stream_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_media_pipeline_kinesis_video_stream_pools",
+          "slug": "chime_media_pipeline_kinesis_video_stream_pools",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -15819,6 +15834,16 @@
         {
           "title": "codebuild_fleets",
           "slug": "codebuild_fleets",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_report_group",
+          "slug": "codebuild_report_group",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_report_groups",
+          "slug": "codebuild_report_groups",
           "subcategory": ""
         },
         {
@@ -17454,6 +17479,16 @@
         {
           "title": "ec2_ipam_allocation",
           "slug": "ec2_ipam_allocation",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_ipam_external_resource_verification_token",
+          "slug": "ec2_ipam_external_resource_verification_token",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_ipam_external_resource_verification_tokens",
+          "slug": "ec2_ipam_external_resource_verification_tokens",
           "subcategory": ""
         },
         {
@@ -19184,6 +19219,16 @@
         {
           "title": "fsx_s3_access_point_attachments",
           "slug": "fsx_s3_access_point_attachments",
+          "subcategory": ""
+        },
+        {
+          "title": "fsx_volume",
+          "slug": "fsx_volume",
+          "subcategory": ""
+        },
+        {
+          "title": "fsx_volumes",
+          "slug": "fsx_volumes",
           "subcategory": ""
         },
         {
@@ -23152,6 +23197,16 @@
           "subcategory": ""
         },
         {
+          "title": "pricingplanmanager_subscription",
+          "slug": "pricingplanmanager_subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "pricingplanmanager_subscriptions",
+          "slug": "pricingplanmanager_subscriptions",
+          "subcategory": ""
+        },
+        {
           "title": "proton_environment_account_connection",
           "slug": "proton_environment_account_connection",
           "subcategory": ""
@@ -24669,6 +24724,16 @@
         {
           "title": "sagemaker_endpoint",
           "slug": "sagemaker_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_endpoint_config",
+          "slug": "sagemaker_endpoint_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_endpoint_configs",
+          "slug": "sagemaker_endpoint_configs",
           "subcategory": ""
         },
         {
@@ -27551,6 +27616,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_media_pipeline_kinesis_video_stream_pool",
+          "slug": "chime_media_pipeline_kinesis_video_stream_pool",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_collaboration",
           "slug": "cleanrooms_collaboration",
           "subcategory": ""
@@ -27803,6 +27873,11 @@
         {
           "title": "codebuild_fleet",
           "slug": "codebuild_fleet",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_report_group",
+          "slug": "codebuild_report_group",
           "subcategory": ""
         },
         {
@@ -28408,6 +28483,11 @@
         {
           "title": "ec2_ipam",
           "slug": "ec2_ipam",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_ipam_external_resource_verification_token",
+          "slug": "ec2_ipam_external_resource_verification_token",
           "subcategory": ""
         },
         {
@@ -29188,6 +29268,11 @@
         {
           "title": "fsx_s3_access_point_attachment",
           "slug": "fsx_s3_access_point_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "fsx_volume",
+          "slug": "fsx_volume",
           "subcategory": ""
         },
         {
@@ -30951,6 +31036,11 @@
           "subcategory": ""
         },
         {
+          "title": "pricingplanmanager_subscription",
+          "slug": "pricingplanmanager_subscription",
+          "subcategory": ""
+        },
+        {
           "title": "proton_environment_account_connection",
           "slug": "proton_environment_account_connection",
           "subcategory": ""
@@ -31598,6 +31688,11 @@
         {
           "title": "sagemaker_endpoint",
           "slug": "sagemaker_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_endpoint_config",
+          "slug": "sagemaker_endpoint_config",
           "subcategory": ""
         },
         {
@@ -32830,6 +32925,11 @@
           "subcategory": ""
         },
         {
+          "title": "appconfig_experiment_run",
+          "slug": "appconfig_experiment_run",
+          "subcategory": ""
+        },
+        {
           "title": "appconfig_extension",
           "slug": "appconfig_extension",
           "subcategory": ""
@@ -33655,6 +33755,11 @@
           "subcategory": ""
         },
         {
+          "title": "chime_media_pipeline_kinesis_video_stream_pool",
+          "slug": "chime_media_pipeline_kinesis_video_stream_pool",
+          "subcategory": ""
+        },
+        {
           "title": "cleanrooms_analysis_template",
           "slug": "cleanrooms_analysis_template",
           "subcategory": ""
@@ -33962,6 +34067,11 @@
         {
           "title": "codebuild_fleet",
           "slug": "codebuild_fleet",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_report_group",
+          "slug": "codebuild_report_group",
           "subcategory": ""
         },
         {
@@ -34995,6 +35105,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_external_resource_verification_token",
+          "slug": "ec2_ipam_external_resource_verification_token",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_pool",
           "slug": "ec2_ipam_pool",
           "subcategory": ""
@@ -35927,6 +36042,11 @@
         {
           "title": "fsx_s3_access_point_attachment",
           "slug": "fsx_s3_access_point_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "fsx_volume",
+          "slug": "fsx_volume",
           "subcategory": ""
         },
         {
@@ -38120,6 +38240,11 @@
           "subcategory": ""
         },
         {
+          "title": "pricingplanmanager_subscription",
+          "slug": "pricingplanmanager_subscription",
+          "subcategory": ""
+        },
+        {
           "title": "proton_environment_account_connection",
           "slug": "proton_environment_account_connection",
           "subcategory": ""
@@ -38992,6 +39117,11 @@
         {
           "title": "sagemaker_endpoint",
           "slug": "sagemaker_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_endpoint_config",
+          "slug": "sagemaker_endpoint_config",
           "subcategory": ""
         },
         {
@@ -40196,7 +40326,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:41.511758"
+    "docs_refreshed_at": "2026-09-03T12:07:42.049289"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -40630,7 +40760,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:41.862477"
+    "docs_refreshed_at": "2026-09-03T12:07:42.488038"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -48722,7 +48852,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:42.253858"
+    "docs_refreshed_at": "2026-09-03T12:07:43.021515"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -49071,7 +49201,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:42.610754"
+    "docs_refreshed_at": "2026-09-03T12:07:43.456472"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -50584,6 +50714,11 @@
           "subcategory": "Cloud Endpoints"
         },
         {
+          "title": "eventarc_pipeline_iam_policy",
+          "slug": "eventarc_pipeline_iam_policy",
+          "subcategory": "Eventarc"
+        },
+        {
           "title": "filestore_instance",
           "slug": "filestore_instance",
           "subcategory": "Filestore"
@@ -51972,6 +52107,51 @@
       ],
       "list-resources": [
         {
+          "title": "google_apigee_addons_config",
+          "slug": "google_apigee_addons_config",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_api_product",
+          "slug": "google_apigee_api_product",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_data_collector",
+          "slug": "google_apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_datastore",
+          "slug": "google_apigee_datastore",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_endpoint_attachment",
+          "slug": "google_apigee_endpoint_attachment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_envgroup",
+          "slug": "google_apigee_envgroup",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_environment_keyvaluemaps",
+          "slug": "google_apigee_environment_keyvaluemaps",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_organization",
+          "slug": "google_apigee_organization",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_target_server",
+          "slug": "google_apigee_target_server",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "google_bigquery_dataset",
           "slug": "google_bigquery_dataset",
           "subcategory": "BigQuery"
@@ -52000,6 +52180,26 @@
           "title": "google_cloud_scheduler_job",
           "slug": "google_cloud_scheduler_job",
           "subcategory": "Cloud Scheduler"
+        },
+        {
+          "title": "google_colab_notebook_execution",
+          "slug": "google_colab_notebook_execution",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_runtime",
+          "slug": "google_colab_runtime",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_runtime_template",
+          "slug": "google_colab_runtime_template",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_schedule",
+          "slug": "google_colab_schedule",
+          "subcategory": "Colab Enterprise"
         },
         {
           "title": "google_compute_address",
@@ -55456,6 +55656,11 @@
           "subcategory": "Eventarc"
         },
         {
+          "title": "eventarc_pipeline_iam",
+          "slug": "eventarc_pipeline_iam",
+          "subcategory": "Eventarc"
+        },
+        {
           "title": "eventarc_trigger",
           "slug": "eventarc_trigger",
           "subcategory": "Eventarc"
@@ -56651,6 +56856,11 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "monitoring_snooze",
+          "slug": "monitoring_snooze",
+          "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
           "title": "monitoring_uptime_check_config",
           "slug": "monitoring_uptime_check_config",
           "subcategory": "Cloud (Stackdriver) Monitoring"
@@ -56773,6 +56983,11 @@
         {
           "title": "network_management_connectivity_test",
           "slug": "network_management_connectivity_test",
+          "subcategory": "Network Management"
+        },
+        {
+          "title": "network_management_network_monitoring_provider",
+          "slug": "network_management_network_monitoring_provider",
           "subcategory": "Network Management"
         },
         {
@@ -57069,6 +57284,11 @@
           "title": "network_services_wasm_plugin",
           "slug": "network_services_wasm_plugin",
           "subcategory": "Network Services"
+        },
+        {
+          "title": "observability_bucket",
+          "slug": "observability_bucket",
+          "subcategory": "Observability"
         },
         {
           "title": "observability_folder_settings",
@@ -57469,6 +57689,11 @@
           "title": "scc_notification_config",
           "slug": "scc_notification_config",
           "subcategory": "Security Command Center (SCC)"
+        },
+        {
+          "title": "scc_notification_service_account",
+          "slug": "scc_notification_service_account",
+          "subcategory": "Security Command Center"
         },
         {
           "title": "scc_organization_custom_module",
@@ -58202,7 +58427,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:43.042136"
+    "docs_refreshed_at": "2026-09-03T12:07:44.024436"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -59448,6 +59673,11 @@
           "subcategory": "Cloud Endpoints"
         },
         {
+          "title": "eventarc_pipeline_iam_policy",
+          "slug": "eventarc_pipeline_iam_policy",
+          "subcategory": "Eventarc"
+        },
+        {
           "title": "filestore_instance",
           "slug": "filestore_instance",
           "subcategory": "Filestore"
@@ -60836,6 +61066,51 @@
       ],
       "list-resources": [
         {
+          "title": "google_apigee_addons_config",
+          "slug": "google_apigee_addons_config",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_api_product",
+          "slug": "google_apigee_api_product",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_data_collector",
+          "slug": "google_apigee_data_collector",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_datastore",
+          "slug": "google_apigee_datastore",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_endpoint_attachment",
+          "slug": "google_apigee_endpoint_attachment",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_envgroup",
+          "slug": "google_apigee_envgroup",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_environment_keyvaluemaps",
+          "slug": "google_apigee_environment_keyvaluemaps",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_organization",
+          "slug": "google_apigee_organization",
+          "subcategory": "Apigee"
+        },
+        {
+          "title": "google_apigee_target_server",
+          "slug": "google_apigee_target_server",
+          "subcategory": "Apigee"
+        },
+        {
           "title": "google_bigquery_dataset",
           "slug": "google_bigquery_dataset",
           "subcategory": "BigQuery"
@@ -60864,6 +61139,26 @@
           "title": "google_cloud_scheduler_job",
           "slug": "google_cloud_scheduler_job",
           "subcategory": "Cloud Scheduler"
+        },
+        {
+          "title": "google_colab_notebook_execution",
+          "slug": "google_colab_notebook_execution",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_runtime",
+          "slug": "google_colab_runtime",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_runtime_template",
+          "slug": "google_colab_runtime_template",
+          "subcategory": "Colab Enterprise"
+        },
+        {
+          "title": "google_colab_schedule",
+          "slug": "google_colab_schedule",
+          "subcategory": "Colab Enterprise"
         },
         {
           "title": "google_compute_address",
@@ -64320,6 +64615,11 @@
           "subcategory": "Eventarc"
         },
         {
+          "title": "eventarc_pipeline_iam",
+          "slug": "eventarc_pipeline_iam",
+          "subcategory": "Eventarc"
+        },
+        {
           "title": "eventarc_trigger",
           "slug": "eventarc_trigger",
           "subcategory": "Eventarc"
@@ -65515,6 +65815,11 @@
           "subcategory": "Cloud (Stackdriver) Monitoring"
         },
         {
+          "title": "monitoring_snooze",
+          "slug": "monitoring_snooze",
+          "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
           "title": "monitoring_uptime_check_config",
           "slug": "monitoring_uptime_check_config",
           "subcategory": "Cloud (Stackdriver) Monitoring"
@@ -65637,6 +65942,11 @@
         {
           "title": "network_management_connectivity_test",
           "slug": "network_management_connectivity_test",
+          "subcategory": "Network Management"
+        },
+        {
+          "title": "network_management_network_monitoring_provider",
+          "slug": "network_management_network_monitoring_provider",
           "subcategory": "Network Management"
         },
         {
@@ -65933,6 +66243,11 @@
           "title": "network_services_wasm_plugin",
           "slug": "network_services_wasm_plugin",
           "subcategory": "Network Services"
+        },
+        {
+          "title": "observability_bucket",
+          "slug": "observability_bucket",
+          "subcategory": "Observability"
         },
         {
           "title": "observability_folder_settings",
@@ -66333,6 +66648,11 @@
           "title": "scc_notification_config",
           "slug": "scc_notification_config",
           "subcategory": "Security Command Center (SCC)"
+        },
+        {
+          "title": "scc_notification_service_account",
+          "slug": "scc_notification_service_account",
+          "subcategory": "Security Command Center"
         },
         {
           "title": "scc_organization_custom_module",
@@ -67066,7 +67386,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-01T13:02:43.471729"
+    "docs_refreshed_at": "2026-09-03T12:07:44.589174"
   },
   "4ek0/neko": {
     "docs": {

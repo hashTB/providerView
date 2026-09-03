@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T13:03:48.319089",
+  "generated_at": "2026-09-03T12:08:42.182388",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "aecae47912b314dc7a68f5f026254aa40047b846"
+    "commit": "1dd080aaa247bcb39f3a482019437ccca2662da8"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -18,15 +18,15 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3163,
+    "stdout_line_count": 3171,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 12,
-        "implemented": 217,
-        "total": 1696
+        "percent": 13,
+        "implemented": 221,
+        "total": 1698
       },
-      "service_count": 243,
+      "service_count": 244,
       "services": [
         {
           "service": "accessanalyzer",
@@ -39,6 +39,12 @@
           "percent": 0,
           "implemented": 0,
           "total": 3
+        },
+        {
+          "service": "accountaccess",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
         },
         {
           "service": "acm",
@@ -452,7 +458,7 @@
           "service": "datazone",
           "percent": 0,
           "implemented": 0,
-          "total": 10
+          "total": 11
         },
         {
           "service": "dax",
@@ -1020,8 +1026,8 @@
         },
         {
           "service": "opensearchserverless",
-          "percent": 57,
-          "implemented": 4,
+          "percent": 100,
+          "implemented": 7,
           "total": 7
         },
         {
@@ -1502,6 +1508,14 @@
             "account/region.go"
           ],
           "list_resources": []
+        },
+        "accountaccess": {
+          "all_resources": [
+            "accountaccess/application.go"
+          ],
+          "list_resources": [
+            "accountaccess/application.go"
+          ]
         },
         "acm": {
           "all_resources": [
@@ -2291,6 +2305,7 @@
             "datazone/form_type.go",
             "datazone/glossary.go",
             "datazone/glossary_term.go",
+            "datazone/policy_grant.go",
             "datazone/project.go",
             "datazone/user_profile.go"
           ],
@@ -3635,7 +3650,10 @@
             "opensearchserverless/access_policy.go",
             "opensearchserverless/collection.go",
             "opensearchserverless/collection_group.go",
-            "opensearchserverless/lifecycle_policy.go"
+            "opensearchserverless/lifecycle_policy.go",
+            "opensearchserverless/security_config.go",
+            "opensearchserverless/security_policy.go",
+            "opensearchserverless/vpc_endpoint.go"
           ]
         },
         "organizations": {
@@ -4682,11 +4700,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-09-01 13:03:48 UTC"
+      "last_updated": "2026-09-03 12:08:42 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 65,
+    "services_with_list": 66,
     "top_services": [
       {
         "service": "ec2",
@@ -4711,6 +4729,12 @@
         "percent": 42,
         "implemented": 9,
         "total": 21
+      },
+      {
+        "service": "opensearchserverless",
+        "percent": 100,
+        "implemented": 7,
+        "total": 7
       },
       {
         "service": "resiliencehubv2",
@@ -4771,12 +4795,6 @@
         "percent": 41,
         "implemented": 5,
         "total": 12
-      },
-      {
-        "service": "logs",
-        "percent": 26,
-        "implemented": 5,
-        "total": 19
       }
     ],
     "service_resources": {
@@ -4794,6 +4812,14 @@
           "account/region.go"
         ],
         "list_resources": []
+      },
+      "accountaccess": {
+        "all_resources": [
+          "accountaccess/application.go"
+        ],
+        "list_resources": [
+          "accountaccess/application.go"
+        ]
       },
       "acm": {
         "all_resources": [
@@ -5583,6 +5609,7 @@
           "datazone/form_type.go",
           "datazone/glossary.go",
           "datazone/glossary_term.go",
+          "datazone/policy_grant.go",
           "datazone/project.go",
           "datazone/user_profile.go"
         ],
@@ -6927,7 +6954,10 @@
           "opensearchserverless/access_policy.go",
           "opensearchserverless/collection.go",
           "opensearchserverless/collection_group.go",
-          "opensearchserverless/lifecycle_policy.go"
+          "opensearchserverless/lifecycle_policy.go",
+          "opensearchserverless/security_config.go",
+          "opensearchserverless/security_policy.go",
+          "opensearchserverless/vpc_endpoint.go"
         ]
       },
       "organizations": {
@@ -7978,8 +8008,8 @@
   "validation": {
     "matches": false,
     "dashboard_list_resources": 210,
-    "script_implemented_list": 217,
-    "script_total_resources": 1696,
-    "script_percent": 12
+    "script_implemented_list": 221,
+    "script_total_resources": 1698,
+    "script_percent": 13
   }
 }
