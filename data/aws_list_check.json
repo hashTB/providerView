@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T12:08:42.182388",
+  "generated_at": "2026-09-10T11:48:43.410488",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "1dd080aaa247bcb39f3a482019437ccca2662da8"
+    "commit": "55f6575a2515180499dc28434381ed9bbf71b34b"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 210
+    "list_resources": 227
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3171,
+    "stdout_line_count": 3184,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 13,
-        "implemented": 221,
-        "total": 1698
+        "implemented": 230,
+        "total": 1705
       },
-      "service_count": 244,
+      "service_count": 245,
       "services": [
         {
           "service": "accessanalyzer",
@@ -43,8 +43,8 @@
         {
           "service": "accountaccess",
           "percent": 100,
-          "implemented": 1,
-          "total": 1
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "acm",
@@ -57,6 +57,12 @@
           "percent": 0,
           "implemented": 0,
           "total": 5
+        },
+        {
+          "service": "agentregistry",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
         },
         {
           "service": "amp",
@@ -198,9 +204,9 @@
         },
         {
           "service": "bedrock",
-          "percent": 11,
-          "implemented": 1,
-          "total": 9
+          "percent": 20,
+          "implemented": 2,
+          "total": 10
         },
         {
           "service": "bedrockagent",
@@ -504,9 +510,9 @@
         },
         {
           "service": "dms",
-          "percent": 0,
-          "implemented": 0,
-          "total": 8
+          "percent": 20,
+          "implemented": 2,
+          "total": 10
         },
         {
           "service": "docdb",
@@ -546,8 +552,8 @@
         },
         {
           "service": "ec2",
-          "percent": 14,
-          "implemented": 23,
+          "percent": 15,
+          "implemented": 24,
           "total": 159
         },
         {
@@ -660,9 +666,9 @@
         },
         {
           "service": "fis",
-          "percent": 0,
-          "implemented": 0,
-          "total": 2
+          "percent": 33,
+          "implemented": 1,
+          "total": 3
         },
         {
           "service": "fms",
@@ -834,9 +840,9 @@
         },
         {
           "service": "lambda",
-          "percent": 40,
-          "implemented": 6,
-          "total": 15
+          "percent": 50,
+          "implemented": 8,
+          "total": 16
         },
         {
           "service": "lambdacore",
@@ -1511,10 +1517,12 @@
         },
         "accountaccess": {
           "all_resources": [
-            "accountaccess/application.go"
+            "accountaccess/application.go",
+            "accountaccess/entitlement.go"
           ],
           "list_resources": [
-            "accountaccess/application.go"
+            "accountaccess/application.go",
+            "accountaccess/entitlement.go"
           ]
         },
         "acm": {
@@ -1536,6 +1544,14 @@
             "acmpca/policy.go"
           ],
           "list_resources": []
+        },
+        "agentregistry": {
+          "all_resources": [
+            "agentregistry/registry.go"
+          ],
+          "list_resources": [
+            "agentregistry/registry.go"
+          ]
         },
         "amp": {
           "all_resources": [
@@ -1846,12 +1862,14 @@
             "bedrock/guardrail.go",
             "bedrock/guardrail_version.go",
             "bedrock/inference_profile.go",
+            "bedrock/model_invocation_job.go",
             "bedrock/model_invocation_logging_configuration.go",
             "bedrock/provisioned_model_throughput.go",
             "bedrock/use_case_for_model_access.go"
           ],
           "list_resources": [
-            "bedrock/evaluation_job.go"
+            "bedrock/evaluation_job.go",
+            "bedrock/model_invocation_job.go"
           ]
         },
         "bedrockagent": {
@@ -2390,15 +2408,20 @@
         "dms": {
           "all_resources": [
             "dms/certificate.go",
+            "dms/data_provider.go",
             "dms/endpoint.go",
             "dms/event_subscription.go",
+            "dms/instance_profile.go",
             "dms/replication_config.go",
             "dms/replication_instance.go",
             "dms/replication_subnet_group.go",
             "dms/replication_task.go",
             "dms/s3_endpoint.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "dms/data_provider.go",
+            "dms/instance_profile.go"
+          ]
         },
         "docdb": {
           "all_resources": [
@@ -2643,6 +2666,7 @@
             "ec2/vpc_flow_log.go",
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
+            "ec2/vpc_network_acl_rule.go",
             "ec2/vpc_network_insights_access_scope.go",
             "ec2/vpc_network_interface.go",
             "ec2/vpc_route.go",
@@ -2882,9 +2906,12 @@
         "fis": {
           "all_resources": [
             "fis/experiment_template.go",
+            "fis/safety_lever_state.go",
             "fis/target_account_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "fis/safety_lever_state.go"
+          ]
         },
         "fms": {
           "all_resources": [
@@ -3263,15 +3290,18 @@
             "lambda/layer_version_permission.go",
             "lambda/permission.go",
             "lambda/provisioned_concurrency_config.go",
+            "lambda/resource_policy.go",
             "lambda/runtime_management_config.go"
           ],
           "list_resources": [
+            "lambda/alias.go",
             "lambda/capacity_provider.go",
             "lambda/event_source_mapping.go",
             "lambda/function.go",
             "lambda/function_scaling_config.go",
             "lambda/layer_version.go",
-            "lambda/permission.go"
+            "lambda/permission.go",
+            "lambda/resource_policy.go"
           ]
         },
         "lambdacore": {
@@ -4700,16 +4730,16 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-09-03 12:08:42 UTC"
+      "last_updated": "2026-09-10 11:48:43 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 66,
+    "services_with_list": 69,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 14,
-        "implemented": 23,
+        "percent": 15,
+        "implemented": 24,
         "total": 159
       },
       {
@@ -4731,6 +4761,12 @@
         "total": 21
       },
       {
+        "service": "lambda",
+        "percent": 50,
+        "implemented": 8,
+        "total": 16
+      },
+      {
         "service": "opensearchserverless",
         "percent": 100,
         "implemented": 7,
@@ -4741,12 +4777,6 @@
         "percent": 100,
         "implemented": 7,
         "total": 7
-      },
-      {
-        "service": "lambda",
-        "percent": 40,
-        "implemented": 6,
-        "total": 15
       },
       {
         "service": "apigateway",
@@ -4815,10 +4845,12 @@
       },
       "accountaccess": {
         "all_resources": [
-          "accountaccess/application.go"
+          "accountaccess/application.go",
+          "accountaccess/entitlement.go"
         ],
         "list_resources": [
-          "accountaccess/application.go"
+          "accountaccess/application.go",
+          "accountaccess/entitlement.go"
         ]
       },
       "acm": {
@@ -4840,6 +4872,14 @@
           "acmpca/policy.go"
         ],
         "list_resources": []
+      },
+      "agentregistry": {
+        "all_resources": [
+          "agentregistry/registry.go"
+        ],
+        "list_resources": [
+          "agentregistry/registry.go"
+        ]
       },
       "amp": {
         "all_resources": [
@@ -5150,12 +5190,14 @@
           "bedrock/guardrail.go",
           "bedrock/guardrail_version.go",
           "bedrock/inference_profile.go",
+          "bedrock/model_invocation_job.go",
           "bedrock/model_invocation_logging_configuration.go",
           "bedrock/provisioned_model_throughput.go",
           "bedrock/use_case_for_model_access.go"
         ],
         "list_resources": [
-          "bedrock/evaluation_job.go"
+          "bedrock/evaluation_job.go",
+          "bedrock/model_invocation_job.go"
         ]
       },
       "bedrockagent": {
@@ -5694,15 +5736,20 @@
       "dms": {
         "all_resources": [
           "dms/certificate.go",
+          "dms/data_provider.go",
           "dms/endpoint.go",
           "dms/event_subscription.go",
+          "dms/instance_profile.go",
           "dms/replication_config.go",
           "dms/replication_instance.go",
           "dms/replication_subnet_group.go",
           "dms/replication_task.go",
           "dms/s3_endpoint.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "dms/data_provider.go",
+          "dms/instance_profile.go"
+        ]
       },
       "docdb": {
         "all_resources": [
@@ -5947,6 +5994,7 @@
           "ec2/vpc_flow_log.go",
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
+          "ec2/vpc_network_acl_rule.go",
           "ec2/vpc_network_insights_access_scope.go",
           "ec2/vpc_network_interface.go",
           "ec2/vpc_route.go",
@@ -6186,9 +6234,12 @@
       "fis": {
         "all_resources": [
           "fis/experiment_template.go",
+          "fis/safety_lever_state.go",
           "fis/target_account_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "fis/safety_lever_state.go"
+        ]
       },
       "fms": {
         "all_resources": [
@@ -6567,15 +6618,18 @@
           "lambda/layer_version_permission.go",
           "lambda/permission.go",
           "lambda/provisioned_concurrency_config.go",
+          "lambda/resource_policy.go",
           "lambda/runtime_management_config.go"
         ],
         "list_resources": [
+          "lambda/alias.go",
           "lambda/capacity_provider.go",
           "lambda/event_source_mapping.go",
           "lambda/function.go",
           "lambda/function_scaling_config.go",
           "lambda/layer_version.go",
-          "lambda/permission.go"
+          "lambda/permission.go",
+          "lambda/resource_policy.go"
         ]
       },
       "lambdacore": {
@@ -8007,9 +8061,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 210,
-    "script_implemented_list": 221,
-    "script_total_resources": 1698,
+    "dashboard_list_resources": 227,
+    "script_implemented_list": 230,
+    "script_total_resources": 1705,
     "script_percent": 13
   }
 }

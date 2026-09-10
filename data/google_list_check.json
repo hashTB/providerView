@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-03T12:08:48.074227",
+  "generated_at": "2026-09-10T11:48:49.045250",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "76e4f5e8a902fd6927591a1295f688b24691024f"
+    "commit": "71a6a669243c743e2a7e409d06db4bbcde962123"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 142,
+    "file_count": 145,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -600,6 +600,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/pubsub/iam_pubsub_topic.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/pubsub/list_pubsub_subscription.go",
         "type": "MMv1",
         "registrations": 1
@@ -647,6 +652,11 @@
       {
         "file": "google/services/resourcemanager/list_google_service_account_key.go",
         "type": "Handwritten",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/secretmanager/iam_secret_manager_secret.go",
+        "type": "MMv1",
         "registrations": 1
       },
       {
@@ -710,6 +720,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/vertexai/list_vertex_ai_rag_corpus.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
         "type": "MMv1",
         "registrations": 1
@@ -720,12 +735,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "6adf13d0e63d72dd4ceedf11590cd7f40f9a7c686c73e491846a2de576141ed3",
+    "sha256": "1ade81c0fcb411c113915f6e036527f24ae3545bde7b26df3679b266f4b69fe8",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 114
+    "list_resources": 147
   },
   "registrations": {
     "generated": [
@@ -1514,6 +1529,13 @@
         "line": 40
       },
       {
+        "name": "google_pubsub_topic_iam_member",
+        "package": "Pubsub",
+        "constructor": "NewPubsubTopicIamMemberListResource",
+        "file": "google/services/pubsub/iam_pubsub_topic.go",
+        "line": 57
+      },
+      {
         "name": "google_pubsub_subscription",
         "package": "Pubsub",
         "constructor": "NewPubsubSubscriptionListResource",
@@ -1526,6 +1548,13 @@
         "constructor": "NewPubsubTopicListResource",
         "file": "google/services/pubsub/list_pubsub_topic.go",
         "line": 40
+      },
+      {
+        "name": "google_secret_manager_secret_iam_member",
+        "package": "SecretManager",
+        "constructor": "NewSecretManagerSecretIamMemberListResource",
+        "file": "google/services/secretmanager/iam_secret_manager_secret.go",
+        "line": 57
       },
       {
         "name": "google_secret_manager_secret",
@@ -1602,6 +1631,13 @@
         "package": "VertexAI",
         "constructor": "NewVertexAIPersistentResourceListResource",
         "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_rag_corpus",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIRagCorpusListResource",
+        "file": "google/services/vertexai/list_vertex_ai_rag_corpus.go",
         "line": 40
       },
       {
@@ -2342,6 +2378,11 @@
     ],
     "pubsub": [
       {
+        "file": "google/services/pubsub/list_iam_pubsub_topic.go",
+        "type_name": null,
+        "constructor": "NewPubsubTopicIamMemberListResource"
+      },
+      {
         "file": "google/services/pubsub/list_pubsub_subscription.go",
         "type_name": "google_pubsub_subscription",
         "constructor": "NewPubsubSubscriptionListResource"
@@ -2380,6 +2421,11 @@
       }
     ],
     "secretmanager": [
+      {
+        "file": "google/services/secretmanager/list_iam_secret_manager_secret.go",
+        "type_name": null,
+        "constructor": "NewSecretManagerSecretIamMemberListResource"
+      },
       {
         "file": "google/services/secretmanager/list_secret_manager_secret.go",
         "type_name": "google_secret_manager_secret",
@@ -2445,6 +2491,11 @@
         "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
         "type_name": "google_vertex_ai_persistent_resource",
         "constructor": "NewVertexAIPersistentResourceListResource"
+      },
+      {
+        "file": "google/services/vertexai/list_vertex_ai_rag_corpus.go",
+        "type_name": "google_vertex_ai_rag_corpus",
+        "constructor": "NewVertexAIRagCorpusListResource"
       },
       {
         "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
@@ -2587,8 +2638,10 @@
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
       "NewPubsubSubscriptionListResource",
+      "NewPubsubTopicIamMemberListResource",
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
+      "NewSecretManagerSecretIamMemberListResource",
       "NewSecretManagerSecretListResource",
       "NewServiceAccountIamMemberListResource",
       "NewStorageHmacKeyListResource",
@@ -2600,6 +2653,7 @@
       "NewVertexAIFeaturestoreListResource",
       "NewVertexAIIndexListResource",
       "NewVertexAIPersistentResourceListResource",
+      "NewVertexAIRagCorpusListResource",
       "NewVertexAIReasoningEngineListResource",
       "NewVertexAITensorboardListResource"
     ],
@@ -2727,8 +2781,10 @@
       "NewNetworkServicesMulticastGroupRangeListResource",
       "NewNetworkServicesMulticastProducerAssociationListResource",
       "NewPubsubSubscriptionListResource",
+      "NewPubsubTopicIamMemberListResource",
       "NewPubsubTopicListResource",
       "NewSQLDatabaseListResource",
+      "NewSecretManagerSecretIamMemberListResource",
       "NewSecretManagerSecretListResource",
       "NewStorageHmacKeyListResource",
       "NewVertexAIDatasetListResource",
@@ -2739,6 +2795,7 @@
       "NewVertexAIFeaturestoreListResource",
       "NewVertexAIIndexListResource",
       "NewVertexAIPersistentResourceListResource",
+      "NewVertexAIRagCorpusListResource",
       "NewVertexAIReasoningEngineListResource",
       "NewVertexAITensorboardListResource"
     ],
@@ -2878,6 +2935,7 @@
       "google_vertex_ai_featurestore",
       "google_vertex_ai_index",
       "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_rag_corpus",
       "google_vertex_ai_reasoning_engine",
       "google_vertex_ai_tensorboard"
     ],
@@ -2889,8 +2947,8 @@
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 142,
-    "file_type_name_count": 137,
+    "registration_count": 145,
+    "file_type_name_count": 138,
     "signals_agree": false
   },
   "service_coverage": {
@@ -2905,15 +2963,15 @@
         "list_resources": 13
       },
       {
+        "service": "vertexai",
+        "list_resources": 11
+      },
+      {
         "service": "networksecurity",
         "list_resources": 10
       },
       {
         "service": "networkservices",
-        "list_resources": 10
-      },
-      {
-        "service": "vertexai",
         "list_resources": 10
       },
       {
@@ -3207,6 +3265,7 @@
           "google_vertex_ai_featurestore",
           "google_vertex_ai_index",
           "google_vertex_ai_persistent_resource",
+          "google_vertex_ai_rag_corpus",
           "google_vertex_ai_reasoning_engine",
           "google_vertex_ai_tensorboard"
         ]
@@ -3215,9 +3274,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 114,
-    "code_list_resources": 137,
-    "registered_count": 142,
+    "dashboard_list_resources": 147,
+    "code_list_resources": 138,
+    "registered_count": 145,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_apigee_addons_config",
@@ -3229,6 +3288,9 @@
       "google_apigee_environment_keyvaluemaps",
       "google_apigee_organization",
       "google_apigee_target_server",
+      "google_app_engine_domain_mapping",
+      "google_app_engine_service_network_settings",
+      "google_app_engine_service_split_traffic",
       "google_bigquery_dataset",
       "google_bigquery_dataset_access",
       "google_bigquery_dataset_iam_member",
@@ -3285,6 +3347,11 @@
       "google_compute_target_tcp_proxy",
       "google_compute_vpn_gateway",
       "google_compute_wire_group",
+      "google_contact_center_insights_analysis_rule",
+      "google_contact_center_insights_assessment_rule",
+      "google_contact_center_insights_auto_labeling_rule",
+      "google_contact_center_insights_qa_scorecard",
+      "google_contact_center_insights_view",
       "google_discovery_engine_assistant",
       "google_discovery_engine_chat_engine",
       "google_discovery_engine_cmek_config",
@@ -3301,6 +3368,9 @@
       "google_dns_managed_zone",
       "google_dns_record_set",
       "google_folder_iam_member",
+      "google_identity_platform_inbound_saml_config",
+      "google_identity_platform_oauth_idp_config",
+      "google_identity_platform_tenant",
       "google_kms_crypto_key_version",
       "google_migration_center_assets_export_job",
       "google_migration_center_discovery_client",
@@ -3310,6 +3380,17 @@
       "google_migration_center_report_config",
       "google_migration_center_source",
       "google_monitoring_alert_policy",
+      "google_network_security_authz_policy",
+      "google_network_security_intercept_deployment",
+      "google_network_security_intercept_deployment_group",
+      "google_network_security_intercept_endpoint_group",
+      "google_network_security_intercept_endpoint_group_association",
+      "google_network_security_mirroring_deployment",
+      "google_network_security_mirroring_deployment_group",
+      "google_network_security_mirroring_endpoint",
+      "google_network_security_mirroring_endpoint_group",
+      "google_network_security_mirroring_endpoint_group_association",
+      "google_network_security_sac_realm",
       "google_network_services_authz_extension",
       "google_network_services_multicast_consumer_association",
       "google_network_services_multicast_domain",
@@ -3328,12 +3409,23 @@
       "google_pubsub_subscription_iam_member",
       "google_pubsub_topic",
       "google_secret_manager_secret",
+      "google_secret_manager_secret_iam",
       "google_service_account",
       "google_service_account_iam_member",
       "google_service_account_key",
       "google_sql_database",
       "google_storage_bucket",
-      "google_storage_hmac_key"
+      "google_storage_hmac_key",
+      "google_vertex_ai_dataset",
+      "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_metric",
+      "google_vertex_ai_feature_group",
+      "google_vertex_ai_feature_online_store",
+      "google_vertex_ai_featurestore",
+      "google_vertex_ai_index",
+      "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_reasoning_engine",
+      "google_vertex_ai_tensorboard"
     ],
     "code_list_resource_names": [
       "google_apigee_addons_config",
@@ -3471,6 +3563,7 @@
       "google_vertex_ai_featurestore",
       "google_vertex_ai_index",
       "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_rag_corpus",
       "google_vertex_ai_reasoning_engine",
       "google_vertex_ai_tensorboard"
     ],
@@ -3480,42 +3573,14 @@
       "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_region_backend_bucket",
       "google_folder_iam_member",
+      "google_network_security_sac_realm",
       "google_project_iam_member",
       "google_pubsub_subscription_iam_member",
+      "google_secret_manager_secret_iam",
       "google_service_account_iam_member"
     ],
     "only_in_source": [
-      "google_app_engine_domain_mapping",
-      "google_app_engine_service_network_settings",
-      "google_app_engine_service_split_traffic",
-      "google_contact_center_insights_analysis_rule",
-      "google_contact_center_insights_assessment_rule",
-      "google_contact_center_insights_auto_labeling_rule",
-      "google_contact_center_insights_qa_scorecard",
-      "google_contact_center_insights_view",
-      "google_identity_platform_inbound_saml_config",
-      "google_identity_platform_oauth_idp_config",
-      "google_identity_platform_tenant",
-      "google_network_security_authz_policy",
-      "google_network_security_intercept_deployment",
-      "google_network_security_intercept_deployment_group",
-      "google_network_security_intercept_endpoint_group",
-      "google_network_security_intercept_endpoint_group_association",
-      "google_network_security_mirroring_deployment",
-      "google_network_security_mirroring_deployment_group",
-      "google_network_security_mirroring_endpoint",
-      "google_network_security_mirroring_endpoint_group",
-      "google_network_security_mirroring_endpoint_group_association",
-      "google_vertex_ai_dataset",
-      "google_vertex_ai_deployment_resource_pool",
-      "google_vertex_ai_evaluation_metric",
-      "google_vertex_ai_feature_group",
-      "google_vertex_ai_feature_online_store",
-      "google_vertex_ai_featurestore",
-      "google_vertex_ai_index",
-      "google_vertex_ai_persistent_resource",
-      "google_vertex_ai_reasoning_engine",
-      "google_vertex_ai_tensorboard"
+      "google_vertex_ai_rag_corpus"
     ],
     "registry_is_subset": false
   }

@@ -277,6 +277,16 @@
       ],
       "data-sources": [
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": "Account Access"
+        },
+        {
+          "title": "accountaccess_entitlements",
+          "slug": "accountaccess_entitlements",
+          "subcategory": "Account Access"
+        },
+        {
           "title": "account_primary_contact",
           "slug": "account_primary_contact",
           "subcategory": "Account Management"
@@ -300,6 +310,11 @@
           "title": "acmpca_certificate_authority",
           "slug": "acmpca_certificate_authority",
           "subcategory": "ACM PCA (Certificate Manager Private Certificate Authority)"
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
+          "subcategory": "Agent Registry"
         },
         {
           "title": "ami",
@@ -2737,6 +2752,11 @@
           "subcategory": "RDS (Relational Database)"
         },
         {
+          "title": "rds_events",
+          "slug": "rds_events",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
           "title": "rds_global_cluster",
           "slug": "rds_global_cluster",
           "subcategory": "RDS (Relational Database)"
@@ -3790,9 +3810,24 @@
       ],
       "list-resources": [
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": "Account Access"
+        },
+        {
+          "title": "accountaccess_entitlement",
+          "slug": "accountaccess_entitlement",
+          "subcategory": "Account Access"
+        },
+        {
           "title": "acm_certificate",
           "slug": "acm_certificate",
           "subcategory": "ACM (Certificate Manager)"
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
+          "subcategory": "Agent Registry"
         },
         {
           "title": "api_gateway_integration",
@@ -3940,6 +3975,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_model_invocation_job",
+          "slug": "bedrock_model_invocation_job",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "cleanrooms_collaboration",
           "slug": "cleanrooms_collaboration",
           "subcategory": "Clean Rooms"
@@ -4043,6 +4083,16 @@
           "title": "db_subnet_group",
           "slug": "db_subnet_group",
           "subcategory": "RDS (Relational Database)"
+        },
+        {
+          "title": "dms_data_provider",
+          "slug": "dms_data_provider",
+          "subcategory": "DMS (Database Migration)"
+        },
+        {
+          "title": "dms_instance_profile",
+          "slug": "dms_instance_profile",
+          "subcategory": "DMS (Database Migration)"
         },
         {
           "title": "dsql_cluster",
@@ -4175,6 +4225,11 @@
           "subcategory": "ELB Classic"
         },
         {
+          "title": "fis_safety_lever_state",
+          "slug": "fis_safety_lever_state",
+          "subcategory": "FIS (Fault Injection Simulator)"
+        },
+        {
           "title": "flow_log",
           "slug": "flow_log",
           "subcategory": "VPC (Virtual Private Cloud)"
@@ -4245,6 +4300,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "key_pair",
+          "slug": "key_pair",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
           "title": "kinesis_firehose_delivery_stream",
           "slug": "kinesis_firehose_delivery_stream",
           "subcategory": "Kinesis Firehose"
@@ -4258,6 +4318,11 @@
           "title": "kms_key",
           "slug": "kms_key",
           "subcategory": "KMS (Key Management)"
+        },
+        {
+          "title": "lambda_alias",
+          "slug": "lambda_alias",
+          "subcategory": "Lambda"
         },
         {
           "title": "lambda_capacity_provider",
@@ -4288,6 +4353,16 @@
           "title": "lambda_layer_version",
           "slug": "lambda_layer_version",
           "subcategory": "Lambda"
+        },
+        {
+          "title": "lambdamicrovms_image",
+          "slug": "lambdamicrovms_image",
+          "subcategory": "Lambda MicroVMs"
+        },
+        {
+          "title": "lambdamicrovms_microvm",
+          "slug": "lambdamicrovms_microvm",
+          "subcategory": "Lambda MicroVMs"
         },
         {
           "title": "lambda_permission",
@@ -4323,6 +4398,11 @@
           "title": "lb_target_group_attachment",
           "slug": "lb_target_group_attachment",
           "subcategory": "ELB (Elastic Load Balancing)"
+        },
+        {
+          "title": "mailmanager_archive",
+          "slug": "mailmanager_archive",
+          "subcategory": "SES Mail Manager"
         },
         {
           "title": "mailmanager_ingress_point",
@@ -4390,6 +4470,11 @@
           "subcategory": "CloudWatch Observability Admin"
         },
         {
+          "title": "opensearchserverless_access_policy",
+          "slug": "opensearchserverless_access_policy",
+          "subcategory": "OpenSearch Serverless"
+        },
+        {
           "title": "opensearchserverless_collection",
           "slug": "opensearchserverless_collection",
           "subcategory": "OpenSearch Serverless"
@@ -4397,6 +4482,26 @@
         {
           "title": "opensearchserverless_collection_group",
           "slug": "opensearchserverless_collection_group",
+          "subcategory": "OpenSearch Serverless"
+        },
+        {
+          "title": "opensearchserverless_lifecycle_policy",
+          "slug": "opensearchserverless_lifecycle_policy",
+          "subcategory": "OpenSearch Serverless"
+        },
+        {
+          "title": "opensearchserverless_security_config",
+          "slug": "opensearchserverless_security_config",
+          "subcategory": "OpenSearch Serverless"
+        },
+        {
+          "title": "opensearchserverless_security_policy",
+          "slug": "opensearchserverless_security_policy",
+          "subcategory": "OpenSearch Serverless"
+        },
+        {
+          "title": "opensearchserverless_vpc_endpoint",
+          "slug": "opensearchserverless_vpc_endpoint",
           "subcategory": "OpenSearch Serverless"
         },
         {
@@ -4859,6 +4964,16 @@
           "subcategory": "IAM Access Analyzer"
         },
         {
+          "title": "accountaccess_application",
+          "slug": "accountaccess_application",
+          "subcategory": "Account Access"
+        },
+        {
+          "title": "accountaccess_entitlement",
+          "slug": "accountaccess_entitlement",
+          "subcategory": "Account Access"
+        },
+        {
           "title": "account_alternate_contact",
           "slug": "account_alternate_contact",
           "subcategory": "Account Management"
@@ -4907,6 +5022,11 @@
           "title": "acmpca_policy",
           "slug": "acmpca_policy",
           "subcategory": "ACM PCA (Certificate Manager Private Certificate Authority)"
+        },
+        {
+          "title": "agentregistry_registry",
+          "slug": "agentregistry_registry",
+          "subcategory": "Agent Registry"
         },
         {
           "title": "ami",
@@ -5831,6 +5951,11 @@
         {
           "title": "bedrock_inference_profile",
           "slug": "bedrock_inference_profile",
+          "subcategory": "Bedrock"
+        },
+        {
+          "title": "bedrock_model_invocation_job",
+          "slug": "bedrock_model_invocation_job",
           "subcategory": "Bedrock"
         },
         {
@@ -6924,6 +7049,11 @@
           "subcategory": "DataZone"
         },
         {
+          "title": "datazone_policy_grant",
+          "slug": "datazone_policy_grant",
+          "subcategory": "DataZone"
+        },
+        {
           "title": "datazone_project",
           "slug": "datazone_project",
           "subcategory": "DataZone"
@@ -7174,6 +7304,11 @@
           "subcategory": "DMS (Database Migration)"
         },
         {
+          "title": "dms_data_provider",
+          "slug": "dms_data_provider",
+          "subcategory": "DMS (Database Migration)"
+        },
+        {
           "title": "dms_endpoint",
           "slug": "dms_endpoint",
           "subcategory": "DMS (Database Migration)"
@@ -7181,6 +7316,11 @@
         {
           "title": "dms_event_subscription",
           "slug": "dms_event_subscription",
+          "subcategory": "DMS (Database Migration)"
+        },
+        {
+          "title": "dms_instance_profile",
+          "slug": "dms_instance_profile",
           "subcategory": "DMS (Database Migration)"
         },
         {
@@ -8171,6 +8311,11 @@
         {
           "title": "fis_experiment_template",
           "slug": "fis_experiment_template",
+          "subcategory": "FIS (Fault Injection Simulator)"
+        },
+        {
+          "title": "fis_safety_lever_state",
+          "slug": "fis_safety_lever_state",
           "subcategory": "FIS (Fault Injection Simulator)"
         },
         {
@@ -9214,6 +9359,11 @@
           "subcategory": "Lambda MicroVMs"
         },
         {
+          "title": "lambdamicrovms_microvm",
+          "slug": "lambdamicrovms_microvm",
+          "subcategory": "Lambda MicroVMs"
+        },
+        {
           "title": "lambda_permission",
           "slug": "lambda_permission",
           "subcategory": "Lambda"
@@ -9577,6 +9727,11 @@
           "title": "macie2_organization_configuration",
           "slug": "macie2_organization_configuration",
           "subcategory": "Macie"
+        },
+        {
+          "title": "mailmanager_archive",
+          "slug": "mailmanager_archive",
+          "subcategory": "SES Mail Manager"
         },
         {
           "title": "mailmanager_ingress_point",
@@ -13375,7 +13530,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:41.400847"
+    "docs_refreshed_at": "2026-09-10T11:47:49.446368"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -17107,6 +17262,16 @@
           "subcategory": ""
         },
         {
+          "title": "dlm_lifecycle_policies",
+          "slug": "dlm_lifecycle_policies",
+          "subcategory": ""
+        },
+        {
+          "title": "dlm_lifecycle_policy",
+          "slug": "dlm_lifecycle_policy",
+          "subcategory": ""
+        },
+        {
           "title": "dms_certificate",
           "slug": "dms_certificate",
           "subcategory": ""
@@ -17194,6 +17359,16 @@
         {
           "title": "dms_replication_subnet_groups",
           "slug": "dms_replication_subnet_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_replication_task",
+          "slug": "dms_replication_task",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_replication_tasks",
+          "slug": "dms_replication_tasks",
           "subcategory": ""
         },
         {
@@ -17294,6 +17469,16 @@
         {
           "title": "dynamodb_tables",
           "slug": "dynamodb_tables",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_application_status_check",
+          "slug": "ec2_application_status_check",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_application_status_checks",
+          "slug": "ec2_application_status_checks",
           "subcategory": ""
         },
         {
@@ -20532,6 +20717,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsitewise_pipeline",
+          "slug": "iotsitewise_pipeline",
+          "subcategory": ""
+        },
+        {
           "title": "iotsitewise_portal",
           "slug": "iotsitewise_portal",
           "subcategory": ""
@@ -20549,6 +20739,21 @@
         {
           "title": "iotsitewise_projects",
           "slug": "iotsitewise_projects",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_task",
+          "slug": "iotsitewise_task",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_workspace",
+          "slug": "iotsitewise_workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_workspaces",
+          "slug": "iotsitewise_workspaces",
           "subcategory": ""
         },
         {
@@ -25467,6 +25672,16 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_http_namespace",
+          "slug": "servicediscovery_http_namespace",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_http_namespaces",
+          "slug": "servicediscovery_http_namespaces",
+          "subcategory": ""
+        },
+        {
           "title": "servicediscovery_private_dns_namespace",
           "slug": "servicediscovery_private_dns_namespace",
           "subcategory": ""
@@ -28301,6 +28516,11 @@
           "subcategory": ""
         },
         {
+          "title": "dlm_lifecycle_policy",
+          "slug": "dlm_lifecycle_policy",
+          "subcategory": ""
+        },
+        {
           "title": "dms_certificate",
           "slug": "dms_certificate",
           "subcategory": ""
@@ -28343,6 +28563,11 @@
         {
           "title": "dms_replication_subnet_group",
           "slug": "dms_replication_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_replication_task",
+          "slug": "dms_replication_task",
           "subcategory": ""
         },
         {
@@ -28393,6 +28618,11 @@
         {
           "title": "dynamodb_table",
           "slug": "dynamodb_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_application_status_check",
+          "slug": "ec2_application_status_check",
           "subcategory": ""
         },
         {
@@ -29883,6 +30113,11 @@
         {
           "title": "iotsitewise_project",
           "slug": "iotsitewise_project",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_workspace",
+          "slug": "iotsitewise_workspace",
           "subcategory": ""
         },
         {
@@ -32013,6 +32248,11 @@
         {
           "title": "servicecatalog_tag_option",
           "slug": "servicecatalog_tag_option",
+          "subcategory": ""
+        },
+        {
+          "title": "servicediscovery_http_namespace",
+          "slug": "servicediscovery_http_namespace",
           "subcategory": ""
         },
         {
@@ -34910,6 +35150,11 @@
           "subcategory": ""
         },
         {
+          "title": "dlm_lifecycle_policy",
+          "slug": "dlm_lifecycle_policy",
+          "subcategory": ""
+        },
+        {
           "title": "dms_certificate",
           "slug": "dms_certificate",
           "subcategory": ""
@@ -34952,6 +35197,11 @@
         {
           "title": "dms_replication_subnet_group",
           "slug": "dms_replication_subnet_group",
+          "subcategory": ""
+        },
+        {
+          "title": "dms_replication_task",
+          "slug": "dms_replication_task",
           "subcategory": ""
         },
         {
@@ -35002,6 +35252,11 @@
         {
           "title": "dynamodb_table",
           "slug": "dynamodb_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_application_status_check",
+          "slug": "ec2_application_status_check",
           "subcategory": ""
         },
         {
@@ -36750,6 +37005,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsitewise_pipeline",
+          "slug": "iotsitewise_pipeline",
+          "subcategory": ""
+        },
+        {
           "title": "iotsitewise_portal",
           "slug": "iotsitewise_portal",
           "subcategory": ""
@@ -36757,6 +37017,16 @@
         {
           "title": "iotsitewise_project",
           "slug": "iotsitewise_project",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_task",
+          "slug": "iotsitewise_task",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_workspace",
+          "slug": "iotsitewise_workspace",
           "subcategory": ""
         },
         {
@@ -39530,6 +39800,11 @@
           "subcategory": ""
         },
         {
+          "title": "servicediscovery_http_namespace",
+          "slug": "servicediscovery_http_namespace",
+          "subcategory": ""
+        },
+        {
           "title": "servicediscovery_private_dns_namespace",
           "slug": "servicediscovery_private_dns_namespace",
           "subcategory": ""
@@ -40326,7 +40601,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:42.049289"
+    "docs_refreshed_at": "2026-09-10T11:47:49.976752"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -40760,7 +41035,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:42.488038"
+    "docs_refreshed_at": "2026-09-10T11:47:50.386474"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -42892,9 +43167,24 @@
           "subcategory": "Network"
         },
         {
+          "title": "application_insights_standard_web_test",
+          "slug": "application_insights_standard_web_test",
+          "subcategory": "Application Insights"
+        },
+        {
+          "title": "application_insights_workbook_template",
+          "slug": "application_insights_workbook_template",
+          "subcategory": "Application Insights"
+        },
+        {
           "title": "application_security_group",
           "slug": "application_security_group",
           "subcategory": "Network"
+        },
+        {
+          "title": "arc_kubernetes_provisioned_cluster",
+          "slug": "arc_kubernetes_provisioned_cluster",
+          "subcategory": "ArcKubernetes"
         },
         {
           "title": "automation_account",
@@ -42902,9 +43192,19 @@
           "subcategory": "Automation"
         },
         {
+          "title": "availability_set",
+          "slug": "availability_set",
+          "subcategory": "Compute"
+        },
+        {
           "title": "backup_policy_vm",
           "slug": "backup_policy_vm",
           "subcategory": "Recovery Services"
+        },
+        {
+          "title": "batch_application",
+          "slug": "batch_application",
+          "subcategory": "Batch"
         },
         {
           "title": "cdn_frontdoor_batch_rule_set",
@@ -42947,6 +43247,11 @@
           "subcategory": "Cognitive Services"
         },
         {
+          "title": "dedicated_host_group",
+          "slug": "dedicated_host_group",
+          "subcategory": "Compute"
+        },
+        {
           "title": "federated_identity_credential",
           "slug": "federated_identity_credential",
           "subcategory": "Authorization"
@@ -42980,6 +43285,11 @@
           "title": "kubernetes_automatic_cluster",
           "slug": "kubernetes_automatic_cluster",
           "subcategory": "Container"
+        },
+        {
+          "title": "log_analytics_workspace",
+          "slug": "log_analytics_workspace",
+          "subcategory": "Log Analytics"
         },
         {
           "title": "monitor_activity_log_alert",
@@ -48852,7 +49162,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:43.021515"
+    "docs_refreshed_at": "2026-09-10T11:47:50.979410"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -49201,7 +49511,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:43.456472"
+    "docs_refreshed_at": "2026-09-10T11:47:51.378706"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -52152,6 +52462,21 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "google_app_engine_domain_mapping",
+          "slug": "google_app_engine_domain_mapping",
+          "subcategory": "App Engine"
+        },
+        {
+          "title": "google_app_engine_service_network_settings",
+          "slug": "google_app_engine_service_network_settings",
+          "subcategory": "App Engine"
+        },
+        {
+          "title": "google_app_engine_service_split_traffic",
+          "slug": "google_app_engine_service_split_traffic",
+          "subcategory": "App Engine"
+        },
+        {
           "title": "google_bigquery_dataset",
           "slug": "google_bigquery_dataset",
           "subcategory": "BigQuery"
@@ -52432,6 +52757,31 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_contact_center_insights_analysis_rule",
+          "slug": "google_contact_center_insights_analysis_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_assessment_rule",
+          "slug": "google_contact_center_insights_assessment_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_auto_labeling_rule",
+          "slug": "google_contact_center_insights_auto_labeling_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_qa_scorecard",
+          "slug": "google_contact_center_insights_qa_scorecard",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_view",
+          "slug": "google_contact_center_insights_view",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
           "title": "google_discovery_engine_assistant",
           "slug": "google_discovery_engine_assistant",
           "subcategory": "Discovery Engine"
@@ -52512,6 +52862,21 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_identity_platform_inbound_saml_config",
+          "slug": "google_identity_platform_inbound_saml_config",
+          "subcategory": "Identity Platform"
+        },
+        {
+          "title": "google_identity_platform_oauth_idp_config",
+          "slug": "google_identity_platform_oauth_idp_config",
+          "subcategory": "Identity Platform"
+        },
+        {
+          "title": "google_identity_platform_tenant",
+          "slug": "google_identity_platform_tenant",
+          "subcategory": "Identity Platform"
+        },
+        {
           "title": "google_kms_crypto_key_version",
           "slug": "google_kms_crypto_key_version",
           "subcategory": "Cloud Key Management Service"
@@ -52555,6 +52920,61 @@
           "title": "google_monitoring_alert_policy",
           "slug": "google_monitoring_alert_policy",
           "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_network_security_authz_policy",
+          "slug": "google_network_security_authz_policy",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_deployment",
+          "slug": "google_network_security_intercept_deployment",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_deployment_group",
+          "slug": "google_network_security_intercept_deployment_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_endpoint_group",
+          "slug": "google_network_security_intercept_endpoint_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_endpoint_group_association",
+          "slug": "google_network_security_intercept_endpoint_group_association",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_deployment",
+          "slug": "google_network_security_mirroring_deployment",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_deployment_group",
+          "slug": "google_network_security_mirroring_deployment_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint",
+          "slug": "google_network_security_mirroring_endpoint",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint_group",
+          "slug": "google_network_security_mirroring_endpoint_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint_group_association",
+          "slug": "google_network_security_mirroring_endpoint_group_association",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_sac_realm",
+          "slug": "google_network_security_sac_realm",
+          "subcategory": "Network Security"
         },
         {
           "title": "google_network_services_authz_extension",
@@ -52647,6 +53067,11 @@
           "subcategory": "Secret Manager"
         },
         {
+          "title": "google_secret_manager_secret_iam",
+          "slug": "google_secret_manager_secret_iam",
+          "subcategory": "Secret Manager"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
@@ -52675,6 +53100,56 @@
           "title": "google_storage_hmac_key",
           "slug": "google_storage_hmac_key",
           "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_vertex_ai_dataset",
+          "slug": "google_vertex_ai_dataset",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_deployment_resource_pool",
+          "slug": "google_vertex_ai_deployment_resource_pool",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_evaluation_metric",
+          "slug": "google_vertex_ai_evaluation_metric",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_feature_group",
+          "slug": "google_vertex_ai_feature_group",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_feature_online_store",
+          "slug": "google_vertex_ai_feature_online_store",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_featurestore",
+          "slug": "google_vertex_ai_featurestore",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_index",
+          "slug": "google_vertex_ai_index",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_persistent_resource",
+          "slug": "google_vertex_ai_persistent_resource",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_reasoning_engine",
+          "slug": "google_vertex_ai_reasoning_engine",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_tensorboard",
+          "slug": "google_vertex_ai_tensorboard",
+          "subcategory": "Vertex AI"
         }
       ],
       "overview": [
@@ -53406,6 +53881,11 @@
           "subcategory": "BigQuery Data Transfer"
         },
         {
+          "title": "bigquery_data_transfer_data_source_enrollment",
+          "slug": "bigquery_data_transfer_data_source_enrollment",
+          "subcategory": "BigQuery Data Transfer"
+        },
+        {
           "title": "bigquery_job",
           "slug": "bigquery_job",
           "subcategory": "BigQuery"
@@ -53623,6 +54103,16 @@
         {
           "title": "chronicle_big_query_export",
           "slug": "chronicle_big_query_export",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_case_close_definition",
+          "slug": "chronicle_case_close_definition",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_case_tag_definition",
+          "slug": "chronicle_case_tag_definition",
           "subcategory": "Chronicle"
         },
         {
@@ -57296,6 +57786,11 @@
           "subcategory": "Observability"
         },
         {
+          "title": "observability_link",
+          "slug": "observability_link",
+          "subcategory": "Observability"
+        },
+        {
           "title": "observability_organization_settings",
           "slug": "observability_organization_settings",
           "subcategory": "Observability"
@@ -57906,6 +58401,11 @@
           "subcategory": "Service Usage"
         },
         {
+          "title": "service_usage_v2_consumer_policy",
+          "slug": "service_usage_v2_consumer_policy",
+          "subcategory": "Service Usage v2"
+        },
+        {
           "title": "site_verification_owner",
           "slug": "site_verification_owner",
           "subcategory": "Site Verification"
@@ -58054,6 +58554,16 @@
           "title": "storage_folder",
           "slug": "storage_folder",
           "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "storage_ftp_server",
+          "slug": "storage_ftp_server",
+          "subcategory": "Cloud Storage FTP"
+        },
+        {
+          "title": "storage_ftp_user",
+          "slug": "storage_ftp_user",
+          "subcategory": "Cloud Storage FTP"
         },
         {
           "title": "storage_hmac_key",
@@ -58427,7 +58937,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:44.024436"
+    "docs_refreshed_at": "2026-09-10T11:47:51.881797"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -61111,6 +61621,21 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "google_app_engine_domain_mapping",
+          "slug": "google_app_engine_domain_mapping",
+          "subcategory": "App Engine"
+        },
+        {
+          "title": "google_app_engine_service_network_settings",
+          "slug": "google_app_engine_service_network_settings",
+          "subcategory": "App Engine"
+        },
+        {
+          "title": "google_app_engine_service_split_traffic",
+          "slug": "google_app_engine_service_split_traffic",
+          "subcategory": "App Engine"
+        },
+        {
           "title": "google_bigquery_dataset",
           "slug": "google_bigquery_dataset",
           "subcategory": "BigQuery"
@@ -61391,6 +61916,31 @@
           "subcategory": "Compute Engine"
         },
         {
+          "title": "google_contact_center_insights_analysis_rule",
+          "slug": "google_contact_center_insights_analysis_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_assessment_rule",
+          "slug": "google_contact_center_insights_assessment_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_auto_labeling_rule",
+          "slug": "google_contact_center_insights_auto_labeling_rule",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_qa_scorecard",
+          "slug": "google_contact_center_insights_qa_scorecard",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
+          "title": "google_contact_center_insights_view",
+          "slug": "google_contact_center_insights_view",
+          "subcategory": "Contact Center AI Insights"
+        },
+        {
           "title": "google_discovery_engine_assistant",
           "slug": "google_discovery_engine_assistant",
           "subcategory": "Discovery Engine"
@@ -61471,6 +62021,21 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_identity_platform_inbound_saml_config",
+          "slug": "google_identity_platform_inbound_saml_config",
+          "subcategory": "Identity Platform"
+        },
+        {
+          "title": "google_identity_platform_oauth_idp_config",
+          "slug": "google_identity_platform_oauth_idp_config",
+          "subcategory": "Identity Platform"
+        },
+        {
+          "title": "google_identity_platform_tenant",
+          "slug": "google_identity_platform_tenant",
+          "subcategory": "Identity Platform"
+        },
+        {
           "title": "google_kms_crypto_key_version",
           "slug": "google_kms_crypto_key_version",
           "subcategory": "Cloud Key Management Service"
@@ -61514,6 +62079,61 @@
           "title": "google_monitoring_alert_policy",
           "slug": "google_monitoring_alert_policy",
           "subcategory": "Cloud (Stackdriver) Monitoring"
+        },
+        {
+          "title": "google_network_security_authz_policy",
+          "slug": "google_network_security_authz_policy",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_deployment",
+          "slug": "google_network_security_intercept_deployment",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_deployment_group",
+          "slug": "google_network_security_intercept_deployment_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_endpoint_group",
+          "slug": "google_network_security_intercept_endpoint_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_intercept_endpoint_group_association",
+          "slug": "google_network_security_intercept_endpoint_group_association",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_deployment",
+          "slug": "google_network_security_mirroring_deployment",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_deployment_group",
+          "slug": "google_network_security_mirroring_deployment_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint",
+          "slug": "google_network_security_mirroring_endpoint",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint_group",
+          "slug": "google_network_security_mirroring_endpoint_group",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_mirroring_endpoint_group_association",
+          "slug": "google_network_security_mirroring_endpoint_group_association",
+          "subcategory": "Network Security"
+        },
+        {
+          "title": "google_network_security_sac_realm",
+          "slug": "google_network_security_sac_realm",
+          "subcategory": "Network Security"
         },
         {
           "title": "google_network_services_authz_extension",
@@ -61606,6 +62226,11 @@
           "subcategory": "Secret Manager"
         },
         {
+          "title": "google_secret_manager_secret_iam",
+          "slug": "google_secret_manager_secret_iam",
+          "subcategory": "Secret Manager"
+        },
+        {
           "title": "google_service_account",
           "slug": "google_service_account",
           "subcategory": "Cloud Platform"
@@ -61634,6 +62259,56 @@
           "title": "google_storage_hmac_key",
           "slug": "google_storage_hmac_key",
           "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_vertex_ai_dataset",
+          "slug": "google_vertex_ai_dataset",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_deployment_resource_pool",
+          "slug": "google_vertex_ai_deployment_resource_pool",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_evaluation_metric",
+          "slug": "google_vertex_ai_evaluation_metric",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_feature_group",
+          "slug": "google_vertex_ai_feature_group",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_feature_online_store",
+          "slug": "google_vertex_ai_feature_online_store",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_featurestore",
+          "slug": "google_vertex_ai_featurestore",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_index",
+          "slug": "google_vertex_ai_index",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_persistent_resource",
+          "slug": "google_vertex_ai_persistent_resource",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_reasoning_engine",
+          "slug": "google_vertex_ai_reasoning_engine",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "google_vertex_ai_tensorboard",
+          "slug": "google_vertex_ai_tensorboard",
+          "subcategory": "Vertex AI"
         }
       ],
       "overview": [
@@ -62365,6 +63040,11 @@
           "subcategory": "BigQuery Data Transfer"
         },
         {
+          "title": "bigquery_data_transfer_data_source_enrollment",
+          "slug": "bigquery_data_transfer_data_source_enrollment",
+          "subcategory": "BigQuery Data Transfer"
+        },
+        {
           "title": "bigquery_job",
           "slug": "bigquery_job",
           "subcategory": "BigQuery"
@@ -62582,6 +63262,11 @@
         {
           "title": "chronicle_big_query_export",
           "slug": "chronicle_big_query_export",
+          "subcategory": "Chronicle"
+        },
+        {
+          "title": "chronicle_case_close_definition",
+          "slug": "chronicle_case_close_definition",
           "subcategory": "Chronicle"
         },
         {
@@ -66255,6 +66940,11 @@
           "subcategory": "Observability"
         },
         {
+          "title": "observability_link",
+          "slug": "observability_link",
+          "subcategory": "Observability"
+        },
+        {
           "title": "observability_organization_settings",
           "slug": "observability_organization_settings",
           "subcategory": "Observability"
@@ -66865,6 +67555,11 @@
           "subcategory": "Service Usage"
         },
         {
+          "title": "service_usage_v2_consumer_policy",
+          "slug": "service_usage_v2_consumer_policy",
+          "subcategory": "Service Usage v2"
+        },
+        {
           "title": "site_verification_owner",
           "slug": "site_verification_owner",
           "subcategory": "Site Verification"
@@ -67013,6 +67708,16 @@
           "title": "storage_folder",
           "slug": "storage_folder",
           "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "storage_ftp_server",
+          "slug": "storage_ftp_server",
+          "subcategory": "Cloud Storage FTP"
+        },
+        {
+          "title": "storage_ftp_user",
+          "slug": "storage_ftp_user",
+          "subcategory": "Cloud Storage FTP"
         },
         {
           "title": "storage_hmac_key",
@@ -67386,7 +68091,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-03T12:07:44.589174"
+    "docs_refreshed_at": "2026-09-10T11:47:52.377639"
   },
   "4ek0/neko": {
     "docs": {
