@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T11:48:49.045250",
+  "generated_at": "2026-09-17T12:07:02.959167",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "71a6a669243c743e2a7e409d06db4bbcde962123"
+    "commit": "98a5283bd5459e2b3512399c1606f20f3b10fd8a"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -740,7 +740,7 @@
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 147
+    "list_resources": 152
   },
   "registrations": {
     "generated": [
@@ -3274,7 +3274,7 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 147,
+    "dashboard_list_resources": 152,
     "code_list_resources": 138,
     "registered_count": 145,
     "signals_agree": false,
@@ -3367,6 +3367,9 @@
       "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
+      "google_firebase_android_app",
+      "google_firebase_apple_app",
+      "google_firebase_web_app",
       "google_folder_iam_member",
       "google_identity_platform_inbound_saml_config",
       "google_identity_platform_oauth_idp_config",
@@ -3408,6 +3411,7 @@
       "google_pubsub_subscription",
       "google_pubsub_subscription_iam_member",
       "google_pubsub_topic",
+      "google_pubsub_topic_iam",
       "google_secret_manager_secret",
       "google_secret_manager_secret_iam",
       "google_service_account",
@@ -3424,6 +3428,7 @@
       "google_vertex_ai_featurestore",
       "google_vertex_ai_index",
       "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_rag_corpus",
       "google_vertex_ai_reasoning_engine",
       "google_vertex_ai_tensorboard"
     ],
@@ -3572,16 +3577,18 @@
       "google_compute_machine_image",
       "google_compute_network_firewall_policy_packet_mirroring_rule",
       "google_compute_region_backend_bucket",
+      "google_firebase_android_app",
+      "google_firebase_apple_app",
+      "google_firebase_web_app",
       "google_folder_iam_member",
       "google_network_security_sac_realm",
       "google_project_iam_member",
       "google_pubsub_subscription_iam_member",
+      "google_pubsub_topic_iam",
       "google_secret_manager_secret_iam",
       "google_service_account_iam_member"
     ],
-    "only_in_source": [
-      "google_vertex_ai_rag_corpus"
-    ],
+    "only_in_source": [],
     "registry_is_subset": false
   }
 }

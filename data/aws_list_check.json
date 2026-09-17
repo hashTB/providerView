@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:48:43.410488",
+  "generated_at": "2026-09-17T12:06:57.541676",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "55f6575a2515180499dc28434381ed9bbf71b34b"
+    "commit": "d8ab7103640c17ffe3261e9622862b7dfc0e94f9"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 227
+    "list_resources": 239
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3184,
+    "stdout_line_count": 3186,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 13,
-        "implemented": 230,
-        "total": 1705
+        "percent": 14,
+        "implemented": 239,
+        "total": 1707
       },
       "service_count": 245,
       "services": [
@@ -78,14 +78,14 @@
         },
         {
           "service": "apigateway",
-          "percent": 23,
-          "implemented": 6,
+          "percent": 26,
+          "implemented": 7,
           "total": 26
         },
         {
           "service": "apigatewayv2",
-          "percent": 15,
-          "implemented": 2,
+          "percent": 23,
+          "implemented": 3,
           "total": 13
         },
         {
@@ -510,9 +510,9 @@
         },
         {
           "service": "dms",
-          "percent": 20,
-          "implemented": 2,
-          "total": 10
+          "percent": 27,
+          "implemented": 3,
+          "total": 11
         },
         {
           "service": "docdb",
@@ -553,8 +553,8 @@
         {
           "service": "ec2",
           "percent": 15,
-          "implemented": 24,
-          "total": 159
+          "implemented": 25,
+          "total": 160
         },
         {
           "service": "ecr",
@@ -702,8 +702,8 @@
         },
         {
           "service": "glue",
-          "percent": 9,
-          "implemented": 2,
+          "percent": 14,
+          "implemented": 3,
           "total": 21
         },
         {
@@ -720,8 +720,8 @@
         },
         {
           "service": "iam",
-          "percent": 28,
-          "implemented": 10,
+          "percent": 34,
+          "implemented": 12,
           "total": 35
         },
         {
@@ -1110,8 +1110,8 @@
         },
         {
           "service": "rds",
-          "percent": 13,
-          "implemented": 4,
+          "percent": 17,
+          "implemented": 5,
           "total": 29
         },
         {
@@ -1470,8 +1470,8 @@
         },
         {
           "service": "wafv2",
-          "percent": 11,
-          "implemented": 1,
+          "percent": 22,
+          "implemented": 2,
           "total": 9
         },
         {
@@ -1611,6 +1611,7 @@
             "apigateway/vpc_link.go"
           ],
           "list_resources": [
+            "apigateway/deployment.go",
             "apigateway/integration.go",
             "apigateway/integration_response.go",
             "apigateway/method.go",
@@ -1637,6 +1638,7 @@
           ],
           "list_resources": [
             "apigatewayv2/api.go",
+            "apigatewayv2/integration.go",
             "apigatewayv2/route.go"
           ]
         },
@@ -2412,6 +2414,7 @@
             "dms/endpoint.go",
             "dms/event_subscription.go",
             "dms/instance_profile.go",
+            "dms/migration_project.go",
             "dms/replication_config.go",
             "dms/replication_instance.go",
             "dms/replication_subnet_group.go",
@@ -2420,7 +2423,8 @@
           ],
           "list_resources": [
             "dms/data_provider.go",
-            "dms/instance_profile.go"
+            "dms/instance_profile.go",
+            "dms/migration_project.go"
           ]
         },
         "docdb": {
@@ -2549,6 +2553,7 @@
             "ec2/transitgateway_peering_attachment_accepter.go",
             "ec2/transitgateway_policy_table.go",
             "ec2/transitgateway_policy_table_association.go",
+            "ec2/transitgateway_policy_table_entry.go",
             "ec2/transitgateway_prefix_list_reference.go",
             "ec2/transitgateway_route.go",
             "ec2/transitgateway_route_table.go",
@@ -2666,6 +2671,7 @@
             "ec2/vpc_flow_log.go",
             "ec2/vpc_internet_gateway.go",
             "ec2/vpc_nat_gateway.go",
+            "ec2/vpc_network_acl.go",
             "ec2/vpc_network_acl_rule.go",
             "ec2/vpc_network_insights_access_scope.go",
             "ec2/vpc_network_interface.go",
@@ -2994,6 +3000,7 @@
           ],
           "list_resources": [
             "glue/catalog.go",
+            "glue/catalog_table.go",
             "glue/job.go"
           ]
         },
@@ -3067,6 +3074,7 @@
           ],
           "list_resources": [
             "iam/access_key.go",
+            "iam/group.go",
             "iam/group_policy_attachment.go",
             "iam/instance_profile.go",
             "iam/policy.go",
@@ -3075,6 +3083,7 @@
             "iam/role_policy.go",
             "iam/role_policy_attachment.go",
             "iam/user.go",
+            "iam/user_policy.go",
             "iam/user_policy_attachment.go"
           ]
         },
@@ -3862,6 +3871,7 @@
           ],
           "list_resources": [
             "rds/cluster.go",
+            "rds/cluster_instance.go",
             "rds/instance.go",
             "rds/parameter_group.go",
             "rds/subnet_group.go"
@@ -4665,6 +4675,7 @@
             "wafv2/web_acl_rule_group_association.go"
           ],
           "list_resources": [
+            "wafv2/ip_set.go",
             "wafv2/web_acl_rule.go"
           ]
         },
@@ -4730,7 +4741,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-09-10 11:48:43 UTC"
+      "last_updated": "2026-09-17 12:06:57 UTC"
     }
   },
   "service_coverage": {
@@ -4739,8 +4750,8 @@
       {
         "service": "ec2",
         "percent": 15,
-        "implemented": 24,
-        "total": 159
+        "implemented": 25,
+        "total": 160
       },
       {
         "service": "s3",
@@ -4750,8 +4761,8 @@
       },
       {
         "service": "iam",
-        "percent": 28,
-        "implemented": 10,
+        "percent": 34,
+        "implemented": 12,
         "total": 35
       },
       {
@@ -4780,8 +4791,8 @@
       },
       {
         "service": "apigateway",
-        "percent": 23,
-        "implemented": 6,
+        "percent": 26,
+        "implemented": 7,
         "total": 26
       },
       {
@@ -4939,6 +4950,7 @@
           "apigateway/vpc_link.go"
         ],
         "list_resources": [
+          "apigateway/deployment.go",
           "apigateway/integration.go",
           "apigateway/integration_response.go",
           "apigateway/method.go",
@@ -4965,6 +4977,7 @@
         ],
         "list_resources": [
           "apigatewayv2/api.go",
+          "apigatewayv2/integration.go",
           "apigatewayv2/route.go"
         ]
       },
@@ -5740,6 +5753,7 @@
           "dms/endpoint.go",
           "dms/event_subscription.go",
           "dms/instance_profile.go",
+          "dms/migration_project.go",
           "dms/replication_config.go",
           "dms/replication_instance.go",
           "dms/replication_subnet_group.go",
@@ -5748,7 +5762,8 @@
         ],
         "list_resources": [
           "dms/data_provider.go",
-          "dms/instance_profile.go"
+          "dms/instance_profile.go",
+          "dms/migration_project.go"
         ]
       },
       "docdb": {
@@ -5877,6 +5892,7 @@
           "ec2/transitgateway_peering_attachment_accepter.go",
           "ec2/transitgateway_policy_table.go",
           "ec2/transitgateway_policy_table_association.go",
+          "ec2/transitgateway_policy_table_entry.go",
           "ec2/transitgateway_prefix_list_reference.go",
           "ec2/transitgateway_route.go",
           "ec2/transitgateway_route_table.go",
@@ -5994,6 +6010,7 @@
           "ec2/vpc_flow_log.go",
           "ec2/vpc_internet_gateway.go",
           "ec2/vpc_nat_gateway.go",
+          "ec2/vpc_network_acl.go",
           "ec2/vpc_network_acl_rule.go",
           "ec2/vpc_network_insights_access_scope.go",
           "ec2/vpc_network_interface.go",
@@ -6322,6 +6339,7 @@
         ],
         "list_resources": [
           "glue/catalog.go",
+          "glue/catalog_table.go",
           "glue/job.go"
         ]
       },
@@ -6395,6 +6413,7 @@
         ],
         "list_resources": [
           "iam/access_key.go",
+          "iam/group.go",
           "iam/group_policy_attachment.go",
           "iam/instance_profile.go",
           "iam/policy.go",
@@ -6403,6 +6422,7 @@
           "iam/role_policy.go",
           "iam/role_policy_attachment.go",
           "iam/user.go",
+          "iam/user_policy.go",
           "iam/user_policy_attachment.go"
         ]
       },
@@ -7190,6 +7210,7 @@
         ],
         "list_resources": [
           "rds/cluster.go",
+          "rds/cluster_instance.go",
           "rds/instance.go",
           "rds/parameter_group.go",
           "rds/subnet_group.go"
@@ -7993,6 +8014,7 @@
           "wafv2/web_acl_rule_group_association.go"
         ],
         "list_resources": [
+          "wafv2/ip_set.go",
           "wafv2/web_acl_rule.go"
         ]
       },
@@ -8060,10 +8082,10 @@
     }
   },
   "validation": {
-    "matches": false,
-    "dashboard_list_resources": 227,
-    "script_implemented_list": 230,
-    "script_total_resources": 1705,
-    "script_percent": 13
+    "matches": true,
+    "dashboard_list_resources": 239,
+    "script_implemented_list": 239,
+    "script_total_resources": 1707,
+    "script_percent": 14
   }
 }
