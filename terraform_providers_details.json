@@ -4210,6 +4210,11 @@
           "subcategory": "ECS (Elastic Container)"
         },
         {
+          "title": "efs_mount_target",
+          "slug": "efs_mount_target",
+          "subcategory": "EFS (Elastic File System)"
+        },
+        {
           "title": "eip",
           "slug": "eip",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -4287,6 +4292,11 @@
         {
           "title": "iam_instance_profile",
           "slug": "iam_instance_profile",
+          "subcategory": "IAM (Identity & Access Management)"
+        },
+        {
+          "title": "iam_openid_connect_provider",
+          "slug": "iam_openid_connect_provider",
           "subcategory": "IAM (Identity & Access Management)"
         },
         {
@@ -9929,6 +9939,11 @@
           "subcategory": "MQ"
         },
         {
+          "title": "msk_channel",
+          "slug": "msk_channel",
+          "subcategory": "Managed Streaming for Kafka"
+        },
+        {
           "title": "msk_cluster",
           "slug": "msk_cluster",
           "subcategory": "Managed Streaming for Kafka"
@@ -13605,7 +13620,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:57.793682"
+    "docs_refreshed_at": "2026-09-24T12:36:21.722490"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14332,6 +14347,11 @@
           "subcategory": ""
         },
         {
+          "title": "appsync_api_key",
+          "slug": "appsync_api_key",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_apis",
           "slug": "appsync_apis",
           "subcategory": ""
@@ -14832,6 +14852,26 @@
           "subcategory": ""
         },
         {
+          "title": "bcmpricingcalculator_workload_estimate",
+          "slug": "bcmpricingcalculator_workload_estimate",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_workload_estimates",
+          "slug": "bcmpricingcalculator_workload_estimates",
+          "subcategory": ""
+        },
+        {
+          "title": "bcm_scheduled_report",
+          "slug": "bcm_scheduled_report",
+          "subcategory": ""
+        },
+        {
+          "title": "bcm_scheduled_reports",
+          "slug": "bcm_scheduled_reports",
+          "subcategory": ""
+        },
+        {
           "title": "bedrock_agent",
           "slug": "bedrock_agent",
           "subcategory": ""
@@ -15317,6 +15357,11 @@
           "subcategory": ""
         },
         {
+          "title": "cases_related_item",
+          "slug": "cases_related_item",
+          "subcategory": ""
+        },
+        {
           "title": "cases_template",
           "slug": "cases_template",
           "subcategory": ""
@@ -15474,6 +15519,11 @@
         {
           "title": "chime_app_instance_user",
           "slug": "chime_app_instance_user",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_channel",
+          "slug": "chime_channel",
           "subcategory": ""
         },
         {
@@ -16702,6 +16752,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_vocabulary",
+          "slug": "connect_vocabulary",
+          "subcategory": ""
+        },
+        {
           "title": "connect_workspace",
           "slug": "connect_workspace",
           "subcategory": ""
@@ -17567,6 +17622,16 @@
           "subcategory": ""
         },
         {
+          "title": "drs_replication_configuration_template",
+          "slug": "drs_replication_configuration_template",
+          "subcategory": ""
+        },
+        {
+          "title": "drs_replication_configuration_templates",
+          "slug": "drs_replication_configuration_templates",
+          "subcategory": ""
+        },
+        {
           "title": "drs_source_network",
           "slug": "drs_source_network",
           "subcategory": ""
@@ -17787,6 +17852,16 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_instance_event_window",
+          "slug": "ec2_instance_event_window",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_instance_event_windows",
+          "slug": "ec2_instance_event_windows",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_instances",
           "slug": "ec2_instances",
           "subcategory": ""
@@ -17899,6 +17974,16 @@
         {
           "title": "ec2_ip_pool_route_table_associations",
           "slug": "ec2_ip_pool_route_table_associations",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_i_pv_4_pool",
+          "slug": "ec2_i_pv_4_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_i_pv_4_pools",
+          "slug": "ec2_i_pv_4_pools",
           "subcategory": ""
         },
         {
@@ -18239,6 +18324,11 @@
         {
           "title": "ec2_subnet_cidr_blocks",
           "slug": "ec2_subnet_cidr_blocks",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_subnet_cidr_reservation",
+          "slug": "ec2_subnet_cidr_reservation",
           "subcategory": ""
         },
         {
@@ -19877,6 +19967,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_partition",
+          "slug": "glue_partition",
+          "subcategory": ""
+        },
+        {
           "title": "glue_registries",
           "slug": "glue_registries",
           "subcategory": ""
@@ -20872,6 +20967,16 @@
           "subcategory": ""
         },
         {
+          "title": "iotsitewise_application",
+          "slug": "iotsitewise_application",
+          "subcategory": ""
+        },
+        {
+          "title": "iotsitewise_applications",
+          "slug": "iotsitewise_applications",
+          "subcategory": ""
+        },
+        {
           "title": "iotsitewise_asset",
           "slug": "iotsitewise_asset",
           "subcategory": ""
@@ -21004,6 +21109,11 @@
         {
           "title": "iot_thing_groups",
           "slug": "iot_thing_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_thing_principal_attachment",
+          "slug": "iot_thing_principal_attachment",
           "subcategory": ""
         },
         {
@@ -21672,6 +21782,16 @@
           "subcategory": ""
         },
         {
+          "title": "licensemanager_license_asset_group",
+          "slug": "licensemanager_license_asset_group",
+          "subcategory": ""
+        },
+        {
+          "title": "licensemanager_license_asset_groups",
+          "slug": "licensemanager_license_asset_groups",
+          "subcategory": ""
+        },
+        {
           "title": "licensemanager_license_asset_rule_set",
           "slug": "licensemanager_license_asset_rule_set",
           "subcategory": ""
@@ -22292,6 +22412,16 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_job_template",
+          "slug": "mediaconvert_job_template",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_job_templates",
+          "slug": "mediaconvert_job_templates",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_preset",
           "slug": "mediaconvert_preset",
           "subcategory": ""
@@ -22299,6 +22429,16 @@
         {
           "title": "mediaconvert_presets",
           "slug": "mediaconvert_presets",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_queue",
+          "slug": "mediaconvert_queue",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_queues",
+          "slug": "mediaconvert_queues",
           "subcategory": ""
         },
         {
@@ -22597,6 +22737,16 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_connector",
+          "slug": "mgn_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_connectors",
+          "slug": "mgn_connectors",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_network_migration_definition",
           "slug": "mgn_network_migration_definition",
           "subcategory": ""
@@ -22814,6 +22964,16 @@
         {
           "title": "neptunegraph_private_graph_endpoints",
           "slug": "neptunegraph_private_graph_endpoints",
+          "subcategory": ""
+        },
+        {
+          "title": "networkfirewall_container_association",
+          "slug": "networkfirewall_container_association",
+          "subcategory": ""
+        },
+        {
+          "title": "networkfirewall_container_associations",
+          "slug": "networkfirewall_container_associations",
           "subcategory": ""
         },
         {
@@ -23612,6 +23772,16 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_filter",
+          "slug": "personalize_filter",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_filters",
+          "slug": "personalize_filters",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_metric_attribution",
           "slug": "personalize_metric_attribution",
           "subcategory": ""
@@ -23649,6 +23819,11 @@
         {
           "title": "pinpoint_in_app_templates",
           "slug": "pinpoint_in_app_templates",
+          "subcategory": ""
+        },
+        {
+          "title": "pi_perf_reports",
+          "slug": "pi_perf_reports",
           "subcategory": ""
         },
         {
@@ -23774,6 +23949,11 @@
         {
           "title": "quicksight_analysis",
           "slug": "quicksight_analysis",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_customization",
+          "slug": "quicksight_customization",
           "subcategory": ""
         },
         {
@@ -24517,6 +24697,16 @@
           "subcategory": ""
         },
         {
+          "title": "route53_delegation_set",
+          "slug": "route53_delegation_set",
+          "subcategory": ""
+        },
+        {
+          "title": "route53_delegation_sets",
+          "slug": "route53_delegation_sets",
+          "subcategory": ""
+        },
+        {
           "title": "route53_dnssec",
           "slug": "route53_dnssec",
           "subcategory": ""
@@ -24624,6 +24814,16 @@
         {
           "title": "route53profiles_profiles",
           "slug": "route53profiles_profiles",
+          "subcategory": ""
+        },
+        {
+          "title": "route53_query_logging_config",
+          "slug": "route53_query_logging_config",
+          "subcategory": ""
+        },
+        {
+          "title": "route53_query_logging_configs",
+          "slug": "route53_query_logging_configs",
           "subcategory": ""
         },
         {
@@ -25217,6 +25417,26 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_cluster_scheduler_config",
+          "slug": "sagemaker_cluster_scheduler_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_cluster_scheduler_configs",
+          "slug": "sagemaker_cluster_scheduler_configs",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_code_repositories",
+          "slug": "sagemaker_code_repositories",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_code_repository",
+          "slug": "sagemaker_code_repository",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -25454,6 +25674,16 @@
         {
           "title": "sagemaker_notebook_instance",
           "slug": "sagemaker_notebook_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_notebook_instance_lifecycle_config",
+          "slug": "sagemaker_notebook_instance_lifecycle_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_notebook_instance_lifecycle_configs",
+          "slug": "sagemaker_notebook_instance_lifecycle_configs",
           "subcategory": ""
         },
         {
@@ -26397,6 +26627,16 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_verified_destination_number",
+          "slug": "smsvoice_verified_destination_number",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_verified_destination_numbers",
+          "slug": "smsvoice_verified_destination_numbers",
+          "subcategory": ""
+        },
+        {
           "title": "sns_subscription",
           "slug": "sns_subscription",
           "subcategory": ""
@@ -26724,6 +26964,11 @@
         {
           "title": "storagegateway_tapes",
           "slug": "storagegateway_tapes",
+          "subcategory": ""
+        },
+        {
+          "title": "storagegateway_volume",
+          "slug": "storagegateway_volume",
           "subcategory": ""
         },
         {
@@ -27139,6 +27384,26 @@
         {
           "title": "wafv2_web_acl_association",
           "slug": "wafv2_web_acl_association",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_context",
+          "slug": "wellarchitected_agent_context",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_goal",
+          "slug": "wellarchitected_agent_goal",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profile",
+          "slug": "wellarchitected_agent_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profiles",
+          "slug": "wellarchitected_agent_profiles",
           "subcategory": ""
         },
         {
@@ -27943,6 +28208,16 @@
         {
           "title": "bcmpricingcalculator_bill_scenario",
           "slug": "bcmpricingcalculator_bill_scenario",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_workload_estimate",
+          "slug": "bcmpricingcalculator_workload_estimate",
+          "subcategory": ""
+        },
+        {
+          "title": "bcm_scheduled_report",
+          "slug": "bcm_scheduled_report",
           "subcategory": ""
         },
         {
@@ -29011,6 +29286,11 @@
           "subcategory": ""
         },
         {
+          "title": "drs_replication_configuration_template",
+          "slug": "drs_replication_configuration_template",
+          "subcategory": ""
+        },
+        {
           "title": "drs_source_network",
           "slug": "drs_source_network",
           "subcategory": ""
@@ -29121,6 +29401,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_instance_event_window",
+          "slug": "ec2_instance_event_window",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_internet_gateway",
           "slug": "ec2_internet_gateway",
           "subcategory": ""
@@ -29168,6 +29453,11 @@
         {
           "title": "ec2_ip_pool_route_table_association",
           "slug": "ec2_ip_pool_route_table_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_i_pv_4_pool",
+          "slug": "ec2_i_pv_4_pool",
           "subcategory": ""
         },
         {
@@ -30521,6 +30811,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsitewise_application",
+          "slug": "iotsitewise_application",
+          "subcategory": ""
+        },
+        {
           "title": "iotsitewise_asset",
           "slug": "iotsitewise_asset",
           "subcategory": ""
@@ -30876,6 +31171,11 @@
           "subcategory": ""
         },
         {
+          "title": "licensemanager_license_asset_group",
+          "slug": "licensemanager_license_asset_group",
+          "subcategory": ""
+        },
+        {
           "title": "licensemanager_license_asset_rule_set",
           "slug": "licensemanager_license_asset_rule_set",
           "subcategory": ""
@@ -31166,8 +31466,18 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_job_template",
+          "slug": "mediaconvert_job_template",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_preset",
           "slug": "mediaconvert_preset",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_queue",
+          "slug": "mediaconvert_queue",
           "subcategory": ""
         },
         {
@@ -31286,6 +31596,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_connector",
+          "slug": "mgn_connector",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_network_migration_definition",
           "slug": "mgn_network_migration_definition",
           "subcategory": ""
@@ -31388,6 +31703,11 @@
         {
           "title": "neptunegraph_private_graph_endpoint",
           "slug": "neptunegraph_private_graph_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "networkfirewall_container_association",
+          "slug": "networkfirewall_container_association",
           "subcategory": ""
         },
         {
@@ -31708,6 +32028,11 @@
         {
           "title": "personalize_event_tracker",
           "slug": "personalize_event_tracker",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_filter",
+          "slug": "personalize_filter",
           "subcategory": ""
         },
         {
@@ -32111,6 +32436,11 @@
           "subcategory": ""
         },
         {
+          "title": "route53_delegation_set",
+          "slug": "route53_delegation_set",
+          "subcategory": ""
+        },
+        {
           "title": "route53_dnssec",
           "slug": "route53_dnssec",
           "subcategory": ""
@@ -32148,6 +32478,11 @@
         {
           "title": "route53profiles_profile_association",
           "slug": "route53profiles_profile_association",
+          "subcategory": ""
+        },
+        {
+          "title": "route53_query_logging_config",
+          "slug": "route53_query_logging_config",
           "subcategory": ""
         },
         {
@@ -32406,6 +32741,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_cluster_scheduler_config",
+          "slug": "sagemaker_cluster_scheduler_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_code_repository",
+          "slug": "sagemaker_code_repository",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -32518,6 +32863,11 @@
         {
           "title": "sagemaker_notebook_instance",
           "slug": "sagemaker_notebook_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_notebook_instance_lifecycle_config",
+          "slug": "sagemaker_notebook_instance_lifecycle_config",
           "subcategory": ""
         },
         {
@@ -32941,6 +33291,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_verified_destination_number",
+          "slug": "smsvoice_verified_destination_number",
+          "subcategory": ""
+        },
+        {
           "title": "sns_subscription",
           "slug": "sns_subscription",
           "subcategory": ""
@@ -33248,6 +33603,11 @@
         {
           "title": "wafv2_logging_configuration",
           "slug": "wafv2_logging_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profile",
+          "slug": "wellarchitected_agent_profile",
           "subcategory": ""
         },
         {
@@ -33860,6 +34220,11 @@
           "subcategory": ""
         },
         {
+          "title": "appsync_api_key",
+          "slug": "appsync_api_key",
+          "subcategory": ""
+        },
+        {
           "title": "appsync_channel_namespace",
           "slug": "appsync_channel_namespace",
           "subcategory": ""
@@ -34132,6 +34497,16 @@
         {
           "title": "bcmpricingcalculator_bill_scenario",
           "slug": "bcmpricingcalculator_bill_scenario",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_workload_estimate",
+          "slug": "bcmpricingcalculator_workload_estimate",
+          "subcategory": ""
+        },
+        {
+          "title": "bcm_scheduled_report",
+          "slug": "bcm_scheduled_report",
           "subcategory": ""
         },
         {
@@ -34425,6 +34800,11 @@
           "subcategory": ""
         },
         {
+          "title": "cases_related_item",
+          "slug": "cases_related_item",
+          "subcategory": ""
+        },
+        {
           "title": "cases_template",
           "slug": "cases_template",
           "subcategory": ""
@@ -34512,6 +34892,11 @@
         {
           "title": "chime_app_instance_user",
           "slug": "chime_app_instance_user",
+          "subcategory": ""
+        },
+        {
+          "title": "chime_channel",
+          "slug": "chime_channel",
           "subcategory": ""
         },
         {
@@ -35265,6 +35650,11 @@
           "subcategory": ""
         },
         {
+          "title": "connect_vocabulary",
+          "slug": "connect_vocabulary",
+          "subcategory": ""
+        },
+        {
           "title": "connect_workspace",
           "slug": "connect_workspace",
           "subcategory": ""
@@ -35790,6 +36180,11 @@
           "subcategory": ""
         },
         {
+          "title": "drs_replication_configuration_template",
+          "slug": "drs_replication_configuration_template",
+          "subcategory": ""
+        },
+        {
           "title": "drs_source_network",
           "slug": "drs_source_network",
           "subcategory": ""
@@ -35905,6 +36300,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_instance_event_window",
+          "slug": "ec2_instance_event_window",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_internet_gateway",
           "slug": "ec2_internet_gateway",
           "subcategory": ""
@@ -35962,6 +36362,11 @@
         {
           "title": "ec2_ip_pool_route_table_association",
           "slug": "ec2_ip_pool_route_table_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_i_pv_4_pool",
+          "slug": "ec2_i_pv_4_pool",
           "subcategory": ""
         },
         {
@@ -36137,6 +36542,11 @@
         {
           "title": "ec2_subnet_cidr_block",
           "slug": "ec2_subnet_cidr_block",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_subnet_cidr_reservation",
+          "slug": "ec2_subnet_cidr_reservation",
           "subcategory": ""
         },
         {
@@ -37025,6 +37435,11 @@
           "subcategory": ""
         },
         {
+          "title": "glue_partition",
+          "slug": "glue_partition",
+          "subcategory": ""
+        },
+        {
           "title": "glue_registry",
           "slug": "glue_registry",
           "subcategory": ""
@@ -37565,6 +37980,11 @@
           "subcategory": ""
         },
         {
+          "title": "iotsitewise_application",
+          "slug": "iotsitewise_application",
+          "subcategory": ""
+        },
+        {
           "title": "iotsitewise_asset",
           "slug": "iotsitewise_asset",
           "subcategory": ""
@@ -37637,6 +38057,11 @@
         {
           "title": "iot_thing_group",
           "slug": "iot_thing_group",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_thing_principal_attachment",
+          "slug": "iot_thing_principal_attachment",
           "subcategory": ""
         },
         {
@@ -38015,6 +38440,11 @@
           "subcategory": ""
         },
         {
+          "title": "licensemanager_license_asset_group",
+          "slug": "licensemanager_license_asset_group",
+          "subcategory": ""
+        },
+        {
           "title": "licensemanager_license_asset_rule_set",
           "slug": "licensemanager_license_asset_rule_set",
           "subcategory": ""
@@ -38340,8 +38770,18 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_job_template",
+          "slug": "mediaconvert_job_template",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_preset",
           "slug": "mediaconvert_preset",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_queue",
+          "slug": "mediaconvert_queue",
           "subcategory": ""
         },
         {
@@ -38515,6 +38955,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_connector",
+          "slug": "mgn_connector",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_network_migration_definition",
           "slug": "mgn_network_migration_definition",
           "subcategory": ""
@@ -38627,6 +39072,11 @@
         {
           "title": "neptunegraph_private_graph_endpoint",
           "slug": "neptunegraph_private_graph_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "networkfirewall_container_association",
+          "slug": "networkfirewall_container_association",
           "subcategory": ""
         },
         {
@@ -39100,6 +39550,11 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_filter",
+          "slug": "personalize_filter",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_metric_attribution",
           "slug": "personalize_metric_attribution",
           "subcategory": ""
@@ -39117,6 +39572,11 @@
         {
           "title": "pinpoint_in_app_template",
           "slug": "pinpoint_in_app_template",
+          "subcategory": ""
+        },
+        {
+          "title": "pi_perf_reports",
+          "slug": "pi_perf_reports",
           "subcategory": ""
         },
         {
@@ -39197,6 +39657,11 @@
         {
           "title": "quicksight_analysis",
           "slug": "quicksight_analysis",
+          "subcategory": ""
+        },
+        {
+          "title": "quicksight_customization",
+          "slug": "quicksight_customization",
           "subcategory": ""
         },
         {
@@ -39605,6 +40070,11 @@
           "subcategory": ""
         },
         {
+          "title": "route53_delegation_set",
+          "slug": "route53_delegation_set",
+          "subcategory": ""
+        },
+        {
           "title": "route53_dnssec",
           "slug": "route53_dnssec",
           "subcategory": ""
@@ -39672,6 +40142,11 @@
         {
           "title": "route53profiles_profile_resource_association",
           "slug": "route53profiles_profile_resource_association",
+          "subcategory": ""
+        },
+        {
+          "title": "route53_query_logging_config",
+          "slug": "route53_query_logging_config",
           "subcategory": ""
         },
         {
@@ -40010,6 +40485,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_cluster_scheduler_config",
+          "slug": "sagemaker_cluster_scheduler_config",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_code_repository",
+          "slug": "sagemaker_code_repository",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -40137,6 +40622,11 @@
         {
           "title": "sagemaker_notebook_instance",
           "slug": "sagemaker_notebook_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_notebook_instance_lifecycle_config",
+          "slug": "sagemaker_notebook_instance_lifecycle_config",
           "subcategory": ""
         },
         {
@@ -40655,6 +41145,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_verified_destination_number",
+          "slug": "smsvoice_verified_destination_number",
+          "subcategory": ""
+        },
+        {
           "title": "sns_subscription",
           "slug": "sns_subscription",
           "subcategory": ""
@@ -40842,6 +41337,11 @@
         {
           "title": "storagegateway_tape_pool",
           "slug": "storagegateway_tape_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "storagegateway_volume",
+          "slug": "storagegateway_volume",
           "subcategory": ""
         },
         {
@@ -41085,6 +41585,21 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_agent_context",
+          "slug": "wellarchitected_agent_context",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_goal",
+          "slug": "wellarchitected_agent_goal",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profile",
+          "slug": "wellarchitected_agent_profile",
+          "subcategory": ""
+        },
+        {
           "title": "wellarchitected_lens",
           "slug": "wellarchitected_lens",
           "subcategory": ""
@@ -41276,7 +41791,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:58.243042"
+    "docs_refreshed_at": "2026-09-24T12:36:22.376193"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -41710,7 +42225,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:58.589415"
+    "docs_refreshed_at": "2026-09-24T12:36:22.813879"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -43892,9 +44407,19 @@
           "subcategory": "Recovery Services"
         },
         {
+          "title": "batch_account",
+          "slug": "batch_account",
+          "subcategory": "Batch"
+        },
+        {
           "title": "batch_application",
           "slug": "batch_application",
           "subcategory": "Batch"
+        },
+        {
+          "title": "capacity_reservation_group",
+          "slug": "capacity_reservation_group",
+          "subcategory": "Compute"
         },
         {
           "title": "cdn_frontdoor_batch_rule_set",
@@ -43904,6 +44429,11 @@
         {
           "title": "cdn_frontdoor_origin",
           "slug": "cdn_frontdoor_origin",
+          "subcategory": "CDN"
+        },
+        {
+          "title": "cdn_frontdoor_origin_group",
+          "slug": "cdn_frontdoor_origin_group",
           "subcategory": "CDN"
         },
         {
@@ -43995,6 +44525,11 @@
           "title": "log_analytics_workspace",
           "slug": "log_analytics_workspace",
           "subcategory": "Log Analytics"
+        },
+        {
+          "title": "monitor_action_group",
+          "slug": "monitor_action_group",
+          "subcategory": "Monitor"
         },
         {
           "title": "monitor_activity_log_alert",
@@ -49086,6 +49621,11 @@
           "subcategory": "Storage"
         },
         {
+          "title": "storage_discovery_workspace",
+          "slug": "storage_discovery_workspace",
+          "subcategory": "Storage"
+        },
+        {
           "title": "storage_encryption_scope",
           "slug": "storage_encryption_scope",
           "subcategory": "Storage"
@@ -49872,7 +50412,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:58.981792"
+    "docs_refreshed_at": "2026-09-24T12:36:23.365586"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -50221,7 +50761,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:59.326407"
+    "docs_refreshed_at": "2026-09-24T12:36:23.799228"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -50934,6 +51474,11 @@
           "subcategory": "Cloud Build v2"
         },
         {
+          "title": "cloudbuild_worker_pool",
+          "slug": "cloudbuild_worker_pool",
+          "subcategory": "Cloud Build"
+        },
+        {
           "title": "clouddeploy_custom_target_type_iam_policy",
           "slug": "clouddeploy_custom_target_type_iam_policy",
           "subcategory": "Cloud Deploy"
@@ -57176,6 +57721,16 @@
           "subcategory": "Gemini for Google Cloud"
         },
         {
+          "title": "gemini_gibq_observability_setting",
+          "slug": "gemini_gibq_observability_setting",
+          "subcategory": "Gemini for Google Cloud"
+        },
+        {
+          "title": "gemini_gibq_observability_setting_binding",
+          "slug": "gemini_gibq_observability_setting_binding",
+          "subcategory": "Gemini for Google Cloud"
+        },
+        {
           "title": "gemini_logging_setting",
           "slug": "gemini_logging_setting",
           "subcategory": "Gemini for Google Cloud"
@@ -58399,6 +58954,11 @@
           "title": "network_security_url_lists",
           "slug": "network_security_url_lists",
           "subcategory": "Network Security"
+        },
+        {
+          "title": "network_services_agent_connectivity_template",
+          "slug": "network_services_agent_connectivity_template",
+          "subcategory": "Network Services"
         },
         {
           "title": "network_services_agent_gateway",
@@ -59707,7 +60267,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:05:59.755476"
+    "docs_refreshed_at": "2026-09-24T12:36:24.375015"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -60153,6 +60713,11 @@
           "subcategory": "Cloud Build v2"
         },
         {
+          "title": "cloudbuild_worker_pool",
+          "slug": "cloudbuild_worker_pool",
+          "subcategory": "Cloud Build"
+        },
+        {
           "title": "clouddeploy_custom_target_type_iam_policy",
           "slug": "clouddeploy_custom_target_type_iam_policy",
           "subcategory": "Cloud Deploy"
@@ -66395,6 +66960,16 @@
           "subcategory": "Gemini for Google Cloud"
         },
         {
+          "title": "gemini_gibq_observability_setting",
+          "slug": "gemini_gibq_observability_setting",
+          "subcategory": "Gemini for Google Cloud"
+        },
+        {
+          "title": "gemini_gibq_observability_setting_binding",
+          "slug": "gemini_gibq_observability_setting_binding",
+          "subcategory": "Gemini for Google Cloud"
+        },
+        {
           "title": "gemini_logging_setting",
           "slug": "gemini_logging_setting",
           "subcategory": "Gemini for Google Cloud"
@@ -67618,6 +68193,11 @@
           "title": "network_security_url_lists",
           "slug": "network_security_url_lists",
           "subcategory": "Network Security"
+        },
+        {
+          "title": "network_services_agent_connectivity_template",
+          "slug": "network_services_agent_connectivity_template",
+          "subcategory": "Network Services"
         },
         {
           "title": "network_services_agent_gateway",
@@ -68926,7 +69506,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-09-17T12:06:00.215380"
+    "docs_refreshed_at": "2026-09-24T12:36:24.969605"
   },
   "4ek0/neko": {
     "docs": {

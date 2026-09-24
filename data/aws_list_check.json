@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T12:06:57.541676",
+  "generated_at": "2026-09-24T12:37:24.501741",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "d8ab7103640c17ffe3261e9622862b7dfc0e94f9"
+    "commit": "82532de7103d4dbabe384749cfaf09fc4c0692ad"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 239
+    "list_resources": 241
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3186,
+    "stdout_line_count": 3187,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 14,
-        "implemented": 239,
-        "total": 1707
+        "implemented": 242,
+        "total": 1708
       },
       "service_count": 245,
       "services": [
@@ -552,8 +552,8 @@
         },
         {
           "service": "ec2",
-          "percent": 15,
-          "implemented": 25,
+          "percent": 16,
+          "implemented": 26,
           "total": 160
         },
         {
@@ -576,8 +576,8 @@
         },
         {
           "service": "efs",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 16,
+          "implemented": 1,
           "total": 6
         },
         {
@@ -720,8 +720,8 @@
         },
         {
           "service": "iam",
-          "percent": 34,
-          "implemented": 12,
+          "percent": 37,
+          "implemented": 13,
           "total": 35
         },
         {
@@ -780,9 +780,9 @@
         },
         {
           "service": "kafka",
-          "percent": 33,
+          "percent": 30,
           "implemented": 3,
-          "total": 9
+          "total": 10
         },
         {
           "service": "kafkaconnect",
@@ -2666,6 +2666,7 @@
             "ec2/ec2_secondary_network.go",
             "ec2/ec2_secondary_subnet.go",
             "ec2/transitgateway_metering_policy.go",
+            "ec2/vpc_default_security_group.go",
             "ec2/vpc_endpoint.go",
             "ec2/vpc_endpoint_route_table_association.go",
             "ec2/vpc_flow_log.go",
@@ -2740,7 +2741,9 @@
             "efs/mount_target.go",
             "efs/replication_configuration.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "efs/mount_target.go"
+          ]
         },
         "eks": {
           "all_resources": [
@@ -3077,6 +3080,7 @@
             "iam/group.go",
             "iam/group_policy_attachment.go",
             "iam/instance_profile.go",
+            "iam/openid_connect_provider.go",
             "iam/policy.go",
             "iam/policy_attachment.go",
             "iam/role.go",
@@ -3180,6 +3184,7 @@
         },
         "kafka": {
           "all_resources": [
+            "kafka/channel.go",
             "kafka/cluster.go",
             "kafka/cluster_policy.go",
             "kafka/configuration.go",
@@ -4741,29 +4746,29 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-09-17 12:06:57 UTC"
+      "last_updated": "2026-09-24 12:37:24 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 69,
+    "services_with_list": 70,
     "top_services": [
       {
         "service": "ec2",
-        "percent": 15,
-        "implemented": 25,
+        "percent": 16,
+        "implemented": 26,
         "total": 160
+      },
+      {
+        "service": "iam",
+        "percent": 37,
+        "implemented": 13,
+        "total": 35
       },
       {
         "service": "s3",
         "percent": 46,
         "implemented": 12,
         "total": 26
-      },
-      {
-        "service": "iam",
-        "percent": 34,
-        "implemented": 12,
-        "total": 35
       },
       {
         "service": "bedrockagentcore",
@@ -6005,6 +6010,7 @@
           "ec2/ec2_secondary_network.go",
           "ec2/ec2_secondary_subnet.go",
           "ec2/transitgateway_metering_policy.go",
+          "ec2/vpc_default_security_group.go",
           "ec2/vpc_endpoint.go",
           "ec2/vpc_endpoint_route_table_association.go",
           "ec2/vpc_flow_log.go",
@@ -6079,7 +6085,9 @@
           "efs/mount_target.go",
           "efs/replication_configuration.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "efs/mount_target.go"
+        ]
       },
       "eks": {
         "all_resources": [
@@ -6416,6 +6424,7 @@
           "iam/group.go",
           "iam/group_policy_attachment.go",
           "iam/instance_profile.go",
+          "iam/openid_connect_provider.go",
           "iam/policy.go",
           "iam/policy_attachment.go",
           "iam/role.go",
@@ -6519,6 +6528,7 @@
       },
       "kafka": {
         "all_resources": [
+          "kafka/channel.go",
           "kafka/cluster.go",
           "kafka/cluster_policy.go",
           "kafka/configuration.go",
@@ -8082,10 +8092,10 @@
     }
   },
   "validation": {
-    "matches": true,
-    "dashboard_list_resources": 239,
-    "script_implemented_list": 239,
-    "script_total_resources": 1707,
+    "matches": false,
+    "dashboard_list_resources": 241,
+    "script_implemented_list": 242,
+    "script_total_resources": 1708,
     "script_percent": 14
   }
 }

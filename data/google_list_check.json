@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-17T12:07:02.959167",
+  "generated_at": "2026-09-24T12:37:30.468418",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "98a5283bd5459e2b3512399c1606f20f3b10fd8a"
+    "commit": "4a91c3a9e53531f01b23f0ba9bebe9ad9dc747c4"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -622,7 +622,7 @@
       {
         "file": "google/services/resourcemanager/iam_project.go",
         "type": "Handwritten",
-        "registrations": 1
+        "registrations": 2
       },
       {
         "file": "google/services/resourcemanager/iam_service_account.go",
@@ -735,7 +735,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "1ade81c0fcb411c113915f6e036527f24ae3545bde7b26df3679b266f4b69fe8",
+    "sha256": "ceb50d876a3ed8417ec4be5fe36c565ab4fd34d578ae5be4f9b84ec2a6ce2d49",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -1710,7 +1710,14 @@
         "package": "resourcemanager",
         "constructor": "NewProjectIamMemberListResource",
         "file": "google/services/resourcemanager/iam_project.go",
-        "line": 178
+        "line": 202
+      },
+      {
+        "name": "google_project_iam_binding",
+        "package": "resourcemanager",
+        "constructor": "NewProjectIamBindingListResource",
+        "file": "google/services/resourcemanager/iam_project.go",
+        "line": 213
       },
       {
         "name": "google_service_account_iam_member",
@@ -2635,6 +2642,7 @@
       "NewNetworkServicesMulticastGroupRangeActivationListResource",
       "NewNetworkServicesMulticastGroupRangeListResource",
       "NewNetworkServicesMulticastProducerAssociationListResource",
+      "NewProjectIamBindingListResource",
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
       "NewPubsubSubscriptionListResource",
@@ -2942,12 +2950,13 @@
     "missing_files_for_registration": [
       "NewBigqueryDatasetIamMemberListResource",
       "NewFolderIamMemberListResource",
+      "NewProjectIamBindingListResource",
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
       "NewServiceAccountIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 145,
+    "registration_count": 146,
     "file_type_name_count": 138,
     "signals_agree": false
   },
@@ -3276,7 +3285,7 @@
     "matches": false,
     "dashboard_list_resources": 152,
     "code_list_resources": 138,
-    "registered_count": 145,
+    "registered_count": 146,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_apigee_addons_config",
