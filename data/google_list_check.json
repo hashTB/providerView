@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-24T12:37:30.468418",
+  "generated_at": "2026-10-01T14:11:59.541079",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "4a91c3a9e53531f01b23f0ba9bebe9ad9dc747c4"
+    "commit": "13a301510d58affd59b2218466313003a372b31b"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 145,
+    "file_count": 151,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -435,6 +435,26 @@
         "registrations": 1
       },
       {
+        "file": "google/services/gkebackup/list_gke_backup_backup_channel.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_backup_plan.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_restore_channel.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_restore_plan.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
         "type": "MMv1",
         "registrations": 1
@@ -660,6 +680,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/secretmanager/list_google_secret_manager_secret_version.go",
+        "type": "Handwritten",
+        "registrations": 1
+      },
+      {
         "file": "google/services/secretmanager/list_secret_manager_secret.go",
         "type": "MMv1",
         "registrations": 1
@@ -667,6 +692,11 @@
       {
         "file": "google/services/sql/list_sql_database.go",
         "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/storage/iam_storage_bucket.go",
+        "type": "Handwritten",
         "registrations": 1
       },
       {
@@ -735,12 +765,12 @@
         "registrations": 1
       }
     ],
-    "sha256": "ceb50d876a3ed8417ec4be5fe36c565ab4fd34d578ae5be4f9b84ec2a6ce2d49",
+    "sha256": "4504c483dee54ca954aab79979c63408499a2866586121e888940baed4a0648c",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 152
+    "list_resources": 153
   },
   "registrations": {
     "generated": [
@@ -1305,6 +1335,34 @@
         "line": 40
       },
       {
+        "name": "google_gke_backup_backup_channel",
+        "package": "GKEBackup",
+        "constructor": "NewGKEBackupBackupChannelListResource",
+        "file": "google/services/gkebackup/list_gke_backup_backup_channel.go",
+        "line": 40
+      },
+      {
+        "name": "google_gke_backup_backup_plan",
+        "package": "GKEBackup",
+        "constructor": "NewGKEBackupBackupPlanListResource",
+        "file": "google/services/gkebackup/list_gke_backup_backup_plan.go",
+        "line": 40
+      },
+      {
+        "name": "google_gke_backup_restore_channel",
+        "package": "GKEBackup",
+        "constructor": "NewGKEBackupRestoreChannelListResource",
+        "file": "google/services/gkebackup/list_gke_backup_restore_channel.go",
+        "line": 40
+      },
+      {
+        "name": "google_gke_backup_restore_plan",
+        "package": "GKEBackup",
+        "constructor": "NewGKEBackupRestorePlanListResource",
+        "file": "google/services/gkebackup/list_gke_backup_restore_plan.go",
+        "line": 40
+      },
+      {
         "name": "google_identity_platform_inbound_saml_config",
         "package": "IdentityPlatform",
         "constructor": "NewIdentityPlatformInboundSamlConfigListResource",
@@ -1762,6 +1820,20 @@
         "line": 42
       },
       {
+        "name": "google_secret_manager_secret_version",
+        "package": "secretmanager",
+        "constructor": "NewGoogleSecretManagerSecretVersionListResource",
+        "file": "google/services/secretmanager/list_google_secret_manager_secret_version.go",
+        "line": 40
+      },
+      {
+        "name": "google_storage_bucket_iam_member",
+        "package": "storage",
+        "constructor": "NewStorageBucketIamMemberListResource",
+        "file": "google/services/storage/iam_storage_bucket.go",
+        "line": 243
+      },
+      {
         "name": "google_storage_bucket",
         "package": "storage",
         "constructor": "NewGoogleStorageBucketListResource",
@@ -2211,6 +2283,28 @@
         "constructor": "NewGoogleDnsRecordSetListResource"
       }
     ],
+    "gkebackup": [
+      {
+        "file": "google/services/gkebackup/list_gke_backup_backup_channel.go",
+        "type_name": "google_gke_backup_backup_channel",
+        "constructor": "NewGKEBackupBackupChannelListResource"
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_backup_plan.go",
+        "type_name": "google_gke_backup_backup_plan",
+        "constructor": "NewGKEBackupBackupPlanListResource"
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_restore_channel.go",
+        "type_name": "google_gke_backup_restore_channel",
+        "constructor": "NewGKEBackupRestoreChannelListResource"
+      },
+      {
+        "file": "google/services/gkebackup/list_gke_backup_restore_plan.go",
+        "type_name": "google_gke_backup_restore_plan",
+        "constructor": "NewGKEBackupRestorePlanListResource"
+      }
+    ],
     "identityplatform": [
       {
         "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
@@ -2429,6 +2523,11 @@
     ],
     "secretmanager": [
       {
+        "file": "google/services/secretmanager/list_google_secret_manager_secret_version.go",
+        "type_name": "google_secret_manager_secret_version",
+        "constructor": "NewGoogleSecretManagerSecretVersionListResource"
+      },
+      {
         "file": "google/services/secretmanager/list_iam_secret_manager_secret.go",
         "type_name": null,
         "constructor": "NewSecretManagerSecretIamMemberListResource"
@@ -2600,6 +2699,10 @@
       "NewDiscoveryEngineTargetSiteListResource",
       "NewDiscoveryEngineUserStoreListResource",
       "NewFolderIamMemberListResource",
+      "NewGKEBackupBackupChannelListResource",
+      "NewGKEBackupBackupPlanListResource",
+      "NewGKEBackupRestoreChannelListResource",
+      "NewGKEBackupRestorePlanListResource",
       "NewGoogleBigQueryTableListResource",
       "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
@@ -2607,6 +2710,7 @@
       "NewGoogleProjectIamCustomRoleListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
+      "NewGoogleSecretManagerSecretVersionListResource",
       "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -2652,6 +2756,7 @@
       "NewSecretManagerSecretIamMemberListResource",
       "NewSecretManagerSecretListResource",
       "NewServiceAccountIamMemberListResource",
+      "NewStorageBucketIamMemberListResource",
       "NewStorageHmacKeyListResource",
       "NewVertexAIDatasetListResource",
       "NewVertexAIDeploymentResourcePoolListResource",
@@ -2746,6 +2851,10 @@
       "NewDiscoveryEngineSitemapListResource",
       "NewDiscoveryEngineTargetSiteListResource",
       "NewDiscoveryEngineUserStoreListResource",
+      "NewGKEBackupBackupChannelListResource",
+      "NewGKEBackupBackupPlanListResource",
+      "NewGKEBackupRestoreChannelListResource",
+      "NewGKEBackupRestorePlanListResource",
       "NewGoogleBigQueryTableListResource",
       "NewGoogleComputeInstanceListResource",
       "NewGoogleDnsManagedZoneListResource",
@@ -2753,6 +2862,7 @@
       "NewGoogleProjectIamCustomRoleListResource",
       "NewGoogleProjectListResource",
       "NewGoogleProjectServiceListResource",
+      "NewGoogleSecretManagerSecretVersionListResource",
       "NewGoogleServiceAccountKeyListResource",
       "NewGoogleServiceAccountListResource",
       "NewGoogleStorageBucketListResource",
@@ -2892,6 +3002,10 @@
       "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
+      "google_gke_backup_backup_channel",
+      "google_gke_backup_backup_plan",
+      "google_gke_backup_restore_channel",
+      "google_gke_backup_restore_plan",
       "google_identity_platform_inbound_saml_config",
       "google_identity_platform_oauth_idp_config",
       "google_identity_platform_tenant",
@@ -2930,6 +3044,7 @@
       "google_pubsub_subscription",
       "google_pubsub_topic",
       "google_secret_manager_secret",
+      "google_secret_manager_secret_version",
       "google_service_account",
       "google_service_account_key",
       "google_sql_database",
@@ -2953,15 +3068,16 @@
       "NewProjectIamBindingListResource",
       "NewProjectIamMemberListResource",
       "NewPubsubSubscriptionIamMemberListResource",
-      "NewServiceAccountIamMemberListResource"
+      "NewServiceAccountIamMemberListResource",
+      "NewStorageBucketIamMemberListResource"
     ],
     "orphan_files_without_registration": [],
-    "registration_count": 146,
-    "file_type_name_count": 138,
+    "registration_count": 152,
+    "file_type_name_count": 143,
     "signals_agree": false
   },
   "service_coverage": {
-    "services_with_list": 22,
+    "services_with_list": 23,
     "rows": [
       {
         "service": "compute",
@@ -3004,6 +3120,10 @@
         "list_resources": 4
       },
       {
+        "service": "gkebackup",
+        "list_resources": 4
+      },
+      {
         "service": "appengine",
         "list_resources": 3
       },
@@ -3024,6 +3144,10 @@
         "list_resources": 2
       },
       {
+        "service": "secretmanager",
+        "list_resources": 2
+      },
+      {
         "service": "storage",
         "list_resources": 2
       },
@@ -3041,10 +3165,6 @@
       },
       {
         "service": "monitoring",
-        "list_resources": 1
-      },
-      {
-        "service": "secretmanager",
         "list_resources": 1
       },
       {
@@ -3177,6 +3297,14 @@
           "google_dns_record_set"
         ]
       },
+      "gkebackup": {
+        "list_resources": [
+          "google_gke_backup_backup_channel",
+          "google_gke_backup_backup_plan",
+          "google_gke_backup_restore_channel",
+          "google_gke_backup_restore_plan"
+        ]
+      },
       "identityplatform": {
         "list_resources": [
           "google_identity_platform_inbound_saml_config",
@@ -3250,7 +3378,8 @@
       },
       "secretmanager": {
         "list_resources": [
-          "google_secret_manager_secret"
+          "google_secret_manager_secret",
+          "google_secret_manager_secret_version"
         ]
       },
       "sql": {
@@ -3283,9 +3412,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 152,
-    "code_list_resources": 138,
-    "registered_count": 146,
+    "dashboard_list_resources": 153,
+    "code_list_resources": 143,
+    "registered_count": 152,
     "signals_agree": false,
     "dashboard_list_resource_names": [
       "google_apigee_addons_config",
@@ -3414,8 +3543,8 @@
       "google_network_services_multicast_group_range_activation",
       "google_network_services_multicast_producer_association",
       "google_project",
+      "google_project_iam",
       "google_project_iam_custom_role",
-      "google_project_iam_member",
       "google_project_service",
       "google_pubsub_subscription",
       "google_pubsub_subscription_iam_member",
@@ -3423,6 +3552,7 @@
       "google_pubsub_topic_iam",
       "google_secret_manager_secret",
       "google_secret_manager_secret_iam",
+      "google_secret_manager_secret_version",
       "google_service_account",
       "google_service_account_iam_member",
       "google_service_account_key",
@@ -3526,6 +3656,10 @@
       "google_discovery_engine_user_store",
       "google_dns_managed_zone",
       "google_dns_record_set",
+      "google_gke_backup_backup_channel",
+      "google_gke_backup_backup_plan",
+      "google_gke_backup_restore_channel",
+      "google_gke_backup_restore_plan",
       "google_identity_platform_inbound_saml_config",
       "google_identity_platform_oauth_idp_config",
       "google_identity_platform_tenant",
@@ -3564,6 +3698,7 @@
       "google_pubsub_subscription",
       "google_pubsub_topic",
       "google_secret_manager_secret",
+      "google_secret_manager_secret_version",
       "google_service_account",
       "google_service_account_key",
       "google_sql_database",
@@ -3591,13 +3726,18 @@
       "google_firebase_web_app",
       "google_folder_iam_member",
       "google_network_security_sac_realm",
-      "google_project_iam_member",
+      "google_project_iam",
       "google_pubsub_subscription_iam_member",
       "google_pubsub_topic_iam",
       "google_secret_manager_secret_iam",
       "google_service_account_iam_member"
     ],
-    "only_in_source": [],
+    "only_in_source": [
+      "google_gke_backup_backup_channel",
+      "google_gke_backup_backup_plan",
+      "google_gke_backup_restore_channel",
+      "google_gke_backup_restore_plan"
+    ],
     "registry_is_subset": false
   }
 }

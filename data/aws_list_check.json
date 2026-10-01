@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:37:24.501741",
+  "generated_at": "2026-10-01T14:11:53.647860",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "82532de7103d4dbabe384749cfaf09fc4c0692ad"
+    "commit": "34167e0962cbf4431615e9c32ff1fe7f3cf74c3e"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 241
+    "list_resources": 245
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3187,
+    "stdout_line_count": 3196,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 14,
-        "implemented": 242,
-        "total": 1708
+        "implemented": 244,
+        "total": 1711
       },
-      "service_count": 245,
+      "service_count": 246,
       "services": [
         {
           "service": "accessanalyzer",
@@ -503,6 +503,12 @@
           "total": 19
         },
         {
+          "service": "directoryservicedata",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
+        },
+        {
           "service": "dlm",
           "percent": 0,
           "implemented": 0,
@@ -534,9 +540,9 @@
         },
         {
           "service": "ds",
-          "percent": 0,
-          "implemented": 0,
-          "total": 8
+          "percent": 10,
+          "implemented": 1,
+          "total": 10
         },
         {
           "service": "dsql",
@@ -2401,6 +2407,14 @@
           ],
           "list_resources": []
         },
+        "directoryservicedata": {
+          "all_resources": [
+            "directoryservicedata/user.go"
+          ],
+          "list_resources": [
+            "directoryservicedata/user.go"
+          ]
+        },
         "dlm": {
           "all_resources": [
             "dlm/lifecycle_policy.go"
@@ -2455,6 +2469,8 @@
           "all_resources": [
             "ds/conditional_forwarder.go",
             "ds/directory.go",
+            "ds/ip_route.go",
+            "ds/ip_routes_exclusive.go",
             "ds/log_subscription.go",
             "ds/radius_settings.go",
             "ds/region.go",
@@ -2462,7 +2478,9 @@
             "ds/shared_directory_accepter.go",
             "ds/trust.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "ds/ip_route.go"
+          ]
         },
         "dsql": {
           "all_resources": [
@@ -4746,11 +4764,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-09-24 12:37:24 UTC"
+      "last_updated": "2026-10-01 14:11:53 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 70,
+    "services_with_list": 72,
     "top_services": [
       {
         "service": "ec2",
@@ -5745,6 +5763,14 @@
         ],
         "list_resources": []
       },
+      "directoryservicedata": {
+        "all_resources": [
+          "directoryservicedata/user.go"
+        ],
+        "list_resources": [
+          "directoryservicedata/user.go"
+        ]
+      },
       "dlm": {
         "all_resources": [
           "dlm/lifecycle_policy.go"
@@ -5799,6 +5825,8 @@
         "all_resources": [
           "ds/conditional_forwarder.go",
           "ds/directory.go",
+          "ds/ip_route.go",
+          "ds/ip_routes_exclusive.go",
           "ds/log_subscription.go",
           "ds/radius_settings.go",
           "ds/region.go",
@@ -5806,7 +5834,9 @@
           "ds/shared_directory_accepter.go",
           "ds/trust.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "ds/ip_route.go"
+        ]
       },
       "dsql": {
         "all_resources": [
@@ -8093,9 +8123,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 241,
-    "script_implemented_list": 242,
-    "script_total_resources": 1708,
+    "dashboard_list_resources": 245,
+    "script_implemented_list": 244,
+    "script_total_resources": 1711,
     "script_percent": 14
   }
 }
