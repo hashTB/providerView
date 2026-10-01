@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T14:12:32.157556",
+  "generated_at": "2026-10-01T15:38:32.948449",
   "families": {
     "Azure": {
       "count": 5,
@@ -10,10 +10,10 @@
       "sdk_v1_pct": 0.0,
       "archived_count": 1,
       "avg_repo_age_years": 6.64,
-      "pr_total": 232,
-      "pr_internal_pct": 55.2,
+      "pr_total": 233,
+      "pr_internal_pct": 55.4,
       "pr_cloud_vendor_pct": 3.4,
-      "pr_community_pct": 41.4
+      "pr_community_pct": 41.2
     },
     "AWS": {
       "count": 2,
@@ -60,19 +60,29 @@
       "source": "https://github.com/hashicorp/terraform-provider-azurerm",
       "repo": "hashicorp/terraform-provider-azurerm",
       "repo_created_at": "2017-06-05T20:53:54Z",
-      "repo_pushed_at": "2026-10-01T12:56:26Z",
+      "repo_pushed_at": "2026-10-01T15:33:06Z",
       "repo_archived": false,
       "repo_stars": 4974,
-      "repo_open_issues": 3030,
+      "repo_open_issues": 3032,
       "repo_age_years": 9.32,
       "pr_window_days": 180,
-      "pr_merged_total": 73,
-      "pr_internal": 47,
+      "pr_merged_total": 74,
+      "pr_internal": 48,
       "pr_cloud_vendor": 1,
       "pr_community": 25,
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 33544,
+          "title": "bump changelog",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/33544",
+          "author_login": "sreallymatt",
+          "author_company": "@hashicorp",
+          "author_association": "MEMBER",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:33:03Z"
+        },
         {
           "number": 32645,
           "title": "Lb probe no healthy backends behavior",
@@ -2528,7 +2538,7 @@
       "repo_archived": true,
       "repo_stars": 40,
       "repo_open_issues": 39,
-      "repo_age_years": 8.28,
+      "repo_age_years": 8.29,
       "pr_window_days": 180,
       "pr_merged_total": 0,
       "pr_internal": 0,
@@ -2562,7 +2572,7 @@
       "repo_pushed_at": "2026-10-01T06:07:03Z",
       "repo_archived": false,
       "repo_stars": 11106,
-      "repo_open_issues": 3585,
+      "repo_open_issues": 3590,
       "repo_age_years": 9.32,
       "pr_window_days": 180,
       "pr_merged_total": 83,
@@ -4391,7 +4401,7 @@
       "source": "https://github.com/hashicorp/terraform-provider-google",
       "repo": "hashicorp/terraform-provider-google",
       "repo_created_at": "2017-06-05T20:54:02Z",
-      "repo_pushed_at": "2026-10-01T02:23:07Z",
+      "repo_pushed_at": "2026-10-01T15:31:06Z",
       "repo_archived": false,
       "repo_stars": 2652,
       "repo_open_issues": 2709,
@@ -4404,6 +4414,16 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 29758,
+          "title": "securesourcemanager: add service_account_auth to google_secure_source_manager_hook",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/29758",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:31:06Z"
+        },
         {
           "number": 29751,
           "title": "compute: add enable_vpc_scoped_dns to instance and instance templates",
@@ -5383,16 +5403,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-09-16T18:46:08Z"
-        },
-        {
-          "number": 29397,
-          "title": "compute: make static sample resource names sweepable",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/29397",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-09-16T18:16:45Z"
         }
       ],
       "has_framework": true,
@@ -5417,7 +5427,7 @@
       "source": "https://github.com/hashicorp/terraform-provider-google-beta",
       "repo": "hashicorp/terraform-provider-google-beta",
       "repo_created_at": "2018-09-20T17:28:45Z",
-      "repo_pushed_at": "2026-10-01T02:30:57Z",
+      "repo_pushed_at": "2026-10-01T15:31:04Z",
       "repo_archived": false,
       "repo_stars": 316,
       "repo_open_issues": 8,
@@ -5430,6 +5440,16 @@
       "pr_sampled_closed": 100,
       "pr_fetch_error": "",
       "merged_prs": [
+        {
+          "number": 13269,
+          "title": "securesourcemanager: add service_account_auth to google_secure_source_manager_hook",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/13269",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:31:04Z"
+        },
         {
           "number": 13268,
           "title": "compute: add enable_vpc_scoped_dns to instance and instance templates",
@@ -6419,16 +6439,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-09-16T18:16:47Z"
-        },
-        {
-          "number": 13168,
-          "title": "[Dataproc] Add attached_disk_config and missing disk_config fields to google_dataproc_workflow_template",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/13168",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-09-16T17:51:13Z"
         }
       ],
       "has_framework": true,
@@ -6463,8 +6473,8 @@
         {
           "provider": "hashicorp/azurerm",
           "repo": "hashicorp/terraform-provider-azurerm",
-          "total": 73,
-          "internal": 47,
+          "total": 74,
+          "internal": 48,
           "cloud_vendor": 1,
           "community": 25,
           "status": "ok"
@@ -6531,6 +6541,18 @@
     },
     "merged_timeline": {
       "Azure": [
+        {
+          "provider": "hashicorp/azurerm",
+          "repo": "hashicorp/terraform-provider-azurerm",
+          "number": 33544,
+          "title": "bump changelog",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/pull/33544",
+          "author_login": "sreallymatt",
+          "author_company": "@hashicorp",
+          "author_association": "MEMBER",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:33:03Z"
+        },
         {
           "provider": "hashicorp/azurerm",
           "repo": "hashicorp/terraform-provider-azurerm",
@@ -8918,18 +8940,6 @@
           "author_association": "CONTRIBUTOR",
           "bucket": "community",
           "merged_at": "2026-06-07T12:57:21Z"
-        },
-        {
-          "provider": "microsoft/fabric",
-          "repo": "microsoft/terraform-provider-fabric",
-          "number": 1003,
-          "title": "ci(deps): bump the all group across 1 directory with 2 updates",
-          "html_url": "https://github.com/microsoft/terraform-provider-fabric/pull/1003",
-          "author_login": "dependabot[bot]",
-          "author_company": "",
-          "author_association": "CONTRIBUTOR",
-          "bucket": "community",
-          "merged_at": "2026-06-07T11:30:23Z"
         }
       ],
       "AWS": [
@@ -11047,6 +11057,30 @@
         }
       ],
       "GCP": [
+        {
+          "provider": "hashicorp/google",
+          "repo": "hashicorp/terraform-provider-google",
+          "number": 29758,
+          "title": "securesourcemanager: add service_account_auth to google_secure_source_manager_hook",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/29758",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:31:06Z"
+        },
+        {
+          "provider": "hashicorp/google-beta",
+          "repo": "hashicorp/terraform-provider-google-beta",
+          "number": 13269,
+          "title": "securesourcemanager: add service_account_auth to google_secure_source_manager_hook",
+          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/13269",
+          "author_login": "modular-magician",
+          "author_company": "",
+          "author_association": "COLLABORATOR",
+          "bucket": "internal",
+          "merged_at": "2026-10-01T15:31:04Z"
+        },
         {
           "provider": "hashicorp/google",
           "repo": "hashicorp/terraform-provider-google",
@@ -13410,30 +13444,6 @@
           "author_association": "COLLABORATOR",
           "bucket": "internal",
           "merged_at": "2026-09-16T18:16:47Z"
-        },
-        {
-          "provider": "hashicorp/google",
-          "repo": "hashicorp/terraform-provider-google",
-          "number": 29397,
-          "title": "compute: make static sample resource names sweepable",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google/pull/29397",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-09-16T18:16:45Z"
-        },
-        {
-          "provider": "hashicorp/google-beta",
-          "repo": "hashicorp/terraform-provider-google-beta",
-          "number": 13168,
-          "title": "[Dataproc] Add attached_disk_config and missing disk_config fields to google_dataproc_workflow_template",
-          "html_url": "https://github.com/hashicorp/terraform-provider-google-beta/pull/13168",
-          "author_login": "modular-magician",
-          "author_company": "",
-          "author_association": "COLLABORATOR",
-          "bucket": "internal",
-          "merged_at": "2026-09-16T17:51:13Z"
         }
       ]
     }
