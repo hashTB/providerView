@@ -2067,6 +2067,11 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambdamicrovms_image_version",
+          "slug": "lambdamicrovms_image_version",
+          "subcategory": "Lambda MicroVMs"
+        },
+        {
           "title": "launch_configuration",
           "slug": "launch_configuration",
           "subcategory": "Auto Scaling"
@@ -2415,6 +2420,11 @@
           "title": "oam_sinks",
           "slug": "oam_sinks",
           "subcategory": "CloudWatch Observability Access Manager"
+        },
+        {
+          "title": "odb_autonomous_database",
+          "slug": "odb_autonomous_database",
+          "subcategory": "Oracle Database@AWS"
         },
         {
           "title": "odb_cloud_autonomous_vm_cluster",
@@ -4190,6 +4200,11 @@
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
+          "title": "ec2_transit_gateway_route",
+          "slug": "ec2_transit_gateway_route",
+          "subcategory": "Transit Gateway"
+        },
+        {
           "title": "ec2_transit_gateway_route_table_propagation",
           "slug": "ec2_transit_gateway_route_table_propagation",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -4648,6 +4663,11 @@
           "title": "prometheus_scraper_logging_configuration",
           "slug": "prometheus_scraper_logging_configuration",
           "subcategory": "AMP (Managed Prometheus)"
+        },
+        {
+          "title": "ram_resource_association",
+          "slug": "ram_resource_association",
+          "subcategory": "RAM (Resource Access Manager)"
         },
         {
           "title": "rds_cluster",
@@ -10419,6 +10439,16 @@
           "subcategory": "CloudWatch Observability Admin"
         },
         {
+          "title": "odb_autonomous_database",
+          "slug": "odb_autonomous_database",
+          "subcategory": "Oracle Database@AWS"
+        },
+        {
+          "title": "odb_autonomous_database_secrets_manager_integration",
+          "slug": "odb_autonomous_database_secrets_manager_integration",
+          "subcategory": "Oracle Database@AWS"
+        },
+        {
           "title": "odb_cloud_autonomous_vm_cluster",
           "slug": "odb_cloud_autonomous_vm_cluster",
           "subcategory": "Oracle Database@AWS"
@@ -13660,7 +13690,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:56.888164"
+    "docs_refreshed_at": "2026-10-08T13:52:01.811141"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14234,6 +14264,11 @@
         {
           "title": "applicationsignals_grouping_configurations",
           "slug": "applicationsignals_grouping_configurations",
+          "subcategory": ""
+        },
+        {
+          "title": "applicationsignals_instrumentation_config",
+          "slug": "applicationsignals_instrumentation_config",
           "subcategory": ""
         },
         {
@@ -16127,6 +16162,16 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_anomaly_detector",
+          "slug": "cloudwatch_anomaly_detector",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_anomaly_detectors",
+          "slug": "cloudwatch_anomaly_detectors",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_composite_alarm",
           "slug": "cloudwatch_composite_alarm",
           "subcategory": ""
@@ -16184,6 +16229,11 @@
         {
           "title": "cloudwatch_otel_enrichments",
           "slug": "cloudwatch_otel_enrichments",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_resource_metrics_configuration",
+          "slug": "cloudwatch_resource_metrics_configuration",
           "subcategory": ""
         },
         {
@@ -16614,6 +16664,16 @@
         {
           "title": "config_delivery_channels",
           "slug": "config_delivery_channels",
+          "subcategory": ""
+        },
+        {
+          "title": "config_organization_config_rule",
+          "slug": "config_organization_config_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "config_organization_config_rules",
+          "slug": "config_organization_config_rules",
           "subcategory": ""
         },
         {
@@ -17552,6 +17612,16 @@
           "subcategory": ""
         },
         {
+          "title": "directoryservice_microsoft_ad",
+          "slug": "directoryservice_microsoft_ad",
+          "subcategory": ""
+        },
+        {
+          "title": "directoryservice_microsoft_ads",
+          "slug": "directoryservice_microsoft_ads",
+          "subcategory": ""
+        },
+        {
           "title": "directoryservice_simple_ad",
           "slug": "directoryservice_simple_ad",
           "subcategory": ""
@@ -17742,6 +17812,16 @@
           "subcategory": ""
         },
         {
+          "title": "drs_recovery_plan",
+          "slug": "drs_recovery_plan",
+          "subcategory": ""
+        },
+        {
+          "title": "drs_recovery_plans",
+          "slug": "drs_recovery_plans",
+          "subcategory": ""
+        },
+        {
           "title": "drs_replication_configuration_template",
           "slug": "drs_replication_configuration_template",
           "subcategory": ""
@@ -17849,6 +17929,11 @@
         {
           "title": "ec2_carrier_gateways",
           "slug": "ec2_carrier_gateways",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_route",
+          "slug": "ec2_client_vpn_route",
           "subcategory": ""
         },
         {
@@ -18359,6 +18444,16 @@
         {
           "title": "ec2_route_tables",
           "slug": "ec2_route_tables",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_secondary_network",
+          "slug": "ec2_secondary_network",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_secondary_networks",
+          "slug": "ec2_secondary_networks",
           "subcategory": ""
         },
         {
@@ -21067,6 +21162,11 @@
           "subcategory": ""
         },
         {
+          "title": "iot_policy_principal_attachment",
+          "slug": "iot_policy_principal_attachment",
+          "subcategory": ""
+        },
+        {
           "title": "iot_provisioning_template",
           "slug": "iot_provisioning_template",
           "subcategory": ""
@@ -21449,6 +21549,16 @@
         {
           "title": "iotwireless_wireless_gateways",
           "slug": "iotwireless_wireless_gateways",
+          "subcategory": ""
+        },
+        {
+          "title": "ivs_ad_configuration",
+          "slug": "ivs_ad_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "ivs_ad_configurations",
+          "slug": "ivs_ad_configurations",
           "subcategory": ""
         },
         {
@@ -21887,6 +21997,26 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_web_function",
+          "slug": "lambda_web_function",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_web_function_endpoint",
+          "slug": "lambda_web_function_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_web_function_revision",
+          "slug": "lambda_web_function_revision",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_web_functions",
+          "slug": "lambda_web_functions",
+          "subcategory": ""
+        },
+        {
           "title": "launchwizard_deployment",
           "slug": "launchwizard_deployment",
           "subcategory": ""
@@ -21974,6 +22104,16 @@
         {
           "title": "licensemanager_licenses",
           "slug": "licensemanager_licenses",
+          "subcategory": ""
+        },
+        {
+          "title": "licensemanager_report_generator",
+          "slug": "licensemanager_report_generator",
+          "subcategory": ""
+        },
+        {
+          "title": "licensemanager_report_generators",
+          "slug": "licensemanager_report_generators",
           "subcategory": ""
         },
         {
@@ -23377,6 +23517,26 @@
           "subcategory": ""
         },
         {
+          "title": "networksecuritymanager_deployment",
+          "slug": "networksecuritymanager_deployment",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_deployments",
+          "slug": "networksecuritymanager_deployments",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_policies",
+          "slug": "networksecuritymanager_policies",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_policy",
+          "slug": "networksecuritymanager_policy",
+          "subcategory": ""
+        },
+        {
           "title": "networksecuritymanager_rule",
           "slug": "networksecuritymanager_rule",
           "subcategory": ""
@@ -23394,6 +23554,16 @@
         {
           "title": "networksecuritymanager_scopes",
           "slug": "networksecuritymanager_scopes",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_template",
+          "slug": "networksecuritymanager_template",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_templates",
+          "slug": "networksecuritymanager_templates",
           "subcategory": ""
         },
         {
@@ -23977,6 +24147,16 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_campaign",
+          "slug": "personalize_campaign",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_campaigns",
+          "slug": "personalize_campaigns",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_dataset",
           "slug": "personalize_dataset",
           "subcategory": ""
@@ -24429,6 +24609,16 @@
         {
           "title": "rds_db_cluster",
           "slug": "rds_db_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_cluster_endpoint",
+          "slug": "rds_db_cluster_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_cluster_endpoints",
+          "slug": "rds_db_cluster_endpoints",
           "subcategory": ""
         },
         {
@@ -26107,6 +26297,16 @@
           "subcategory": ""
         },
         {
+          "title": "scn_instance",
+          "slug": "scn_instance",
+          "subcategory": ""
+        },
+        {
+          "title": "scn_instances",
+          "slug": "scn_instances",
+          "subcategory": ""
+        },
+        {
           "title": "scn_namespace",
           "slug": "scn_namespace",
           "subcategory": ""
@@ -26862,6 +27062,16 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_notify_configuration",
+          "slug": "smsvoice_notify_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_notify_configurations",
+          "slug": "smsvoice_notify_configurations",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_opt_out_list",
           "slug": "smsvoice_opt_out_list",
           "subcategory": ""
@@ -26899,6 +27109,16 @@
         {
           "title": "smsvoice_protect_configurations",
           "slug": "smsvoice_protect_configurations",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_rcs_agent",
+          "slug": "smsvoice_rcs_agent",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_rcs_agents",
+          "slug": "smsvoice_rcs_agents",
           "subcategory": ""
         },
         {
@@ -27537,6 +27757,16 @@
           "subcategory": ""
         },
         {
+          "title": "translate_terminologies",
+          "slug": "translate_terminologies",
+          "subcategory": ""
+        },
+        {
+          "title": "translate_terminology",
+          "slug": "translate_terminology",
+          "subcategory": ""
+        },
+        {
           "title": "uxc_account_customization",
           "slug": "uxc_account_customization",
           "subcategory": ""
@@ -27869,6 +28099,16 @@
         {
           "title": "workspaces_connection_aliases",
           "slug": "workspaces_connection_aliases",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_directories",
+          "slug": "workspaces_directories",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_directory",
+          "slug": "workspaces_directory",
           "subcategory": ""
         },
         {
@@ -29066,6 +29306,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_anomaly_detector",
+          "slug": "cloudwatch_anomaly_detector",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_composite_alarm",
           "slug": "cloudwatch_composite_alarm",
           "subcategory": ""
@@ -29263,6 +29508,11 @@
         {
           "title": "config_delivery_channel",
           "slug": "config_delivery_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "config_organization_config_rule",
+          "slug": "config_organization_config_rule",
           "subcategory": ""
         },
         {
@@ -29561,6 +29811,11 @@
           "subcategory": ""
         },
         {
+          "title": "directoryservice_microsoft_ad",
+          "slug": "directoryservice_microsoft_ad",
+          "subcategory": ""
+        },
+        {
           "title": "directoryservice_simple_ad",
           "slug": "directoryservice_simple_ad",
           "subcategory": ""
@@ -29653,6 +29908,11 @@
         {
           "title": "drs_launch_configuration_template",
           "slug": "drs_launch_configuration_template",
+          "subcategory": ""
+        },
+        {
+          "title": "drs_recovery_plan",
+          "slug": "drs_recovery_plan",
           "subcategory": ""
         },
         {
@@ -29953,6 +30213,11 @@
         {
           "title": "ec2_route_table",
           "slug": "ec2_route_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_secondary_network",
+          "slug": "ec2_secondary_network",
           "subcategory": ""
         },
         {
@@ -31351,6 +31616,11 @@
           "subcategory": ""
         },
         {
+          "title": "ivs_ad_configuration",
+          "slug": "ivs_ad_configuration",
+          "subcategory": ""
+        },
+        {
           "title": "ivs_channel",
           "slug": "ivs_channel",
           "subcategory": ""
@@ -31531,6 +31801,11 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_web_function",
+          "slug": "lambda_web_function",
+          "subcategory": ""
+        },
+        {
           "title": "launchwizard_deployment",
           "slug": "launchwizard_deployment",
           "subcategory": ""
@@ -31573,6 +31848,11 @@
         {
           "title": "licensemanager_license_asset_rule_set",
           "slug": "licensemanager_license_asset_rule_set",
+          "subcategory": ""
+        },
+        {
+          "title": "licensemanager_report_generator",
+          "slug": "licensemanager_report_generator",
           "subcategory": ""
         },
         {
@@ -32196,6 +32476,16 @@
           "subcategory": ""
         },
         {
+          "title": "networksecuritymanager_deployment",
+          "slug": "networksecuritymanager_deployment",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_policy",
+          "slug": "networksecuritymanager_policy",
+          "subcategory": ""
+        },
+        {
           "title": "networksecuritymanager_rule",
           "slug": "networksecuritymanager_rule",
           "subcategory": ""
@@ -32203,6 +32493,11 @@
         {
           "title": "networksecuritymanager_scope",
           "slug": "networksecuritymanager_scope",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_template",
+          "slug": "networksecuritymanager_template",
           "subcategory": ""
         },
         {
@@ -32436,6 +32731,11 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_campaign",
+          "slug": "personalize_campaign",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_dataset",
           "slug": "personalize_dataset",
           "subcategory": ""
@@ -32628,6 +32928,11 @@
         {
           "title": "rds_db_cluster",
           "slug": "rds_db_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_cluster_endpoint",
+          "slug": "rds_db_cluster_endpoint",
           "subcategory": ""
         },
         {
@@ -33376,6 +33681,11 @@
           "subcategory": ""
         },
         {
+          "title": "scn_instance",
+          "slug": "scn_instance",
+          "subcategory": ""
+        },
+        {
           "title": "sdb_domain",
           "slug": "sdb_domain",
           "subcategory": ""
@@ -33706,6 +34016,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_notify_configuration",
+          "slug": "smsvoice_notify_configuration",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_opt_out_list",
           "slug": "smsvoice_opt_out_list",
           "subcategory": ""
@@ -33723,6 +34038,11 @@
         {
           "title": "smsvoice_protect_configuration",
           "slug": "smsvoice_protect_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_rcs_agent",
+          "slug": "smsvoice_rcs_agent",
           "subcategory": ""
         },
         {
@@ -34011,6 +34331,11 @@
           "subcategory": ""
         },
         {
+          "title": "translate_terminology",
+          "slug": "translate_terminology",
+          "subcategory": ""
+        },
+        {
           "title": "verifiedpermissions_policy_store",
           "slug": "verifiedpermissions_policy_store",
           "subcategory": ""
@@ -34108,6 +34433,11 @@
         {
           "title": "workspaces_connection_alias",
           "slug": "workspaces_connection_alias",
+          "subcategory": ""
+        },
+        {
+          "title": "workspaces_directory",
+          "slug": "workspaces_directory",
           "subcategory": ""
         },
         {
@@ -34582,6 +34912,11 @@
         {
           "title": "applicationsignals_grouping_configuration",
           "slug": "applicationsignals_grouping_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "applicationsignals_instrumentation_config",
+          "slug": "applicationsignals_instrumentation_config",
           "subcategory": ""
         },
         {
@@ -35665,6 +36000,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_anomaly_detector",
+          "slug": "cloudwatch_anomaly_detector",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_composite_alarm",
           "slug": "cloudwatch_composite_alarm",
           "subcategory": ""
@@ -35692,6 +36032,11 @@
         {
           "title": "cloudwatch_otel_enrichment",
           "slug": "cloudwatch_otel_enrichment",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_resource_metrics_configuration",
+          "slug": "cloudwatch_resource_metrics_configuration",
           "subcategory": ""
         },
         {
@@ -35952,6 +36297,11 @@
         {
           "title": "config_delivery_channel",
           "slug": "config_delivery_channel",
+          "subcategory": ""
+        },
+        {
+          "title": "config_organization_config_rule",
+          "slug": "config_organization_config_rule",
           "subcategory": ""
         },
         {
@@ -36590,6 +36940,11 @@
           "subcategory": ""
         },
         {
+          "title": "directoryservice_microsoft_ad",
+          "slug": "directoryservice_microsoft_ad",
+          "subcategory": ""
+        },
+        {
           "title": "directoryservice_simple_ad",
           "slug": "directoryservice_simple_ad",
           "subcategory": ""
@@ -36685,6 +37040,11 @@
           "subcategory": ""
         },
         {
+          "title": "drs_recovery_plan",
+          "slug": "drs_recovery_plan",
+          "subcategory": ""
+        },
+        {
           "title": "drs_replication_configuration_template",
           "slug": "drs_replication_configuration_template",
           "subcategory": ""
@@ -36737,6 +37097,11 @@
         {
           "title": "ec2_carrier_gateway",
           "slug": "ec2_carrier_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_route",
+          "slug": "ec2_client_vpn_route",
           "subcategory": ""
         },
         {
@@ -37002,6 +37367,11 @@
         {
           "title": "ec2_route_table",
           "slug": "ec2_route_table",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_secondary_network",
+          "slug": "ec2_secondary_network",
           "subcategory": ""
         },
         {
@@ -38475,6 +38845,11 @@
           "subcategory": ""
         },
         {
+          "title": "iot_policy_principal_attachment",
+          "slug": "iot_policy_principal_attachment",
+          "subcategory": ""
+        },
+        {
           "title": "iot_provisioning_template",
           "slug": "iot_provisioning_template",
           "subcategory": ""
@@ -38677,6 +39052,11 @@
         {
           "title": "iotwireless_wireless_gateway",
           "slug": "iotwireless_wireless_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ivs_ad_configuration",
+          "slug": "ivs_ad_configuration",
           "subcategory": ""
         },
         {
@@ -38935,6 +39315,21 @@
           "subcategory": ""
         },
         {
+          "title": "lambda_web_function",
+          "slug": "lambda_web_function",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_web_function_endpoint",
+          "slug": "lambda_web_function_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "lambda_web_function_revision",
+          "slug": "lambda_web_function_revision",
+          "subcategory": ""
+        },
+        {
           "title": "launchwizard_deployment",
           "slug": "launchwizard_deployment",
           "subcategory": ""
@@ -38977,6 +39372,11 @@
         {
           "title": "licensemanager_license_asset_rule_set",
           "slug": "licensemanager_license_asset_rule_set",
+          "subcategory": ""
+        },
+        {
+          "title": "licensemanager_report_generator",
+          "slug": "licensemanager_report_generator",
           "subcategory": ""
         },
         {
@@ -39745,6 +40145,16 @@
           "subcategory": ""
         },
         {
+          "title": "networksecuritymanager_deployment",
+          "slug": "networksecuritymanager_deployment",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_policy",
+          "slug": "networksecuritymanager_policy",
+          "subcategory": ""
+        },
+        {
           "title": "networksecuritymanager_rule",
           "slug": "networksecuritymanager_rule",
           "subcategory": ""
@@ -39752,6 +40162,11 @@
         {
           "title": "networksecuritymanager_scope",
           "slug": "networksecuritymanager_scope",
+          "subcategory": ""
+        },
+        {
+          "title": "networksecuritymanager_template",
+          "slug": "networksecuritymanager_template",
           "subcategory": ""
         },
         {
@@ -40100,6 +40515,11 @@
           "subcategory": ""
         },
         {
+          "title": "personalize_campaign",
+          "slug": "personalize_campaign",
+          "subcategory": ""
+        },
+        {
           "title": "personalize_dataset",
           "slug": "personalize_dataset",
           "subcategory": ""
@@ -40362,6 +40782,11 @@
         {
           "title": "rds_db_cluster",
           "slug": "rds_db_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "rds_db_cluster_endpoint",
+          "slug": "rds_db_cluster_endpoint",
           "subcategory": ""
         },
         {
@@ -41290,6 +41715,11 @@
           "subcategory": ""
         },
         {
+          "title": "scn_instance",
+          "slug": "scn_instance",
+          "subcategory": ""
+        },
+        {
           "title": "scn_namespace",
           "slug": "scn_namespace",
           "subcategory": ""
@@ -41715,6 +42145,11 @@
           "subcategory": ""
         },
         {
+          "title": "smsvoice_notify_configuration",
+          "slug": "smsvoice_notify_configuration",
+          "subcategory": ""
+        },
+        {
           "title": "smsvoice_opt_out_list",
           "slug": "smsvoice_opt_out_list",
           "subcategory": ""
@@ -41732,6 +42167,11 @@
         {
           "title": "smsvoice_protect_configuration",
           "slug": "smsvoice_protect_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "smsvoice_rcs_agent",
+          "slug": "smsvoice_rcs_agent",
           "subcategory": ""
         },
         {
@@ -42085,6 +42525,11 @@
           "subcategory": ""
         },
         {
+          "title": "translate_terminology",
+          "slug": "translate_terminology",
+          "subcategory": ""
+        },
+        {
           "title": "uxc_account_customization",
           "slug": "uxc_account_customization",
           "subcategory": ""
@@ -42315,6 +42760,11 @@
           "subcategory": ""
         },
         {
+          "title": "workspaces_directory",
+          "slug": "workspaces_directory",
+          "subcategory": ""
+        },
+        {
           "title": "workspacesinstances_volume",
           "slug": "workspacesinstances_volume",
           "subcategory": ""
@@ -42416,7 +42866,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:57.477601"
+    "docs_refreshed_at": "2026-10-08T13:52:03.157393"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -42875,7 +43325,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:57.869141"
+    "docs_refreshed_at": "2026-10-08T13:52:03.561837"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -42889,6 +43339,11 @@
         {
           "title": "data_protection_backup_instance_protect",
           "slug": "data_protection_backup_instance_protect",
+          "subcategory": "DataProtection"
+        },
+        {
+          "title": "data_protection_resource_guard_unlock_delete",
+          "slug": "data_protection_resource_guard_unlock_delete",
           "subcategory": "DataProtection"
         },
         {
@@ -44239,6 +44694,11 @@
           "subcategory": "Oracle"
         },
         {
+          "title": "oracle_autonomous_database_cross_region_disaster_recovery",
+          "slug": "oracle_autonomous_database_cross_region_disaster_recovery",
+          "subcategory": "Oracle"
+        },
+        {
           "title": "oracle_cloud_vm_cluster",
           "slug": "oracle_cloud_vm_cluster",
           "subcategory": "Oracle"
@@ -45127,6 +45587,21 @@
           "subcategory": "Compute"
         },
         {
+          "title": "dns_a_record",
+          "slug": "dns_a_record",
+          "subcategory": "DNS"
+        },
+        {
+          "title": "dns_cname_record",
+          "slug": "dns_cname_record",
+          "subcategory": "DNS"
+        },
+        {
+          "title": "dns_txt_record",
+          "slug": "dns_txt_record",
+          "subcategory": "DNS"
+        },
+        {
           "title": "eventhub_consumer_group",
           "slug": "eventhub_consumer_group",
           "subcategory": "Messaging"
@@ -45167,6 +45642,11 @@
           "subcategory": "Container"
         },
         {
+          "title": "lb_probe",
+          "slug": "lb_probe",
+          "subcategory": "Load Balancer"
+        },
+        {
           "title": "linux_virtual_machine",
           "slug": "linux_virtual_machine",
           "subcategory": "Compute"
@@ -45199,6 +45679,11 @@
         {
           "title": "monitor_scheduled_query_rules_alert_v2",
           "slug": "monitor_scheduled_query_rules_alert_v2",
+          "subcategory": "Monitor"
+        },
+        {
+          "title": "monitor_workspace",
+          "slug": "monitor_workspace",
           "subcategory": "Monitor"
         },
         {
@@ -45285,6 +45770,11 @@
           "title": "playwright_workspace",
           "slug": "playwright_workspace",
           "subcategory": "Load Test"
+        },
+        {
+          "title": "postgresql_flexible_server_firewall_rule",
+          "slug": "postgresql_flexible_server_firewall_rule",
+          "subcategory": "Database"
         },
         {
           "title": "private_dns_a_record",
@@ -45389,6 +45879,16 @@
         {
           "title": "storage_account_customer_managed_key",
           "slug": "storage_account_customer_managed_key",
+          "subcategory": "Storage"
+        },
+        {
+          "title": "storage_account_network_rules",
+          "slug": "storage_account_network_rules",
+          "subcategory": "Storage"
+        },
+        {
+          "title": "storage_container",
+          "slug": "storage_container",
           "subcategory": "Storage"
         },
         {
@@ -49121,6 +49621,11 @@
           "subcategory": "Oracle"
         },
         {
+          "title": "oracle_autonomous_database_cross_region_disaster_recovery",
+          "slug": "oracle_autonomous_database_cross_region_disaster_recovery",
+          "subcategory": "Oracle"
+        },
+        {
           "title": "oracle_cloud_vm_cluster",
           "slug": "oracle_cloud_vm_cluster",
           "subcategory": "Oracle"
@@ -51072,7 +51577,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:58.347824"
+    "docs_refreshed_at": "2026-10-08T13:52:04.030808"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -51421,7 +51926,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:58.742978"
+    "docs_refreshed_at": "2026-10-08T13:52:04.422834"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53144,6 +53649,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_workload_identity_pool_jwks",
+          "slug": "iam_workload_identity_pool_jwks",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_workload_identity_pool_openid_config",
           "slug": "iam_workload_identity_pool_openid_config",
           "subcategory": "Cloud IAM"
@@ -54802,6 +55312,26 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_gke_backup_backup_channel",
+          "slug": "google_gke_backup_backup_channel",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_backup_plan",
+          "slug": "google_gke_backup_backup_plan",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_restore_channel",
+          "slug": "google_gke_backup_restore_channel",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_restore_plan",
+          "slug": "google_gke_backup_restore_plan",
+          "subcategory": "Backup for GKE"
+        },
+        {
           "title": "google_identity_platform_inbound_saml_config",
           "slug": "google_identity_platform_inbound_saml_config",
           "subcategory": "Identity Platform"
@@ -55044,6 +55574,11 @@
         {
           "title": "google_storage_bucket",
           "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_storage_bucket_iam_member",
+          "slug": "google_storage_bucket_iam_member",
           "subcategory": "Cloud Storage"
         },
         {
@@ -57883,6 +58418,11 @@
         {
           "title": "dialogflow_sip_trunk",
           "slug": "dialogflow_sip_trunk",
+          "subcategory": "Dialogflow"
+        },
+        {
+          "title": "dialogflow_tool",
+          "slug": "dialogflow_tool",
           "subcategory": "Dialogflow"
         },
         {
@@ -60947,7 +61487,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:59.271601"
+    "docs_refreshed_at": "2026-10-08T13:52:04.930378"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -62403,6 +62943,11 @@
           "subcategory": "Cloud IAM"
         },
         {
+          "title": "iam_workload_identity_pool_jwks",
+          "slug": "iam_workload_identity_pool_jwks",
+          "subcategory": "Cloud IAM"
+        },
+        {
           "title": "iam_workload_identity_pool_openid_config",
           "slug": "iam_workload_identity_pool_openid_config",
           "subcategory": "Cloud IAM"
@@ -64061,6 +64606,26 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "google_gke_backup_backup_channel",
+          "slug": "google_gke_backup_backup_channel",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_backup_plan",
+          "slug": "google_gke_backup_backup_plan",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_restore_channel",
+          "slug": "google_gke_backup_restore_channel",
+          "subcategory": "Backup for GKE"
+        },
+        {
+          "title": "google_gke_backup_restore_plan",
+          "slug": "google_gke_backup_restore_plan",
+          "subcategory": "Backup for GKE"
+        },
+        {
           "title": "google_identity_platform_inbound_saml_config",
           "slug": "google_identity_platform_inbound_saml_config",
           "subcategory": "Identity Platform"
@@ -64303,6 +64868,11 @@
         {
           "title": "google_storage_bucket",
           "slug": "google_storage_bucket",
+          "subcategory": "Cloud Storage"
+        },
+        {
+          "title": "google_storage_bucket_iam_member",
+          "slug": "google_storage_bucket_iam_member",
           "subcategory": "Cloud Storage"
         },
         {
@@ -67142,6 +67712,11 @@
         {
           "title": "dialogflow_sip_trunk",
           "slug": "dialogflow_sip_trunk",
+          "subcategory": "Dialogflow"
+        },
+        {
+          "title": "dialogflow_tool",
+          "slug": "dialogflow_tool",
           "subcategory": "Dialogflow"
         },
         {
@@ -70206,7 +70781,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-01T15:36:59.769394"
+    "docs_refreshed_at": "2026-10-08T13:52:05.429459"
   },
   "4ek0/neko": {
     "docs": {

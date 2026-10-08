@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T15:37:44.629357",
+  "generated_at": "2026-10-08T13:52:47.329841",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "34167e0962cbf4431615e9c32ff1fe7f3cf74c3e"
+    "commit": "1810145602a477cc56a00124f8739816e12fde13"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 245
+    "list_resources": 247
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3196,
+    "stdout_line_count": 3198,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 14,
-        "implemented": 244,
-        "total": 1711
+        "implemented": 246,
+        "total": 1713
       },
       "service_count": 246,
       "services": [
@@ -559,7 +559,7 @@
         {
           "service": "ec2",
           "percent": 16,
-          "implemented": 26,
+          "implemented": 27,
           "total": 160
         },
         {
@@ -1028,7 +1028,7 @@
           "service": "odb",
           "percent": 0,
           "implemented": 0,
-          "total": 6
+          "total": 8
         },
         {
           "service": "opensearch",
@@ -1104,8 +1104,8 @@
         },
         {
           "service": "ram",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 14,
+          "implemented": 1,
           "total": 7
         },
         {
@@ -2684,6 +2684,7 @@
             "ec2/ec2_secondary_network.go",
             "ec2/ec2_secondary_subnet.go",
             "ec2/transitgateway_metering_policy.go",
+            "ec2/transitgateway_route.go",
             "ec2/vpc_default_security_group.go",
             "ec2/vpc_endpoint.go",
             "ec2/vpc_endpoint_route_table_association.go",
@@ -3674,6 +3675,8 @@
         },
         "odb": {
           "all_resources": [
+            "odb/autonomous_database.go",
+            "odb/autonomous_database_secrets_manager_integration.go",
             "odb/cloud_autonomous_vm_cluster.go",
             "odb/cloud_exadata_infrastructure.go",
             "odb/cloud_vm_cluster.go",
@@ -3852,7 +3855,9 @@
             "ram/resource_share_associations_exclusive.go",
             "ram/sharing_with_organization.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "ram/resource_association.go"
+          ]
         },
         "rbin": {
           "all_resources": [
@@ -4764,16 +4769,16 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-10-01 15:37:44 UTC"
+      "last_updated": "2026-10-08 13:52:47 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 72,
+    "services_with_list": 73,
     "top_services": [
       {
         "service": "ec2",
         "percent": 16,
-        "implemented": 26,
+        "implemented": 27,
         "total": 160
       },
       {
@@ -6040,6 +6045,7 @@
           "ec2/ec2_secondary_network.go",
           "ec2/ec2_secondary_subnet.go",
           "ec2/transitgateway_metering_policy.go",
+          "ec2/transitgateway_route.go",
           "ec2/vpc_default_security_group.go",
           "ec2/vpc_endpoint.go",
           "ec2/vpc_endpoint_route_table_association.go",
@@ -7030,6 +7036,8 @@
       },
       "odb": {
         "all_resources": [
+          "odb/autonomous_database.go",
+          "odb/autonomous_database_secrets_manager_integration.go",
           "odb/cloud_autonomous_vm_cluster.go",
           "odb/cloud_exadata_infrastructure.go",
           "odb/cloud_vm_cluster.go",
@@ -7208,7 +7216,9 @@
           "ram/resource_share_associations_exclusive.go",
           "ram/sharing_with_organization.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "ram/resource_association.go"
+        ]
       },
       "rbin": {
         "all_resources": [
@@ -8123,9 +8133,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 245,
-    "script_implemented_list": 244,
-    "script_total_resources": 1711,
+    "dashboard_list_resources": 247,
+    "script_implemented_list": 246,
+    "script_total_resources": 1713,
     "script_percent": 14
   }
 }
