@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:52:47.329841",
+  "generated_at": "2026-10-15T12:35:39.770594",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,23 +10,23 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "1810145602a477cc56a00124f8739816e12fde13"
+    "commit": "75585c0012f092187734e8402cafd983fa23891e"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 247
+    "list_resources": 253
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3198,
+    "stdout_line_count": 3221,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 14,
-        "implemented": 246,
-        "total": 1713
+        "implemented": 252,
+        "total": 1718
       },
-      "service_count": 246,
+      "service_count": 249,
       "services": [
         {
           "service": "accessanalyzer",
@@ -318,9 +318,15 @@
         },
         {
           "service": "cloudwatch",
-          "percent": 25,
+          "percent": 22,
           "implemented": 2,
-          "total": 8
+          "total": 9
+        },
+        {
+          "service": "cloudwatchomni",
+          "percent": 100,
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "codeartifact",
@@ -489,6 +495,12 @@
           "percent": 0,
           "implemented": 0,
           "total": 6
+        },
+        {
+          "service": "devopsagent",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
         },
         {
           "service": "devopsguru",
@@ -1085,6 +1097,12 @@
           "total": 1
         },
         {
+          "service": "pricingplanmanager",
+          "percent": 100,
+          "implemented": 1,
+          "total": 1
+        },
+        {
           "service": "qbusiness",
           "percent": 0,
           "implemented": 0,
@@ -1104,8 +1122,8 @@
         },
         {
           "service": "ram",
-          "percent": 14,
-          "implemented": 1,
+          "percent": 28,
+          "implemented": 2,
           "total": 7
         },
         {
@@ -1368,8 +1386,8 @@
         },
         {
           "service": "ssm",
-          "percent": 41,
-          "implemented": 5,
+          "percent": 50,
+          "implemented": 6,
           "total": 12
         },
         {
@@ -2088,11 +2106,22 @@
             "cloudwatch/dashboard.go",
             "cloudwatch/metric_alarm.go",
             "cloudwatch/metric_stream.go",
-            "cloudwatch/otel_enrichment.go"
+            "cloudwatch/otel_enrichment.go",
+            "cloudwatch/resource_metrics_configuration.go"
           ],
           "list_resources": [
             "cloudwatch/alarm_mute_rule.go",
             "cloudwatch/metric_alarm.go"
+          ]
+        },
+        "cloudwatchomni": {
+          "all_resources": [
+            "cloudwatchomni/domain.go",
+            "cloudwatchomni/space.go"
+          ],
+          "list_resources": [
+            "cloudwatchomni/domain.go",
+            "cloudwatchomni/space.go"
           ]
         },
         "codeartifact": {
@@ -2373,6 +2402,14 @@
             "devicefarm/upload.go"
           ],
           "list_resources": []
+        },
+        "devopsagent": {
+          "all_resources": [
+            "devopsagent/agent_space.go"
+          ],
+          "list_resources": [
+            "devopsagent/agent_space.go"
+          ]
         },
         "devopsguru": {
           "all_resources": [
@@ -3802,6 +3839,14 @@
           ],
           "list_resources": []
         },
+        "pricingplanmanager": {
+          "all_resources": [
+            "pricingplanmanager/subscription.go"
+          ],
+          "list_resources": [
+            "pricingplanmanager/subscription.go"
+          ]
+        },
         "qbusiness": {
           "all_resources": [
             "qbusiness/application.go"
@@ -3856,6 +3901,7 @@
             "ram/sharing_with_organization.go"
           ],
           "list_resources": [
+            "ram/principal_association.go",
             "ram/resource_association.go"
           ]
         },
@@ -4496,7 +4542,8 @@
             "ssm/document.go",
             "ssm/parameter.go",
             "ssm/patch_baseline.go",
-            "ssm/patch_group.go"
+            "ssm/patch_group.go",
+            "ssm/service_setting.go"
           ]
         },
         "ssmcontacts": {
@@ -4769,11 +4816,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-10-08 13:52:47 UTC"
+      "last_updated": "2026-10-15 12:35:39 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 73,
+    "services_with_list": 76,
     "top_services": [
       {
         "service": "ec2",
@@ -4824,6 +4871,12 @@
         "total": 26
       },
       {
+        "service": "ssm",
+        "percent": 50,
+        "implemented": 6,
+        "total": 12
+      },
+      {
         "service": "mailmanager",
         "percent": 100,
         "implemented": 5,
@@ -4858,12 +4911,6 @@
         "percent": 50,
         "implemented": 5,
         "total": 10
-      },
-      {
-        "service": "ssm",
-        "percent": 41,
-        "implemented": 5,
-        "total": 12
       }
     ],
     "service_resources": {
@@ -5449,11 +5496,22 @@
           "cloudwatch/dashboard.go",
           "cloudwatch/metric_alarm.go",
           "cloudwatch/metric_stream.go",
-          "cloudwatch/otel_enrichment.go"
+          "cloudwatch/otel_enrichment.go",
+          "cloudwatch/resource_metrics_configuration.go"
         ],
         "list_resources": [
           "cloudwatch/alarm_mute_rule.go",
           "cloudwatch/metric_alarm.go"
+        ]
+      },
+      "cloudwatchomni": {
+        "all_resources": [
+          "cloudwatchomni/domain.go",
+          "cloudwatchomni/space.go"
+        ],
+        "list_resources": [
+          "cloudwatchomni/domain.go",
+          "cloudwatchomni/space.go"
         ]
       },
       "codeartifact": {
@@ -5734,6 +5792,14 @@
           "devicefarm/upload.go"
         ],
         "list_resources": []
+      },
+      "devopsagent": {
+        "all_resources": [
+          "devopsagent/agent_space.go"
+        ],
+        "list_resources": [
+          "devopsagent/agent_space.go"
+        ]
       },
       "devopsguru": {
         "all_resources": [
@@ -7163,6 +7229,14 @@
         ],
         "list_resources": []
       },
+      "pricingplanmanager": {
+        "all_resources": [
+          "pricingplanmanager/subscription.go"
+        ],
+        "list_resources": [
+          "pricingplanmanager/subscription.go"
+        ]
+      },
       "qbusiness": {
         "all_resources": [
           "qbusiness/application.go"
@@ -7217,6 +7291,7 @@
           "ram/sharing_with_organization.go"
         ],
         "list_resources": [
+          "ram/principal_association.go",
           "ram/resource_association.go"
         ]
       },
@@ -7857,7 +7932,8 @@
           "ssm/document.go",
           "ssm/parameter.go",
           "ssm/patch_baseline.go",
-          "ssm/patch_group.go"
+          "ssm/patch_group.go",
+          "ssm/service_setting.go"
         ]
       },
       "ssmcontacts": {
@@ -8133,9 +8209,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 247,
-    "script_implemented_list": 246,
-    "script_total_resources": 1713,
+    "dashboard_list_resources": 253,
+    "script_implemented_list": 252,
+    "script_total_resources": 1718,
     "script_percent": 14
   }
 }

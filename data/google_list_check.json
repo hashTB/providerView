@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T13:52:52.645782",
+  "generated_at": "2026-10-15T12:35:43.850142",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "7b66dc04fa4fd36ccef4a4e0881c10bcfce8a190"
+    "commit": "79b1095740d192eed8561929c13f9e19951f76ef"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -775,7 +775,7 @@
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 158
+    "list_resources": 159
   },
   "registrations": {
     "generated": [
@@ -3433,7 +3433,7 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 158,
+    "dashboard_list_resources": 159,
     "code_list_resources": 144,
     "registered_count": 153,
     "signals_agree": false,
@@ -3592,6 +3592,7 @@
       "google_vertex_ai_feature_online_store",
       "google_vertex_ai_featurestore",
       "google_vertex_ai_index",
+      "google_vertex_ai_online_evaluator",
       "google_vertex_ai_persistent_resource",
       "google_vertex_ai_rag_corpus",
       "google_vertex_ai_reasoning_engine",
@@ -3760,9 +3761,7 @@
       "google_service_account_iam_member",
       "google_storage_bucket_iam_member"
     ],
-    "only_in_source": [
-      "google_vertex_ai_online_evaluator"
-    ],
+    "only_in_source": [],
     "registry_is_subset": false
   }
 }
