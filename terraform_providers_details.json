@@ -4075,6 +4075,16 @@
           "subcategory": "CloudWatch"
         },
         {
+          "title": "cloudwatchomni_access_grant",
+          "slug": "cloudwatchomni_access_grant",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_access_profile",
+          "slug": "cloudwatchomni_access_profile",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
           "title": "cloudwatchomni_domain",
           "slug": "cloudwatchomni_domain",
           "subcategory": "CloudWatch Omni"
@@ -4082,6 +4092,11 @@
         {
           "title": "cloudwatchomni_space",
           "slug": "cloudwatchomni_space",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_view",
+          "slug": "cloudwatchomni_view",
           "subcategory": "CloudWatch Omni"
         },
         {
@@ -4130,9 +4145,19 @@
           "subcategory": "DevOps Agent"
         },
         {
+          "title": "directoryservicedata_group",
+          "slug": "directoryservicedata_group",
+          "subcategory": "Directory Service Data"
+        },
+        {
           "title": "directoryservicedata_user",
           "slug": "directoryservicedata_user",
           "subcategory": "Directory Service Data"
+        },
+        {
+          "title": "directory_service_directory_setting",
+          "slug": "directory_service_directory_setting",
+          "subcategory": "Directory Service"
         },
         {
           "title": "directory_service_ip_route",
@@ -4897,6 +4922,11 @@
         {
           "title": "sagemaker_hyper_parameter_tuning_job",
           "slug": "sagemaker_hyper_parameter_tuning_job",
+          "subcategory": "SageMaker AI"
+        },
+        {
+          "title": "sagemaker_inference_component",
+          "slug": "sagemaker_inference_component",
           "subcategory": "SageMaker AI"
         },
         {
@@ -6074,6 +6104,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_enforced_guardrail_configuration",
+          "slug": "bedrock_enforced_guardrail_configuration",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_evaluation_job",
           "slug": "bedrock_evaluation_job",
           "subcategory": "Bedrock"
@@ -6604,6 +6639,16 @@
           "subcategory": "CloudWatch"
         },
         {
+          "title": "cloudwatchomni_access_grant",
+          "slug": "cloudwatchomni_access_grant",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_access_profile",
+          "slug": "cloudwatchomni_access_profile",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
           "title": "cloudwatchomni_domain",
           "slug": "cloudwatchomni_domain",
           "subcategory": "CloudWatch Omni"
@@ -6611,6 +6656,11 @@
         {
           "title": "cloudwatchomni_space",
           "slug": "cloudwatchomni_space",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_view",
+          "slug": "cloudwatchomni_view",
           "subcategory": "CloudWatch Omni"
         },
         {
@@ -7424,6 +7474,11 @@
           "subcategory": "Directory Service"
         },
         {
+          "title": "directoryservicedata_group",
+          "slug": "directoryservicedata_group",
+          "subcategory": "Directory Service Data"
+        },
+        {
           "title": "directoryservicedata_user",
           "slug": "directoryservicedata_user",
           "subcategory": "Directory Service Data"
@@ -7431,6 +7486,11 @@
         {
           "title": "directory_service_directory",
           "slug": "directory_service_directory",
+          "subcategory": "Directory Service"
+        },
+        {
+          "title": "directory_service_directory_setting",
+          "slug": "directory_service_directory_setting",
           "subcategory": "Directory Service"
         },
         {
@@ -11969,6 +12029,11 @@
           "subcategory": "SageMaker AI"
         },
         {
+          "title": "sagemaker_inference_component",
+          "slug": "sagemaker_inference_component",
+          "subcategory": "SageMaker AI"
+        },
+        {
           "title": "sagemaker_labeling_job",
           "slug": "sagemaker_labeling_job",
           "subcategory": "SageMaker AI"
@@ -13745,7 +13810,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:36.817087"
+    "docs_refreshed_at": "2026-10-22T12:19:02.900592"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14732,6 +14797,16 @@
           "subcategory": ""
         },
         {
+          "title": "autoscalingplans_scaling_plan",
+          "slug": "autoscalingplans_scaling_plan",
+          "subcategory": ""
+        },
+        {
+          "title": "autoscalingplans_scaling_plans",
+          "slug": "autoscalingplans_scaling_plans",
+          "subcategory": ""
+        },
+        {
           "title": "autoscaling_scaling_policies",
           "slug": "autoscaling_scaling_policies",
           "subcategory": ""
@@ -14994,6 +15069,16 @@
         {
           "title": "bcmdataexports_exports",
           "slug": "bcmdataexports_exports",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_bill_estimate",
+          "slug": "bcmpricingcalculator_bill_estimate",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_bill_estimates",
+          "slug": "bcmpricingcalculator_bill_estimates",
           "subcategory": ""
         },
         {
@@ -15409,6 +15494,16 @@
         {
           "title": "bedrock_resource_policy",
           "slug": "bedrock_resource_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrock_retrieval_instruction",
+          "slug": "bedrock_retrieval_instruction",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrock_retrieval_instructions",
+          "slug": "bedrock_retrieval_instructions",
           "subcategory": ""
         },
         {
@@ -16049,6 +16144,16 @@
         {
           "title": "cloudfront_distribution_tenants",
           "slug": "cloudfront_distribution_tenants",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudfront_field_level_encryption_config",
+          "slug": "cloudfront_field_level_encryption_config",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudfront_field_level_encryption_configs",
+          "slug": "cloudfront_field_level_encryption_configs",
           "subcategory": ""
         },
         {
@@ -18197,6 +18302,16 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_internet_registry_association",
+          "slug": "ec2_ipam_internet_registry_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_ipam_internet_registry_associations",
+          "slug": "ec2_ipam_internet_registry_associations",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_pool",
           "slug": "ec2_ipam_pool",
           "subcategory": ""
@@ -19219,6 +19334,26 @@
         {
           "title": "ecs_express_gateway_service",
           "slug": "ecs_express_gateway_service",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway",
+          "slug": "ecs_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway_cluster_associations",
+          "slug": "ecs_gateway_cluster_associations",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway_cluster_associations_plural",
+          "slug": "ecs_gateway_cluster_associations_plural",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateways",
+          "slug": "ecs_gateways",
           "subcategory": ""
         },
         {
@@ -22877,6 +23012,16 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_certificate_association",
+          "slug": "mediaconvert_certificate_association",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconvert_certificate_associations",
+          "slug": "mediaconvert_certificate_associations",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_job_template",
           "slug": "mediaconvert_job_template",
           "subcategory": ""
@@ -22959,6 +23104,21 @@
         {
           "title": "medialive_event_bridge_rule_templates",
           "slug": "medialive_event_bridge_rule_templates",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_inputs",
+          "slug": "medialive_inputs",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input_security_group",
+          "slug": "medialive_input_security_group",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input_security_groups",
+          "slug": "medialive_input_security_groups",
           "subcategory": ""
         },
         {
@@ -25567,6 +25727,16 @@
           "subcategory": ""
         },
         {
+          "title": "route53resolver_firewall_config",
+          "slug": "route53resolver_firewall_config",
+          "subcategory": ""
+        },
+        {
+          "title": "route53resolver_firewall_configs",
+          "slug": "route53resolver_firewall_configs",
+          "subcategory": ""
+        },
+        {
           "title": "route53resolver_firewall_domain_list",
           "slug": "route53resolver_firewall_domain_list",
           "subcategory": ""
@@ -26102,6 +26272,16 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_compute_quota",
+          "slug": "sagemaker_compute_quota",
+          "subcategory": ""
+        },
+        {
+          "title": "sagemaker_compute_quota_plural",
+          "slug": "sagemaker_compute_quota_plural",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -26609,6 +26789,16 @@
         {
           "title": "securityagent_target_domains",
           "slug": "securityagent_target_domains",
+          "subcategory": ""
+        },
+        {
+          "title": "securityhub_action_target",
+          "slug": "securityhub_action_target",
+          "subcategory": ""
+        },
+        {
+          "title": "securityhub_action_targets",
+          "slug": "securityhub_action_targets",
           "subcategory": ""
         },
         {
@@ -28886,6 +29076,11 @@
           "subcategory": ""
         },
         {
+          "title": "autoscalingplans_scaling_plan",
+          "slug": "autoscalingplans_scaling_plan",
+          "subcategory": ""
+        },
+        {
           "title": "autoscaling_scaling_policy",
           "slug": "autoscaling_scaling_policy",
           "subcategory": ""
@@ -29013,6 +29208,11 @@
         {
           "title": "bcmdataexports_export",
           "slug": "bcmdataexports_export",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_bill_estimate",
+          "slug": "bcmpricingcalculator_bill_estimate",
           "subcategory": ""
         },
         {
@@ -29183,6 +29383,11 @@
         {
           "title": "bedrock_prompt",
           "slug": "bedrock_prompt",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrock_retrieval_instruction",
+          "slug": "bedrock_retrieval_instruction",
           "subcategory": ""
         },
         {
@@ -29453,6 +29658,11 @@
         {
           "title": "cloudfront_distribution_tenant",
           "slug": "cloudfront_distribution_tenant",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudfront_field_level_encryption_config",
+          "slug": "cloudfront_field_level_encryption_config",
           "subcategory": ""
         },
         {
@@ -30291,6 +30501,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_internet_registry_association",
+          "slug": "ec2_ipam_internet_registry_association",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_pool",
           "slug": "ec2_ipam_pool",
           "subcategory": ""
@@ -30768,6 +30983,16 @@
         {
           "title": "ecs_daemon_task_definition",
           "slug": "ecs_daemon_task_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway",
+          "slug": "ecs_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway_cluster_associations",
+          "slug": "ecs_gateway_cluster_associations",
           "subcategory": ""
         },
         {
@@ -32406,6 +32631,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_certificate_association",
+          "slug": "mediaconvert_certificate_association",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_job_template",
           "slug": "mediaconvert_job_template",
           "subcategory": ""
@@ -32443,6 +32673,11 @@
         {
           "title": "medialive_event_bridge_rule_template_group",
           "slug": "medialive_event_bridge_rule_template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input_security_group",
+          "slug": "medialive_input_security_group",
           "subcategory": ""
         },
         {
@@ -33546,6 +33781,11 @@
           "subcategory": ""
         },
         {
+          "title": "route53resolver_firewall_config",
+          "slug": "route53resolver_firewall_config",
+          "subcategory": ""
+        },
+        {
           "title": "route53resolver_firewall_domain_list",
           "slug": "route53resolver_firewall_domain_list",
           "subcategory": ""
@@ -33781,6 +34021,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_compute_quota",
+          "slug": "sagemaker_compute_quota",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -34013,6 +34258,11 @@
         {
           "title": "securityagent_target_domain",
           "slug": "securityagent_target_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "securityhub_action_target",
+          "slug": "securityhub_action_target",
           "subcategory": ""
         },
         {
@@ -35475,6 +35725,11 @@
           "subcategory": ""
         },
         {
+          "title": "autoscalingplans_scaling_plan",
+          "slug": "autoscalingplans_scaling_plan",
+          "subcategory": ""
+        },
+        {
           "title": "autoscaling_scaling_policy",
           "slug": "autoscaling_scaling_policy",
           "subcategory": ""
@@ -35607,6 +35862,11 @@
         {
           "title": "bcmdataexports_export",
           "slug": "bcmdataexports_export",
+          "subcategory": ""
+        },
+        {
+          "title": "bcmpricingcalculator_bill_estimate",
+          "slug": "bcmpricingcalculator_bill_estimate",
           "subcategory": ""
         },
         {
@@ -35852,6 +36112,11 @@
         {
           "title": "bedrock_resource_policy",
           "slug": "bedrock_resource_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "bedrock_retrieval_instruction",
+          "slug": "bedrock_retrieval_instruction",
           "subcategory": ""
         },
         {
@@ -36212,6 +36477,11 @@
         {
           "title": "cloudfront_distribution_tenant",
           "slug": "cloudfront_distribution_tenant",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudfront_field_level_encryption_config",
+          "slug": "cloudfront_field_level_encryption_config",
           "subcategory": ""
         },
         {
@@ -37525,6 +37795,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_ipam_internet_registry_association",
+          "slug": "ec2_ipam_internet_registry_association",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_ipam_pool",
           "slug": "ec2_ipam_pool",
           "subcategory": ""
@@ -38062,6 +38337,16 @@
         {
           "title": "ecs_express_gateway_service",
           "slug": "ecs_express_gateway_service",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway",
+          "slug": "ecs_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ecs_gateway_cluster_associations",
+          "slug": "ecs_gateway_cluster_associations",
           "subcategory": ""
         },
         {
@@ -40065,6 +40350,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconvert_certificate_association",
+          "slug": "mediaconvert_certificate_association",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_job_template",
           "slug": "mediaconvert_job_template",
           "subcategory": ""
@@ -40107,6 +40397,11 @@
         {
           "title": "medialive_event_bridge_rule_template_group",
           "slug": "medialive_event_bridge_rule_template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input_security_group",
+          "slug": "medialive_input_security_group",
           "subcategory": ""
         },
         {
@@ -41595,6 +41890,11 @@
           "subcategory": ""
         },
         {
+          "title": "route53resolver_firewall_config",
+          "slug": "route53resolver_firewall_config",
+          "subcategory": ""
+        },
+        {
           "title": "route53resolver_firewall_domain_list",
           "slug": "route53resolver_firewall_domain_list",
           "subcategory": ""
@@ -41895,6 +42195,11 @@
           "subcategory": ""
         },
         {
+          "title": "sagemaker_compute_quota",
+          "slug": "sagemaker_compute_quota",
+          "subcategory": ""
+        },
+        {
           "title": "sagemaker_context",
           "slug": "sagemaker_context",
           "subcategory": ""
@@ -42167,6 +42472,11 @@
         {
           "title": "securityagent_target_domain",
           "slug": "securityagent_target_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "securityhub_action_target",
+          "slug": "securityhub_action_target",
           "subcategory": ""
         },
         {
@@ -43271,7 +43581,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:37.348998"
+    "docs_refreshed_at": "2026-10-22T12:19:03.581055"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -43730,7 +44040,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:37.707990"
+    "docs_refreshed_at": "2026-10-22T12:19:03.986222"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45937,6 +46247,11 @@
           "subcategory": "Batch"
         },
         {
+          "title": "capacity_reservation",
+          "slug": "capacity_reservation",
+          "subcategory": "Compute"
+        },
+        {
           "title": "capacity_reservation_group",
           "slug": "capacity_reservation_group",
           "subcategory": "Compute"
@@ -46060,6 +46375,11 @@
           "title": "kubernetes_cluster_node_pool",
           "slug": "kubernetes_cluster_node_pool",
           "subcategory": "Container"
+        },
+        {
+          "title": "lb_backend_address_pool",
+          "slug": "lb_backend_address_pool",
+          "subcategory": "Load Balancer"
         },
         {
           "title": "lb_probe",
@@ -46187,9 +46507,19 @@
           "subcategory": "Network"
         },
         {
+          "title": "network_watcher_flow_log",
+          "slug": "network_watcher_flow_log",
+          "subcategory": "Network"
+        },
+        {
           "title": "playwright_workspace",
           "slug": "playwright_workspace",
           "subcategory": "Load Test"
+        },
+        {
+          "title": "postgresql_flexible_server_configuration",
+          "slug": "postgresql_flexible_server_configuration",
+          "subcategory": "Database"
         },
         {
           "title": "postgresql_flexible_server_firewall_rule",
@@ -51997,7 +52327,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:38.138252"
+    "docs_refreshed_at": "2026-10-22T12:19:04.502381"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -52346,7 +52676,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:38.496524"
+    "docs_refreshed_at": "2026-10-22T12:19:04.935721"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53154,6 +53484,11 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "cloud_run_v2_instance_iam_policy",
+          "slug": "cloud_run_v2_instance_iam_policy",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
           "title": "cloud_run_v2_job",
           "slug": "cloud_run_v2_job",
           "subcategory": "Cloud Run (v2 API)"
@@ -54891,6 +55226,11 @@
         {
           "title": "storage_control_organization_intelligence_findings_summary",
           "slug": "storage_control_organization_intelligence_findings_summary",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_feature_config",
+          "slug": "storage_control_project_feature_config",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -57311,6 +57651,16 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "cloud_run_v2_instance",
+          "slug": "cloud_run_v2_instance",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
+          "title": "cloud_run_v2_instance_iam",
+          "slug": "cloud_run_v2_instance_iam",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
           "title": "cloud_run_v2_job",
           "slug": "cloud_run_v2_job",
           "subcategory": "Cloud Run (v2 API)"
@@ -58971,6 +59321,11 @@
           "subcategory": "Cloud DNS"
         },
         {
+          "title": "dns_outbound_endpoint",
+          "slug": "dns_outbound_endpoint",
+          "subcategory": "Cloud DNS"
+        },
+        {
           "title": "dns_policy",
           "slug": "dns_policy",
           "subcategory": "Cloud DNS"
@@ -59003,6 +59358,11 @@
         {
           "title": "document_ai_schema",
           "slug": "document_ai_schema",
+          "subcategory": "Document AI"
+        },
+        {
+          "title": "document_ai_schema_version",
+          "slug": "document_ai_schema_version",
           "subcategory": "Document AI"
         },
         {
@@ -61531,6 +61891,11 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_feature_config",
+          "slug": "storage_control_project_feature_config",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_project_intelligence_config",
           "slug": "storage_control_project_intelligence_config",
           "subcategory": "Cloud Storage Control"
@@ -61791,6 +62156,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_model_development_cluster",
+          "slug": "vertex_ai_model_development_cluster",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_model_garden_enable_model",
           "slug": "vertex_ai_model_garden_enable_model",
           "subcategory": "Vertex AI"
@@ -61947,7 +62317,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:38.941475"
+    "docs_refreshed_at": "2026-10-22T12:19:05.448068"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -62488,6 +62858,11 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "cloud_run_v2_instance_iam_policy",
+          "slug": "cloud_run_v2_instance_iam_policy",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
           "title": "cloud_run_v2_job",
           "slug": "cloud_run_v2_job",
           "subcategory": "Cloud Run (v2 API)"
@@ -64225,6 +64600,11 @@
         {
           "title": "storage_control_organization_intelligence_findings_summary",
           "slug": "storage_control_organization_intelligence_findings_summary",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
+          "title": "storage_control_project_feature_config",
+          "slug": "storage_control_project_feature_config",
           "subcategory": "Cloud Storage Control"
         },
         {
@@ -66645,6 +67025,16 @@
           "subcategory": "Cloud Run"
         },
         {
+          "title": "cloud_run_v2_instance",
+          "slug": "cloud_run_v2_instance",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
+          "title": "cloud_run_v2_instance_iam",
+          "slug": "cloud_run_v2_instance_iam",
+          "subcategory": "Cloud Run (v2 API)"
+        },
+        {
           "title": "cloud_run_v2_job",
           "slug": "cloud_run_v2_job",
           "subcategory": "Cloud Run (v2 API)"
@@ -68305,6 +68695,11 @@
           "subcategory": "Cloud DNS"
         },
         {
+          "title": "dns_outbound_endpoint",
+          "slug": "dns_outbound_endpoint",
+          "subcategory": "Cloud DNS"
+        },
+        {
           "title": "dns_policy",
           "slug": "dns_policy",
           "subcategory": "Cloud DNS"
@@ -68337,6 +68732,11 @@
         {
           "title": "document_ai_schema",
           "slug": "document_ai_schema",
+          "subcategory": "Document AI"
+        },
+        {
+          "title": "document_ai_schema_version",
+          "slug": "document_ai_schema_version",
           "subcategory": "Document AI"
         },
         {
@@ -70865,6 +71265,11 @@
           "subcategory": "Cloud Storage Control"
         },
         {
+          "title": "storage_control_project_feature_config",
+          "slug": "storage_control_project_feature_config",
+          "subcategory": "Cloud Storage Control"
+        },
+        {
           "title": "storage_control_project_intelligence_config",
           "slug": "storage_control_project_intelligence_config",
           "subcategory": "Cloud Storage Control"
@@ -71125,6 +71530,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_model_development_cluster",
+          "slug": "vertex_ai_model_development_cluster",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_model_garden_enable_model",
           "slug": "vertex_ai_model_garden_enable_model",
           "subcategory": "Vertex AI"
@@ -71281,7 +71691,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:34:39.379196"
+    "docs_refreshed_at": "2026-10-22T12:19:05.941680"
   },
   "4ek0/neko": {
     "docs": {

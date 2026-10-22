@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T12:35:39.770594",
+  "generated_at": "2026-10-22T12:19:48.283813",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "75585c0012f092187734e8402cafd983fa23891e"
+    "commit": "b1b4bd6e832bf8f0a555a43a7bf7e40bdc064230"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 253
+    "list_resources": 259
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3221,
+    "stdout_line_count": 3228,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 14,
-        "implemented": 252,
-        "total": 1718
+        "implemented": 258,
+        "total": 1725
       },
       "service_count": 249,
       "services": [
@@ -204,9 +204,9 @@
         },
         {
           "service": "bedrock",
-          "percent": 20,
+          "percent": 18,
           "implemented": 2,
-          "total": 10
+          "total": 11
         },
         {
           "service": "bedrockagent",
@@ -325,8 +325,8 @@
         {
           "service": "cloudwatchomni",
           "percent": 100,
-          "implemented": 2,
-          "total": 2
+          "implemented": 5,
+          "total": 5
         },
         {
           "service": "codeartifact",
@@ -517,8 +517,8 @@
         {
           "service": "directoryservicedata",
           "percent": 100,
-          "implemented": 1,
-          "total": 1
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "dlm",
@@ -552,9 +552,9 @@
         },
         {
           "service": "ds",
-          "percent": 10,
-          "implemented": 1,
-          "total": 10
+          "percent": 18,
+          "implemented": 2,
+          "total": 11
         },
         {
           "service": "dsql",
@@ -1272,9 +1272,9 @@
         },
         {
           "service": "sagemaker",
-          "percent": 10,
-          "implemented": 4,
-          "total": 38
+          "percent": 12,
+          "implemented": 5,
+          "total": 39
         },
         {
           "service": "savingsplans",
@@ -1883,6 +1883,7 @@
         "bedrock": {
           "all_resources": [
             "bedrock/custom_model.go",
+            "bedrock/enforced_guardrail_configuration.go",
             "bedrock/evaluation_job.go",
             "bedrock/foundation_model_agreement.go",
             "bedrock/guardrail.go",
@@ -2116,12 +2117,18 @@
         },
         "cloudwatchomni": {
           "all_resources": [
+            "cloudwatchomni/access_grant.go",
+            "cloudwatchomni/access_profile.go",
             "cloudwatchomni/domain.go",
-            "cloudwatchomni/space.go"
+            "cloudwatchomni/space.go",
+            "cloudwatchomni/view.go"
           ],
           "list_resources": [
+            "cloudwatchomni/access_grant.go",
+            "cloudwatchomni/access_profile.go",
             "cloudwatchomni/domain.go",
-            "cloudwatchomni/space.go"
+            "cloudwatchomni/space.go",
+            "cloudwatchomni/view.go"
           ]
         },
         "codeartifact": {
@@ -2446,9 +2453,11 @@
         },
         "directoryservicedata": {
           "all_resources": [
+            "directoryservicedata/group.go",
             "directoryservicedata/user.go"
           ],
           "list_resources": [
+            "directoryservicedata/group.go",
             "directoryservicedata/user.go"
           ]
         },
@@ -2506,6 +2515,7 @@
           "all_resources": [
             "ds/conditional_forwarder.go",
             "ds/directory.go",
+            "ds/directory_setting.go",
             "ds/ip_route.go",
             "ds/ip_routes_exclusive.go",
             "ds/log_subscription.go",
@@ -2516,6 +2526,7 @@
             "ds/trust.go"
           ],
           "list_resources": [
+            "ds/directory_setting.go",
             "ds/ip_route.go"
           ]
         },
@@ -4271,6 +4282,7 @@
             "sagemaker/hyper_parameter_tuning_job.go",
             "sagemaker/image.go",
             "sagemaker/image_version.go",
+            "sagemaker/inference_component.go",
             "sagemaker/labeling_job.go",
             "sagemaker/mlflow_app.go",
             "sagemaker/mlflow_tracking_server.go",
@@ -4296,6 +4308,7 @@
             "sagemaker/algorithm.go",
             "sagemaker/hub_content_reference.go",
             "sagemaker/hyper_parameter_tuning_job.go",
+            "sagemaker/inference_component.go",
             "sagemaker/training_job.go"
           ]
         },
@@ -4816,7 +4829,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-10-15 12:35:39 UTC"
+      "last_updated": "2026-10-22 12:19:48 UTC"
     }
   },
   "service_coverage": {
@@ -4877,6 +4890,12 @@
         "total": 12
       },
       {
+        "service": "cloudwatchomni",
+        "percent": 100,
+        "implemented": 5,
+        "total": 5
+      },
+      {
         "service": "mailmanager",
         "percent": 100,
         "implemented": 5,
@@ -4905,12 +4924,6 @@
         "percent": 55,
         "implemented": 5,
         "total": 9
-      },
-      {
-        "service": "ecs",
-        "percent": 50,
-        "implemented": 5,
-        "total": 10
       }
     ],
     "service_resources": {
@@ -5273,6 +5286,7 @@
       "bedrock": {
         "all_resources": [
           "bedrock/custom_model.go",
+          "bedrock/enforced_guardrail_configuration.go",
           "bedrock/evaluation_job.go",
           "bedrock/foundation_model_agreement.go",
           "bedrock/guardrail.go",
@@ -5506,12 +5520,18 @@
       },
       "cloudwatchomni": {
         "all_resources": [
+          "cloudwatchomni/access_grant.go",
+          "cloudwatchomni/access_profile.go",
           "cloudwatchomni/domain.go",
-          "cloudwatchomni/space.go"
+          "cloudwatchomni/space.go",
+          "cloudwatchomni/view.go"
         ],
         "list_resources": [
+          "cloudwatchomni/access_grant.go",
+          "cloudwatchomni/access_profile.go",
           "cloudwatchomni/domain.go",
-          "cloudwatchomni/space.go"
+          "cloudwatchomni/space.go",
+          "cloudwatchomni/view.go"
         ]
       },
       "codeartifact": {
@@ -5836,9 +5856,11 @@
       },
       "directoryservicedata": {
         "all_resources": [
+          "directoryservicedata/group.go",
           "directoryservicedata/user.go"
         ],
         "list_resources": [
+          "directoryservicedata/group.go",
           "directoryservicedata/user.go"
         ]
       },
@@ -5896,6 +5918,7 @@
         "all_resources": [
           "ds/conditional_forwarder.go",
           "ds/directory.go",
+          "ds/directory_setting.go",
           "ds/ip_route.go",
           "ds/ip_routes_exclusive.go",
           "ds/log_subscription.go",
@@ -5906,6 +5929,7 @@
           "ds/trust.go"
         ],
         "list_resources": [
+          "ds/directory_setting.go",
           "ds/ip_route.go"
         ]
       },
@@ -7661,6 +7685,7 @@
           "sagemaker/hyper_parameter_tuning_job.go",
           "sagemaker/image.go",
           "sagemaker/image_version.go",
+          "sagemaker/inference_component.go",
           "sagemaker/labeling_job.go",
           "sagemaker/mlflow_app.go",
           "sagemaker/mlflow_tracking_server.go",
@@ -7686,6 +7711,7 @@
           "sagemaker/algorithm.go",
           "sagemaker/hub_content_reference.go",
           "sagemaker/hyper_parameter_tuning_job.go",
+          "sagemaker/inference_component.go",
           "sagemaker/training_job.go"
         ]
       },
@@ -8209,9 +8235,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 253,
-    "script_implemented_list": 252,
-    "script_total_resources": 1718,
+    "dashboard_list_resources": 259,
+    "script_implemented_list": 258,
+    "script_total_resources": 1725,
     "script_percent": 14
   }
 }
