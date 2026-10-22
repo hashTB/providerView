@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:23.104039"
+    "docs_refreshed_at": "2026-10-22T12:21:44.620347"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -71738,7 +71738,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:09.031558"
+    "docs_refreshed_at": "2026-10-22T12:21:27.079328"
   },
   "Azure/azapi": {
     "docs": {
@@ -75364,7 +75364,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:09.743683"
+    "docs_refreshed_at": "2026-10-22T12:21:28.014556"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -76834,7 +76834,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:10.780280"
+    "docs_refreshed_at": "2026-10-22T12:21:29.296126"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -76937,6 +76937,11 @@
           "subcategory": "System"
         },
         {
+          "title": "igmp",
+          "slug": "igmp",
+          "subcategory": "Multicast"
+        },
+        {
           "title": "igmp_snooping",
           "slug": "igmp_snooping",
           "subcategory": "Multicast"
@@ -76980,6 +76985,11 @@
           "title": "management_interface",
           "slug": "management_interface",
           "subcategory": "Interface"
+        },
+        {
+          "title": "msdp",
+          "slug": "msdp",
+          "subcategory": "Multicast"
         },
         {
           "title": "netflow",
@@ -77112,6 +77122,16 @@
           "subcategory": "Routing"
         },
         {
+          "title": "vrrp",
+          "slug": "vrrp",
+          "subcategory": "Routing"
+        },
+        {
+          "title": "vrrpv3",
+          "slug": "vrrpv3",
+          "subcategory": "Routing"
+        },
+        {
           "title": "vtp",
           "slug": "vtp",
           "subcategory": "Switching"
@@ -77121,6 +77141,11 @@
         {
           "title": "Changelog",
           "slug": "changelog",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Deletion Policy",
+          "slug": "deletion_policy",
           "subcategory": "Guides"
         },
         {
@@ -77253,6 +77278,11 @@
           "subcategory": "System"
         },
         {
+          "title": "igmp",
+          "slug": "igmp",
+          "subcategory": "Multicast"
+        },
+        {
           "title": "igmp_snooping",
           "slug": "igmp_snooping",
           "subcategory": "Multicast"
@@ -77296,6 +77326,11 @@
           "title": "management_interface",
           "slug": "management_interface",
           "subcategory": "Interface"
+        },
+        {
+          "title": "msdp",
+          "slug": "msdp",
+          "subcategory": "Multicast"
         },
         {
           "title": "netflow",
@@ -77433,13 +77468,23 @@
           "subcategory": "Routing"
         },
         {
+          "title": "vrrp",
+          "slug": "vrrp",
+          "subcategory": "Routing"
+        },
+        {
+          "title": "vrrpv3",
+          "slug": "vrrpv3",
+          "subcategory": "Routing"
+        },
+        {
           "title": "vtp",
           "slug": "vtp",
           "subcategory": "Switching"
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:11.484437"
+    "docs_refreshed_at": "2026-10-22T12:21:30.224835"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -77586,6 +77631,11 @@
           "subcategory": ""
         },
         {
+          "title": "java_maven",
+          "slug": "java_maven",
+          "subcategory": ""
+        },
+        {
           "title": "java_war",
           "slug": "java_war",
           "subcategory": ""
@@ -77717,7 +77767,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:11.828584"
+    "docs_refreshed_at": "2026-10-22T12:21:30.653919"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -77736,7 +77786,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:12.170787"
+    "docs_refreshed_at": "2026-10-22T12:21:31.085442"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -77783,7 +77833,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:13.896175"
+    "docs_refreshed_at": "2026-10-22T12:21:33.231045"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -79557,7 +79607,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:15.754222"
+    "docs_refreshed_at": "2026-10-22T12:21:35.517555"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -83286,7 +83336,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:17.821423"
+    "docs_refreshed_at": "2026-10-22T12:21:38.095498"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -84635,7 +84685,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:18.193255"
+    "docs_refreshed_at": "2026-10-22T12:21:38.538648"
   },
   "SAP/btp": {
     "docs": {
@@ -85367,7 +85417,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:18.896759"
+    "docs_refreshed_at": "2026-10-22T12:21:39.408621"
   },
   "SAP/scc": {
     "docs": {
@@ -85622,7 +85672,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:19.586842"
+    "docs_refreshed_at": "2026-10-22T12:21:40.265461"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -85669,7 +85719,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:19.928955"
+    "docs_refreshed_at": "2026-10-22T12:21:40.698230"
   },
   "Sokren/aap": {
     "docs": {
@@ -85752,7 +85802,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:20.272569"
+    "docs_refreshed_at": "2026-10-22T12:21:41.125466"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -85802,7 +85852,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:20.616550"
+    "docs_refreshed_at": "2026-10-22T12:21:41.554928"
   },
   "adampie/ctf": {
     "docs": {
@@ -85849,7 +85899,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:21.993192"
+    "docs_refreshed_at": "2026-10-22T12:21:43.262894"
   },
   "ansible/ansible": {
     "docs": {
@@ -85919,7 +85969,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:23.445550"
+    "docs_refreshed_at": "2026-10-22T12:21:45.047606"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -85967,7 +86017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:24.125768"
+    "docs_refreshed_at": "2026-10-22T12:21:45.907964"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -85993,7 +86043,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:24.469345"
+    "docs_refreshed_at": "2026-10-22T12:21:46.335373"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -86050,7 +86100,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:25.152927"
+    "docs_refreshed_at": "2026-10-22T12:21:47.228131"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -86076,7 +86126,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:25.841732"
+    "docs_refreshed_at": "2026-10-22T12:21:48.084789"
   },
   "cysp/braze": {
     "docs": {
@@ -86132,7 +86182,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:27.893830"
+    "docs_refreshed_at": "2026-10-22T12:21:50.687904"
   },
   "cysp/contentful": {
     "docs": {
@@ -86427,7 +86477,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:28.244626"
+    "docs_refreshed_at": "2026-10-22T12:21:51.122055"
   },
   "dbanck/concept": {
     "docs": {
@@ -86463,7 +86513,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:30.318082"
+    "docs_refreshed_at": "2026-10-22T12:21:53.762873"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -87311,6 +87361,11 @@
           "subcategory": "Device and App Management"
         },
         {
+          "title": "graph_beta_device_and_app_management_mobile_app_dependency",
+          "slug": "graph_beta_device_and_app_management_mobile_app_dependency",
+          "subcategory": "Device and App Management"
+        },
+        {
           "title": "graph_beta_device_and_app_management_mobile_app_supersedence",
           "slug": "graph_beta_device_and_app_management_mobile_app_supersedence",
           "subcategory": "Device and App Management"
@@ -88077,7 +88132,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:31.035105"
+    "docs_refreshed_at": "2026-10-22T12:21:54.661712"
   },
   "drewmullen/aap": {
     "docs": {
@@ -88185,7 +88240,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:32.417662"
+    "docs_refreshed_at": "2026-10-22T12:21:56.854029"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -88250,7 +88305,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:35.754384"
+    "docs_refreshed_at": "2026-10-22T12:22:01.035119"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -88353,7 +88408,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:37.470421"
+    "docs_refreshed_at": "2026-10-22T12:22:03.242935"
   },
   "hashicorp/local": {
     "docs": {
@@ -88415,7 +88470,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:38.156101"
+    "docs_refreshed_at": "2026-10-22T12:22:04.100917"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -96086,7 +96141,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:40.681082"
+    "docs_refreshed_at": "2026-10-22T12:22:07.784280"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -96919,7 +96974,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:42.084375"
+    "docs_refreshed_at": "2026-10-22T12:22:09.559573"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -97057,7 +97112,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:44.829049"
+    "docs_refreshed_at": "2026-10-22T12:22:13.129730"
   },
   "magodo/restful": {
     "docs": {
@@ -97116,7 +97171,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:46.887939"
+    "docs_refreshed_at": "2026-10-22T12:22:15.695780"
   },
   "marshallford/ansible": {
     "docs": {
@@ -97168,7 +97223,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:47.571451"
+    "docs_refreshed_at": "2026-10-22T12:22:16.558597"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -97325,7 +97380,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:48.593536"
+    "docs_refreshed_at": "2026-10-22T12:22:17.841313"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -97498,7 +97553,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:49.278965"
+    "docs_refreshed_at": "2026-10-22T12:22:18.707244"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -97545,7 +97600,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:50.653768"
+    "docs_refreshed_at": "2026-10-22T12:22:20.428409"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -99295,6 +99350,11 @@
           "subcategory": "Mailbox"
         },
         {
+          "title": "mailbox_alias",
+          "slug": "mailbox_alias",
+          "subcategory": "Mailbox"
+        },
+        {
           "title": "mailbox_domain",
           "slug": "mailbox_domain",
           "subcategory": "Mailbox"
@@ -99596,7 +99656,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:55.211109"
+    "docs_refreshed_at": "2026-10-22T12:22:26.623787"
   },
   "soffensive/soff": {
     "docs": {
@@ -99643,7 +99703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:56.933392"
+    "docs_refreshed_at": "2026-10-22T12:22:28.853938"
   },
   "thrashr888/registry": {
     "docs": {
@@ -99731,7 +99791,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:58.742937"
+    "docs_refreshed_at": "2026-10-22T12:22:31.084873"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -100141,7 +100201,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:00.153321"
+    "docs_refreshed_at": "2026-10-22T12:22:32.785277"
   },
   "waldur/waldur": {
     "docs": {
@@ -100551,7 +100611,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:01.575938"
+    "docs_refreshed_at": "2026-10-22T12:22:34.928659"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -100841,7 +100901,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:16.101023"
+    "docs_refreshed_at": "2026-10-22T12:21:35.943511"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -100896,7 +100956,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:37.810941"
+    "docs_refreshed_at": "2026-10-22T12:22:03.698403"
   },
   "timofurrer/desec": {
     "docs": {
@@ -101055,7 +101115,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:59.085831"
+    "docs_refreshed_at": "2026-10-22T12:22:31.507859"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -101138,7 +101198,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:00.839832"
+    "docs_refreshed_at": "2026-10-22T12:22:34.069220"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -101195,6 +101255,16 @@
         {
           "title": "Importing Resources",
           "slug": "60-importing-resources",
+          "subcategory": ""
+        },
+        {
+          "title": "Drift Detection",
+          "slug": "65-drift-detection",
+          "subcategory": ""
+        },
+        {
+          "title": "Parallel Mode",
+          "slug": "68-parallel-mode",
           "subcategory": ""
         },
         {
@@ -104338,7 +104408,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:14.256064"
+    "docs_refreshed_at": "2026-10-22T12:21:33.687841"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -104633,7 +104703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:43.460496"
+    "docs_refreshed_at": "2026-10-22T12:22:11.302013"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -104751,7 +104821,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:47.910731"
+    "docs_refreshed_at": "2026-10-22T12:22:16.985833"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -104921,7 +104991,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:16.443902"
+    "docs_refreshed_at": "2026-10-22T12:21:36.372832"
   },
   "branchgrove/debian": {
     "docs": {
@@ -105036,7 +105106,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:25.496535"
+    "docs_refreshed_at": "2026-10-22T12:21:47.654148"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -105491,7 +105561,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:35.411931"
+    "docs_refreshed_at": "2026-10-22T12:22:00.607774"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -106136,7 +106206,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:38.514497"
+    "docs_refreshed_at": "2026-10-22T12:22:04.581049"
   },
   "juju/juju": {
     "docs": {
@@ -106411,7 +106481,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:42.768702"
+    "docs_refreshed_at": "2026-10-22T12:22:10.411847"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -106512,7 +106582,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:16.786160"
+    "docs_refreshed_at": "2026-10-22T12:21:36.807495"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -106950,7 +107020,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:26.523006"
+    "docs_refreshed_at": "2026-10-22T12:21:48.938284"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -107098,7 +107168,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:45.175973"
+    "docs_refreshed_at": "2026-10-22T12:22:13.561766"
   },
   "radeksimko/test": {
     "docs": {
@@ -107145,7 +107215,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:52.453343"
+    "docs_refreshed_at": "2026-10-22T12:22:23.153375"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -107538,7 +107608,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:55.559746"
+    "docs_refreshed_at": "2026-10-22T12:22:27.112488"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -107763,7 +107833,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:57.629460"
+    "docs_refreshed_at": "2026-10-22T12:22:29.710530"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -107996,7 +108066,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:46.202443"
+    "docs_refreshed_at": "2026-10-22T12:22:14.841867"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -108418,7 +108488,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:38.860171"
+    "docs_refreshed_at": "2026-10-22T12:22:05.009556"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -108887,7 +108957,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:40.274032"
+    "docs_refreshed_at": "2026-10-22T12:22:07.260173"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -120853,7 +120923,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-08T13:55:18.634474"
+    "docs_refreshed_at": "2026-10-22T12:22:22.218389"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -121113,6 +121183,11 @@
         {
           "title": "Upgrade Guide: v1.11.0",
           "slug": "upgrade_guide_v1.11.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.11.1",
+          "slug": "upgrade_guide_v1.11.1",
           "subcategory": ""
         },
         {
@@ -121428,7 +121503,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:54.168691"
+    "docs_refreshed_at": "2026-10-22T12:22:25.317593"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -121663,6 +121738,11 @@
         {
           "title": "Upgrade Guide: v1.11.0",
           "slug": "upgrade_guide_v1.11.0",
+          "subcategory": ""
+        },
+        {
+          "title": "Upgrade Guide: v1.11.1",
+          "slug": "upgrade_guide_v1.11.1",
           "subcategory": ""
         },
         {
@@ -121973,7 +122053,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:54.511844"
+    "docs_refreshed_at": "2026-10-22T12:22:25.748330"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -122036,7 +122116,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:32.069242"
+    "docs_refreshed_at": "2026-10-22T12:21:55.960712"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -122119,7 +122199,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:21.302030"
+    "docs_refreshed_at": "2026-10-22T12:21:42.413091"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -122150,7 +122230,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:27.207018"
+    "docs_refreshed_at": "2026-10-22T12:21:49.799069"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -122181,7 +122261,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:29.640842"
+    "docs_refreshed_at": "2026-10-22T12:21:52.911116"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -122212,7 +122292,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:29.978727"
+    "docs_refreshed_at": "2026-10-22T12:21:53.334462"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -122375,7 +122455,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:35.062088"
+    "docs_refreshed_at": "2026-10-22T12:22:00.171269"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -122615,7 +122695,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:49.969109"
+    "docs_refreshed_at": "2026-10-22T12:22:19.579969"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -124828,7 +124908,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:18.550326"
+    "docs_refreshed_at": "2026-10-22T12:21:38.978724"
   },
   "gringolito/ansible": {
     "docs": {
@@ -124898,7 +124978,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:36.783248"
+    "docs_refreshed_at": "2026-10-22T12:22:02.370090"
   },
   "pexip/infinity": {
     "docs": {
@@ -124911,13 +124991,13 @@
       ],
       "data-sources": [
         {
-          "title": "infinity_manager_config",
-          "slug": "infinity_manager_config",
+          "title": "manager_config",
+          "slug": "manager_config",
           "subcategory": ""
         },
         {
-          "title": "infinity_permission",
-          "slug": "infinity_permission",
+          "title": "permission",
+          "slug": "permission",
           "subcategory": ""
         }
       ],
@@ -124931,6 +125011,11 @@
           "title": "Getting Started with the Pexip Infinity Provider",
           "slug": "getting_started",
           "subcategory": ""
+        },
+        {
+          "title": "Upgrading to v42 of the Pexip Infinity Provider",
+          "slug": "v42_upgrade",
+          "subcategory": ""
         }
       ],
       "overview": [
@@ -124942,368 +125027,368 @@
       ],
       "resources": [
         {
-          "title": "infinity_adfs_auth_server",
-          "slug": "infinity_adfs_auth_server",
+          "title": "adfs_auth_server",
+          "slug": "adfs_auth_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_authentication",
-          "slug": "infinity_authentication",
+          "title": "authentication",
+          "slug": "authentication",
           "subcategory": ""
         },
         {
-          "title": "infinity_autobackup",
-          "slug": "infinity_autobackup",
+          "title": "autobackup",
+          "slug": "autobackup",
           "subcategory": ""
         },
         {
-          "title": "infinity_automatic_participant",
-          "slug": "infinity_automatic_participant",
+          "title": "automatic_participant",
+          "slug": "automatic_participant",
           "subcategory": ""
         },
         {
-          "title": "infinity_azure_tenant",
-          "slug": "infinity_azure_tenant",
+          "title": "azure_tenant",
+          "slug": "azure_tenant",
           "subcategory": ""
         },
         {
-          "title": "infinity_break_in_allow_list_address",
-          "slug": "infinity_break_in_allow_list_address",
+          "title": "break_in_allow_list_address",
+          "slug": "break_in_allow_list_address",
           "subcategory": ""
         },
         {
-          "title": "infinity_ca_certificate",
-          "slug": "infinity_ca_certificate",
+          "title": "ca_certificate",
+          "slug": "ca_certificate",
           "subcategory": ""
         },
         {
-          "title": "infinity_conference",
-          "slug": "infinity_conference",
+          "title": "conference",
+          "slug": "conference",
           "subcategory": ""
         },
         {
-          "title": "infinity_conference_alias",
-          "slug": "infinity_conference_alias",
+          "title": "conference_alias",
+          "slug": "conference_alias",
           "subcategory": ""
         },
         {
-          "title": "infinity_device",
-          "slug": "infinity_device",
+          "title": "device",
+          "slug": "device",
           "subcategory": ""
         },
         {
-          "title": "infinity_diagnostic_graph",
-          "slug": "infinity_diagnostic_graph",
+          "title": "diagnostic_graph",
+          "slug": "diagnostic_graph",
           "subcategory": ""
         },
         {
-          "title": "infinity_dns_server",
-          "slug": "infinity_dns_server",
+          "title": "dns_server",
+          "slug": "dns_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_end_user",
-          "slug": "infinity_end_user",
+          "title": "end_user",
+          "slug": "end_user",
           "subcategory": ""
         },
         {
-          "title": "infinity_event_sink",
-          "slug": "infinity_event_sink",
+          "title": "event_sink",
+          "slug": "event_sink",
           "subcategory": ""
         },
         {
-          "title": "infinity_external_webapp_host",
-          "slug": "infinity_external_webapp_host",
+          "title": "external_webapp_host",
+          "slug": "external_webapp_host",
           "subcategory": ""
         },
         {
-          "title": "infinity_gateway_routing_rule",
-          "slug": "infinity_gateway_routing_rule",
+          "title": "gateway_routing_rule",
+          "slug": "gateway_routing_rule",
           "subcategory": ""
         },
         {
-          "title": "infinity_global_configuration",
-          "slug": "infinity_global_configuration",
+          "title": "global_configuration",
+          "slug": "global_configuration",
           "subcategory": ""
         },
         {
-          "title": "infinity_gms_access_token",
-          "slug": "infinity_gms_access_token",
+          "title": "gms_access_token",
+          "slug": "gms_access_token",
           "subcategory": ""
         },
         {
-          "title": "infinity_gms_gateway_token",
-          "slug": "infinity_gms_gateway_token",
+          "title": "gms_gateway_token",
+          "slug": "gms_gateway_token",
           "subcategory": ""
         },
         {
-          "title": "infinity_h323_gatekeeper",
-          "slug": "infinity_h323_gatekeeper",
+          "title": "h323_gatekeeper",
+          "slug": "h323_gatekeeper",
           "subcategory": ""
         },
         {
-          "title": "infinity_http_proxy",
-          "slug": "infinity_http_proxy",
+          "title": "http_proxy",
+          "slug": "http_proxy",
           "subcategory": ""
         },
         {
-          "title": "infinity_identity_provider",
-          "slug": "infinity_identity_provider",
+          "title": "identity_provider",
+          "slug": "identity_provider",
           "subcategory": ""
         },
         {
-          "title": "infinity_identity_provider_attribute",
-          "slug": "infinity_identity_provider_attribute",
+          "title": "identity_provider_attribute",
+          "slug": "identity_provider_attribute",
           "subcategory": ""
         },
         {
-          "title": "infinity_identity_provider_group",
-          "slug": "infinity_identity_provider_group",
+          "title": "identity_provider_group",
+          "slug": "identity_provider_group",
           "subcategory": ""
         },
         {
-          "title": "infinity_ivr_theme",
-          "slug": "infinity_ivr_theme",
+          "title": "ivr_theme",
+          "slug": "ivr_theme",
           "subcategory": ""
         },
         {
-          "title": "infinity_ldap_role",
-          "slug": "infinity_ldap_role",
+          "title": "ldap_role",
+          "slug": "ldap_role",
           "subcategory": ""
         },
         {
-          "title": "infinity_ldap_sync_field",
-          "slug": "infinity_ldap_sync_field",
+          "title": "ldap_sync_field",
+          "slug": "ldap_sync_field",
           "subcategory": ""
         },
         {
-          "title": "infinity_ldap_sync_source",
-          "slug": "infinity_ldap_sync_source",
+          "title": "ldap_sync_source",
+          "slug": "ldap_sync_source",
           "subcategory": ""
         },
         {
-          "title": "infinity_licence",
-          "slug": "infinity_licence",
+          "title": "licence",
+          "slug": "licence",
           "subcategory": ""
         },
         {
-          "title": "infinity_log_level",
-          "slug": "infinity_log_level",
+          "title": "log_level",
+          "slug": "log_level",
           "subcategory": ""
         },
         {
-          "title": "infinity_management_vm",
-          "slug": "infinity_management_vm",
+          "title": "management_vm",
+          "slug": "management_vm",
           "subcategory": ""
         },
         {
-          "title": "infinity_media_library_entry",
-          "slug": "infinity_media_library_entry",
+          "title": "media_library_entry",
+          "slug": "media_library_entry",
           "subcategory": ""
         },
         {
-          "title": "infinity_media_library_playlist",
-          "slug": "infinity_media_library_playlist",
+          "title": "media_library_playlist",
+          "slug": "media_library_playlist",
           "subcategory": ""
         },
         {
-          "title": "infinity_media_library_playlist_entry",
-          "slug": "infinity_media_library_playlist_entry",
+          "title": "media_library_playlist_entry",
+          "slug": "media_library_playlist_entry",
           "subcategory": ""
         },
         {
-          "title": "infinity_media_processing_server",
-          "slug": "infinity_media_processing_server",
+          "title": "media_processing_server",
+          "slug": "media_processing_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_endpoint",
-          "slug": "infinity_mjx_endpoint",
+          "title": "mjx_endpoint",
+          "slug": "mjx_endpoint",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_endpoint_group",
-          "slug": "infinity_mjx_endpoint_group",
+          "title": "mjx_endpoint_group",
+          "slug": "mjx_endpoint_group",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_exchange_autodiscover_url",
-          "slug": "infinity_mjx_exchange_autodiscover_url",
+          "title": "mjx_exchange_autodiscover_url",
+          "slug": "mjx_exchange_autodiscover_url",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_exchange_deployment",
-          "slug": "infinity_mjx_exchange_deployment",
+          "title": "mjx_exchange_deployment",
+          "slug": "mjx_exchange_deployment",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_google_deployment",
-          "slug": "infinity_mjx_google_deployment",
+          "title": "mjx_google_deployment",
+          "slug": "mjx_google_deployment",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_graph_deployment",
-          "slug": "infinity_mjx_graph_deployment",
+          "title": "mjx_graph_deployment",
+          "slug": "mjx_graph_deployment",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_integration",
-          "slug": "infinity_mjx_integration",
+          "title": "mjx_integration",
+          "slug": "mjx_integration",
           "subcategory": ""
         },
         {
-          "title": "infinity_mjx_meeting_processing_rule",
-          "slug": "infinity_mjx_meeting_processing_rule",
+          "title": "mjx_meeting_processing_rule",
+          "slug": "mjx_meeting_processing_rule",
           "subcategory": ""
         },
         {
-          "title": "infinity_ms_exchange_connector",
-          "slug": "infinity_ms_exchange_connector",
+          "title": "ms_exchange_connector",
+          "slug": "ms_exchange_connector",
           "subcategory": ""
         },
         {
-          "title": "infinity_mssip_proxy",
-          "slug": "infinity_mssip_proxy",
+          "title": "mssip_proxy",
+          "slug": "mssip_proxy",
           "subcategory": ""
         },
         {
-          "title": "infinity_ntp_server",
-          "slug": "infinity_ntp_server",
+          "title": "ntp_server",
+          "slug": "ntp_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_oauth2_client",
-          "slug": "infinity_oauth2_client",
+          "title": "oauth2_client",
+          "slug": "oauth2_client",
           "subcategory": ""
         },
         {
-          "title": "infinity_policy_server",
-          "slug": "infinity_policy_server",
+          "title": "policy_server",
+          "slug": "policy_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_registration",
-          "slug": "infinity_registration",
+          "title": "registration",
+          "slug": "registration",
           "subcategory": ""
         },
         {
-          "title": "infinity_role",
-          "slug": "infinity_role",
+          "title": "role",
+          "slug": "role",
           "subcategory": ""
         },
         {
-          "title": "infinity_role_mapping",
-          "slug": "infinity_role_mapping",
+          "title": "role_mapping",
+          "slug": "role_mapping",
           "subcategory": ""
         },
         {
-          "title": "infinity_scheduled_scaling",
-          "slug": "infinity_scheduled_scaling",
+          "title": "scheduled_scaling",
+          "slug": "scheduled_scaling",
           "subcategory": ""
         },
         {
-          "title": "infinity_sip_credential",
-          "slug": "infinity_sip_credential",
+          "title": "sip_credential",
+          "slug": "sip_credential",
           "subcategory": ""
         },
         {
-          "title": "infinity_sip_proxy",
-          "slug": "infinity_sip_proxy",
+          "title": "sip_proxy",
+          "slug": "sip_proxy",
           "subcategory": ""
         },
         {
-          "title": "infinity_smtp_server",
-          "slug": "infinity_smtp_server",
+          "title": "smtp_server",
+          "slug": "smtp_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_snmp_network_management_system",
-          "slug": "infinity_snmp_network_management_system",
+          "title": "snmp_network_management_system",
+          "slug": "snmp_network_management_system",
           "subcategory": ""
         },
         {
-          "title": "infinity_ssh_authorized_key",
-          "slug": "infinity_ssh_authorized_key",
+          "title": "ssh_authorized_key",
+          "slug": "ssh_authorized_key",
           "subcategory": ""
         },
         {
-          "title": "infinity_ssh_password_hash",
-          "slug": "infinity_ssh_password_hash",
+          "title": "ssh_password_hash",
+          "slug": "ssh_password_hash",
           "subcategory": ""
         },
         {
-          "title": "infinity_static_route",
-          "slug": "infinity_static_route",
+          "title": "static_route",
+          "slug": "static_route",
           "subcategory": ""
         },
         {
-          "title": "infinity_stun_server",
-          "slug": "infinity_stun_server",
+          "title": "stun_server",
+          "slug": "stun_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_syslog_server",
-          "slug": "infinity_syslog_server",
+          "title": "syslog_server",
+          "slug": "syslog_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_system_location",
-          "slug": "infinity_system_location",
+          "title": "system_location",
+          "slug": "system_location",
           "subcategory": ""
         },
         {
-          "title": "infinity_system_tuneable",
-          "slug": "infinity_system_tuneable",
+          "title": "system_tuneable",
+          "slug": "system_tuneable",
           "subcategory": ""
         },
         {
-          "title": "infinity_teams_proxy",
-          "slug": "infinity_teams_proxy",
+          "title": "teams_proxy",
+          "slug": "teams_proxy",
           "subcategory": ""
         },
         {
-          "title": "infinity_tls_certificate",
-          "slug": "infinity_tls_certificate",
+          "title": "tls_certificate",
+          "slug": "tls_certificate",
           "subcategory": ""
         },
         {
-          "title": "infinity_turn_server",
-          "slug": "infinity_turn_server",
+          "title": "turn_server",
+          "slug": "turn_server",
           "subcategory": ""
         },
         {
-          "title": "infinity_user_group",
-          "slug": "infinity_user_group",
+          "title": "user_group",
+          "slug": "user_group",
           "subcategory": ""
         },
         {
-          "title": "infinity_user_group_entity_mapping",
-          "slug": "infinity_user_group_entity_mapping",
+          "title": "user_group_entity_mapping",
+          "slug": "user_group_entity_mapping",
           "subcategory": ""
         },
         {
-          "title": "infinity_webapp_alias",
-          "slug": "infinity_webapp_alias",
+          "title": "webapp_alias",
+          "slug": "webapp_alias",
           "subcategory": ""
         },
         {
-          "title": "infinity_webapp_branding",
-          "slug": "infinity_webapp_branding",
+          "title": "webapp_branding",
+          "slug": "webapp_branding",
           "subcategory": ""
         },
         {
-          "title": "infinity_web_password_hash",
-          "slug": "infinity_web_password_hash",
+          "title": "web_password_hash",
+          "slug": "web_password_hash",
           "subcategory": ""
         },
         {
-          "title": "infinity_worker_vm",
-          "slug": "infinity_worker_vm",
+          "title": "worker_vm",
+          "slug": "worker_vm",
           "subcategory": ""
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:51.342449"
+    "docs_refreshed_at": "2026-10-22T12:22:21.276997"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -125438,7 +125523,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:01.929129"
+    "docs_refreshed_at": "2026-10-22T12:22:35.353612"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -126275,7 +126360,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:32.769579"
+    "docs_refreshed_at": "2026-10-22T12:21:57.291436"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -126304,7 +126389,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:21.644369"
+    "docs_refreshed_at": "2026-10-22T12:21:42.834249"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -134308,7 +134393,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:52.110820"
+    "docs_refreshed_at": "2026-10-22T12:22:22.724683"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -134521,7 +134606,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:09.374035"
+    "docs_refreshed_at": "2026-10-22T12:21:27.508567"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -134574,7 +134659,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:26.184062"
+    "docs_refreshed_at": "2026-10-22T12:21:48.511860"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -135524,7 +135609,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:39.582876"
+    "docs_refreshed_at": "2026-10-22T12:22:06.403965"
   },
   "536tech/daytona": {
     "docs": {
@@ -136930,7 +137015,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:19.238613"
+    "docs_refreshed_at": "2026-10-22T12:21:39.843139"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -137133,7 +137218,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:37.127937"
+    "docs_refreshed_at": "2026-10-22T12:22:02.800043"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -137271,7 +137356,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:54.851980"
+    "docs_refreshed_at": "2026-10-22T12:22:26.176666"
   },
   "DrFaust92/airflow": {
     "docs": {
@@ -137364,7 +137449,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:12.516582"
+    "docs_refreshed_at": "2026-10-22T12:21:31.514610"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -137787,7 +137872,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:41.736306"
+    "docs_refreshed_at": "2026-10-22T12:22:09.127352"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -138442,7 +138527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:43.117437"
+    "docs_refreshed_at": "2026-10-22T12:22:10.875251"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -141350,6 +141435,16 @@
           "subcategory": "VPC infrastructure"
         },
         {
+          "title": "is_vpn_gateway_member",
+          "slug": "is_vpn_gateway_member",
+          "subcategory": "Virtual Private Cloud API"
+        },
+        {
+          "title": "is_vpn_gateway_members",
+          "slug": "is_vpn_gateway_members",
+          "subcategory": "Virtual Private Cloud API"
+        },
+        {
           "title": "is_vpn_gateways",
           "slug": "is_vpn_gateways",
           "subcategory": "VPC infrastructure"
@@ -142273,6 +142368,21 @@
           "title": "resource_tag",
           "slug": "resource_tag",
           "subcategory": "Global Tagging"
+        },
+        {
+          "title": "rhaii_inference_model",
+          "slug": "rhaii_inference_model",
+          "subcategory": "Red Hat AI Inference"
+        },
+        {
+          "title": "rhaii_inference_models",
+          "slug": "rhaii_inference_models",
+          "subcategory": "Red Hat AI Inference"
+        },
+        {
+          "title": "rhaii_project",
+          "slug": "rhaii_project",
+          "subcategory": "Red Hat AI Inference"
         },
         {
           "title": "satellite_attach_host_script",
@@ -144821,6 +144931,11 @@
           "subcategory": "VPC infrastructure"
         },
         {
+          "title": "is_vpn_gateway_member_replace",
+          "slug": "is_vpn_gateway_member_replace",
+          "subcategory": ""
+        },
+        {
           "title": "is_vpn_server",
           "slug": "is_vpn_server",
           "subcategory": "VPC infrastructure"
@@ -145441,6 +145556,11 @@
           "subcategory": "Global Tagging"
         },
         {
+          "title": "rhaii_project",
+          "slug": "rhaii_project",
+          "subcategory": "Red Hat AI Inference"
+        },
+        {
           "title": "satellite_cluster",
           "slug": "satellite_cluster",
           "subcategory": "Satellite"
@@ -145757,7 +145877,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:14.659585"
+    "docs_refreshed_at": "2026-10-22T12:21:34.168216"
   },
   "damhau/scm": {
     "docs": {
@@ -147970,7 +148090,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:28.597350"
+    "docs_refreshed_at": "2026-10-22T12:21:51.555244"
   },
   "jamesbraid/unifi": {
     "docs": {
@@ -148405,7 +148525,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:41.028698"
+    "docs_refreshed_at": "2026-10-22T12:22:08.207527"
   },
   "nicole-ashley/matomo": {
     "docs": {
@@ -148828,7 +148948,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:49.622741"
+    "docs_refreshed_at": "2026-10-22T12:22:19.137182"
   },
   "sky-cloak/skycloak": {
     "docs": {
@@ -149156,7 +149276,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:56.242487"
+    "docs_refreshed_at": "2026-10-22T12:22:27.997138"
   },
   "FelGel/mongodb": {
     "docs": {
@@ -149212,7 +149332,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:13.555427"
+    "docs_refreshed_at": "2026-10-22T12:21:32.808311"
   },
   "kmaris/nerdctl": {
     "docs": {
@@ -149357,7 +149477,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:44.141661"
+    "docs_refreshed_at": "2026-10-22T12:22:12.234380"
   },
   "kosli-dev/kosli": {
     "docs": {
@@ -149485,7 +149605,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:44.489746"
+    "docs_refreshed_at": "2026-10-22T12:22:12.664729"
   },
   "DrFaust92/mapbox": {
     "docs": {
@@ -149511,7 +149631,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:12.858742"
+    "docs_refreshed_at": "2026-10-22T12:21:31.940569"
   },
   "devops-rob/terracurl": {
     "docs": {
@@ -149583,7 +149703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:31.381968"
+    "docs_refreshed_at": "2026-10-22T12:21:55.100393"
   },
   "gitpod-io/ona": {
     "docs": {
@@ -149990,7 +150110,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:36.442280"
+    "docs_refreshed_at": "2026-10-22T12:22:01.933237"
   },
   "ioplane/powerdns": {
     "docs": {
@@ -150157,7 +150277,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:39.923443"
+    "docs_refreshed_at": "2026-10-22T12:22:06.827960"
   },
   "stripe/stripe": {
     "docs": {
@@ -150510,7 +150630,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:57.289324"
+    "docs_refreshed_at": "2026-10-22T12:22:29.281543"
   },
   "terraform-ibm/powerhmc": {
     "docs": {
@@ -150610,7 +150730,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:58.403030"
+    "docs_refreshed_at": "2026-10-22T12:22:30.658159"
   },
   "andrefaria24/sailpoint-isc": {
     "docs": {
@@ -150823,7 +150943,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:22.764136"
+    "docs_refreshed_at": "2026-10-22T12:21:44.192530"
   },
   "comradesharf/hostinger": {
     "docs": {
@@ -151013,7 +151133,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:27.551031"
+    "docs_refreshed_at": "2026-10-22T12:21:50.266669"
   },
   "latitudesh/latitudesh": {
     "docs": {
@@ -151220,7 +151340,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:45.858975"
+    "docs_refreshed_at": "2026-10-22T12:22:14.415400"
   },
   "vhco-pro/stackweaver": {
     "docs": {
@@ -151263,6 +151383,11 @@
           "subcategory": ""
         },
         {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
           "title": "organization_members",
           "slug": "organization_members",
           "subcategory": ""
@@ -151280,6 +151405,11 @@
         {
           "title": "organization_run_task_global_settings",
           "slug": "organization_run_task_global_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "organizations",
+          "slug": "organizations",
           "subcategory": ""
         },
         {
@@ -151529,6 +151659,11 @@
           "subcategory": ""
         },
         {
+          "title": "organization",
+          "slug": "organization",
+          "subcategory": ""
+        },
+        {
           "title": "organization_default_settings",
           "slug": "organization_default_settings",
           "subcategory": ""
@@ -151675,7 +151810,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:00.499960"
+    "docs_refreshed_at": "2026-10-22T12:22:33.647542"
   },
   "vivantel/paddle": {
     "docs": {
@@ -151842,7 +151977,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:38:01.187563"
+    "docs_refreshed_at": "2026-10-22T12:22:34.496544"
   },
   "BunnyWay/bunnynet": {
     "docs": {
@@ -152035,7 +152170,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:10.087709"
+    "docs_refreshed_at": "2026-10-22T12:21:28.440251"
   },
   "JUSTINWMYLES/spacetraders": {
     "docs": {
@@ -152370,7 +152505,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:15.399108"
+    "docs_refreshed_at": "2026-10-22T12:21:35.073091"
   },
   "clumio-code/clumio": {
     "docs": {
@@ -152605,7 +152740,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:26.866422"
+    "docs_refreshed_at": "2026-10-22T12:21:49.371166"
   },
   "davidsonjon/identitynow": {
     "docs": {
@@ -152903,7 +153038,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:29.300592"
+    "docs_refreshed_at": "2026-10-22T12:21:52.446290"
   },
   "michaelkosir/utils": {
     "docs": {
@@ -152922,7 +153057,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:48.251370"
+    "docs_refreshed_at": "2026-10-22T12:22:17.412811"
   },
   "mwalser/iothub": {
     "docs": {
@@ -153106,7 +153241,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:48.938585"
+    "docs_refreshed_at": "2026-10-22T12:22:18.273628"
   },
   "JUSTINWMYLES/gigavuecore": {
     "docs": {
@@ -159135,7 +159270,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:15.029471"
+    "docs_refreshed_at": "2026-10-22T12:21:34.640460"
   },
   "dash0hq/dash0": {
     "docs": {
@@ -159172,6 +159307,11 @@
       ],
       "resources": [
         {
+          "title": "auth_token",
+          "slug": "auth_token",
+          "subcategory": ""
+        },
+        {
           "title": "check_rule",
           "slug": "check_rule",
           "subcategory": ""
@@ -159179,6 +159319,11 @@
         {
           "title": "dashboard",
           "slug": "dashboard",
+          "subcategory": ""
+        },
+        {
+          "title": "dataset",
+          "slug": "dataset",
           "subcategory": ""
         },
         {
@@ -159223,7 +159368,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:28.944118"
+    "docs_refreshed_at": "2026-10-22T12:21:52.015797"
   },
   "gocommunity-io/dockerd": {
     "docs": {
@@ -159427,7 +159572,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:45.514394"
+    "docs_refreshed_at": "2026-10-22T12:22:13.985884"
   },
   "securitls/securitls": {
     "docs": {
@@ -159483,7 +159628,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:55.899396"
+    "docs_refreshed_at": "2026-10-22T12:22:27.574244"
   },
   "smallstep/step-ca-pro": {
     "docs": {
@@ -159519,7 +159664,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:56.585959"
+    "docs_refreshed_at": "2026-10-22T12:22:28.423853"
   },
   "f5-sales-demo/xcsh": {
     "docs": {
@@ -165401,6 +165546,21 @@
           "subcategory": ""
         },
         {
+          "title": "xcsh_secret_policy examples",
+          "slug": "resources--secret_policy--examples--group-001",
+          "subcategory": "Security"
+        },
+        {
+          "title": "xcsh_secret_policy lifecycle",
+          "slug": "resources--secret_policy--lifecycle--group-001",
+          "subcategory": "Security"
+        },
+        {
+          "title": "xcsh_secret_policy reference",
+          "slug": "resources--secret_policy--reference--group-001",
+          "subcategory": "Security"
+        },
+        {
           "title": "xcsh_securemesh_site_v2 examples",
           "slug": "resources--securemesh_site_v2--examples--group-001",
           "subcategory": ""
@@ -166039,6 +166199,11 @@
           "title": "xcsh_workload reference",
           "slug": "resources--workload--reference--group-029",
           "subcategory": "Container"
+        },
+        {
+          "title": "Native Secret Policy lifecycle",
+          "slug": "secret-policy",
+          "subcategory": ""
         }
       ],
       "overview": [
@@ -166560,6 +166725,11 @@
           "subcategory": ""
         },
         {
+          "title": "secret_policy",
+          "slug": "secret_policy",
+          "subcategory": "Security"
+        },
+        {
           "title": "securemesh_site_v2",
           "slug": "securemesh_site_v2",
           "subcategory": ""
@@ -166686,7 +166856,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:34.022612"
+    "docs_refreshed_at": "2026-10-22T12:21:58.820317"
   },
   "CMDennis/easydns": {
     "docs": {
@@ -166896,7 +167066,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:10.427946"
+    "docs_refreshed_at": "2026-10-22T12:21:28.863078"
   },
   "svanrossem/hcloud": {
     "docs": {
@@ -167898,7 +168068,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:08.686268"
+    "docs_refreshed_at": "2026-10-22T12:21:26.653156"
   },
   "Luiggi33/dummybar": {
     "docs": {
@@ -167945,7 +168115,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:17.128406"
+    "docs_refreshed_at": "2026-10-22T12:21:37.233742"
   },
   "Luiggi33/dummyfoo": {
     "docs": {
@@ -167992,7 +168162,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:17.470149"
+    "docs_refreshed_at": "2026-10-22T12:21:37.658630"
   },
   "emqx/emqxcloud": {
     "docs": {
@@ -168080,7 +168250,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:33.457926"
+    "docs_refreshed_at": "2026-10-22T12:21:58.151877"
   },
   "fastly/fastly-beta": {
     "docs": {
@@ -169202,7 +169372,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:34.718849"
+    "docs_refreshed_at": "2026-10-22T12:21:59.687004"
   },
   "jamf/jamfplatform": {
     "docs": {
@@ -169347,6 +169517,11 @@
         {
           "title": "ai_governance_tools",
           "slug": "ai_governance_tools",
+          "subcategory": ""
+        },
+        {
+          "title": "apple_app_store_app",
+          "slug": "apple_app_store_app",
           "subcategory": ""
         },
         {
@@ -171066,7 +171241,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:41.390977"
+    "docs_refreshed_at": "2026-10-22T12:22:08.695172"
   },
   "kreuzwenker/docker": {
     "docs": {
@@ -171240,7 +171415,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:50.999002"
+    "docs_refreshed_at": "2026-10-22T12:22:20.850359"
   },
   "tencentcloudstack/tencentcloud": {
     "docs": {
@@ -182570,7 +182745,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:58.057223"
+    "docs_refreshed_at": "2026-10-22T12:22:30.227457"
   },
   "TwilightCoders/truenas": {
     "docs": {
@@ -183132,7 +183307,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:20.961150"
+    "docs_refreshed_at": "2026-10-22T12:21:41.985370"
   },
   "rapid7/rapid7": {
     "docs": {
@@ -183248,7 +183423,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:52.797600"
+    "docs_refreshed_at": "2026-10-22T12:22:23.592346"
   },
   "CiscoDevNet/meraki": {
     "docs": {
@@ -185528,7 +185703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:11.127338"
+    "docs_refreshed_at": "2026-10-22T12:21:29.790155"
   },
   "EyevinnOSC/osc": {
     "docs": {
@@ -186468,7 +186643,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:13.214595"
+    "docs_refreshed_at": "2026-10-22T12:21:32.380186"
   },
   "freefair/semaphore-ex": {
     "docs": {
@@ -187443,7 +187618,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:36.101507"
+    "docs_refreshed_at": "2026-10-22T12:22:01.474426"
   },
   "markddavidoff/unifi": {
     "docs": {
@@ -187798,7 +187973,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:47.229194"
+    "docs_refreshed_at": "2026-10-22T12:22:16.130853"
   },
   "redpanda-data/redpanda": {
     "docs": {
@@ -187810,6 +187985,16 @@
         }
       ],
       "data-sources": [
+        {
+          "title": "cloud_provider_access",
+          "slug": "cloud_provider_access",
+          "subcategory": ""
+        },
+        {
+          "title": "cloud_provider_access_prerequisites",
+          "slug": "cloud_provider_access_prerequisites",
+          "subcategory": ""
+        },
         {
           "title": "cluster",
           "slug": "cluster",
@@ -187867,6 +188052,11 @@
         {
           "title": "acl",
           "slug": "acl",
+          "subcategory": ""
+        },
+        {
+          "title": "cloud_provider_access",
+          "slug": "cloud_provider_access",
           "subcategory": ""
         },
         {
@@ -187946,7 +188136,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:53.141345"
+    "docs_refreshed_at": "2026-10-22T12:22:24.022508"
   },
   "truenas/truenas": {
     "docs": {
@@ -189368,7 +189558,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:59.437203"
+    "docs_refreshed_at": "2026-10-22T12:22:31.935567"
   },
   "blechschmidt/sysutils": {
     "docs": {
@@ -189687,7 +189877,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:24.814108"
+    "docs_refreshed_at": "2026-10-22T12:21:46.803718"
   },
   "devs-ibee/ibee": {
     "docs": {
@@ -189703,8 +189893,28 @@
           "subcategory": ""
         },
         {
+          "title": "vm_access",
+          "slug": "vm_access",
+          "subcategory": ""
+        },
+        {
+          "title": "vm_backup_restore",
+          "slug": "vm_backup_restore",
+          "subcategory": ""
+        },
+        {
+          "title": "vm_backup_run",
+          "slug": "vm_backup_run",
+          "subcategory": ""
+        },
+        {
           "title": "vm_power",
           "slug": "vm_power",
+          "subcategory": ""
+        },
+        {
+          "title": "vm_snapshot_restore",
+          "slug": "vm_snapshot_restore",
           "subcategory": ""
         }
       ],
@@ -189732,6 +189942,13 @@
         {
           "title": "sites",
           "slug": "sites",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "terraform",
+          "slug": "terraform",
           "subcategory": ""
         }
       ],
@@ -189894,6 +190111,16 @@
           "subcategory": ""
         },
         {
+          "title": "secret_identity",
+          "slug": "secret_identity",
+          "subcategory": ""
+        },
+        {
+          "title": "secret_identity_scope",
+          "slug": "secret_identity_scope",
+          "subcategory": ""
+        },
+        {
           "title": "secret_store",
           "slug": "secret_store",
           "subcategory": ""
@@ -189915,7 +190142,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:31.720702"
+    "docs_refreshed_at": "2026-10-22T12:21:55.529581"
   },
   "elva-labs/vew": {
     "docs": {
@@ -190100,7 +190327,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:33.116016"
+    "docs_refreshed_at": "2026-10-22T12:21:57.725399"
   },
   "lettermint/lettermint": {
     "docs": {
@@ -190210,7 +190437,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:46.547693"
+    "docs_refreshed_at": "2026-10-22T12:22:15.266700"
   },
   "turfbuild/kubewait": {
     "docs": {
@@ -190229,7 +190456,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:59.775949"
+    "docs_refreshed_at": "2026-10-22T12:22:32.360327"
   },
   "armitageee/kafka": {
     "docs": {
@@ -190359,7 +190586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:23.788189"
+    "docs_refreshed_at": "2026-10-22T12:21:45.482377"
   },
   "kestra-io/kestra": {
     "docs": {
@@ -190634,7 +190861,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:43.801863"
+    "docs_refreshed_at": "2026-10-22T12:22:11.734028"
   },
   "northpolesec/nps": {
     "docs": {
@@ -190790,7 +191017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:50.312629"
+    "docs_refreshed_at": "2026-10-22T12:22:20.003166"
   },
   "ringdas/das": {
     "docs": {
@@ -191170,7 +191397,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:53.824259"
+    "docs_refreshed_at": "2026-10-22T12:22:24.880562"
   },
   "aliyun/alicloud": {
     "docs": {
@@ -201259,7 +201486,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:22.406702"
+    "docs_refreshed_at": "2026-10-22T12:21:43.755603"
   },
   "denisyfrolov/unifi": {
     "docs": {
@@ -201614,7 +201841,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:30.659254"
+    "docs_refreshed_at": "2026-10-22T12:21:54.191527"
   },
   "faradayio/faraday": {
     "docs": {
@@ -201760,7 +201987,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:34.368834"
+    "docs_refreshed_at": "2026-10-22T12:21:59.251845"
   },
   "infobloxopen/infoblox": {
     "docs": {
@@ -203585,7 +203812,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:39.231829"
+    "docs_refreshed_at": "2026-10-22T12:22:05.916598"
   },
   "jshvn/healthchecksio": {
     "docs": {
@@ -203672,7 +203899,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:42.426045"
+    "docs_refreshed_at": "2026-10-22T12:22:09.981709"
   },
   "platform9/pcd": {
     "docs": {
@@ -204197,7 +204424,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:51.688438"
+    "docs_refreshed_at": "2026-10-22T12:22:21.702876"
   },
   "rfdrew/homarr": {
     "docs": {
@@ -204347,6 +204574,449 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-15T12:37:53.485044"
+    "docs_refreshed_at": "2026-10-22T12:22:24.448111"
+  },
+  "dmcphearson/iru": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "blueprint_library_items",
+          "slug": "blueprint_library_items",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprint_routing_activity",
+          "slug": "blueprint_routing_activity",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprints",
+          "slug": "blueprints",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_profiles",
+          "slug": "custom_profiles",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_scripts",
+          "slug": "custom_scripts",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "device_details",
+          "slug": "device_details",
+          "subcategory": ""
+        },
+        {
+          "title": "devices",
+          "slug": "devices",
+          "subcategory": ""
+        },
+        {
+          "title": "self_service_categories",
+          "slug": "self_service_categories",
+          "subcategory": ""
+        },
+        {
+          "title": "tags",
+          "slug": "tags",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        },
+        {
+          "title": "users",
+          "slug": "users",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Install through Iru (filesystem mirror)",
+          "slug": "filesystem-mirror",
+          "subcategory": ""
+        },
+        {
+          "title": "Import an existing tenant",
+          "slug": "import-existing-tenant",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "blueprint",
+          "slug": "blueprint",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprint_assignment",
+          "slug": "blueprint_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprint_routing",
+          "slug": "blueprint_routing",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_app",
+          "slug": "custom_app",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_profile",
+          "slug": "custom_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_script",
+          "slug": "custom_script",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "device_note",
+          "slug": "device_note",
+          "subcategory": ""
+        },
+        {
+          "title": "in_house_app",
+          "slug": "in_house_app",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "blueprint",
+          "slug": "blueprint",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprint_assignment",
+          "slug": "blueprint_assignment",
+          "subcategory": ""
+        },
+        {
+          "title": "blueprint_routing",
+          "slug": "blueprint_routing",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_app",
+          "slug": "custom_app",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_profile",
+          "slug": "custom_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "custom_script",
+          "slug": "custom_script",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "device_note",
+          "slug": "device_note",
+          "subcategory": ""
+        },
+        {
+          "title": "in_house_app",
+          "slug": "in_house_app",
+          "subcategory": ""
+        },
+        {
+          "title": "tag",
+          "slug": "tag",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-10-22T12:21:56.425232"
+  },
+  "implemaab/s4communication": {
+    "docs": {
+      "guides": [
+        {
+          "title": "AUTHENTICATION",
+          "slug": "AUTHENTICATION",
+          "subcategory": ""
+        },
+        {
+          "title": "DRIFTDETECTION",
+          "slug": "DRIFTDETECTION",
+          "subcategory": ""
+        },
+        {
+          "title": "IMPORT",
+          "slug": "IMPORT",
+          "subcategory": ""
+        },
+        {
+          "title": "QUICKSTART",
+          "slug": "QUICKSTART",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "communication_arrangement",
+          "slug": "communication_arrangement",
+          "subcategory": ""
+        },
+        {
+          "title": "communication_system",
+          "slug": "communication_system",
+          "subcategory": ""
+        },
+        {
+          "title": "communication_user",
+          "slug": "communication_user",
+          "subcategory": ""
+        },
+        {
+          "title": "inbound_user",
+          "slug": "inbound_user",
+          "subcategory": ""
+        },
+        {
+          "title": "outbound_user",
+          "slug": "outbound_user",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "communication_arrangement",
+          "slug": "communication_arrangement",
+          "subcategory": ""
+        },
+        {
+          "title": "communication_system",
+          "slug": "communication_system",
+          "subcategory": ""
+        },
+        {
+          "title": "communication_user",
+          "slug": "communication_user",
+          "subcategory": ""
+        },
+        {
+          "title": "inbound_user",
+          "slug": "inbound_user",
+          "subcategory": ""
+        },
+        {
+          "title": "outbound_user",
+          "slug": "outbound_user",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-10-22T12:22:05.438972"
+  },
+  "usespotlightai/spotlight": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace",
+          "slug": "workspace",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "GitHub Actions without a stored token",
+          "slug": "github-actions-without-a-stored-token",
+          "subcategory": ""
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "egress",
+          "slug": "egress",
+          "subcategory": ""
+        },
+        {
+          "title": "harness_profile",
+          "slug": "harness_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "hook",
+          "slug": "hook",
+          "subcategory": ""
+        },
+        {
+          "title": "integration",
+          "slug": "integration",
+          "subcategory": ""
+        },
+        {
+          "title": "line",
+          "slug": "line",
+          "subcategory": ""
+        },
+        {
+          "title": "runner_pool",
+          "slug": "runner_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "runner_trust",
+          "slug": "runner_trust",
+          "subcategory": ""
+        },
+        {
+          "title": "secret",
+          "slug": "secret",
+          "subcategory": ""
+        },
+        {
+          "title": "skill",
+          "slug": "skill",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace",
+          "slug": "workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_runners",
+          "slug": "workspace_runners",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_token_trust",
+          "slug": "workspace_token_trust",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "egress",
+          "slug": "egress",
+          "subcategory": ""
+        },
+        {
+          "title": "harness_profile",
+          "slug": "harness_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "hook",
+          "slug": "hook",
+          "subcategory": ""
+        },
+        {
+          "title": "integration",
+          "slug": "integration",
+          "subcategory": ""
+        },
+        {
+          "title": "line",
+          "slug": "line",
+          "subcategory": ""
+        },
+        {
+          "title": "runner_pool",
+          "slug": "runner_pool",
+          "subcategory": ""
+        },
+        {
+          "title": "runner_trust",
+          "slug": "runner_trust",
+          "subcategory": ""
+        },
+        {
+          "title": "secret",
+          "slug": "secret",
+          "subcategory": ""
+        },
+        {
+          "title": "skill",
+          "slug": "skill",
+          "subcategory": ""
+        },
+        {
+          "title": "team",
+          "slug": "team",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace",
+          "slug": "workspace",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_runners",
+          "slug": "workspace_runners",
+          "subcategory": ""
+        },
+        {
+          "title": "workspace_token_trust",
+          "slug": "workspace_token_trust",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-10-22T12:22:33.214519"
   }
 }
