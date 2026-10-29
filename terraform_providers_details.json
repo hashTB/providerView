@@ -2422,6 +2422,11 @@
           "subcategory": "CloudWatch Observability Access Manager"
         },
         {
+          "title": "observabilityadmin_dataset_integration",
+          "slug": "observabilityadmin_dataset_integration",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
           "title": "odb_autonomous_database",
           "slug": "odb_autonomous_database",
           "subcategory": "Oracle Database@AWS"
@@ -3065,6 +3070,11 @@
           "title": "s3_objects",
           "slug": "s3_objects",
           "subcategory": "S3 (Simple Storage)"
+        },
+        {
+          "title": "sagemaker_hub_content",
+          "slug": "sagemaker_hub_content",
+          "subcategory": "SageMaker AI"
         },
         {
           "title": "sagemaker_prebuilt_ecr_image",
@@ -4085,8 +4095,18 @@
           "subcategory": "CloudWatch Omni"
         },
         {
+          "title": "cloudwatchomni_dashboard",
+          "slug": "cloudwatchomni_dashboard",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
           "title": "cloudwatchomni_domain",
           "slug": "cloudwatchomni_domain",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_organization_domain",
+          "slug": "cloudwatchomni_organization_domain",
           "subcategory": "CloudWatch Omni"
         },
         {
@@ -4142,6 +4162,11 @@
         {
           "title": "devopsagent_agent_space",
           "slug": "devopsagent_agent_space",
+          "subcategory": "DevOps Agent"
+        },
+        {
+          "title": "devopsagent_asset",
+          "slug": "devopsagent_asset",
           "subcategory": "DevOps Agent"
         },
         {
@@ -6649,8 +6674,18 @@
           "subcategory": "CloudWatch Omni"
         },
         {
+          "title": "cloudwatchomni_dashboard",
+          "slug": "cloudwatchomni_dashboard",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
           "title": "cloudwatchomni_domain",
           "slug": "cloudwatchomni_domain",
+          "subcategory": "CloudWatch Omni"
+        },
+        {
+          "title": "cloudwatchomni_organization_domain",
+          "slug": "cloudwatchomni_organization_domain",
           "subcategory": "CloudWatch Omni"
         },
         {
@@ -7446,6 +7481,11 @@
         {
           "title": "devopsagent_agent_space",
           "slug": "devopsagent_agent_space",
+          "subcategory": "DevOps Agent"
+        },
+        {
+          "title": "devopsagent_asset",
+          "slug": "devopsagent_asset",
           "subcategory": "DevOps Agent"
         },
         {
@@ -10511,6 +10551,11 @@
         {
           "title": "observabilityadmin_centralization_rule_for_organization",
           "slug": "observabilityadmin_centralization_rule_for_organization",
+          "subcategory": "CloudWatch Observability Admin"
+        },
+        {
+          "title": "observabilityadmin_dataset_integration",
+          "slug": "observabilityadmin_dataset_integration",
           "subcategory": "CloudWatch Observability Admin"
         },
         {
@@ -13810,7 +13855,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:02.900592"
+    "docs_refreshed_at": "2026-10-29T13:26:56.762637"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14284,6 +14329,11 @@
         {
           "title": "appfabric_app_authorization",
           "slug": "appfabric_app_authorization",
+          "subcategory": ""
+        },
+        {
+          "title": "appfabric_ingestion",
+          "slug": "appfabric_ingestion",
           "subcategory": ""
         },
         {
@@ -16322,6 +16372,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_access_profile",
+          "slug": "cloudwatch_access_profile",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_alarm",
           "slug": "cloudwatch_alarm",
           "subcategory": ""
@@ -16372,6 +16427,36 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_domain",
+          "slug": "cloudwatch_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_access_grant_for_organization",
+          "slug": "cloudwatch_domain_access_grant_for_organization",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_access_grant_for_organizations",
+          "slug": "cloudwatch_domain_access_grant_for_organizations",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_for_organization",
+          "slug": "cloudwatch_domain_for_organization",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_for_organizations",
+          "slug": "cloudwatch_domain_for_organizations",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domains",
+          "slug": "cloudwatch_domains",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_insight_rule",
           "slug": "cloudwatch_insight_rule",
           "subcategory": ""
@@ -16412,6 +16497,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_omni_dashboard",
+          "slug": "cloudwatch_omni_dashboard",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_otel_enrichment",
           "slug": "cloudwatch_otel_enrichment",
           "subcategory": ""
@@ -16424,6 +16514,16 @@
         {
           "title": "cloudwatch_resource_metrics_configuration",
           "slug": "cloudwatch_resource_metrics_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_space",
+          "slug": "cloudwatch_space",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_spaces",
+          "slug": "cloudwatch_spaces",
           "subcategory": ""
         },
         {
@@ -16469,6 +16569,11 @@
         {
           "title": "codebuild_fleets",
           "slug": "codebuild_fleets",
+          "subcategory": ""
+        },
+        {
+          "title": "codebuild_projects",
+          "slug": "codebuild_projects",
           "subcategory": ""
         },
         {
@@ -18829,6 +18934,11 @@
         {
           "title": "ec2_transit_gateway_attachment",
           "slug": "ec2_transit_gateway_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_transit_gateway_attachment_nat_configuration",
+          "slug": "ec2_transit_gateway_attachment_nat_configuration",
           "subcategory": ""
         },
         {
@@ -21407,6 +21517,16 @@
           "subcategory": ""
         },
         {
+          "title": "iot_ota_update",
+          "slug": "iot_ota_update",
+          "subcategory": ""
+        },
+        {
+          "title": "iot_ota_updates",
+          "slug": "iot_ota_updates",
+          "subcategory": ""
+        },
+        {
           "title": "iot_policies",
           "slug": "iot_policies",
           "subcategory": ""
@@ -23392,6 +23512,16 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_wave",
+          "slug": "mgn_wave",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_waves",
+          "slug": "mgn_waves",
+          "subcategory": ""
+        },
+        {
           "title": "mpa_identity_source",
           "slug": "mpa_identity_source",
           "subcategory": ""
@@ -23824,6 +23954,11 @@
         {
           "title": "networkmonitor_monitors",
           "slug": "networkmonitor_monitors",
+          "subcategory": ""
+        },
+        {
+          "title": "networkmonitor_probe",
+          "slug": "networkmonitor_probe",
           "subcategory": ""
         },
         {
@@ -24514,6 +24649,16 @@
         {
           "title": "personalize_metric_attributions",
           "slug": "personalize_metric_attributions",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_recommender",
+          "slug": "personalize_recommender",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_recommenders",
+          "slug": "personalize_recommenders",
           "subcategory": ""
         },
         {
@@ -26769,6 +26914,16 @@
         {
           "title": "securityagent_pentest",
           "slug": "securityagent_pentest",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_private_connection",
+          "slug": "securityagent_private_connection",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_private_connections",
+          "slug": "securityagent_private_connections",
           "subcategory": ""
         },
         {
@@ -29766,6 +29921,21 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_domain",
+          "slug": "cloudwatch_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_access_grant_for_organization",
+          "slug": "cloudwatch_domain_access_grant_for_organization",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_for_organization",
+          "slug": "cloudwatch_domain_for_organization",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_insight_rule",
           "slug": "cloudwatch_insight_rule",
           "subcategory": ""
@@ -29788,6 +29958,11 @@
         {
           "title": "cloudwatch_otel_enrichment",
           "slug": "cloudwatch_otel_enrichment",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_space",
+          "slug": "cloudwatch_space",
           "subcategory": ""
         },
         {
@@ -31906,6 +32081,11 @@
           "subcategory": ""
         },
         {
+          "title": "iot_ota_update",
+          "slug": "iot_ota_update",
+          "subcategory": ""
+        },
+        {
           "title": "iot_policy",
           "slug": "iot_policy",
           "subcategory": ""
@@ -32781,6 +32961,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_wave",
+          "slug": "mgn_wave",
+          "subcategory": ""
+        },
+        {
           "title": "mpa_identity_source",
           "slug": "mpa_identity_source",
           "subcategory": ""
@@ -33258,6 +33443,11 @@
         {
           "title": "personalize_metric_attribution",
           "slug": "personalize_metric_attribution",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_recommender",
+          "slug": "personalize_recommender",
           "subcategory": ""
         },
         {
@@ -34248,6 +34438,11 @@
         {
           "title": "securityagent_integration",
           "slug": "securityagent_integration",
+          "subcategory": ""
+        },
+        {
+          "title": "securityagent_private_connection",
+          "slug": "securityagent_private_connection",
           "subcategory": ""
         },
         {
@@ -35415,6 +35610,11 @@
           "subcategory": ""
         },
         {
+          "title": "appfabric_ingestion",
+          "slug": "appfabric_ingestion",
+          "subcategory": ""
+        },
+        {
           "title": "appfabric_ingestion_destination",
           "slug": "appfabric_ingestion_destination",
           "subcategory": ""
@@ -36575,6 +36775,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_access_profile",
+          "slug": "cloudwatch_access_profile",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_alarm",
           "slug": "cloudwatch_alarm",
           "subcategory": ""
@@ -36600,6 +36805,21 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_domain",
+          "slug": "cloudwatch_domain",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_access_grant_for_organization",
+          "slug": "cloudwatch_domain_access_grant_for_organization",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_domain_for_organization",
+          "slug": "cloudwatch_domain_for_organization",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_insight_rule",
           "slug": "cloudwatch_insight_rule",
           "subcategory": ""
@@ -36620,6 +36840,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_omni_dashboard",
+          "slug": "cloudwatch_omni_dashboard",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_otel_enrichment",
           "slug": "cloudwatch_otel_enrichment",
           "subcategory": ""
@@ -36627,6 +36852,11 @@
         {
           "title": "cloudwatch_resource_metrics_configuration",
           "slug": "cloudwatch_resource_metrics_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "cloudwatch_space",
+          "slug": "cloudwatch_space",
           "subcategory": ""
         },
         {
@@ -38070,6 +38300,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_transit_gateway_attachment_nat_configuration",
+          "slug": "ec2_transit_gateway_attachment_nat_configuration",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_transit_gateway_connect",
           "slug": "ec2_transit_gateway_connect",
           "subcategory": ""
@@ -39470,6 +39705,11 @@
           "subcategory": ""
         },
         {
+          "title": "iot_ota_update",
+          "slug": "iot_ota_update",
+          "subcategory": ""
+        },
+        {
           "title": "iot_policy",
           "slug": "iot_policy",
           "subcategory": ""
@@ -40560,6 +40800,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_wave",
+          "slug": "mgn_wave",
+          "subcategory": ""
+        },
+        {
           "title": "mpa_identity_source",
           "slug": "mpa_identity_source",
           "subcategory": ""
@@ -40797,6 +41042,11 @@
         {
           "title": "networkmonitor_monitor",
           "slug": "networkmonitor_monitor",
+          "subcategory": ""
+        },
+        {
+          "title": "networkmonitor_probe",
+          "slug": "networkmonitor_probe",
           "subcategory": ""
         },
         {
@@ -41197,6 +41447,11 @@
         {
           "title": "personalize_metric_attribution",
           "slug": "personalize_metric_attribution",
+          "subcategory": ""
+        },
+        {
+          "title": "personalize_recommender",
+          "slug": "personalize_recommender",
           "subcategory": ""
         },
         {
@@ -42465,6 +42720,11 @@
           "subcategory": ""
         },
         {
+          "title": "securityagent_private_connection",
+          "slug": "securityagent_private_connection",
+          "subcategory": ""
+        },
+        {
           "title": "securityagent_security_requirement_pack",
           "slug": "securityagent_security_requirement_pack",
           "subcategory": ""
@@ -43581,7 +43841,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:03.581055"
+    "docs_refreshed_at": "2026-10-29T13:26:57.367814"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -44040,7 +44300,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:03.986222"
+    "docs_refreshed_at": "2026-10-29T13:26:57.751495"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45849,6 +46109,11 @@
           "subcategory": "Storage"
         },
         {
+          "title": "storage_account_static_website",
+          "slug": "storage_account_static_website",
+          "subcategory": "Storage"
+        },
+        {
           "title": "storage_blob",
           "slug": "storage_blob",
           "subcategory": "Storage"
@@ -46307,6 +46572,11 @@
           "subcategory": "Cognitive Services"
         },
         {
+          "title": "data_protection_backup_policy_cosmosdb_account",
+          "slug": "data_protection_backup_policy_cosmosdb_account",
+          "subcategory": "DataProtection"
+        },
+        {
           "title": "dedicated_host_group",
           "slug": "dedicated_host_group",
           "subcategory": "Compute"
@@ -46599,6 +46869,11 @@
         {
           "title": "servicebus_namespace_customer_managed_key",
           "slug": "servicebus_namespace_customer_managed_key",
+          "subcategory": "Messaging"
+        },
+        {
+          "title": "servicebus_queue",
+          "slug": "servicebus_queue",
           "subcategory": "Messaging"
         },
         {
@@ -48388,6 +48663,11 @@
         {
           "title": "data_protection_backup_policy_blob_storage",
           "slug": "data_protection_backup_policy_blob_storage",
+          "subcategory": "DataProtection"
+        },
+        {
+          "title": "data_protection_backup_policy_cosmosdb_account",
+          "slug": "data_protection_backup_policy_cosmosdb_account",
           "subcategory": "DataProtection"
         },
         {
@@ -52327,7 +52607,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:04.502381"
+    "docs_refreshed_at": "2026-10-29T13:26:58.225873"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -52676,7 +52956,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:04.935721"
+    "docs_refreshed_at": "2026-10-29T13:26:58.634568"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -52989,6 +53269,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "agent_identity_auth_provider_iam_policy",
+          "slug": "agent_identity_auth_provider_iam_policy",
+          "subcategory": "Agent Identity"
+        },
+        {
           "title": "agent_registry_agent",
           "slug": "agent_registry_agent",
           "subcategory": "Agent Registry"
@@ -53791,7 +54076,7 @@
         {
           "title": "compute_region_instance_group_manager",
           "slug": "compute_region_instance_group_manager",
-          "subcategory": ""
+          "subcategory": "Compute Engine"
         },
         {
           "title": "compute_region_instance_template",
@@ -54821,7 +55106,7 @@
         {
           "title": "organization_iam_custom_roles",
           "slug": "organization_iam_custom_roles",
-          "subcategory": ""
+          "subcategory": "Cloud Platform"
         },
         {
           "title": "organization_iam_policy",
@@ -55006,17 +55291,17 @@
         {
           "title": "secret_manager_regional_secrets",
           "slug": "secret_manager_regional_secrets",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_regional_secret_version",
           "slug": "secret_manager_regional_secret_version",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_regional_secret_version_access",
           "slug": "secret_manager_regional_secret_version_access",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_secret",
@@ -56531,6 +56816,11 @@
           "subcategory": "Agent Identity"
         },
         {
+          "title": "agent_identity_auth_provider_iam",
+          "slug": "agent_identity_auth_provider_iam",
+          "subcategory": "Agent Identity"
+        },
+        {
           "title": "agent_registry_binding",
           "slug": "agent_registry_binding",
           "subcategory": "Agent Registry"
@@ -57228,6 +57518,11 @@
         {
           "title": "bigtable_materialized_view",
           "slug": "bigtable_materialized_view",
+          "subcategory": "Cloud Bigtable"
+        },
+        {
+          "title": "bigtable_memory_layer",
+          "slug": "bigtable_memory_layer",
           "subcategory": "Cloud Bigtable"
         },
         {
@@ -60996,6 +61291,11 @@
           "subcategory": "Network Services"
         },
         {
+          "title": "network_services_cdn_edge_extension",
+          "slug": "network_services_cdn_edge_extension",
+          "subcategory": "Network Services"
+        },
+        {
           "title": "network_services_edge_cache_keyset",
           "slug": "network_services_edge_cache_keyset",
           "subcategory": "Network Services"
@@ -61108,6 +61408,11 @@
         {
           "title": "network_services_tcp_route",
           "slug": "network_services_tcp_route",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "network_services_telemetry_policy",
+          "slug": "network_services_telemetry_policy",
           "subcategory": "Network Services"
         },
         {
@@ -61424,6 +61729,16 @@
           "title": "redis_instance",
           "slug": "redis_instance",
           "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "resource_manager_boundary",
+          "slug": "resource_manager_boundary",
+          "subcategory": "Resource Manager"
+        },
+        {
+          "title": "resource_manager_boundary_config",
+          "slug": "resource_manager_boundary_config",
+          "subcategory": "Resource Manager"
         },
         {
           "title": "resource_manager_capability",
@@ -62046,6 +62361,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_custom_job",
+          "slug": "vertex_ai_custom_job",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_dataset",
           "slug": "vertex_ai_dataset",
           "subcategory": "Vertex AI"
@@ -62176,6 +62496,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_pipeline_job",
+          "slug": "vertex_ai_pipeline_job",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_rag_corpus",
           "slug": "vertex_ai_rag_corpus",
           "subcategory": "Vertex AI"
@@ -62183,6 +62508,11 @@
         {
           "title": "vertex_ai_rag_engine_config",
           "slug": "vertex_ai_rag_engine_config",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_rag_file",
+          "slug": "vertex_ai_rag_file",
           "subcategory": "Vertex AI"
         },
         {
@@ -62317,7 +62647,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:05.448068"
+    "docs_refreshed_at": "2026-10-29T13:26:59.169317"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -62363,6 +62693,11 @@
           "subcategory": "Cloud Platform"
         },
         {
+          "title": "agent_identity_auth_provider_iam_policy",
+          "slug": "agent_identity_auth_provider_iam_policy",
+          "subcategory": "Agent Identity"
+        },
+        {
           "title": "agent_registry_agent",
           "slug": "agent_registry_agent",
           "subcategory": "Agent Registry"
@@ -63165,7 +63500,7 @@
         {
           "title": "compute_region_instance_group_manager",
           "slug": "compute_region_instance_group_manager",
-          "subcategory": ""
+          "subcategory": "Compute Engine"
         },
         {
           "title": "compute_region_instance_template",
@@ -64195,7 +64530,7 @@
         {
           "title": "organization_iam_custom_roles",
           "slug": "organization_iam_custom_roles",
-          "subcategory": ""
+          "subcategory": "Cloud Platform"
         },
         {
           "title": "organization_iam_policy",
@@ -64380,17 +64715,17 @@
         {
           "title": "secret_manager_regional_secrets",
           "slug": "secret_manager_regional_secrets",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_regional_secret_version",
           "slug": "secret_manager_regional_secret_version",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_regional_secret_version_access",
           "slug": "secret_manager_regional_secret_version_access",
-          "subcategory": ""
+          "subcategory": "Secret Manager"
         },
         {
           "title": "secret_manager_secret",
@@ -65905,6 +66240,11 @@
           "subcategory": "Agent Identity"
         },
         {
+          "title": "agent_identity_auth_provider_iam",
+          "slug": "agent_identity_auth_provider_iam",
+          "subcategory": "Agent Identity"
+        },
+        {
           "title": "agent_registry_binding",
           "slug": "agent_registry_binding",
           "subcategory": "Agent Registry"
@@ -66602,6 +66942,11 @@
         {
           "title": "bigtable_materialized_view",
           "slug": "bigtable_materialized_view",
+          "subcategory": "Cloud Bigtable"
+        },
+        {
+          "title": "bigtable_memory_layer",
+          "slug": "bigtable_memory_layer",
           "subcategory": "Cloud Bigtable"
         },
         {
@@ -70370,6 +70715,11 @@
           "subcategory": "Network Services"
         },
         {
+          "title": "network_services_cdn_edge_extension",
+          "slug": "network_services_cdn_edge_extension",
+          "subcategory": "Network Services"
+        },
+        {
           "title": "network_services_edge_cache_keyset",
           "slug": "network_services_edge_cache_keyset",
           "subcategory": "Network Services"
@@ -70482,6 +70832,11 @@
         {
           "title": "network_services_tcp_route",
           "slug": "network_services_tcp_route",
+          "subcategory": "Network Services"
+        },
+        {
+          "title": "network_services_telemetry_policy",
+          "slug": "network_services_telemetry_policy",
           "subcategory": "Network Services"
         },
         {
@@ -70798,6 +71153,16 @@
           "title": "redis_instance",
           "slug": "redis_instance",
           "subcategory": "Memorystore (Redis)"
+        },
+        {
+          "title": "resource_manager_boundary",
+          "slug": "resource_manager_boundary",
+          "subcategory": "Resource Manager"
+        },
+        {
+          "title": "resource_manager_boundary_config",
+          "slug": "resource_manager_boundary_config",
+          "subcategory": "Resource Manager"
         },
         {
           "title": "resource_manager_capability",
@@ -71420,6 +71785,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_custom_job",
+          "slug": "vertex_ai_custom_job",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_dataset",
           "slug": "vertex_ai_dataset",
           "subcategory": "Vertex AI"
@@ -71550,6 +71920,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_pipeline_job",
+          "slug": "vertex_ai_pipeline_job",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_rag_corpus",
           "slug": "vertex_ai_rag_corpus",
           "subcategory": "Vertex AI"
@@ -71557,6 +71932,11 @@
         {
           "title": "vertex_ai_rag_engine_config",
           "slug": "vertex_ai_rag_engine_config",
+          "subcategory": "Vertex AI"
+        },
+        {
+          "title": "vertex_ai_rag_file",
+          "slug": "vertex_ai_rag_file",
           "subcategory": "Vertex AI"
         },
         {
@@ -71691,7 +72071,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-22T12:19:05.941680"
+    "docs_refreshed_at": "2026-10-29T13:26:59.706132"
   },
   "4ek0/neko": {
     "docs": {

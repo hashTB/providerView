@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:19:48.283813",
+  "generated_at": "2026-10-29T13:27:44.345687",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,21 +10,21 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "b1b4bd6e832bf8f0a555a43a7bf7e40bdc064230"
+    "commit": "adc4df491d95231a2fe1f30656105aff9dbf4377"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 259
+    "list_resources": 262
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3228,
+    "stdout_line_count": 3232,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 14,
-        "implemented": 258,
-        "total": 1725
+        "percent": 15,
+        "implemented": 261,
+        "total": 1729
       },
       "service_count": 249,
       "services": [
@@ -325,8 +325,8 @@
         {
           "service": "cloudwatchomni",
           "percent": 100,
-          "implemented": 5,
-          "total": 5
+          "implemented": 7,
+          "total": 7
         },
         {
           "service": "codeartifact",
@@ -499,8 +499,8 @@
         {
           "service": "devopsagent",
           "percent": 100,
-          "implemented": 1,
-          "total": 1
+          "implemented": 2,
+          "total": 2
         },
         {
           "service": "devopsguru",
@@ -1032,9 +1032,9 @@
         },
         {
           "service": "observabilityadmin",
-          "percent": 25,
+          "percent": 22,
           "implemented": 2,
-          "total": 8
+          "total": 9
         },
         {
           "service": "odb",
@@ -2119,14 +2119,18 @@
           "all_resources": [
             "cloudwatchomni/access_grant.go",
             "cloudwatchomni/access_profile.go",
+            "cloudwatchomni/dashboard.go",
             "cloudwatchomni/domain.go",
+            "cloudwatchomni/organization_domain.go",
             "cloudwatchomni/space.go",
             "cloudwatchomni/view.go"
           ],
           "list_resources": [
             "cloudwatchomni/access_grant.go",
             "cloudwatchomni/access_profile.go",
+            "cloudwatchomni/dashboard.go",
             "cloudwatchomni/domain.go",
+            "cloudwatchomni/organization_domain.go",
             "cloudwatchomni/space.go",
             "cloudwatchomni/view.go"
           ]
@@ -2412,10 +2416,12 @@
         },
         "devopsagent": {
           "all_resources": [
-            "devopsagent/agent_space.go"
+            "devopsagent/agent_space.go",
+            "devopsagent/asset.go"
           ],
           "list_resources": [
-            "devopsagent/agent_space.go"
+            "devopsagent/agent_space.go",
+            "devopsagent/asset.go"
           ]
         },
         "devopsguru": {
@@ -3708,6 +3714,7 @@
         "observabilityadmin": {
           "all_resources": [
             "observabilityadmin/centralization_rule_for_organization.go",
+            "observabilityadmin/dataset_integration.go",
             "observabilityadmin/s3_table_integration.go",
             "observabilityadmin/telemetry_enrichment.go",
             "observabilityadmin/telemetry_evaluation.go",
@@ -4829,7 +4836,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-10-22 12:19:48 UTC"
+      "last_updated": "2026-10-29 13:27:44 UTC"
     }
   },
   "service_coverage": {
@@ -4866,6 +4873,12 @@
         "total": 16
       },
       {
+        "service": "cloudwatchomni",
+        "percent": 100,
+        "implemented": 7,
+        "total": 7
+      },
+      {
         "service": "opensearchserverless",
         "percent": 100,
         "implemented": 7,
@@ -4888,12 +4901,6 @@
         "percent": 50,
         "implemented": 6,
         "total": 12
-      },
-      {
-        "service": "cloudwatchomni",
-        "percent": 100,
-        "implemented": 5,
-        "total": 5
       },
       {
         "service": "mailmanager",
@@ -5522,14 +5529,18 @@
         "all_resources": [
           "cloudwatchomni/access_grant.go",
           "cloudwatchomni/access_profile.go",
+          "cloudwatchomni/dashboard.go",
           "cloudwatchomni/domain.go",
+          "cloudwatchomni/organization_domain.go",
           "cloudwatchomni/space.go",
           "cloudwatchomni/view.go"
         ],
         "list_resources": [
           "cloudwatchomni/access_grant.go",
           "cloudwatchomni/access_profile.go",
+          "cloudwatchomni/dashboard.go",
           "cloudwatchomni/domain.go",
+          "cloudwatchomni/organization_domain.go",
           "cloudwatchomni/space.go",
           "cloudwatchomni/view.go"
         ]
@@ -5815,10 +5826,12 @@
       },
       "devopsagent": {
         "all_resources": [
-          "devopsagent/agent_space.go"
+          "devopsagent/agent_space.go",
+          "devopsagent/asset.go"
         ],
         "list_resources": [
-          "devopsagent/agent_space.go"
+          "devopsagent/agent_space.go",
+          "devopsagent/asset.go"
         ]
       },
       "devopsguru": {
@@ -7111,6 +7124,7 @@
       "observabilityadmin": {
         "all_resources": [
           "observabilityadmin/centralization_rule_for_organization.go",
+          "observabilityadmin/dataset_integration.go",
           "observabilityadmin/s3_table_integration.go",
           "observabilityadmin/telemetry_enrichment.go",
           "observabilityadmin/telemetry_evaluation.go",
@@ -8235,9 +8249,9 @@
   },
   "validation": {
     "matches": false,
-    "dashboard_list_resources": 259,
-    "script_implemented_list": 258,
-    "script_total_resources": 1725,
-    "script_percent": 14
+    "dashboard_list_resources": 262,
+    "script_implemented_list": 261,
+    "script_total_resources": 1729,
+    "script_percent": 15
   }
 }
