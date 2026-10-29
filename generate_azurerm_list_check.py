@@ -4,7 +4,9 @@ Run the latest AzureRM list-resource gist checker and generate validation artifa
 
 This script:
 - Fetches the latest revision of katbyte's list_identity_list.sh gist
-- Runs it against the latest terraform-provider-azurerm source
+- Runs it against the latest terraform-provider-azurerm source, adapting resources that
+  moved to the nested internal/services/<service>/resources/<name>/ layout into the flat
+  <service>/<name>_resource.go layout the gist scans
 - Compares the gist-derived List Resources count with the dashboard count
 - Writes a compact JSON summary for the main dashboard
 - Writes a standalone HTML report page with the full gist output
@@ -36,6 +38,8 @@ USER_AGENT = "providerView-azurerm-list-check/1.0"
 RAW_OUTPUT_JSON = "data/azurerm_list_check.json"
 REPORT_HTML = "docs/azurerm-list-check.html"
 DETAILS_FILE = "terraform_providers_details.json"
+SERVICES_DIR = Path("internal/services")
+NESTED_RESOURCES_DIR = "resources"
 
 
 def clone_or_update_repo(repos_dir: Path) -> Path | None:
@@ -104,9 +108,94 @@ def discover_gist() -> dict:
     }
 
 
-def run_gist_mode(script_path: Path, repo_dir: Path, mode: str) -> dict:
+def resolve_nested_resource_name(
+    resource_dir: Path, service: str, source_text: str, registration_text: str
+) -> str | None:
+    """Resolve the registered azurerm_* name of a resources/<name>/ package."""
+    typed_match = re.search(
+        r'ResourceType\(\)\s*string\s*\{\s*return\s+"(azurerm_[a-z0-9_]+)"', source_text
+    )
+    if typed_match:
+        return typed_match.group(1)
+
+    package_match = re.search(r"^package\s+([A-Za-z0-9_]+)", source_text, re.MULTILINE)
+    package_ident = package_match.group(1) if package_match else resource_dir.name
+    alias_match = re.search(
+        rf'^\s*([A-Za-z_][A-Za-z0-9_]*)\s+"[^"]*/{re.escape(str(SERVICES_DIR / service / NESTED_RESOURCES_DIR / resource_dir.name))}"',
+        registration_text,
+        re.MULTILINE,
+    )
+    if alias_match:
+        package_ident = alias_match.group(1)
+
+    untyped_match = re.search(
+        rf'"(azurerm_[a-z0-9_]+)":\s*{re.escape(package_ident)}\.RegisterResource\(',
+        registration_text,
+    )
+    return untyped_match.group(1) if untyped_match else None
+
+
+def build_scan_tree(repo_dir: Path, scan_dir: Path) -> int:
+    """Mirror internal/services into the flat layout the gist scans; return nested resources adapted.
+
+    The gist only globs internal/services/<service>/*_resource.go, but AzureRM is moving
+    resources to internal/services/<service>/resources/<name>/ (resource.go + r_*.go parts,
+    list.go, resource_test.go), which the gist silently skips. Flat files are symlinked
+    unchanged; each nested resource becomes <name>_resource.go (resource.go + r_*.go) with
+    list.go and resource_test.go linked under the names the gist expects.
+    """
+    nested_count = 0
+    for service_dir in sorted(p for p in (repo_dir / SERVICES_DIR).iterdir() if p.is_dir()):
+        target_dir = scan_dir / service_dir.name
+        target_dir.mkdir(parents=True)
+        for path in service_dir.iterdir():
+            if path.is_file():
+                (target_dir / path.name).symlink_to(path.resolve())
+
+        nested_root = service_dir / NESTED_RESOURCES_DIR
+        if not nested_root.is_dir():
+            continue
+
+        registration_text = "\n".join(
+            p.read_text(encoding="utf-8", errors="replace")
+            for p in sorted(service_dir.glob("registration*.go"))
+        )
+        for resource_dir in sorted(p for p in nested_root.iterdir() if p.is_dir()):
+            resource_file = resource_dir / "resource.go"
+            if not resource_file.is_file():
+                continue
+
+            flat_file = target_dir / f"{resource_dir.name}_resource.go"
+            if flat_file.exists() or flat_file.is_symlink():
+                print(f"  Warning: skipping {resource_dir}: {flat_file.name} already exists in {service_dir.name}")
+                continue
+
+            parts = [resource_file] + sorted(
+                p for p in resource_dir.glob("r_*.go") if not p.name.endswith("_test.go")
+            )
+            source_text = "\n".join(p.read_text(encoding="utf-8", errors="replace") for p in parts)
+            name = resolve_nested_resource_name(resource_dir, service_dir.name, source_text, registration_text)
+            # The gist resolves untyped names via `func resource*()` constructors, which the nested
+            # layout replaced with RegisterResource(); its fallback takes the first quoted azurerm_* name.
+            header = f'// azurerm-list-check: registered as "{name}"\n' if name else ""
+            flat_file.write_text(header + source_text, encoding="utf-8")
+
+            for source_name, flat_name in (
+                ("list.go", f"{resource_dir.name}_resource_list.go"),
+                ("resource_test.go", f"{resource_dir.name}_resource_test.go"),
+            ):
+                source_path = resource_dir / source_name
+                if source_path.is_file():
+                    (target_dir / flat_name).symlink_to(source_path.resolve())
+
+            nested_count += 1
+
+    return nested_count
+
+
+def run_gist_mode(script_path: Path, repo_dir: Path, mode: str, scan_dir: Path) -> dict:
     result = subprocess.run(
-        [str(script_path), mode, "internal/services"],
+        [str(script_path), mode, str(scan_dir)],
         cwd=str(repo_dir),
         capture_output=True,
         text=True,
@@ -714,9 +803,13 @@ def main() -> int:
         script_path.write_text(gist["script_text"], encoding="utf-8")
         script_path.chmod(0o755)
 
+        scan_dir = Path(temp_dir) / "services"
+        nested_count = build_scan_tree(repo_dir, scan_dir)
+        print(f"  Adapted {nested_count} resources from the nested resources/<name>/ layout")
+
         outputs = {}
         for mode in ("implemented", "list", "identity"):
-            result = run_gist_mode(script_path, repo_dir, mode)
+            result = run_gist_mode(script_path, repo_dir, mode, scan_dir)
             if result["returncode"] != 0:
                 print(result["stderr"], file=sys.stderr)
                 print(f"ERROR: gist mode {mode} failed", file=sys.stderr)
