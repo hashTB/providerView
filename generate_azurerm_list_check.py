@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """
-Run the latest AzureRM list-resource gist checker and generate validation artifacts.
+Validate AzureRM list resources against the released provider and generate artifacts.
 
 This script:
-- Fetches the latest revision of katbyte's list_identity_list.sh gist
-- Runs it against the latest terraform-provider-azurerm source, adapting resources that
-  moved to the nested internal/services/<service>/resources/<name>/ layout into the flat
+- Asks the latest hashicorp/azurerm release which list resources it serves
+  (``terraform providers schema -json``, see provider_schema.py); this is the headline count
+- Compares that with the Registry list-resources docs
+- Fetches the latest revision of katbyte's list_identity_list.sh gist and runs it against
+  terraform-provider-azurerm main for per-service detail, adapting resources that moved to
+  the nested internal/services/<service>/resources/<name>/ layout into the flat
   <service>/<name>_resource.go layout the gist scans
-- Compares the gist-derived List Resources count with the dashboard count
 - Writes a compact JSON summary for the main dashboard
 - Writes a standalone HTML report page with the full gist output
+
+Requires Terraform >= 1.14 on PATH (or TERRAFORM_BIN).
 
 Usage:
     python3 generate_azurerm_list_check.py
@@ -29,6 +33,15 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+from provider_schema import (
+    ProviderSchemaError,
+    compare_with_registry,
+    diff_source_scan,
+    fetch_provider_schema,
+    load_registry_list_slugs,
+    render_differences_html,
+)
+
 GIST_PAGE_URL = "https://gist.github.com/katbyte/502302a237bb765e0d24236070f0fa31"
 GIST_RAW_FALLBACK_URL = (
     "https://gist.githubusercontent.com/katbyte/502302a237bb765e0d24236070f0fa31/raw/"
@@ -38,6 +51,7 @@ USER_AGENT = "providerView-azurerm-list-check/1.0"
 RAW_OUTPUT_JSON = "data/azurerm_list_check.json"
 REPORT_HTML = "docs/azurerm-list-check.html"
 DETAILS_FILE = "terraform_providers_details.json"
+PROVIDER = "hashicorp/azurerm"
 SERVICES_DIR = Path("internal/services")
 NESTED_RESOURCES_DIR = "resources"
 
@@ -284,21 +298,6 @@ def parse_missing_list_service_coverage(output: str) -> dict[str, set[str]]:
     return service_stats
 
 
-def load_dashboard_list_count(details_path: Path) -> int | None:
-    try:
-        with open(details_path, "r", encoding="utf-8") as f:
-            details = json.load(f)
-    except FileNotFoundError:
-        return None
-
-    entry = details.get("hashicorp/azurerm", {})
-    docs = entry.get("docs", {}) if isinstance(entry, dict) else {}
-    list_resources = docs.get("list-resources", []) if isinstance(docs, dict) else []
-    if isinstance(list_resources, list):
-        return len(list_resources)
-    return None
-
-
 def get_repo_commit(repo_dir: Path) -> str | None:
     result = subprocess.run(
         ["git", "rev-parse", "HEAD"],
@@ -311,8 +310,9 @@ def get_repo_commit(repo_dir: Path) -> str | None:
     return result.stdout.strip()
 
 
-def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: Path) -> dict:
-    dashboard_count = load_dashboard_list_count(details_path)
+def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: Path, schema: dict) -> dict:
+    registry_slugs = load_registry_list_slugs(details_path, PROVIDER)
+    dashboard_count = None if registry_slugs is None else len(registry_slugs)
 
     implemented_summary = outputs["implemented"]["summary"]
     list_summary = outputs["list"]["summary"]
@@ -336,12 +336,12 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
         missing_resources = missing_list_by_service.get(service, set())
 
         provider_resources = list_resources | missing_resources
-        total_resources = len(provider_resources)
-        if total_resources == 0:
+        service_total = len(provider_resources)
+        if service_total == 0:
             continue
 
         list_count = len(list_resources)
-        coverage_percent = round((list_count / total_resources) * 100)
+        coverage_percent = round((list_count / service_total) * 100)
         service_resource_map[service] = {
             "all_resources": sorted(provider_resources),
             "list_resources": sorted(list_resources),
@@ -350,18 +350,18 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
             {
                 "service": service,
                 "list_resources": list_count,
-                "total_resources": total_resources,
+                "total_resources": service_total,
                 "percent": coverage_percent,
             }
         )
 
     service_rows.sort(key=lambda row: (-row["list_resources"], -row["percent"], row["service"]))
 
-    matches = (
-        dashboard_count is not None
-        and gist_with_list is not None
-        and dashboard_count == gist_with_list
-    )
+    gist_list_names = {
+        name for stats in implemented_by_service.values() for name in stats.get("list", set())
+    }
+    comparison = compare_with_registry(schema["list_resources"], registry_slugs, "azurerm")
+    source_diff = diff_source_scan(schema["list_resources"], gist_list_names)
 
     return {
         "generated_at": datetime.now().isoformat(),
@@ -378,9 +378,12 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
             "commit": get_repo_commit(repo_dir),
         },
         "dashboard": {
-            "provider": "hashicorp/azurerm",
+            "provider": PROVIDER,
             "list_resources": dashboard_count,
         },
+        "provider_schema": schema,
+        "registry_comparison": comparison,
+        "source_scan_diff": source_diff,
         "gist_results": {
             mode: {
                 "returncode": result["returncode"],
@@ -396,8 +399,12 @@ def build_summary_data(gist: dict, repo_dir: Path, outputs: dict, details_path: 
             "service_resources": service_resource_map,
         },
         "validation": {
-            "matches": matches,
+            "matches": comparison["in_sync"],
+            "schema_list_resources": schema["counts"]["list_resources"],
+            "schema_identity_resources": schema["counts"]["identity_resources"],
+            "schema_provider_version": schema["version"],
             "dashboard_list_resources": dashboard_count,
+            "source_scan_complete": not source_diff["not_in_source_scan"],
             "gist_with_list": gist_with_list,
             "derived_total_with_list": derived_total_with_list,
             "total_resources": total_resources,
@@ -419,9 +426,14 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
     validation = summary["validation"]
     gist = summary["gist"]
     repo = summary["source_repo"]
+    schema = summary["provider_schema"]
     coverage = summary.get("service_coverage", {})
     match_icon = "✅" if validation["matches"] else "⚠️"
-    match_text = "match" if validation["matches"] else "do not match"
+    match_text = "in sync" if validation["matches"] else "out of sync"
+    scan_icon = "✅" if validation["source_scan_complete"] else "⚠️"
+    differences_html = render_differences_html(
+        summary["registry_comparison"], summary["source_scan_diff"], "gist scan of main"
+    )
 
     def fmt_val(value: int | None) -> str:
         return "N/A" if value is None else f"{value:,}"
@@ -593,19 +605,23 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
         <a href=\"aws-list-check.html\">AWS List Check</a>
         <a href=\"google-list-check.html\">Google List Check</a>
     </nav>
-    <p class=\"subtitle\">Latest gist-backed AzureRM source scan compared against Registry-reflected list resources for hashicorp/azurerm. Generated {html.escape(summary['generated_at'])}.</p>
+    <p class=\"subtitle\">List resources served by the latest hashicorp/azurerm release, compared with the Registry docs and a gist-backed scan of the provider source. Generated {html.escape(summary['generated_at'])}.</p>
 
     <div class=\"cards\">
-        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
-        <div class=\"card\"><div class=\"value\">{fmt_val(validation['gist_with_list'])}</div><div class=\"label\">Gist Scan With List</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['schema_list_resources'])}</div><div class=\"label\">List Resources in v{html.escape(schema['version'])}</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry List Pages</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['gist_with_list'])}</div><div class=\"label\">Gist Scan With List (main)</div></div>
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['total_resources'])}</div><div class=\"label\">AzureRM Resources Scanned</div></div>
-        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Counts {match_text}</div></div>
+        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Registry {match_text}</div></div>
+        <div class=\"card\"><div class=\"value\">{scan_icon}</div><div class=\"label\">Gist Scan Sees All Released</div></div>
     </div>
 
     <div class=\"note\">
-        <strong>{match_icon} Validation:</strong> Registry currently reflects <strong>{fmt_val(validation['dashboard_list_resources'])}</strong>,
-        gist scan reports <strong>{fmt_val(validation['gist_with_list'])}</strong> list-enabled resources.
-        This script fetches the latest secret gist on each run, so gist changes automatically flow into the next workflow execution.
+        <strong>{match_icon} Validation:</strong> hashicorp/azurerm v{html.escape(schema['version'])} serves <strong>{fmt_val(validation['schema_list_resources'])}</strong> list resources
+        (<strong>{fmt_val(validation['schema_identity_resources'])}</strong> resources have identity), read from the released provider with
+        <code>terraform providers schema -json</code> (Terraform {html.escape(schema['terraform_version'])}). The Registry documents
+        <strong>{fmt_val(validation['dashboard_list_resources'])}</strong> list-resource pages.
+        The gist scan of the provider's main branch adds the per-service detail below; it fetches the latest gist revision on each run and can run ahead of the release.
         <div class=\"meta-grid\">
             <div>
                 <div class=\"meta-row\"><span>Gist page</span><span><a href=\"{html.escape(gist['page_url'])}\">open</a></span></div>
@@ -619,6 +635,7 @@ def generate_report(summary: dict, outputs: dict, out_path: Path) -> None:
                 <div class=\"meta-row\"><span>Script SHA-256</span><span><code>{html.escape(gist['script_sha256'][:16])}...</code></span></div>
             </div>
         </div>
+        {differences_html}
     </div>
 
     <div class="section">
@@ -789,10 +806,18 @@ def main() -> int:
     parser.add_argument("--details-file", default=DETAILS_FILE, help="Dashboard details JSON to validate against")
     args = parser.parse_args()
 
-    gist = discover_gist()
-
     repos_dir = Path(args.repos_dir)
     repos_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        schema = fetch_provider_schema(PROVIDER, repos_dir)
+    except (ProviderSchemaError, OSError) as exc:
+        print(f"ERROR: could not read the {PROVIDER} provider schema: {exc}", file=sys.stderr)
+        return 1
+    print(f"  {PROVIDER} v{schema['version']} serves {schema['counts']['list_resources']} list resources")
+
+    gist = discover_gist()
+
     repo_dir = clone_or_update_repo(repos_dir)
     if not repo_dir:
         print("ERROR: Failed to clone/update terraform-provider-azurerm", file=sys.stderr)
@@ -817,7 +842,7 @@ def main() -> int:
             result["summary"] = parse_mode_summary(result["stdout"], mode)
             outputs[mode] = result
 
-    summary = build_summary_data(gist, repo_dir, outputs, Path(args.details_file))
+    summary = build_summary_data(gist, repo_dir, outputs, Path(args.details_file), schema)
 
     output_json = Path(args.output_json)
     output_json.parent.mkdir(parents=True, exist_ok=True)
@@ -829,13 +854,20 @@ def main() -> int:
         "Generated AzureRM list validation artifacts: "
         f"{args.output_json}, {args.output_html}"
     )
+    v = summary["validation"]
     print(
-        "Validation: dashboard="
-        f"{summary['validation']['dashboard_list_resources']} "
-        "gist="
-        f"{summary['validation']['gist_with_list']} "
-        f"match={summary['validation']['matches']}"
+        f"Validation: registry={v['dashboard_list_resources']} "
+        f"schema={v['schema_list_resources']} "
+        f"gist={v['gist_with_list']} "
+        f"match={v['matches']} "
+        f"source_scan_complete={v['source_scan_complete']}"
     )
+    if summary["source_scan_diff"]["not_in_source_scan"]:
+        print(
+            "  Released but missed by the gist scan: "
+            + ", ".join(summary["source_scan_diff"]["not_in_source_scan"]),
+            file=sys.stderr,
+        )
     return 0
 
 

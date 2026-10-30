@@ -39,6 +39,7 @@ A Python-based tool that collects comprehensive data from Terraform providers vi
 
 - Python 3.7+
 - No external dependencies (uses only standard library)
+- Terraform >= 1.14 on `PATH` (or set `TERRAFORM_BIN`) for the AzureRM/AWS/Google list checks (`generate_*_list_check.py`). They read list-resource counts from the released providers via `terraform providers schema -json` (see `provider_schema.py`).
 
 ## Usage
 

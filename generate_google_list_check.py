@@ -1,27 +1,22 @@
 #!/usr/bin/env python3
 """
-Inspect terraform-provider-google source code to validate List Resources.
+Validate Google list resources against the released provider and generate artifacts.
 
-Mirrors the AzureRM/AWS list-check approach but uses pure source-code
-inspection (no upstream script/gist exists yet for GCP). It looks at three
-converging signals inside the cloned provider repo:
-
-1. Registration site:
-   ``google/fwprovider/framework_provider_mmv1_resources.go`` declares
-   ``generatedListResources`` and ``handwrittenListResources`` slices that
-   feed ``FrameworkProvider.ListResources()``. We parse the
-   ``listResourceFunc(<pkg>.New<Name>ListResource())`` entries.
-2. Per-service files: ``google/services/*/list_*.go`` (excluding tests).
-3. ``TypeName = "google_..."`` assignments inside the per-service files —
-   the canonical resource type names that line up with Registry docs.
-
-The three signals must agree. The result is also cross-checked against the
-Registry-reflected ``list-resources`` count from
-``terraform_providers_details.json``.
+This script:
+- Asks the latest hashicorp/google release which list resources it serves
+  (``terraform providers schema -json``, see provider_schema.py); this is the headline count
+- Compares that with the Registry list-resources docs. The hashicorp/google docs also
+  include pages for google-beta-only list resources, so the latest hashicorp/google-beta
+  schema is read too, to tell those pages apart from real gaps
+- Scans terraform-provider-google main for ``registry.FrameworkListResource{...}.Register()``
+  blocks (the registry that ``FrameworkProvider.ListResources()`` serves) for per-service
+  grouping and to spot list resources that are not released yet
 
 Outputs:
 - ``data/google_list_check.json`` – compact summary for the dashboard
 - ``docs/google-list-check.html`` – standalone report page
+
+Requires Terraform >= 1.14 on PATH (or TERRAFORM_BIN).
 
 Usage::
 
@@ -40,6 +35,15 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from provider_schema import (
+    ProviderSchemaError,
+    compare_with_registry,
+    diff_source_scan,
+    fetch_provider_schema,
+    load_registry_list_slugs,
+    render_differences_html,
+)
+
 USER_AGENT = "providerView-google-list-check/1.0"
 RAW_OUTPUT_JSON = "data/google_list_check.json"
 REPORT_HTML = "docs/google-list-check.html"
@@ -48,6 +52,7 @@ DETAILS_FILE = "terraform_providers_details.json"
 PROVIDER_REPO_URL = "https://github.com/hashicorp/terraform-provider-google.git"
 PROVIDER_REPO_DIR_NAME = "hashicorp_terraform-provider-google"
 DASHBOARD_PROVIDER = "hashicorp/google"
+BETA_PROVIDER = "hashicorp/google-beta"
 
 # Root within the provider repo where we look for list-resource registrations.
 # As of magic-modules PR #17361, the central
@@ -56,7 +61,6 @@ DASHBOARD_PROVIDER = "hashicorp/google"
 # registry.FrameworkListResource{...}.Register() (collected by
 # registry.FrameworkListResourceFuncs() from framework_provider.go).
 SCAN_ROOT_REL = Path("google")
-SERVICES_DIR_REL = Path("google/services")
 MMV1_SOURCE_NOTE = (
     "Magic Modules generator emits these registrations into the provider repo. "
     "Each list resource self-registers in an init() block via "
@@ -125,10 +129,6 @@ FUNC_FIELD_RE = re.compile(r'Func\s*:\s*([A-Za-z0-9_.]+)')
 # Magic-Modules file headers carry: *** AUTO GENERATED CODE *** Type: <kind> ***
 # where <kind> is "MMv1" (generated) or "Handwritten".
 TYPE_MARKER_RE = re.compile(r"AUTO GENERATED CODE\s*\*+\s*Type:\s*(\w+)")
-# Matches assignments like: listR.TypeName = "google_xxx"
-TYPE_NAME_RE = re.compile(
-    r'(?:listR|l|r)\s*\.\s*TypeName\s*=\s*"(google_[a-z0-9_]+)"'
-)
 
 
 def scan_registrations(repo_dir: Path) -> tuple[dict, list[dict]]:
@@ -198,116 +198,6 @@ def scan_registrations(repo_dir: Path) -> tuple[dict, list[dict]]:
     return buckets, source_files
 
 
-def scan_service_list_files(services_dir: Path) -> dict[str, list[dict]]:
-    """Walk google/services/*/list_*.go and pull TypeName + service.
-
-    Returns: ``{ service_name: [{"file": rel, "type_name": str, "constructor": str|None}] }``
-    """
-    by_service: dict[str, list[dict]] = {}
-    if not services_dir.exists():
-        return by_service
-
-    for path in sorted(services_dir.glob("*/list_*.go")):
-        if path.name.endswith("_test.go"):
-            continue
-        service = path.parent.name
-        try:
-            text = path.read_text(encoding="utf-8", errors="replace")
-        except OSError:
-            continue
-
-        type_names = sorted(set(TYPE_NAME_RE.findall(text)))
-        constructor_match = re.search(
-            r"func\s+(New[A-Za-z0-9_]+ListResource)\s*\(", text
-        )
-        constructor = constructor_match.group(1) if constructor_match else None
-
-        if not type_names:
-            # File found but no TypeName extractable — record as anomaly.
-            by_service.setdefault(service, []).append({
-                "file": str(path.relative_to(services_dir.parent.parent)),
-                "type_name": None,
-                "constructor": constructor,
-            })
-            continue
-
-        for type_name in type_names:
-            by_service.setdefault(service, []).append({
-                "file": str(path.relative_to(services_dir.parent.parent)),
-                "type_name": type_name,
-                "constructor": constructor,
-            })
-
-    return by_service
-
-
-def cross_check(registrations: dict, by_service: dict[str, list[dict]]) -> dict:
-    """Confirm registration constructors map to service files and TypeNames."""
-    registered_constructors = {
-        entry["constructor"] for bucket in registrations.values() for entry in bucket
-    }
-    file_constructors = {
-        item["constructor"]
-        for items in by_service.values()
-        for item in items
-        if item.get("constructor")
-    }
-
-    file_type_names = sorted({
-        item["type_name"]
-        for items in by_service.values()
-        for item in items
-        if item.get("type_name")
-    })
-
-    missing_files = sorted(registered_constructors - file_constructors)
-    orphan_files = sorted(file_constructors - registered_constructors)
-
-    return {
-        "registered_constructors": sorted(registered_constructors),
-        "file_constructors": sorted(file_constructors),
-        "file_type_names": file_type_names,
-        "missing_files_for_registration": missing_files,
-        "orphan_files_without_registration": orphan_files,
-        "registration_count": len(registered_constructors),
-        "file_type_name_count": len(file_type_names),
-        "signals_agree": (
-            len(missing_files) == 0
-            and len(orphan_files) == 0
-            and len(registered_constructors) == len(file_type_names)
-        ),
-    }
-
-
-# ---------------------------------------------------------------------------
-# Dashboard correlation
-# ---------------------------------------------------------------------------
-
-def load_dashboard_list_resources(details_path: Path) -> list[str] | None:
-    """Return the list-resource slugs the Terraform Registry currently exposes
-    for ``DASHBOARD_PROVIDER``, or ``None`` if the details file is missing."""
-    try:
-        with open(details_path, "r", encoding="utf-8") as f:
-            details = json.load(f)
-    except FileNotFoundError:
-        return None
-
-    entry = details.get(DASHBOARD_PROVIDER, {})
-    docs = entry.get("docs", {}) if isinstance(entry, dict) else {}
-    list_resources = docs.get("list-resources", []) if isinstance(docs, dict) else []
-    if not isinstance(list_resources, list):
-        return []
-    names: list[str] = []
-    for item in list_resources:
-        if isinstance(item, dict):
-            slug = item.get("slug") or item.get("title")
-            if isinstance(slug, str) and slug:
-                names.append(slug)
-        elif isinstance(item, str):
-            names.append(item)
-    return sorted(set(names))
-
-
 # ---------------------------------------------------------------------------
 # Summary build
 # ---------------------------------------------------------------------------
@@ -316,43 +206,40 @@ def build_summary(
     repo_dir: Path,
     registrations: dict,
     source_files: list[dict],
-    by_service: dict[str, list[dict]],
-    cross: dict,
     details_path: Path,
+    schema: dict,
+    beta_schema: dict,
 ) -> dict:
-    dashboard_names = load_dashboard_list_resources(details_path)
-    dashboard_count = None if dashboard_names is None else len(dashboard_names)
-    code_count = cross["file_type_name_count"]
-    code_names = list(cross["file_type_names"])
+    registry_slugs = load_registry_list_slugs(details_path, DASHBOARD_PROVIDER)
+    dashboard_count = None if registry_slugs is None else len(registry_slugs)
+    schema_names = schema["list_resources"]
 
-    dash_set = set(dashboard_names or [])
-    code_set = set(code_names)
-    only_in_registry = sorted(dash_set - code_set)
-    only_in_source = sorted(code_set - dash_set)
-    # The Terraform Registry trails source: a release must be published before
-    # newly-added list resources show up in the Registry docs. Treat
-    # "Registry \u2286 Source" as healthy; flag only when the Registry advertises
-    # something the source no longer implements.
-    matches = dashboard_names is not None and not only_in_registry
+    product_by_name = {
+        entry["name"]: entry["package"] or "unknown"
+        for bucket in registrations.values()
+        for entry in bucket
+    }
+    comparison = compare_with_registry(
+        schema_names, registry_slugs, "google", beta_schema["list_resources"]
+    )
+    source_diff = diff_source_scan(schema_names, product_by_name.keys())
 
-    service_rows = []
+    # Group released list resources by the ProductName they register under on main;
+    # anything already removed from main lands in "unknown".
     service_resource_map: dict[str, dict[str, list[str]]] = {}
-    for service, items in by_service.items():
-        type_names = sorted({i["type_name"] for i in items if i.get("type_name")})
-        if not type_names:
-            continue
-        service_rows.append({
-            "service": service,
-            "list_resources": len(type_names),
-        })
-        service_resource_map[service] = {
-            "list_resources": type_names,
-        }
-    service_rows.sort(key=lambda row: (-row["list_resources"], row["service"]))
+    for name in schema_names:
+        service = product_by_name.get(name, "unknown")
+        service_resource_map.setdefault(service, {"list_resources": []})["list_resources"].append(name)
+    service_rows = sorted(
+        (
+            {"service": service, "list_resources": len(entry["list_resources"])}
+            for service, entry in service_resource_map.items()
+        ),
+        key=lambda row: (-row["list_resources"], row["service"]),
+    )
 
     # Hash a canonical, ordering-stable view of every registration so changes
-    # to the upstream wiring produce a stable, comparable fingerprint even
-    # though registrations now live in many files instead of one.
+    # to the upstream wiring produce a stable, comparable fingerprint.
     canonical = json.dumps(
         [
             {
@@ -387,25 +274,24 @@ def build_summary(
             "provider": DASHBOARD_PROVIDER,
             "list_resources": dashboard_count,
         },
+        "provider_schema": schema,
+        "beta_provider_schema": {k: v for k, v in beta_schema.items() if k != "list_resources"},
+        "registry_comparison": comparison,
+        "source_scan_diff": source_diff,
         "registrations": registrations,
-        "by_service": by_service,
-        "cross_check": cross,
         "service_coverage": {
             "services_with_list": len(service_rows),
             "rows": service_rows,
             "service_resources": service_resource_map,
         },
         "validation": {
-            "matches": matches,
+            "matches": comparison["in_sync"],
+            "schema_list_resources": schema["counts"]["list_resources"],
+            "schema_identity_resources": schema["counts"]["identity_resources"],
+            "schema_provider_version": schema["version"],
             "dashboard_list_resources": dashboard_count,
-            "code_list_resources": code_count,
-            "registered_count": cross["registration_count"],
-            "signals_agree": cross["signals_agree"],
-            "dashboard_list_resource_names": dashboard_names or [],
-            "code_list_resource_names": code_names,
-            "only_in_registry": only_in_registry,
-            "only_in_source": only_in_source,
-            "registry_is_subset": dashboard_names is not None and not only_in_registry,
+            "registered_count": len(product_by_name),
+            "source_scan_complete": not source_diff["not_in_source_scan"],
         },
     }
 
@@ -447,20 +333,21 @@ def render_registration_block(registrations: dict) -> str:
 
 def generate_report(summary: dict, out_path: Path) -> None:
     validation = summary["validation"]
-    cross = summary["cross_check"]
     repo = summary["source_repo"]
     reg_file = summary["registration_sources"]
+    schema = summary["provider_schema"]
+    beta_schema = summary["beta_provider_schema"]
     coverage = summary.get("service_coverage", {})
 
     match_icon = "\u2705" if validation["matches"] else "\u26a0\ufe0f"
-    if validation["matches"]:
-        if validation["only_in_source"]:
-            match_text = "healthy (Registry trails source)"
-        else:
-            match_text = "in sync"
-    else:
-        match_text = "out of sync"
-    signals_icon = "\u2705" if validation["signals_agree"] else "\u26a0\ufe0f"
+    match_text = "in sync" if validation["matches"] else "out of sync"
+    scan_icon = "\u2705" if validation["source_scan_complete"] else "\u26a0\ufe0f"
+    differences_html = render_differences_html(
+        summary["registry_comparison"],
+        summary["source_scan_diff"],
+        "source registration scan of main",
+        other_provider_label=BETA_PROVIDER,
+    )
 
     rows = coverage.get("rows", [])
     service_resources_js = json.dumps(coverage.get("service_resources", {}), ensure_ascii=False)
@@ -475,55 +362,9 @@ def generate_report(summary: dict, out_path: Path) -> None:
             for row in rows
         )
     else:
-        table_rows = '<tr><td colspan="2" style="color: var(--text-muted);">No list resources detected in source.</td></tr>'
-
-    type_names_block = "\n".join(
-        f"<li><code>{html.escape(name)}</code></li>"
-        for name in cross.get("file_type_names", [])
-    ) or '<li class="resource-empty">None.</li>'
-
-    anomalies = []
-    for c in cross.get("missing_files_for_registration", []):
-        anomalies.append(
-            f"<li>Constructor <code>{html.escape(c)}</code> is registered but no matching <code>list_*.go</code> file was found.</li>"
-        )
-    for c in cross.get("orphan_files_without_registration", []):
-        anomalies.append(
-            f"<li>Constructor <code>{html.escape(c)}</code> exists in a <code>list_*.go</code> file but is not registered.</li>"
-        )
-    anomalies_block = (
-        "<ul class=\"resource-list\">" + "\n".join(anomalies) + "</ul>"
-        if anomalies
-        else '<p class="resource-empty">No anomalies — registrations and source files agree.</p>'
-    )
+        table_rows = '<tr><td colspan="2" style="color: var(--text-muted);">No list resources in this release.</td></tr>'
 
     registration_block = render_registration_block(summary.get("registrations", {}))
-
-    def _name_list(names: list[str]) -> str:
-        if not names:
-            return '<span class="resource-empty">None.</span>'
-        return " ".join(f"<code>{html.escape(n)}</code>" for n in names)
-
-    diff_html = ""
-    if validation["only_in_source"] or validation["only_in_registry"]:
-        parts = []
-        if validation["only_in_source"]:
-            parts.append(
-                "<div class=\"meta-row\"><span>Source only "
-                "(pending Registry publish)</span><span>"
-                f"{_name_list(validation['only_in_source'])}</span></div>"
-            )
-        if validation["only_in_registry"]:
-            parts.append(
-                "<div class=\"meta-row\"><span>Registry only "
-                "(possible regression)</span><span>"
-                f"{_name_list(validation['only_in_registry'])}</span></div>"
-            )
-        diff_html = (
-            "<div class=\"meta-grid\" style=\"margin-top:12px;\"><div>"
-            + "".join(parts)
-            + "</div></div>"
-        )
 
     html_text = f"""<!DOCTYPE html>
 <html lang=\"en\">
@@ -658,24 +499,25 @@ def generate_report(summary: dict, out_path: Path) -> None:
         <a href=\"aws-list-check.html\">AWS List Check</a>
         <a href=\"google-list-check.html\" class=\"active\">Google List Check</a>
     </nav>
-    <p class=\"subtitle\">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>{html.escape(DASHBOARD_PROVIDER)}</code>. Generated {html.escape(summary['generated_at'])}.</p>
+    <p class=\"subtitle\">List resources served by the latest <code>{html.escape(DASHBOARD_PROVIDER)}</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated {html.escape(summary['generated_at'])}.</p>
 
     <div class=\"cards\">
-        <div class=\"card\"><div class=\"value\">{fmt(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
-        <div class=\"card\"><div class=\"value\">{fmt(validation['code_list_resources'])}</div><div class=\"label\">Source TypeNames</div></div>
-        <div class=\"card\"><div class=\"value\">{fmt(validation['registered_count'])}</div><div class=\"label\">Registered Constructors</div></div>
-        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Validation: {match_text}</div></div>
-        <div class=\"card\"><div class=\"value\">{signals_icon}</div><div class=\"label\">Source Signals Agree</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt(validation['schema_list_resources'])}</div><div class=\"label\">List Resources in v{html.escape(schema['version'])}</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry List Pages</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt(validation['registered_count'])}</div><div class=\"label\">Source Registrations (main)</div></div>
+        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Registry {match_text}</div></div>
+        <div class=\"card\"><div class=\"value\">{scan_icon}</div><div class=\"label\">Source Scan Sees All Released</div></div>
     </div>
 
     <div class=\"note\">
-        <strong>{match_icon} Validation:</strong> Registry reflects
-        <strong>{fmt(validation['dashboard_list_resources'])}</strong>;
-        source inspection finds <strong>{fmt(validation['code_list_resources'])}</strong>
-        TypeName(s) across <strong>{fmt(validation['registered_count'])}</strong> registered constructor(s).
-        Unlike AWS/Azure (which have established lists of expected resources to track gaps), GCP is
-        in the early phase of adopting List Resources — the report focuses on
-        <em>what is implemented today</em>.
+        <strong>{match_icon} Validation:</strong> <code>{html.escape(DASHBOARD_PROVIDER)}</code> v{html.escape(schema['version'])} serves
+        <strong>{fmt(validation['schema_list_resources'])}</strong> list resources
+        (<strong>{fmt(validation['schema_identity_resources'])}</strong> resources have identity), read from the released provider with
+        <code>terraform providers schema -json</code> (Terraform {html.escape(schema['terraform_version'])}).
+        The Registry documents <strong>{fmt(validation['dashboard_list_resources'])}</strong> list-resource pages; some pages cover several
+        resources, and the docs also include pages for <code>{html.escape(BETA_PROVIDER)}</code>-only resources
+        (v{html.escape(beta_schema['version'])} serves <strong>{fmt(beta_schema['counts']['list_resources'])}</strong>), as listed below.
+        The source scan of main finds <strong>{fmt(validation['registered_count'])}</strong> registrations and supplies the per-service grouping.
         <div class=\"meta-grid\">
             <div>
                 <div class=\"meta-row\"><span>Provider repo</span><span><a href=\"{html.escape(repo['url'])}\">{html.escape(repo['repo'])}</a></span></div>
@@ -688,12 +530,12 @@ def generate_report(summary: dict, out_path: Path) -> None:
                 <div class=\"meta-row\"><span>Magic Modules note</span><span style=\"text-align:left;\">{html.escape(reg_file['note'])}</span></div>
             </div>
         </div>
-        {diff_html}
+        {differences_html}
     </div>
 
     <div class=\"section\">
         <h2>Service Coverage (List)</h2>
-        <p class=\"subtitle\" style=\"margin-bottom: 12px;\">Services exposing at least one List Resource: <strong>{fmt(coverage.get('services_with_list'))}</strong>.</p>
+        <p class=\"subtitle\" style=\"margin-bottom: 12px;\">Released list resources grouped by the <code>ProductName</code> they register under on main. Services exposing at least one List Resource: <strong>{fmt(coverage.get('services_with_list'))}</strong>.</p>
         <div class=\"table-controls\">
             <input id=\"gc-service-search\" type=\"text\" placeholder=\"Search by service (e.g. compute, iam, storage)\" />
             <select id=\"gc-service-sort\">
@@ -716,17 +558,6 @@ def generate_report(summary: dict, out_path: Path) -> None:
         <h2>Source Registrations</h2>
         <p class=\"subtitle\" style=\"margin-bottom: 12px;\">Parsed from <code>registry.FrameworkListResource{{...}}.Register()</code> blocks across <strong>{fmt(reg_file['file_count'])}</strong> source file(s) under <code>{html.escape(reg_file['scan_root'])}/</code>.</p>
         {registration_block}
-    </div>
-
-    <div class=\"section\">
-        <h2>Discovered TypeNames</h2>
-        <p class=\"subtitle\" style=\"margin-bottom: 12px;\">From <code>TypeName = "google_..."</code> assignments inside <code>list_*.go</code> files.</p>
-        <ul class=\"resource-list\">{type_names_block}</ul>
-    </div>
-
-    <div class=\"section\">
-        <h2>Cross-Check Anomalies</h2>
-        {anomalies_block}
     </div>
 </div>
 <div class=\"modal\" id=\"service-modal\" aria-hidden=\"true\">
@@ -842,6 +673,18 @@ def main() -> int:
 
     repos_dir = Path(args.repos_dir)
     repos_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        schema = fetch_provider_schema(DASHBOARD_PROVIDER, repos_dir)
+        beta_schema = fetch_provider_schema(BETA_PROVIDER, repos_dir)
+    except (ProviderSchemaError, OSError) as exc:
+        print(f"ERROR: could not read the Google provider schemas: {exc}", file=sys.stderr)
+        return 1
+    print(
+        f"  {DASHBOARD_PROVIDER} v{schema['version']} serves {schema['counts']['list_resources']} list resources; "
+        f"{BETA_PROVIDER} v{beta_schema['version']} serves {beta_schema['counts']['list_resources']}"
+    )
+
     repo_dir = clone_or_update_repo(repos_dir)
     if not repo_dir:
         print("ERROR: Failed to clone/update terraform-provider-google", file=sys.stderr)
@@ -862,16 +705,13 @@ def main() -> int:
         )
         return 2
 
-    by_service = scan_service_list_files(repo_dir / SERVICES_DIR_REL)
-    cross = cross_check(registrations, by_service)
-
     summary = build_summary(
         repo_dir=repo_dir,
         registrations=registrations,
         source_files=source_files,
-        by_service=by_service,
-        cross=cross,
         details_path=Path(args.details_file),
+        schema=schema,
+        beta_schema=beta_schema,
     )
 
     output_json = Path(args.output_json)
@@ -885,25 +725,23 @@ def main() -> int:
         f"{args.output_json}, {args.output_html}"
     )
     v = summary["validation"]
+    comparison = summary["registry_comparison"]
     print(
-        "Validation: dashboard="
-        f"{v['dashboard_list_resources']} "
-        f"code={v['code_list_resources']} "
+        f"Validation: registry={v['dashboard_list_resources']} "
+        f"schema={v['schema_list_resources']} "
         f"registered={v['registered_count']} "
         f"match={v['matches']} "
-        f"signals_agree={v['signals_agree']}"
+        f"source_scan_complete={v['source_scan_complete']}"
     )
-    if v["only_in_source"]:
-        print(
-            "  Source-only (pending Registry publish): "
-            + ", ".join(v["only_in_source"])
-        )
-    if v["only_in_registry"]:
-        print(
-            "  Registry-only (regression?): "
-            + ", ".join(v["only_in_registry"]),
-            file=sys.stderr,
-        )
+    if summary["source_scan_diff"]["source_only"]:
+        print("  On main, not released yet: " + ", ".join(summary["source_scan_diff"]["source_only"]))
+    for label, names in (
+        ("Registry pages the provider doesn't serve", comparison["unexplained_registry_pages"]),
+        ("Served without a Registry page", comparison["undocumented_list_resources"]),
+        ("Released but missed by the source scan", summary["source_scan_diff"]["not_in_source_scan"]),
+    ):
+        if names:
+            print(f"  {label}: " + ", ".join(names), file=sys.stderr)
     return 0
 
 

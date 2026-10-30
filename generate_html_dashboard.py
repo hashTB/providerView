@@ -1182,8 +1182,9 @@ HTML_PART4 = ''';
                 html += '<a href="azurerm-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
                 html += '</div>';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
-                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
-                html += 'Gist scan with list: <strong style="color: var(--text);">' + validation.gist_with_list + '</strong>';
+                html += 'Latest release v' + validation.schema_provider_version + ': <strong style="color: var(--text);">' + validation.schema_list_resources + '</strong> list resources &middot; ';
+                html += 'Registry list pages: <strong style="color: var(--text);">' + validation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Gist scan of main: <strong style="color: var(--text);">' + validation.gist_with_list + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1197,8 +1198,9 @@ HTML_PART4 = ''';
                 html += '<a href="aws-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
                 html += '</div>';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
-                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
-                html += 'Tracking script list resources: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
+                html += 'Latest release v' + awsValidation.schema_provider_version + ': <strong style="color: var(--text);">' + awsValidation.schema_list_resources + '</strong> list resources &middot; ';
+                html += 'Registry list pages: <strong style="color: var(--text);">' + awsValidation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Tracking script on main: <strong style="color: var(--text);">' + awsValidation.script_implemented_list + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1213,9 +1215,9 @@ HTML_PART4 = ''';
                 html += '<a href="google-list-check.html" target="_blank" style="color: var(--primary); text-decoration: underline;">View full scan output</a>';
                 html += '</div>';
                 html += '<div style="margin-top: 6px; color: var(--text-muted); font-size: 0.85rem;">';
-                html += 'Registry-reflected list resources: <strong style="color: var(--text);">' + gValidation.dashboard_list_resources + '</strong> &middot; ';
-                html += 'Source TypeNames: <strong style="color: var(--text);">' + gValidation.code_list_resources + '</strong> &middot; ';
-                html += 'Registered constructors: <strong style="color: var(--text);">' + gValidation.registered_count + '</strong>';
+                html += 'Latest hashicorp/google release v' + gValidation.schema_provider_version + ': <strong style="color: var(--text);">' + gValidation.schema_list_resources + '</strong> list resources &middot; ';
+                html += 'Registry list pages: <strong style="color: var(--text);">' + gValidation.dashboard_list_resources + '</strong> &middot; ';
+                html += 'Source registrations on main: <strong style="color: var(--text);">' + gValidation.registered_count + '</strong>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -1688,9 +1690,8 @@ HTML_PART4 = ''';
             var validation = azurermListCheck.validation;
             var matches = validation.matches;
             var icon = matches ? '✅' : '⚠️';
-            var title = matches
-                ? 'Validated against latest AzureRM gist scan: ' + validation.gist_with_list + ' matches Registry-reflected ' + validation.dashboard_list_resources
-                : 'AzureRM gist validation mismatch: gist ' + validation.gist_with_list + ' vs Registry-reflected ' + validation.dashboard_list_resources;
+            var title = 'AzureRM v' + validation.schema_provider_version + ' serves ' + validation.schema_list_resources + ' list resources; '
+                + (matches ? 'Registry docs in sync' : 'Registry docs out of sync') + ' (' + validation.dashboard_list_resources + ' pages)';
 
             return ' <a href="azurerm-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
@@ -1701,9 +1702,8 @@ HTML_PART4 = ''';
             var validation = awsListCheck.validation;
             var matches = validation.matches;
             var icon = matches ? '✅' : '⚠️';
-            var title = matches
-                ? 'Validated against latest AWS tracking script: ' + validation.script_implemented_list + ' matches Registry-reflected ' + validation.dashboard_list_resources
-                : 'AWS tracking validation mismatch: script ' + validation.script_implemented_list + ' vs Registry-reflected ' + validation.dashboard_list_resources;
+            var title = 'AWS v' + validation.schema_provider_version + ' serves ' + validation.schema_list_resources + ' list resources; '
+                + (matches ? 'Registry docs in sync' : 'Registry docs out of sync') + ' (' + validation.dashboard_list_resources + ' pages)';
 
             return ' <a href="aws-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }
@@ -1714,9 +1714,8 @@ HTML_PART4 = ''';
             var validation = googleListCheck.validation;
             var matches = validation.matches;
             var icon = matches ? '✅' : '⚠️';
-            var title = matches
-                ? 'Validated against terraform-provider-google source: ' + validation.code_list_resources + ' TypeName(s) match Registry-reflected ' + validation.dashboard_list_resources
-                : 'Google source validation mismatch: source ' + validation.code_list_resources + ' vs Registry-reflected ' + validation.dashboard_list_resources;
+            var title = 'Google v' + validation.schema_provider_version + ' serves ' + validation.schema_list_resources + ' list resources; '
+                + (matches ? 'Registry docs in sync' : 'Registry docs out of sync') + ' (' + validation.dashboard_list_resources + ' pages)';
 
             return ' <a href="google-list-check.html" title="' + title + '" style="text-decoration:none;">' + icon + '</a>';
         }

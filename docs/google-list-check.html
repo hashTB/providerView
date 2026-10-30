@@ -131,28 +131,29 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">Source-code inspection of <code>terraform-provider-google</code> compared against Registry-reflected list resources for <code>hashicorp/google</code>. Generated 2026-10-29T13:27:50.865039.</p>
+    <p class="subtitle">List resources served by the latest <code>hashicorp/google</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated 2026-10-30T13:36:11.327378.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">159</div><div class="label">Registry-Reflected List Resources</div></div>
-        <div class="card"><div class="value">144</div><div class="label">Source TypeNames</div></div>
-        <div class="card"><div class="value">153</div><div class="label">Registered Constructors</div></div>
-        <div class="card"><div class="value">⚠️</div><div class="label">Validation: out of sync</div></div>
-        <div class="card"><div class="value">⚠️</div><div class="label">Source Signals Agree</div></div>
+        <div class="card"><div class="value">153</div><div class="label">List Resources in v8.9.0</div></div>
+        <div class="card"><div class="value">159</div><div class="label">Registry List Pages</div></div>
+        <div class="card"><div class="value">153</div><div class="label">Source Registrations (main)</div></div>
+        <div class="card"><div class="value">✅</div><div class="label">Registry in sync</div></div>
+        <div class="card"><div class="value">✅</div><div class="label">Source Scan Sees All Released</div></div>
     </div>
 
     <div class="note">
-        <strong>⚠️ Validation:</strong> Registry reflects
-        <strong>159</strong>;
-        source inspection finds <strong>144</strong>
-        TypeName(s) across <strong>153</strong> registered constructor(s).
-        Unlike AWS/Azure (which have established lists of expected resources to track gaps), GCP is
-        in the early phase of adopting List Resources — the report focuses on
-        <em>what is implemented today</em>.
+        <strong>✅ Validation:</strong> <code>hashicorp/google</code> v8.9.0 serves
+        <strong>153</strong> list resources
+        (<strong>950</strong> resources have identity), read from the released provider with
+        <code>terraform providers schema -json</code> (Terraform 1.17.1).
+        The Registry documents <strong>159</strong> list-resource pages; some pages cover several
+        resources, and the docs also include pages for <code>hashicorp/google-beta</code>-only resources
+        (v8.9.0 serves <strong>160</strong>), as listed below.
+        The source scan of main finds <strong>153</strong> registrations and supplies the per-service grouping.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>ec944eab04d20bbcbb8e9fbf5a01d5bf750f8b23</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>3025794823e3519fb965c45063232d42600e68f6</code></span></div>
                 <div class="meta-row"><span>Registration sources</span><span>152 file(s) under <code>google/</code></span></div>
                 <div class="meta-row"><span>Registrations SHA-256</span><span><code>9f1db3e1f436b8ba...</code></span></div>
             </div>
@@ -161,12 +162,12 @@
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px;"><div><div class="meta-row"><span>Registry only (possible regression)</span><span><code>google_bigquery_dataset_iam_member</code> <code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_folder_iam_member</code> <code>google_network_security_sac_realm</code> <code>google_project_iam</code> <code>google_pubsub_subscription_iam_member</code> <code>google_pubsub_topic_iam</code> <code>google_secret_manager_secret_iam</code> <code>google_service_account_iam_member</code> <code>google_storage_bucket_iam_member</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px; grid-template-columns: 1fr;"><div><div class="meta-row"><span>Registry page <code>google_project_iam</code> documents</span><span><code>google_project_iam_binding</code> <code>google_project_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_pubsub_topic_iam</code> documents</span><span><code>google_pubsub_topic_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_secret_manager_secret_iam</code> documents</span><span><code>google_secret_manager_secret_iam_member</code></span></div><div class="meta-row"><span>Registry pages for hashicorp/google-beta-only resources</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_network_security_sac_realm</code></span></div></div></div>
     </div>
 
     <div class="section">
         <h2>Service Coverage (List)</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Services exposing at least one List Resource: <strong>23</strong>.</p>
+        <p class="subtitle" style="margin-bottom: 12px;">Released list resources grouped by the <code>ProductName</code> they register under on main. Services exposing at least one List Resource: <strong>28</strong>.</p>
         <div class="table-controls">
             <input id="gc-service-search" type="text" placeholder="Search by service (e.g. compute, iam, storage)" />
             <select id="gc-service-sort">
@@ -180,29 +181,34 @@
                 <tr><th>Service</th><th>List Resources</th></tr>
             </thead>
             <tbody>
-                <tr><td><button class="service-link" data-service="compute">compute</button></td><td>43</td></tr>
-<tr><td><button class="service-link" data-service="discoveryengine">discoveryengine</button></td><td>13</td></tr>
-<tr><td><button class="service-link" data-service="vertexai">vertexai</button></td><td>12</td></tr>
-<tr><td><button class="service-link" data-service="networksecurity">networksecurity</button></td><td>10</td></tr>
-<tr><td><button class="service-link" data-service="networkservices">networkservices</button></td><td>10</td></tr>
-<tr><td><button class="service-link" data-service="apigee">apigee</button></td><td>9</td></tr>
-<tr><td><button class="service-link" data-service="migrationcenter">migrationcenter</button></td><td>7</td></tr>
-<tr><td><button class="service-link" data-service="contactcenterinsights">contactcenterinsights</button></td><td>5</td></tr>
-<tr><td><button class="service-link" data-service="resourcemanager">resourcemanager</button></td><td>5</td></tr>
-<tr><td><button class="service-link" data-service="colab">colab</button></td><td>4</td></tr>
-<tr><td><button class="service-link" data-service="gkebackup">gkebackup</button></td><td>4</td></tr>
-<tr><td><button class="service-link" data-service="appengine">appengine</button></td><td>3</td></tr>
-<tr><td><button class="service-link" data-service="bigquery">bigquery</button></td><td>3</td></tr>
-<tr><td><button class="service-link" data-service="identityplatform">identityplatform</button></td><td>3</td></tr>
+                <tr><td><button class="service-link" data-service="Compute">Compute</button></td><td>42</td></tr>
+<tr><td><button class="service-link" data-service="DiscoveryEngine">DiscoveryEngine</button></td><td>13</td></tr>
+<tr><td><button class="service-link" data-service="VertexAI">VertexAI</button></td><td>12</td></tr>
+<tr><td><button class="service-link" data-service="NetworkSecurity">NetworkSecurity</button></td><td>10</td></tr>
+<tr><td><button class="service-link" data-service="NetworkServices">NetworkServices</button></td><td>10</td></tr>
+<tr><td><button class="service-link" data-service="Apigee">Apigee</button></td><td>9</td></tr>
+<tr><td><button class="service-link" data-service="resourcemanager">resourcemanager</button></td><td>9</td></tr>
+<tr><td><button class="service-link" data-service="MigrationCenter">MigrationCenter</button></td><td>7</td></tr>
+<tr><td><button class="service-link" data-service="ContactCenterInsights">ContactCenterInsights</button></td><td>5</td></tr>
+<tr><td><button class="service-link" data-service="Colab">Colab</button></td><td>4</td></tr>
+<tr><td><button class="service-link" data-service="GKEBackup">GKEBackup</button></td><td>4</td></tr>
+<tr><td><button class="service-link" data-service="AppEngine">AppEngine</button></td><td>3</td></tr>
+<tr><td><button class="service-link" data-service="IdentityPlatform">IdentityPlatform</button></td><td>3</td></tr>
+<tr><td><button class="service-link" data-service="Pubsub">Pubsub</button></td><td>3</td></tr>
+<tr><td><button class="service-link" data-service="BigQuery">BigQuery</button></td><td>2</td></tr>
+<tr><td><button class="service-link" data-service="SecretManager">SecretManager</button></td><td>2</td></tr>
+<tr><td><button class="service-link" data-service="bigquery">bigquery</button></td><td>2</td></tr>
 <tr><td><button class="service-link" data-service="dns">dns</button></td><td>2</td></tr>
-<tr><td><button class="service-link" data-service="pubsub">pubsub</button></td><td>2</td></tr>
-<tr><td><button class="service-link" data-service="secretmanager">secretmanager</button></td><td>2</td></tr>
 <tr><td><button class="service-link" data-service="storage">storage</button></td><td>2</td></tr>
-<tr><td><button class="service-link" data-service="cloudrun">cloudrun</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="cloudscheduler">cloudscheduler</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="kms">kms</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="monitoring">monitoring</button></td><td>1</td></tr>
-<tr><td><button class="service-link" data-service="sql">sql</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="CloudRun">CloudRun</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="CloudScheduler">CloudScheduler</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="KMS">KMS</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="Monitoring">Monitoring</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="SQL">SQL</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="Storage">Storage</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="compute">compute</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="pubsub">pubsub</button></td><td>1</td></tr>
+<tr><td><button class="service-link" data-service="secretmanager">secretmanager</button></td><td>1</td></tr>
             </tbody>
         </table>
     </div>
@@ -363,166 +369,6 @@
 <li><code>google_vertex_ai_reasoning_engine</code> &mdash; <code>NewVertexAIReasoningEngineListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_reasoning_engine.go:40</span></li>
 <li><code>google_vertex_ai_tensorboard</code> &mdash; <code>NewVertexAITensorboardListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_tensorboard.go:40</span></li></ul></div></div>
     </div>
-
-    <div class="section">
-        <h2>Discovered TypeNames</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">From <code>TypeName = "google_..."</code> assignments inside <code>list_*.go</code> files.</p>
-        <ul class="resource-list"><li><code>google_apigee_addons_config</code></li>
-<li><code>google_apigee_api_product</code></li>
-<li><code>google_apigee_data_collector</code></li>
-<li><code>google_apigee_datastore</code></li>
-<li><code>google_apigee_endpoint_attachment</code></li>
-<li><code>google_apigee_envgroup</code></li>
-<li><code>google_apigee_environment_keyvaluemaps</code></li>
-<li><code>google_apigee_organization</code></li>
-<li><code>google_apigee_target_server</code></li>
-<li><code>google_app_engine_domain_mapping</code></li>
-<li><code>google_app_engine_service_network_settings</code></li>
-<li><code>google_app_engine_service_split_traffic</code></li>
-<li><code>google_bigquery_dataset</code></li>
-<li><code>google_bigquery_dataset_access</code></li>
-<li><code>google_bigquery_table</code></li>
-<li><code>google_cloud_run_service</code></li>
-<li><code>google_cloud_scheduler_job</code></li>
-<li><code>google_colab_notebook_execution</code></li>
-<li><code>google_colab_runtime</code></li>
-<li><code>google_colab_runtime_template</code></li>
-<li><code>google_colab_schedule</code></li>
-<li><code>google_compute_address</code></li>
-<li><code>google_compute_backend_bucket_signed_url_key</code></li>
-<li><code>google_compute_backend_service_signed_url_key</code></li>
-<li><code>google_compute_cross_site_network</code></li>
-<li><code>google_compute_disk</code></li>
-<li><code>google_compute_external_vpn_gateway</code></li>
-<li><code>google_compute_firewall</code></li>
-<li><code>google_compute_global_address</code></li>
-<li><code>google_compute_global_network_endpoint_group</code></li>
-<li><code>google_compute_ha_vpn_gateway</code></li>
-<li><code>google_compute_https_health_check</code></li>
-<li><code>google_compute_image</code></li>
-<li><code>google_compute_instance</code></li>
-<li><code>google_compute_instant_snapshot</code></li>
-<li><code>google_compute_interconnect_attachment_group</code></li>
-<li><code>google_compute_interconnect_group</code></li>
-<li><code>google_compute_network_firewall_policy</code></li>
-<li><code>google_compute_network_firewall_policy_association</code></li>
-<li><code>google_compute_node_template</code></li>
-<li><code>google_compute_packet_mirroring</code></li>
-<li><code>google_compute_preview_feature</code></li>
-<li><code>google_compute_public_advertised_prefix</code></li>
-<li><code>google_compute_public_delegated_prefix</code></li>
-<li><code>google_compute_region_autoscaler</code></li>
-<li><code>google_compute_region_commitment</code></li>
-<li><code>google_compute_region_composite_health_check</code></li>
-<li><code>google_compute_region_health_aggregation_policy</code></li>
-<li><code>google_compute_region_health_source</code></li>
-<li><code>google_compute_region_instant_snapshot</code></li>
-<li><code>google_compute_region_network_endpoint_group</code></li>
-<li><code>google_compute_region_network_firewall_policy</code></li>
-<li><code>google_compute_region_target_http_proxy</code></li>
-<li><code>google_compute_region_target_tcp_proxy</code></li>
-<li><code>google_compute_region_url_map</code></li>
-<li><code>google_compute_rollout_plan</code></li>
-<li><code>google_compute_snapshot</code></li>
-<li><code>google_compute_subnetwork</code></li>
-<li><code>google_compute_target_grpc_proxy</code></li>
-<li><code>google_compute_target_http_proxy</code></li>
-<li><code>google_compute_target_ssl_proxy</code></li>
-<li><code>google_compute_target_tcp_proxy</code></li>
-<li><code>google_compute_vpn_gateway</code></li>
-<li><code>google_compute_wire_group</code></li>
-<li><code>google_contact_center_insights_analysis_rule</code></li>
-<li><code>google_contact_center_insights_assessment_rule</code></li>
-<li><code>google_contact_center_insights_auto_labeling_rule</code></li>
-<li><code>google_contact_center_insights_qa_scorecard</code></li>
-<li><code>google_contact_center_insights_view</code></li>
-<li><code>google_discovery_engine_assistant</code></li>
-<li><code>google_discovery_engine_chat_engine</code></li>
-<li><code>google_discovery_engine_cmek_config</code></li>
-<li><code>google_discovery_engine_control</code></li>
-<li><code>google_discovery_engine_data_store</code></li>
-<li><code>google_discovery_engine_license_config</code></li>
-<li><code>google_discovery_engine_recommendation_engine</code></li>
-<li><code>google_discovery_engine_schema</code></li>
-<li><code>google_discovery_engine_search_engine</code></li>
-<li><code>google_discovery_engine_serving_config</code></li>
-<li><code>google_discovery_engine_sitemap</code></li>
-<li><code>google_discovery_engine_target_site</code></li>
-<li><code>google_discovery_engine_user_store</code></li>
-<li><code>google_dns_managed_zone</code></li>
-<li><code>google_dns_record_set</code></li>
-<li><code>google_gke_backup_backup_channel</code></li>
-<li><code>google_gke_backup_backup_plan</code></li>
-<li><code>google_gke_backup_restore_channel</code></li>
-<li><code>google_gke_backup_restore_plan</code></li>
-<li><code>google_identity_platform_inbound_saml_config</code></li>
-<li><code>google_identity_platform_oauth_idp_config</code></li>
-<li><code>google_identity_platform_tenant</code></li>
-<li><code>google_kms_crypto_key_version</code></li>
-<li><code>google_migration_center_assets_export_job</code></li>
-<li><code>google_migration_center_discovery_client</code></li>
-<li><code>google_migration_center_group</code></li>
-<li><code>google_migration_center_import_job</code></li>
-<li><code>google_migration_center_preference_set</code></li>
-<li><code>google_migration_center_report_config</code></li>
-<li><code>google_migration_center_source</code></li>
-<li><code>google_monitoring_alert_policy</code></li>
-<li><code>google_network_security_authz_policy</code></li>
-<li><code>google_network_security_intercept_deployment</code></li>
-<li><code>google_network_security_intercept_deployment_group</code></li>
-<li><code>google_network_security_intercept_endpoint_group</code></li>
-<li><code>google_network_security_intercept_endpoint_group_association</code></li>
-<li><code>google_network_security_mirroring_deployment</code></li>
-<li><code>google_network_security_mirroring_deployment_group</code></li>
-<li><code>google_network_security_mirroring_endpoint</code></li>
-<li><code>google_network_security_mirroring_endpoint_group</code></li>
-<li><code>google_network_security_mirroring_endpoint_group_association</code></li>
-<li><code>google_network_services_authz_extension</code></li>
-<li><code>google_network_services_multicast_consumer_association</code></li>
-<li><code>google_network_services_multicast_domain</code></li>
-<li><code>google_network_services_multicast_domain_activation</code></li>
-<li><code>google_network_services_multicast_domain_group</code></li>
-<li><code>google_network_services_multicast_group_consumer_activation</code></li>
-<li><code>google_network_services_multicast_group_producer_activation</code></li>
-<li><code>google_network_services_multicast_group_range</code></li>
-<li><code>google_network_services_multicast_group_range_activation</code></li>
-<li><code>google_network_services_multicast_producer_association</code></li>
-<li><code>google_project</code></li>
-<li><code>google_project_iam_custom_role</code></li>
-<li><code>google_project_service</code></li>
-<li><code>google_pubsub_subscription</code></li>
-<li><code>google_pubsub_topic</code></li>
-<li><code>google_secret_manager_secret</code></li>
-<li><code>google_secret_manager_secret_version</code></li>
-<li><code>google_service_account</code></li>
-<li><code>google_service_account_key</code></li>
-<li><code>google_sql_database</code></li>
-<li><code>google_storage_bucket</code></li>
-<li><code>google_storage_hmac_key</code></li>
-<li><code>google_vertex_ai_dataset</code></li>
-<li><code>google_vertex_ai_deployment_resource_pool</code></li>
-<li><code>google_vertex_ai_evaluation_metric</code></li>
-<li><code>google_vertex_ai_feature_group</code></li>
-<li><code>google_vertex_ai_feature_online_store</code></li>
-<li><code>google_vertex_ai_featurestore</code></li>
-<li><code>google_vertex_ai_index</code></li>
-<li><code>google_vertex_ai_online_evaluator</code></li>
-<li><code>google_vertex_ai_persistent_resource</code></li>
-<li><code>google_vertex_ai_rag_corpus</code></li>
-<li><code>google_vertex_ai_reasoning_engine</code></li>
-<li><code>google_vertex_ai_tensorboard</code></li></ul>
-    </div>
-
-    <div class="section">
-        <h2>Cross-Check Anomalies</h2>
-        <ul class="resource-list"><li>Constructor <code>NewBigqueryDatasetIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewFolderIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewProjectIamBindingListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewProjectIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewPubsubSubscriptionIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewServiceAccountIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li>
-<li>Constructor <code>NewStorageBucketIamMemberListResource</code> is registered but no matching <code>list_*.go</code> file was found.</li></ul>
-    </div>
 </div>
 <div class="modal" id="service-modal" aria-hidden="true">
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
@@ -538,7 +384,7 @@
     </div>
 </div>
 <script>
-    const serviceResources = {"apigee": {"list_resources": ["google_apigee_addons_config", "google_apigee_api_product", "google_apigee_data_collector", "google_apigee_datastore", "google_apigee_endpoint_attachment", "google_apigee_envgroup", "google_apigee_environment_keyvaluemaps", "google_apigee_organization", "google_apigee_target_server"]}, "appengine": {"list_resources": ["google_app_engine_domain_mapping", "google_app_engine_service_network_settings", "google_app_engine_service_split_traffic"]}, "bigquery": {"list_resources": ["google_bigquery_dataset", "google_bigquery_dataset_access", "google_bigquery_table"]}, "cloudrun": {"list_resources": ["google_cloud_run_service"]}, "cloudscheduler": {"list_resources": ["google_cloud_scheduler_job"]}, "colab": {"list_resources": ["google_colab_notebook_execution", "google_colab_runtime", "google_colab_runtime_template", "google_colab_schedule"]}, "compute": {"list_resources": ["google_compute_address", "google_compute_backend_bucket_signed_url_key", "google_compute_backend_service_signed_url_key", "google_compute_cross_site_network", "google_compute_disk", "google_compute_external_vpn_gateway", "google_compute_firewall", "google_compute_global_address", "google_compute_global_network_endpoint_group", "google_compute_ha_vpn_gateway", "google_compute_https_health_check", "google_compute_image", "google_compute_instance", "google_compute_instant_snapshot", "google_compute_interconnect_attachment_group", "google_compute_interconnect_group", "google_compute_network_firewall_policy", "google_compute_network_firewall_policy_association", "google_compute_node_template", "google_compute_packet_mirroring", "google_compute_preview_feature", "google_compute_public_advertised_prefix", "google_compute_public_delegated_prefix", "google_compute_region_autoscaler", "google_compute_region_commitment", "google_compute_region_composite_health_check", "google_compute_region_health_aggregation_policy", "google_compute_region_health_source", "google_compute_region_instant_snapshot", "google_compute_region_network_endpoint_group", "google_compute_region_network_firewall_policy", "google_compute_region_target_http_proxy", "google_compute_region_target_tcp_proxy", "google_compute_region_url_map", "google_compute_rollout_plan", "google_compute_snapshot", "google_compute_subnetwork", "google_compute_target_grpc_proxy", "google_compute_target_http_proxy", "google_compute_target_ssl_proxy", "google_compute_target_tcp_proxy", "google_compute_vpn_gateway", "google_compute_wire_group"]}, "contactcenterinsights": {"list_resources": ["google_contact_center_insights_analysis_rule", "google_contact_center_insights_assessment_rule", "google_contact_center_insights_auto_labeling_rule", "google_contact_center_insights_qa_scorecard", "google_contact_center_insights_view"]}, "discoveryengine": {"list_resources": ["google_discovery_engine_assistant", "google_discovery_engine_chat_engine", "google_discovery_engine_cmek_config", "google_discovery_engine_control", "google_discovery_engine_data_store", "google_discovery_engine_license_config", "google_discovery_engine_recommendation_engine", "google_discovery_engine_schema", "google_discovery_engine_search_engine", "google_discovery_engine_serving_config", "google_discovery_engine_sitemap", "google_discovery_engine_target_site", "google_discovery_engine_user_store"]}, "dns": {"list_resources": ["google_dns_managed_zone", "google_dns_record_set"]}, "gkebackup": {"list_resources": ["google_gke_backup_backup_channel", "google_gke_backup_backup_plan", "google_gke_backup_restore_channel", "google_gke_backup_restore_plan"]}, "identityplatform": {"list_resources": ["google_identity_platform_inbound_saml_config", "google_identity_platform_oauth_idp_config", "google_identity_platform_tenant"]}, "kms": {"list_resources": ["google_kms_crypto_key_version"]}, "migrationcenter": {"list_resources": ["google_migration_center_assets_export_job", "google_migration_center_discovery_client", "google_migration_center_group", "google_migration_center_import_job", "google_migration_center_preference_set", "google_migration_center_report_config", "google_migration_center_source"]}, "monitoring": {"list_resources": ["google_monitoring_alert_policy"]}, "networksecurity": {"list_resources": ["google_network_security_authz_policy", "google_network_security_intercept_deployment", "google_network_security_intercept_deployment_group", "google_network_security_intercept_endpoint_group", "google_network_security_intercept_endpoint_group_association", "google_network_security_mirroring_deployment", "google_network_security_mirroring_deployment_group", "google_network_security_mirroring_endpoint", "google_network_security_mirroring_endpoint_group", "google_network_security_mirroring_endpoint_group_association"]}, "networkservices": {"list_resources": ["google_network_services_authz_extension", "google_network_services_multicast_consumer_association", "google_network_services_multicast_domain", "google_network_services_multicast_domain_activation", "google_network_services_multicast_domain_group", "google_network_services_multicast_group_consumer_activation", "google_network_services_multicast_group_producer_activation", "google_network_services_multicast_group_range", "google_network_services_multicast_group_range_activation", "google_network_services_multicast_producer_association"]}, "pubsub": {"list_resources": ["google_pubsub_subscription", "google_pubsub_topic"]}, "resourcemanager": {"list_resources": ["google_project", "google_project_iam_custom_role", "google_project_service", "google_service_account", "google_service_account_key"]}, "secretmanager": {"list_resources": ["google_secret_manager_secret", "google_secret_manager_secret_version"]}, "sql": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket", "google_storage_hmac_key"]}, "vertexai": {"list_resources": ["google_vertex_ai_dataset", "google_vertex_ai_deployment_resource_pool", "google_vertex_ai_evaluation_metric", "google_vertex_ai_feature_group", "google_vertex_ai_feature_online_store", "google_vertex_ai_featurestore", "google_vertex_ai_index", "google_vertex_ai_online_evaluator", "google_vertex_ai_persistent_resource", "google_vertex_ai_rag_corpus", "google_vertex_ai_reasoning_engine", "google_vertex_ai_tensorboard"]}};
+    const serviceResources = {"Apigee": {"list_resources": ["google_apigee_addons_config", "google_apigee_api_product", "google_apigee_data_collector", "google_apigee_datastore", "google_apigee_endpoint_attachment", "google_apigee_envgroup", "google_apigee_environment_keyvaluemaps", "google_apigee_organization", "google_apigee_target_server"]}, "AppEngine": {"list_resources": ["google_app_engine_domain_mapping", "google_app_engine_service_network_settings", "google_app_engine_service_split_traffic"]}, "BigQuery": {"list_resources": ["google_bigquery_dataset", "google_bigquery_dataset_access"]}, "bigquery": {"list_resources": ["google_bigquery_dataset_iam_member", "google_bigquery_table"]}, "CloudRun": {"list_resources": ["google_cloud_run_service"]}, "CloudScheduler": {"list_resources": ["google_cloud_scheduler_job"]}, "Colab": {"list_resources": ["google_colab_notebook_execution", "google_colab_runtime", "google_colab_runtime_template", "google_colab_schedule"]}, "Compute": {"list_resources": ["google_compute_address", "google_compute_backend_bucket_signed_url_key", "google_compute_backend_service_signed_url_key", "google_compute_cross_site_network", "google_compute_disk", "google_compute_external_vpn_gateway", "google_compute_firewall", "google_compute_global_address", "google_compute_global_network_endpoint_group", "google_compute_ha_vpn_gateway", "google_compute_https_health_check", "google_compute_image", "google_compute_instant_snapshot", "google_compute_interconnect_attachment_group", "google_compute_interconnect_group", "google_compute_network_firewall_policy", "google_compute_network_firewall_policy_association", "google_compute_node_template", "google_compute_packet_mirroring", "google_compute_preview_feature", "google_compute_public_advertised_prefix", "google_compute_public_delegated_prefix", "google_compute_region_autoscaler", "google_compute_region_commitment", "google_compute_region_composite_health_check", "google_compute_region_health_aggregation_policy", "google_compute_region_health_source", "google_compute_region_instant_snapshot", "google_compute_region_network_endpoint_group", "google_compute_region_network_firewall_policy", "google_compute_region_target_http_proxy", "google_compute_region_target_tcp_proxy", "google_compute_region_url_map", "google_compute_rollout_plan", "google_compute_snapshot", "google_compute_subnetwork", "google_compute_target_grpc_proxy", "google_compute_target_http_proxy", "google_compute_target_ssl_proxy", "google_compute_target_tcp_proxy", "google_compute_vpn_gateway", "google_compute_wire_group"]}, "compute": {"list_resources": ["google_compute_instance"]}, "ContactCenterInsights": {"list_resources": ["google_contact_center_insights_analysis_rule", "google_contact_center_insights_assessment_rule", "google_contact_center_insights_auto_labeling_rule", "google_contact_center_insights_qa_scorecard", "google_contact_center_insights_view"]}, "DiscoveryEngine": {"list_resources": ["google_discovery_engine_assistant", "google_discovery_engine_chat_engine", "google_discovery_engine_cmek_config", "google_discovery_engine_control", "google_discovery_engine_data_store", "google_discovery_engine_license_config", "google_discovery_engine_recommendation_engine", "google_discovery_engine_schema", "google_discovery_engine_search_engine", "google_discovery_engine_serving_config", "google_discovery_engine_sitemap", "google_discovery_engine_target_site", "google_discovery_engine_user_store"]}, "dns": {"list_resources": ["google_dns_managed_zone", "google_dns_record_set"]}, "resourcemanager": {"list_resources": ["google_folder_iam_member", "google_project", "google_project_iam_binding", "google_project_iam_custom_role", "google_project_iam_member", "google_project_service", "google_service_account", "google_service_account_iam_member", "google_service_account_key"]}, "GKEBackup": {"list_resources": ["google_gke_backup_backup_channel", "google_gke_backup_backup_plan", "google_gke_backup_restore_channel", "google_gke_backup_restore_plan"]}, "IdentityPlatform": {"list_resources": ["google_identity_platform_inbound_saml_config", "google_identity_platform_oauth_idp_config", "google_identity_platform_tenant"]}, "KMS": {"list_resources": ["google_kms_crypto_key_version"]}, "MigrationCenter": {"list_resources": ["google_migration_center_assets_export_job", "google_migration_center_discovery_client", "google_migration_center_group", "google_migration_center_import_job", "google_migration_center_preference_set", "google_migration_center_report_config", "google_migration_center_source"]}, "Monitoring": {"list_resources": ["google_monitoring_alert_policy"]}, "NetworkSecurity": {"list_resources": ["google_network_security_authz_policy", "google_network_security_intercept_deployment", "google_network_security_intercept_deployment_group", "google_network_security_intercept_endpoint_group", "google_network_security_intercept_endpoint_group_association", "google_network_security_mirroring_deployment", "google_network_security_mirroring_deployment_group", "google_network_security_mirroring_endpoint", "google_network_security_mirroring_endpoint_group", "google_network_security_mirroring_endpoint_group_association"]}, "NetworkServices": {"list_resources": ["google_network_services_authz_extension", "google_network_services_multicast_consumer_association", "google_network_services_multicast_domain", "google_network_services_multicast_domain_activation", "google_network_services_multicast_domain_group", "google_network_services_multicast_group_consumer_activation", "google_network_services_multicast_group_producer_activation", "google_network_services_multicast_group_range", "google_network_services_multicast_group_range_activation", "google_network_services_multicast_producer_association"]}, "Pubsub": {"list_resources": ["google_pubsub_subscription", "google_pubsub_topic", "google_pubsub_topic_iam_member"]}, "pubsub": {"list_resources": ["google_pubsub_subscription_iam_member"]}, "SecretManager": {"list_resources": ["google_secret_manager_secret", "google_secret_manager_secret_iam_member"]}, "secretmanager": {"list_resources": ["google_secret_manager_secret_version"]}, "SQL": {"list_resources": ["google_sql_database"]}, "storage": {"list_resources": ["google_storage_bucket", "google_storage_bucket_iam_member"]}, "Storage": {"list_resources": ["google_storage_hmac_key"]}, "VertexAI": {"list_resources": ["google_vertex_ai_dataset", "google_vertex_ai_deployment_resource_pool", "google_vertex_ai_evaluation_metric", "google_vertex_ai_feature_group", "google_vertex_ai_feature_online_store", "google_vertex_ai_featurestore", "google_vertex_ai_index", "google_vertex_ai_online_evaluator", "google_vertex_ai_persistent_resource", "google_vertex_ai_rag_corpus", "google_vertex_ai_reasoning_engine", "google_vertex_ai_tensorboard"]}};
 
     function fillResourceList(listElement, emptyElement, values) {
         listElement.innerHTML = '';

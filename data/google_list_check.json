@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T13:27:50.865039",
+  "generated_at": "2026-10-30T13:36:11.327378",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "ec944eab04d20bbcbb8e9fbf5a01d5bf750f8b23"
+    "commit": "3025794823e3519fb965c45063232d42600e68f6"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -776,6 +776,219 @@
   "dashboard": {
     "provider": "hashicorp/google",
     "list_resources": 159
+  },
+  "provider_schema": {
+    "provider": "hashicorp/google",
+    "version": "8.9.0",
+    "terraform_version": "1.17.1",
+    "counts": {
+      "resources": 1392,
+      "data_sources": 473,
+      "ephemeral_resources": 6,
+      "list_resources": 153,
+      "identity_resources": 950,
+      "actions": 0
+    },
+    "list_resources": [
+      "google_apigee_addons_config",
+      "google_apigee_api_product",
+      "google_apigee_data_collector",
+      "google_apigee_datastore",
+      "google_apigee_endpoint_attachment",
+      "google_apigee_envgroup",
+      "google_apigee_environment_keyvaluemaps",
+      "google_apigee_organization",
+      "google_apigee_target_server",
+      "google_app_engine_domain_mapping",
+      "google_app_engine_service_network_settings",
+      "google_app_engine_service_split_traffic",
+      "google_bigquery_dataset",
+      "google_bigquery_dataset_access",
+      "google_bigquery_dataset_iam_member",
+      "google_bigquery_table",
+      "google_cloud_run_service",
+      "google_cloud_scheduler_job",
+      "google_colab_notebook_execution",
+      "google_colab_runtime",
+      "google_colab_runtime_template",
+      "google_colab_schedule",
+      "google_compute_address",
+      "google_compute_backend_bucket_signed_url_key",
+      "google_compute_backend_service_signed_url_key",
+      "google_compute_cross_site_network",
+      "google_compute_disk",
+      "google_compute_external_vpn_gateway",
+      "google_compute_firewall",
+      "google_compute_global_address",
+      "google_compute_global_network_endpoint_group",
+      "google_compute_ha_vpn_gateway",
+      "google_compute_https_health_check",
+      "google_compute_image",
+      "google_compute_instance",
+      "google_compute_instant_snapshot",
+      "google_compute_interconnect_attachment_group",
+      "google_compute_interconnect_group",
+      "google_compute_network_firewall_policy",
+      "google_compute_network_firewall_policy_association",
+      "google_compute_node_template",
+      "google_compute_packet_mirroring",
+      "google_compute_preview_feature",
+      "google_compute_public_advertised_prefix",
+      "google_compute_public_delegated_prefix",
+      "google_compute_region_autoscaler",
+      "google_compute_region_commitment",
+      "google_compute_region_composite_health_check",
+      "google_compute_region_health_aggregation_policy",
+      "google_compute_region_health_source",
+      "google_compute_region_instant_snapshot",
+      "google_compute_region_network_endpoint_group",
+      "google_compute_region_network_firewall_policy",
+      "google_compute_region_target_http_proxy",
+      "google_compute_region_target_tcp_proxy",
+      "google_compute_region_url_map",
+      "google_compute_rollout_plan",
+      "google_compute_snapshot",
+      "google_compute_subnetwork",
+      "google_compute_target_grpc_proxy",
+      "google_compute_target_http_proxy",
+      "google_compute_target_ssl_proxy",
+      "google_compute_target_tcp_proxy",
+      "google_compute_vpn_gateway",
+      "google_compute_wire_group",
+      "google_contact_center_insights_analysis_rule",
+      "google_contact_center_insights_assessment_rule",
+      "google_contact_center_insights_auto_labeling_rule",
+      "google_contact_center_insights_qa_scorecard",
+      "google_contact_center_insights_view",
+      "google_discovery_engine_assistant",
+      "google_discovery_engine_chat_engine",
+      "google_discovery_engine_cmek_config",
+      "google_discovery_engine_control",
+      "google_discovery_engine_data_store",
+      "google_discovery_engine_license_config",
+      "google_discovery_engine_recommendation_engine",
+      "google_discovery_engine_schema",
+      "google_discovery_engine_search_engine",
+      "google_discovery_engine_serving_config",
+      "google_discovery_engine_sitemap",
+      "google_discovery_engine_target_site",
+      "google_discovery_engine_user_store",
+      "google_dns_managed_zone",
+      "google_dns_record_set",
+      "google_folder_iam_member",
+      "google_gke_backup_backup_channel",
+      "google_gke_backup_backup_plan",
+      "google_gke_backup_restore_channel",
+      "google_gke_backup_restore_plan",
+      "google_identity_platform_inbound_saml_config",
+      "google_identity_platform_oauth_idp_config",
+      "google_identity_platform_tenant",
+      "google_kms_crypto_key_version",
+      "google_migration_center_assets_export_job",
+      "google_migration_center_discovery_client",
+      "google_migration_center_group",
+      "google_migration_center_import_job",
+      "google_migration_center_preference_set",
+      "google_migration_center_report_config",
+      "google_migration_center_source",
+      "google_monitoring_alert_policy",
+      "google_network_security_authz_policy",
+      "google_network_security_intercept_deployment",
+      "google_network_security_intercept_deployment_group",
+      "google_network_security_intercept_endpoint_group",
+      "google_network_security_intercept_endpoint_group_association",
+      "google_network_security_mirroring_deployment",
+      "google_network_security_mirroring_deployment_group",
+      "google_network_security_mirroring_endpoint",
+      "google_network_security_mirroring_endpoint_group",
+      "google_network_security_mirroring_endpoint_group_association",
+      "google_network_services_authz_extension",
+      "google_network_services_multicast_consumer_association",
+      "google_network_services_multicast_domain",
+      "google_network_services_multicast_domain_activation",
+      "google_network_services_multicast_domain_group",
+      "google_network_services_multicast_group_consumer_activation",
+      "google_network_services_multicast_group_producer_activation",
+      "google_network_services_multicast_group_range",
+      "google_network_services_multicast_group_range_activation",
+      "google_network_services_multicast_producer_association",
+      "google_project",
+      "google_project_iam_binding",
+      "google_project_iam_custom_role",
+      "google_project_iam_member",
+      "google_project_service",
+      "google_pubsub_subscription",
+      "google_pubsub_subscription_iam_member",
+      "google_pubsub_topic",
+      "google_pubsub_topic_iam_member",
+      "google_secret_manager_secret",
+      "google_secret_manager_secret_iam_member",
+      "google_secret_manager_secret_version",
+      "google_service_account",
+      "google_service_account_iam_member",
+      "google_service_account_key",
+      "google_sql_database",
+      "google_storage_bucket",
+      "google_storage_bucket_iam_member",
+      "google_storage_hmac_key",
+      "google_vertex_ai_dataset",
+      "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_metric",
+      "google_vertex_ai_feature_group",
+      "google_vertex_ai_feature_online_store",
+      "google_vertex_ai_featurestore",
+      "google_vertex_ai_index",
+      "google_vertex_ai_online_evaluator",
+      "google_vertex_ai_persistent_resource",
+      "google_vertex_ai_rag_corpus",
+      "google_vertex_ai_reasoning_engine",
+      "google_vertex_ai_tensorboard"
+    ]
+  },
+  "beta_provider_schema": {
+    "provider": "hashicorp/google-beta",
+    "version": "8.9.0",
+    "terraform_version": "1.17.1",
+    "counts": {
+      "resources": 1512,
+      "data_sources": 502,
+      "ephemeral_resources": 6,
+      "list_resources": 160,
+      "identity_resources": 1032,
+      "actions": 0
+    }
+  },
+  "registry_comparison": {
+    "registry_pages": 159,
+    "exact_pages": 149,
+    "combined_pages": {
+      "google_project_iam": [
+        "google_project_iam_binding",
+        "google_project_iam_member"
+      ],
+      "google_pubsub_topic_iam": [
+        "google_pubsub_topic_iam_member"
+      ],
+      "google_secret_manager_secret_iam": [
+        "google_secret_manager_secret_iam_member"
+      ]
+    },
+    "other_provider_pages": [
+      "google_compute_machine_image",
+      "google_compute_network_firewall_policy_packet_mirroring_rule",
+      "google_compute_region_backend_bucket",
+      "google_firebase_android_app",
+      "google_firebase_apple_app",
+      "google_firebase_web_app",
+      "google_network_security_sac_realm"
+    ],
+    "unexplained_registry_pages": [],
+    "undocumented_list_resources": [],
+    "in_sync": true
+  },
+  "source_scan_diff": {
+    "source_only": [],
+    "not_in_source_scan": []
   },
   "registrations": {
     "generated": [
@@ -1854,1317 +2067,79 @@
       }
     ]
   },
-  "by_service": {
-    "apigee": [
-      {
-        "file": "google/services/apigee/list_apigee_addons_config.go",
-        "type_name": "google_apigee_addons_config",
-        "constructor": "NewApigeeAddonsConfigListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_api_product.go",
-        "type_name": "google_apigee_api_product",
-        "constructor": "NewApigeeApiProductListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_data_collector.go",
-        "type_name": "google_apigee_data_collector",
-        "constructor": "NewApigeeDataCollectorListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_datastore.go",
-        "type_name": "google_apigee_datastore",
-        "constructor": "NewApigeeDatastoreListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_endpoint_attachment.go",
-        "type_name": "google_apigee_endpoint_attachment",
-        "constructor": "NewApigeeEndpointAttachmentListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_envgroup.go",
-        "type_name": "google_apigee_envgroup",
-        "constructor": "NewApigeeEnvgroupListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_environment_keyvaluemaps.go",
-        "type_name": "google_apigee_environment_keyvaluemaps",
-        "constructor": "NewApigeeEnvironmentKeyvaluemapsListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_organization.go",
-        "type_name": "google_apigee_organization",
-        "constructor": "NewApigeeOrganizationListResource"
-      },
-      {
-        "file": "google/services/apigee/list_apigee_target_server.go",
-        "type_name": "google_apigee_target_server",
-        "constructor": "NewApigeeTargetServerListResource"
-      }
-    ],
-    "appengine": [
-      {
-        "file": "google/services/appengine/list_app_engine_domain_mapping.go",
-        "type_name": "google_app_engine_domain_mapping",
-        "constructor": "NewAppEngineDomainMappingListResource"
-      },
-      {
-        "file": "google/services/appengine/list_app_engine_service_network_settings.go",
-        "type_name": "google_app_engine_service_network_settings",
-        "constructor": "NewAppEngineServiceNetworkSettingsListResource"
-      },
-      {
-        "file": "google/services/appengine/list_app_engine_service_split_traffic.go",
-        "type_name": "google_app_engine_service_split_traffic",
-        "constructor": "NewAppEngineServiceSplitTrafficListResource"
-      }
-    ],
-    "bigquery": [
-      {
-        "file": "google/services/bigquery/list_bigquery_dataset.go",
-        "type_name": "google_bigquery_dataset",
-        "constructor": "NewBigQueryDatasetListResource"
-      },
-      {
-        "file": "google/services/bigquery/list_bigquery_dataset_access.go",
-        "type_name": "google_bigquery_dataset_access",
-        "constructor": "NewBigQueryDatasetAccessListResource"
-      },
-      {
-        "file": "google/services/bigquery/list_google_bigquery_table.go",
-        "type_name": "google_bigquery_table",
-        "constructor": "NewGoogleBigQueryTableListResource"
-      }
-    ],
-    "cloudrun": [
-      {
-        "file": "google/services/cloudrun/list_cloud_run_service.go",
-        "type_name": "google_cloud_run_service",
-        "constructor": "NewCloudRunServiceListResource"
-      }
-    ],
-    "cloudscheduler": [
-      {
-        "file": "google/services/cloudscheduler/list_cloud_scheduler_job.go",
-        "type_name": "google_cloud_scheduler_job",
-        "constructor": "NewCloudSchedulerJobListResource"
-      }
-    ],
-    "colab": [
-      {
-        "file": "google/services/colab/list_colab_notebook_execution.go",
-        "type_name": "google_colab_notebook_execution",
-        "constructor": "NewColabNotebookExecutionListResource"
-      },
-      {
-        "file": "google/services/colab/list_colab_runtime.go",
-        "type_name": "google_colab_runtime",
-        "constructor": "NewColabRuntimeListResource"
-      },
-      {
-        "file": "google/services/colab/list_colab_runtime_template.go",
-        "type_name": "google_colab_runtime_template",
-        "constructor": "NewColabRuntimeTemplateListResource"
-      },
-      {
-        "file": "google/services/colab/list_colab_schedule.go",
-        "type_name": "google_colab_schedule",
-        "constructor": "NewColabScheduleListResource"
-      }
-    ],
-    "compute": [
-      {
-        "file": "google/services/compute/list_compute_address.go",
-        "type_name": "google_compute_address",
-        "constructor": "NewComputeAddressListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_backend_bucket_signed_url_key.go",
-        "type_name": "google_compute_backend_bucket_signed_url_key",
-        "constructor": "NewComputeBackendBucketSignedUrlKeyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_backend_service_signed_url_key.go",
-        "type_name": "google_compute_backend_service_signed_url_key",
-        "constructor": "NewComputeBackendServiceSignedUrlKeyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_cross_site_network.go",
-        "type_name": "google_compute_cross_site_network",
-        "constructor": "NewComputeCrossSiteNetworkListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_disk.go",
-        "type_name": "google_compute_disk",
-        "constructor": "NewComputeDiskListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_external_vpn_gateway.go",
-        "type_name": "google_compute_external_vpn_gateway",
-        "constructor": "NewComputeExternalVpnGatewayListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_firewall.go",
-        "type_name": "google_compute_firewall",
-        "constructor": "NewComputeFirewallListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_global_address.go",
-        "type_name": "google_compute_global_address",
-        "constructor": "NewComputeGlobalAddressListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_global_network_endpoint_group.go",
-        "type_name": "google_compute_global_network_endpoint_group",
-        "constructor": "NewComputeGlobalNetworkEndpointGroupListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_ha_vpn_gateway.go",
-        "type_name": "google_compute_ha_vpn_gateway",
-        "constructor": "NewComputeHaVpnGatewayListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_https_health_check.go",
-        "type_name": "google_compute_https_health_check",
-        "constructor": "NewComputeHttpsHealthCheckListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_image.go",
-        "type_name": "google_compute_image",
-        "constructor": "NewComputeImageListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_instant_snapshot.go",
-        "type_name": "google_compute_instant_snapshot",
-        "constructor": "NewComputeInstantSnapshotListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_interconnect_attachment_group.go",
-        "type_name": "google_compute_interconnect_attachment_group",
-        "constructor": "NewComputeInterconnectAttachmentGroupListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_interconnect_group.go",
-        "type_name": "google_compute_interconnect_group",
-        "constructor": "NewComputeInterconnectGroupListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_network_firewall_policy.go",
-        "type_name": "google_compute_network_firewall_policy",
-        "constructor": "NewComputeNetworkFirewallPolicyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_network_firewall_policy_association.go",
-        "type_name": "google_compute_network_firewall_policy_association",
-        "constructor": "NewComputeNetworkFirewallPolicyAssociationListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_node_template.go",
-        "type_name": "google_compute_node_template",
-        "constructor": "NewComputeNodeTemplateListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_packet_mirroring.go",
-        "type_name": "google_compute_packet_mirroring",
-        "constructor": "NewComputePacketMirroringListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_preview_feature.go",
-        "type_name": "google_compute_preview_feature",
-        "constructor": "NewComputePreviewFeatureListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_public_advertised_prefix.go",
-        "type_name": "google_compute_public_advertised_prefix",
-        "constructor": "NewComputePublicAdvertisedPrefixListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_public_delegated_prefix.go",
-        "type_name": "google_compute_public_delegated_prefix",
-        "constructor": "NewComputePublicDelegatedPrefixListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_autoscaler.go",
-        "type_name": "google_compute_region_autoscaler",
-        "constructor": "NewComputeRegionAutoscalerListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_commitment.go",
-        "type_name": "google_compute_region_commitment",
-        "constructor": "NewComputeRegionCommitmentListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_composite_health_check.go",
-        "type_name": "google_compute_region_composite_health_check",
-        "constructor": "NewComputeRegionCompositeHealthCheckListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_health_aggregation_policy.go",
-        "type_name": "google_compute_region_health_aggregation_policy",
-        "constructor": "NewComputeRegionHealthAggregationPolicyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_health_source.go",
-        "type_name": "google_compute_region_health_source",
-        "constructor": "NewComputeRegionHealthSourceListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_instant_snapshot.go",
-        "type_name": "google_compute_region_instant_snapshot",
-        "constructor": "NewComputeRegionInstantSnapshotListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_network_endpoint_group.go",
-        "type_name": "google_compute_region_network_endpoint_group",
-        "constructor": "NewComputeRegionNetworkEndpointGroupListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_network_firewall_policy.go",
-        "type_name": "google_compute_region_network_firewall_policy",
-        "constructor": "NewComputeRegionNetworkFirewallPolicyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_target_http_proxy.go",
-        "type_name": "google_compute_region_target_http_proxy",
-        "constructor": "NewComputeRegionTargetHttpProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_target_tcp_proxy.go",
-        "type_name": "google_compute_region_target_tcp_proxy",
-        "constructor": "NewComputeRegionTargetTcpProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_region_url_map.go",
-        "type_name": "google_compute_region_url_map",
-        "constructor": "NewComputeRegionUrlMapListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_rollout_plan.go",
-        "type_name": "google_compute_rollout_plan",
-        "constructor": "NewComputeRolloutPlanListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_snapshot.go",
-        "type_name": "google_compute_snapshot",
-        "constructor": "NewComputeSnapshotListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_subnetwork.go",
-        "type_name": "google_compute_subnetwork",
-        "constructor": "NewComputeSubnetworkListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_target_grpc_proxy.go",
-        "type_name": "google_compute_target_grpc_proxy",
-        "constructor": "NewComputeTargetGrpcProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_target_http_proxy.go",
-        "type_name": "google_compute_target_http_proxy",
-        "constructor": "NewComputeTargetHttpProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_target_ssl_proxy.go",
-        "type_name": "google_compute_target_ssl_proxy",
-        "constructor": "NewComputeTargetSslProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_target_tcp_proxy.go",
-        "type_name": "google_compute_target_tcp_proxy",
-        "constructor": "NewComputeTargetTcpProxyListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_vpn_gateway.go",
-        "type_name": "google_compute_vpn_gateway",
-        "constructor": "NewComputeVpnGatewayListResource"
-      },
-      {
-        "file": "google/services/compute/list_compute_wire_group.go",
-        "type_name": "google_compute_wire_group",
-        "constructor": "NewComputeWireGroupListResource"
-      },
-      {
-        "file": "google/services/compute/list_google_compute_instance.go",
-        "type_name": "google_compute_instance",
-        "constructor": "NewGoogleComputeInstanceListResource"
-      }
-    ],
-    "contactcenterinsights": [
-      {
-        "file": "google/services/contactcenterinsights/list_contact_center_insights_analysis_rule.go",
-        "type_name": "google_contact_center_insights_analysis_rule",
-        "constructor": "NewContactCenterInsightsAnalysisRuleListResource"
-      },
-      {
-        "file": "google/services/contactcenterinsights/list_contact_center_insights_assessment_rule.go",
-        "type_name": "google_contact_center_insights_assessment_rule",
-        "constructor": "NewContactCenterInsightsAssessmentRuleListResource"
-      },
-      {
-        "file": "google/services/contactcenterinsights/list_contact_center_insights_auto_labeling_rule.go",
-        "type_name": "google_contact_center_insights_auto_labeling_rule",
-        "constructor": "NewContactCenterInsightsAutoLabelingRuleListResource"
-      },
-      {
-        "file": "google/services/contactcenterinsights/list_contact_center_insights_qa_scorecard.go",
-        "type_name": "google_contact_center_insights_qa_scorecard",
-        "constructor": "NewContactCenterInsightsQaScorecardListResource"
-      },
-      {
-        "file": "google/services/contactcenterinsights/list_contact_center_insights_view.go",
-        "type_name": "google_contact_center_insights_view",
-        "constructor": "NewContactCenterInsightsViewListResource"
-      }
-    ],
-    "discoveryengine": [
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_assistant.go",
-        "type_name": "google_discovery_engine_assistant",
-        "constructor": "NewDiscoveryEngineAssistantListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_chat_engine.go",
-        "type_name": "google_discovery_engine_chat_engine",
-        "constructor": "NewDiscoveryEngineChatEngineListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_cmek_config.go",
-        "type_name": "google_discovery_engine_cmek_config",
-        "constructor": "NewDiscoveryEngineCmekConfigListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_control.go",
-        "type_name": "google_discovery_engine_control",
-        "constructor": "NewDiscoveryEngineControlListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_data_store.go",
-        "type_name": "google_discovery_engine_data_store",
-        "constructor": "NewDiscoveryEngineDataStoreListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_license_config.go",
-        "type_name": "google_discovery_engine_license_config",
-        "constructor": "NewDiscoveryEngineLicenseConfigListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_recommendation_engine.go",
-        "type_name": "google_discovery_engine_recommendation_engine",
-        "constructor": "NewDiscoveryEngineRecommendationEngineListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_schema.go",
-        "type_name": "google_discovery_engine_schema",
-        "constructor": "NewDiscoveryEngineSchemaListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_search_engine.go",
-        "type_name": "google_discovery_engine_search_engine",
-        "constructor": "NewDiscoveryEngineSearchEngineListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_serving_config.go",
-        "type_name": "google_discovery_engine_serving_config",
-        "constructor": "NewDiscoveryEngineServingConfigListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_sitemap.go",
-        "type_name": "google_discovery_engine_sitemap",
-        "constructor": "NewDiscoveryEngineSitemapListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_target_site.go",
-        "type_name": "google_discovery_engine_target_site",
-        "constructor": "NewDiscoveryEngineTargetSiteListResource"
-      },
-      {
-        "file": "google/services/discoveryengine/list_discovery_engine_user_store.go",
-        "type_name": "google_discovery_engine_user_store",
-        "constructor": "NewDiscoveryEngineUserStoreListResource"
-      }
-    ],
-    "dns": [
-      {
-        "file": "google/services/dns/list_google_dns_managed_zone.go",
-        "type_name": "google_dns_managed_zone",
-        "constructor": "NewGoogleDnsManagedZoneListResource"
-      },
-      {
-        "file": "google/services/dns/list_google_dns_record_set.go",
-        "type_name": "google_dns_record_set",
-        "constructor": "NewGoogleDnsRecordSetListResource"
-      }
-    ],
-    "gkebackup": [
-      {
-        "file": "google/services/gkebackup/list_gke_backup_backup_channel.go",
-        "type_name": "google_gke_backup_backup_channel",
-        "constructor": "NewGKEBackupBackupChannelListResource"
-      },
-      {
-        "file": "google/services/gkebackup/list_gke_backup_backup_plan.go",
-        "type_name": "google_gke_backup_backup_plan",
-        "constructor": "NewGKEBackupBackupPlanListResource"
-      },
-      {
-        "file": "google/services/gkebackup/list_gke_backup_restore_channel.go",
-        "type_name": "google_gke_backup_restore_channel",
-        "constructor": "NewGKEBackupRestoreChannelListResource"
-      },
-      {
-        "file": "google/services/gkebackup/list_gke_backup_restore_plan.go",
-        "type_name": "google_gke_backup_restore_plan",
-        "constructor": "NewGKEBackupRestorePlanListResource"
-      }
-    ],
-    "identityplatform": [
-      {
-        "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
-        "type_name": "google_identity_platform_inbound_saml_config",
-        "constructor": "NewIdentityPlatformInboundSamlConfigListResource"
-      },
-      {
-        "file": "google/services/identityplatform/list_identity_platform_oauth_idp_config.go",
-        "type_name": "google_identity_platform_oauth_idp_config",
-        "constructor": "NewIdentityPlatformOauthIdpConfigListResource"
-      },
-      {
-        "file": "google/services/identityplatform/list_identity_platform_tenant.go",
-        "type_name": "google_identity_platform_tenant",
-        "constructor": "NewIdentityPlatformTenantListResource"
-      }
-    ],
-    "kms": [
-      {
-        "file": "google/services/kms/list_kms_crypto_key_version.go",
-        "type_name": "google_kms_crypto_key_version",
-        "constructor": "NewKMSCryptoKeyVersionListResource"
-      }
-    ],
-    "migrationcenter": [
-      {
-        "file": "google/services/migrationcenter/list_migration_center_assets_export_job.go",
-        "type_name": "google_migration_center_assets_export_job",
-        "constructor": "NewMigrationCenterAssetsExportJobListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_discovery_client.go",
-        "type_name": "google_migration_center_discovery_client",
-        "constructor": "NewMigrationCenterDiscoveryClientListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_group.go",
-        "type_name": "google_migration_center_group",
-        "constructor": "NewMigrationCenterGroupListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_import_job.go",
-        "type_name": "google_migration_center_import_job",
-        "constructor": "NewMigrationCenterImportJobListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_preference_set.go",
-        "type_name": "google_migration_center_preference_set",
-        "constructor": "NewMigrationCenterPreferenceSetListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_report_config.go",
-        "type_name": "google_migration_center_report_config",
-        "constructor": "NewMigrationCenterReportConfigListResource"
-      },
-      {
-        "file": "google/services/migrationcenter/list_migration_center_source.go",
-        "type_name": "google_migration_center_source",
-        "constructor": "NewMigrationCenterSourceListResource"
-      }
-    ],
-    "monitoring": [
-      {
-        "file": "google/services/monitoring/list_monitoring_alert_policy.go",
-        "type_name": "google_monitoring_alert_policy",
-        "constructor": "NewMonitoringAlertPolicyListResource"
-      }
-    ],
-    "networksecurity": [
-      {
-        "file": "google/services/networksecurity/list_network_security_authz_policy.go",
-        "type_name": "google_network_security_authz_policy",
-        "constructor": "NewNetworkSecurityAuthzPolicyListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_intercept_deployment.go",
-        "type_name": "google_network_security_intercept_deployment",
-        "constructor": "NewNetworkSecurityInterceptDeploymentListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_intercept_deployment_group.go",
-        "type_name": "google_network_security_intercept_deployment_group",
-        "constructor": "NewNetworkSecurityInterceptDeploymentGroupListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group.go",
-        "type_name": "google_network_security_intercept_endpoint_group",
-        "constructor": "NewNetworkSecurityInterceptEndpointGroupListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_intercept_endpoint_group_association.go",
-        "type_name": "google_network_security_intercept_endpoint_group_association",
-        "constructor": "NewNetworkSecurityInterceptEndpointGroupAssociationListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_mirroring_deployment.go",
-        "type_name": "google_network_security_mirroring_deployment",
-        "constructor": "NewNetworkSecurityMirroringDeploymentListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_mirroring_deployment_group.go",
-        "type_name": "google_network_security_mirroring_deployment_group",
-        "constructor": "NewNetworkSecurityMirroringDeploymentGroupListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint.go",
-        "type_name": "google_network_security_mirroring_endpoint",
-        "constructor": "NewNetworkSecurityMirroringEndpointListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group.go",
-        "type_name": "google_network_security_mirroring_endpoint_group",
-        "constructor": "NewNetworkSecurityMirroringEndpointGroupListResource"
-      },
-      {
-        "file": "google/services/networksecurity/list_network_security_mirroring_endpoint_group_association.go",
-        "type_name": "google_network_security_mirroring_endpoint_group_association",
-        "constructor": "NewNetworkSecurityMirroringEndpointGroupAssociationListResource"
-      }
-    ],
-    "networkservices": [
-      {
-        "file": "google/services/networkservices/list_network_services_authz_extension.go",
-        "type_name": "google_network_services_authz_extension",
-        "constructor": "NewNetworkServicesAuthzExtensionListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_consumer_association.go",
-        "type_name": "google_network_services_multicast_consumer_association",
-        "constructor": "NewNetworkServicesMulticastConsumerAssociationListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_domain.go",
-        "type_name": "google_network_services_multicast_domain",
-        "constructor": "NewNetworkServicesMulticastDomainListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_domain_activation.go",
-        "type_name": "google_network_services_multicast_domain_activation",
-        "constructor": "NewNetworkServicesMulticastDomainActivationListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_domain_group.go",
-        "type_name": "google_network_services_multicast_domain_group",
-        "constructor": "NewNetworkServicesMulticastDomainGroupListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_group_consumer_activation.go",
-        "type_name": "google_network_services_multicast_group_consumer_activation",
-        "constructor": "NewNetworkServicesMulticastGroupConsumerActivationListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_group_producer_activation.go",
-        "type_name": "google_network_services_multicast_group_producer_activation",
-        "constructor": "NewNetworkServicesMulticastGroupProducerActivationListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_group_range.go",
-        "type_name": "google_network_services_multicast_group_range",
-        "constructor": "NewNetworkServicesMulticastGroupRangeListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_group_range_activation.go",
-        "type_name": "google_network_services_multicast_group_range_activation",
-        "constructor": "NewNetworkServicesMulticastGroupRangeActivationListResource"
-      },
-      {
-        "file": "google/services/networkservices/list_network_services_multicast_producer_association.go",
-        "type_name": "google_network_services_multicast_producer_association",
-        "constructor": "NewNetworkServicesMulticastProducerAssociationListResource"
-      }
-    ],
-    "pubsub": [
-      {
-        "file": "google/services/pubsub/list_iam_pubsub_topic.go",
-        "type_name": null,
-        "constructor": "NewPubsubTopicIamMemberListResource"
-      },
-      {
-        "file": "google/services/pubsub/list_pubsub_subscription.go",
-        "type_name": "google_pubsub_subscription",
-        "constructor": "NewPubsubSubscriptionListResource"
-      },
-      {
-        "file": "google/services/pubsub/list_pubsub_topic.go",
-        "type_name": "google_pubsub_topic",
-        "constructor": "NewPubsubTopicListResource"
-      }
-    ],
-    "resourcemanager": [
-      {
-        "file": "google/services/resourcemanager/list_google_project.go",
-        "type_name": "google_project",
-        "constructor": "NewGoogleProjectListResource"
-      },
-      {
-        "file": "google/services/resourcemanager/list_google_project_iam_custom_role.go",
-        "type_name": "google_project_iam_custom_role",
-        "constructor": "NewGoogleProjectIamCustomRoleListResource"
-      },
-      {
-        "file": "google/services/resourcemanager/list_google_project_service.go",
-        "type_name": "google_project_service",
-        "constructor": "NewGoogleProjectServiceListResource"
-      },
-      {
-        "file": "google/services/resourcemanager/list_google_service_account.go",
-        "type_name": "google_service_account",
-        "constructor": "NewGoogleServiceAccountListResource"
-      },
-      {
-        "file": "google/services/resourcemanager/list_google_service_account_key.go",
-        "type_name": "google_service_account_key",
-        "constructor": "NewGoogleServiceAccountKeyListResource"
-      }
-    ],
-    "secretmanager": [
-      {
-        "file": "google/services/secretmanager/list_google_secret_manager_secret_version.go",
-        "type_name": "google_secret_manager_secret_version",
-        "constructor": "NewGoogleSecretManagerSecretVersionListResource"
-      },
-      {
-        "file": "google/services/secretmanager/list_iam_secret_manager_secret.go",
-        "type_name": null,
-        "constructor": "NewSecretManagerSecretIamMemberListResource"
-      },
-      {
-        "file": "google/services/secretmanager/list_secret_manager_secret.go",
-        "type_name": "google_secret_manager_secret",
-        "constructor": "NewSecretManagerSecretListResource"
-      }
-    ],
-    "sql": [
-      {
-        "file": "google/services/sql/list_sql_database.go",
-        "type_name": "google_sql_database",
-        "constructor": "NewSQLDatabaseListResource"
-      }
-    ],
-    "storage": [
-      {
-        "file": "google/services/storage/list_google_storage_bucket.go",
-        "type_name": "google_storage_bucket",
-        "constructor": "NewGoogleStorageBucketListResource"
-      },
-      {
-        "file": "google/services/storage/list_storage_hmac_key.go",
-        "type_name": "google_storage_hmac_key",
-        "constructor": "NewStorageHmacKeyListResource"
-      }
-    ],
-    "vertexai": [
-      {
-        "file": "google/services/vertexai/list_vertex_ai_dataset.go",
-        "type_name": "google_vertex_ai_dataset",
-        "constructor": "NewVertexAIDatasetListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_deployment_resource_pool.go",
-        "type_name": "google_vertex_ai_deployment_resource_pool",
-        "constructor": "NewVertexAIDeploymentResourcePoolListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_evaluation_metric.go",
-        "type_name": "google_vertex_ai_evaluation_metric",
-        "constructor": "NewVertexAIEvaluationMetricListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_feature_group.go",
-        "type_name": "google_vertex_ai_feature_group",
-        "constructor": "NewVertexAIFeatureGroupListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_feature_online_store.go",
-        "type_name": "google_vertex_ai_feature_online_store",
-        "constructor": "NewVertexAIFeatureOnlineStoreListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_featurestore.go",
-        "type_name": "google_vertex_ai_featurestore",
-        "constructor": "NewVertexAIFeaturestoreListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_index.go",
-        "type_name": "google_vertex_ai_index",
-        "constructor": "NewVertexAIIndexListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_online_evaluator.go",
-        "type_name": "google_vertex_ai_online_evaluator",
-        "constructor": "NewVertexAIOnlineEvaluatorListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_persistent_resource.go",
-        "type_name": "google_vertex_ai_persistent_resource",
-        "constructor": "NewVertexAIPersistentResourceListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_rag_corpus.go",
-        "type_name": "google_vertex_ai_rag_corpus",
-        "constructor": "NewVertexAIRagCorpusListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_reasoning_engine.go",
-        "type_name": "google_vertex_ai_reasoning_engine",
-        "constructor": "NewVertexAIReasoningEngineListResource"
-      },
-      {
-        "file": "google/services/vertexai/list_vertex_ai_tensorboard.go",
-        "type_name": "google_vertex_ai_tensorboard",
-        "constructor": "NewVertexAITensorboardListResource"
-      }
-    ]
-  },
-  "cross_check": {
-    "registered_constructors": [
-      "NewApigeeAddonsConfigListResource",
-      "NewApigeeApiProductListResource",
-      "NewApigeeDataCollectorListResource",
-      "NewApigeeDatastoreListResource",
-      "NewApigeeEndpointAttachmentListResource",
-      "NewApigeeEnvgroupListResource",
-      "NewApigeeEnvironmentKeyvaluemapsListResource",
-      "NewApigeeOrganizationListResource",
-      "NewApigeeTargetServerListResource",
-      "NewAppEngineDomainMappingListResource",
-      "NewAppEngineServiceNetworkSettingsListResource",
-      "NewAppEngineServiceSplitTrafficListResource",
-      "NewBigQueryDatasetAccessListResource",
-      "NewBigQueryDatasetListResource",
-      "NewBigqueryDatasetIamMemberListResource",
-      "NewCloudRunServiceListResource",
-      "NewCloudSchedulerJobListResource",
-      "NewColabNotebookExecutionListResource",
-      "NewColabRuntimeListResource",
-      "NewColabRuntimeTemplateListResource",
-      "NewColabScheduleListResource",
-      "NewComputeAddressListResource",
-      "NewComputeBackendBucketSignedUrlKeyListResource",
-      "NewComputeBackendServiceSignedUrlKeyListResource",
-      "NewComputeCrossSiteNetworkListResource",
-      "NewComputeDiskListResource",
-      "NewComputeExternalVpnGatewayListResource",
-      "NewComputeFirewallListResource",
-      "NewComputeGlobalAddressListResource",
-      "NewComputeGlobalNetworkEndpointGroupListResource",
-      "NewComputeHaVpnGatewayListResource",
-      "NewComputeHttpsHealthCheckListResource",
-      "NewComputeImageListResource",
-      "NewComputeInstantSnapshotListResource",
-      "NewComputeInterconnectAttachmentGroupListResource",
-      "NewComputeInterconnectGroupListResource",
-      "NewComputeNetworkFirewallPolicyAssociationListResource",
-      "NewComputeNetworkFirewallPolicyListResource",
-      "NewComputeNodeTemplateListResource",
-      "NewComputePacketMirroringListResource",
-      "NewComputePreviewFeatureListResource",
-      "NewComputePublicAdvertisedPrefixListResource",
-      "NewComputePublicDelegatedPrefixListResource",
-      "NewComputeRegionAutoscalerListResource",
-      "NewComputeRegionCommitmentListResource",
-      "NewComputeRegionCompositeHealthCheckListResource",
-      "NewComputeRegionHealthAggregationPolicyListResource",
-      "NewComputeRegionHealthSourceListResource",
-      "NewComputeRegionInstantSnapshotListResource",
-      "NewComputeRegionNetworkEndpointGroupListResource",
-      "NewComputeRegionNetworkFirewallPolicyListResource",
-      "NewComputeRegionTargetHttpProxyListResource",
-      "NewComputeRegionTargetTcpProxyListResource",
-      "NewComputeRegionUrlMapListResource",
-      "NewComputeRolloutPlanListResource",
-      "NewComputeSnapshotListResource",
-      "NewComputeSubnetworkListResource",
-      "NewComputeTargetGrpcProxyListResource",
-      "NewComputeTargetHttpProxyListResource",
-      "NewComputeTargetSslProxyListResource",
-      "NewComputeTargetTcpProxyListResource",
-      "NewComputeVpnGatewayListResource",
-      "NewComputeWireGroupListResource",
-      "NewContactCenterInsightsAnalysisRuleListResource",
-      "NewContactCenterInsightsAssessmentRuleListResource",
-      "NewContactCenterInsightsAutoLabelingRuleListResource",
-      "NewContactCenterInsightsQaScorecardListResource",
-      "NewContactCenterInsightsViewListResource",
-      "NewDiscoveryEngineAssistantListResource",
-      "NewDiscoveryEngineChatEngineListResource",
-      "NewDiscoveryEngineCmekConfigListResource",
-      "NewDiscoveryEngineControlListResource",
-      "NewDiscoveryEngineDataStoreListResource",
-      "NewDiscoveryEngineLicenseConfigListResource",
-      "NewDiscoveryEngineRecommendationEngineListResource",
-      "NewDiscoveryEngineSchemaListResource",
-      "NewDiscoveryEngineSearchEngineListResource",
-      "NewDiscoveryEngineServingConfigListResource",
-      "NewDiscoveryEngineSitemapListResource",
-      "NewDiscoveryEngineTargetSiteListResource",
-      "NewDiscoveryEngineUserStoreListResource",
-      "NewFolderIamMemberListResource",
-      "NewGKEBackupBackupChannelListResource",
-      "NewGKEBackupBackupPlanListResource",
-      "NewGKEBackupRestoreChannelListResource",
-      "NewGKEBackupRestorePlanListResource",
-      "NewGoogleBigQueryTableListResource",
-      "NewGoogleComputeInstanceListResource",
-      "NewGoogleDnsManagedZoneListResource",
-      "NewGoogleDnsRecordSetListResource",
-      "NewGoogleProjectIamCustomRoleListResource",
-      "NewGoogleProjectListResource",
-      "NewGoogleProjectServiceListResource",
-      "NewGoogleSecretManagerSecretVersionListResource",
-      "NewGoogleServiceAccountKeyListResource",
-      "NewGoogleServiceAccountListResource",
-      "NewGoogleStorageBucketListResource",
-      "NewIdentityPlatformInboundSamlConfigListResource",
-      "NewIdentityPlatformOauthIdpConfigListResource",
-      "NewIdentityPlatformTenantListResource",
-      "NewKMSCryptoKeyVersionListResource",
-      "NewMigrationCenterAssetsExportJobListResource",
-      "NewMigrationCenterDiscoveryClientListResource",
-      "NewMigrationCenterGroupListResource",
-      "NewMigrationCenterImportJobListResource",
-      "NewMigrationCenterPreferenceSetListResource",
-      "NewMigrationCenterReportConfigListResource",
-      "NewMigrationCenterSourceListResource",
-      "NewMonitoringAlertPolicyListResource",
-      "NewNetworkSecurityAuthzPolicyListResource",
-      "NewNetworkSecurityInterceptDeploymentGroupListResource",
-      "NewNetworkSecurityInterceptDeploymentListResource",
-      "NewNetworkSecurityInterceptEndpointGroupAssociationListResource",
-      "NewNetworkSecurityInterceptEndpointGroupListResource",
-      "NewNetworkSecurityMirroringDeploymentGroupListResource",
-      "NewNetworkSecurityMirroringDeploymentListResource",
-      "NewNetworkSecurityMirroringEndpointGroupAssociationListResource",
-      "NewNetworkSecurityMirroringEndpointGroupListResource",
-      "NewNetworkSecurityMirroringEndpointListResource",
-      "NewNetworkServicesAuthzExtensionListResource",
-      "NewNetworkServicesMulticastConsumerAssociationListResource",
-      "NewNetworkServicesMulticastDomainActivationListResource",
-      "NewNetworkServicesMulticastDomainGroupListResource",
-      "NewNetworkServicesMulticastDomainListResource",
-      "NewNetworkServicesMulticastGroupConsumerActivationListResource",
-      "NewNetworkServicesMulticastGroupProducerActivationListResource",
-      "NewNetworkServicesMulticastGroupRangeActivationListResource",
-      "NewNetworkServicesMulticastGroupRangeListResource",
-      "NewNetworkServicesMulticastProducerAssociationListResource",
-      "NewProjectIamBindingListResource",
-      "NewProjectIamMemberListResource",
-      "NewPubsubSubscriptionIamMemberListResource",
-      "NewPubsubSubscriptionListResource",
-      "NewPubsubTopicIamMemberListResource",
-      "NewPubsubTopicListResource",
-      "NewSQLDatabaseListResource",
-      "NewSecretManagerSecretIamMemberListResource",
-      "NewSecretManagerSecretListResource",
-      "NewServiceAccountIamMemberListResource",
-      "NewStorageBucketIamMemberListResource",
-      "NewStorageHmacKeyListResource",
-      "NewVertexAIDatasetListResource",
-      "NewVertexAIDeploymentResourcePoolListResource",
-      "NewVertexAIEvaluationMetricListResource",
-      "NewVertexAIFeatureGroupListResource",
-      "NewVertexAIFeatureOnlineStoreListResource",
-      "NewVertexAIFeaturestoreListResource",
-      "NewVertexAIIndexListResource",
-      "NewVertexAIOnlineEvaluatorListResource",
-      "NewVertexAIPersistentResourceListResource",
-      "NewVertexAIRagCorpusListResource",
-      "NewVertexAIReasoningEngineListResource",
-      "NewVertexAITensorboardListResource"
-    ],
-    "file_constructors": [
-      "NewApigeeAddonsConfigListResource",
-      "NewApigeeApiProductListResource",
-      "NewApigeeDataCollectorListResource",
-      "NewApigeeDatastoreListResource",
-      "NewApigeeEndpointAttachmentListResource",
-      "NewApigeeEnvgroupListResource",
-      "NewApigeeEnvironmentKeyvaluemapsListResource",
-      "NewApigeeOrganizationListResource",
-      "NewApigeeTargetServerListResource",
-      "NewAppEngineDomainMappingListResource",
-      "NewAppEngineServiceNetworkSettingsListResource",
-      "NewAppEngineServiceSplitTrafficListResource",
-      "NewBigQueryDatasetAccessListResource",
-      "NewBigQueryDatasetListResource",
-      "NewCloudRunServiceListResource",
-      "NewCloudSchedulerJobListResource",
-      "NewColabNotebookExecutionListResource",
-      "NewColabRuntimeListResource",
-      "NewColabRuntimeTemplateListResource",
-      "NewColabScheduleListResource",
-      "NewComputeAddressListResource",
-      "NewComputeBackendBucketSignedUrlKeyListResource",
-      "NewComputeBackendServiceSignedUrlKeyListResource",
-      "NewComputeCrossSiteNetworkListResource",
-      "NewComputeDiskListResource",
-      "NewComputeExternalVpnGatewayListResource",
-      "NewComputeFirewallListResource",
-      "NewComputeGlobalAddressListResource",
-      "NewComputeGlobalNetworkEndpointGroupListResource",
-      "NewComputeHaVpnGatewayListResource",
-      "NewComputeHttpsHealthCheckListResource",
-      "NewComputeImageListResource",
-      "NewComputeInstantSnapshotListResource",
-      "NewComputeInterconnectAttachmentGroupListResource",
-      "NewComputeInterconnectGroupListResource",
-      "NewComputeNetworkFirewallPolicyAssociationListResource",
-      "NewComputeNetworkFirewallPolicyListResource",
-      "NewComputeNodeTemplateListResource",
-      "NewComputePacketMirroringListResource",
-      "NewComputePreviewFeatureListResource",
-      "NewComputePublicAdvertisedPrefixListResource",
-      "NewComputePublicDelegatedPrefixListResource",
-      "NewComputeRegionAutoscalerListResource",
-      "NewComputeRegionCommitmentListResource",
-      "NewComputeRegionCompositeHealthCheckListResource",
-      "NewComputeRegionHealthAggregationPolicyListResource",
-      "NewComputeRegionHealthSourceListResource",
-      "NewComputeRegionInstantSnapshotListResource",
-      "NewComputeRegionNetworkEndpointGroupListResource",
-      "NewComputeRegionNetworkFirewallPolicyListResource",
-      "NewComputeRegionTargetHttpProxyListResource",
-      "NewComputeRegionTargetTcpProxyListResource",
-      "NewComputeRegionUrlMapListResource",
-      "NewComputeRolloutPlanListResource",
-      "NewComputeSnapshotListResource",
-      "NewComputeSubnetworkListResource",
-      "NewComputeTargetGrpcProxyListResource",
-      "NewComputeTargetHttpProxyListResource",
-      "NewComputeTargetSslProxyListResource",
-      "NewComputeTargetTcpProxyListResource",
-      "NewComputeVpnGatewayListResource",
-      "NewComputeWireGroupListResource",
-      "NewContactCenterInsightsAnalysisRuleListResource",
-      "NewContactCenterInsightsAssessmentRuleListResource",
-      "NewContactCenterInsightsAutoLabelingRuleListResource",
-      "NewContactCenterInsightsQaScorecardListResource",
-      "NewContactCenterInsightsViewListResource",
-      "NewDiscoveryEngineAssistantListResource",
-      "NewDiscoveryEngineChatEngineListResource",
-      "NewDiscoveryEngineCmekConfigListResource",
-      "NewDiscoveryEngineControlListResource",
-      "NewDiscoveryEngineDataStoreListResource",
-      "NewDiscoveryEngineLicenseConfigListResource",
-      "NewDiscoveryEngineRecommendationEngineListResource",
-      "NewDiscoveryEngineSchemaListResource",
-      "NewDiscoveryEngineSearchEngineListResource",
-      "NewDiscoveryEngineServingConfigListResource",
-      "NewDiscoveryEngineSitemapListResource",
-      "NewDiscoveryEngineTargetSiteListResource",
-      "NewDiscoveryEngineUserStoreListResource",
-      "NewGKEBackupBackupChannelListResource",
-      "NewGKEBackupBackupPlanListResource",
-      "NewGKEBackupRestoreChannelListResource",
-      "NewGKEBackupRestorePlanListResource",
-      "NewGoogleBigQueryTableListResource",
-      "NewGoogleComputeInstanceListResource",
-      "NewGoogleDnsManagedZoneListResource",
-      "NewGoogleDnsRecordSetListResource",
-      "NewGoogleProjectIamCustomRoleListResource",
-      "NewGoogleProjectListResource",
-      "NewGoogleProjectServiceListResource",
-      "NewGoogleSecretManagerSecretVersionListResource",
-      "NewGoogleServiceAccountKeyListResource",
-      "NewGoogleServiceAccountListResource",
-      "NewGoogleStorageBucketListResource",
-      "NewIdentityPlatformInboundSamlConfigListResource",
-      "NewIdentityPlatformOauthIdpConfigListResource",
-      "NewIdentityPlatformTenantListResource",
-      "NewKMSCryptoKeyVersionListResource",
-      "NewMigrationCenterAssetsExportJobListResource",
-      "NewMigrationCenterDiscoveryClientListResource",
-      "NewMigrationCenterGroupListResource",
-      "NewMigrationCenterImportJobListResource",
-      "NewMigrationCenterPreferenceSetListResource",
-      "NewMigrationCenterReportConfigListResource",
-      "NewMigrationCenterSourceListResource",
-      "NewMonitoringAlertPolicyListResource",
-      "NewNetworkSecurityAuthzPolicyListResource",
-      "NewNetworkSecurityInterceptDeploymentGroupListResource",
-      "NewNetworkSecurityInterceptDeploymentListResource",
-      "NewNetworkSecurityInterceptEndpointGroupAssociationListResource",
-      "NewNetworkSecurityInterceptEndpointGroupListResource",
-      "NewNetworkSecurityMirroringDeploymentGroupListResource",
-      "NewNetworkSecurityMirroringDeploymentListResource",
-      "NewNetworkSecurityMirroringEndpointGroupAssociationListResource",
-      "NewNetworkSecurityMirroringEndpointGroupListResource",
-      "NewNetworkSecurityMirroringEndpointListResource",
-      "NewNetworkServicesAuthzExtensionListResource",
-      "NewNetworkServicesMulticastConsumerAssociationListResource",
-      "NewNetworkServicesMulticastDomainActivationListResource",
-      "NewNetworkServicesMulticastDomainGroupListResource",
-      "NewNetworkServicesMulticastDomainListResource",
-      "NewNetworkServicesMulticastGroupConsumerActivationListResource",
-      "NewNetworkServicesMulticastGroupProducerActivationListResource",
-      "NewNetworkServicesMulticastGroupRangeActivationListResource",
-      "NewNetworkServicesMulticastGroupRangeListResource",
-      "NewNetworkServicesMulticastProducerAssociationListResource",
-      "NewPubsubSubscriptionListResource",
-      "NewPubsubTopicIamMemberListResource",
-      "NewPubsubTopicListResource",
-      "NewSQLDatabaseListResource",
-      "NewSecretManagerSecretIamMemberListResource",
-      "NewSecretManagerSecretListResource",
-      "NewStorageHmacKeyListResource",
-      "NewVertexAIDatasetListResource",
-      "NewVertexAIDeploymentResourcePoolListResource",
-      "NewVertexAIEvaluationMetricListResource",
-      "NewVertexAIFeatureGroupListResource",
-      "NewVertexAIFeatureOnlineStoreListResource",
-      "NewVertexAIFeaturestoreListResource",
-      "NewVertexAIIndexListResource",
-      "NewVertexAIOnlineEvaluatorListResource",
-      "NewVertexAIPersistentResourceListResource",
-      "NewVertexAIRagCorpusListResource",
-      "NewVertexAIReasoningEngineListResource",
-      "NewVertexAITensorboardListResource"
-    ],
-    "file_type_names": [
-      "google_apigee_addons_config",
-      "google_apigee_api_product",
-      "google_apigee_data_collector",
-      "google_apigee_datastore",
-      "google_apigee_endpoint_attachment",
-      "google_apigee_envgroup",
-      "google_apigee_environment_keyvaluemaps",
-      "google_apigee_organization",
-      "google_apigee_target_server",
-      "google_app_engine_domain_mapping",
-      "google_app_engine_service_network_settings",
-      "google_app_engine_service_split_traffic",
-      "google_bigquery_dataset",
-      "google_bigquery_dataset_access",
-      "google_bigquery_table",
-      "google_cloud_run_service",
-      "google_cloud_scheduler_job",
-      "google_colab_notebook_execution",
-      "google_colab_runtime",
-      "google_colab_runtime_template",
-      "google_colab_schedule",
-      "google_compute_address",
-      "google_compute_backend_bucket_signed_url_key",
-      "google_compute_backend_service_signed_url_key",
-      "google_compute_cross_site_network",
-      "google_compute_disk",
-      "google_compute_external_vpn_gateway",
-      "google_compute_firewall",
-      "google_compute_global_address",
-      "google_compute_global_network_endpoint_group",
-      "google_compute_ha_vpn_gateway",
-      "google_compute_https_health_check",
-      "google_compute_image",
-      "google_compute_instance",
-      "google_compute_instant_snapshot",
-      "google_compute_interconnect_attachment_group",
-      "google_compute_interconnect_group",
-      "google_compute_network_firewall_policy",
-      "google_compute_network_firewall_policy_association",
-      "google_compute_node_template",
-      "google_compute_packet_mirroring",
-      "google_compute_preview_feature",
-      "google_compute_public_advertised_prefix",
-      "google_compute_public_delegated_prefix",
-      "google_compute_region_autoscaler",
-      "google_compute_region_commitment",
-      "google_compute_region_composite_health_check",
-      "google_compute_region_health_aggregation_policy",
-      "google_compute_region_health_source",
-      "google_compute_region_instant_snapshot",
-      "google_compute_region_network_endpoint_group",
-      "google_compute_region_network_firewall_policy",
-      "google_compute_region_target_http_proxy",
-      "google_compute_region_target_tcp_proxy",
-      "google_compute_region_url_map",
-      "google_compute_rollout_plan",
-      "google_compute_snapshot",
-      "google_compute_subnetwork",
-      "google_compute_target_grpc_proxy",
-      "google_compute_target_http_proxy",
-      "google_compute_target_ssl_proxy",
-      "google_compute_target_tcp_proxy",
-      "google_compute_vpn_gateway",
-      "google_compute_wire_group",
-      "google_contact_center_insights_analysis_rule",
-      "google_contact_center_insights_assessment_rule",
-      "google_contact_center_insights_auto_labeling_rule",
-      "google_contact_center_insights_qa_scorecard",
-      "google_contact_center_insights_view",
-      "google_discovery_engine_assistant",
-      "google_discovery_engine_chat_engine",
-      "google_discovery_engine_cmek_config",
-      "google_discovery_engine_control",
-      "google_discovery_engine_data_store",
-      "google_discovery_engine_license_config",
-      "google_discovery_engine_recommendation_engine",
-      "google_discovery_engine_schema",
-      "google_discovery_engine_search_engine",
-      "google_discovery_engine_serving_config",
-      "google_discovery_engine_sitemap",
-      "google_discovery_engine_target_site",
-      "google_discovery_engine_user_store",
-      "google_dns_managed_zone",
-      "google_dns_record_set",
-      "google_gke_backup_backup_channel",
-      "google_gke_backup_backup_plan",
-      "google_gke_backup_restore_channel",
-      "google_gke_backup_restore_plan",
-      "google_identity_platform_inbound_saml_config",
-      "google_identity_platform_oauth_idp_config",
-      "google_identity_platform_tenant",
-      "google_kms_crypto_key_version",
-      "google_migration_center_assets_export_job",
-      "google_migration_center_discovery_client",
-      "google_migration_center_group",
-      "google_migration_center_import_job",
-      "google_migration_center_preference_set",
-      "google_migration_center_report_config",
-      "google_migration_center_source",
-      "google_monitoring_alert_policy",
-      "google_network_security_authz_policy",
-      "google_network_security_intercept_deployment",
-      "google_network_security_intercept_deployment_group",
-      "google_network_security_intercept_endpoint_group",
-      "google_network_security_intercept_endpoint_group_association",
-      "google_network_security_mirroring_deployment",
-      "google_network_security_mirroring_deployment_group",
-      "google_network_security_mirroring_endpoint",
-      "google_network_security_mirroring_endpoint_group",
-      "google_network_security_mirroring_endpoint_group_association",
-      "google_network_services_authz_extension",
-      "google_network_services_multicast_consumer_association",
-      "google_network_services_multicast_domain",
-      "google_network_services_multicast_domain_activation",
-      "google_network_services_multicast_domain_group",
-      "google_network_services_multicast_group_consumer_activation",
-      "google_network_services_multicast_group_producer_activation",
-      "google_network_services_multicast_group_range",
-      "google_network_services_multicast_group_range_activation",
-      "google_network_services_multicast_producer_association",
-      "google_project",
-      "google_project_iam_custom_role",
-      "google_project_service",
-      "google_pubsub_subscription",
-      "google_pubsub_topic",
-      "google_secret_manager_secret",
-      "google_secret_manager_secret_version",
-      "google_service_account",
-      "google_service_account_key",
-      "google_sql_database",
-      "google_storage_bucket",
-      "google_storage_hmac_key",
-      "google_vertex_ai_dataset",
-      "google_vertex_ai_deployment_resource_pool",
-      "google_vertex_ai_evaluation_metric",
-      "google_vertex_ai_feature_group",
-      "google_vertex_ai_feature_online_store",
-      "google_vertex_ai_featurestore",
-      "google_vertex_ai_index",
-      "google_vertex_ai_online_evaluator",
-      "google_vertex_ai_persistent_resource",
-      "google_vertex_ai_rag_corpus",
-      "google_vertex_ai_reasoning_engine",
-      "google_vertex_ai_tensorboard"
-    ],
-    "missing_files_for_registration": [
-      "NewBigqueryDatasetIamMemberListResource",
-      "NewFolderIamMemberListResource",
-      "NewProjectIamBindingListResource",
-      "NewProjectIamMemberListResource",
-      "NewPubsubSubscriptionIamMemberListResource",
-      "NewServiceAccountIamMemberListResource",
-      "NewStorageBucketIamMemberListResource"
-    ],
-    "orphan_files_without_registration": [],
-    "registration_count": 153,
-    "file_type_name_count": 144,
-    "signals_agree": false
-  },
   "service_coverage": {
-    "services_with_list": 23,
+    "services_with_list": 28,
     "rows": [
       {
-        "service": "compute",
-        "list_resources": 43
+        "service": "Compute",
+        "list_resources": 42
       },
       {
-        "service": "discoveryengine",
+        "service": "DiscoveryEngine",
         "list_resources": 13
       },
       {
-        "service": "vertexai",
+        "service": "VertexAI",
         "list_resources": 12
       },
       {
-        "service": "networksecurity",
+        "service": "NetworkSecurity",
         "list_resources": 10
       },
       {
-        "service": "networkservices",
+        "service": "NetworkServices",
         "list_resources": 10
       },
       {
-        "service": "apigee",
+        "service": "Apigee",
         "list_resources": 9
       },
       {
-        "service": "migrationcenter",
+        "service": "resourcemanager",
+        "list_resources": 9
+      },
+      {
+        "service": "MigrationCenter",
         "list_resources": 7
       },
       {
-        "service": "contactcenterinsights",
+        "service": "ContactCenterInsights",
         "list_resources": 5
       },
       {
-        "service": "resourcemanager",
-        "list_resources": 5
-      },
-      {
-        "service": "colab",
+        "service": "Colab",
         "list_resources": 4
       },
       {
-        "service": "gkebackup",
+        "service": "GKEBackup",
         "list_resources": 4
       },
       {
-        "service": "appengine",
+        "service": "AppEngine",
         "list_resources": 3
+      },
+      {
+        "service": "IdentityPlatform",
+        "list_resources": 3
+      },
+      {
+        "service": "Pubsub",
+        "list_resources": 3
+      },
+      {
+        "service": "BigQuery",
+        "list_resources": 2
+      },
+      {
+        "service": "SecretManager",
+        "list_resources": 2
       },
       {
         "service": "bigquery",
-        "list_resources": 3
-      },
-      {
-        "service": "identityplatform",
-        "list_resources": 3
+        "list_resources": 2
       },
       {
         "service": "dns",
-        "list_resources": 2
-      },
-      {
-        "service": "pubsub",
-        "list_resources": 2
-      },
-      {
-        "service": "secretmanager",
         "list_resources": 2
       },
       {
@@ -3172,28 +2147,44 @@
         "list_resources": 2
       },
       {
-        "service": "cloudrun",
+        "service": "CloudRun",
         "list_resources": 1
       },
       {
-        "service": "cloudscheduler",
+        "service": "CloudScheduler",
         "list_resources": 1
       },
       {
-        "service": "kms",
+        "service": "KMS",
         "list_resources": 1
       },
       {
-        "service": "monitoring",
+        "service": "Monitoring",
         "list_resources": 1
       },
       {
-        "service": "sql",
+        "service": "SQL",
+        "list_resources": 1
+      },
+      {
+        "service": "Storage",
+        "list_resources": 1
+      },
+      {
+        "service": "compute",
+        "list_resources": 1
+      },
+      {
+        "service": "pubsub",
+        "list_resources": 1
+      },
+      {
+        "service": "secretmanager",
         "list_resources": 1
       }
     ],
     "service_resources": {
-      "apigee": {
+      "Apigee": {
         "list_resources": [
           "google_apigee_addons_config",
           "google_apigee_api_product",
@@ -3206,31 +2197,36 @@
           "google_apigee_target_server"
         ]
       },
-      "appengine": {
+      "AppEngine": {
         "list_resources": [
           "google_app_engine_domain_mapping",
           "google_app_engine_service_network_settings",
           "google_app_engine_service_split_traffic"
         ]
       },
-      "bigquery": {
+      "BigQuery": {
         "list_resources": [
           "google_bigquery_dataset",
-          "google_bigquery_dataset_access",
+          "google_bigquery_dataset_access"
+        ]
+      },
+      "bigquery": {
+        "list_resources": [
+          "google_bigquery_dataset_iam_member",
           "google_bigquery_table"
         ]
       },
-      "cloudrun": {
+      "CloudRun": {
         "list_resources": [
           "google_cloud_run_service"
         ]
       },
-      "cloudscheduler": {
+      "CloudScheduler": {
         "list_resources": [
           "google_cloud_scheduler_job"
         ]
       },
-      "colab": {
+      "Colab": {
         "list_resources": [
           "google_colab_notebook_execution",
           "google_colab_runtime",
@@ -3238,7 +2234,7 @@
           "google_colab_schedule"
         ]
       },
-      "compute": {
+      "Compute": {
         "list_resources": [
           "google_compute_address",
           "google_compute_backend_bucket_signed_url_key",
@@ -3252,7 +2248,6 @@
           "google_compute_ha_vpn_gateway",
           "google_compute_https_health_check",
           "google_compute_image",
-          "google_compute_instance",
           "google_compute_instant_snapshot",
           "google_compute_interconnect_attachment_group",
           "google_compute_interconnect_group",
@@ -3285,7 +2280,12 @@
           "google_compute_wire_group"
         ]
       },
-      "contactcenterinsights": {
+      "compute": {
+        "list_resources": [
+          "google_compute_instance"
+        ]
+      },
+      "ContactCenterInsights": {
         "list_resources": [
           "google_contact_center_insights_analysis_rule",
           "google_contact_center_insights_assessment_rule",
@@ -3294,7 +2294,7 @@
           "google_contact_center_insights_view"
         ]
       },
-      "discoveryengine": {
+      "DiscoveryEngine": {
         "list_resources": [
           "google_discovery_engine_assistant",
           "google_discovery_engine_chat_engine",
@@ -3317,7 +2317,20 @@
           "google_dns_record_set"
         ]
       },
-      "gkebackup": {
+      "resourcemanager": {
+        "list_resources": [
+          "google_folder_iam_member",
+          "google_project",
+          "google_project_iam_binding",
+          "google_project_iam_custom_role",
+          "google_project_iam_member",
+          "google_project_service",
+          "google_service_account",
+          "google_service_account_iam_member",
+          "google_service_account_key"
+        ]
+      },
+      "GKEBackup": {
         "list_resources": [
           "google_gke_backup_backup_channel",
           "google_gke_backup_backup_plan",
@@ -3325,19 +2338,19 @@
           "google_gke_backup_restore_plan"
         ]
       },
-      "identityplatform": {
+      "IdentityPlatform": {
         "list_resources": [
           "google_identity_platform_inbound_saml_config",
           "google_identity_platform_oauth_idp_config",
           "google_identity_platform_tenant"
         ]
       },
-      "kms": {
+      "KMS": {
         "list_resources": [
           "google_kms_crypto_key_version"
         ]
       },
-      "migrationcenter": {
+      "MigrationCenter": {
         "list_resources": [
           "google_migration_center_assets_export_job",
           "google_migration_center_discovery_client",
@@ -3348,12 +2361,12 @@
           "google_migration_center_source"
         ]
       },
-      "monitoring": {
+      "Monitoring": {
         "list_resources": [
           "google_monitoring_alert_policy"
         ]
       },
-      "networksecurity": {
+      "NetworkSecurity": {
         "list_resources": [
           "google_network_security_authz_policy",
           "google_network_security_intercept_deployment",
@@ -3367,7 +2380,7 @@
           "google_network_security_mirroring_endpoint_group_association"
         ]
       },
-      "networkservices": {
+      "NetworkServices": {
         "list_resources": [
           "google_network_services_authz_extension",
           "google_network_services_multicast_consumer_association",
@@ -3381,28 +2394,30 @@
           "google_network_services_multicast_producer_association"
         ]
       },
-      "pubsub": {
+      "Pubsub": {
         "list_resources": [
           "google_pubsub_subscription",
-          "google_pubsub_topic"
+          "google_pubsub_topic",
+          "google_pubsub_topic_iam_member"
         ]
       },
-      "resourcemanager": {
+      "pubsub": {
         "list_resources": [
-          "google_project",
-          "google_project_iam_custom_role",
-          "google_project_service",
-          "google_service_account",
-          "google_service_account_key"
+          "google_pubsub_subscription_iam_member"
+        ]
+      },
+      "SecretManager": {
+        "list_resources": [
+          "google_secret_manager_secret",
+          "google_secret_manager_secret_iam_member"
         ]
       },
       "secretmanager": {
         "list_resources": [
-          "google_secret_manager_secret",
           "google_secret_manager_secret_version"
         ]
       },
-      "sql": {
+      "SQL": {
         "list_resources": [
           "google_sql_database"
         ]
@@ -3410,10 +2425,15 @@
       "storage": {
         "list_resources": [
           "google_storage_bucket",
+          "google_storage_bucket_iam_member"
+        ]
+      },
+      "Storage": {
+        "list_resources": [
           "google_storage_hmac_key"
         ]
       },
-      "vertexai": {
+      "VertexAI": {
         "list_resources": [
           "google_vertex_ai_dataset",
           "google_vertex_ai_deployment_resource_pool",
@@ -3432,336 +2452,12 @@
     }
   },
   "validation": {
-    "matches": false,
+    "matches": true,
+    "schema_list_resources": 153,
+    "schema_identity_resources": 950,
+    "schema_provider_version": "8.9.0",
     "dashboard_list_resources": 159,
-    "code_list_resources": 144,
     "registered_count": 153,
-    "signals_agree": false,
-    "dashboard_list_resource_names": [
-      "google_apigee_addons_config",
-      "google_apigee_api_product",
-      "google_apigee_data_collector",
-      "google_apigee_datastore",
-      "google_apigee_endpoint_attachment",
-      "google_apigee_envgroup",
-      "google_apigee_environment_keyvaluemaps",
-      "google_apigee_organization",
-      "google_apigee_target_server",
-      "google_app_engine_domain_mapping",
-      "google_app_engine_service_network_settings",
-      "google_app_engine_service_split_traffic",
-      "google_bigquery_dataset",
-      "google_bigquery_dataset_access",
-      "google_bigquery_dataset_iam_member",
-      "google_bigquery_table",
-      "google_cloud_run_service",
-      "google_cloud_scheduler_job",
-      "google_colab_notebook_execution",
-      "google_colab_runtime",
-      "google_colab_runtime_template",
-      "google_colab_schedule",
-      "google_compute_address",
-      "google_compute_backend_bucket_signed_url_key",
-      "google_compute_backend_service_signed_url_key",
-      "google_compute_cross_site_network",
-      "google_compute_disk",
-      "google_compute_external_vpn_gateway",
-      "google_compute_firewall",
-      "google_compute_global_address",
-      "google_compute_global_network_endpoint_group",
-      "google_compute_ha_vpn_gateway",
-      "google_compute_https_health_check",
-      "google_compute_image",
-      "google_compute_instance",
-      "google_compute_instant_snapshot",
-      "google_compute_interconnect_attachment_group",
-      "google_compute_interconnect_group",
-      "google_compute_machine_image",
-      "google_compute_network_firewall_policy",
-      "google_compute_network_firewall_policy_association",
-      "google_compute_network_firewall_policy_packet_mirroring_rule",
-      "google_compute_node_template",
-      "google_compute_packet_mirroring",
-      "google_compute_preview_feature",
-      "google_compute_public_advertised_prefix",
-      "google_compute_public_delegated_prefix",
-      "google_compute_region_autoscaler",
-      "google_compute_region_backend_bucket",
-      "google_compute_region_commitment",
-      "google_compute_region_composite_health_check",
-      "google_compute_region_health_aggregation_policy",
-      "google_compute_region_health_source",
-      "google_compute_region_instant_snapshot",
-      "google_compute_region_network_endpoint_group",
-      "google_compute_region_network_firewall_policy",
-      "google_compute_region_target_http_proxy",
-      "google_compute_region_target_tcp_proxy",
-      "google_compute_region_url_map",
-      "google_compute_rollout_plan",
-      "google_compute_snapshot",
-      "google_compute_subnetwork",
-      "google_compute_target_grpc_proxy",
-      "google_compute_target_http_proxy",
-      "google_compute_target_ssl_proxy",
-      "google_compute_target_tcp_proxy",
-      "google_compute_vpn_gateway",
-      "google_compute_wire_group",
-      "google_contact_center_insights_analysis_rule",
-      "google_contact_center_insights_assessment_rule",
-      "google_contact_center_insights_auto_labeling_rule",
-      "google_contact_center_insights_qa_scorecard",
-      "google_contact_center_insights_view",
-      "google_discovery_engine_assistant",
-      "google_discovery_engine_chat_engine",
-      "google_discovery_engine_cmek_config",
-      "google_discovery_engine_control",
-      "google_discovery_engine_data_store",
-      "google_discovery_engine_license_config",
-      "google_discovery_engine_recommendation_engine",
-      "google_discovery_engine_schema",
-      "google_discovery_engine_search_engine",
-      "google_discovery_engine_serving_config",
-      "google_discovery_engine_sitemap",
-      "google_discovery_engine_target_site",
-      "google_discovery_engine_user_store",
-      "google_dns_managed_zone",
-      "google_dns_record_set",
-      "google_firebase_android_app",
-      "google_firebase_apple_app",
-      "google_firebase_web_app",
-      "google_folder_iam_member",
-      "google_gke_backup_backup_channel",
-      "google_gke_backup_backup_plan",
-      "google_gke_backup_restore_channel",
-      "google_gke_backup_restore_plan",
-      "google_identity_platform_inbound_saml_config",
-      "google_identity_platform_oauth_idp_config",
-      "google_identity_platform_tenant",
-      "google_kms_crypto_key_version",
-      "google_migration_center_assets_export_job",
-      "google_migration_center_discovery_client",
-      "google_migration_center_group",
-      "google_migration_center_import_job",
-      "google_migration_center_preference_set",
-      "google_migration_center_report_config",
-      "google_migration_center_source",
-      "google_monitoring_alert_policy",
-      "google_network_security_authz_policy",
-      "google_network_security_intercept_deployment",
-      "google_network_security_intercept_deployment_group",
-      "google_network_security_intercept_endpoint_group",
-      "google_network_security_intercept_endpoint_group_association",
-      "google_network_security_mirroring_deployment",
-      "google_network_security_mirroring_deployment_group",
-      "google_network_security_mirroring_endpoint",
-      "google_network_security_mirroring_endpoint_group",
-      "google_network_security_mirroring_endpoint_group_association",
-      "google_network_security_sac_realm",
-      "google_network_services_authz_extension",
-      "google_network_services_multicast_consumer_association",
-      "google_network_services_multicast_domain",
-      "google_network_services_multicast_domain_activation",
-      "google_network_services_multicast_domain_group",
-      "google_network_services_multicast_group_consumer_activation",
-      "google_network_services_multicast_group_producer_activation",
-      "google_network_services_multicast_group_range",
-      "google_network_services_multicast_group_range_activation",
-      "google_network_services_multicast_producer_association",
-      "google_project",
-      "google_project_iam",
-      "google_project_iam_custom_role",
-      "google_project_service",
-      "google_pubsub_subscription",
-      "google_pubsub_subscription_iam_member",
-      "google_pubsub_topic",
-      "google_pubsub_topic_iam",
-      "google_secret_manager_secret",
-      "google_secret_manager_secret_iam",
-      "google_secret_manager_secret_version",
-      "google_service_account",
-      "google_service_account_iam_member",
-      "google_service_account_key",
-      "google_sql_database",
-      "google_storage_bucket",
-      "google_storage_bucket_iam_member",
-      "google_storage_hmac_key",
-      "google_vertex_ai_dataset",
-      "google_vertex_ai_deployment_resource_pool",
-      "google_vertex_ai_evaluation_metric",
-      "google_vertex_ai_feature_group",
-      "google_vertex_ai_feature_online_store",
-      "google_vertex_ai_featurestore",
-      "google_vertex_ai_index",
-      "google_vertex_ai_online_evaluator",
-      "google_vertex_ai_persistent_resource",
-      "google_vertex_ai_rag_corpus",
-      "google_vertex_ai_reasoning_engine",
-      "google_vertex_ai_tensorboard"
-    ],
-    "code_list_resource_names": [
-      "google_apigee_addons_config",
-      "google_apigee_api_product",
-      "google_apigee_data_collector",
-      "google_apigee_datastore",
-      "google_apigee_endpoint_attachment",
-      "google_apigee_envgroup",
-      "google_apigee_environment_keyvaluemaps",
-      "google_apigee_organization",
-      "google_apigee_target_server",
-      "google_app_engine_domain_mapping",
-      "google_app_engine_service_network_settings",
-      "google_app_engine_service_split_traffic",
-      "google_bigquery_dataset",
-      "google_bigquery_dataset_access",
-      "google_bigquery_table",
-      "google_cloud_run_service",
-      "google_cloud_scheduler_job",
-      "google_colab_notebook_execution",
-      "google_colab_runtime",
-      "google_colab_runtime_template",
-      "google_colab_schedule",
-      "google_compute_address",
-      "google_compute_backend_bucket_signed_url_key",
-      "google_compute_backend_service_signed_url_key",
-      "google_compute_cross_site_network",
-      "google_compute_disk",
-      "google_compute_external_vpn_gateway",
-      "google_compute_firewall",
-      "google_compute_global_address",
-      "google_compute_global_network_endpoint_group",
-      "google_compute_ha_vpn_gateway",
-      "google_compute_https_health_check",
-      "google_compute_image",
-      "google_compute_instance",
-      "google_compute_instant_snapshot",
-      "google_compute_interconnect_attachment_group",
-      "google_compute_interconnect_group",
-      "google_compute_network_firewall_policy",
-      "google_compute_network_firewall_policy_association",
-      "google_compute_node_template",
-      "google_compute_packet_mirroring",
-      "google_compute_preview_feature",
-      "google_compute_public_advertised_prefix",
-      "google_compute_public_delegated_prefix",
-      "google_compute_region_autoscaler",
-      "google_compute_region_commitment",
-      "google_compute_region_composite_health_check",
-      "google_compute_region_health_aggregation_policy",
-      "google_compute_region_health_source",
-      "google_compute_region_instant_snapshot",
-      "google_compute_region_network_endpoint_group",
-      "google_compute_region_network_firewall_policy",
-      "google_compute_region_target_http_proxy",
-      "google_compute_region_target_tcp_proxy",
-      "google_compute_region_url_map",
-      "google_compute_rollout_plan",
-      "google_compute_snapshot",
-      "google_compute_subnetwork",
-      "google_compute_target_grpc_proxy",
-      "google_compute_target_http_proxy",
-      "google_compute_target_ssl_proxy",
-      "google_compute_target_tcp_proxy",
-      "google_compute_vpn_gateway",
-      "google_compute_wire_group",
-      "google_contact_center_insights_analysis_rule",
-      "google_contact_center_insights_assessment_rule",
-      "google_contact_center_insights_auto_labeling_rule",
-      "google_contact_center_insights_qa_scorecard",
-      "google_contact_center_insights_view",
-      "google_discovery_engine_assistant",
-      "google_discovery_engine_chat_engine",
-      "google_discovery_engine_cmek_config",
-      "google_discovery_engine_control",
-      "google_discovery_engine_data_store",
-      "google_discovery_engine_license_config",
-      "google_discovery_engine_recommendation_engine",
-      "google_discovery_engine_schema",
-      "google_discovery_engine_search_engine",
-      "google_discovery_engine_serving_config",
-      "google_discovery_engine_sitemap",
-      "google_discovery_engine_target_site",
-      "google_discovery_engine_user_store",
-      "google_dns_managed_zone",
-      "google_dns_record_set",
-      "google_gke_backup_backup_channel",
-      "google_gke_backup_backup_plan",
-      "google_gke_backup_restore_channel",
-      "google_gke_backup_restore_plan",
-      "google_identity_platform_inbound_saml_config",
-      "google_identity_platform_oauth_idp_config",
-      "google_identity_platform_tenant",
-      "google_kms_crypto_key_version",
-      "google_migration_center_assets_export_job",
-      "google_migration_center_discovery_client",
-      "google_migration_center_group",
-      "google_migration_center_import_job",
-      "google_migration_center_preference_set",
-      "google_migration_center_report_config",
-      "google_migration_center_source",
-      "google_monitoring_alert_policy",
-      "google_network_security_authz_policy",
-      "google_network_security_intercept_deployment",
-      "google_network_security_intercept_deployment_group",
-      "google_network_security_intercept_endpoint_group",
-      "google_network_security_intercept_endpoint_group_association",
-      "google_network_security_mirroring_deployment",
-      "google_network_security_mirroring_deployment_group",
-      "google_network_security_mirroring_endpoint",
-      "google_network_security_mirroring_endpoint_group",
-      "google_network_security_mirroring_endpoint_group_association",
-      "google_network_services_authz_extension",
-      "google_network_services_multicast_consumer_association",
-      "google_network_services_multicast_domain",
-      "google_network_services_multicast_domain_activation",
-      "google_network_services_multicast_domain_group",
-      "google_network_services_multicast_group_consumer_activation",
-      "google_network_services_multicast_group_producer_activation",
-      "google_network_services_multicast_group_range",
-      "google_network_services_multicast_group_range_activation",
-      "google_network_services_multicast_producer_association",
-      "google_project",
-      "google_project_iam_custom_role",
-      "google_project_service",
-      "google_pubsub_subscription",
-      "google_pubsub_topic",
-      "google_secret_manager_secret",
-      "google_secret_manager_secret_version",
-      "google_service_account",
-      "google_service_account_key",
-      "google_sql_database",
-      "google_storage_bucket",
-      "google_storage_hmac_key",
-      "google_vertex_ai_dataset",
-      "google_vertex_ai_deployment_resource_pool",
-      "google_vertex_ai_evaluation_metric",
-      "google_vertex_ai_feature_group",
-      "google_vertex_ai_feature_online_store",
-      "google_vertex_ai_featurestore",
-      "google_vertex_ai_index",
-      "google_vertex_ai_online_evaluator",
-      "google_vertex_ai_persistent_resource",
-      "google_vertex_ai_rag_corpus",
-      "google_vertex_ai_reasoning_engine",
-      "google_vertex_ai_tensorboard"
-    ],
-    "only_in_registry": [
-      "google_bigquery_dataset_iam_member",
-      "google_compute_machine_image",
-      "google_compute_network_firewall_policy_packet_mirroring_rule",
-      "google_compute_region_backend_bucket",
-      "google_firebase_android_app",
-      "google_firebase_apple_app",
-      "google_firebase_web_app",
-      "google_folder_iam_member",
-      "google_network_security_sac_realm",
-      "google_project_iam",
-      "google_pubsub_subscription_iam_member",
-      "google_pubsub_topic_iam",
-      "google_secret_manager_secret_iam",
-      "google_service_account_iam_member",
-      "google_storage_bucket_iam_member"
-    ],
-    "only_in_source": [],
-    "registry_is_subset": false
+    "source_scan_complete": true
   }
 }

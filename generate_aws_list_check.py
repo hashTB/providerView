@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-Run the upstream AWS list-tracking script and generate validation artifacts.
+Validate AWS list resources against the released provider and generate artifacts.
 
 This script:
-- Fetches the current list-tracking script used by terraform-provider-aws
-- Runs it against the latest terraform-provider-aws source
-- Compares tracked implemented list resources with the dashboard list-resources count
+- Asks the latest hashicorp/aws release which list resources it serves
+  (``terraform providers schema -json``, see provider_schema.py); this is the headline count
+- Compares that with the Registry list-resources docs
+- Fetches the current list-tracking script used by terraform-provider-aws and runs it
+  against the provider's main branch for per-service detail
 - Writes a compact JSON summary for the main dashboard
 - Writes a standalone HTML report page with full script output
+
+Requires Terraform >= 1.14 on PATH (or TERRAFORM_BIN).
 
 Usage:
     python3 generate_aws_list_check.py
@@ -27,6 +31,14 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+from provider_schema import (
+    ProviderSchemaError,
+    compare_with_registry,
+    fetch_provider_schema,
+    load_registry_list_slugs,
+    render_differences_html,
+)
+
 ISSUE_URL = "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
 SCRIPT_RAW_URL = "https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/main/.ci/scripts/generate-list-tracking.sh"
 SCRIPT_REPO_PATH = ".ci/scripts/generate-list-tracking.sh"
@@ -34,6 +46,7 @@ USER_AGENT = "providerView-aws-list-check/1.0"
 RAW_OUTPUT_JSON = "data/aws_list_check.json"
 REPORT_HTML = "docs/aws-list-check.html"
 DETAILS_FILE = "terraform_providers_details.json"
+PROVIDER = "hashicorp/aws"
 
 
 def clone_or_update_repo(repos_dir: Path) -> Path | None:
@@ -147,21 +160,6 @@ def parse_tracking_output(output: str) -> dict:
     }
 
 
-def load_dashboard_list_count(details_path: Path) -> int | None:
-    try:
-        with open(details_path, "r", encoding="utf-8") as f:
-            details = json.load(f)
-    except FileNotFoundError:
-        return None
-
-    entry = details.get("hashicorp/aws", {})
-    docs = entry.get("docs", {}) if isinstance(entry, dict) else {}
-    list_resources = docs.get("list-resources", []) if isinstance(docs, dict) else []
-    if isinstance(list_resources, list):
-        return len(list_resources)
-    return None
-
-
 def get_repo_commit(repo_dir: Path) -> str | None:
     result = subprocess.run(
         ["git", "rev-parse", "HEAD"],
@@ -174,19 +172,17 @@ def get_repo_commit(repo_dir: Path) -> str | None:
     return result.stdout.strip()
 
 
-def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path: Path) -> dict:
+def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path: Path, schema: dict) -> dict:
     parsed = parse_tracking_output(output["stdout"])
-    dashboard_count = load_dashboard_list_count(details_path)
+    registry_slugs = load_registry_list_slugs(details_path, PROVIDER)
+    dashboard_count = None if registry_slugs is None else len(registry_slugs)
     implemented = parsed["overall"].get("implemented")
     total = parsed["overall"].get("total")
     service_rows = [s for s in parsed.get("services", []) if s.get("implemented", 0) > 0]
     service_rows.sort(key=lambda s: (-s["implemented"], -s["percent"], s["service"]))
 
-    matches = (
-        dashboard_count is not None
-        and implemented is not None
-        and dashboard_count == implemented
-    )
+    comparison = compare_with_registry(schema["list_resources"], registry_slugs, "aws")
+    schema_count = schema["counts"]["list_resources"]
 
     return {
         "generated_at": datetime.now().isoformat(),
@@ -203,9 +199,11 @@ def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path:
             "commit": get_repo_commit(repo_dir),
         },
         "dashboard": {
-            "provider": "hashicorp/aws",
+            "provider": PROVIDER,
             "list_resources": dashboard_count,
         },
+        "provider_schema": schema,
+        "registry_comparison": comparison,
         "script_results": {
             "returncode": output["returncode"],
             "stdout_line_count": len(output["stdout"].splitlines()),
@@ -218,9 +216,13 @@ def build_summary_data(script: dict, repo_dir: Path, output: dict, details_path:
             "service_resources": parsed.get("service_resources", {}),
         },
         "validation": {
-            "matches": matches,
+            "matches": comparison["in_sync"],
+            "schema_list_resources": schema_count,
+            "schema_identity_resources": schema["counts"]["identity_resources"],
+            "schema_provider_version": schema["version"],
             "dashboard_list_resources": dashboard_count,
             "script_implemented_list": implemented,
+            "script_minus_schema": None if implemented is None else implemented - schema_count,
             "script_total_resources": total,
             "script_percent": parsed["overall"].get("percent"),
         },
@@ -233,8 +235,12 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
     repo = summary["source_repo"]
     parsed = summary["script_results"]["parsed"]
     coverage = summary.get("service_coverage", {})
+    schema = summary["provider_schema"]
     match_icon = "✅" if validation["matches"] else "⚠️"
-    match_text = "match" if validation["matches"] else "do not match"
+    match_text = "in sync" if validation["matches"] else "out of sync"
+    differences_html = render_differences_html(summary["registry_comparison"], None, "tracking script")
+    delta = validation["script_minus_schema"]
+    delta_text = "N/A" if delta is None else f"{delta:+d}"
 
     def fmt_val(value: int | None) -> str:
         return "N/A" if value is None else f"{value:,}"
@@ -406,18 +412,23 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
         <a href=\"aws-list-check.html\" class=\"active\">AWS List Check</a>
         <a href=\"google-list-check.html\">Google List Check</a>
     </nav>
-    <p class=\"subtitle\">Latest AWS list-tracking scan compared against Registry-reflected list resources for hashicorp/aws. Generated {html.escape(summary['generated_at'])}.</p>
+    <p class=\"subtitle\">List resources served by the latest hashicorp/aws release, compared with the Registry docs and the upstream list-tracking scan of the provider source. Generated {html.escape(summary['generated_at'])}.</p>
 
     <div class=\"cards\">
-        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry-Reflected List Resources</div></div>
-        <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_implemented_list'])}</div><div class=\"label\">Tracking Script List Resources</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['schema_list_resources'])}</div><div class=\"label\">List Resources in v{html.escape(schema['version'])}</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['dashboard_list_resources'])}</div><div class=\"label\">Registry List Pages</div></div>
+        <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_implemented_list'])}</div><div class=\"label\">Tracking Script List Resources (main)</div></div>
         <div class=\"card\"><div class=\"value\">{fmt_val(validation['script_total_resources'])}</div><div class=\"label\">AWS Resources Scanned</div></div>
-        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Counts {match_text}</div></div>
+        <div class=\"card\"><div class=\"value\">{match_icon}</div><div class=\"label\">Registry {match_text}</div></div>
     </div>
 
     <div class=\"note\">
-        <strong>{match_icon} Validation:</strong> Registry currently reflects <strong>{fmt_val(validation['dashboard_list_resources'])}</strong> list resources,
-        script scan reports <strong>{fmt_val(validation['script_implemented_list'])}</strong> list-enabled resources.
+        <strong>{match_icon} Validation:</strong> hashicorp/aws v{html.escape(schema['version'])} serves <strong>{fmt_val(validation['schema_list_resources'])}</strong> list resources
+        (<strong>{fmt_val(validation['schema_identity_resources'])}</strong> resources have identity), read from the released provider with
+        <code>terraform providers schema -json</code> (Terraform {html.escape(schema['terraform_version'])}). The Registry documents
+        <strong>{fmt_val(validation['dashboard_list_resources'])}</strong> list-resource pages.
+        The upstream tracking script scans the provider's main branch for the per-service detail below and reports
+        <strong>{fmt_val(validation['script_implemented_list'])}</strong> ({html.escape(delta_text)} vs the release); it reports file paths rather than resource names, so only counts can be compared.
         This script fetches the latest upstream AWS tracking script on each run, so upstream script changes flow into the next workflow execution.
         <div class=\"meta-grid\">
             <div>
@@ -433,6 +444,7 @@ def generate_report(summary: dict, output: dict, out_path: Path) -> None:
                 <div class=\"meta-row\"><span>Script SHA-256</span><span><code>{html.escape(script['script_sha256'][:16])}...</code></span></div>
             </div>
         </div>
+        {differences_html}
     </div>
 
     <div class="section">
@@ -604,10 +616,18 @@ def main() -> int:
     parser.add_argument("--details-file", default=DETAILS_FILE, help="Dashboard details JSON to validate against")
     args = parser.parse_args()
 
-    script = discover_script()
-
     repos_dir = Path(args.repos_dir)
     repos_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        schema = fetch_provider_schema(PROVIDER, repos_dir)
+    except (ProviderSchemaError, OSError) as exc:
+        print(f"ERROR: could not read the {PROVIDER} provider schema: {exc}", file=sys.stderr)
+        return 1
+    print(f"  {PROVIDER} v{schema['version']} serves {schema['counts']['list_resources']} list resources")
+
+    script = discover_script()
+
     repo_dir = clone_or_update_repo(repos_dir)
     if not repo_dir:
         print("ERROR: Failed to clone/update terraform-provider-aws", file=sys.stderr)
@@ -624,7 +644,7 @@ def main() -> int:
             print("ERROR: tracking script failed", file=sys.stderr)
             return output["returncode"]
 
-    summary = build_summary_data(script, repo_dir, output, Path(args.details_file))
+    summary = build_summary_data(script, repo_dir, output, Path(args.details_file), schema)
 
     output_json = Path(args.output_json)
     output_json.parent.mkdir(parents=True, exist_ok=True)
@@ -636,12 +656,12 @@ def main() -> int:
         "Generated AWS list validation artifacts: "
         f"{args.output_json}, {args.output_html}"
     )
+    v = summary["validation"]
     print(
-        "Validation: dashboard="
-        f"{summary['validation']['dashboard_list_resources']} "
-        "script="
-        f"{summary['validation']['script_implemented_list']} "
-        f"match={summary['validation']['matches']}"
+        f"Validation: registry={v['dashboard_list_resources']} "
+        f"schema={v['schema_list_resources']} "
+        f"script={v['script_implemented_list']} "
+        f"match={v['matches']}"
     )
     return 0
 

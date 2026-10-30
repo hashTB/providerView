@@ -39,6 +39,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Set up Terraform (provider schemas for list validation)
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
       - name: Refresh big-3 cloud provider details
         run: |
           echo "=== Refreshing AWS, Azure, GCP provider details ==="

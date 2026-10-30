@@ -36,6 +36,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Set up Terraform (provider schemas for list validation)
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
       - name: Run provider scanner
         run: |
           TIER="${{ github.event.inputs.tier || 'all' }}"
