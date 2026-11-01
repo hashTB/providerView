@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T13:36:00.047331",
+  "generated_at": "2026-11-01T15:10:49.272894",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -5166,7 +5166,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-10-30 17:35:59 UTC"
+      "last_updated": "2026-11-01 15:10:49 UTC"
     }
   },
   "service_coverage": {

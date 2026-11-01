@@ -13855,7 +13855,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:56.762637"
+    "docs_refreshed_at": "2026-11-01T15:09:36.185355"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -43841,7 +43841,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:57.367814"
+    "docs_refreshed_at": "2026-11-01T15:09:36.692186"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -44300,7 +44300,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:57.751495"
+    "docs_refreshed_at": "2026-11-01T15:09:37.046695"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -45902,6 +45902,11 @@
           "title": "redis_cache",
           "slug": "redis_cache",
           "subcategory": "Redis"
+        },
+        {
+          "title": "relay_namespace",
+          "slug": "relay_namespace",
+          "subcategory": "Messaging"
         },
         {
           "title": "resource_group",
@@ -52607,7 +52612,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:58.225873"
+    "docs_refreshed_at": "2026-11-01T15:09:37.442900"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -52956,7 +52961,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:58.634568"
+    "docs_refreshed_at": "2026-11-01T15:09:37.792261"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -62647,7 +62652,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:59.169317"
+    "docs_refreshed_at": "2026-11-01T15:09:38.235374"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -72071,7 +72076,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-10-29T13:26:59.706132"
+    "docs_refreshed_at": "2026-11-01T15:09:38.680802"
   },
   "4ek0/neko": {
     "docs": {
