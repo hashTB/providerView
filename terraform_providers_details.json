@@ -86,7 +86,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:37.975982"
+    "docs_refreshed_at": "2026-11-05T15:17:47.005824"
   },
   "hashicorp/ad": {
     "version": "0.5.0",
@@ -72538,7 +72538,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:21.112347"
+    "docs_refreshed_at": "2026-11-05T15:17:29.435241"
   },
   "Azure/azapi": {
     "docs": {
@@ -76164,7 +76164,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:21.962642"
+    "docs_refreshed_at": "2026-11-05T15:17:30.373356"
   },
   "CiscoDevNet/iosxe": {
     "docs": {
@@ -76347,6 +76347,11 @@
           "subcategory": "Switching"
         },
         {
+          "title": "card",
+          "slug": "card",
+          "subcategory": "Interface"
+        },
+        {
           "title": "cdp",
           "slug": "cdp",
           "subcategory": "System"
@@ -76372,8 +76377,18 @@
           "subcategory": "BGP"
         },
         {
+          "title": "controller",
+          "slug": "controller",
+          "subcategory": "Interface"
+        },
+        {
           "title": "crypto",
           "slug": "crypto",
+          "subcategory": "Crypto"
+        },
+        {
+          "title": "crypto_gdoi",
+          "slug": "crypto_gdoi",
           "subcategory": "Crypto"
         },
         {
@@ -76412,6 +76427,11 @@
           "subcategory": "Crypto"
         },
         {
+          "title": "crypto_map_gdoi",
+          "slug": "crypto_map_gdoi",
+          "subcategory": "Crypto"
+        },
+        {
           "title": "crypto_pki",
           "slug": "crypto_pki",
           "subcategory": "Crypto"
@@ -76437,9 +76457,19 @@
           "subcategory": "System"
         },
         {
+          "title": "dial_peer_voice",
+          "slug": "dial_peer_voice",
+          "subcategory": "Voice"
+        },
+        {
           "title": "dot1x",
           "slug": "dot1x",
           "subcategory": "System"
+        },
+        {
+          "title": "eap_profile",
+          "slug": "eap_profile",
+          "subcategory": "AAA"
         },
         {
           "title": "eem",
@@ -76499,6 +76529,11 @@
         {
           "title": "interface_ethernet",
           "slug": "interface_ethernet",
+          "subcategory": "Interface"
+        },
+        {
+          "title": "interface_hsrp",
+          "slug": "interface_hsrp",
           "subcategory": "Interface"
         },
         {
@@ -76697,6 +76732,11 @@
           "subcategory": "QoS"
         },
         {
+          "title": "parameter_map_webauth_global",
+          "slug": "parameter_map_webauth_global",
+          "subcategory": "Security"
+        },
+        {
           "title": "pim",
           "slug": "pim",
           "subcategory": "Multicast"
@@ -76742,9 +76782,19 @@
           "subcategory": "AAA"
         },
         {
+          "title": "redundancy_application_group",
+          "slug": "redundancy_application_group",
+          "subcategory": "Redundancy"
+        },
+        {
           "title": "route_map",
           "slug": "route_map",
           "subcategory": "System"
+        },
+        {
+          "title": "sccp",
+          "slug": "sccp",
+          "subcategory": "Voice"
         },
         {
           "title": "service",
@@ -76847,6 +76897,126 @@
           "subcategory": "Switching"
         },
         {
+          "title": "voice_card",
+          "slug": "voice_card",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_codec",
+          "slug": "voice_class_codec",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_dpg",
+          "slug": "voice_class_dpg",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_e164_pattern_map",
+          "slug": "voice_class_e164_pattern_map",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_media",
+          "slug": "voice_class_media",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_server_group",
+          "slug": "voice_class_server_group",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_copylist",
+          "slug": "voice_class_sip_copylist",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_event_list",
+          "slug": "voice_class_sip_event_list",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_header_passthrulist",
+          "slug": "voice_class_sip_header_passthrulist",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_options_keepalive",
+          "slug": "voice_class_sip_options_keepalive",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_profiles",
+          "slug": "voice_class_sip_profiles",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_srtp_crypto",
+          "slug": "voice_class_srtp_crypto",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_stun_usage",
+          "slug": "voice_class_stun_usage",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tenant",
+          "slug": "voice_class_tenant",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tls_cipher",
+          "slug": "voice_class_tls_cipher",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tls_profile",
+          "slug": "voice_class_tls_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_uri",
+          "slug": "voice_class_uri",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_dspfarm_profile",
+          "slug": "voice_dspfarm_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_port",
+          "slug": "voice_port",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_register_global",
+          "slug": "voice_register_global",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_register_pool",
+          "slug": "voice_register_pool",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_translation_profile",
+          "slug": "voice_translation_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_translation_rule",
+          "slug": "voice_translation_rule",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_trunk_group",
+          "slug": "voice_trunk_group",
+          "subcategory": "Voice"
+        },
+        {
           "title": "vrf",
           "slug": "vrf",
           "subcategory": "VRF"
@@ -76855,6 +77025,56 @@
           "title": "vtp",
           "slug": "vtp",
           "subcategory": "Switching"
+        },
+        {
+          "title": "wireless_ap_join_profile",
+          "slug": "wireless_ap_join_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_flex_profile",
+          "slug": "wireless_flex_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_mesh_profile",
+          "slug": "wireless_mesh_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_policy_profile",
+          "slug": "wireless_policy_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_policy_tag",
+          "slug": "wireless_policy_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_rf_profile",
+          "slug": "wireless_rf_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_rf_tag",
+          "slug": "wireless_rf_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_site_tag",
+          "slug": "wireless_site_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_system",
+          "slug": "wireless_system",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_wlan_profile",
+          "slug": "wireless_wlan_profile",
+          "subcategory": "Wireless"
         },
         {
           "title": "yang",
@@ -77088,6 +77308,11 @@
           "subcategory": "Switching"
         },
         {
+          "title": "card",
+          "slug": "card",
+          "subcategory": "Interface"
+        },
+        {
           "title": "cdp",
           "slug": "cdp",
           "subcategory": "System"
@@ -77123,8 +77348,18 @@
           "subcategory": "BGP"
         },
         {
+          "title": "controller",
+          "slug": "controller",
+          "subcategory": "Interface"
+        },
+        {
           "title": "crypto",
           "slug": "crypto",
+          "subcategory": "Crypto"
+        },
+        {
+          "title": "crypto_gdoi",
+          "slug": "crypto_gdoi",
           "subcategory": "Crypto"
         },
         {
@@ -77163,6 +77398,11 @@
           "subcategory": "Crypto"
         },
         {
+          "title": "crypto_map_gdoi",
+          "slug": "crypto_map_gdoi",
+          "subcategory": "Crypto"
+        },
+        {
           "title": "crypto_pki",
           "slug": "crypto_pki",
           "subcategory": "Crypto"
@@ -77188,9 +77428,19 @@
           "subcategory": "System"
         },
         {
+          "title": "dial_peer_voice",
+          "slug": "dial_peer_voice",
+          "subcategory": "Voice"
+        },
+        {
           "title": "dot1x",
           "slug": "dot1x",
           "subcategory": "System"
+        },
+        {
+          "title": "eap_profile",
+          "slug": "eap_profile",
+          "subcategory": "AAA"
         },
         {
           "title": "eem",
@@ -77255,6 +77505,11 @@
         {
           "title": "interface_ethernets",
           "slug": "interface_ethernets",
+          "subcategory": "Interface"
+        },
+        {
+          "title": "interface_hsrp",
+          "slug": "interface_hsrp",
           "subcategory": "Interface"
         },
         {
@@ -77453,6 +77708,11 @@
           "subcategory": "QoS"
         },
         {
+          "title": "parameter_map_webauth_global",
+          "slug": "parameter_map_webauth_global",
+          "subcategory": "Security"
+        },
+        {
           "title": "pim",
           "slug": "pim",
           "subcategory": "Multicast"
@@ -77498,6 +77758,11 @@
           "subcategory": "AAA"
         },
         {
+          "title": "redundancy_application_group",
+          "slug": "redundancy_application_group",
+          "subcategory": "Redundancy"
+        },
+        {
           "title": "route_map",
           "slug": "route_map",
           "subcategory": "System"
@@ -77506,6 +77771,11 @@
           "title": "save_config",
           "slug": "save_config",
           "subcategory": "General"
+        },
+        {
+          "title": "sccp",
+          "slug": "sccp",
+          "subcategory": "Voice"
         },
         {
           "title": "service",
@@ -77608,6 +77878,126 @@
           "subcategory": "Switching"
         },
         {
+          "title": "voice_card",
+          "slug": "voice_card",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_codec",
+          "slug": "voice_class_codec",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_dpg",
+          "slug": "voice_class_dpg",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_e164_pattern_map",
+          "slug": "voice_class_e164_pattern_map",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_media",
+          "slug": "voice_class_media",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_server_group",
+          "slug": "voice_class_server_group",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_copylist",
+          "slug": "voice_class_sip_copylist",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_event_list",
+          "slug": "voice_class_sip_event_list",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_header_passthrulist",
+          "slug": "voice_class_sip_header_passthrulist",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_options_keepalive",
+          "slug": "voice_class_sip_options_keepalive",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_sip_profiles",
+          "slug": "voice_class_sip_profiles",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_srtp_crypto",
+          "slug": "voice_class_srtp_crypto",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_stun_usage",
+          "slug": "voice_class_stun_usage",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tenant",
+          "slug": "voice_class_tenant",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tls_cipher",
+          "slug": "voice_class_tls_cipher",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_tls_profile",
+          "slug": "voice_class_tls_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_class_uri",
+          "slug": "voice_class_uri",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_dspfarm_profile",
+          "slug": "voice_dspfarm_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_port",
+          "slug": "voice_port",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_register_global",
+          "slug": "voice_register_global",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_register_pool",
+          "slug": "voice_register_pool",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_translation_profile",
+          "slug": "voice_translation_profile",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_translation_rule",
+          "slug": "voice_translation_rule",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "voice_trunk_group",
+          "slug": "voice_trunk_group",
+          "subcategory": "Voice"
+        },
+        {
           "title": "vrf",
           "slug": "vrf",
           "subcategory": "VRF"
@@ -77616,6 +78006,56 @@
           "title": "vtp",
           "slug": "vtp",
           "subcategory": "Switching"
+        },
+        {
+          "title": "wireless_ap_join_profile",
+          "slug": "wireless_ap_join_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_flex_profile",
+          "slug": "wireless_flex_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_mesh_profile",
+          "slug": "wireless_mesh_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_policy_profile",
+          "slug": "wireless_policy_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_policy_tag",
+          "slug": "wireless_policy_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_rf_profile",
+          "slug": "wireless_rf_profile",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_rf_tag",
+          "slug": "wireless_rf_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_site_tag",
+          "slug": "wireless_site_tag",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_system",
+          "slug": "wireless_system",
+          "subcategory": "Wireless"
+        },
+        {
+          "title": "wireless_wlan_profile",
+          "slug": "wireless_wlan_profile",
+          "subcategory": "Wireless"
         },
         {
           "title": "yang",
@@ -77634,7 +78074,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:23.189394"
+    "docs_refreshed_at": "2026-11-05T15:17:31.690288"
   },
   "CiscoDevNet/nxos": {
     "docs": {
@@ -77946,37 +78386,37 @@
         {
           "title": "Changelog",
           "slug": "changelog",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Deletion Policy",
           "slug": "deletion_policy",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Getting Started",
           "slug": "getting_started",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Importing Resources",
           "slug": "importing_resources",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Manage Multiple Devices",
           "slug": "manage_multiple_devices",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Selective Deploy",
           "slug": "selective_deploy",
-          "subcategory": "Guides"
+          "subcategory": ""
         },
         {
           "title": "Supported Objects",
           "slug": "supported_objects",
-          "subcategory": "Guides"
+          "subcategory": ""
         }
       ],
       "overview": [
@@ -78294,7 +78734,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:24.042412"
+    "docs_refreshed_at": "2026-11-05T15:17:32.541671"
   },
   "CleverCloud/clevercloud": {
     "docs": {
@@ -78577,7 +79017,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:24.465381"
+    "docs_refreshed_at": "2026-11-05T15:17:32.957951"
   },
   "DanielMSchmidt/wait": {
     "docs": {
@@ -78596,7 +79036,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:24.864385"
+    "docs_refreshed_at": "2026-11-05T15:17:33.381392"
   },
   "FlowerWitch/hashicups": {
     "docs": {
@@ -78643,7 +79083,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:26.869726"
+    "docs_refreshed_at": "2026-11-05T15:17:35.160287"
   },
   "Jamf-Concepts/jamfplatform": {
     "docs": {
@@ -80417,7 +80857,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:29.479352"
+    "docs_refreshed_at": "2026-11-05T15:17:37.924858"
   },
   "MScottBlake/iru": {
     "docs": {
@@ -84146,7 +84586,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:31.884089"
+    "docs_refreshed_at": "2026-11-05T15:17:40.510199"
   },
   "PaloAltoNetworks/panos": {
     "docs": {
@@ -85495,7 +85935,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:32.298805"
+    "docs_refreshed_at": "2026-11-05T15:17:40.940836"
   },
   "SAP/btp": {
     "docs": {
@@ -86227,7 +86667,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:33.120445"
+    "docs_refreshed_at": "2026-11-05T15:17:41.870858"
   },
   "SAP/scc": {
     "docs": {
@@ -86482,7 +86922,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:33.916790"
+    "docs_refreshed_at": "2026-11-05T15:17:42.721000"
   },
   "Skybound1/skybound": {
     "docs": {
@@ -86529,7 +86969,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:34.314051"
+    "docs_refreshed_at": "2026-11-05T15:17:43.141943"
   },
   "Sokren/aap": {
     "docs": {
@@ -86612,7 +87052,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:34.715183"
+    "docs_refreshed_at": "2026-11-05T15:17:43.560004"
   },
   "TechXploreLabs/opsy": {
     "docs": {
@@ -86662,7 +87102,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:35.122598"
+    "docs_refreshed_at": "2026-11-05T15:17:43.982236"
   },
   "adampie/ctf": {
     "docs": {
@@ -86709,7 +87149,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:36.699986"
+    "docs_refreshed_at": "2026-11-05T15:17:45.661153"
   },
   "ansible/ansible": {
     "docs": {
@@ -86779,7 +87219,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:38.374386"
+    "docs_refreshed_at": "2026-11-05T15:17:47.422738"
   },
   "aslafy-z/ansible": {
     "docs": {
@@ -86827,7 +87267,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:39.175527"
+    "docs_refreshed_at": "2026-11-05T15:17:48.261294"
   },
   "austinvalle/bufo": {
     "docs": {
@@ -86853,7 +87293,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:39.583041"
+    "docs_refreshed_at": "2026-11-05T15:17:48.682357"
   },
   "brad-jones/denobridge": {
     "docs": {
@@ -86910,7 +87350,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:40.384521"
+    "docs_refreshed_at": "2026-11-05T15:17:49.568817"
   },
   "cdsre/capellaextras": {
     "docs": {
@@ -86936,7 +87376,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:41.174580"
+    "docs_refreshed_at": "2026-11-05T15:17:50.409742"
   },
   "cysp/braze": {
     "docs": {
@@ -86992,7 +87432,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:43.571495"
+    "docs_refreshed_at": "2026-11-05T15:17:52.959386"
   },
   "cysp/contentful": {
     "docs": {
@@ -87287,7 +87727,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:43.969674"
+    "docs_refreshed_at": "2026-11-05T15:17:53.377525"
   },
   "dbanck/concept": {
     "docs": {
@@ -87323,7 +87763,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:46.366601"
+    "docs_refreshed_at": "2026-11-05T15:17:55.975697"
   },
   "deploymenttheory/microsoft365": {
     "docs": {
@@ -88942,7 +89382,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:47.203288"
+    "docs_refreshed_at": "2026-11-05T15:17:56.902603"
   },
   "drewmullen/aap": {
     "docs": {
@@ -89050,7 +89490,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:49.609613"
+    "docs_refreshed_at": "2026-11-05T15:17:59.433363"
   },
   "fox-md/foxcon": {
     "docs": {
@@ -89115,7 +89555,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:53.481493"
+    "docs_refreshed_at": "2026-11-05T15:18:04.244338"
   },
   "hashi-demo-lab/bcm": {
     "docs": {
@@ -89218,7 +89658,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:55.578897"
+    "docs_refreshed_at": "2026-11-05T15:18:06.367848"
   },
   "hashicorp/local": {
     "docs": {
@@ -89280,7 +89720,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:56.765391"
+    "docs_refreshed_at": "2026-11-05T15:18:07.614315"
   },
   "jackkleeman/azurerm": {
     "docs": {
@@ -96951,7 +97391,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:00.249639"
+    "docs_refreshed_at": "2026-11-05T15:18:11.128673"
   },
   "jeremmfr/junos": {
     "docs": {
@@ -97784,7 +98224,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:01.892653"
+    "docs_refreshed_at": "2026-11-05T15:18:12.898782"
   },
   "kreemer/loadmaster": {
     "docs": {
@@ -97922,7 +98362,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:05.680542"
+    "docs_refreshed_at": "2026-11-05T15:18:16.715819"
   },
   "magodo/restful": {
     "docs": {
@@ -97981,7 +98421,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:08.073677"
+    "docs_refreshed_at": "2026-11-05T15:18:19.248083"
   },
   "marshallford/ansible": {
     "docs": {
@@ -98033,7 +98473,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:08.886298"
+    "docs_refreshed_at": "2026-11-05T15:18:20.177617"
   },
   "mittwald/mittwald": {
     "docs": {
@@ -98190,7 +98630,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:10.077241"
+    "docs_refreshed_at": "2026-11-05T15:18:21.429692"
   },
   "neilmartin83/axm": {
     "docs": {
@@ -98363,7 +98803,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:10.872591"
+    "docs_refreshed_at": "2026-11-05T15:18:22.267039"
   },
   "olacin-dd/olacin-wiz": {
     "docs": {
@@ -98410,7 +98850,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:12.503565"
+    "docs_refreshed_at": "2026-11-05T15:18:24.122259"
   },
   "scaleway/scaleway": {
     "docs": {
@@ -98549,6 +98989,11 @@
           "title": "s2s_vpn_connection_enable_route_propagation",
           "slug": "s2s_vpn_connection_enable_route_propagation",
           "subcategory": "S2S VPN"
+        },
+        {
+          "title": "tem_update_offer_subscription",
+          "slug": "tem_update_offer_subscription",
+          "subcategory": "Transactional Email"
         },
         {
           "title": "vpc_public_gateway_refresh_ssh_keys",
@@ -99354,6 +99799,11 @@
         }
       ],
       "ephemeral-resources": [
+        {
+          "title": "cockpit_token",
+          "slug": "cockpit_token",
+          "subcategory": "Cockpit"
+        },
         {
           "title": "config",
           "slug": "config",
@@ -100466,7 +100916,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:19.977856"
+    "docs_refreshed_at": "2026-11-05T15:18:32.488375"
   },
   "soffensive/soff": {
     "docs": {
@@ -100513,7 +100963,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:22.359097"
+    "docs_refreshed_at": "2026-11-05T15:18:35.933811"
   },
   "thrashr888/registry": {
     "docs": {
@@ -100601,7 +101051,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:24.463716"
+    "docs_refreshed_at": "2026-11-05T15:18:38.287326"
   },
   "tinkerbell-community/kubectl": {
     "docs": {
@@ -100915,6 +101365,11 @@
           "subcategory": ""
         },
         {
+          "title": "device_port",
+          "slug": "device_port",
+          "subcategory": ""
+        },
+        {
           "title": "dns_record",
           "slug": "dns_record",
           "subcategory": ""
@@ -101041,7 +101496,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:26.058345"
+    "docs_refreshed_at": "2026-11-05T15:18:40.003502"
   },
   "waldur/waldur": {
     "docs": {
@@ -101451,7 +101906,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:28.451770"
+    "docs_refreshed_at": "2026-11-05T15:18:42.551555"
   },
   "Jamf-Concepts/jamfprotect": {
     "docs": {
@@ -101741,7 +102196,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:29.881752"
+    "docs_refreshed_at": "2026-11-05T15:17:38.342849"
   },
   "hashicorp-oss/kubectl": {
     "docs": {
@@ -101796,7 +102251,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:56.374027"
+    "docs_refreshed_at": "2026-11-05T15:18:07.218864"
   },
   "timofurrer/desec": {
     "docs": {
@@ -101955,7 +102410,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:24.862603"
+    "docs_refreshed_at": "2026-11-05T15:18:38.704889"
   },
   "vidurb/profilarr": {
     "docs": {
@@ -102038,7 +102493,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:27.638871"
+    "docs_refreshed_at": "2026-11-05T15:18:41.715987"
   },
   "Forcepoint-NSP/fp-ngfw-smc": {
     "docs": {
@@ -105248,7 +105703,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:27.305870"
+    "docs_refreshed_at": "2026-11-05T15:17:35.612742"
   },
   "kenchan0130/neon": {
     "docs": {
@@ -105543,7 +105998,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:04.100818"
+    "docs_refreshed_at": "2026-11-05T15:18:15.013235"
   },
   "marshallford/pfsense": {
     "docs": {
@@ -105661,7 +106116,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:09.282664"
+    "docs_refreshed_at": "2026-11-05T15:18:20.593334"
   },
   "Jamf-Concepts/jamfschool": {
     "docs": {
@@ -105831,7 +106286,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:30.274057"
+    "docs_refreshed_at": "2026-11-05T15:17:38.763962"
   },
   "branchgrove/debian": {
     "docs": {
@@ -105946,7 +106401,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:40.781890"
+    "docs_refreshed_at": "2026-11-05T15:17:49.989181"
   },
   "fivetran/fivetran": {
     "docs": {
@@ -106255,6 +106710,11 @@
       ],
       "resources": [
         {
+          "title": "account_external_logging_v2",
+          "slug": "account_external_logging_v2",
+          "subcategory": ""
+        },
+        {
           "title": "connection",
           "slug": "connection",
           "subcategory": ""
@@ -106317,6 +106777,11 @@
         {
           "title": "destination_fingerprints",
           "slug": "destination_fingerprints",
+          "subcategory": ""
+        },
+        {
+          "title": "destination_v2",
+          "slug": "destination_v2",
           "subcategory": ""
         },
         {
@@ -106401,7 +106866,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:53.091918"
+    "docs_refreshed_at": "2026-11-05T15:18:03.828935"
   },
   "hashicorp/tfe": {
     "docs": {
@@ -107086,7 +107551,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:57.208902"
+    "docs_refreshed_at": "2026-11-05T15:18:08.067840"
   },
   "juju/juju": {
     "docs": {
@@ -107361,7 +107826,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:02.892066"
+    "docs_refreshed_at": "2026-11-05T15:18:13.739267"
   },
   "LaurentLesle/rest": {
     "docs": {
@@ -107462,7 +107927,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:30.662488"
+    "docs_refreshed_at": "2026-11-05T15:17:39.229091"
   },
   "cloudfoundry/cloudfoundry": {
     "docs": {
@@ -107900,7 +108365,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:41.958018"
+    "docs_refreshed_at": "2026-11-05T15:17:51.243983"
   },
   "kreuzwerker/docker": {
     "docs": {
@@ -108048,7 +108513,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:06.082407"
+    "docs_refreshed_at": "2026-11-05T15:18:17.148445"
   },
   "radeksimko/test": {
     "docs": {
@@ -108095,7 +108560,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:16.330798"
+    "docs_refreshed_at": "2026-11-05T15:18:28.557557"
   },
   "sebastianfs82/komodo": {
     "docs": {
@@ -108488,7 +108953,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:20.375893"
+    "docs_refreshed_at": "2026-11-05T15:18:32.907402"
   },
   "svilendotorg/unifi": {
     "docs": {
@@ -108713,7 +109178,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:23.156223"
+    "docs_refreshed_at": "2026-11-05T15:18:36.860862"
   },
   "lcp-llp/veeambackup": {
     "docs": {
@@ -108951,7 +109416,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:07.275619"
+    "docs_refreshed_at": "2026-11-05T15:18:18.405501"
   },
   "hetznercloud/hcloud": {
     "docs": {
@@ -109373,7 +109838,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:57.608576"
+    "docs_refreshed_at": "2026-11-05T15:18:08.492035"
   },
   "ja-guerrero/iru": {
     "docs": {
@@ -109842,7 +110307,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:59.656123"
+    "docs_refreshed_at": "2026-11-05T15:18:10.662409"
   },
   "public-cloud-wl/aws": {
     "docs": {
@@ -121808,7 +122273,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:14.999349"
+    "docs_refreshed_at": "2026-11-05T15:18:27.224018"
   },
   "rubrikinc/polaris": {
     "docs": {
@@ -122388,7 +122853,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:18.742031"
+    "docs_refreshed_at": "2026-11-05T15:18:31.153894"
   },
   "rubrikinc/rubrik": {
     "docs": {
@@ -122938,7 +123403,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:19.154297"
+    "docs_refreshed_at": "2026-11-05T15:18:31.580181"
   },
   "dmalch/genealogy": {
     "docs": {
@@ -123001,7 +123466,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:48.418600"
+    "docs_refreshed_at": "2026-11-05T15:17:58.153819"
   },
   "Vivicta-SC/ocp": {
     "docs": {
@@ -123084,7 +123549,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:35.907512"
+    "docs_refreshed_at": "2026-11-05T15:17:44.822176"
   },
   "compunet-cloud/azurefilesacl": {
     "docs": {
@@ -123115,7 +123580,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:42.760453"
+    "docs_refreshed_at": "2026-11-05T15:17:52.080242"
   },
   "day0-sandbox/azavd": {
     "docs": {
@@ -123146,7 +123611,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:45.584823"
+    "docs_refreshed_at": "2026-11-05T15:17:55.135117"
   },
   "day0-sandbox/azurefilesacl": {
     "docs": {
@@ -123177,7 +123642,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:45.979639"
+    "docs_refreshed_at": "2026-11-05T15:17:55.551122"
   },
   "fianulabs/fianu": {
     "docs": {
@@ -123340,7 +123805,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:52.683739"
+    "docs_refreshed_at": "2026-11-05T15:18:03.395817"
   },
   "nomatronio/nomatron": {
     "docs": {
@@ -123580,7 +124045,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:11.724477"
+    "docs_refreshed_at": "2026-11-05T15:18:23.276017"
   },
   "PaloAltoNetworks/scm": {
     "docs": {
@@ -125793,7 +126258,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:32.720459"
+    "docs_refreshed_at": "2026-11-05T15:17:41.440373"
   },
   "gringolito/ansible": {
     "docs": {
@@ -125863,7 +126328,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:54.779757"
+    "docs_refreshed_at": "2026-11-05T15:18:05.518985"
   },
   "pexip/infinity": {
     "docs": {
@@ -126273,7 +126738,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:13.700059"
+    "docs_refreshed_at": "2026-11-05T15:18:25.434279"
   },
   "we-work-in-the-cloud/nullcloud": {
     "docs": {
@@ -126408,7 +126873,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:28.840270"
+    "docs_refreshed_at": "2026-11-05T15:18:42.972018"
   },
   "elastic/elasticstack": {
     "docs": {
@@ -127245,7 +127710,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:50.044221"
+    "docs_refreshed_at": "2026-11-05T15:17:59.865482"
   },
   "WebedMJ/azureactions": {
     "docs": {
@@ -127274,7 +127739,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:36.304554"
+    "docs_refreshed_at": "2026-11-05T15:17:45.238362"
   },
   "public-cloud-wl/google": {
     "docs": {
@@ -135278,7 +135743,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:15.508843"
+    "docs_refreshed_at": "2026-11-05T15:18:27.715683"
   },
   "AnasSahel/sailpoint-isc-community": {
     "docs": {
@@ -135491,7 +135956,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:21.510389"
+    "docs_refreshed_at": "2026-11-05T15:17:29.901600"
   },
   "cloudcenmax/cloudcenmax": {
     "docs": {
@@ -135544,7 +136009,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:41.564295"
+    "docs_refreshed_at": "2026-11-05T15:17:50.826643"
   },
   "ionos-cloud/ionoscloud": {
     "docs": {
@@ -136534,7 +136999,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:58.848177"
+    "docs_refreshed_at": "2026-11-05T15:18:09.814467"
   },
   "536tech/daytona": {
     "docs": {
@@ -137940,7 +138405,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:33.515333"
+    "docs_refreshed_at": "2026-11-05T15:17:42.290000"
   },
   "gringolito/zabbix": {
     "docs": {
@@ -138143,7 +138608,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:55.180375"
+    "docs_refreshed_at": "2026-11-05T15:18:05.941675"
   },
   "samiracho/glitchtip": {
     "docs": {
@@ -138281,7 +138746,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:19.547428"
+    "docs_refreshed_at": "2026-11-05T15:18:31.997766"
   },
   "DrFaust92/airflow": {
     "docs": {
@@ -138374,7 +138839,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:25.266797"
+    "docs_refreshed_at": "2026-11-05T15:17:33.849751"
   },
   "jarneson33/komodo": {
     "docs": {
@@ -138797,7 +139262,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:01.467488"
+    "docs_refreshed_at": "2026-11-05T15:18:12.467596"
   },
   "kakaoenterprise/kakaocloud": {
     "docs": {
@@ -139452,7 +139917,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:03.712471"
+    "docs_refreshed_at": "2026-11-05T15:18:14.591237"
   },
   "IBM-Cloud/ibm": {
     "docs": {
@@ -139460,6 +139925,11 @@
         {
           "title": "container_vpc_bare_metal_worker_reload",
           "slug": "container_vpc_bare_metal_worker_reload",
+          "subcategory": "Kubernetes Service"
+        },
+        {
+          "title": "container_vpc_worker_reload",
+          "slug": "container_vpc_worker_reload",
           "subcategory": "Kubernetes Service"
         }
       ],
@@ -143475,6 +143945,16 @@
           "subcategory": "Secrets Manager"
         },
         {
+          "title": "sm_destination",
+          "slug": "sm_destination",
+          "subcategory": "Secrets Manager"
+        },
+        {
+          "title": "sm_destinations",
+          "slug": "sm_destinations",
+          "subcategory": "Secrets Manager"
+        },
+        {
           "title": "sm_en_registration",
           "slug": "sm_en_registration",
           "subcategory": "Secrets Manager"
@@ -143507,7 +143987,7 @@
         {
           "title": "sm_instance",
           "slug": "sm_instance",
-          "subcategory": "IBM Cloud Secrets Manager Instance Management API"
+          "subcategory": "Secrets Manager"
         },
         {
           "title": "sm_kv_secret",
@@ -146618,7 +147098,7 @@
         {
           "title": "sm_admin_token",
           "slug": "sm_admin_token",
-          "subcategory": "IBM Cloud Secrets Manager Instance Management API"
+          "subcategory": "Secrets Manager"
         },
         {
           "title": "sm_arbitrary_secret",
@@ -146633,6 +147113,11 @@
         {
           "title": "sm_custom_credentials_secret",
           "slug": "sm_custom_credentials_secret",
+          "subcategory": "Secrets Manager"
+        },
+        {
+          "title": "sm_destination",
+          "slug": "sm_destination",
           "subcategory": "Secrets Manager"
         },
         {
@@ -146807,7 +147292,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:28.190554"
+    "docs_refreshed_at": "2026-11-05T15:17:36.556309"
   },
   "damhau/scm": {
     "docs": {
@@ -149020,7 +149505,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:44.396238"
+    "docs_refreshed_at": "2026-11-05T15:17:53.874112"
   },
   "jamesbraid/unifi": {
     "docs": {
@@ -149455,7 +149940,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:00.644408"
+    "docs_refreshed_at": "2026-11-05T15:18:11.551869"
   },
   "nicole-ashley/matomo": {
     "docs": {
@@ -149878,7 +150363,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:11.277576"
+    "docs_refreshed_at": "2026-11-05T15:18:22.821604"
   },
   "sky-cloak/skycloak": {
     "docs": {
@@ -150206,7 +150691,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:21.176846"
+    "docs_refreshed_at": "2026-11-05T15:18:33.796660"
   },
   "FelGel/mongodb": {
     "docs": {
@@ -150407,7 +150892,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:04.898548"
+    "docs_refreshed_at": "2026-11-05T15:18:15.876806"
   },
   "kosli-dev/kosli": {
     "docs": {
@@ -150535,7 +151020,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:05.285116"
+    "docs_refreshed_at": "2026-11-05T15:18:16.293950"
   },
   "DrFaust92/mapbox": {
     "docs": {
@@ -150561,7 +151046,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:25.664756"
+    "docs_refreshed_at": "2026-11-05T15:17:34.270603"
   },
   "devops-rob/terracurl": {
     "docs": {
@@ -150633,7 +151118,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:47.601101"
+    "docs_refreshed_at": "2026-11-05T15:17:57.317828"
   },
   "gitpod-io/ona": {
     "docs": {
@@ -151040,7 +151525,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:54.279957"
+    "docs_refreshed_at": "2026-11-05T15:18:05.097023"
   },
   "ioplane/powerdns": {
     "docs": {
@@ -151207,7 +151692,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:59.253459"
+    "docs_refreshed_at": "2026-11-05T15:18:10.238234"
   },
   "stripe/stripe": {
     "docs": {
@@ -151560,7 +152045,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:22.756694"
+    "docs_refreshed_at": "2026-11-05T15:18:36.391525"
   },
   "terraform-ibm/powerhmc": {
     "docs": {
@@ -151660,7 +152145,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:24.074606"
+    "docs_refreshed_at": "2026-11-05T15:18:37.870316"
   },
   "andrefaria24/sailpoint-isc": {
     "docs": {
@@ -151873,7 +152358,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:37.590498"
+    "docs_refreshed_at": "2026-11-05T15:17:46.585432"
   },
   "comradesharf/hostinger": {
     "docs": {
@@ -152063,7 +152548,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:43.177823"
+    "docs_refreshed_at": "2026-11-05T15:17:52.504113"
   },
   "latitudesh/latitudesh": {
     "docs": {
@@ -152098,6 +152583,11 @@
         {
           "title": "block_storages",
           "slug": "block_storages",
+          "subcategory": ""
+        },
+        {
+          "title": "filesystem_storage",
+          "slug": "filesystem_storage",
           "subcategory": ""
         },
         {
@@ -152249,6 +152739,11 @@
           "subcategory": ""
         },
         {
+          "title": "filesystem_storage",
+          "slug": "filesystem_storage",
+          "subcategory": ""
+        },
+        {
           "title": "firewall",
           "slug": "firewall",
           "subcategory": ""
@@ -152335,7 +152830,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:06.881049"
+    "docs_refreshed_at": "2026-11-05T15:18:17.988544"
   },
   "vhco-pro/stackweaver": {
     "docs": {
@@ -152805,7 +153300,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:27.244203"
+    "docs_refreshed_at": "2026-11-05T15:18:41.299341"
   },
   "vivantel/paddle": {
     "docs": {
@@ -152972,7 +153467,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:28.058975"
+    "docs_refreshed_at": "2026-11-05T15:18:42.136115"
   },
   "BunnyWay/bunnynet": {
     "docs": {
@@ -153099,6 +153594,21 @@
           "subcategory": ""
         },
         {
+          "title": "loadbalancer",
+          "slug": "loadbalancer",
+          "subcategory": ""
+        },
+        {
+          "title": "loadbalancer_group",
+          "slug": "loadbalancer_group",
+          "subcategory": ""
+        },
+        {
+          "title": "loadbalancer_origin",
+          "slug": "loadbalancer_origin",
+          "subcategory": ""
+        },
+        {
           "title": "pullzone",
           "slug": "pullzone",
           "subcategory": ""
@@ -153165,7 +153675,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:22.357719"
+    "docs_refreshed_at": "2026-11-05T15:17:30.838729"
   },
   "JUSTINWMYLES/spacetraders": {
     "docs": {
@@ -153500,7 +154010,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:29.051590"
+    "docs_refreshed_at": "2026-11-05T15:17:37.477556"
   },
   "clumio-code/clumio": {
     "docs": {
@@ -153735,7 +154245,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:42.359215"
+    "docs_refreshed_at": "2026-11-05T15:17:51.663684"
   },
   "davidsonjon/identitynow": {
     "docs": {
@@ -154033,7 +154543,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:45.198262"
+    "docs_refreshed_at": "2026-11-05T15:17:54.716079"
   },
   "michaelkosir/utils": {
     "docs": {
@@ -154052,7 +154562,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:09.679025"
+    "docs_refreshed_at": "2026-11-05T15:18:21.011668"
   },
   "mwalser/iothub": {
     "docs": {
@@ -154236,7 +154746,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:10.478034"
+    "docs_refreshed_at": "2026-11-05T15:18:21.846304"
   },
   "JUSTINWMYLES/gigavuecore": {
     "docs": {
@@ -160265,7 +160775,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:28.663983"
+    "docs_refreshed_at": "2026-11-05T15:17:37.050766"
   },
   "dash0hq/dash0": {
     "docs": {
@@ -160307,6 +160817,11 @@
           "subcategory": ""
         },
         {
+          "title": "aws_metric_scrape_config",
+          "slug": "aws_metric_scrape_config",
+          "subcategory": ""
+        },
+        {
           "title": "check_rule",
           "slug": "check_rule",
           "subcategory": ""
@@ -160329,6 +160844,11 @@
         {
           "title": "recording_rule",
           "slug": "recording_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "sampling_rule",
+          "slug": "sampling_rule",
           "subcategory": ""
         },
         {
@@ -160363,7 +160883,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:44.795992"
+    "docs_refreshed_at": "2026-11-05T15:17:54.298236"
   },
   "gocommunity-io/dockerd": {
     "docs": {
@@ -160567,7 +161087,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:06.483615"
+    "docs_refreshed_at": "2026-11-05T15:18:17.570890"
   },
   "securitls/securitls": {
     "docs": {
@@ -160623,7 +161143,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:20.778766"
+    "docs_refreshed_at": "2026-11-05T15:18:33.333108"
   },
   "smallstep/step-ca-pro": {
     "docs": {
@@ -160659,7 +161179,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:21.572426"
+    "docs_refreshed_at": "2026-11-05T15:18:34.257174"
   },
   "f5-sales-demo/xcsh": {
     "docs": {
@@ -167851,7 +168371,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:51.472689"
+    "docs_refreshed_at": "2026-11-05T15:18:01.387104"
   },
   "CMDennis/easydns": {
     "docs": {
@@ -168061,7 +168581,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:22.762313"
+    "docs_refreshed_at": "2026-11-05T15:17:31.259583"
   },
   "svanrossem/hcloud": {
     "docs": {
@@ -169063,7 +169583,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:20.720130"
+    "docs_refreshed_at": "2026-11-05T15:17:29.016929"
   },
   "Luiggi33/dummybar": {
     "docs": {
@@ -169110,7 +169630,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:31.050913"
+    "docs_refreshed_at": "2026-11-05T15:17:39.643800"
   },
   "Luiggi33/dummyfoo": {
     "docs": {
@@ -169157,7 +169677,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:31.447010"
+    "docs_refreshed_at": "2026-11-05T15:17:40.064945"
   },
   "emqx/emqxcloud": {
     "docs": {
@@ -169250,7 +169770,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:50.831991"
+    "docs_refreshed_at": "2026-11-05T15:18:00.711618"
   },
   "fastly/fastly-beta": {
     "docs": {
@@ -169295,6 +169815,11 @@
         {
           "title": "api_security_operation_tags",
           "slug": "api_security_operation_tags",
+          "subcategory": ""
+        },
+        {
+          "title": "audit_log_event_mapping",
+          "slug": "audit_log_event_mapping",
           "subcategory": ""
         },
         {
@@ -169811,6 +170336,11 @@
           "subcategory": ""
         },
         {
+          "title": "audit_log_event_mapping",
+          "slug": "audit_log_event_mapping",
+          "subcategory": ""
+        },
+        {
           "title": "configstore",
           "slug": "configstore",
           "subcategory": ""
@@ -170003,6 +170533,16 @@
         {
           "title": "object_storage_access_keys",
           "slug": "object_storage_access_keys",
+          "subcategory": ""
+        },
+        {
+          "title": "routing_config_auto",
+          "slug": "routing_config_auto",
+          "subcategory": ""
+        },
+        {
+          "title": "routing_config_domain_link",
+          "slug": "routing_config_domain_link",
           "subcategory": ""
         },
         {
@@ -170372,7 +170912,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:52.286163"
+    "docs_refreshed_at": "2026-11-05T15:18:02.489623"
   },
   "jamf/jamfplatform": {
     "docs": {
@@ -172361,7 +172901,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:01.058754"
+    "docs_refreshed_at": "2026-11-05T15:18:12.047283"
   },
   "kreuzwenker/docker": {
     "docs": {
@@ -172535,7 +173075,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:13.300289"
+    "docs_refreshed_at": "2026-11-05T15:18:25.005057"
   },
   "tencentcloudstack/tencentcloud": {
     "docs": {
@@ -172556,6 +173096,11 @@
           "subcategory": "Provider Meta"
         },
         {
+          "title": "kms_instance",
+          "slug": "kms_instance",
+          "subcategory": "Key Management Service(KMS)"
+        },
+        {
           "title": "mongodb_restore_db_instance",
           "slug": "mongodb_restore_db_instance",
           "subcategory": "Provider Meta"
@@ -172569,6 +173114,11 @@
           "title": "ssl_upload_certificate_instance",
           "slug": "ssl_upload_certificate_instance",
           "subcategory": "Provider Meta"
+        },
+        {
+          "title": "ssm_service",
+          "slug": "ssm_service",
+          "subcategory": "Secrets Manager(SSM)"
         },
         {
           "title": "teo_confirm_origin_acl_update",
@@ -179959,13 +180509,33 @@
           "subcategory": "Firewall Manager(FWM)"
         },
         {
+          "title": "fwm_cfw_share_role_config",
+          "slug": "fwm_cfw_share_role_config",
+          "subcategory": "Firewall Manager(FWM)"
+        },
+        {
+          "title": "fwm_edge_acl_rule",
+          "slug": "fwm_edge_acl_rule",
+          "subcategory": "Firewall Manager(FWM)"
+        },
+        {
           "title": "fwm_member_group_config",
           "slug": "fwm_member_group_config",
           "subcategory": "Firewall Manager(FWM)"
         },
         {
+          "title": "fwm_nat_acl_rule",
+          "slug": "fwm_nat_acl_rule",
+          "subcategory": "Firewall Manager(FWM)"
+        },
+        {
           "title": "fwm_rule_group",
           "slug": "fwm_rule_group",
+          "subcategory": "Firewall Manager(FWM)"
+        },
+        {
+          "title": "fwm_security_group_rule",
+          "slug": "fwm_security_group_rule",
           "subcategory": "Firewall Manager(FWM)"
         },
         {
@@ -183915,7 +184485,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:23.670572"
+    "docs_refreshed_at": "2026-11-05T15:18:37.453581"
   },
   "TwilightCoders/truenas": {
     "docs": {
@@ -184477,7 +185047,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:35.522349"
+    "docs_refreshed_at": "2026-11-05T15:17:44.406220"
   },
   "rapid7/rapid7": {
     "docs": {
@@ -184593,7 +185163,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:16.741856"
+    "docs_refreshed_at": "2026-11-05T15:18:28.971376"
   },
   "CiscoDevNet/meraki": {
     "docs": {
@@ -186898,7 +187468,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:23.617125"
+    "docs_refreshed_at": "2026-11-05T15:17:32.117505"
   },
   "EyevinnOSC/osc": {
     "docs": {
@@ -187838,7 +188408,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:26.060632"
+    "docs_refreshed_at": "2026-11-05T15:17:34.698900"
   },
   "freefair/semaphore-ex": {
     "docs": {
@@ -188813,7 +189383,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:53.886855"
+    "docs_refreshed_at": "2026-11-05T15:18:04.672291"
   },
   "markddavidoff/unifi": {
     "docs": {
@@ -189168,7 +189738,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:08.475757"
+    "docs_refreshed_at": "2026-11-05T15:18:19.718681"
   },
   "redpanda-data/redpanda": {
     "docs": {
@@ -189331,7 +189901,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:17.133952"
+    "docs_refreshed_at": "2026-11-05T15:18:29.450432"
   },
   "truenas/truenas": {
     "docs": {
@@ -189908,6 +190478,11 @@
         {
           "title": "Best Practices",
           "slug": "best-practices",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Data Safety",
+          "slug": "data-safety",
           "subcategory": "Guides"
         }
       ],
@@ -190768,7 +191343,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:25.267041"
+    "docs_refreshed_at": "2026-11-05T15:18:39.125774"
   },
   "blechschmidt/sysutils": {
     "docs": {
@@ -191087,7 +191662,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:39.983131"
+    "docs_refreshed_at": "2026-11-05T15:17:49.144893"
   },
   "devs-ibee/ibee": {
     "docs": {
@@ -191108,8 +191683,18 @@
           "subcategory": ""
         },
         {
+          "title": "vm_backup_create",
+          "slug": "vm_backup_create",
+          "subcategory": ""
+        },
+        {
           "title": "vm_backup_restore",
           "slug": "vm_backup_restore",
+          "subcategory": ""
+        },
+        {
+          "title": "vm_backup_restore_cancel",
+          "slug": "vm_backup_restore_cancel",
           "subcategory": ""
         },
         {
@@ -191357,7 +191942,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:48.016605"
+    "docs_refreshed_at": "2026-11-05T15:17:57.734475"
   },
   "elva-labs/vew": {
     "docs": {
@@ -191542,7 +192127,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:50.439221"
+    "docs_refreshed_at": "2026-11-05T15:18:00.288254"
   },
   "lettermint/lettermint": {
     "docs": {
@@ -191652,7 +192237,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:07.672729"
+    "docs_refreshed_at": "2026-11-05T15:18:18.826474"
   },
   "turfbuild/kubewait": {
     "docs": {
@@ -191671,7 +192256,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:25.654862"
+    "docs_refreshed_at": "2026-11-05T15:18:39.583740"
   },
   "armitageee/kafka": {
     "docs": {
@@ -191801,7 +192386,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:38.767916"
+    "docs_refreshed_at": "2026-11-05T15:17:47.840112"
   },
   "kestra-io/kestra": {
     "docs": {
@@ -192076,7 +192661,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:04.498259"
+    "docs_refreshed_at": "2026-11-05T15:18:15.455353"
   },
   "northpolesec/nps": {
     "docs": {
@@ -192232,7 +192817,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:12.108426"
+    "docs_refreshed_at": "2026-11-05T15:18:23.700117"
   },
   "ringdas/das": {
     "docs": {
@@ -192832,7 +193417,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:18.333699"
+    "docs_refreshed_at": "2026-11-05T15:18:30.724697"
   },
   "aliyun/alicloud": {
     "docs": {
@@ -203091,7 +203676,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:37.188976"
+    "docs_refreshed_at": "2026-11-05T15:17:46.166095"
   },
   "denisyfrolov/unifi": {
     "docs": {
@@ -203446,7 +204031,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:46.760464"
+    "docs_refreshed_at": "2026-11-05T15:17:56.392154"
   },
   "faradayio/faraday": {
     "docs": {
@@ -203592,7 +204177,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:51.873196"
+    "docs_refreshed_at": "2026-11-05T15:18:01.827591"
   },
   "infobloxopen/infoblox": {
     "docs": {
@@ -205417,7 +206002,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:58.437726"
+    "docs_refreshed_at": "2026-11-05T15:18:09.389212"
   },
   "jshvn/healthchecksio": {
     "docs": {
@@ -205504,7 +206089,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:02.470853"
+    "docs_refreshed_at": "2026-11-05T15:18:13.311555"
   },
   "platform9/pcd": {
     "docs": {
@@ -206029,7 +206614,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:14.491747"
+    "docs_refreshed_at": "2026-11-05T15:18:26.269957"
   },
   "rfdrew/homarr": {
     "docs": {
@@ -206179,7 +206764,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:17.526203"
+    "docs_refreshed_at": "2026-11-05T15:18:29.866775"
   },
   "dmcphearson/iru": {
     "docs": {
@@ -206369,7 +206954,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:48.818614"
+    "docs_refreshed_at": "2026-11-05T15:17:58.575939"
   },
   "implemaab/s4communication": {
     "docs": {
@@ -206457,7 +207042,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:57.999809"
+    "docs_refreshed_at": "2026-11-05T15:18:08.951745"
   },
   "usespotlightai/spotlight": {
     "docs": {
@@ -206622,7 +207207,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:26.459387"
+    "docs_refreshed_at": "2026-11-05T15:18:40.424262"
   },
   "HuberyChen1/cdnpro": {
     "docs": {
@@ -206705,7 +207290,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:27.691758"
+    "docs_refreshed_at": "2026-11-05T15:17:36.037333"
   },
   "dodopayments/dodopayments": {
     "docs": {
@@ -206974,7 +207559,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:49.217498"
+    "docs_refreshed_at": "2026-11-05T15:17:58.998408"
   },
   "hashicorp-dev-advocates/pathfinder": {
     "docs": {
@@ -207037,7 +207622,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:12:55.976982"
+    "docs_refreshed_at": "2026-11-05T15:18:06.795802"
   },
   "k0rdent/k0rdent": {
     "docs": {
@@ -207386,7 +207971,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:03.283682"
+    "docs_refreshed_at": "2026-11-05T15:18:14.168554"
   },
   "ottramst/vaultwarden": {
     "docs": {
@@ -207591,7 +208176,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:12.902859"
+    "docs_refreshed_at": "2026-11-05T15:18:24.587599"
   },
   "pflege-de-labs/shopify": {
     "docs": {
@@ -207841,7 +208426,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:14.090846"
+    "docs_refreshed_at": "2026-11-05T15:18:25.850466"
   },
   "pushsecurity/pushsecurity": {
     "docs": {
@@ -208015,6 +208600,11 @@
           "subcategory": ""
         },
         {
+          "title": "blocked_url",
+          "slug": "blocked_url",
+          "subcategory": ""
+        },
+        {
           "title": "blocked_urls",
           "slug": "blocked_urls",
           "subcategory": ""
@@ -208111,7 +208701,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:15.922226"
+    "docs_refreshed_at": "2026-11-05T15:18:28.138763"
   },
   "rfdrew/kopia": {
     "docs": {
@@ -208218,7 +208808,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:17.927385"
+    "docs_refreshed_at": "2026-11-05T15:18:30.296517"
   },
   "smoketurner/discord": {
     "docs": {
@@ -208283,6 +208873,16 @@
         {
           "title": "channel",
           "slug": "channel",
+          "subcategory": ""
+        },
+        {
+          "title": "channel_member_permissions",
+          "slug": "channel_member_permissions",
+          "subcategory": ""
+        },
+        {
+          "title": "channel_role_permissions",
+          "slug": "channel_role_permissions",
           "subcategory": ""
         },
         {
@@ -208396,8 +208996,18 @@
           "subcategory": ""
         },
         {
+          "title": "server_member_permissions",
+          "slug": "server_member_permissions",
+          "subcategory": ""
+        },
+        {
           "title": "server_preview",
           "slug": "server_preview",
+          "subcategory": ""
+        },
+        {
+          "title": "server_role_permissions",
+          "slug": "server_role_permissions",
           "subcategory": ""
         },
         {
@@ -208844,7 +209454,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:21.968908"
+    "docs_refreshed_at": "2026-11-05T15:18:35.093839"
   },
   "varnish/varnish": {
     "docs": {
@@ -208917,7 +209527,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:26.848328"
+    "docs_refreshed_at": "2026-11-05T15:18:40.840937"
   },
   "workplace-as-code/msexchangeonline": {
     "docs": {
@@ -208931,6 +209541,16 @@
           "title": "accepted_domains",
           "slug": "accepted_domains",
           "subcategory": "Mail flow"
+        },
+        {
+          "title": "address_book_policy",
+          "slug": "address_book_policy",
+          "subcategory": "Address book"
+        },
+        {
+          "title": "address_list",
+          "slug": "address_list",
+          "subcategory": "Address book"
         },
         {
           "title": "anti_phish_policy",
@@ -208948,6 +209568,11 @@
           "subcategory": "Defender for Office 365"
         },
         {
+          "title": "cas_mailbox_plan",
+          "slug": "cas_mailbox_plan",
+          "subcategory": "Clients and devices"
+        },
+        {
           "title": "dkim_signing_config",
           "slug": "dkim_signing_config",
           "subcategory": "Mail flow"
@@ -208961,6 +209586,11 @@
           "title": "eop_protection_policy_rule",
           "slug": "eop_protection_policy_rule",
           "subcategory": "Anti-spam"
+        },
+        {
+          "title": "global_address_list",
+          "slug": "global_address_list",
+          "subcategory": "Address book"
         },
         {
           "title": "hosted_content_filter_policy",
@@ -208993,6 +209623,11 @@
           "subcategory": "Organization"
         },
         {
+          "title": "mailbox_plan",
+          "slug": "mailbox_plan",
+          "subcategory": "Organization"
+        },
+        {
           "title": "malware_filter_policy",
           "slug": "malware_filter_policy",
           "subcategory": "Anti-malware and anti-phishing"
@@ -209008,8 +209643,18 @@
           "subcategory": "Clients and devices"
         },
         {
+          "title": "offline_address_book",
+          "slug": "offline_address_book",
+          "subcategory": "Address book"
+        },
+        {
           "title": "organization_config",
           "slug": "organization_config",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "organization_relationship",
+          "slug": "organization_relationship",
           "subcategory": "Organization"
         },
         {
@@ -209066,6 +209711,11 @@
           "title": "safe_links_rule",
           "slug": "safe_links_rule",
           "subcategory": "Defender for Office 365"
+        },
+        {
+          "title": "sharing_policy",
+          "slug": "sharing_policy",
+          "subcategory": "Organization"
         },
         {
           "title": "transport_rule",
@@ -209132,6 +209782,31 @@
           "subcategory": ""
         },
         {
+          "title": "activesync_device_access_rule",
+          "slug": "activesync_device_access_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "activesync_organization_settings",
+          "slug": "activesync_organization_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "address_book_policy",
+          "slug": "address_book_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "address_list",
+          "slug": "address_list",
+          "subcategory": ""
+        },
+        {
+          "title": "admin_audit_log_config",
+          "slug": "admin_audit_log_config",
+          "subcategory": ""
+        },
+        {
           "title": "anti_phish_policy",
           "slug": "anti_phish_policy",
           "subcategory": ""
@@ -209152,6 +209827,11 @@
           "subcategory": ""
         },
         {
+          "title": "cas_mailbox_plan",
+          "slug": "cas_mailbox_plan",
+          "subcategory": ""
+        },
+        {
           "title": "dkim_signing_config",
           "slug": "dkim_signing_config",
           "subcategory": ""
@@ -209169,6 +209849,11 @@
         {
           "title": "external_in_outlook",
           "slug": "external_in_outlook",
+          "subcategory": ""
+        },
+        {
+          "title": "global_address_list",
+          "slug": "global_address_list",
           "subcategory": ""
         },
         {
@@ -209202,6 +209887,11 @@
           "subcategory": ""
         },
         {
+          "title": "mailbox_plan",
+          "slug": "mailbox_plan",
+          "subcategory": ""
+        },
+        {
           "title": "malware_filter_policy",
           "slug": "malware_filter_policy",
           "subcategory": ""
@@ -209217,8 +209907,18 @@
           "subcategory": ""
         },
         {
+          "title": "offline_address_book",
+          "slug": "offline_address_book",
+          "subcategory": ""
+        },
+        {
           "title": "organization_config",
           "slug": "organization_config",
+          "subcategory": ""
+        },
+        {
+          "title": "organization_relationship",
+          "slug": "organization_relationship",
           "subcategory": ""
         },
         {
@@ -209274,6 +209974,11 @@
         {
           "title": "safe_links_rule",
           "slug": "safe_links_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "sharing_policy",
+          "slug": "sharing_policy",
           "subcategory": ""
         },
         {
@@ -209306,6 +210011,31 @@
           "subcategory": "Mail flow"
         },
         {
+          "title": "activesync_device_access_rule",
+          "slug": "activesync_device_access_rule",
+          "subcategory": "Clients and devices"
+        },
+        {
+          "title": "activesync_organization_settings",
+          "slug": "activesync_organization_settings",
+          "subcategory": "Clients and devices"
+        },
+        {
+          "title": "address_book_policy",
+          "slug": "address_book_policy",
+          "subcategory": "Address book"
+        },
+        {
+          "title": "address_list",
+          "slug": "address_list",
+          "subcategory": "Address book"
+        },
+        {
+          "title": "admin_audit_log_config",
+          "slug": "admin_audit_log_config",
+          "subcategory": "Organization"
+        },
+        {
           "title": "anti_phish_policy",
           "slug": "anti_phish_policy",
           "subcategory": "Anti-malware and anti-phishing"
@@ -209326,6 +210056,11 @@
           "subcategory": "Defender for Office 365"
         },
         {
+          "title": "cas_mailbox_plan",
+          "slug": "cas_mailbox_plan",
+          "subcategory": "Clients and devices"
+        },
+        {
           "title": "dkim_signing_config",
           "slug": "dkim_signing_config",
           "subcategory": "Mail flow"
@@ -209344,6 +210079,11 @@
           "title": "external_in_outlook",
           "slug": "external_in_outlook",
           "subcategory": "Anti-malware and anti-phishing"
+        },
+        {
+          "title": "global_address_list",
+          "slug": "global_address_list",
+          "subcategory": "Address book"
         },
         {
           "title": "hosted_connection_filter_policy",
@@ -209376,6 +210116,11 @@
           "subcategory": "Mail flow"
         },
         {
+          "title": "mailbox_plan",
+          "slug": "mailbox_plan",
+          "subcategory": "Organization"
+        },
+        {
           "title": "malware_filter_policy",
           "slug": "malware_filter_policy",
           "subcategory": "Anti-malware and anti-phishing"
@@ -209391,8 +210136,18 @@
           "subcategory": "Clients and devices"
         },
         {
+          "title": "offline_address_book",
+          "slug": "offline_address_book",
+          "subcategory": "Address book"
+        },
+        {
           "title": "organization_config",
           "slug": "organization_config",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "organization_relationship",
+          "slug": "organization_relationship",
           "subcategory": "Organization"
         },
         {
@@ -209451,6 +210206,11 @@
           "subcategory": "Defender for Office 365"
         },
         {
+          "title": "sharing_policy",
+          "slug": "sharing_policy",
+          "subcategory": "Organization"
+        },
+        {
           "title": "tenant_allow_block_list_item",
           "slug": "tenant_allow_block_list_item",
           "subcategory": "Anti-spam"
@@ -209467,7 +210227,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:29.243671"
+    "docs_refreshed_at": "2026-11-05T15:18:43.398229"
   },
   "workplace-as-code/msexchangeserver": {
     "docs": {
@@ -209483,14 +210243,129 @@
           "subcategory": "Mail flow"
         },
         {
+          "title": "activesync_virtual_directory",
+          "slug": "activesync_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "address_rewrite_entry",
+          "slug": "address_rewrite_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "client_access_service",
+          "slug": "client_access_service",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "ecp_virtual_directory",
+          "slug": "ecp_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "email_address_policy",
+          "slug": "email_address_policy",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "exchange_certificate",
+          "slug": "exchange_certificate",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "ip_allow_list_entry",
+          "slug": "ip_allow_list_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_entry",
+          "slug": "ip_block_list_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_provider",
+          "slug": "ip_block_list_provider",
+          "subcategory": "Edge Transport"
+        },
+        {
           "title": "mailbox",
           "slug": "mailbox",
           "subcategory": "Organization"
         },
         {
+          "title": "mailbox_database",
+          "slug": "mailbox_database",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "mapi_virtual_directory",
+          "slug": "mapi_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "mobile_device_mailbox_policy",
+          "slug": "mobile_device_mailbox_policy",
+          "subcategory": "Clients and devices"
+        },
+        {
+          "title": "oab_virtual_directory",
+          "slug": "oab_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
           "title": "organization_config",
           "slug": "organization_config",
           "subcategory": "Organization"
+        },
+        {
+          "title": "owa_mailbox_policy",
+          "slug": "owa_mailbox_policy",
+          "subcategory": "Clients and devices"
+        },
+        {
+          "title": "owa_virtual_directory",
+          "slug": "owa_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "receive_connector",
+          "slug": "receive_connector",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "remote_domain",
+          "slug": "remote_domain",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "remote_mailbox",
+          "slug": "remote_mailbox",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "retention_policy",
+          "slug": "retention_policy",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "retention_policy_tag",
+          "slug": "retention_policy_tag",
+          "subcategory": "Organization"
+        },
+        {
+          "title": "send_connector",
+          "slug": "send_connector",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "transport_rule",
+          "slug": "transport_rule",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "web_services_virtual_directory",
+          "slug": "web_services_virtual_directory",
+          "subcategory": "Servers"
         }
       ],
       "guides": [
@@ -209532,13 +210407,93 @@
           "subcategory": ""
         },
         {
+          "title": "activesync_virtual_directory",
+          "slug": "activesync_virtual_directory",
+          "subcategory": ""
+        },
+        {
+          "title": "address_rewrite_entry",
+          "slug": "address_rewrite_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "client_access_service",
+          "slug": "client_access_service",
+          "subcategory": ""
+        },
+        {
+          "title": "content_filter_config",
+          "slug": "content_filter_config",
+          "subcategory": ""
+        },
+        {
+          "title": "ecp_virtual_directory",
+          "slug": "ecp_virtual_directory",
+          "subcategory": ""
+        },
+        {
           "title": "email_address_policy",
           "slug": "email_address_policy",
           "subcategory": ""
         },
         {
+          "title": "exchange_certificate",
+          "slug": "exchange_certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "exchange_certificate_services",
+          "slug": "exchange_certificate_services",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_allow_list_config",
+          "slug": "ip_allow_list_config",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_allow_list_entry",
+          "slug": "ip_allow_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_block_list_config",
+          "slug": "ip_block_list_config",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_block_list_entry",
+          "slug": "ip_block_list_entry",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_block_list_provider",
+          "slug": "ip_block_list_provider",
+          "subcategory": ""
+        },
+        {
+          "title": "ip_block_list_providers_config",
+          "slug": "ip_block_list_providers_config",
+          "subcategory": ""
+        },
+        {
+          "title": "mailbox_database",
+          "slug": "mailbox_database",
+          "subcategory": ""
+        },
+        {
+          "title": "mapi_virtual_directory",
+          "slug": "mapi_virtual_directory",
+          "subcategory": ""
+        },
+        {
           "title": "mobile_device_mailbox_policy",
           "slug": "mobile_device_mailbox_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "oab_virtual_directory",
+          "slug": "oab_virtual_directory",
           "subcategory": ""
         },
         {
@@ -209549,6 +210504,21 @@
         {
           "title": "owa_mailbox_policy",
           "slug": "owa_mailbox_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "owa_virtual_directory",
+          "slug": "owa_virtual_directory",
+          "subcategory": ""
+        },
+        {
+          "title": "receive_connector",
+          "slug": "receive_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "recipient_filter_config",
+          "slug": "recipient_filter_config",
           "subcategory": ""
         },
         {
@@ -209567,6 +210537,16 @@
           "subcategory": ""
         },
         {
+          "title": "send_connector",
+          "slug": "send_connector",
+          "subcategory": ""
+        },
+        {
+          "title": "sender_filter_config",
+          "slug": "sender_filter_config",
+          "subcategory": ""
+        },
+        {
           "title": "transport_config",
           "slug": "transport_config",
           "subcategory": ""
@@ -209574,6 +210554,11 @@
         {
           "title": "transport_rule",
           "slug": "transport_rule",
+          "subcategory": ""
+        },
+        {
+          "title": "web_services_virtual_directory",
+          "slug": "web_services_virtual_directory",
           "subcategory": ""
         }
       ],
@@ -209591,14 +210576,94 @@
           "subcategory": "Mail flow"
         },
         {
+          "title": "activesync_virtual_directory",
+          "slug": "activesync_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "address_rewrite_entry",
+          "slug": "address_rewrite_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "client_access_service",
+          "slug": "client_access_service",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "content_filter_config",
+          "slug": "content_filter_config",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ecp_virtual_directory",
+          "slug": "ecp_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
           "title": "email_address_policy",
           "slug": "email_address_policy",
           "subcategory": "Organization"
         },
         {
+          "title": "exchange_certificate",
+          "slug": "exchange_certificate",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "exchange_certificate_services",
+          "slug": "exchange_certificate_services",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "ip_allow_list_config",
+          "slug": "ip_allow_list_config",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_allow_list_entry",
+          "slug": "ip_allow_list_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_config",
+          "slug": "ip_block_list_config",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_entry",
+          "slug": "ip_block_list_entry",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_provider",
+          "slug": "ip_block_list_provider",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "ip_block_list_providers_config",
+          "slug": "ip_block_list_providers_config",
+          "subcategory": "Edge Transport"
+        },
+        {
+          "title": "mailbox_database",
+          "slug": "mailbox_database",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "mapi_virtual_directory",
+          "slug": "mapi_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
           "title": "mobile_device_mailbox_policy",
           "slug": "mobile_device_mailbox_policy",
           "subcategory": "Clients and devices"
+        },
+        {
+          "title": "oab_virtual_directory",
+          "slug": "oab_virtual_directory",
+          "subcategory": "Servers"
         },
         {
           "title": "organization_config",
@@ -209609,6 +210674,21 @@
           "title": "owa_mailbox_policy",
           "slug": "owa_mailbox_policy",
           "subcategory": "Clients and devices"
+        },
+        {
+          "title": "owa_virtual_directory",
+          "slug": "owa_virtual_directory",
+          "subcategory": "Servers"
+        },
+        {
+          "title": "receive_connector",
+          "slug": "receive_connector",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "recipient_filter_config",
+          "slug": "recipient_filter_config",
+          "subcategory": "Edge Transport"
         },
         {
           "title": "remote_domain",
@@ -209626,6 +210706,16 @@
           "subcategory": "Organization"
         },
         {
+          "title": "send_connector",
+          "slug": "send_connector",
+          "subcategory": "Mail flow"
+        },
+        {
+          "title": "sender_filter_config",
+          "slug": "sender_filter_config",
+          "subcategory": "Edge Transport"
+        },
+        {
           "title": "transport_config",
           "slug": "transport_config",
           "subcategory": "Mail flow"
@@ -209634,13 +210724,115 @@
           "title": "transport_rule",
           "slug": "transport_rule",
           "subcategory": "Mail flow"
+        },
+        {
+          "title": "web_services_virtual_directory",
+          "slug": "web_services_virtual_directory",
+          "subcategory": "Servers"
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:29.646281"
+    "docs_refreshed_at": "2026-11-05T15:18:43.819751"
   },
   "workplace-as-code/msteams": {
     "docs": {
+      "data-sources": [
+        {
+          "title": "app_setup_policy",
+          "slug": "app_setup_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "calling_policy",
+          "slug": "calling_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "channels_policy",
+          "slug": "channels_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "client_configuration",
+          "slug": "client_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "emergency_calling_policy",
+          "slug": "emergency_calling_policy",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "emergency_call_routing_policy",
+          "slug": "emergency_call_routing_policy",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "events_policy",
+          "slug": "events_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "feedback_policy",
+          "slug": "feedback_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "guest_calling_configuration",
+          "slug": "guest_calling_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "guest_meeting_configuration",
+          "slug": "guest_meeting_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "guest_messaging_configuration",
+          "slug": "guest_messaging_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "meeting_configuration",
+          "slug": "meeting_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "meeting_policy",
+          "slug": "meeting_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "messaging_policy",
+          "slug": "messaging_policy",
+          "subcategory": "Policies"
+        },
+        {
+          "title": "online_voice_route",
+          "slug": "online_voice_route",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "online_voice_routing_policy",
+          "slug": "online_voice_routing_policy",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "tenant_dial_plan",
+          "slug": "tenant_dial_plan",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "tenant_federation_configuration",
+          "slug": "tenant_federation_configuration",
+          "subcategory": "Tenant settings"
+        },
+        {
+          "title": "update_management_policy",
+          "slug": "update_management_policy",
+          "subcategory": "Policies"
+        }
+      ],
       "guides": [
         {
           "title": "Certificate Authentication",
@@ -209707,6 +210899,16 @@
         {
           "title": "client_configuration",
           "slug": "client_configuration",
+          "subcategory": ""
+        },
+        {
+          "title": "emergency_calling_policy",
+          "slug": "emergency_calling_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "emergency_call_routing_policy",
+          "slug": "emergency_call_routing_policy",
           "subcategory": ""
         },
         {
@@ -209755,6 +210957,26 @@
           "subcategory": ""
         },
         {
+          "title": "online_pstn_usage",
+          "slug": "online_pstn_usage",
+          "subcategory": ""
+        },
+        {
+          "title": "online_voice_route",
+          "slug": "online_voice_route",
+          "subcategory": ""
+        },
+        {
+          "title": "online_voice_routing_policy",
+          "slug": "online_voice_routing_policy",
+          "subcategory": ""
+        },
+        {
+          "title": "tenant_dial_plan",
+          "slug": "tenant_dial_plan",
+          "subcategory": ""
+        },
+        {
           "title": "tenant_federation_configuration",
           "slug": "tenant_federation_configuration",
           "subcategory": ""
@@ -209792,6 +211014,16 @@
           "title": "client_configuration",
           "slug": "client_configuration",
           "subcategory": "Tenant settings"
+        },
+        {
+          "title": "emergency_calling_policy",
+          "slug": "emergency_calling_policy",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "emergency_call_routing_policy",
+          "slug": "emergency_call_routing_policy",
+          "subcategory": "Voice"
         },
         {
           "title": "events_policy",
@@ -209839,6 +211071,26 @@
           "subcategory": "Policies"
         },
         {
+          "title": "online_pstn_usage",
+          "slug": "online_pstn_usage",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "online_voice_route",
+          "slug": "online_voice_route",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "online_voice_routing_policy",
+          "slug": "online_voice_routing_policy",
+          "subcategory": "Voice"
+        },
+        {
+          "title": "tenant_dial_plan",
+          "slug": "tenant_dial_plan",
+          "subcategory": "Voice"
+        },
+        {
           "title": "tenant_federation_configuration",
           "slug": "tenant_federation_configuration",
           "subcategory": "Tenant settings"
@@ -209850,6 +211102,842 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:13:30.076401"
+    "docs_refreshed_at": "2026-11-05T15:18:44.285205"
+  },
+  "pubg/arcane": {
+    "docs": {
+      "actions": [
+        {
+          "title": "command",
+          "slug": "command",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "api_resource",
+          "slug": "api_resource",
+          "subcategory": ""
+        },
+        {
+          "title": "api_resources",
+          "slug": "api_resources",
+          "subcategory": ""
+        },
+        {
+          "title": "command",
+          "slug": "command",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "api_resource",
+          "slug": "api_resource",
+          "subcategory": ""
+        },
+        {
+          "title": "command",
+          "slug": "command",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-11-05T15:18:26.689735"
+  },
+  "smoketurner/apple": {
+    "docs": {
+      "actions": [
+        {
+          "title": "add_build_testers",
+          "slug": "add_build_testers",
+          "subcategory": ""
+        },
+        {
+          "title": "add_build_to_beta_groups",
+          "slug": "add_build_to_beta_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "assign_encryption_declaration",
+          "slug": "assign_encryption_declaration",
+          "subcategory": ""
+        },
+        {
+          "title": "cancel_review_submission",
+          "slug": "cancel_review_submission",
+          "subcategory": ""
+        },
+        {
+          "title": "clear_sandbox_purchase_history",
+          "slug": "clear_sandbox_purchase_history",
+          "subcategory": ""
+        },
+        {
+          "title": "delete_beta_tester",
+          "slug": "delete_beta_tester",
+          "subcategory": ""
+        },
+        {
+          "title": "end_pre_orders",
+          "slug": "end_pre_orders",
+          "subcategory": ""
+        },
+        {
+          "title": "expire_build",
+          "slug": "expire_build",
+          "subcategory": ""
+        },
+        {
+          "title": "invite_beta_tester",
+          "slug": "invite_beta_tester",
+          "subcategory": ""
+        },
+        {
+          "title": "notify_beta_testers",
+          "slug": "notify_beta_testers",
+          "subcategory": ""
+        },
+        {
+          "title": "ping_webhook",
+          "slug": "ping_webhook",
+          "subcategory": ""
+        },
+        {
+          "title": "redeliver_webhook",
+          "slug": "redeliver_webhook",
+          "subcategory": ""
+        },
+        {
+          "title": "release_version",
+          "slug": "release_version",
+          "subcategory": ""
+        },
+        {
+          "title": "remove_beta_testers_from_app",
+          "slug": "remove_beta_testers_from_app",
+          "subcategory": ""
+        },
+        {
+          "title": "remove_build_from_beta_groups",
+          "slug": "remove_build_from_beta_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "remove_build_testers",
+          "slug": "remove_build_testers",
+          "subcategory": ""
+        },
+        {
+          "title": "set_build_export_compliance",
+          "slug": "set_build_export_compliance",
+          "subcategory": ""
+        },
+        {
+          "title": "submit_beta_review",
+          "slug": "submit_beta_review",
+          "subcategory": ""
+        },
+        {
+          "title": "submit_for_review",
+          "slug": "submit_for_review",
+          "subcategory": ""
+        },
+        {
+          "title": "submit_in_app_purchase",
+          "slug": "submit_in_app_purchase",
+          "subcategory": ""
+        },
+        {
+          "title": "submit_subscription",
+          "slug": "submit_subscription",
+          "subcategory": ""
+        }
+      ],
+      "data-sources": [
+        {
+          "title": "app",
+          "slug": "app",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library",
+          "slug": "app_asset_library",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_placements",
+          "slug": "app_asset_library_placements",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_reference_data",
+          "slug": "app_asset_library_reference_data",
+          "subcategory": ""
+        },
+        {
+          "title": "app_categories",
+          "slug": "app_categories",
+          "subcategory": ""
+        },
+        {
+          "title": "app_price_point_equalizations",
+          "slug": "app_price_point_equalizations",
+          "subcategory": ""
+        },
+        {
+          "title": "app_price_points",
+          "slug": "app_price_points",
+          "subcategory": ""
+        },
+        {
+          "title": "apps",
+          "slug": "apps",
+          "subcategory": ""
+        },
+        {
+          "title": "app_search_keywords",
+          "slug": "app_search_keywords",
+          "subcategory": ""
+        },
+        {
+          "title": "background_assets",
+          "slug": "background_assets",
+          "subcategory": ""
+        },
+        {
+          "title": "background_asset_versions",
+          "slug": "background_asset_versions",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_groups",
+          "slug": "beta_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_recruitment_criterion_options",
+          "slug": "beta_recruitment_criterion_options",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_tester",
+          "slug": "beta_tester",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_testers",
+          "slug": "beta_testers",
+          "subcategory": ""
+        },
+        {
+          "title": "build",
+          "slug": "build",
+          "subcategory": ""
+        },
+        {
+          "title": "builds",
+          "slug": "builds",
+          "subcategory": ""
+        },
+        {
+          "title": "bundle_id",
+          "slug": "bundle_id",
+          "subcategory": ""
+        },
+        {
+          "title": "bundle_ids",
+          "slug": "bundle_ids",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate",
+          "slug": "certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "certificates",
+          "slug": "certificates",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "devices",
+          "slug": "devices",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_offer_code_one_time_use_code_values",
+          "slug": "in_app_purchase_offer_code_one_time_use_code_values",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_price_point_equalizations",
+          "slug": "in_app_purchase_price_point_equalizations",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_price_points",
+          "slug": "in_app_purchase_price_points",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchases",
+          "slug": "in_app_purchases",
+          "subcategory": ""
+        },
+        {
+          "title": "merchant_id",
+          "slug": "merchant_id",
+          "subcategory": ""
+        },
+        {
+          "title": "merchant_ids",
+          "slug": "merchant_ids",
+          "subcategory": ""
+        },
+        {
+          "title": "nominations",
+          "slug": "nominations",
+          "subcategory": ""
+        },
+        {
+          "title": "pass_type_id",
+          "slug": "pass_type_id",
+          "subcategory": ""
+        },
+        {
+          "title": "pass_type_ids",
+          "slug": "pass_type_ids",
+          "subcategory": ""
+        },
+        {
+          "title": "pre_release_versions",
+          "slug": "pre_release_versions",
+          "subcategory": ""
+        },
+        {
+          "title": "profile",
+          "slug": "profile",
+          "subcategory": ""
+        },
+        {
+          "title": "profiles",
+          "slug": "profiles",
+          "subcategory": ""
+        },
+        {
+          "title": "sandbox_testers",
+          "slug": "sandbox_testers",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_groups",
+          "slug": "subscription_groups",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_offer_code_one_time_use_code_values",
+          "slug": "subscription_offer_code_one_time_use_code_values",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_price_point_equalizations",
+          "slug": "subscription_price_point_equalizations",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_price_points",
+          "slug": "subscription_price_points",
+          "subcategory": ""
+        },
+        {
+          "title": "subscriptions",
+          "slug": "subscriptions",
+          "subcategory": ""
+        },
+        {
+          "title": "territories",
+          "slug": "territories",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        },
+        {
+          "title": "user_invitations",
+          "slug": "user_invitations",
+          "subcategory": ""
+        },
+        {
+          "title": "users",
+          "slug": "users",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook_deliveries",
+          "slug": "webhook_deliveries",
+          "subcategory": ""
+        },
+        {
+          "title": "webhooks",
+          "slug": "webhooks",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "accessibility_declaration",
+          "slug": "accessibility_declaration",
+          "subcategory": ""
+        },
+        {
+          "title": "age_rating_declaration",
+          "slug": "age_rating_declaration",
+          "subcategory": ""
+        },
+        {
+          "title": "android_to_ios_app_mapping",
+          "slug": "android_to_ios_app_mapping",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_image",
+          "slug": "app_asset_library_image",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_placement",
+          "slug": "app_asset_library_placement",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_placement_order",
+          "slug": "app_asset_library_placement_order",
+          "subcategory": ""
+        },
+        {
+          "title": "app_asset_library_video",
+          "slug": "app_asset_library_video",
+          "subcategory": ""
+        },
+        {
+          "title": "app_availability",
+          "slug": "app_availability",
+          "subcategory": ""
+        },
+        {
+          "title": "app_encryption_declaration",
+          "slug": "app_encryption_declaration",
+          "subcategory": ""
+        },
+        {
+          "title": "app_encryption_declaration_document",
+          "slug": "app_encryption_declaration_document",
+          "subcategory": ""
+        },
+        {
+          "title": "app_info",
+          "slug": "app_info",
+          "subcategory": ""
+        },
+        {
+          "title": "app_info_localization",
+          "slug": "app_info_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "app_preview_set",
+          "slug": "app_preview_set",
+          "subcategory": ""
+        },
+        {
+          "title": "app_price_schedule",
+          "slug": "app_price_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "app_screenshot_set",
+          "slug": "app_screenshot_set",
+          "subcategory": ""
+        },
+        {
+          "title": "app_settings",
+          "slug": "app_settings",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_review_attachment",
+          "slug": "app_store_review_attachment",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_review_detail",
+          "slug": "app_store_review_detail",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_version",
+          "slug": "app_store_version",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_version_localization",
+          "slug": "app_store_version_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_version_localization_search_keyword",
+          "slug": "app_store_version_localization_search_keyword",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_version_phased_release",
+          "slug": "app_store_version_phased_release",
+          "subcategory": ""
+        },
+        {
+          "title": "app_store_version_routing_app_coverage",
+          "slug": "app_store_version_routing_app_coverage",
+          "subcategory": ""
+        },
+        {
+          "title": "app_tag",
+          "slug": "app_tag",
+          "subcategory": ""
+        },
+        {
+          "title": "app_territory_availability",
+          "slug": "app_territory_availability",
+          "subcategory": ""
+        },
+        {
+          "title": "background_asset",
+          "slug": "background_asset",
+          "subcategory": ""
+        },
+        {
+          "title": "background_asset_version",
+          "slug": "background_asset_version",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_app_localization",
+          "slug": "beta_app_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_app_review_detail",
+          "slug": "beta_app_review_detail",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_build_localization",
+          "slug": "beta_build_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_group",
+          "slug": "beta_group",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_group_tester",
+          "slug": "beta_group_tester",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_license_agreement",
+          "slug": "beta_license_agreement",
+          "subcategory": ""
+        },
+        {
+          "title": "beta_recruitment_criteria",
+          "slug": "beta_recruitment_criteria",
+          "subcategory": ""
+        },
+        {
+          "title": "build_beta_detail",
+          "slug": "build_beta_detail",
+          "subcategory": ""
+        },
+        {
+          "title": "bundle_id",
+          "slug": "bundle_id",
+          "subcategory": ""
+        },
+        {
+          "title": "bundle_id_capability",
+          "slug": "bundle_id_capability",
+          "subcategory": ""
+        },
+        {
+          "title": "certificate",
+          "slug": "certificate",
+          "subcategory": ""
+        },
+        {
+          "title": "device",
+          "slug": "device",
+          "subcategory": ""
+        },
+        {
+          "title": "end_user_license_agreement",
+          "slug": "end_user_license_agreement",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase",
+          "slug": "in_app_purchase",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_availability",
+          "slug": "in_app_purchase_availability",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_image",
+          "slug": "in_app_purchase_image",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_localization",
+          "slug": "in_app_purchase_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_offer_code",
+          "slug": "in_app_purchase_offer_code",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_offer_code_custom_code",
+          "slug": "in_app_purchase_offer_code_custom_code",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_offer_code_one_time_use_codes",
+          "slug": "in_app_purchase_offer_code_one_time_use_codes",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_price_schedule",
+          "slug": "in_app_purchase_price_schedule",
+          "subcategory": ""
+        },
+        {
+          "title": "in_app_purchase_review_screenshot",
+          "slug": "in_app_purchase_review_screenshot",
+          "subcategory": ""
+        },
+        {
+          "title": "merchant_id",
+          "slug": "merchant_id",
+          "subcategory": ""
+        },
+        {
+          "title": "nomination",
+          "slug": "nomination",
+          "subcategory": ""
+        },
+        {
+          "title": "pass_type_id",
+          "slug": "pass_type_id",
+          "subcategory": ""
+        },
+        {
+          "title": "profile",
+          "slug": "profile",
+          "subcategory": ""
+        },
+        {
+          "title": "promoted_purchase",
+          "slug": "promoted_purchase",
+          "subcategory": ""
+        },
+        {
+          "title": "promoted_purchase_order",
+          "slug": "promoted_purchase_order",
+          "subcategory": ""
+        },
+        {
+          "title": "sandbox_tester",
+          "slug": "sandbox_tester",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription",
+          "slug": "subscription",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_grace_period",
+          "slug": "subscription_grace_period",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_group",
+          "slug": "subscription_group",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_group_localization",
+          "slug": "subscription_group_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_image",
+          "slug": "subscription_image",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_introductory_offer",
+          "slug": "subscription_introductory_offer",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_localization",
+          "slug": "subscription_localization",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_offer_code",
+          "slug": "subscription_offer_code",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_offer_code_custom_code",
+          "slug": "subscription_offer_code_custom_code",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_offer_code_one_time_use_codes",
+          "slug": "subscription_offer_code_one_time_use_codes",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_plan_availability",
+          "slug": "subscription_plan_availability",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_price",
+          "slug": "subscription_price",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_promotional_offer",
+          "slug": "subscription_promotional_offer",
+          "subcategory": ""
+        },
+        {
+          "title": "subscription_review_screenshot",
+          "slug": "subscription_review_screenshot",
+          "subcategory": ""
+        },
+        {
+          "title": "user",
+          "slug": "user",
+          "subcategory": ""
+        },
+        {
+          "title": "user_visible_app",
+          "slug": "user_visible_app",
+          "subcategory": ""
+        },
+        {
+          "title": "webhook",
+          "slug": "webhook",
+          "subcategory": ""
+        },
+        {
+          "title": "win_back_offer",
+          "slug": "win_back_offer",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-11-05T15:18:34.674839"
+  },
+  "sntns/nemo": {
+    "docs": {
+      "data-sources": [
+        {
+          "title": "bundle",
+          "slug": "bundle",
+          "subcategory": ""
+        },
+        {
+          "title": "stack",
+          "slug": "stack",
+          "subcategory": ""
+        }
+      ],
+      "guides": [
+        {
+          "title": "Adopting stacks",
+          "slug": "adopting-stacks",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Getting started",
+          "slug": "getting-started",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Secrets",
+          "slug": "secrets",
+          "subcategory": "Guides"
+        },
+        {
+          "title": "Swarm with several managers",
+          "slug": "swarm-records",
+          "subcategory": "Guides"
+        }
+      ],
+      "list-resources": [
+        {
+          "title": "stack",
+          "slug": "stack",
+          "subcategory": ""
+        }
+      ],
+      "overview": [
+        {
+          "title": "overview",
+          "slug": "index",
+          "subcategory": ""
+        }
+      ],
+      "resources": [
+        {
+          "title": "stack",
+          "slug": "stack",
+          "subcategory": ""
+        }
+      ]
+    },
+    "docs_refreshed_at": "2026-11-05T15:18:35.516816"
   }
 }
