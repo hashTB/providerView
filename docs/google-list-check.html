@@ -131,38 +131,38 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">List resources served by the latest <code>hashicorp/google</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated 2026-11-01T15:10:59.353252.</p>
+    <p class="subtitle">List resources served by the latest <code>hashicorp/google</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated 2026-11-05T15:15:46.217290.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">153</div><div class="label">List Resources in v8.9.0</div></div>
+        <div class="card"><div class="value">153</div><div class="label">List Resources in v8.10.0</div></div>
         <div class="card"><div class="value">159</div><div class="label">Registry List Pages</div></div>
-        <div class="card"><div class="value">153</div><div class="label">Source Registrations (main)</div></div>
+        <div class="card"><div class="value">154</div><div class="label">Source Registrations (main)</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Registry in sync</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Source Scan Sees All Released</div></div>
     </div>
 
     <div class="note">
-        <strong>✅ Validation:</strong> <code>hashicorp/google</code> v8.9.0 serves
+        <strong>✅ Validation:</strong> <code>hashicorp/google</code> v8.10.0 serves
         <strong>153</strong> list resources
-        (<strong>950</strong> resources have identity), read from the released provider with
+        (<strong>953</strong> resources have identity), read from the released provider with
         <code>terraform providers schema -json</code> (Terraform 1.17.1).
         The Registry documents <strong>159</strong> list-resource pages; some pages cover several
         resources, and the docs also include pages for <code>hashicorp/google-beta</code>-only resources
-        (v8.9.0 serves <strong>160</strong>), as listed below.
-        The source scan of main finds <strong>153</strong> registrations and supplies the per-service grouping.
+        (v8.10.0 serves <strong>160</strong>), as listed below.
+        The source scan of main finds <strong>154</strong> registrations and supplies the per-service grouping.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>97d621ac02ab926d7ca3cf01e5bcc31e0ddb1665</code></span></div>
-                <div class="meta-row"><span>Registration sources</span><span>152 file(s) under <code>google/</code></span></div>
-                <div class="meta-row"><span>Registrations SHA-256</span><span><code>9f1db3e1f436b8ba...</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>dca0925b298f97171f252cb5258a2a27558c8efe</code></span></div>
+                <div class="meta-row"><span>Registration sources</span><span>153 file(s) under <code>google/</code></span></div>
+                <div class="meta-row"><span>Registrations SHA-256</span><span><code>5aeadb49134c1cf7...</code></span></div>
             </div>
             <div>
                 <div class="meta-row"><span>Dashboard provider</span><span><code>hashicorp/google</code></span></div>
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px; grid-template-columns: 1fr;"><div><div class="meta-row"><span>Registry page <code>google_project_iam</code> documents</span><span><code>google_project_iam_binding</code> <code>google_project_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_pubsub_topic_iam</code> documents</span><span><code>google_pubsub_topic_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_secret_manager_secret_iam</code> documents</span><span><code>google_secret_manager_secret_iam_member</code></span></div><div class="meta-row"><span>Registry pages for hashicorp/google-beta-only resources</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_network_security_sac_realm</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px; grid-template-columns: 1fr;"><div><div class="meta-row"><span>Registry page <code>google_project_iam</code> documents</span><span><code>google_project_iam_binding</code> <code>google_project_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_pubsub_topic_iam</code> documents</span><span><code>google_pubsub_topic_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_secret_manager_secret_iam</code> documents</span><span><code>google_secret_manager_secret_iam_member</code></span></div><div class="meta-row"><span>Registry pages for hashicorp/google-beta-only resources</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_network_security_sac_realm</code></span></div><div class="meta-row"><span>In the source registration scan of main but not released yet</span><span><code>google_vertex_ai_evaluation_item</code></span></div></div></div>
     </div>
 
     <div class="section">
@@ -215,25 +215,25 @@
 
     <div class="section">
         <h2>Source Registrations</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>152</strong> source file(s) under <code>google/</code>.</p>
-        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (18)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_iam_member</code> &mdash; <code>NewBigqueryDatasetIamMemberListResource</code> <span class="muted">google/services/bigquery/iam_bigquery_member_dataset.go:425</span></li>
+        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>153</strong> source file(s) under <code>google/</code>.</p>
+        <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (18)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_iam_member</code> &mdash; <code>NewBigqueryDatasetIamMemberListResource</code> <span class="muted">google/services/bigquery/iam_bigquery_member_dataset.go:424</span></li>
 <li><code>google_bigquery_table</code> &mdash; <code>NewGoogleBigQueryTableListResource</code> <span class="muted">google/services/bigquery/list_google_bigquery_table.go:39</span></li>
 <li><code>google_compute_instance</code> &mdash; <code>NewGoogleComputeInstanceListResource</code> <span class="muted">google/services/compute/list_google_compute_instance.go:36</span></li>
 <li><code>google_dns_managed_zone</code> &mdash; <code>NewGoogleDnsManagedZoneListResource</code> <span class="muted">google/services/dns/list_google_dns_managed_zone.go:38</span></li>
 <li><code>google_dns_record_set</code> &mdash; <code>NewGoogleDnsRecordSetListResource</code> <span class="muted">google/services/dns/list_google_dns_record_set.go:38</span></li>
-<li><code>google_pubsub_subscription_iam_member</code> &mdash; <code>NewPubsubSubscriptionIamMemberListResource</code> <span class="muted">google/services/pubsub/iam_pubsub_subscription.go:189</span></li>
-<li><code>google_folder_iam_member</code> &mdash; <code>NewFolderIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_folder.go:215</span></li>
-<li><code>google_project_iam_member</code> &mdash; <code>NewProjectIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_project.go:202</span></li>
-<li><code>google_project_iam_binding</code> &mdash; <code>NewProjectIamBindingListResource</code> <span class="muted">google/services/resourcemanager/iam_project.go:213</span></li>
-<li><code>google_service_account_iam_member</code> &mdash; <code>NewServiceAccountIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_service_account.go:181</span></li>
+<li><code>google_pubsub_subscription_iam_member</code> &mdash; <code>NewPubsubSubscriptionIamMemberListResource</code> <span class="muted">google/services/pubsub/iam_pubsub_subscription.go:188</span></li>
+<li><code>google_folder_iam_member</code> &mdash; <code>NewFolderIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_folder.go:214</span></li>
+<li><code>google_project_iam_member</code> &mdash; <code>NewProjectIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_project.go:201</span></li>
+<li><code>google_project_iam_binding</code> &mdash; <code>NewProjectIamBindingListResource</code> <span class="muted">google/services/resourcemanager/iam_project.go:212</span></li>
+<li><code>google_service_account_iam_member</code> &mdash; <code>NewServiceAccountIamMemberListResource</code> <span class="muted">google/services/resourcemanager/iam_service_account.go:180</span></li>
 <li><code>google_project</code> &mdash; <code>NewGoogleProjectListResource</code> <span class="muted">google/services/resourcemanager/list_google_project.go:41</span></li>
 <li><code>google_project_iam_custom_role</code> &mdash; <code>NewGoogleProjectIamCustomRoleListResource</code> <span class="muted">google/services/resourcemanager/list_google_project_iam_custom_role.go:41</span></li>
 <li><code>google_project_service</code> &mdash; <code>NewGoogleProjectServiceListResource</code> <span class="muted">google/services/resourcemanager/list_google_project_service.go:37</span></li>
 <li><code>google_service_account</code> &mdash; <code>NewGoogleServiceAccountListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account.go:42</span></li>
 <li><code>google_service_account_key</code> &mdash; <code>NewGoogleServiceAccountKeyListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account_key.go:42</span></li>
 <li><code>google_secret_manager_secret_version</code> &mdash; <code>NewGoogleSecretManagerSecretVersionListResource</code> <span class="muted">google/services/secretmanager/list_google_secret_manager_secret_version.go:40</span></li>
-<li><code>google_storage_bucket_iam_member</code> &mdash; <code>NewStorageBucketIamMemberListResource</code> <span class="muted">google/services/storage/iam_storage_bucket.go:243</span></li>
-<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (135)</h3><ul class="resource-list"><li><code>google_apigee_addons_config</code> &mdash; <code>NewApigeeAddonsConfigListResource</code> <span class="muted">google/services/apigee/list_apigee_addons_config.go:39</span></li>
+<li><code>google_storage_bucket_iam_member</code> &mdash; <code>NewStorageBucketIamMemberListResource</code> <span class="muted">google/services/storage/iam_storage_bucket.go:242</span></li>
+<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (136)</h3><ul class="resource-list"><li><code>google_apigee_addons_config</code> &mdash; <code>NewApigeeAddonsConfigListResource</code> <span class="muted">google/services/apigee/list_apigee_addons_config.go:39</span></li>
 <li><code>google_apigee_api_product</code> &mdash; <code>NewApigeeApiProductListResource</code> <span class="muted">google/services/apigee/list_apigee_api_product.go:40</span></li>
 <li><code>google_apigee_data_collector</code> &mdash; <code>NewApigeeDataCollectorListResource</code> <span class="muted">google/services/apigee/list_apigee_data_collector.go:40</span></li>
 <li><code>google_apigee_datastore</code> &mdash; <code>NewApigeeDatastoreListResource</code> <span class="muted">google/services/apigee/list_apigee_datastore.go:40</span></li>
@@ -349,15 +349,16 @@
 <li><code>google_network_services_multicast_group_range</code> &mdash; <code>NewNetworkServicesMulticastGroupRangeListResource</code> <span class="muted">google/services/networkservices/list_network_services_multicast_group_range.go:40</span></li>
 <li><code>google_network_services_multicast_group_range_activation</code> &mdash; <code>NewNetworkServicesMulticastGroupRangeActivationListResource</code> <span class="muted">google/services/networkservices/list_network_services_multicast_group_range_activation.go:40</span></li>
 <li><code>google_network_services_multicast_producer_association</code> &mdash; <code>NewNetworkServicesMulticastProducerAssociationListResource</code> <span class="muted">google/services/networkservices/list_network_services_multicast_producer_association.go:40</span></li>
-<li><code>google_pubsub_topic_iam_member</code> &mdash; <code>NewPubsubTopicIamMemberListResource</code> <span class="muted">google/services/pubsub/iam_pubsub_topic.go:57</span></li>
+<li><code>google_pubsub_topic_iam_member</code> &mdash; <code>NewPubsubTopicIamMemberListResource</code> <span class="muted">google/services/pubsub/iam_pubsub_topic.go:55</span></li>
 <li><code>google_pubsub_subscription</code> &mdash; <code>NewPubsubSubscriptionListResource</code> <span class="muted">google/services/pubsub/list_pubsub_subscription.go:40</span></li>
 <li><code>google_pubsub_topic</code> &mdash; <code>NewPubsubTopicListResource</code> <span class="muted">google/services/pubsub/list_pubsub_topic.go:40</span></li>
-<li><code>google_secret_manager_secret_iam_member</code> &mdash; <code>NewSecretManagerSecretIamMemberListResource</code> <span class="muted">google/services/secretmanager/iam_secret_manager_secret.go:57</span></li>
+<li><code>google_secret_manager_secret_iam_member</code> &mdash; <code>NewSecretManagerSecretIamMemberListResource</code> <span class="muted">google/services/secretmanager/iam_secret_manager_secret.go:55</span></li>
 <li><code>google_secret_manager_secret</code> &mdash; <code>NewSecretManagerSecretListResource</code> <span class="muted">google/services/secretmanager/list_secret_manager_secret.go:40</span></li>
 <li><code>google_sql_database</code> &mdash; <code>NewSQLDatabaseListResource</code> <span class="muted">google/services/sql/list_sql_database.go:40</span></li>
 <li><code>google_storage_hmac_key</code> &mdash; <code>NewStorageHmacKeyListResource</code> <span class="muted">google/services/storage/list_storage_hmac_key.go:40</span></li>
 <li><code>google_vertex_ai_dataset</code> &mdash; <code>NewVertexAIDatasetListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_dataset.go:40</span></li>
 <li><code>google_vertex_ai_deployment_resource_pool</code> &mdash; <code>NewVertexAIDeploymentResourcePoolListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_deployment_resource_pool.go:40</span></li>
+<li><code>google_vertex_ai_evaluation_item</code> &mdash; <code>NewVertexAIEvaluationItemListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_evaluation_item.go:40</span></li>
 <li><code>google_vertex_ai_evaluation_metric</code> &mdash; <code>NewVertexAIEvaluationMetricListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_evaluation_metric.go:40</span></li>
 <li><code>google_vertex_ai_feature_group</code> &mdash; <code>NewVertexAIFeatureGroupListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_feature_group.go:40</span></li>
 <li><code>google_vertex_ai_feature_online_store</code> &mdash; <code>NewVertexAIFeatureOnlineStoreListResource</code> <span class="muted">google/services/vertexai/list_vertex_ai_feature_online_store.go:40</span></li>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T15:10:49.272894",
+  "generated_at": "2026-11-05T15:15:34.214686",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,22 +10,22 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "6979502b5176ee2aefab88194f2491088f049cf5"
+    "commit": "e6143d0eae89e4d3e6d709d31aca4cc35eae9d15"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 262
+    "list_resources": 273
   },
   "provider_schema": {
     "provider": "hashicorp/aws",
-    "version": "6.71.0",
+    "version": "6.72.0",
     "terraform_version": "1.17.1",
     "counts": {
-      "resources": 1746,
-      "data_sources": 687,
+      "resources": 1758,
+      "data_sources": 689,
       "ephemeral_resources": 11,
-      "list_resources": 262,
-      "identity_resources": 562,
+      "list_resources": 273,
+      "identity_resources": 574,
       "actions": 12
     },
     "list_resources": [
@@ -66,6 +66,9 @@
       "aws_bedrockagentcore_policy_engine",
       "aws_bedrockagentcore_registry",
       "aws_bedrockagentcore_resource_policy",
+      "aws_bedrockdataautomation_blueprint",
+      "aws_bedrockdataautomation_library",
+      "aws_bedrockdataautomation_project",
       "aws_cleanrooms_collaboration",
       "aws_cleanrooms_configured_table",
       "aws_cleanrooms_membership",
@@ -167,6 +170,9 @@
       "aws_lambdacore_network_connector",
       "aws_lambdamicrovms_image",
       "aws_lambdamicrovms_microvm",
+      "aws_lambdaweb_function",
+      "aws_lambdaweb_function_endpoint",
+      "aws_lambdaweb_function_revision",
       "aws_launch_template",
       "aws_lb",
       "aws_lb_listener",
@@ -187,6 +193,8 @@
       "aws_network_acl_rule",
       "aws_network_interface",
       "aws_networkfirewall_container_association",
+      "aws_networksecuritymanager_rule",
+      "aws_networksecuritymanager_scope",
       "aws_observabilityadmin_telemetry_rule",
       "aws_observabilityadmin_telemetry_rule_for_organization",
       "aws_opensearchserverless_access_policy",
@@ -209,10 +217,12 @@
       "aws_prometheus_anomaly_detector",
       "aws_prometheus_scraper",
       "aws_prometheus_scraper_logging_configuration",
+      "aws_quicksight_account_custom_permission",
       "aws_ram_principal_association",
       "aws_ram_resource_association",
       "aws_rds_cluster",
       "aws_rds_cluster_instance",
+      "aws_rds_tenant_database",
       "aws_rekognition_collection",
       "aws_resiliencehubv2_assertion",
       "aws_resiliencehubv2_input_source",
@@ -232,6 +242,7 @@
       "aws_route_table_association",
       "aws_s3_bucket",
       "aws_s3_bucket_acl",
+      "aws_s3_bucket_cors_configuration",
       "aws_s3_bucket_lifecycle_configuration",
       "aws_s3_bucket_logging",
       "aws_s3_bucket_notification",
@@ -294,8 +305,8 @@
     ]
   },
   "registry_comparison": {
-    "registry_pages": 262,
-    "exact_pages": 261,
+    "registry_pages": 273,
+    "exact_pages": 272,
     "combined_pages": {},
     "other_provider_pages": [],
     "unexplained_registry_pages": [
@@ -308,15 +319,15 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3252,
+    "stdout_line_count": 3264,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 15,
-        "implemented": 269,
-        "total": 1737
+        "implemented": 274,
+        "total": 1743
       },
-      "service_count": 251,
+      "service_count": 252,
       "services": [
         {
           "service": "accessanalyzer",
@@ -868,7 +879,7 @@
           "service": "ec2",
           "percent": 16,
           "implemented": 27,
-          "total": 160
+          "total": 161
         },
         {
           "service": "ecr",
@@ -1315,6 +1326,12 @@
           "total": 2
         },
         {
+          "service": "networksecuritymanager",
+          "percent": 100,
+          "implemented": 4,
+          "total": 4
+        },
+        {
           "service": "notifications",
           "percent": 0,
           "implemented": 0,
@@ -1418,9 +1435,9 @@
         },
         {
           "service": "quicksight",
-          "percent": 0,
-          "implemented": 0,
-          "total": 25
+          "percent": 3,
+          "implemented": 1,
+          "total": 26
         },
         {
           "service": "ram",
@@ -2899,6 +2916,7 @@
             "ec2/ec2_ami_launch_permission.go",
             "ec2/ec2_availability_zone_group.go",
             "ec2/ec2_capacity_block_reservation.go",
+            "ec2/ec2_capacity_manager.go",
             "ec2/ec2_capacity_reservation.go",
             "ec2/ec2_default_credit_specification.go",
             "ec2/ec2_eip.go",
@@ -4011,6 +4029,20 @@
           ],
           "list_resources": []
         },
+        "networksecuritymanager": {
+          "all_resources": [
+            "networksecuritymanager/policy.go",
+            "networksecuritymanager/rule.go",
+            "networksecuritymanager/scope.go",
+            "networksecuritymanager/template.go"
+          ],
+          "list_resources": [
+            "networksecuritymanager/policy.go",
+            "networksecuritymanager/rule.go",
+            "networksecuritymanager/scope.go",
+            "networksecuritymanager/template.go"
+          ]
+        },
         "notifications": {
           "all_resources": [
             "notifications/channel_association.go",
@@ -4207,6 +4239,7 @@
         },
         "quicksight": {
           "all_resources": [
+            "quicksight/account_custom_permission.go",
             "quicksight/account_settings.go",
             "quicksight/account_subscription.go",
             "quicksight/analysis.go",
@@ -4233,7 +4266,9 @@
             "quicksight/user_custom_permission.go",
             "quicksight/vpc_connection.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "quicksight/account_custom_permission.go"
+          ]
         },
         "ram": {
           "all_resources": [
@@ -5166,17 +5201,17 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-11-01 15:10:49 UTC"
+      "last_updated": "2026-11-05 15:15:34 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 78,
+    "services_with_list": 80,
     "top_services": [
       {
         "service": "ec2",
         "percent": 16,
         "implemented": 27,
-        "total": 160
+        "total": 161
       },
       {
         "service": "s3",
@@ -6337,6 +6372,7 @@
           "ec2/ec2_ami_launch_permission.go",
           "ec2/ec2_availability_zone_group.go",
           "ec2/ec2_capacity_block_reservation.go",
+          "ec2/ec2_capacity_manager.go",
           "ec2/ec2_capacity_reservation.go",
           "ec2/ec2_default_credit_specification.go",
           "ec2/ec2_eip.go",
@@ -7449,6 +7485,20 @@
         ],
         "list_resources": []
       },
+      "networksecuritymanager": {
+        "all_resources": [
+          "networksecuritymanager/policy.go",
+          "networksecuritymanager/rule.go",
+          "networksecuritymanager/scope.go",
+          "networksecuritymanager/template.go"
+        ],
+        "list_resources": [
+          "networksecuritymanager/policy.go",
+          "networksecuritymanager/rule.go",
+          "networksecuritymanager/scope.go",
+          "networksecuritymanager/template.go"
+        ]
+      },
       "notifications": {
         "all_resources": [
           "notifications/channel_association.go",
@@ -7645,6 +7695,7 @@
       },
       "quicksight": {
         "all_resources": [
+          "quicksight/account_custom_permission.go",
           "quicksight/account_settings.go",
           "quicksight/account_subscription.go",
           "quicksight/analysis.go",
@@ -7671,7 +7722,9 @@
           "quicksight/user_custom_permission.go",
           "quicksight/vpc_connection.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "quicksight/account_custom_permission.go"
+        ]
       },
       "ram": {
         "all_resources": [
@@ -8607,13 +8660,13 @@
   },
   "validation": {
     "matches": false,
-    "schema_list_resources": 262,
-    "schema_identity_resources": 562,
-    "schema_provider_version": "6.71.0",
-    "dashboard_list_resources": 262,
-    "script_implemented_list": 269,
-    "script_minus_schema": 7,
-    "script_total_resources": 1737,
+    "schema_list_resources": 273,
+    "schema_identity_resources": 574,
+    "schema_provider_version": "6.72.0",
+    "dashboard_list_resources": 273,
+    "script_implemented_list": 274,
+    "script_minus_schema": 1,
+    "script_total_resources": 1743,
     "script_percent": 15
   }
 }

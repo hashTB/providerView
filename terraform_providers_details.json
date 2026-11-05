@@ -2072,6 +2072,16 @@
           "subcategory": "Lambda MicroVMs"
         },
         {
+          "title": "lambdaweb_function",
+          "slug": "lambdaweb_function",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_function_endpoint",
+          "slug": "lambdaweb_function_endpoint",
+          "subcategory": "Lambda Web"
+        },
+        {
           "title": "launch_configuration",
           "slug": "launch_configuration",
           "subcategory": "Auto Scaling"
@@ -4005,6 +4015,21 @@
           "subcategory": "Bedrock AgentCore"
         },
         {
+          "title": "bedrockdataautomation_blueprint",
+          "slug": "bedrockdataautomation_blueprint",
+          "subcategory": "Bedrock Data Automation"
+        },
+        {
+          "title": "bedrockdataautomation_library",
+          "slug": "bedrockdataautomation_library",
+          "subcategory": "Bedrock Data Automation"
+        },
+        {
+          "title": "bedrockdataautomation_project",
+          "slug": "bedrockdataautomation_project",
+          "subcategory": "Bedrock Data Automation"
+        },
+        {
           "title": "bedrock_evaluation_job",
           "slug": "bedrock_evaluation_job",
           "subcategory": "Bedrock"
@@ -4525,6 +4550,21 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambdaweb_function",
+          "slug": "lambdaweb_function",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_function_endpoint",
+          "slug": "lambdaweb_function_endpoint",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_function_revision",
+          "slug": "lambdaweb_function_revision",
+          "subcategory": "Lambda Web"
+        },
+        {
           "title": "launch_template",
           "slug": "launch_template",
           "subcategory": "EC2 (Elastic Compute Cloud)"
@@ -4623,6 +4663,16 @@
           "title": "network_interface",
           "slug": "network_interface",
           "subcategory": "VPC (Virtual Private Cloud)"
+        },
+        {
+          "title": "networksecuritymanager_rule",
+          "slug": "networksecuritymanager_rule",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_scope",
+          "slug": "networksecuritymanager_scope",
+          "subcategory": "Network Security Manager"
         },
         {
           "title": "observabilityadmin_telemetry_rule",
@@ -4735,6 +4785,11 @@
           "subcategory": "AMP (Managed Prometheus)"
         },
         {
+          "title": "quicksight_account_custom_permission",
+          "slug": "quicksight_account_custom_permission",
+          "subcategory": "QuickSight"
+        },
+        {
           "title": "ram_principal_association",
           "slug": "ram_principal_association",
           "subcategory": "RAM (Resource Access Manager)"
@@ -4752,6 +4807,11 @@
         {
           "title": "rds_cluster_instance",
           "slug": "rds_cluster_instance",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
+          "title": "rds_tenant_database",
+          "slug": "rds_tenant_database",
           "subcategory": "RDS (Relational Database)"
         },
         {
@@ -4847,6 +4907,11 @@
         {
           "title": "s3_bucket_acl",
           "slug": "s3_bucket_acl",
+          "subcategory": "S3 (Simple Storage)"
+        },
+        {
+          "title": "s3_bucket_cors_configuration",
+          "slug": "s3_bucket_cors_configuration",
           "subcategory": "S3 (Simple Storage)"
         },
         {
@@ -6127,6 +6192,21 @@
           "title": "bedrock_custom_model",
           "slug": "bedrock_custom_model",
           "subcategory": "Bedrock"
+        },
+        {
+          "title": "bedrockdataautomation_blueprint",
+          "slug": "bedrockdataautomation_blueprint",
+          "subcategory": "Bedrock Data Automation"
+        },
+        {
+          "title": "bedrockdataautomation_library",
+          "slug": "bedrockdataautomation_library",
+          "subcategory": "Bedrock Data Automation"
+        },
+        {
+          "title": "bedrockdataautomation_project",
+          "slug": "bedrockdataautomation_project",
+          "subcategory": "Bedrock Data Automation"
         },
         {
           "title": "bedrock_enforced_guardrail_configuration",
@@ -7896,6 +7976,11 @@
         {
           "title": "ec2_capacity_block_reservation",
           "slug": "ec2_capacity_block_reservation",
+          "subcategory": "EC2 (Elastic Compute Cloud)"
+        },
+        {
+          "title": "ec2_capacity_manager",
+          "slug": "ec2_capacity_manager",
           "subcategory": "EC2 (Elastic Compute Cloud)"
         },
         {
@@ -9674,6 +9759,26 @@
           "subcategory": "Lambda"
         },
         {
+          "title": "lambdaweb_function",
+          "slug": "lambdaweb_function",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_function_endpoint",
+          "slug": "lambdaweb_function_endpoint",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_function_revision",
+          "slug": "lambdaweb_function_revision",
+          "subcategory": "Lambda Web"
+        },
+        {
+          "title": "lambdaweb_resource_policy",
+          "slug": "lambdaweb_resource_policy",
+          "subcategory": "Lambda Web"
+        },
+        {
           "title": "launch_configuration",
           "slug": "launch_configuration",
           "subcategory": "Auto Scaling"
@@ -10489,6 +10594,16 @@
           "subcategory": "CloudWatch Network Monitor"
         },
         {
+          "title": "networksecuritymanager_rule",
+          "slug": "networksecuritymanager_rule",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_scope",
+          "slug": "networksecuritymanager_scope",
+          "subcategory": "Network Security Manager"
+        },
+        {
           "title": "notifications_channel_association",
           "slug": "notifications_channel_association",
           "subcategory": "User Notifications"
@@ -10974,6 +11089,11 @@
           "subcategory": "QLDB (Quantum Ledger Database)"
         },
         {
+          "title": "quicksight_account_custom_permission",
+          "slug": "quicksight_account_custom_permission",
+          "subcategory": "QuickSight"
+        },
+        {
           "title": "quicksight_account_settings",
           "slug": "quicksight_account_settings",
           "subcategory": "QuickSight"
@@ -11211,6 +11331,11 @@
         {
           "title": "rds_shard_group",
           "slug": "rds_shard_group",
+          "subcategory": "RDS (Relational Database)"
+        },
+        {
+          "title": "rds_tenant_database",
+          "slug": "rds_tenant_database",
           "subcategory": "RDS (Relational Database)"
         },
         {
@@ -13855,7 +13980,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:36.185355"
+    "docs_refreshed_at": "2026-11-05T15:14:16.249883"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -14329,6 +14454,16 @@
         {
           "title": "appfabric_app_authorization",
           "slug": "appfabric_app_authorization",
+          "subcategory": ""
+        },
+        {
+          "title": "appfabric_app_bundle",
+          "slug": "appfabric_app_bundle",
+          "subcategory": ""
+        },
+        {
+          "title": "appfabric_app_bundles",
+          "slug": "appfabric_app_bundles",
           "subcategory": ""
         },
         {
@@ -14929,6 +15064,16 @@
         {
           "title": "b2bi_transformers",
           "slug": "b2bi_transformers",
+          "subcategory": ""
+        },
+        {
+          "title": "backup_backup_access_point",
+          "slug": "backup_backup_access_point",
+          "subcategory": ""
+        },
+        {
+          "title": "backup_backup_access_points",
+          "slug": "backup_backup_access_points",
           "subcategory": ""
         },
         {
@@ -16372,6 +16517,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_access_grants",
+          "slug": "cloudwatch_access_grants",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_access_profile",
           "slug": "cloudwatch_access_profile",
           "subcategory": ""
@@ -17647,6 +17797,16 @@
           "subcategory": ""
         },
         {
+          "title": "dax_cluster",
+          "slug": "dax_cluster",
+          "subcategory": ""
+        },
+        {
+          "title": "dax_clusters",
+          "slug": "dax_clusters",
+          "subcategory": ""
+        },
+        {
           "title": "dax_parameter_group",
           "slug": "dax_parameter_group",
           "subcategory": ""
@@ -17899,6 +18059,16 @@
         {
           "title": "directconnect_public_virtual_interfaces",
           "slug": "directconnect_public_virtual_interfaces",
+          "subcategory": ""
+        },
+        {
+          "title": "directconnect_resiliency_group",
+          "slug": "directconnect_resiliency_group",
+          "subcategory": ""
+        },
+        {
+          "title": "directconnect_resiliency_groups",
+          "slug": "directconnect_resiliency_groups",
           "subcategory": ""
         },
         {
@@ -18812,6 +18982,11 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_snapshot",
+          "slug": "ec2_snapshot",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_snapshot_block_public_access",
           "slug": "ec2_snapshot_block_public_access",
           "subcategory": ""
@@ -18819,6 +18994,11 @@
         {
           "title": "ec2_snapshot_block_public_accesses",
           "slug": "ec2_snapshot_block_public_accesses",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_snapshots",
+          "slug": "ec2_snapshots",
           "subcategory": ""
         },
         {
@@ -22247,6 +22427,16 @@
           "subcategory": ""
         },
         {
+          "title": "lakeformation_resource",
+          "slug": "lakeformation_resource",
+          "subcategory": ""
+        },
+        {
+          "title": "lakeformation_resources",
+          "slug": "lakeformation_resources",
+          "subcategory": ""
+        },
+        {
           "title": "lakeformation_tag",
           "slug": "lakeformation_tag",
           "subcategory": ""
@@ -23042,6 +23232,16 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconnect_destination_endpoint",
+          "slug": "mediaconnect_destination_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconnect_destination_endpoints",
+          "slug": "mediaconnect_destination_endpoints",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconnect_flow",
           "slug": "mediaconnect_flow",
           "subcategory": ""
@@ -23129,6 +23329,16 @@
         {
           "title": "mediaconnect_router_outputs",
           "slug": "mediaconnect_router_outputs",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconnect_source_endpoint",
+          "slug": "mediaconnect_source_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconnect_source_endpoints",
+          "slug": "mediaconnect_source_endpoints",
           "subcategory": ""
         },
         {
@@ -23224,6 +23434,11 @@
         {
           "title": "medialive_event_bridge_rule_templates",
           "slug": "medialive_event_bridge_rule_templates",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input",
+          "slug": "medialive_input",
           "subcategory": ""
         },
         {
@@ -23487,6 +23702,16 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_application",
+          "slug": "mgn_application",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_applications",
+          "slug": "mgn_applications",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_connector",
           "slug": "mgn_connector",
           "subcategory": ""
@@ -23509,6 +23734,16 @@
         {
           "title": "mgn_network_migration_definitions",
           "slug": "mgn_network_migration_definitions",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_replication_configuration_template",
+          "slug": "mgn_replication_configuration_template",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_replication_configuration_templates",
+          "slug": "mgn_replication_configuration_templates",
           "subcategory": ""
         },
         {
@@ -24449,6 +24684,16 @@
         {
           "title": "osis_pipeline",
           "slug": "osis_pipeline",
+          "subcategory": ""
+        },
+        {
+          "title": "osis_pipeline_endpoint",
+          "slug": "osis_pipeline_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "osis_pipeline_endpoints",
+          "slug": "osis_pipeline_endpoints",
           "subcategory": ""
         },
         {
@@ -29031,6 +29276,11 @@
           "subcategory": ""
         },
         {
+          "title": "appfabric_app_bundle",
+          "slug": "appfabric_app_bundle",
+          "subcategory": ""
+        },
+        {
           "title": "appflow_connector",
           "slug": "appflow_connector",
           "subcategory": ""
@@ -29268,6 +29518,11 @@
         {
           "title": "b2bi_transformer",
           "slug": "b2bi_transformer",
+          "subcategory": ""
+        },
+        {
+          "title": "backup_backup_access_point",
+          "slug": "backup_backup_access_point",
           "subcategory": ""
         },
         {
@@ -30341,6 +30596,11 @@
           "subcategory": ""
         },
         {
+          "title": "dax_cluster",
+          "slug": "dax_cluster",
+          "subcategory": ""
+        },
+        {
           "title": "dax_parameter_group",
           "slug": "dax_parameter_group",
           "subcategory": ""
@@ -30428,6 +30688,11 @@
         {
           "title": "directconnect_public_virtual_interface",
           "slug": "directconnect_public_virtual_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "directconnect_resiliency_group",
+          "slug": "directconnect_resiliency_group",
           "subcategory": ""
         },
         {
@@ -30868,6 +31133,11 @@
         {
           "title": "ec2_security_group_vpc_association",
           "slug": "ec2_security_group_vpc_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_snapshot",
+          "slug": "ec2_snapshot",
           "subcategory": ""
         },
         {
@@ -32411,6 +32681,11 @@
           "subcategory": ""
         },
         {
+          "title": "lakeformation_resource",
+          "slug": "lakeformation_resource",
+          "subcategory": ""
+        },
+        {
           "title": "lakeformation_tag",
           "slug": "lakeformation_tag",
           "subcategory": ""
@@ -32771,6 +33046,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconnect_destination_endpoint",
+          "slug": "mediaconnect_destination_endpoint",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconnect_flow",
           "slug": "mediaconnect_flow",
           "subcategory": ""
@@ -32808,6 +33088,11 @@
         {
           "title": "mediaconnect_router_output",
           "slug": "mediaconnect_router_output",
+          "subcategory": ""
+        },
+        {
+          "title": "mediaconnect_source_endpoint",
+          "slug": "mediaconnect_source_endpoint",
           "subcategory": ""
         },
         {
@@ -32853,6 +33138,11 @@
         {
           "title": "medialive_event_bridge_rule_template_group",
           "slug": "medialive_event_bridge_rule_template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input",
+          "slug": "medialive_input",
           "subcategory": ""
         },
         {
@@ -32951,6 +33241,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_application",
+          "slug": "mgn_application",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_connector",
           "slug": "mgn_connector",
           "subcategory": ""
@@ -32958,6 +33253,11 @@
         {
           "title": "mgn_network_migration_definition",
           "slug": "mgn_network_migration_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_replication_configuration_template",
+          "slug": "mgn_replication_configuration_template",
           "subcategory": ""
         },
         {
@@ -33363,6 +33663,11 @@
         {
           "title": "osis_pipeline",
           "slug": "osis_pipeline",
+          "subcategory": ""
+        },
+        {
+          "title": "osis_pipeline_endpoint",
+          "slug": "osis_pipeline_endpoint",
           "subcategory": ""
         },
         {
@@ -35610,6 +35915,11 @@
           "subcategory": ""
         },
         {
+          "title": "appfabric_app_bundle",
+          "slug": "appfabric_app_bundle",
+          "subcategory": ""
+        },
+        {
           "title": "appfabric_ingestion",
           "slug": "appfabric_ingestion",
           "subcategory": ""
@@ -35967,6 +36277,11 @@
         {
           "title": "b2bi_transformer",
           "slug": "b2bi_transformer",
+          "subcategory": ""
+        },
+        {
+          "title": "backup_backup_access_point",
+          "slug": "backup_backup_access_point",
           "subcategory": ""
         },
         {
@@ -37595,6 +37910,11 @@
           "subcategory": ""
         },
         {
+          "title": "dax_cluster",
+          "slug": "dax_cluster",
+          "subcategory": ""
+        },
+        {
           "title": "dax_parameter_group",
           "slug": "dax_parameter_group",
           "subcategory": ""
@@ -37757,6 +38077,11 @@
         {
           "title": "directconnect_public_virtual_interface",
           "slug": "directconnect_public_virtual_interface",
+          "subcategory": ""
+        },
+        {
+          "title": "directconnect_resiliency_group",
+          "slug": "directconnect_resiliency_group",
           "subcategory": ""
         },
         {
@@ -38227,6 +38552,11 @@
         {
           "title": "ec2_security_group_vpc_association",
           "slug": "ec2_security_group_vpc_association",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_snapshot",
+          "slug": "ec2_snapshot",
           "subcategory": ""
         },
         {
@@ -40105,6 +40435,11 @@
           "subcategory": ""
         },
         {
+          "title": "lakeformation_resource",
+          "slug": "lakeformation_resource",
+          "subcategory": ""
+        },
+        {
           "title": "lakeformation_tag",
           "slug": "lakeformation_tag",
           "subcategory": ""
@@ -40540,6 +40875,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconnect_destination_endpoint",
+          "slug": "mediaconnect_destination_endpoint",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconnect_flow",
           "slug": "mediaconnect_flow",
           "subcategory": ""
@@ -40590,6 +40930,11 @@
           "subcategory": ""
         },
         {
+          "title": "mediaconnect_source_endpoint",
+          "slug": "mediaconnect_source_endpoint",
+          "subcategory": ""
+        },
+        {
           "title": "mediaconvert_certificate_association",
           "slug": "mediaconvert_certificate_association",
           "subcategory": ""
@@ -40637,6 +40982,11 @@
         {
           "title": "medialive_event_bridge_rule_template_group",
           "slug": "medialive_event_bridge_rule_template_group",
+          "subcategory": ""
+        },
+        {
+          "title": "medialive_input",
+          "slug": "medialive_input",
           "subcategory": ""
         },
         {
@@ -40790,6 +41140,11 @@
           "subcategory": ""
         },
         {
+          "title": "mgn_application",
+          "slug": "mgn_application",
+          "subcategory": ""
+        },
+        {
           "title": "mgn_connector",
           "slug": "mgn_connector",
           "subcategory": ""
@@ -40797,6 +41152,11 @@
         {
           "title": "mgn_network_migration_definition",
           "slug": "mgn_network_migration_definition",
+          "subcategory": ""
+        },
+        {
+          "title": "mgn_replication_configuration_template",
+          "slug": "mgn_replication_configuration_template",
           "subcategory": ""
         },
         {
@@ -41332,6 +41692,11 @@
         {
           "title": "osis_pipeline",
           "slug": "osis_pipeline",
+          "subcategory": ""
+        },
+        {
+          "title": "osis_pipeline_endpoint",
+          "slug": "osis_pipeline_endpoint",
           "subcategory": ""
         },
         {
@@ -43841,7 +44206,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:36.692186"
+    "docs_refreshed_at": "2026-11-05T15:14:16.841367"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -44300,7 +44665,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:37.046695"
+    "docs_refreshed_at": "2026-11-05T15:14:17.239515"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -52612,7 +52977,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:37.442900"
+    "docs_refreshed_at": "2026-11-05T15:14:17.717144"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -52961,7 +53326,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:37.792261"
+    "docs_refreshed_at": "2026-11-05T15:14:18.120177"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -55089,6 +55454,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_odb_dns_zone",
+          "slug": "oracle_database_odb_dns_zone",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -60841,6 +61211,11 @@
           "subcategory": "Managed Kafka"
         },
         {
+          "title": "managed_kafka_acl_binding",
+          "slug": "managed_kafka_acl_binding",
+          "subcategory": "Managed Kafka"
+        },
+        {
           "title": "managed_kafka_cluster",
           "slug": "managed_kafka_cluster",
           "subcategory": "Managed Kafka"
@@ -61511,6 +61886,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_odb_dns_zone",
+          "slug": "oracle_database_odb_dns_zone",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -61968,6 +62348,11 @@
         {
           "title": "secret_manager_regional_secret_iam",
           "slug": "secret_manager_regional_secret_iam",
+          "subcategory": "Secret Manager"
+        },
+        {
+          "title": "secret_manager_regional_secret_managed_rotation",
+          "slug": "secret_manager_regional_secret_managed_rotation",
           "subcategory": "Secret Manager"
         },
         {
@@ -62556,6 +62941,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_training_pipeline",
+          "slug": "vertex_ai_training_pipeline",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_cluster",
           "slug": "vmwareengine_cluster",
           "subcategory": "Cloud VMware Engine"
@@ -62652,7 +63042,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:38.235374"
+    "docs_refreshed_at": "2026-11-05T15:14:18.674409"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -64513,6 +64903,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_odb_dns_zone",
+          "slug": "oracle_database_odb_dns_zone",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -70265,6 +70660,11 @@
           "subcategory": "Managed Kafka"
         },
         {
+          "title": "managed_kafka_acl_binding",
+          "slug": "managed_kafka_acl_binding",
+          "subcategory": "Managed Kafka"
+        },
+        {
           "title": "managed_kafka_cluster",
           "slug": "managed_kafka_cluster",
           "subcategory": "Managed Kafka"
@@ -70935,6 +71335,11 @@
           "subcategory": "Oracle Database"
         },
         {
+          "title": "oracle_database_odb_dns_zone",
+          "slug": "oracle_database_odb_dns_zone",
+          "subcategory": "Oracle Database"
+        },
+        {
           "title": "oracle_database_odb_network",
           "slug": "oracle_database_odb_network",
           "subcategory": "Oracle Database"
@@ -71392,6 +71797,11 @@
         {
           "title": "secret_manager_regional_secret_iam",
           "slug": "secret_manager_regional_secret_iam",
+          "subcategory": "Secret Manager"
+        },
+        {
+          "title": "secret_manager_regional_secret_managed_rotation",
+          "slug": "secret_manager_regional_secret_managed_rotation",
           "subcategory": "Secret Manager"
         },
         {
@@ -71980,6 +72390,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_training_pipeline",
+          "slug": "vertex_ai_training_pipeline",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vmwareengine_cluster",
           "slug": "vmwareengine_cluster",
           "subcategory": "Cloud VMware Engine"
@@ -72076,7 +72491,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-01T15:09:38.680802"
+    "docs_refreshed_at": "2026-11-05T15:14:19.207571"
   },
   "4ek0/neko": {
     "docs": {

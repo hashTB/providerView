@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-01T15:10:59.353252",
+  "generated_at": "2026-11-05T15:15:46.217290",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "97d621ac02ab926d7ca3cf01e5bcc31e0ddb1665"
+    "commit": "dca0925b298f97171f252cb5258a2a27558c8efe"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 152,
+    "file_count": 153,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -720,6 +720,11 @@
         "registrations": 1
       },
       {
+        "file": "google/services/vertexai/list_vertex_ai_evaluation_item.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/vertexai/list_vertex_ai_evaluation_metric.go",
         "type": "MMv1",
         "registrations": 1
@@ -770,7 +775,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "9f1db3e1f436b8baad34768c816e43634499f3ced76481b561dffac6942c6d62",
+    "sha256": "5aeadb49134c1cf7de44d62918cdbfab28b38b43744dc403a52516a5f86afd66",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -779,14 +784,14 @@
   },
   "provider_schema": {
     "provider": "hashicorp/google",
-    "version": "8.9.0",
+    "version": "8.10.0",
     "terraform_version": "1.17.1",
     "counts": {
-      "resources": 1392,
-      "data_sources": 473,
+      "resources": 1396,
+      "data_sources": 474,
       "ephemeral_resources": 6,
       "list_resources": 153,
-      "identity_resources": 950,
+      "identity_resources": 953,
       "actions": 0
     },
     "list_resources": [
@@ -947,14 +952,14 @@
   },
   "beta_provider_schema": {
     "provider": "hashicorp/google-beta",
-    "version": "8.9.0",
+    "version": "8.10.0",
     "terraform_version": "1.17.1",
     "counts": {
-      "resources": 1512,
-      "data_sources": 502,
+      "resources": 1516,
+      "data_sources": 503,
       "ephemeral_resources": 6,
       "list_resources": 160,
-      "identity_resources": 1032,
+      "identity_resources": 1035,
       "actions": 0
     }
   },
@@ -987,7 +992,9 @@
     "in_sync": true
   },
   "source_scan_diff": {
-    "source_only": [],
+    "source_only": [
+      "google_vertex_ai_evaluation_item"
+    ],
     "not_in_source_scan": []
   },
   "registrations": {
@@ -1809,7 +1816,7 @@
         "package": "Pubsub",
         "constructor": "NewPubsubTopicIamMemberListResource",
         "file": "google/services/pubsub/iam_pubsub_topic.go",
-        "line": 57
+        "line": 55
       },
       {
         "name": "google_pubsub_subscription",
@@ -1830,7 +1837,7 @@
         "package": "SecretManager",
         "constructor": "NewSecretManagerSecretIamMemberListResource",
         "file": "google/services/secretmanager/iam_secret_manager_secret.go",
-        "line": 57
+        "line": 55
       },
       {
         "name": "google_secret_manager_secret",
@@ -1865,6 +1872,13 @@
         "package": "VertexAI",
         "constructor": "NewVertexAIDeploymentResourcePoolListResource",
         "file": "google/services/vertexai/list_vertex_ai_deployment_resource_pool.go",
+        "line": 40
+      },
+      {
+        "name": "google_vertex_ai_evaluation_item",
+        "package": "VertexAI",
+        "constructor": "NewVertexAIEvaluationItemListResource",
+        "file": "google/services/vertexai/list_vertex_ai_evaluation_item.go",
         "line": 40
       },
       {
@@ -1944,7 +1958,7 @@
         "package": "bigquery",
         "constructor": "NewBigqueryDatasetIamMemberListResource",
         "file": "google/services/bigquery/iam_bigquery_member_dataset.go",
-        "line": 425
+        "line": 424
       },
       {
         "name": "google_bigquery_table",
@@ -1979,35 +1993,35 @@
         "package": "pubsub",
         "constructor": "NewPubsubSubscriptionIamMemberListResource",
         "file": "google/services/pubsub/iam_pubsub_subscription.go",
-        "line": 189
+        "line": 188
       },
       {
         "name": "google_folder_iam_member",
         "package": "resourcemanager",
         "constructor": "NewFolderIamMemberListResource",
         "file": "google/services/resourcemanager/iam_folder.go",
-        "line": 215
+        "line": 214
       },
       {
         "name": "google_project_iam_member",
         "package": "resourcemanager",
         "constructor": "NewProjectIamMemberListResource",
         "file": "google/services/resourcemanager/iam_project.go",
-        "line": 202
+        "line": 201
       },
       {
         "name": "google_project_iam_binding",
         "package": "resourcemanager",
         "constructor": "NewProjectIamBindingListResource",
         "file": "google/services/resourcemanager/iam_project.go",
-        "line": 213
+        "line": 212
       },
       {
         "name": "google_service_account_iam_member",
         "package": "resourcemanager",
         "constructor": "NewServiceAccountIamMemberListResource",
         "file": "google/services/resourcemanager/iam_service_account.go",
-        "line": 181
+        "line": 180
       },
       {
         "name": "google_project",
@@ -2056,7 +2070,7 @@
         "package": "storage",
         "constructor": "NewStorageBucketIamMemberListResource",
         "file": "google/services/storage/iam_storage_bucket.go",
-        "line": 243
+        "line": 242
       },
       {
         "name": "google_storage_bucket",
@@ -2454,10 +2468,10 @@
   "validation": {
     "matches": true,
     "schema_list_resources": 153,
-    "schema_identity_resources": 950,
-    "schema_provider_version": "8.9.0",
+    "schema_identity_resources": 953,
+    "schema_provider_version": "8.10.0",
     "dashboard_list_resources": 159,
-    "registered_count": 153,
+    "registered_count": 154,
     "source_scan_complete": true
   }
 }
