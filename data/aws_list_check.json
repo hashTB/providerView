@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T15:15:34.214686",
+  "generated_at": "2026-11-12T15:48:25.467047",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,22 +10,22 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "e6143d0eae89e4d3e6d709d31aca4cc35eae9d15"
+    "commit": "38dc32ebab9afb8d5ee7f0511dd9a58457d486bb"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
-    "list_resources": 273
+    "list_resources": 280
   },
   "provider_schema": {
     "provider": "hashicorp/aws",
-    "version": "6.72.0",
-    "terraform_version": "1.17.1",
+    "version": "6.73.0",
+    "terraform_version": "1.17.2",
     "counts": {
-      "resources": 1758,
+      "resources": 1766,
       "data_sources": 689,
       "ephemeral_resources": 11,
-      "list_resources": 273,
-      "identity_resources": 574,
+      "list_resources": 280,
+      "identity_resources": 582,
       "actions": 12
     },
     "list_resources": [
@@ -56,6 +56,7 @@
       "aws_batch_job_definition",
       "aws_batch_job_queue",
       "aws_bedrock_evaluation_job",
+      "aws_bedrock_guardrail_resource_policy",
       "aws_bedrock_model_invocation_job",
       "aws_bedrockagentcore_browser_profile",
       "aws_bedrockagentcore_evaluator",
@@ -109,6 +110,7 @@
       "aws_dms_migration_project",
       "aws_dsql_cluster",
       "aws_dsql_cluster_policy",
+      "aws_dsql_stream",
       "aws_dynamodb_global_secondary_index",
       "aws_dynamodb_table",
       "aws_dynamodb_table_item",
@@ -193,8 +195,12 @@
       "aws_network_acl_rule",
       "aws_network_interface",
       "aws_networkfirewall_container_association",
+      "aws_networksecuritymanager_admin_account",
+      "aws_networksecuritymanager_deployment",
+      "aws_networksecuritymanager_policy",
       "aws_networksecuritymanager_rule",
       "aws_networksecuritymanager_scope",
+      "aws_networksecuritymanager_template",
       "aws_observabilityadmin_telemetry_rule",
       "aws_observabilityadmin_telemetry_rule_for_organization",
       "aws_opensearchserverless_access_policy",
@@ -211,6 +217,7 @@
       "aws_pinpointsmsvoicev2_event_destination",
       "aws_pinpointsmsvoicev2_keyword",
       "aws_pinpointsmsvoicev2_pool",
+      "aws_pinpointsmsvoicev2_protect_configuration",
       "aws_pinpointsmsvoicev2_resource_policy",
       "aws_pinpointsmsvoicev2_sender_id",
       "aws_pricingplanmanager_subscription",
@@ -305,8 +312,8 @@
     ]
   },
   "registry_comparison": {
-    "registry_pages": 273,
-    "exact_pages": 272,
+    "registry_pages": 280,
+    "exact_pages": 279,
     "combined_pages": {},
     "other_provider_pages": [],
     "unexplained_registry_pages": [
@@ -319,13 +326,13 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3264,
+    "stdout_line_count": 3271,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
-        "percent": 15,
-        "implemented": 274,
-        "total": 1743
+        "percent": 16,
+        "implemented": 280,
+        "total": 1750
       },
       "service_count": 252,
       "services": [
@@ -505,9 +512,9 @@
         },
         {
           "service": "bedrock",
-          "percent": 18,
-          "implemented": 2,
-          "total": 11
+          "percent": 25,
+          "implemented": 3,
+          "total": 12
         },
         {
           "service": "bedrockagent",
@@ -721,9 +728,9 @@
         },
         {
           "service": "configservice",
-          "percent": 15,
+          "percent": 14,
           "implemented": 2,
-          "total": 13
+          "total": 14
         },
         {
           "service": "connect",
@@ -806,8 +813,8 @@
         {
           "service": "devopsagent",
           "percent": 100,
-          "implemented": 2,
-          "total": 2
+          "implemented": 3,
+          "total": 3
         },
         {
           "service": "devopsguru",
@@ -865,9 +872,9 @@
         },
         {
           "service": "dsql",
-          "percent": 66,
-          "implemented": 2,
-          "total": 3
+          "percent": 75,
+          "implemented": 3,
+          "total": 4
         },
         {
           "service": "dynamodb",
@@ -1328,8 +1335,8 @@
         {
           "service": "networksecuritymanager",
           "percent": 100,
-          "implemented": 4,
-          "total": 4
+          "implemented": 6,
+          "total": 6
         },
         {
           "service": "notifications",
@@ -1405,9 +1412,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 71,
-          "implemented": 5,
-          "total": 7
+          "percent": 75,
+          "implemented": 6,
+          "total": 8
         },
         {
           "service": "pipes",
@@ -2206,6 +2213,7 @@
             "bedrock/evaluation_job.go",
             "bedrock/foundation_model_agreement.go",
             "bedrock/guardrail.go",
+            "bedrock/guardrail_resource_policy.go",
             "bedrock/guardrail_version.go",
             "bedrock/inference_profile.go",
             "bedrock/model_invocation_job.go",
@@ -2215,6 +2223,7 @@
           ],
           "list_resources": [
             "bedrock/evaluation_job.go",
+            "bedrock/guardrail_resource_policy.go",
             "bedrock/model_invocation_job.go"
           ]
         },
@@ -2595,6 +2604,7 @@
             "configservice/configuration_recorder.go",
             "configservice/configuration_recorder_status.go",
             "configservice/conformance_pack.go",
+            "configservice/connector.go",
             "configservice/delivery_channel.go",
             "configservice/organization_conformance_pack.go",
             "configservice/organization_custom_policy_rule.go",
@@ -2748,11 +2758,13 @@
         "devopsagent": {
           "all_resources": [
             "devopsagent/agent_space.go",
-            "devopsagent/asset.go"
+            "devopsagent/asset.go",
+            "devopsagent/asset_file.go"
           ],
           "list_resources": [
             "devopsagent/agent_space.go",
-            "devopsagent/asset.go"
+            "devopsagent/asset.go",
+            "devopsagent/asset_file.go"
           ]
         },
         "devopsguru": {
@@ -2871,11 +2883,13 @@
           "all_resources": [
             "dsql/cluster.go",
             "dsql/cluster_peering.go",
-            "dsql/cluster_policy.go"
+            "dsql/cluster_policy.go",
+            "dsql/stream.go"
           ],
           "list_resources": [
             "dsql/cluster.go",
-            "dsql/cluster_policy.go"
+            "dsql/cluster_policy.go",
+            "dsql/stream.go"
           ]
         },
         "dynamodb": {
@@ -4031,12 +4045,16 @@
         },
         "networksecuritymanager": {
           "all_resources": [
+            "networksecuritymanager/admin_account.go",
+            "networksecuritymanager/deployment.go",
             "networksecuritymanager/policy.go",
             "networksecuritymanager/rule.go",
             "networksecuritymanager/scope.go",
             "networksecuritymanager/template.go"
           ],
           "list_resources": [
+            "networksecuritymanager/admin_account.go",
+            "networksecuritymanager/deployment.go",
             "networksecuritymanager/policy.go",
             "networksecuritymanager/rule.go",
             "networksecuritymanager/scope.go",
@@ -4199,6 +4217,7 @@
             "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/phone_number.go",
             "pinpointsmsvoicev2/pool.go",
+            "pinpointsmsvoicev2/protect_configuration.go",
             "pinpointsmsvoicev2/resource_policy.go",
             "pinpointsmsvoicev2/sender_id.go"
           ],
@@ -4206,6 +4225,7 @@
             "pinpointsmsvoicev2/event_destination.go",
             "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/pool.go",
+            "pinpointsmsvoicev2/protect_configuration.go",
             "pinpointsmsvoicev2/resource_policy.go",
             "pinpointsmsvoicev2/sender_id.go"
           ]
@@ -5201,7 +5221,7 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-11-05 15:15:34 UTC"
+      "last_updated": "2026-11-12 15:48:25 UTC"
     }
   },
   "service_coverage": {
@@ -5262,6 +5282,18 @@
         "total": 26
       },
       {
+        "service": "networksecuritymanager",
+        "percent": 100,
+        "implemented": 6,
+        "total": 6
+      },
+      {
+        "service": "pinpointsmsvoicev2",
+        "percent": 75,
+        "implemented": 6,
+        "total": 8
+      },
+      {
         "service": "ssm",
         "percent": 50,
         "implemented": 6,
@@ -5284,18 +5316,6 @@
         "percent": 100,
         "implemented": 5,
         "total": 5
-      },
-      {
-        "service": "pinpointsmsvoicev2",
-        "percent": 71,
-        "implemented": 5,
-        "total": 7
-      },
-      {
-        "service": "elbv2",
-        "percent": 62,
-        "implemented": 5,
-        "total": 8
       }
     ],
     "service_resources": {
@@ -5662,6 +5682,7 @@
           "bedrock/evaluation_job.go",
           "bedrock/foundation_model_agreement.go",
           "bedrock/guardrail.go",
+          "bedrock/guardrail_resource_policy.go",
           "bedrock/guardrail_version.go",
           "bedrock/inference_profile.go",
           "bedrock/model_invocation_job.go",
@@ -5671,6 +5692,7 @@
         ],
         "list_resources": [
           "bedrock/evaluation_job.go",
+          "bedrock/guardrail_resource_policy.go",
           "bedrock/model_invocation_job.go"
         ]
       },
@@ -6051,6 +6073,7 @@
           "configservice/configuration_recorder.go",
           "configservice/configuration_recorder_status.go",
           "configservice/conformance_pack.go",
+          "configservice/connector.go",
           "configservice/delivery_channel.go",
           "configservice/organization_conformance_pack.go",
           "configservice/organization_custom_policy_rule.go",
@@ -6204,11 +6227,13 @@
       "devopsagent": {
         "all_resources": [
           "devopsagent/agent_space.go",
-          "devopsagent/asset.go"
+          "devopsagent/asset.go",
+          "devopsagent/asset_file.go"
         ],
         "list_resources": [
           "devopsagent/agent_space.go",
-          "devopsagent/asset.go"
+          "devopsagent/asset.go",
+          "devopsagent/asset_file.go"
         ]
       },
       "devopsguru": {
@@ -6327,11 +6352,13 @@
         "all_resources": [
           "dsql/cluster.go",
           "dsql/cluster_peering.go",
-          "dsql/cluster_policy.go"
+          "dsql/cluster_policy.go",
+          "dsql/stream.go"
         ],
         "list_resources": [
           "dsql/cluster.go",
-          "dsql/cluster_policy.go"
+          "dsql/cluster_policy.go",
+          "dsql/stream.go"
         ]
       },
       "dynamodb": {
@@ -7487,12 +7514,16 @@
       },
       "networksecuritymanager": {
         "all_resources": [
+          "networksecuritymanager/admin_account.go",
+          "networksecuritymanager/deployment.go",
           "networksecuritymanager/policy.go",
           "networksecuritymanager/rule.go",
           "networksecuritymanager/scope.go",
           "networksecuritymanager/template.go"
         ],
         "list_resources": [
+          "networksecuritymanager/admin_account.go",
+          "networksecuritymanager/deployment.go",
           "networksecuritymanager/policy.go",
           "networksecuritymanager/rule.go",
           "networksecuritymanager/scope.go",
@@ -7655,6 +7686,7 @@
           "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/phone_number.go",
           "pinpointsmsvoicev2/pool.go",
+          "pinpointsmsvoicev2/protect_configuration.go",
           "pinpointsmsvoicev2/resource_policy.go",
           "pinpointsmsvoicev2/sender_id.go"
         ],
@@ -7662,6 +7694,7 @@
           "pinpointsmsvoicev2/event_destination.go",
           "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/pool.go",
+          "pinpointsmsvoicev2/protect_configuration.go",
           "pinpointsmsvoicev2/resource_policy.go",
           "pinpointsmsvoicev2/sender_id.go"
         ]
@@ -8660,13 +8693,13 @@
   },
   "validation": {
     "matches": false,
-    "schema_list_resources": 273,
-    "schema_identity_resources": 574,
-    "schema_provider_version": "6.72.0",
-    "dashboard_list_resources": 273,
-    "script_implemented_list": 274,
-    "script_minus_schema": 1,
-    "script_total_resources": 1743,
-    "script_percent": 15
+    "schema_list_resources": 280,
+    "schema_identity_resources": 582,
+    "schema_provider_version": "6.73.0",
+    "dashboard_list_resources": 280,
+    "script_implemented_list": 280,
+    "script_minus_schema": 0,
+    "script_total_resources": 1750,
+    "script_percent": 16
   }
 }

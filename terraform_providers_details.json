@@ -4035,6 +4035,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_guardrail_resource_policy",
+          "slug": "bedrock_guardrail_resource_policy",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_model_invocation_job",
           "slug": "bedrock_model_invocation_job",
           "subcategory": "Bedrock"
@@ -4237,6 +4242,11 @@
         {
           "title": "dsql_cluster_policy",
           "slug": "dsql_cluster_policy",
+          "subcategory": "DSQL"
+        },
+        {
+          "title": "dsql_stream",
+          "slug": "dsql_stream",
           "subcategory": "DSQL"
         },
         {
@@ -4665,6 +4675,21 @@
           "subcategory": "VPC (Virtual Private Cloud)"
         },
         {
+          "title": "networksecuritymanager_admin_account",
+          "slug": "networksecuritymanager_admin_account",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_deployment",
+          "slug": "networksecuritymanager_deployment",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_policy",
+          "slug": "networksecuritymanager_policy",
+          "subcategory": "Network Security Manager"
+        },
+        {
           "title": "networksecuritymanager_rule",
           "slug": "networksecuritymanager_rule",
           "subcategory": "Network Security Manager"
@@ -4672,6 +4697,11 @@
         {
           "title": "networksecuritymanager_scope",
           "slug": "networksecuritymanager_scope",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_template",
+          "slug": "networksecuritymanager_template",
           "subcategory": "Network Security Manager"
         },
         {
@@ -4752,6 +4782,11 @@
         {
           "title": "pinpointsmsvoicev2_pool",
           "slug": "pinpointsmsvoicev2_pool",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
+          "title": "pinpointsmsvoicev2_protect_configuration",
+          "slug": "pinpointsmsvoicev2_protect_configuration",
           "subcategory": "End User Messaging SMS"
         },
         {
@@ -6229,6 +6264,11 @@
           "subcategory": "Bedrock"
         },
         {
+          "title": "bedrock_guardrail_resource_policy",
+          "slug": "bedrock_guardrail_resource_policy",
+          "subcategory": "Bedrock"
+        },
+        {
           "title": "bedrock_guardrail_version",
           "slug": "bedrock_guardrail_version",
           "subcategory": "Bedrock"
@@ -7074,6 +7114,11 @@
           "subcategory": "Config"
         },
         {
+          "title": "config_connector",
+          "slug": "config_connector",
+          "subcategory": "Config"
+        },
+        {
           "title": "config_delivery_channel",
           "slug": "config_delivery_channel",
           "subcategory": "Config"
@@ -7771,6 +7816,11 @@
         {
           "title": "dsql_cluster_policy",
           "slug": "dsql_cluster_policy",
+          "subcategory": "DSQL"
+        },
+        {
+          "title": "dsql_stream",
+          "slug": "dsql_stream",
           "subcategory": "DSQL"
         },
         {
@@ -10594,6 +10644,21 @@
           "subcategory": "CloudWatch Network Monitor"
         },
         {
+          "title": "networksecuritymanager_admin_account",
+          "slug": "networksecuritymanager_admin_account",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_deployment",
+          "slug": "networksecuritymanager_deployment",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_policy",
+          "slug": "networksecuritymanager_policy",
+          "subcategory": "Network Security Manager"
+        },
+        {
           "title": "networksecuritymanager_rule",
           "slug": "networksecuritymanager_rule",
           "subcategory": "Network Security Manager"
@@ -10601,6 +10666,11 @@
         {
           "title": "networksecuritymanager_scope",
           "slug": "networksecuritymanager_scope",
+          "subcategory": "Network Security Manager"
+        },
+        {
+          "title": "networksecuritymanager_template",
+          "slug": "networksecuritymanager_template",
           "subcategory": "Network Security Manager"
         },
         {
@@ -10996,6 +11066,11 @@
         {
           "title": "pinpointsmsvoicev2_pool",
           "slug": "pinpointsmsvoicev2_pool",
+          "subcategory": "End User Messaging SMS"
+        },
+        {
+          "title": "pinpointsmsvoicev2_protect_configuration",
+          "slug": "pinpointsmsvoicev2_protect_configuration",
           "subcategory": "End User Messaging SMS"
         },
         {
@@ -13980,7 +14055,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:16.249883"
+    "docs_refreshed_at": "2026-11-12T15:47:18.038531"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -16547,6 +16622,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_alert",
+          "slug": "cloudwatch_alert",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_anomaly_detector",
           "slug": "cloudwatch_anomaly_detector",
           "subcategory": ""
@@ -18407,8 +18487,23 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_client_vpn_endpoint",
+          "slug": "ec2_client_vpn_endpoint",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_endpoints",
+          "slug": "ec2_client_vpn_endpoints",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_client_vpn_route",
           "slug": "ec2_client_vpn_route",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_target_network_association",
+          "slug": "ec2_client_vpn_target_network_association",
           "subcategory": ""
         },
         {
@@ -28772,8 +28867,23 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_agent_organizational_profile",
+          "slug": "wellarchitected_agent_organizational_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_organizational_profiles",
+          "slug": "wellarchitected_agent_organizational_profiles",
+          "subcategory": ""
+        },
+        {
           "title": "wellarchitected_agent_profile",
           "slug": "wellarchitected_agent_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profile_policy",
+          "slug": "wellarchitected_agent_profile_policy",
           "subcategory": ""
         },
         {
@@ -30858,6 +30968,11 @@
         {
           "title": "ec2_carrier_gateway",
           "slug": "ec2_carrier_gateway",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_endpoint",
+          "slug": "ec2_client_vpn_endpoint",
           "subcategory": ""
         },
         {
@@ -35441,6 +35556,11 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_agent_organizational_profile",
+          "slug": "wellarchitected_agent_organizational_profile",
+          "subcategory": ""
+        },
+        {
           "title": "wellarchitected_agent_profile",
           "slug": "wellarchitected_agent_profile",
           "subcategory": ""
@@ -37105,6 +37225,11 @@
           "subcategory": ""
         },
         {
+          "title": "cloudwatch_alert",
+          "slug": "cloudwatch_alert",
+          "subcategory": ""
+        },
+        {
           "title": "cloudwatch_anomaly_detector",
           "slug": "cloudwatch_anomaly_detector",
           "subcategory": ""
@@ -38255,8 +38380,18 @@
           "subcategory": ""
         },
         {
+          "title": "ec2_client_vpn_endpoint",
+          "slug": "ec2_client_vpn_endpoint",
+          "subcategory": ""
+        },
+        {
           "title": "ec2_client_vpn_route",
           "slug": "ec2_client_vpn_route",
+          "subcategory": ""
+        },
+        {
+          "title": "ec2_client_vpn_target_network_association",
+          "slug": "ec2_client_vpn_target_network_association",
           "subcategory": ""
         },
         {
@@ -43995,8 +44130,18 @@
           "subcategory": ""
         },
         {
+          "title": "wellarchitected_agent_organizational_profile",
+          "slug": "wellarchitected_agent_organizational_profile",
+          "subcategory": ""
+        },
+        {
           "title": "wellarchitected_agent_profile",
           "slug": "wellarchitected_agent_profile",
+          "subcategory": ""
+        },
+        {
+          "title": "wellarchitected_agent_profile_policy",
+          "slug": "wellarchitected_agent_profile_policy",
           "subcategory": ""
         },
         {
@@ -44206,7 +44351,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:16.841367"
+    "docs_refreshed_at": "2026-11-12T15:47:18.745878"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -44665,7 +44810,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:17.239515"
+    "docs_refreshed_at": "2026-11-12T15:47:19.175034"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -46862,6 +47007,11 @@
           "subcategory": "Automation"
         },
         {
+          "title": "automation_runtime_environment_package",
+          "slug": "automation_runtime_environment_package",
+          "subcategory": "Automation"
+        },
+        {
           "title": "availability_set",
           "slug": "availability_set",
           "subcategory": "Compute"
@@ -46940,6 +47090,11 @@
           "title": "cognitive_deployment",
           "slug": "cognitive_deployment",
           "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "data_protection_backup_instance_cosmosdb_account",
+          "slug": "data_protection_backup_instance_cosmosdb_account",
+          "subcategory": "DataProtection"
         },
         {
           "title": "data_protection_backup_policy_cosmosdb_account",
@@ -49003,6 +49158,11 @@
         {
           "title": "data_protection_backup_instance_blob_storage",
           "slug": "data_protection_backup_instance_blob_storage",
+          "subcategory": "DataProtection"
+        },
+        {
+          "title": "data_protection_backup_instance_cosmosdb_account",
+          "slug": "data_protection_backup_instance_cosmosdb_account",
           "subcategory": "DataProtection"
         },
         {
@@ -52977,7 +53137,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:17.717144"
+    "docs_refreshed_at": "2026-11-12T15:47:19.706927"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -53326,7 +53486,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:18.120177"
+    "docs_refreshed_at": "2026-11-12T15:47:20.138699"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -53597,6 +53757,13 @@
   },
   "hashicorp/google": {
     "docs": {
+      "actions": [
+        {
+          "title": "compute_instance_reset",
+          "slug": "compute_instance_reset",
+          "subcategory": "Compute Engine"
+        }
+      ],
       "data-sources": [
         {
           "title": "access_approval_folder_service_account",
@@ -55624,6 +55791,11 @@
           "subcategory": "Memorystore for Redis"
         },
         {
+          "title": "redis_cluster_token_auth_user",
+          "slug": "redis_cluster_token_auth_user",
+          "subcategory": "Redis"
+        },
+        {
           "title": "redis_instance",
           "slug": "redis_instance",
           "subcategory": "Memorystore (Redis)"
@@ -56217,6 +56389,11 @@
         {
           "title": "Performing a SQL Instance Switchover",
           "slug": "sql_instance_switchover",
+          "subcategory": ""
+        },
+        {
+          "title": "Use actions with the Terraform Provider for Google Cloud",
+          "slug": "using_actions",
           "subcategory": ""
         },
         {
@@ -57022,6 +57199,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "google_vertex_ai_evaluation_item",
+          "slug": "google_vertex_ai_evaluation_item",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "google_vertex_ai_evaluation_metric",
           "slug": "google_vertex_ai_evaluation_metric",
           "subcategory": "Vertex AI"
@@ -57588,6 +57770,11 @@
         {
           "title": "backup_dr_auto_protection_policy",
           "slug": "backup_dr_auto_protection_policy",
+          "subcategory": "Backup and DR Service"
+        },
+        {
+          "title": "backup_dr_auto_protection_policy_binding",
+          "slug": "backup_dr_auto_protection_policy_binding",
           "subcategory": "Backup and DR Service"
         },
         {
@@ -59406,6 +59593,11 @@
           "subcategory": "Data Catalog"
         },
         {
+          "title": "dataflow_config_store_setting",
+          "slug": "dataflow_config_store_setting",
+          "subcategory": "Dataflow"
+        },
+        {
           "title": "dataflow_flex_template_job",
           "slug": "dataflow_flex_template_job",
           "subcategory": "Dataflow"
@@ -59463,6 +59655,11 @@
         {
           "title": "data_lineage_config",
           "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
+          "title": "data_lineage_open_lineage_job",
+          "slug": "data_lineage_open_lineage_job",
           "subcategory": "Data Lineage"
         },
         {
@@ -59771,6 +59968,11 @@
           "subcategory": "Dialogflow"
         },
         {
+          "title": "dialogflow_companion_agent",
+          "slug": "dialogflow_companion_agent",
+          "subcategory": "Dialogflow"
+        },
+        {
           "title": "dialogflow_conversation_profile",
           "slug": "dialogflow_conversation_profile",
           "subcategory": "Dialogflow"
@@ -59933,6 +60135,11 @@
         {
           "title": "discovery_engine_license_config",
           "slug": "discovery_engine_license_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_project_provision",
+          "slug": "discovery_engine_project_provision",
           "subcategory": "Discovery Engine"
         },
         {
@@ -62106,6 +62313,11 @@
           "subcategory": "Memorystore (Redis)"
         },
         {
+          "title": "redis_cluster_token_auth_user",
+          "slug": "redis_cluster_token_auth_user",
+          "subcategory": "Memorystore (Redis)"
+        },
+        {
           "title": "redis_cluster_user_created_connections",
           "slug": "redis_cluster_user_created_connections",
           "subcategory": "Memorystore (Redis)"
@@ -62781,6 +62993,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_evaluation_item",
+          "slug": "vertex_ai_evaluation_item",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_evaluation_metric",
           "slug": "vertex_ai_evaluation_metric",
           "subcategory": "Vertex AI"
@@ -63042,10 +63259,17 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:18.674409"
+    "docs_refreshed_at": "2026-11-12T15:47:20.707745"
   },
   "hashicorp/google-beta": {
     "docs": {
+      "actions": [
+        {
+          "title": "compute_instance_reset",
+          "slug": "compute_instance_reset",
+          "subcategory": "Compute Engine"
+        }
+      ],
       "data-sources": [
         {
           "title": "access_approval_folder_service_account",
@@ -65073,6 +65297,11 @@
           "subcategory": "Memorystore for Redis"
         },
         {
+          "title": "redis_cluster_token_auth_user",
+          "slug": "redis_cluster_token_auth_user",
+          "subcategory": "Redis"
+        },
+        {
           "title": "redis_instance",
           "slug": "redis_instance",
           "subcategory": "Memorystore (Redis)"
@@ -65666,6 +65895,11 @@
         {
           "title": "Performing a SQL Instance Switchover",
           "slug": "sql_instance_switchover",
+          "subcategory": ""
+        },
+        {
+          "title": "Use actions with the Terraform Provider for Google Cloud",
+          "slug": "using_actions",
           "subcategory": ""
         },
         {
@@ -66471,6 +66705,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "google_vertex_ai_evaluation_item",
+          "slug": "google_vertex_ai_evaluation_item",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "google_vertex_ai_evaluation_metric",
           "slug": "google_vertex_ai_evaluation_metric",
           "subcategory": "Vertex AI"
@@ -67037,6 +67276,11 @@
         {
           "title": "backup_dr_auto_protection_policy",
           "slug": "backup_dr_auto_protection_policy",
+          "subcategory": "Backup and DR Service"
+        },
+        {
+          "title": "backup_dr_auto_protection_policy_binding",
+          "slug": "backup_dr_auto_protection_policy_binding",
           "subcategory": "Backup and DR Service"
         },
         {
@@ -68855,6 +69099,11 @@
           "subcategory": "Data Catalog"
         },
         {
+          "title": "dataflow_config_store_setting",
+          "slug": "dataflow_config_store_setting",
+          "subcategory": "Dataflow"
+        },
+        {
           "title": "dataflow_flex_template_job",
           "slug": "dataflow_flex_template_job",
           "subcategory": "Dataflow"
@@ -68912,6 +69161,11 @@
         {
           "title": "data_lineage_config",
           "slug": "data_lineage_config",
+          "subcategory": "Data Lineage"
+        },
+        {
+          "title": "data_lineage_open_lineage_job",
+          "slug": "data_lineage_open_lineage_job",
           "subcategory": "Data Lineage"
         },
         {
@@ -69220,6 +69474,11 @@
           "subcategory": "Dialogflow"
         },
         {
+          "title": "dialogflow_companion_agent",
+          "slug": "dialogflow_companion_agent",
+          "subcategory": "Dialogflow"
+        },
+        {
           "title": "dialogflow_conversation_profile",
           "slug": "dialogflow_conversation_profile",
           "subcategory": "Dialogflow"
@@ -69382,6 +69641,11 @@
         {
           "title": "discovery_engine_license_config",
           "slug": "discovery_engine_license_config",
+          "subcategory": "Discovery Engine"
+        },
+        {
+          "title": "discovery_engine_project_provision",
+          "slug": "discovery_engine_project_provision",
           "subcategory": "Discovery Engine"
         },
         {
@@ -71555,6 +71819,11 @@
           "subcategory": "Memorystore (Redis)"
         },
         {
+          "title": "redis_cluster_token_auth_user",
+          "slug": "redis_cluster_token_auth_user",
+          "subcategory": "Memorystore (Redis)"
+        },
+        {
           "title": "redis_cluster_user_created_connections",
           "slug": "redis_cluster_user_created_connections",
           "subcategory": "Memorystore (Redis)"
@@ -72230,6 +72499,11 @@
           "subcategory": "Vertex AI"
         },
         {
+          "title": "vertex_ai_evaluation_item",
+          "slug": "vertex_ai_evaluation_item",
+          "subcategory": "Vertex AI"
+        },
+        {
           "title": "vertex_ai_evaluation_metric",
           "slug": "vertex_ai_evaluation_metric",
           "subcategory": "Vertex AI"
@@ -72491,7 +72765,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-05T15:14:19.207571"
+    "docs_refreshed_at": "2026-11-12T15:47:21.301850"
   },
   "4ek0/neko": {
     "docs": {

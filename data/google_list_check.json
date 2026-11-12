@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T15:15:46.217290",
+  "generated_at": "2026-11-12T15:48:35.770727",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "dca0925b298f97171f252cb5258a2a27558c8efe"
+    "commit": "e78347ee383d14d74ef659d71739a8cd3ae4dd64"
   },
   "registration_sources": {
     "scan_root": "google",
@@ -780,19 +780,19 @@
   },
   "dashboard": {
     "provider": "hashicorp/google",
-    "list_resources": 159
+    "list_resources": 160
   },
   "provider_schema": {
     "provider": "hashicorp/google",
-    "version": "8.10.0",
-    "terraform_version": "1.17.1",
+    "version": "8.11.0",
+    "terraform_version": "1.17.2",
     "counts": {
-      "resources": 1396,
-      "data_sources": 474,
+      "resources": 1406,
+      "data_sources": 475,
       "ephemeral_resources": 6,
-      "list_resources": 153,
-      "identity_resources": 953,
-      "actions": 0
+      "list_resources": 154,
+      "identity_resources": 961,
+      "actions": 1
     },
     "list_resources": [
       "google_apigee_addons_config",
@@ -938,6 +938,7 @@
       "google_storage_hmac_key",
       "google_vertex_ai_dataset",
       "google_vertex_ai_deployment_resource_pool",
+      "google_vertex_ai_evaluation_item",
       "google_vertex_ai_evaluation_metric",
       "google_vertex_ai_feature_group",
       "google_vertex_ai_feature_online_store",
@@ -952,20 +953,20 @@
   },
   "beta_provider_schema": {
     "provider": "hashicorp/google-beta",
-    "version": "8.10.0",
-    "terraform_version": "1.17.1",
+    "version": "8.11.0",
+    "terraform_version": "1.17.2",
     "counts": {
-      "resources": 1516,
-      "data_sources": 503,
+      "resources": 1523,
+      "data_sources": 504,
       "ephemeral_resources": 6,
-      "list_resources": 160,
-      "identity_resources": 1035,
-      "actions": 0
+      "list_resources": 161,
+      "identity_resources": 1040,
+      "actions": 1
     }
   },
   "registry_comparison": {
-    "registry_pages": 159,
-    "exact_pages": 149,
+    "registry_pages": 160,
+    "exact_pages": 150,
     "combined_pages": {
       "google_project_iam": [
         "google_project_iam_binding",
@@ -992,9 +993,7 @@
     "in_sync": true
   },
   "source_scan_diff": {
-    "source_only": [
-      "google_vertex_ai_evaluation_item"
-    ],
+    "source_only": [],
     "not_in_source_scan": []
   },
   "registrations": {
@@ -2021,7 +2020,7 @@
         "package": "resourcemanager",
         "constructor": "NewServiceAccountIamMemberListResource",
         "file": "google/services/resourcemanager/iam_service_account.go",
-        "line": 180
+        "line": 183
       },
       {
         "name": "google_project",
@@ -2094,7 +2093,7 @@
       },
       {
         "service": "VertexAI",
-        "list_resources": 12
+        "list_resources": 13
       },
       {
         "service": "NetworkSecurity",
@@ -2451,6 +2450,7 @@
         "list_resources": [
           "google_vertex_ai_dataset",
           "google_vertex_ai_deployment_resource_pool",
+          "google_vertex_ai_evaluation_item",
           "google_vertex_ai_evaluation_metric",
           "google_vertex_ai_feature_group",
           "google_vertex_ai_feature_online_store",
@@ -2467,10 +2467,10 @@
   },
   "validation": {
     "matches": true,
-    "schema_list_resources": 153,
-    "schema_identity_resources": 953,
-    "schema_provider_version": "8.10.0",
-    "dashboard_list_resources": 159,
+    "schema_list_resources": 154,
+    "schema_identity_resources": 961,
+    "schema_provider_version": "8.11.0",
+    "dashboard_list_resources": 160,
     "registered_count": 154,
     "source_scan_complete": true
   }
