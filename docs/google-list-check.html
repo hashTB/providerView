@@ -131,38 +131,38 @@
         <a href="aws-list-check.html">AWS List Check</a>
         <a href="google-list-check.html" class="active">Google List Check</a>
     </nav>
-    <p class="subtitle">List resources served by the latest <code>hashicorp/google</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated 2026-11-12T15:48:35.770727.</p>
+    <p class="subtitle">List resources served by the latest <code>hashicorp/google</code> release, compared with the Registry docs and a scan of the <code>terraform-provider-google</code> source. Generated 2026-11-19T16:55:45.653884.</p>
 
     <div class="cards">
-        <div class="card"><div class="value">154</div><div class="label">List Resources in v8.11.0</div></div>
+        <div class="card"><div class="value">154</div><div class="label">List Resources in v8.12.0</div></div>
         <div class="card"><div class="value">160</div><div class="label">Registry List Pages</div></div>
-        <div class="card"><div class="value">154</div><div class="label">Source Registrations (main)</div></div>
+        <div class="card"><div class="value">158</div><div class="label">Source Registrations (main)</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Registry in sync</div></div>
         <div class="card"><div class="value">✅</div><div class="label">Source Scan Sees All Released</div></div>
     </div>
 
     <div class="note">
-        <strong>✅ Validation:</strong> <code>hashicorp/google</code> v8.11.0 serves
+        <strong>✅ Validation:</strong> <code>hashicorp/google</code> v8.12.0 serves
         <strong>154</strong> list resources
-        (<strong>961</strong> resources have identity), read from the released provider with
+        (<strong>976</strong> resources have identity), read from the released provider with
         <code>terraform providers schema -json</code> (Terraform 1.17.2).
         The Registry documents <strong>160</strong> list-resource pages; some pages cover several
         resources, and the docs also include pages for <code>hashicorp/google-beta</code>-only resources
-        (v8.11.0 serves <strong>161</strong>), as listed below.
-        The source scan of main finds <strong>154</strong> registrations and supplies the per-service grouping.
+        (v8.12.0 serves <strong>161</strong>), as listed below.
+        The source scan of main finds <strong>158</strong> registrations and supplies the per-service grouping.
         <div class="meta-grid">
             <div>
                 <div class="meta-row"><span>Provider repo</span><span><a href="https://github.com/hashicorp/terraform-provider-google.git">hashicorp/terraform-provider-google</a></span></div>
-                <div class="meta-row"><span>Repo commit</span><span><code>e78347ee383d14d74ef659d71739a8cd3ae4dd64</code></span></div>
-                <div class="meta-row"><span>Registration sources</span><span>153 file(s) under <code>google/</code></span></div>
-                <div class="meta-row"><span>Registrations SHA-256</span><span><code>5aeadb49134c1cf7...</code></span></div>
+                <div class="meta-row"><span>Repo commit</span><span><code>8450ebb933491fa3ca4cb77a3622ff4a7bd60aac</code></span></div>
+                <div class="meta-row"><span>Registration sources</span><span>157 file(s) under <code>google/</code></span></div>
+                <div class="meta-row"><span>Registrations SHA-256</span><span><code>7bae9842bdeb28a0...</code></span></div>
             </div>
             <div>
                 <div class="meta-row"><span>Dashboard provider</span><span><code>hashicorp/google</code></span></div>
                 <div class="meta-row"><span>Magic Modules note</span><span style="text-align:left;">Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/&lt;service&gt;/list_*.go and mmv1/third_party/terraform/registry/registry.go.</span></div>
             </div>
         </div>
-        <div class="meta-grid" style="margin-top:12px; grid-template-columns: 1fr;"><div><div class="meta-row"><span>Registry page <code>google_project_iam</code> documents</span><span><code>google_project_iam_binding</code> <code>google_project_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_pubsub_topic_iam</code> documents</span><span><code>google_pubsub_topic_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_secret_manager_secret_iam</code> documents</span><span><code>google_secret_manager_secret_iam_member</code></span></div><div class="meta-row"><span>Registry pages for hashicorp/google-beta-only resources</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_network_security_sac_realm</code></span></div></div></div>
+        <div class="meta-grid" style="margin-top:12px; grid-template-columns: 1fr;"><div><div class="meta-row"><span>Registry page <code>google_project_iam</code> documents</span><span><code>google_project_iam_binding</code> <code>google_project_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_pubsub_topic_iam</code> documents</span><span><code>google_pubsub_topic_iam_member</code></span></div><div class="meta-row"><span>Registry page <code>google_secret_manager_secret_iam</code> documents</span><span><code>google_secret_manager_secret_iam_member</code></span></div><div class="meta-row"><span>Registry pages for hashicorp/google-beta-only resources</span><span><code>google_compute_machine_image</code> <code>google_compute_network_firewall_policy_packet_mirroring_rule</code> <code>google_compute_region_backend_bucket</code> <code>google_firebase_android_app</code> <code>google_firebase_apple_app</code> <code>google_firebase_web_app</code> <code>google_network_security_sac_realm</code></span></div><div class="meta-row"><span>In the source registration scan of main but not released yet</span><span><code>google_gkeonprem_bare_metal_admin_cluster</code> <code>google_gkeonprem_bare_metal_cluster</code> <code>google_gkeonprem_vmware_admin_cluster</code> <code>google_gkeonprem_vmware_cluster</code></span></div></div></div>
     </div>
 
     <div class="section">
@@ -215,7 +215,7 @@
 
     <div class="section">
         <h2>Source Registrations</h2>
-        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>153</strong> source file(s) under <code>google/</code>.</p>
+        <p class="subtitle" style="margin-bottom: 12px;">Parsed from <code>registry.FrameworkListResource{...}.Register()</code> blocks across <strong>157</strong> source file(s) under <code>google/</code>.</p>
         <div class="resource-columns"><div class="reg-bucket"><h3>Handwritten Registrations (18)</h3><ul class="resource-list"><li><code>google_bigquery_dataset_iam_member</code> &mdash; <code>NewBigqueryDatasetIamMemberListResource</code> <span class="muted">google/services/bigquery/iam_bigquery_member_dataset.go:424</span></li>
 <li><code>google_bigquery_table</code> &mdash; <code>NewGoogleBigQueryTableListResource</code> <span class="muted">google/services/bigquery/list_google_bigquery_table.go:39</span></li>
 <li><code>google_compute_instance</code> &mdash; <code>NewGoogleComputeInstanceListResource</code> <span class="muted">google/services/compute/list_google_compute_instance.go:36</span></li>
@@ -233,7 +233,7 @@
 <li><code>google_service_account_key</code> &mdash; <code>NewGoogleServiceAccountKeyListResource</code> <span class="muted">google/services/resourcemanager/list_google_service_account_key.go:42</span></li>
 <li><code>google_secret_manager_secret_version</code> &mdash; <code>NewGoogleSecretManagerSecretVersionListResource</code> <span class="muted">google/services/secretmanager/list_google_secret_manager_secret_version.go:40</span></li>
 <li><code>google_storage_bucket_iam_member</code> &mdash; <code>NewStorageBucketIamMemberListResource</code> <span class="muted">google/services/storage/iam_storage_bucket.go:242</span></li>
-<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (136)</h3><ul class="resource-list"><li><code>google_apigee_addons_config</code> &mdash; <code>NewApigeeAddonsConfigListResource</code> <span class="muted">google/services/apigee/list_apigee_addons_config.go:39</span></li>
+<li><code>google_storage_bucket</code> &mdash; <code>NewGoogleStorageBucketListResource</code> <span class="muted">google/services/storage/list_google_storage_bucket.go:41</span></li></ul></div><div class="reg-bucket"><h3>Magic-Modules Generated Registrations (140)</h3><ul class="resource-list"><li><code>google_apigee_addons_config</code> &mdash; <code>NewApigeeAddonsConfigListResource</code> <span class="muted">google/services/apigee/list_apigee_addons_config.go:39</span></li>
 <li><code>google_apigee_api_product</code> &mdash; <code>NewApigeeApiProductListResource</code> <span class="muted">google/services/apigee/list_apigee_api_product.go:40</span></li>
 <li><code>google_apigee_data_collector</code> &mdash; <code>NewApigeeDataCollectorListResource</code> <span class="muted">google/services/apigee/list_apigee_data_collector.go:40</span></li>
 <li><code>google_apigee_datastore</code> &mdash; <code>NewApigeeDatastoreListResource</code> <span class="muted">google/services/apigee/list_apigee_datastore.go:40</span></li>
@@ -317,6 +317,10 @@
 <li><code>google_gke_backup_backup_plan</code> &mdash; <code>NewGKEBackupBackupPlanListResource</code> <span class="muted">google/services/gkebackup/list_gke_backup_backup_plan.go:40</span></li>
 <li><code>google_gke_backup_restore_channel</code> &mdash; <code>NewGKEBackupRestoreChannelListResource</code> <span class="muted">google/services/gkebackup/list_gke_backup_restore_channel.go:40</span></li>
 <li><code>google_gke_backup_restore_plan</code> &mdash; <code>NewGKEBackupRestorePlanListResource</code> <span class="muted">google/services/gkebackup/list_gke_backup_restore_plan.go:40</span></li>
+<li><code>google_gkeonprem_bare_metal_admin_cluster</code> &mdash; <code>NewGkeonpremBareMetalAdminClusterListResource</code> <span class="muted">google/services/gkeonprem/list_gkeonprem_bare_metal_admin_cluster.go:40</span></li>
+<li><code>google_gkeonprem_bare_metal_cluster</code> &mdash; <code>NewGkeonpremBareMetalClusterListResource</code> <span class="muted">google/services/gkeonprem/list_gkeonprem_bare_metal_cluster.go:40</span></li>
+<li><code>google_gkeonprem_vmware_admin_cluster</code> &mdash; <code>NewGkeonpremVmwareAdminClusterListResource</code> <span class="muted">google/services/gkeonprem/list_gkeonprem_vmware_admin_cluster.go:40</span></li>
+<li><code>google_gkeonprem_vmware_cluster</code> &mdash; <code>NewGkeonpremVmwareClusterListResource</code> <span class="muted">google/services/gkeonprem/list_gkeonprem_vmware_cluster.go:40</span></li>
 <li><code>google_identity_platform_inbound_saml_config</code> &mdash; <code>NewIdentityPlatformInboundSamlConfigListResource</code> <span class="muted">google/services/identityplatform/list_identity_platform_inbound_saml_config.go:40</span></li>
 <li><code>google_identity_platform_oauth_idp_config</code> &mdash; <code>NewIdentityPlatformOauthIdpConfigListResource</code> <span class="muted">google/services/identityplatform/list_identity_platform_oauth_idp_config.go:40</span></li>
 <li><code>google_identity_platform_tenant</code> &mdash; <code>NewIdentityPlatformTenantListResource</code> <span class="muted">google/services/identityplatform/list_identity_platform_tenant.go:40</span></li>

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-12T15:48:35.770727",
+  "generated_at": "2026-11-19T16:55:45.653884",
   "source_repo": {
     "repo": "hashicorp/terraform-provider-google",
     "url": "https://github.com/hashicorp/terraform-provider-google.git",
-    "commit": "e78347ee383d14d74ef659d71739a8cd3ae4dd64"
+    "commit": "8450ebb933491fa3ca4cb77a3622ff4a7bd60aac"
   },
   "registration_sources": {
     "scan_root": "google",
-    "file_count": 153,
+    "file_count": 157,
     "files": [
       {
         "file": "google/services/apigee/list_apigee_addons_config.go",
@@ -455,6 +455,26 @@
         "registrations": 1
       },
       {
+        "file": "google/services/gkeonprem/list_gkeonprem_bare_metal_admin_cluster.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkeonprem/list_gkeonprem_bare_metal_cluster.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkeonprem/list_gkeonprem_vmware_admin_cluster.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
+        "file": "google/services/gkeonprem/list_gkeonprem_vmware_cluster.go",
+        "type": "MMv1",
+        "registrations": 1
+      },
+      {
         "file": "google/services/identityplatform/list_identity_platform_inbound_saml_config.go",
         "type": "MMv1",
         "registrations": 1
@@ -775,7 +795,7 @@
         "registrations": 1
       }
     ],
-    "sha256": "5aeadb49134c1cf7de44d62918cdbfab28b38b43744dc403a52516a5f86afd66",
+    "sha256": "7bae9842bdeb28a04e7f170fa7bb05f3b121a1d0839aa25ea7a4b1f402b8acda",
     "note": "Magic Modules generator emits these registrations into the provider repo. Each list resource self-registers in an init() block via registry.FrameworkListResource{...}.Register(); the provider exposes the aggregated set through registry.FrameworkListResourceFuncs(). Source-of-truth lives in GoogleCloudPlatform/magic-modules under mmv1/third_party/terraform/services/<service>/list_*.go and mmv1/third_party/terraform/registry/registry.go."
   },
   "dashboard": {
@@ -784,14 +804,14 @@
   },
   "provider_schema": {
     "provider": "hashicorp/google",
-    "version": "8.11.0",
+    "version": "8.12.0",
     "terraform_version": "1.17.2",
     "counts": {
-      "resources": 1406,
-      "data_sources": 475,
+      "resources": 1423,
+      "data_sources": 476,
       "ephemeral_resources": 6,
       "list_resources": 154,
-      "identity_resources": 961,
+      "identity_resources": 976,
       "actions": 1
     },
     "list_resources": [
@@ -953,14 +973,14 @@
   },
   "beta_provider_schema": {
     "provider": "hashicorp/google-beta",
-    "version": "8.11.0",
+    "version": "8.12.0",
     "terraform_version": "1.17.2",
     "counts": {
-      "resources": 1523,
-      "data_sources": 504,
+      "resources": 1531,
+      "data_sources": 505,
       "ephemeral_resources": 6,
       "list_resources": 161,
-      "identity_resources": 1040,
+      "identity_resources": 1046,
       "actions": 1
     }
   },
@@ -993,7 +1013,12 @@
     "in_sync": true
   },
   "source_scan_diff": {
-    "source_only": [],
+    "source_only": [
+      "google_gkeonprem_bare_metal_admin_cluster",
+      "google_gkeonprem_bare_metal_cluster",
+      "google_gkeonprem_vmware_admin_cluster",
+      "google_gkeonprem_vmware_cluster"
+    ],
     "not_in_source_scan": []
   },
   "registrations": {
@@ -1584,6 +1609,34 @@
         "package": "GKEBackup",
         "constructor": "NewGKEBackupRestorePlanListResource",
         "file": "google/services/gkebackup/list_gke_backup_restore_plan.go",
+        "line": 40
+      },
+      {
+        "name": "google_gkeonprem_bare_metal_admin_cluster",
+        "package": "Gkeonprem",
+        "constructor": "NewGkeonpremBareMetalAdminClusterListResource",
+        "file": "google/services/gkeonprem/list_gkeonprem_bare_metal_admin_cluster.go",
+        "line": 40
+      },
+      {
+        "name": "google_gkeonprem_bare_metal_cluster",
+        "package": "Gkeonprem",
+        "constructor": "NewGkeonpremBareMetalClusterListResource",
+        "file": "google/services/gkeonprem/list_gkeonprem_bare_metal_cluster.go",
+        "line": 40
+      },
+      {
+        "name": "google_gkeonprem_vmware_admin_cluster",
+        "package": "Gkeonprem",
+        "constructor": "NewGkeonpremVmwareAdminClusterListResource",
+        "file": "google/services/gkeonprem/list_gkeonprem_vmware_admin_cluster.go",
+        "line": 40
+      },
+      {
+        "name": "google_gkeonprem_vmware_cluster",
+        "package": "Gkeonprem",
+        "constructor": "NewGkeonpremVmwareClusterListResource",
+        "file": "google/services/gkeonprem/list_gkeonprem_vmware_cluster.go",
         "line": 40
       },
       {
@@ -2468,10 +2521,10 @@
   "validation": {
     "matches": true,
     "schema_list_resources": 154,
-    "schema_identity_resources": 961,
-    "schema_provider_version": "8.11.0",
+    "schema_identity_resources": 976,
+    "schema_provider_version": "8.12.0",
     "dashboard_list_resources": 160,
-    "registered_count": 154,
+    "registered_count": 158,
     "source_scan_complete": true
   }
 }

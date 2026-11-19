@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:48:25.467047",
+  "generated_at": "2026-11-19T16:55:35.369201",
   "issue": {
     "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47005"
   },
@@ -10,7 +10,7 @@
   },
   "source_repo": {
     "repo": "hashicorp/terraform-provider-aws",
-    "commit": "38dc32ebab9afb8d5ee7f0511dd9a58457d486bb"
+    "commit": "6070c09bd2d301b60b153b2da992952e87da853d"
   },
   "dashboard": {
     "provider": "hashicorp/aws",
@@ -326,13 +326,13 @@
   },
   "script_results": {
     "returncode": 0,
-    "stdout_line_count": 3271,
+    "stdout_line_count": 3275,
     "stderr_line_count": 0,
     "parsed": {
       "overall": {
         "percent": 16,
-        "implemented": 280,
-        "total": 1750
+        "implemented": 285,
+        "total": 1754
       },
       "service_count": 252,
       "services": [
@@ -639,8 +639,8 @@
         {
           "service": "cloudwatchomni",
           "percent": 100,
-          "implemented": 7,
-          "total": 7
+          "implemented": 9,
+          "total": 9
         },
         {
           "service": "codeartifact",
@@ -1058,8 +1058,8 @@
         },
         {
           "service": "identitystore",
-          "percent": 0,
-          "implemented": 0,
+          "percent": 33,
+          "implemented": 1,
           "total": 3
         },
         {
@@ -1412,9 +1412,9 @@
         },
         {
           "service": "pinpointsmsvoicev2",
-          "percent": 75,
-          "implemented": 6,
-          "total": 8
+          "percent": 70,
+          "implemented": 7,
+          "total": 10
         },
         {
           "service": "pipes",
@@ -1736,8 +1736,8 @@
         },
         {
           "service": "ssoadmin",
-          "percent": 13,
-          "implemented": 2,
+          "percent": 20,
+          "implemented": 3,
           "total": 15
         },
         {
@@ -2459,8 +2459,10 @@
           "all_resources": [
             "cloudwatchomni/access_grant.go",
             "cloudwatchomni/access_profile.go",
+            "cloudwatchomni/alert.go",
             "cloudwatchomni/dashboard.go",
             "cloudwatchomni/domain.go",
+            "cloudwatchomni/organization_access_grant.go",
             "cloudwatchomni/organization_domain.go",
             "cloudwatchomni/space.go",
             "cloudwatchomni/view.go"
@@ -2468,8 +2470,10 @@
           "list_resources": [
             "cloudwatchomni/access_grant.go",
             "cloudwatchomni/access_profile.go",
+            "cloudwatchomni/alert.go",
             "cloudwatchomni/dashboard.go",
             "cloudwatchomni/domain.go",
+            "cloudwatchomni/organization_access_grant.go",
             "cloudwatchomni/organization_domain.go",
             "cloudwatchomni/space.go",
             "cloudwatchomni/view.go"
@@ -3516,7 +3520,9 @@
             "identitystore/group_membership.go",
             "identitystore/user.go"
           ],
-          "list_resources": []
+          "list_resources": [
+            "identitystore/group_membership.go"
+          ]
         },
         "imagebuilder": {
           "all_resources": [
@@ -4212,12 +4218,14 @@
         },
         "pinpointsmsvoicev2": {
           "all_resources": [
+            "pinpointsmsvoicev2/account_default_protect_configuration.go",
             "pinpointsmsvoicev2/configuration_set.go",
             "pinpointsmsvoicev2/event_destination.go",
             "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/phone_number.go",
             "pinpointsmsvoicev2/pool.go",
             "pinpointsmsvoicev2/protect_configuration.go",
+            "pinpointsmsvoicev2/protect_configuration_association.go",
             "pinpointsmsvoicev2/resource_policy.go",
             "pinpointsmsvoicev2/sender_id.go"
           ],
@@ -4226,6 +4234,7 @@
             "pinpointsmsvoicev2/keyword.go",
             "pinpointsmsvoicev2/pool.go",
             "pinpointsmsvoicev2/protect_configuration.go",
+            "pinpointsmsvoicev2/protect_configuration_association.go",
             "pinpointsmsvoicev2/resource_policy.go",
             "pinpointsmsvoicev2/sender_id.go"
           ]
@@ -4993,6 +5002,7 @@
           ],
           "list_resources": [
             "ssoadmin/account_assignment.go",
+            "ssoadmin/managed_policy_attachment.go",
             "ssoadmin/region.go"
           ]
         },
@@ -5221,11 +5231,11 @@
           "list_resources": []
         }
       },
-      "last_updated": "2026-11-12 15:48:25 UTC"
+      "last_updated": "2026-11-19 16:55:35 UTC"
     }
   },
   "service_coverage": {
-    "services_with_list": 80,
+    "services_with_list": 81,
     "top_services": [
       {
         "service": "ec2",
@@ -5246,6 +5256,12 @@
         "total": 35
       },
       {
+        "service": "cloudwatchomni",
+        "percent": 100,
+        "implemented": 9,
+        "total": 9
+      },
+      {
         "service": "bedrockagentcore",
         "percent": 42,
         "implemented": 9,
@@ -5256,12 +5272,6 @@
         "percent": 50,
         "implemented": 8,
         "total": 16
-      },
-      {
-        "service": "cloudwatchomni",
-        "percent": 100,
-        "implemented": 7,
-        "total": 7
       },
       {
         "service": "opensearchserverless",
@@ -5276,6 +5286,12 @@
         "total": 7
       },
       {
+        "service": "pinpointsmsvoicev2",
+        "percent": 70,
+        "implemented": 7,
+        "total": 10
+      },
+      {
         "service": "apigateway",
         "percent": 26,
         "implemented": 7,
@@ -5286,12 +5302,6 @@
         "percent": 100,
         "implemented": 6,
         "total": 6
-      },
-      {
-        "service": "pinpointsmsvoicev2",
-        "percent": 75,
-        "implemented": 6,
-        "total": 8
       },
       {
         "service": "ssm",
@@ -5928,8 +5938,10 @@
         "all_resources": [
           "cloudwatchomni/access_grant.go",
           "cloudwatchomni/access_profile.go",
+          "cloudwatchomni/alert.go",
           "cloudwatchomni/dashboard.go",
           "cloudwatchomni/domain.go",
+          "cloudwatchomni/organization_access_grant.go",
           "cloudwatchomni/organization_domain.go",
           "cloudwatchomni/space.go",
           "cloudwatchomni/view.go"
@@ -5937,8 +5949,10 @@
         "list_resources": [
           "cloudwatchomni/access_grant.go",
           "cloudwatchomni/access_profile.go",
+          "cloudwatchomni/alert.go",
           "cloudwatchomni/dashboard.go",
           "cloudwatchomni/domain.go",
+          "cloudwatchomni/organization_access_grant.go",
           "cloudwatchomni/organization_domain.go",
           "cloudwatchomni/space.go",
           "cloudwatchomni/view.go"
@@ -6985,7 +6999,9 @@
           "identitystore/group_membership.go",
           "identitystore/user.go"
         ],
-        "list_resources": []
+        "list_resources": [
+          "identitystore/group_membership.go"
+        ]
       },
       "imagebuilder": {
         "all_resources": [
@@ -7681,12 +7697,14 @@
       },
       "pinpointsmsvoicev2": {
         "all_resources": [
+          "pinpointsmsvoicev2/account_default_protect_configuration.go",
           "pinpointsmsvoicev2/configuration_set.go",
           "pinpointsmsvoicev2/event_destination.go",
           "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/phone_number.go",
           "pinpointsmsvoicev2/pool.go",
           "pinpointsmsvoicev2/protect_configuration.go",
+          "pinpointsmsvoicev2/protect_configuration_association.go",
           "pinpointsmsvoicev2/resource_policy.go",
           "pinpointsmsvoicev2/sender_id.go"
         ],
@@ -7695,6 +7713,7 @@
           "pinpointsmsvoicev2/keyword.go",
           "pinpointsmsvoicev2/pool.go",
           "pinpointsmsvoicev2/protect_configuration.go",
+          "pinpointsmsvoicev2/protect_configuration_association.go",
           "pinpointsmsvoicev2/resource_policy.go",
           "pinpointsmsvoicev2/sender_id.go"
         ]
@@ -8462,6 +8481,7 @@
         ],
         "list_resources": [
           "ssoadmin/account_assignment.go",
+          "ssoadmin/managed_policy_attachment.go",
           "ssoadmin/region.go"
         ]
       },
@@ -8697,9 +8717,9 @@
     "schema_identity_resources": 582,
     "schema_provider_version": "6.73.0",
     "dashboard_list_resources": 280,
-    "script_implemented_list": 280,
-    "script_minus_schema": 0,
-    "script_total_resources": 1750,
+    "script_implemented_list": 285,
+    "script_minus_schema": 5,
+    "script_total_resources": 1754,
     "script_percent": 16
   }
 }

@@ -14055,7 +14055,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:18.038531"
+    "docs_refreshed_at": "2026-11-19T16:54:18.050356"
   },
   "hashicorp/awscc": {
     "version": "1.68.0",
@@ -44351,7 +44351,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:18.745878"
+    "docs_refreshed_at": "2026-11-19T16:54:18.660934"
   },
   "hashicorp/azuread": {
     "version": "3.7.0",
@@ -44810,7 +44810,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:19.175034"
+    "docs_refreshed_at": "2026-11-19T16:54:19.068623"
   },
   "hashicorp/azurerm": {
     "version": "4.57.0",
@@ -47087,6 +47087,11 @@
           "subcategory": "Cognitive Services"
         },
         {
+          "title": "cognitive_account_project_connection_entra_id",
+          "slug": "cognitive_account_project_connection_entra_id",
+          "subcategory": "Cognitive Services"
+        },
+        {
           "title": "cognitive_deployment",
           "slug": "cognitive_deployment",
           "subcategory": "Cognitive Services"
@@ -48543,6 +48548,11 @@
         {
           "title": "cognitive_account_project",
           "slug": "cognitive_account_project",
+          "subcategory": "Cognitive Services"
+        },
+        {
+          "title": "cognitive_account_project_connection_entra_id",
+          "slug": "cognitive_account_project_connection_entra_id",
           "subcategory": "Cognitive Services"
         },
         {
@@ -53137,7 +53147,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:19.706927"
+    "docs_refreshed_at": "2026-11-19T16:54:19.546453"
   },
   "hashicorp/azurestack": {
     "version": "1.0.0",
@@ -53486,7 +53496,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:20.138699"
+    "docs_refreshed_at": "2026-11-19T16:54:19.942536"
   },
   "hashicorp/boundary": {
     "version": "1.5.0",
@@ -54751,8 +54761,8 @@
           "subcategory": "Compute Engine"
         },
         {
-          "title": "compute_storage_pool_type",
-          "slug": "compute_storage_pool_type",
+          "title": "compute_storage_pool_types",
+          "slug": "compute_storage_pool_types",
           "subcategory": "Compute Engine"
         },
         {
@@ -54974,6 +54984,11 @@
           "title": "datastream_static_ips",
           "slug": "datastream_static_ips",
           "subcategory": "Datastream"
+        },
+        {
+          "title": "design_center_space_iam_policy",
+          "slug": "design_center_space_iam_policy",
+          "subcategory": "Application Design Center"
         },
         {
           "title": "discovery_engine_data_store",
@@ -57638,6 +57653,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apihub_addon",
+          "slug": "apihub_addon",
+          "subcategory": "API Hub"
+        },
+        {
           "title": "apihub_api_hub_instance",
           "slug": "apihub_api_hub_instance",
           "subcategory": "API Hub"
@@ -58470,6 +58490,16 @@
         {
           "title": "cloud_identity_group_membership",
           "slug": "cloud_identity_group_membership",
+          "subcategory": "Cloud Identity"
+        },
+        {
+          "title": "cloud_identity_inbound_oidc_sso_profile",
+          "slug": "cloud_identity_inbound_oidc_sso_profile",
+          "subcategory": "Cloud Identity"
+        },
+        {
+          "title": "cloud_identity_inbound_saml_sso_profile",
+          "slug": "cloud_identity_inbound_saml_sso_profile",
           "subcategory": "Cloud Identity"
         },
         {
@@ -59941,6 +59971,21 @@
           "title": "deployment_manager_deployment",
           "slug": "deployment_manager_deployment",
           "subcategory": "Cloud Deployment Manager"
+        },
+        {
+          "title": "design_center_application",
+          "slug": "design_center_application",
+          "subcategory": "Application Design Center"
+        },
+        {
+          "title": "design_center_space",
+          "slug": "design_center_space",
+          "subcategory": "Application Design Center"
+        },
+        {
+          "title": "design_center_space_iam",
+          "slug": "design_center_space_iam",
+          "subcategory": "Application Design Center"
         },
         {
           "title": "developer_connect_account_connector",
@@ -63259,7 +63304,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:20.707745"
+    "docs_refreshed_at": "2026-11-19T16:54:20.514606"
   },
   "hashicorp/google-beta": {
     "docs": {
@@ -64257,8 +64302,8 @@
           "subcategory": "Compute Engine"
         },
         {
-          "title": "compute_storage_pool_type",
-          "slug": "compute_storage_pool_type",
+          "title": "compute_storage_pool_types",
+          "slug": "compute_storage_pool_types",
           "subcategory": "Compute Engine"
         },
         {
@@ -64480,6 +64525,11 @@
           "title": "datastream_static_ips",
           "slug": "datastream_static_ips",
           "subcategory": "Datastream"
+        },
+        {
+          "title": "design_center_space_iam_policy",
+          "slug": "design_center_space_iam_policy",
+          "subcategory": "Application Design Center"
         },
         {
           "title": "discovery_engine_data_store",
@@ -67144,6 +67194,11 @@
           "subcategory": "Apigee"
         },
         {
+          "title": "apihub_addon",
+          "slug": "apihub_addon",
+          "subcategory": "API Hub"
+        },
+        {
           "title": "apihub_api_hub_instance",
           "slug": "apihub_api_hub_instance",
           "subcategory": "API Hub"
@@ -67976,6 +68031,16 @@
         {
           "title": "cloud_identity_group_membership",
           "slug": "cloud_identity_group_membership",
+          "subcategory": "Cloud Identity"
+        },
+        {
+          "title": "cloud_identity_inbound_oidc_sso_profile",
+          "slug": "cloud_identity_inbound_oidc_sso_profile",
+          "subcategory": "Cloud Identity"
+        },
+        {
+          "title": "cloud_identity_inbound_saml_sso_profile",
+          "slug": "cloud_identity_inbound_saml_sso_profile",
           "subcategory": "Cloud Identity"
         },
         {
@@ -69447,6 +69512,21 @@
           "title": "deployment_manager_deployment",
           "slug": "deployment_manager_deployment",
           "subcategory": "Cloud Deployment Manager"
+        },
+        {
+          "title": "design_center_application",
+          "slug": "design_center_application",
+          "subcategory": "Application Design Center"
+        },
+        {
+          "title": "design_center_space",
+          "slug": "design_center_space",
+          "subcategory": "Application Design Center"
+        },
+        {
+          "title": "design_center_space_iam",
+          "slug": "design_center_space_iam",
+          "subcategory": "Application Design Center"
         },
         {
           "title": "developer_connect_account_connector",
@@ -72765,7 +72845,7 @@
         }
       ]
     },
-    "docs_refreshed_at": "2026-11-12T15:47:21.301850"
+    "docs_refreshed_at": "2026-11-19T16:54:21.034244"
   },
   "4ek0/neko": {
     "docs": {
